@@ -1,0 +1,41 @@
+---
+description: 設定逾時間隔 (單位：毫秒)。用於通知其他解決方案 (例如 Analytics、Audience Manager、Target 等等)ID 服務回應的等待時間。
+keywords: ID 服務
+seo-description: 設定逾時間隔 (單位：毫秒)。用於通知其他解決方案 (例如 Analytics、Audience Manager、Target 等等)ID 服務回應的等待時間。
+seo-title: loadTimeout
+title: loadTimeout
+uuid: f627e044-bd73-49a4-8a90-6d19 aa566751
+translation-type: tm+mt
+source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
+
+---
+
+
+# loadTimeout{#loadtimeout}
+
+設定逾時間隔 (單位：毫秒)。用於通知其他解決方案 (例如 Analytics、Audience Manager、Target 等等)ID 服務回應的等待時間。
+
+**語法：**` loadTimeout: *`間隔(毫秒)`*`
+
+預設值為 30,000 毫秒 (30 秒)。我們強烈建議您*不要*變更預設值。
+
+>[!NOTE]
+>
+>呼叫ID服務是與頁面上其他非Adobe程式碼相關的非同步。因此，增加或減少逾時間隔不會變更頁面呈現內容的比率。不過，長時間的逾時間隔可能會影響一般網路監控工具測量的頁面載入時間，但是呈現時間不會受到影響。
+
+**程式碼範例**
+
+```js
+var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
+   trackingServer: "Insert tracking server here here",  //Same as s.trackingServer 
+   trackingServerSecure: "Insert secure tracking server here",  //Same as s.trackingServerSecure 
+ 
+   //For CNAME support only. Exclude these variables if you're not using CNAME 
+   marketingCloudServer: "Insert tracking server here", 
+   marketingCloudServerSecure: "Insert secure tracking server here", 
+ 
+   //Function variable. Example sets the timeout to 10,000 milliseconds (10 seconds). 
+   loadTimeout:10000 
+});
+```
+
