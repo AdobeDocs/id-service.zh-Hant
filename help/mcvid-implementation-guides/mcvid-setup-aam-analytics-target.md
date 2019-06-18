@@ -6,7 +6,7 @@ seo-title: 實施適用於 Analytics、Audience Manager 和 Target 的 Experienc
 title: 實施適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud ID 服務
 uuid: 9d446b77-ca62-4325-8bb0-ff43 a52313 c0
 translation-type: tm+mt
-source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
+source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
 
 ---
 
@@ -132,7 +132,7 @@ Analytics 使用追蹤伺服器來進行資料收集。
 * Experience Cloud 伺服器 URL = 追蹤伺服器 URL
 * Experience Cloud 伺服器安全 URL = 追蹤伺服器安全 URL
 
-若不清楚如何尋找您的追蹤伺服器，請參閱[常見問題集](../mcvid-faq-intro/mcvid-faq.md)以及[正確填入 trackingServer 和 trackingServerSecure 變數](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
+若不清楚如何尋找您的追蹤伺服器，請參閱[常見問題集](../mcvid-faq-intro/ecid-faq.md)以及[正確填入 trackingServer 和 trackingServerSecure 變數](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
 
 ## 步驟6：更新AppMeasurement. js檔案 {#section-5517e94a09bc44dfb492ebca14b43048}
 
