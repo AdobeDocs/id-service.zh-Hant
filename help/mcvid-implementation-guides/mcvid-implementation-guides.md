@@ -7,7 +7,7 @@ solution: Experience Cloud
 title: 實施指南
 uuid: null
 translation-type: tm+mt
-source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
+source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
 
 ---
 
@@ -21,3 +21,19 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 ## 標準實作
 
 標準實作使用 [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) 來協助您開始使用ID服務，並將它與其他Experience Cloud解決方案整合。強烈建議您在實作ID服務時使用Experience Platform Launch。
+
+## 實作資源
+
+* [實施指南](mcvid-implementation-guides.md)
+* [實施方法](mcvid-implementation-methods.md)
+* [使用 Launch 實作](ecid-implement-with-launch.md)
+* [使用動態標籤管理進行實施](mcvid-standard.md)
+* [實施適用於 Analytics 的 Experience Cloud ID 服務](mcvid-setup-analytics.md)
+* [實施適用於 Target 的 Experience Cloud ID 服務](mcvid-setup-target.md)
+* [實施適用於 Analytics 和 Audience Manager 的 Experience Cloud ID 服務](mcvid-setup-aam-analytics.md)
+* [實施適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud ID 服務](mcvid-setup-aam-analytics-target.md)
+* [將 Experience Cloud ID 服務用於 A4T 以及伺服器端的 Target 實作](ecid-a4t-target.md)
+* [與 Experience Cloud ID 服務直接整合](mcvid-direct-integration.md)
+* [直接整合的使用案例](ecid-direct-integration-examples.md)
+* [測試並驗證Experience Cloud ID服務](mcvid-test-verify.md)
+* [選擇加入服務總覽](opt-in-service/mcvid-optin-overview.md)
