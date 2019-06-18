@@ -6,7 +6,7 @@ seo-title: 2017 年發行說明
 title: 2017 年發行說明
 uuid: 79452df0-49db-42b8-96Fe-01aa7629fb5
 translation-type: tm+mt
-source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
+source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
 
 ---
 
@@ -74,7 +74,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **修訂後的文件**
 
-更新及修訂[常見問答](/help/mcvid-faq-intro/mcvid-faq-intro.md) 集，以針對不同 [!DNL Experience Cloud] 解決方案包含個別的常見問答集。
+更新及修訂[常見問答](/help/mcvid-faq-intro/ecid-faq-intro.md) 集，以針對不同 [!DNL Experience Cloud] 解決方案包含個別的常見問答集。
 
 ## 2.3版 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
@@ -134,7 +134,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <a href="../mcvid-faq-intro/mcvid-faq.md" format="dita" scope="local"> 常見問題解答 </a> </p> </td> 
+   <td colname="col1"> <p> <a href="../mcvid-faq-intro/ecid-faq.md" format="dita" scope="local"> 常見問題解答 </a> </p> </td> 
    <td colname="col2"> <p>更新 <span class="keyword">Analytics</span> 一節，提供如何尋找追蹤伺服器資訊的相關資訊。 </p> </td> 
   </tr> 
  </tbody> 
