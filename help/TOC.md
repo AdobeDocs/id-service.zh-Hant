@@ -5,7 +5,7 @@ audience: 使用者
 user-guide-title: ID服務說明
 user-guide-url: /content/help/en/id-service/using/mcvid-home.html
 translation-type: tm+mt
-source-git-commit: c8020fc1cc5acd5fccb1e8a2e2787d95aa1294ab
+source-git-commit: 1dd8b109f7e9567b5f72747ecc653d35d0942413
 
 ---
 
@@ -42,6 +42,7 @@ source-git-commit: c8020fc1cc5acd5fccb1e8a2e2787d95aa1294ab
       + [選擇加入參考資料](mcvid-implementation-guides/opt-in-service/api.md)
       + [(測試版)搭配使用選擇加入服務與IAB Framework](mcvid-implementation-guides/opt-in-service/iab.md)
 + ID 服務 API {#id-service-api}
+   + [ID服務API概述](mcvid-library/mcvid-library.md)
    + 設定 {#configurations}
       + [組態概觀](mcvid-library/mcvid-function-vars/mcvid-function-vars.md)
       + [audienceManagerServer 及 audienceManagerServerSecure](mcvid-library/mcvid-function-vars/mcvid-subdomain-config.md)
@@ -77,6 +78,7 @@ source-git-commit: c8020fc1cc5acd5fccb1e8a2e2787d95aa1294ab
       + [isClientSideMarketingCloudVisitorID](mcvid-library/mcvid-get-set/mcvid-client-side-id.md)
       + [resetState](mcvid-library/mcvid-get-set/mcvid-resetstate.md)
 + 參考 {#reference}
+   + [參考概述](mcvid-reference/mcvid-reference.md)
    + Analytics 參考 {#analytics-reference}
       + [Analytics參考概述](mcvid-reference/mcvid-analytics-reference/mcvid-analytics-reference.md)
       + [設定 Analytics 和 Experience Cloud ID](mcvid-reference/mcvid-analytics-reference/mcvid-analytics-ids.md)
@@ -91,6 +93,7 @@ source-git-commit: c8020fc1cc5acd5fccb1e8a2e2787d95aa1294ab
    + [Experience Cloud ID 服務的 COPPA 支援](mcvid-reference/mcvid-coppa.md)
    + [Experience Cloud ID 服務的 CORS 支援](mcvid-reference/mcvid-cors.md)
    + [客戶 ID 和驗證狀態](mcvid-reference/mcvid-authenticated-state.md)
+   + [Safari ITP世界中的ECID程式庫方法](mcvid-reference/ecid-library-methods.md)
    + [從 AMCV Cookie 或 ID 服務取得地區和使用者 ID](mcvid-reference/mcvid-regions.md)
    + [Experience Cloud ID 服務規定](mcvid-reference/mcvid-requirements.md)
    + [影片心率和 Experience Cloud ID 服務](mcvid-reference/mcvid-heartbeat.md)
