@@ -6,7 +6,7 @@ seo-title: 2019 年發行說明
 title: 2019 年發行說明
 uuid: a5a59410-10f85-48f9-a30 a-fef1 c2 b558
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -21,7 +21,7 @@ Experience Platform Identity Service的功能發佈、更新或變更。
 
 ## 版本 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**選擇加入服務**。選擇加入是 [Experience Cloud ID (ECID)](https://marketing.adobe.com/resources/help/en_US/mcvid/) 的擴充功能，可讓您控制 Experience Cloud 資料庫是否可以在網頁上建立訪客的 Cookie，以及使用哪個資料庫來執行。您可以使用 [Launch](https://docs.adobelaunch.com/)，讓 Analytics、Target、Audience Manager 及其他甚至所有選取的 Experience Cloud 解決方案選擇加入您的同意管理系統，簡化 Experience Cloud 解決方案收集訪客是否同意選擇加入的程序。
+**選擇加入服務**。選擇加入是Adobe Experience Platform Identity Service的擴充功能，可讓您控制(然後) Experience Cloud Libraries可在訪客網頁上建立Cookie。使用 [Experience Platform Launch](https://docs.adobelaunch.com/)，您可以透過啓用Analytics、Target、Audience Manager以及其他所有或所有選擇Experience Cloud解決方案，以選擇加入您的許可管理系統，簡化收集訪客選擇同意的訪客選擇。
 
 ## 3.4 版 {#section-046ce29b43af47cc849d4091098f5927}
 
