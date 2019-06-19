@@ -6,7 +6,7 @@ seo-title: 2016 年發行說明
 title: 2016 年發行說明
 uuid: 7a314a-3a-3ff8-4561-9c64-6c10d2223887
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -24,9 +24,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 >[!IMPORTANT]
 >
 >* 1.10版需要 [!DNL AppMeasurement] 1.8.0版。
->* 使用Experience Platform Identity Service Library2.0.0+，預設會針對Adobe Media Optimizer啓動ID同步。請參閱[瞭解 ID 同步和匹配率](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-match-rates.html)。
->
-
+>* 使用Experience Platform Identity Service Library2.0.0+，預設會針對Adobe Media Optimizer啓動ID同步。請參閱[瞭解 ID 同步和匹配率](/help/introduction/match-rates.md)。
 
 
 **修正和改良**
