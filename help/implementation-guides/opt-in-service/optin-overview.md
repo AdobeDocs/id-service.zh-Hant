@@ -5,7 +5,7 @@ seo-title: 選擇加入服務
 title: 選擇加入服務
 uuid: aubd72ad-4118-471b-9755-d08 a72 a72 ca0 d
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 選擇加入服務可讓您設定訪客的通訊協定，以判斷您在瀏覽您的網站時是否可以在使用者裝置或瀏覽器上設定Cookie。
 
-選擇加入服務是 [Experience Cloud ID(ECID)](https://marketing.adobe.com/resources/help/en_US/mcvid/) 服務的擴充功能，其設計可讓您控制在使用者同意之前，是否能針對訪客在網頁上建立Cookie。選擇加入服務也可讓您設定通訊協定，以便與您的同意管理平台(CMP)和現有系統整合，做為大型設計的一部分。
+選擇加入服務是Experience Cloud ID(ECID)的擴充功能，其設計可讓您控制在使用者同意之前，哪些Experience Cloud解決方案可以在網頁上為訪客建立Cookie。選擇加入服務也可讓您設定通訊協定，以便與您的同意管理平台(CMP)和現有系統整合，做為大型設計的一部分。
 
 使用選擇加入服務，您可以指定訪客可以一次選擇加入Adobe解決方案，或依順序顯示解決方案。客戶完成並記錄核准程序後，您便可以從所有的 Adobe 解決方案擷取 CMP 訪客核准。
 
