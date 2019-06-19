@@ -1,19 +1,19 @@
 ---
 description: 'Experience Platform Identity Service提供通用的永久性ID，可識別Experience Cloud所有解決方案中的訪客。 '
 keywords: ID 服務
-seo-description: Adobe Experience Platform Identity Service提供通用、永久性ID，可識別Experience Cloud所有解決方案中的訪客。它可取代 Analytics、Audience Manager、Target 等服務及其他 Experience Cloud 解決方案或功能的 ID 產生碼。
+seo-description: Adobe Experience Platform Identity Service(ID服務)提供通用的永久性ID，可識別Experience Cloud所有解決方案中的訪客。它可取代 Analytics、Audience Manager、Target 等服務及其他 Experience Cloud 解決方案或功能的 ID 產生碼。
 seo-title: Experience Platform Identity Service
 title: Experience Platform Identity Service
 uuid: b68194b-e549-4f6 f-bfaf-7744926eaaac
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
 
-# Experience Platform Identity Service {#experience-cloud-id-service}
+# Adobe Experience Platform Identity Service {#experience-cloud-id-service}
 
-Experience Platform Identity Service(ID服務)提供通用的永久性ID，可識別Experience Cloud所有解決方案中的訪客。它可取代 Analytics、Audience Manager、Target 等服務及其他 Experience Cloud 解決方案或功能的 ID 產生碼。
+Adobe Experience Platform Identity Service(身分服務)提供通用、永久性ID，可識別Experience Cloud所有解決方案中的訪客。它可取代 Analytics、Audience Manager、Target 等服務及其他 Experience Cloud 解決方案或功能的 ID 產生碼。
 
 <table id="table_5E612F746A704FE095B809A013EE977F" class="simpletable"> 
  <tbody> 
