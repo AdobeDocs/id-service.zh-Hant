@@ -6,7 +6,7 @@ seo-title: 使用動態標籤管理進行實施
 title: 使用動態標籤管理進行實施
 uuid: c4f752c4-392e-4909-b178-9700687064
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 >[!NOTE]
 >
->[目前，Launch是偏好](https://docs.adobelaunch.com/) 的建議實施工具，因為它有助於簡化複雜的標籤管理工作，並將程式碼位置自動化至DTM以外的功能。請參閱 [「使用Launch實施](../implementation-guides/ecid-implement-with-launch.md)」。
+>目前， [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) 是偏好且建議的實施工具，因為它有助於簡化複雜的標籤管理工作，並將程式碼位置自動化至DTM以外的功能。請參閱 [「使用Launch實施](../implementation-guides/ecid-implement-with-launch.md)」。
 
 ## 動態標籤管理和 ID 服務 {#section-4a4c4fac5d0a4cbbaff8e1833f73657c}
 
