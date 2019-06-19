@@ -1,22 +1,22 @@
 ---
-description: Launch by Adobe是用來設定、部署及整合Experience Platform Identity Service與其他Experience Cloud解決方案的主要工具。
-seo-description: Launch by Adobe是用來設定、部署及整合Experience Platform Identity Service與其他Experience Cloud解決方案的主要工具。
+description: Adobe Experience Platform Launch是用來設定、部署及整合Experience Platform Identity Service與其他Experience Cloud解決方案的主要工具。
+seo-description: Adobe Experience Platform Launch是用來設定、部署及整合Experience Platform Identity Service與其他Experience Cloud解決方案的主要工具。
 seo-title: 使用 Launch 實作
 title: 使用 Launch 實作
 uuid: b3282f8e-82b8-4635-8c80-1b365e8a9693
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
 
 # 使用 Launch 實作{#implement-with-launch}
 
-Launch by Adobe是用來設定、部署及整合Experience Platform Identity Service與其他Experience Cloud解決方案的主要工具。
+Adobe Experience Platform Launch是用來設定、部署及整合Experience Platform Identity Service與其他Experience Cloud解決方案的主要工具。
 
 ## 關於 Launch {#section-611711602854464ea351a4af80a8dafe}
 
-[Launch by Adobe](https://docs.adobelaunch.com/) 是 Adobe 新一代的標籤管理功能，內建在 Adobe Experience Cloud 中。Launch 讓客戶能夠:
+[Adobe Experience Platform Launch](https://docs.adobelaunch.com/) 是Adobe Experience Cloud內建的新一代Adobe標籤管理功能。Launch 讓客戶能夠:
 
 * 使用稱為擴充功能的整合來部署用戶端網頁產品。
 * 持續在 Adobe 和其他廠商的行銷與廣告產品間擷取、定義、管理和共用資料
