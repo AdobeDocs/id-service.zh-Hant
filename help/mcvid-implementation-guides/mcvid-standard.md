@@ -6,7 +6,7 @@ seo-title: 使用動態標籤管理進行實施
 title: 使用動態標籤管理進行實施
 uuid: c4f752c4-392e-4909-b178-9700687064
 translation-type: tm+mt
-source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
+source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
 
 ---
 
@@ -94,7 +94,7 @@ mcvid-dtm-implement.xml
    >
    >此動作會以您的組織ID填入 **[!UICONTROL Experience Cloud組織ID]** 方塊。如果 DTM 帳戶未連結至 [!DNL Experience Cloud]，您必須提供此 ID。若要連結帳戶，請參閱[在 Experience Cloud 中連結帳戶](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html)。如需如何找到組織 ID 的相關資訊，請參閱[需求](../mcvid-reference/mcvid-requirements.md#section-a02f537129a64ffbb690d5738d360c26)。
 
-1. 在 **[!UICONTROL 追蹤伺服器]** 方塊中鍵入追蹤伺服器的名稱。如果您不確定如何找到追蹤伺服器，請參閱 [常見問題](../mcvid-faq-intro/mcvid-faq.md) 並 [正確填入trackingServer和trackingServerSecure變數](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
+1. 在 **[!UICONTROL 追蹤伺服器]** 方塊中鍵入追蹤伺服器的名稱。如果您不確定如何找到追蹤伺服器，請參閱 [常見問題](../mcvid-faq-intro/ecid-faq.md) 並 [正確填入trackingServer和trackingServerSecure變數](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
 1. 按一下 **[!UICONTROL 「建立工具]** 」和 **[!UICONTROL 「儲存變更]**」。
 
    儲存後，就會將 ID 服務設定為 DTM 中的工具。不過，此工具尚未可供使用。DTM 工具仍需經過 DTM 發佈/核准程序，您也可以設定其他參數。如需 DTM 核准程序的相關資訊，請參閱[使用者基本入門](https://marketing.adobe.com/resources/help/en_US/dtm/user-basics-jump-start.html)影片。如需可新增至 DTM 之其他參數的相關資訊，請參閱 [DTM 的 Experience Cloud ID 服務設定](../mcvid-implementation-guides/mcvid-standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
