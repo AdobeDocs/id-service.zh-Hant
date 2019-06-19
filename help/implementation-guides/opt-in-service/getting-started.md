@@ -5,7 +5,7 @@ seo-title: 設定加入服務
 title: 設定加入服務
 uuid: f1c27139-cef2-4122-aff12-c839 cfc82 e6 e
 translation-type: tm+mt
-source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 將選擇加入服務作為Experience Cloud解決方案所使用的單一參照單點(稱為「選擇加入」)來決定是否要在訪客裝置上建立Cookie。
 
-選擇加入服務是隨 [Experience Cloud ID(ECID)](https://marketing.adobe.com/resources/help/en_US/mcvid/) 搭售的JavaScript程式庫，並存在於全域 `adobe` 物件中做為 `adobe.optIn` 物件的訪客JS中。安裝的Opt-in服務可讓您指定訪客是否可一次加入Adobe解決方案，或在序列中以順序提供解決方案。選擇加入服務許可管理功能可讓您針對特定隱私權需求實施各種設定。
+選擇加入服務是隨Experience Cloud ID(ECID)搭售的JavaScript程式庫，並存在於全域 `adobe` 物件中做為 `adobe.optIn` 物件的訪客JS中。安裝的Opt-in服務可讓您指定訪客是否可一次加入Adobe解決方案，或在序列中以順序提供解決方案。選擇加入服務許可管理功能可讓您針對特定隱私權需求實施各種設定。
 
 選擇加入服務可讓您指定訪客是否可一次選擇加入Adobe解決方案，或在序列中以順序提供解決方案。客戶完成並記錄核准程序後，所有的 Adobe 解決方案便能擷取 CMP 訪客核准，並以相關的同意呼叫回應。
 
