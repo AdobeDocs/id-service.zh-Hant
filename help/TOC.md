@@ -5,7 +5,7 @@ audience: 使用者
 user-guide-title: Experience Platform Identity Service說明
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 1af38efa5e85c09548a6dee6c9c550900f90a8ed
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -81,7 +81,7 @@ source-git-commit: 1af38efa5e85c09548a6dee6c9c550900f90a8ed
    + [參考概述](reference/reference.md)
    + Analytics 參考 {#analytics-reference}
       + [Analytics參考概述](reference/analytics-reference/analytics-reference.md)
-      + [設定分析和識別碼](reference/analytics-reference/analytics-ids.md)
+      + [設定 Analytics 和 Experience Cloud ID](reference/analytics-reference/analytics-ids.md)
       + [Analytics ID 的作業順序](reference/analytics-reference/analytics-order-of-operations.md)
       + [身分服務移轉決策點](reference/analytics-reference/migration-decisions.md)
       + [身分服務移轉案例](reference/analytics-reference/migration-scenarios.md)
