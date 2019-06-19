@@ -1,19 +1,19 @@
 ---
-description: 關於Experience Platform Identity Service本身的常見問題，以及有關ID服務和其他Experience Cloud解決方案組合的區段。
+description: 關於 Experience Cloud ID 服務的常見問題集，以及關於 ID 服務和其他 Experience Cloud 解決方案組合的章節。
 keywords: ID 服務
-seo-description: 關於Experience Platform Identity Service本身的常見問題，以及有關ID服務和其他Experience Cloud解決方案組合的區段。
+seo-description: 關於 Experience Cloud ID 服務的常見問題集，以及關於 ID 服務和其他 Experience Cloud 解決方案組合的章節。
 seo-title: 常見問題解答
 title: 常見問題解答
 uuid: b075957b-165f-4087-99ad-bb608 b4 d4967
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
 
 # 常見問題解答 {#faqs}
 
-關於Experience Platform Identity Service本身的常見問題，以及有關ID服務和其他Experience Cloud解決方案組合的區段。
+關於 Experience Cloud ID 服務的常見問題集，以及關於 ID 服務和其他 Experience Cloud 解決方案組合的章節。
 
 * [ID 服務常見問題解答](faq.md)
 * [Analytics 與 ID 服務常見問題](analytics-faq.md)
