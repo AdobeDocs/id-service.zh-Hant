@@ -1,19 +1,19 @@
 ---
-description: 這些指示適用於想要使用Experience Platform Identity Service且不使用動態標籤管理(DTM)的目標客戶。不過，我們強烈建議您使用 DTM 來實施 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
+description: 這些指示適用於想要使用Experience Cloud ID服務且不使用動態標籤管理(DTM)的目標客戶。不過，我們強烈建議您使用 DTM 來實施 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
 keywords: ID 服務
-seo-description: 這些指示適用於想要使用Experience Platform Identity Service且不使用動態標籤管理(DTM)的目標客戶。不過，我們強烈建議您使用 DTM 來實施 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
-seo-title: 實作適用於Target的Experience Platform Identity Service
-title: 實作適用於Target的Experience Platform Identity Service
+seo-description: 這些指示適用於想要使用Experience Cloud ID服務且不使用動態標籤管理(DTM)的目標客戶。不過，我們強烈建議您使用 DTM 來實施 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
+seo-title: 實施適用於 Target 的 Experience Cloud ID 服務
+title: 實施適用於 Target 的 Experience Cloud ID 服務
 uuid: cb3581fa-4c4b-43aa-bb8 e-8db85 a6 a1 ef
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# 實作適用於Target的Experience Platform Identity Service{#implement-the-experience-cloud-id-service-for-target}
+# 實施適用於 Target 的 Experience Cloud ID 服務{#implement-the-experience-cloud-id-service-for-target}
 
-這些指示適用於想要使用Experience Platform Identity Service且不使用動態標籤管理(DTM)的目標客戶。不過，我們強烈建議您使用 DTM 來實施 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
+這些指示適用於想要使用Experience Cloud ID服務且不使用動態標籤管理(DTM)的目標客戶。不過，我們強烈建議您使用 DTM 來實施 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
 
 >[!IMPORTANT]
 >
@@ -23,11 +23,11 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 
 
-## 步驟1：取得ID服務程式碼 {#section-b32ba0548aa546a79dd38be59832a53e}
+## Step 1: Get the ID Service code {#section-b32ba0548aa546a79dd38be59832a53e}
 
-需要 [!DNL ID Service]`VisitorAPI.js` 程式碼程式庫。聯絡[客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)以取得此程式碼。
+The [!DNL ID Service] requires the `VisitorAPI.js` code library. 聯絡[客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)以取得此程式碼。
 
-## 步驟2：將Visitor. getInstance函數新增至ID服務程式碼 {#section-287ef2958e9f43858fe9d630ae519e22}
+## Step 2: Add the Visitor.getInstance function to the ID Service code {#section-287ef2958e9f43858fe9d630ae519e22}
 
 **第 1 部分: 複製下方的 Visitor.getInstance 函數**
 
@@ -52,7 +52,7 @@ Version and copyright section
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE");
 ```
 
-## 步驟3：將Experience Cloud組織ID新增至Visitor. getInstance {#section-522b1877be9243c39b222859b821f0ce}
+## Step 3: Add your Experience Cloud Organization ID to Visitor.getInstance {#section-522b1877be9243c39b222859b821f0ce}
 
 `Visitor.getInstance` 在函數中，以 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE`[!DNL Experience Cloud] 您的組織ID取代。如果您不知道組織 ID，可以在 [!DNL Experience Cloud] 管理頁面中找到。另請參閱[管理 - 核心服務](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html)。您編輯的函數看起來可能類似於下列範例。
 
@@ -62,11 +62,11 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 >
 >*請勿* 變更組織ID中的字元大小寫。ID 區分大小寫，需如實使用。
 
-## 步驟4：新增訪客API程式碼至頁面 {#section-02d8dd7678b64a85b5abc1c4ef0845dd}
+## Step 4: Add Visitor API code to the page {#section-02d8dd7678b64a85b5abc1c4ef0845dd}
 
-在檔案參考之前，將 `VisitorAPI.js` 檔案部署至 `<head>` 標記中的網站 `mbox.js` 。[!DNL Experience Cloud] ID服務必須在第一個 [!DNL Target] 網路呼叫產生之前執行。測試並驗證之後，將程式碼移至生產環境。
+Deploy the `VisitorAPI.js` file to your site in the `<head>` tags before the reference to the `mbox.js` file. [!DNL Experience Cloud] ID服務必須在第一個 [!DNL Target] 網路呼叫產生之前執行。測試並驗證之後，將程式碼移至生產環境。
 
-## 步驟5：測試並部署ID服務程式碼 {#section-e81ee439bb8a4c2abea43d76f3112e9c}
+## Step 5: Test and deploy ID Service code {#section-e81ee439bb8a4c2abea43d76f3112e9c}
 
 您可以依下列方式進行測試和部署。
 
@@ -75,9 +75,9 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 若要測試您的 ID 服務實施:
 
 * 檢查托管頁面之網域中的 AMCV Cookie。
-* 驗證 `mboxMCGVID` 會出現在 [!DNL Target] 您的請求中，並包含 [!DNL Experience Cloud] ID(MID)。
+* Verify `mboxMCGVID` appears in your [!DNL Target] request and that it contains the [!DNL Experience Cloud] ID (MID).
 
-如需AMCV Cookie和MID的相關資訊，請參閱 [Cookie和Experience Platform Identity Service](../introduction/cookies.md) 。
+See [Cookies and the Experience Cloud ID Service](../introduction/cookies.md) for information about the AMCV cookie and the MID.
 
 **部署**
 
