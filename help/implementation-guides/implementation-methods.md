@@ -1,29 +1,29 @@
 ---
-description: Experience Platform Identity Service標準和非標準實作的指示和程式碼範例。
+description: Experience Cloud ID服務標準和非標準實作的指示和程式碼範例。
 keywords: ID 服務
-seo-description: Experience Platform Identity Service標準和非標準實作的指示和程式碼範例。
+seo-description: Experience Cloud ID服務標準和非標準實作的指示和程式碼範例。
 seo-title: 實施指南
 title: 實施指南
 uuid: d41250e2-09f4-4a8b-8d-54d43e9281c9
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # 實施方法
 
-Experience Platform Identity Service標準和非標準實作的指示和程式碼範例。
+Experience Cloud ID服務標準和非標準實作的指示和程式碼範例。
 
 >[!IMPORTANT]
 >
->開始使用這些程序之前，請務必閱讀並瞭解 [ID服務需求](../reference/requirements.md) 。
+>Be sure to read and understand the [ID service requirements](../reference/requirements.md) before getting started with these procedures.
 
-## 標準實作 {#section-ea1e5270f2184f85a2e85214a6ac60cb}
+## Standard implementation {#section-ea1e5270f2184f85a2e85214a6ac60cb}
 
-標準實作使用 [!DNL Dyanamic Tag Manager] (DTM)可協助您開始使用ID服務，並將它與其他 [!DNL Experience Cloud] 解決方案整合。我們強烈建議您使用 DTM 來實施 ID 服務。若要開始執行，請參閱[透過 DTM 實現的標準實施](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)。
+A standard implementation uses [!DNL Dyanamic Tag Manager] (DTM) to help you get started with the ID service and integrate it with other [!DNL Experience Cloud] solutions. 我們強烈建議您使用 DTM 來實施 ID 服務。若要開始執行，請參閱[透過 DTM 實現的標準實施](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)。
 
-## 非標準實作 {#section-2c4f2db1f9704315a7cccab6d2e07113}
+## Non-standard implementations {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
 這些程序和程式碼範例可協助您以手動或非標準方式來設定 [!DNL Experience Cloud] ID 服務。請注意，這些實施通常在技術上較複雜並具有挑戰性。您可能需要準備一些稀有的工程資源或必須用掉大量的 Adobe 顧問合約支援時間。
 
