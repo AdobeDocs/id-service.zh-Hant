@@ -1,19 +1,19 @@
 ---
-description: 傳回Experience Platform Identity Service地區ID。地區 ID (或位置點擊) 是代表特定 ID 服務資料中心之地理位置的數字識別碼。您需要地區 ID 才能對 Audience Manager 進行伺器服端 API 呼叫。
+description: 傳回Experience Cloud ID服務區域ID。地區 ID (或位置點擊) 是代表特定 ID 服務資料中心之地理位置的數字識別碼。您需要地區 ID 才能對 Audience Manager 進行伺器服端 API 呼叫。
 keywords: ID 服務
-seo-description: 傳回Experience Platform Identity Service地區ID。地區 ID (或位置點擊) 是代表特定 ID 服務資料中心之地理位置的數字識別碼。您需要地區 ID 才能對 Audience Manager 進行伺器服端 API 呼叫。
+seo-description: 傳回Experience Cloud ID服務區域ID。地區 ID (或位置點擊) 是代表特定 ID 服務資料中心之地理位置的數字識別碼。您需要地區 ID 才能對 Audience Manager 進行伺器服端 API 呼叫。
 seo-title: getLocationHint
 title: getLocationHint
 uuid: cdc312b7-d270-4a5 c-a2 bb-0fb37 f1 e2 f
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # getLocationHint{#getlocationhint}
 
-傳回Experience Platform Identity Service地區ID。地區 ID (或位置點擊) 是代表特定 ID 服務資料中心之地理位置的數字識別碼。您需要地區 ID 才能對 Audience Manager 進行伺器服端 API 呼叫。
+傳回Experience Cloud ID服務區域ID。地區 ID (或位置點擊) 是代表特定 ID 服務資料中心之地理位置的數字識別碼。您需要地區 ID 才能對 Audience Manager 進行伺器服端 API 呼叫。
 
 **語法：**` var *`變數名稱`* = visitor.getLocationHint()`
 
