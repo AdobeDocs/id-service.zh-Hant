@@ -1,19 +1,19 @@
 ---
-description: 'Experience Platform Identity Service提供通用的永久性ID，可識別Experience Cloud所有解決方案中的訪客。 '
+description: 'Experience Cloud ID 服務提供永久性的通用 ID，可識別 Experience Cloud 所有解決方案中的訪客。 '
 keywords: ID 服務
-seo-description: Adobe Experience Platform Identity Service(ID服務)提供通用的永久性ID，可識別Experience Cloud所有解決方案中的訪客。它可取代 Analytics、Audience Manager、Target 等服務及其他 Experience Cloud 解決方案或功能的 ID 產生碼。
-seo-title: Experience Platform Identity Service
-title: Experience Platform Identity Service
+seo-description: Adobe Experience Cloud ID服務(ID服務)提供通用的永久性ID，可識別Experience Cloud所有解決方案中的訪客。它可取代 Analytics、Audience Manager、Target 等服務及其他 Experience Cloud 解決方案或功能的 ID 產生碼。
+seo-title: Experience Cloud ID 服務
+title: Experience Cloud ID 服務
 uuid: b68194b-e549-4f6 f-bfaf-7744926eaaac
 translation-type: tm+mt
-source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Adobe Experience Platform Identity Service {#experience-cloud-id-service}
+# Adobe Experience Cloud ID Service {#experience-cloud-id-service}
 
-Adobe Experience Platform Identity Service(身分服務)提供通用、永久性ID，可識別Experience Cloud所有解決方案中的訪客。它可取代 Analytics、Audience Manager、Target 等服務及其他 Experience Cloud 解決方案或功能的 ID 產生碼。
+Adobe Experience Cloud ID服務(ID服務)提供通用的永久性ID，可識別Experience Cloud所有解決方案中的訪客。它可取代 Analytics、Audience Manager、Target 等服務及其他 Experience Cloud 解決方案或功能的 ID 產生碼。
 
 <table id="table_5E612F746A704FE095B809A013EE977F" class="simpletable"> 
  <tbody> 
@@ -21,9 +21,9 @@ Adobe Experience Platform Identity Service(身分服務)提供通用、永久性
    <td colname="col1"> <p> <b>快速入門</b> </p> <p> 
      <ul id="ul_D5EC6A54A03F4AB595B588116A7C1296"> 
       <li id="li_845F6DE25A1241439BCDCBC00459D7EB"> <a href="introduction/overview.md" format="dita" scope="local"> 概述 </a> </li> 
-      <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local"> Experience Platform Identity Service需求 </a> </li> 
+      <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local"> Experience Cloud ID 服務規定 </a> </li> 
       <li id="li_CBEEE79B45644F28A52B58DDF23DAD4F"> <a href="implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445" format="dita" scope="local"> 透過 DTM 實現的標準實施 </a> </li> 
-     </ul> </p> <p><b>Experience Cloud ID Javascript 資料庫</b> </p> <p>Experience Platform Identity Service的JavaScript位於： <a href="https://github.com/Adobe-Marketing-Cloud/id-service/releases" format="https" scope="external"> https://github.com/Adobe-Marketing-Cloud/id-service/releases</a> </p> <p> <b>全新或精選項目</b> </p> <p> 
+     </ul> </p> <p><b>Experience Cloud ID Javascript 資料庫</b> </p> <p>JavaScript for the Experience Cloud ID Service is located at: <a href="https://github.com/Adobe-Marketing-Cloud/id-service/releases" format="https" scope="external"> https://github.com/Adobe-Marketing-Cloud/id-service/releases</a> </p> <p> <b>全新或精選項目</b> </p> <p> 
      <ul id="ul_B0A25B6827734D55BB1E20D12334AC21"> 
       <li id="li_A66924F4948F4A5ABA545A89A28A6F6A"><a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local"> 選擇加入服務</a> </li> 
       <li id="li_92D49CB788AD478EA74BCF5328CB9A14"> <a href="library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues </a> </li> 
