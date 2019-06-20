@@ -1,19 +1,19 @@
 ---
-description: 2017年Experience Platform Identity Service的功能發行、更新或變更。
+description: 2017年Experience Cloud ID服務的發行、更新或變更。
 keywords: ID 服務
-seo-description: 2017年Experience Platform Identity Service的功能發行、更新或變更。
+seo-description: 2017年Experience Cloud ID服務的發行、更新或變更。
 seo-title: 2017 年發行說明
 title: 2017 年發行說明
 uuid: 79452df0-49db-42b8-96Fe-01aa7629fb5
 translation-type: tm+mt
-source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # 2017 年發行說明 {#release-notes}
 
-2017年Experience Platform Identity Service的功能發行、更新或變更。
+2017年Experience Cloud ID服務的發行、更新或變更。
 
 [Experience Cloud 發行說明](https://marketing.adobe.com/resources/help/en_US/whatsnew/)也會納入這些變更。如需查看較早的 ID 服務發行說明，請參閱[之前的發行說明](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)或此頁面底部的連結。
 
@@ -51,9 +51,9 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * 先前在瀏覽器中按上一頁按鈕時會造成 ID 服務擲回錯誤，這個與 Chrome 相關的錯誤已經修正。
 * 現在當事件呼叫回應中的地區 ID 變更時，ID 服務就會重新進行 ID 同步。
-* 新增文件，[內容安全政策和Experience Platform Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)，說明如何對ID服務使用的Adobe網域進行白名單呼叫。
+* 新增文件，[內容安全性原則及 Experience Cloud ID 服務](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)，說明如何將 ID 服務使用的 Adobe 網域呼叫加入白名單。
 
-## 2.4版 {#section-f4d1608dd8894f558a92b82e83321200}
+## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
 2017 年 8 月
 
@@ -76,7 +76,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 更新及修訂[常見問答](/help/faq-intro/faq-intro.md) 集，以針對不同 [!DNL Experience Cloud] 解決方案包含個別的常見問答集。
 
-## 2.3版 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
+## Version 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
 2017 年 7 月
 
@@ -161,7 +161,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  </tbody> 
 </table>
 
-## 2.1版 {#section-5e666dc47c2f4f92999e92697d75799e}
+## Version 2.1 {#section-5e666dc47c2f4f92999e92697d75799e}
 
 發行日期：2017年月
 
@@ -181,7 +181,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID 服務 API 方法，<span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>、<span class="varname"> SDID</span>)</span></p> </td> 
-   <td colname="col2"> <p>此公用方法可附加至<span class="wintitle">增補資料 ID</span> (SDID) 作為查詢字串參數，以重新導向 URL。請參閱 <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendElementalDataIDTo</a>。(MCID-285) </p> </td> 
+   <td colname="col2"> <p>此公用方法可附加至<span class="wintitle">增補資料 ID</span> (SDID) 作為查詢字串參數，以重新導向 URL。See <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>. (MCID-285) </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -194,13 +194,13 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 [搭配不同的 Experience Cloud 解決方案和服務使用 DNS 預先擷取`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
 
-## 2.0版 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
+## Version 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
 2017 年 1 月
 
 >[!IMPORTANT]
 >
->依預設，ID服務程式碼v2.0會自動同步ID與Adobe Media Optimizer。這表示您將會看見來自頁面的呼叫， `cm.eversttech.net`這是受控制的舊 [!DNL Media Optimizer] 網域 [!DNL Adobe]。另請參閱[了解 ID 同步和比對率](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)。
+>依預設，ID服務程式碼v2.0會自動同步ID與Adobe Media Optimizer。This means you&#39;ll see a call from the page to `cm.eversttech.net`, which is a legacy [!DNL Media Optimizer] domain controlled by [!DNL Adobe]. 另請參閱[了解 ID 同步和比對率](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)。
 
 **修正和改良**
 
