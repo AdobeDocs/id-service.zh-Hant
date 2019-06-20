@@ -2,16 +2,16 @@
 description: 這些指示、工具和程序可協助您判斷 ID 服務是否正確運作。這些測試適用於一般的 ID 服務，以及不同的 ID 服務與 Experience Cloud 解決方案組合。
 keywords: ID 服務
 seo-description: 這些指示、工具和程序可協助您判斷 ID 服務是否正確運作。這些測試適用於一般的 ID 服務，以及不同的 ID 服務與 Experience Cloud 解決方案組合。
-seo-title: 測試並驗證Experience Platform Identity Service
-title: 測試並驗證Experience Platform Identity Service
+seo-title: 測試並驗證Experience Cloud ID服務
+title: 測試並驗證Experience Cloud ID服務
 uuid: 442de9c3-c265-4412-89bd-aua286 dwhat6
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# 測試並驗證Experience Platform Identity Service{#test-and-verify-the-experience-cloud-id-service}
+# Test and verify the Experience Cloud ID Service{#test-and-verify-the-experience-cloud-id-service}
 
 這些指示、工具和程序可協助您判斷 ID 服務是否正確運作。這些測試適用於一般的 ID 服務，以及不同的 ID 服務與 Experience Cloud 解決方案組合。
 
@@ -31,18 +31,18 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 ## 使用 Adobe 偵錯工具進行測試 {#section-861365abc24b498e925b3837ea81d469}
 
-在除錯程式回應中看到(MID)時 [!DNL Experience Cloud ID] ，您的服務整合 [!DNL Adobe] 會正確設定。如需MID的詳細資訊，請參閱 [Cookie和Experience Platform Identity Service](../introduction/cookies.md) 。
+Your service integration is configured properly when you see a [!DNL Experience Cloud ID] (MID) in the [!DNL Adobe] debugger response. See [Cookies and the Experience Cloud ID Service](../introduction/cookies.md) for more information about the MID.
 
 若要使用 [!DNL Adobe][ 偵錯工具驗證 ID 服務的狀態](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html):
 
 1. 清除瀏覽器 Cookie 或開啟匿名瀏覽工作階段。
 1. 載入包含 ID 服務程式碼的測試頁面。
-1. 開啓 [!DNL Adobe] 除錯程式。
+1. Open the [!DNL Adobe] debugger.
 1. 查看 MID 的結果。
 
-## 瞭解Adobe Debugger結果 {#section-bd2caa6643d54d41a476d747b41e7e25}
+## Understanding Adobe Debugger results {#section-bd2caa6643d54d41a476d747b41e7e25}
 
-MID會儲存在使用此語法的索引鍵值配對中： `MID= *`Experience Cloud ID`*`。偵錯工具會顯示此項資訊，如下所示。
+The MID is stored in a key-value pair that uses this syntax: `MID= *`Experience Cloud ID`*`. 偵錯工具會顯示此項資訊，如下所示。
 
 **成功**
 
@@ -64,7 +64,7 @@ mid=20265673158980419722735089753036633573
 * 無法傳回 MID。
 * 傳回錯誤訊息，指出您的 ID 尚未佈建。
 
-## 使用Charles HTTP Proxy進行測試 {#section-d9e91f24984146b2b527fe059d7c9355}
+## Testing with the Charles HTTP proxy {#section-d9e91f24984146b2b527fe059d7c9355}
 
 若要使用 Charles 驗證 ID 服務的狀態:
 
@@ -73,19 +73,19 @@ mid=20265673158980419722735089753036633573
 1. 載入包含 ID 服務程式碼的測試頁面。
 1. 查看要求和回應呼叫，以及下方所述的資料。
 
-## 瞭解Charles結果 {#section-c10c3dc0bb9945cbaffcf6fec7082fab}
+## Understanding Charles results {#section-c10c3dc0bb9945cbaffcf6fec7082fab}
 
 請參閱本節以了解當您使用 Charles 監控 HTTP 呼叫時，應至何處查看哪些項目。
 
 **Charles中成功的ID服務要求**
 
-當 `Visitor.getInstance` 函數對 `dpm.demdex.net` 進行 JavaScript 呼叫時，表示您的 ID 服務程式碼正常運作。成功的要求包含[組織 ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26)。組織ID會傳遞為使用此語法的索引鍵值配對： `d_orgid= *`組織ID`*`。查看 `dpm.demdex.net` 標籤下方的 [!DNL Structure] 和 JavaScript 呼叫。查看 [!DNL Request] 標籤下方的組織 ID。
+當 `Visitor.getInstance` 函數對 `dpm.demdex.net` 進行 JavaScript 呼叫時，表示您的 ID 服務程式碼正常運作。成功的要求包含[組織 ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26)。The Organization ID is passed as a key-value pair that uses this syntax: `d_orgid= *`organization ID`*`. 查看 `dpm.demdex.net` 標籤下方的 [!DNL Structure] 和 JavaScript 呼叫。查看 [!DNL Request] 標籤下方的組織 ID。
 
 ![](assets/charles_request.png)
 
 **Charles中成功的ID服務回應**
 
-當[資料收集伺服器](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) (DCS) 的回應傳回 MID 時，表示您的帳戶已正確佈建。MID會傳回作為使用此語法的索引鍵值配對： `d_mid: *`訪客Experience Cloud ID`*`。查看 [!DNL Response] 標籤中的 MID，如下所示。
+當[資料收集伺服器](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) (DCS) 的回應傳回 MID 時，表示您的帳戶已正確佈建。The MID is returned as a key-value pair that uses this syntax: `d_mid: *`visitor Experience Cloud ID`*`. 查看 [!DNL Response] 標籤中的 MID，如下所示。
 
 ![](assets/charles_response_success.png)
 
