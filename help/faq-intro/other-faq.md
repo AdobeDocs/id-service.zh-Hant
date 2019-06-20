@@ -6,12 +6,12 @@ seo-title: 其他Experience Cloud解決方案的常見問答集
 title: 其他Experience Cloud解決方案的常見問答集
 uuid: 7d848663-6cbb-4d80-ab06-7b6 d2 dc20 e2 b
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# 其他Experience Cloud解決方案的常見問答集{#faqs-for-other-experience-cloud-solutions}
+# FAQs for other Experience Cloud solutions{#faqs-for-other-experience-cloud-solutions}
 
 關於搭配 ID 服務使用其他 Experience Cloud 解決方案的功能、功用和問題之常見問題集。
 
@@ -25,7 +25,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 ## Analytics 與 Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
-**實作Experience Platform Identity Service後，將會從[!DNL Adobe Analytics]使用者[!DNL Audience Manager]的瀏覽記錄匯出嗎？**
+**在我實作 Experience Cloud ID 服務後，使用者的瀏覽歷史記錄會從[!DNL Adobe Analytics]匯出到[!DNL Audience Manager]嗎?**
 
 您有兩個選擇:
 
