@@ -1,23 +1,23 @@
 ---
-description: 概述Experience Platform Identity Service如何與舊版Analytics ID搭配運作。
+description: 概述Experience Cloud ID Service與舊版Analytics ID的運作方式。
 keywords: ID 服務
-seo-description: 概述Experience Platform Identity Service如何與舊版Analytics ID搭配運作。
+seo-description: 概述Experience Cloud ID Service與舊版Analytics ID的運作方式。
 seo-title: Analytics 與 Experience Cloud ID 請求
 title: Analytics 與 Experience Cloud ID 請求
 uuid: 28beed16-7ef9-4824-8e82-853930756ea
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # Analytics 與 Experience Cloud ID 請求{#analytics-and-experience-cloud-id-requests}
 
-概述Experience Platform Identity Service如何與舊版Analytics ID搭配運作。
+概述Experience Cloud ID Service與舊版Analytics ID的運作方式。
 
 ## 摘要 {#section-64d8523ff7634cb987d0c6480f587dd3}
 
-過去Experience Platform Identity Service已緊密整合至Adobe Analytics。除了保有 Analytics 的完整，現在也可執行 [!DNL Experience Cloud] 中其他解決方案和功能的重要功能。由於這項歷史舊有、檢查或寫入Analytics ID的方式，與Experience Platform Identity Service Requests和Sets ID [的「How the Experience Platform….」中所述的一般程序稍有不同。](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)如需檢查ID之操作順序的其他資訊，請參閱 [設定Analytics和Experience Cloud ID](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6)。
+過去Experience Cloud ID服務已緊密整合至Adobe Analytics。除了保有 Analytics 的完整，現在也可執行 [!DNL Experience Cloud] 中其他解決方案和功能的重要功能。Because of this historical legacy, checking for or writing an Analytics ID works a little differently than with the generic process described in [How the Experience Cloud ID Service Requests and Sets IDs...](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a). For additional information on the order of operations for checking IDs, see [Setting Analytics and Experience Cloud IDs](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6).
 
 ## 未在瀏覽器中設定 AMCV Cookie {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
 
@@ -37,11 +37,11 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>已設定 s_vi Cookie</b> </p> </td> 
-   <td colname="col2"> <p>當具有s_ vi Cookie的網站訪客首次遇到Experience Platform Identity Service時，此服務會： </p> 
+   <td colname="col2"> <p>當具有s_ vi Cookie的網站訪客首次遇到Experience Cloud ID Service時，此服務會： </p> 
     <ul id="ul_BE584810280D4874AF802A9247011787"> 
      <li id="li_AA395B09A3174AF78F3EC10053E2E4F5">將儲存在 s_vi Cookie 中的 <span class="keyword">Analytics</span> ID 寫入 AMCV Cookie。這會寫入成為 <span class="keyword">Analytics</span> ID (AID)。此動作<i>不會</i>影響訪客計數。<span class="keyword">Analytics</span> 將繼續使用舊有 ID 識別使用者。 </li> 
      <li id="li_8735DE21FEA542BA8024109B8FE1E2ED">將 MID 寫入 AMCV Cookie。MID 可識別不同解決方案中的使用者。 </li> 
-    </ul> <p> <p>注意： <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> 在寬限期</a>內，資料中心回應一律包含儲存在s_ vi Cookie中的舊ID。在寬限期期間，舊有 ID 會寫入 AMCV Cookie 為 AID 值。 </p> </p> </td> 
+    </ul> <p> <p>Note: With a <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> grace period</a>, the data center response always includes a legacy ID that is stored in the s_vi cookie. 在寬限期期間，舊有 ID 會寫入 AMCV Cookie 為 AID 值。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
