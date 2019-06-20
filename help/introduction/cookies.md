@@ -2,20 +2,20 @@
 description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie，以及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
 keywords: 點陣化；ID服務
 seo-description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie，以及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
-seo-title: Cookie和Experience Platform Identity Service
-title: Cookie和Experience Platform Identity Service
+seo-title: Cookie 和 Experience Cloud ID 服務
+title: Cookie 和 Experience Cloud ID 服務
 uuid: c5cbd235-37ee-4605-8792-b1 a991 e190 ad
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Cookie和Experience Platform Identity Service{#cookies-and-the-experience-cloud-id-service}
+# Cookie 和 Experience Cloud ID 服務{#cookies-and-the-experience-cloud-id-service}
 
 ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie，以及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
 
-## 瞭解ID服務Cookie {#section-f438168beaec409ab8b2cc58bd021e26}
+## Understanding ID Service cookies {#section-f438168beaec409ab8b2cc58bd021e26}
 
 ID 服務有賴 AMCV、AMCVS 和 Demdex Cookie 才能順利運作。這些 Cookie 只是儲存 ID 服務所使用之資料的檔案。這些 ID 服務與其他網站或服務儲存在瀏覽器中的第一方或第三方 Cookie 相同，都不具危險性和惡意，且也遵守與管理其他第一方或第三方 Cookie 相同的規則。如需ID服務使用Cookie的詳細資訊，請參閱下列幾節。
 
@@ -39,7 +39,7 @@ ID服務所設定Cookie的下列屬性。
 
 **名稱**
 
-AMCV Cookie名稱遵循語法 `AMCV_<variable name>@AdobeOrg`。在名稱中， `<variable name>` 元素是Experience Cloud組織ID部分的預留位置。此 ID 會由 ID 服務程式碼中的 `Visitor.getInstance` 函數傳遞至 DCS。
+The AMCV cookie name follows the syntax `AMCV_<variable name>@AdobeOrg`. In the name, the `<variable name>` elements are placeholders for part of your Experience Cloud organization ID. 此 ID 會由 ID 服務程式碼中的 `Visitor.getInstance` 函數傳遞至 DCS。
 
 完整格式的 Cookie 名稱類似以下:
 
@@ -49,7 +49,7 @@ AMCV_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **內容**
 
-AMCV Cookie 包含 Experience Cloud 訪客 ID 或 MID。MID會儲存在遵循此語法的索引鍵值配對 `mid|<Experience Cloud ID>`中。
+AMCV Cookie 包含 Experience Cloud 訪客 ID 或 MID。The MID is stored in a key-value pair that follows this syntax, `mid|<Experience Cloud ID>`.
 
 完整格式的機碼值組類似以下:
 
@@ -69,7 +69,7 @@ mid|20265673158980419722735089753036633573
 
 **名稱**
 
-AMCV Cookie名稱遵循語法 `AMCVS_####@AdobeOrg`。在名稱中，#### 元素是 Experience Cloud 組織 ID 部分的預留位置。此 ID 會由 ID 服務程式碼中的 `theVisitor.getInstance` 函數傳入 DCS。
+The AMCVS cookie name follows the syntax `AMCVS_####@AdobeOrg`. 在名稱中，#### 元素是 Experience Cloud 組織 ID 部分的預留位置。此 ID 會由 ID 服務程式碼中的 `theVisitor.getInstance` 函數傳入 DCS。
 
 完整格式的 Cookie 名稱類似以下:
 
@@ -79,7 +79,7 @@ AMCVS_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **內容**
 
-AMCVS Cookie 會作為標幟，指出工作階段已初始化。當工作階段結束時，其值始終 `1` 是並中斷。
+AMCVS Cookie 會作為標幟，指出工作階段已初始化。Its value is always `1` and discontinues when the session has ended.
 
 **網域**
 
@@ -114,7 +114,7 @@ AMCVS Cookie 會作為標幟，指出工作階段已初始化。當工作階段�
  </tbody> 
 </table>
 
-如需相關資訊，請參閱 [「瞭解Demdex網域的呼叫」](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)。
+For related information, see [Understanding Calls to the Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
 
 ## 產生 Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -124,4 +124,4 @@ ID 服務在您的頁面載入時隨即開始建立 MID。在此過程中，`vis
 
 ## 下一步 {#section-8db1727a63bc4ff68b495f270315d453}
 
-瞭解 [Experience Platform Identity Service Requests and Set ID….](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
+See [How the Experience Cloud ID Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
