@@ -1,19 +1,19 @@
 ---
-description: 傳回在Experience Platform Identity Service實作之前儲存在s_ vi Cookie中的舊有Analytics ID(如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
+description: 傳回在Experience Cloud ID服務實作之前儲存在s_ vi Cookie中的舊有Analytics ID(如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
 keywords: ID 服務
-seo-description: 傳回在Experience Platform Identity Service實作之前儲存在s_ vi Cookie中的舊有Analytics ID(如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
+seo-description: 傳回在Experience Cloud ID服務實作之前儲存在s_ vi Cookie中的舊有Analytics ID(如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9 b4 d247 a0 f8
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-傳回在Experience Platform Identity Service實作之前儲存在s_ vi Cookie中的舊有Analytics ID(如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
+傳回在Experience Cloud ID服務實作之前儲存在s_ vi Cookie中的舊有Analytics ID(如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
 
 **語法** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
@@ -33,7 +33,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!TIP]
 >
->如果您是 [!DNL Analytics] 客戶，請同時檢查並傳送 [!DNL Analytics] ID至您的函數。例如，將隱藏表單元素中的訪客 ID 傳遞至使用資料插入 API 的伺服器端時，您會想要有兩個識別碼。在此情況下，您應收集並傳回 [!DNL Experience Cloud][!DNL Analytics] 訪客ID。請參閱 [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md)。
+>If you&#39;re an [!DNL Analytics] customer, also check for and send the [!DNL Analytics] ID to your function. 例如，將隱藏表單元素中的訪客 ID 傳遞至使用資料插入 API 的伺服器端時，您會想要有兩個識別碼。In this case, you should collect and return the [!DNL Experience Cloud] and [!DNL Analytics] visitor IDs. See [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md).
 
 **「aid」參數為舊有值 (Legacy Value)**
 
@@ -48,7 +48,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 **案例 2**
 
-您的組織 `aid` 在完整實作ID服務 [](../../reference/analytics-reference/grace-period.md) 前，會在查詢字串中看到參數。如果使用者瀏覽您的網站，而您未使用寬限期，則訪客會取得 `mid` ( [!DNL Experience Cloud] ID)參數。
+You will see the `aid` parameter in a query string when your organization is using a [grace period](../../reference/analytics-reference/grace-period.md) before fully implementing the ID service. If the user visiting your site is new, and you&#39;re not using a grace period, the visitor will get the `mid` ( [!DNL Experience Cloud] ID) parameter.
 
 >[!MORE_贊_ this]
 >
