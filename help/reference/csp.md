@@ -2,22 +2,22 @@
 description: 內容安全性原則 (CSP) 是一項 HTTP 標題和安全性功能，能讓瀏覽器控制要在網頁中載入的資源類型。如果您使用 ID 服務，且訂下嚴格的 CSP 以使用白名單來接受來自值得信賴網域的資料，請檢視本節的內容。您需要將此處所列的 Adobe 網域新增至您的 CSP 白名單中。
 keywords: ID 服務
 seo-description: 內容安全性原則 (CSP) 是一項 HTTP 標題和安全性功能，能讓瀏覽器控制要在網頁中載入的資源類型。如果您使用 ID 服務，且訂下嚴格的 CSP 以使用白名單來接受來自值得信賴網域的資料，請檢視本節的內容。您需要將此處所列的 Adobe 網域新增至您的 CSP 白名單中。
-seo-title: 內容安全政策與Experience Platform Identity Service
-title: 內容安全政策與Experience Platform Identity Service
+seo-title: 內容安全性原則及 Experience Cloud ID 服務
+title: 內容安全性原則及 Experience Cloud ID 服務
 uuid: 7399edf3-01c1-4730-834e-e2 d2 c5791 ff
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# 內容安全政策與Experience Platform Identity Service {#content-security-policies-and-the-experience-cloud-id-service}
+# 內容安全性原則及 Experience Cloud ID 服務 {#content-security-policies-and-the-experience-cloud-id-service}
 
 內容安全性原則 (CSP) 是一項 HTTP 標題和安全性功能，能讓瀏覽器控制要在網頁中載入的資源類型。如果您使用 ID 服務，且訂下嚴格的 CSP 以使用白名單來接受來自值得信賴網域的資料，請檢視本節的內容。您需要將此處所列的 Adobe 網域新增至您的 CSP 白名單中。
 
 ## CSP 檢視 {#section-5fde5c00a678455c914b8307a8caab82}
 
-CSP使用HTTP標題 `Content-Security-Policy` 來控制瀏覽器接受或載入頁面的資源類型。套用 CSP 能協助您避免以下情形:
+CSPs use the HTTP header `Content-Security-Policy` to control the type of resources a browsers accept or load on a page. 套用 CSP 能協助您避免以下情形:
 
 * 在來源為未知或未加入白名單的情況下載入 JavaScript 檔案。
 * 遭受跨網站指令檔 (XXS) 的攻擊。
@@ -53,7 +53,7 @@ CSP使用HTTP標題 `Content-Security-Policy` 來控制瀏覽器接受或載入�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>訪客 ID 服務</b> </p> </td> 
-   <td colname="col2"> <p>修改您的 CSP 以包含 <span class="codeph">*.demdex.net</span>。 </p> <p>對 <span class="codeph"> demdex. net</span> 網域的呼叫會用來產生 <a href="../introduction/cookies.md" format="dita" scope="local"> Cookie和Experience Platform Identity Service</a> 和ID同步。亦請參閱<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">瞭解向 Demdex 網域進行的呼叫</a>。 </p> </td> 
+   <td colname="col2"> <p>修改您的 CSP 以包含 <span class="codeph">*.demdex.net</span>。 </p> <p>Calls to the <span class="codeph"> demdex.net</span> domain are used to generate the <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud ID Service</a> and for ID syncs. 亦請參閱<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">瞭解向 Demdex 網域進行的呼叫</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
