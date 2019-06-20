@@ -6,7 +6,7 @@ seo-title: 混用 JavaScript 的伺服器端實作
 title: 混用 JavaScript 的伺服器端實作
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61 cb1 ed13 c
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -21,16 +21,16 @@ ID 服務 API 提供了 [getMarketingCloudVisitorID](../../library/get-set/getmc
 
 >[!IMPORTANT]
 >
->Java適用的AppMeasurement目前不支援Experience Platform Identity Service。
+>Java適用的AppMeasurement目前不支援Experience Cloud ID服務。
 
 ## 資料插入 API {#section-955ce7664a4646d38b3005cb2df40baf}
 
-在 `<visitorID>` 元素中包含Analytics訪客ID(如果已設定)。
+Include the Analytics visitor ID (if set) in the `<visitorID>` element.
 
-在元素中加入Experience `<marketingCloudVisitorID>` Cloud訪客ID。
+Include the Experience Cloud visitor ID in the `<marketingCloudVisitorID>` element.
 
 請參閱[支援的 XML 標籤](https://marketing.adobe.com/developer/en_US/documentation/data-insertion/r-supported-tags)。
 
 ## Java 適用的 AppMeasurement {#section-d664b94934924d048300d9c2b6560085}
 
-Java適用的AppMeasurement目前並不支援Experience Platform Identity Service。
+Java適用的AppMeasurement目前不支援Experience Cloud ID服務。
