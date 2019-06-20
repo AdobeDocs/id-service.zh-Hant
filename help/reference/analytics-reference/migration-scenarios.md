@@ -2,16 +2,16 @@
 description: 包含伺服器範例設定和必要的移轉步驟。
 keywords: ID 服務
 seo-description: 包含伺服器範例設定和必要的移轉步驟。
-seo-title: Experience Platform Identity Service移轉案例
-title: Experience Platform Identity Service移轉案例
+seo-title: Experience Cloud ID 服務移轉案例
+title: Experience Cloud ID 服務移轉案例
 uuid: 9e229045-6508-48c4-ae39-9537b4941853
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Experience Platform Identity Service移轉案例 {#experience-cloud-id-service-migration-scenarios}
+# Experience Cloud ID 服務移轉案例 {#experience-cloud-id-service-migration-scenarios}
 
 包含伺服器範例設定和必要的移轉步驟。
 
@@ -34,7 +34,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 * **Analytics JavaScript 檔案**: 多個 JavaScript 檔案。一個檔案用於主要網站，另一個檔案用於個別 CMS 中維護的支援區段。
 * **其他資料收集方法**: 一個網站區段上的硬式編碼影像標籤
 
-首先，此客戶應找出其 Adobe Experience Cloud 組織 ID (請參閱[需求](../../reference/requirements.md))。接著，應該設定移轉寬限期，因為他們使用多個 JavaScript 檔案。此客戶也會設定訪客移轉，然後從 `*.2o7.net` 變更 `*.sc.omtrdc.net`為移轉。
+首先，此客戶應找出其 Adobe Experience Cloud 組織 ID (請參閱[需求](../../reference/requirements.md))。接著，應該設定移轉寬限期，因為他們使用多個 JavaScript 檔案。This customer will also set up visitor migration and then migrate from `*.2o7.net` to `*.sc.omtrdc.net`.
 
 當此客戶更新至最新的 Analytics JavaScript 程式碼以準備開始使用 [!DNL Experience Cloud] ID 服務時，他們也將更新所有的硬式編碼影像標籤，以改用 JavaScript。
 
