@@ -1,19 +1,19 @@
 ---
-description: Experience Platform Identity Service取代舊有Analytics訪客ID方法。
+description: Experience Cloud ID服務取代舊有Analytics訪客ID方法。
 keywords: ID 服務
-seo-description: Experience Platform Identity Service取代舊有Analytics訪客ID方法。
+seo-description: Experience Cloud ID服務取代舊有Analytics訪客ID方法。
 seo-title: 設定 Analytics 和 Experience Cloud ID
 title: 設定 Analytics 和 Experience Cloud ID
-uuid: 421 cf597-a03 ca3-8ce8-d0 c80 cbb6 aca
+uuid: 421cf597-a03 ca3-8ce8-d0 c80 cbb6 aca
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # 設定 Analytics 和 Experience Cloud ID{#setting-analytics-and-experience-cloud-ids}
 
-Experience Platform Identity Service取代舊有Analytics訪客ID方法。
+Experience Cloud ID服務取代舊有Analytics訪客ID方法。
 
 實作 ID 服務之後，此程式碼會在 AppMeasurement 之前執行。ID 服務會擷取 Experience Cloud 和 Analytics ID，讓這些值在 AppMeasurement 載入時即已備妥。
 
@@ -25,7 +25,7 @@ Experience Platform Identity Service取代舊有Analytics訪客ID方法。
 
 **HTTP 標題**
 
-來自網站伺服器的 HTTP 回應會在瀏覽器中設定 Cookie。這是 `s_vi` Cookie設定的方式。`s_vi` Cookie會識別Analytics訪客。Cookie 設定後，便會隨所有後續 HTTP 請求傳送給該伺服器。
+來自網站伺服器的 HTTP 回應會在瀏覽器中設定 Cookie。This is how the `s_vi` cookie is set. `s_vi` Cookie會識別Analytics訪客。Cookie 設定後，便會隨所有後續 HTTP 請求傳送給該伺服器。
 
 當請求傳送至 Adobe 資料收集伺服器時，會檢查標題中是否有 `s_vi` Cookie。如果請求中有此 Cookie，便會用來識別訪客。如果請求中沒有 Cookie，則伺服器會產生獨特 [!DNL Experience Cloud] ID、在 HTTP 回應標題中將其設定為 Cookie，並隨請求將其傳回。後續造訪網站時，系統會將 Cookie 儲存在瀏覽器中，並傳回資料收集伺服器。因此，訪客再次造訪時即可識別出訪客。
 
@@ -66,7 +66,7 @@ JavaScript 可讀取和寫入第一方網域中設定的 Cookie (目前網站的
   <tr> 
    <td colname="col1"> <p> <img id="image_77A06981672745B6AEA8BB4D55911CCA" src="assets/step2_icon.png" /> </p> </td> 
    <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (s_vi Cookie)</a> </p> </td> 
-   <td colname="col3"> <p>訪客在您部署 <span class="keyword"> Experience Cloud</span> ID服務之前已有s_ vi Cookie，或者您已設定 <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> 寬限期</a> 。 </p> </td> 
+   <td colname="col3"> <p>The visitor had an existing s_vi cookie before you deployed the <span class="keyword"> Experience Cloud</span> ID service, or you have a <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> grace period</a> configured. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_0A950B1A6B004387AFEE8EED882739CB" src="assets/step3_icon.png" /> </p> </td> 
@@ -76,7 +76,7 @@ JavaScript 可讀取和寫入第一方網域中設定的 Cookie (目前網站的
   <tr> 
    <td colname="col1"> <p> <img id="image_6F0ED8FE3EF846CA8E6ECCC3C0070D85" src="assets/step4_icon.png" /> </p> </td> 
    <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> fid (H.25.3 或更新版本的後援 Cookie，或 JavaScript 適用的 AppMeasurement)</a> </p> </td> 
-   <td colname="col3"> <p>瀏覽器不接受第三方 Cookie 且 Analytics 追蹤伺服器已設定為第三方追蹤伺服器。 </p> <p> <p>注意: 如果您已在網站上實施 ID 服務，則舊版識別碼 <span class="codeph">fid</span> 並未使用。在這種情況下，不需要 <span class="codeph"> fid</span> ，因為第一方的 <a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV Cookie會</a> 使它失效。保留它是為了支援舊版程式碼且供歷史記錄之用。 </p> </p> </td> 
+   <td colname="col3"> <p>瀏覽器不接受第三方 Cookie 且 Analytics 追蹤伺服器已設定為第三方追蹤伺服器。 </p> <p> <p>注意: 如果您已在網站上實施 ID 服務，則舊版識別碼 <span class="codeph">fid</span> 並未使用。In this case, the <span class="codeph"> fid</span> is not needed because the first-party, <a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV cookie</a> makes it obsolete. 保留它是為了支援舊版程式碼且供歷史記錄之用。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
