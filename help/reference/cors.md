@@ -1,19 +1,19 @@
 ---
-description: 瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Platform Identity Service支援可讓這些用戶端、跨原始資源要求的CORS標準。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
+description: 瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Cloud ID服務支援啓用這些用戶端、跨原始資源要求的CORS標準。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
 keywords: ID 服務
-seo-description: 瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Platform Identity Service支援可讓這些用戶端、跨原始資源要求的CORS標準。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
-seo-title: Experience Platform Identity Service中的CORS支援
-title: Experience Platform Identity Service中的CORS支援
+seo-description: 瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Cloud ID服務支援啓用這些用戶端、跨原始資源要求的CORS標準。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
+seo-title: Experience Cloud ID 服務的 CORS 支援
+title: Experience Cloud ID 服務的 CORS 支援
 uuid: e656b573-72a8-4312-a7 d5-5cc3818 f0 a9 e9 e
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Experience Platform Identity Service中的CORS支援 {#cors-support-in-the-experience-cloud-id-service}
+# Experience Cloud ID 服務的 CORS 支援 {#cors-support-in-the-experience-cloud-id-service}
 
-瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Platform Identity Service支援可讓這些用戶端、跨原始資源要求的CORS標準。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
+瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Cloud ID服務支援啓用這些用戶端、跨原始資源要求的CORS標準。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
 
 ## 相同來源政策和 ID 服務要求的問題 {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
@@ -60,7 +60,7 @@ CORS 提供在不同網域間要求資源的安全、有效方法。CORS 規格�
  </tbody> 
 </table>
 
-另請參閱 [useCorsOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)。
+See also [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
 ## 使用 CORS 的其他好處 {#section-6f44f30694c44f95bf9854b8a2af8449}
 
