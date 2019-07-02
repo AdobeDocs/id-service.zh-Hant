@@ -4,8 +4,8 @@ keywords: ID 服務
 seo-description: 可讓您與 ID 服務互動的公開方法。
 seo-title: 方法
 title: 方法
-uuid: 184d0a62-0c8d-481b-9afe-b7 a67 bdafdce
-translation-type: tm+mt
+uuid: 184d0a62-0c8d-481b-9afe-b7a67bdafdce
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -17,9 +17,9 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 >[!NOTE]
 >
->*Experience Cloud ID Javascript Libraries* 最近移動。您可以在 [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases) 找到 ECID JS 資料庫的最新版本。
+>*Experience Cloud ID Javascript 資料庫*最近已移至其他位置。您可以在 [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases) 找到 ECID JS 資料庫的最新版本。
 
-相關文章：
+相關文章:
 
 + [appendSupplementalDataIDTo](mcvid-appendsupplementaldataidto.md)
 + [appendVisitorIDsTo (跨網域追蹤)](mcvid-appendvisitorid.md)
