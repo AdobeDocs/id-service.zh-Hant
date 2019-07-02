@@ -4,8 +4,8 @@ keywords: ID 服務
 seo-description: 當訪客從一個網域瀏覽到第二個網域時，此屬性會覆寫訪客的 Experience Cloud 和 Analytics ID。若要覆寫 ID，您必須在每個網域上擁有並已實施 ID 服務。此程式碼無法讓您覆寫您無權控制之網域上的 ID。
 seo-title: overwriteCrossDomainMCIDAndAID
 title: overwriteCrossDomainMCIDAndAID
-uuid: 8e48127a-ac62-4ea0-975-2a27 b20 ecbcf
-translation-type: tm+mt
+uuid: 8e48127a-ac62-4ea0-9756-2a27b20ecbcf
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 當訪客從一個網域瀏覽到第二個網域時，此屬性會覆寫訪客的 Experience Cloud 和 Analytics ID。若要覆寫 ID，您必須在每個網域上擁有並已實施 ID 服務。此程式碼無法讓您覆寫您無權控制之網域上的 ID。
 
-**語法：**`Visitor.overwriteCrossDomainMCIDAndAID: true|false` (預設為 `false`)
+**語法:** `Visitor.overwriteCrossDomainMCIDAndAID: true|false` (預設為 `false`)
 
 **程式碼範例**
 
@@ -31,7 +31,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ID-HERE", {
 }); 
 ```
 
-**使用個案**
+**使用案例**
 
 為了追蹤網站訪客，ID 服務會將 [!DNL Experience Cloud] ID (或 MID) 寫入瀏覽器 Cookie。下表列出並說明覆寫 ID 服務在其他網域中設定之現有 MID 的常見使用案例。
 
