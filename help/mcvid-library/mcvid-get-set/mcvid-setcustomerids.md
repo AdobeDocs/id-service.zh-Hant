@@ -4,8 +4,8 @@ keywords: ID 服務
 seo-description: setCustomerIDs 會設定 1 或多個機碼值組，定義客戶 ID 及其驗證狀態。
 seo-title: setCustomerIDs
 title: setCustomerIDs
-uuid: 4f960f98-cec2-4db6-84ea-0259e2128 ea2
-translation-type: tm+mt
+uuid: 4f960f98-cec2-4db6-84ea-0259e2128ea2
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
