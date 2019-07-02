@@ -4,8 +4,8 @@ keywords: ID 服務
 seo-description: 這是非同步 API，依預設會為 Analytics、ID 服務、資料收集退出、地理位置以及中繼資料「blob」內容傳回識別碼。您也可以透過選擇性的 visitor.FIELDS 列舉控制您要傳回的 ID。
 seo-title: getVisitorValues
 title: getVisitorValues
-uuid: 7fb831b3-cf7 e-40e2-a219-07fec28 ad49 c
-translation-type: tm+mt
+uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -26,16 +26,16 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ## 語法 {#section-5aebe3907b2b46e997f45a1d1ed35c09}
 
-此函數使用下列語法(斜體代表變數的預留位置)： ` var *`ValueSID`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`TypeID`*, visitor.FIELDS. *`類型`*]);`
+此函數使用下列語法 (斜體部分代表變數預留位置): ` var *`values`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`ID type`*, visitor.FIELDS. *`ID type`*]);`
 
 在函數參數中:
 
-* ` *`回呼`*` 代表您自己的回呼代碼，可接收傳回的ID。
-* *(選用)* ` visitor.FIELDS. *`ID類型`*` 是一個列舉，可讓您指定要傳回此函數的 [ID值](../../mcvid-library/mcvid-get-set/mcvid-getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) 。
+* ` *`callback`*` 代表您擁有的回呼程式碼，此程式碼用於接收傳回的 ID。
+* *(Optional)* ` visitor.FIELDS. *`ID type`*` 是列舉，可讓您指定想要此函數傳回的 [ID 值](../../mcvid-library/mcvid-get-set/mcvid-getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5)。
 
 請參閱以下所使用的案例和定義，以瞭解更多詳細資訊。
 
-## 使用案例 1: 要求預設資料集 {#section-36a31683558742a5915db3a391e09f7b}
+## 使用案例 1: 要求預設資料集{#section-36a31683558742a5915db3a391e09f7b}
 
 此程式碼會傳回標準的資料集。您的要求和回應看起來可能類似於下列範例。
 
@@ -60,9 +60,9 @@ visitor.getVisitorValues(visitorIdsCallback);
 }
 ```
 
-## 使用案例 2: 要求自訂資料集 {#section-467b2f4e513344c89b7332b05f6f59f3}
+## 使用案例 2: 要求自訂資料集{#section-467b2f4e513344c89b7332b05f6f59f3}
 
-此程式碼使用選用的陣列，以透過`visitor.FIELDS`   列舉來傳回指定的 ID 集合。在此情況下，我們只需要訪客的 Experience Cloud ID (MCID) 和 Analytics ID (MCAID)。您的要求和回應看起來可能類似於下列範例。
+此程式碼使用選用的陣列，以透過 `visitor.FIELDS` 列舉來傳回指定的 ID 集合。在此情況下，我們只需要訪客的 Experience Cloud ID (MCID) 和 Analytics ID (MCAID)。您的要求和回應看起來可能類似於下列範例。
 
 ```js
 //Call the ID service 
@@ -82,7 +82,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
 }
 ```
 
-## 已定義的回應參數 {#section-4c4c300167694c6fbff1d6c612f372b5}
+## 已定義的回應參數{#section-4c4c300167694c6fbff1d6c612f372b5}
 
 下表列出並定義回應參數。這些也是 `visitor.FIELDS` 列舉中的所有值。請注意，如果特定變數沒有任何值，此方法會傳回空字串。
 
@@ -100,7 +100,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>資料收集地區 ID。這是代表特定 ID 服務資料中心之地理位置的數字識別碼。 </p> <p>請參閱 <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external"> DCS地區ID、位置和主機名稱 </a> 和 <a href="../../mcvid-library/mcvid-get-set/mcvid-getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>。 </p> </td> 
+   <td colname="col2"> <p>資料收集地區 ID。這是代表特定 ID 服務資料中心之地理位置的數字識別碼。 </p> <p>請參閱 <a href="https://marketing.adobe.com/resources/help/zh_TW/aam/dcs-regions.html" format="https" scope="external">DCS 地區 ID、位置與主機名稱</a>以及 <a href="../../mcvid-library/mcvid-get-set/mcvid-getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
@@ -108,7 +108,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>訪客的 Experience Cloud ID。 </p> <p>請參閱 <a href="../../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local"> Cookie 和 Experience Cloud ID 服務 </a>. </p> </td> 
+   <td colname="col2"> <p>訪客的 Experience Cloud ID。 </p> <p>請參閱<a href="../../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local"> Cookie 和 Experience Cloud ID 服務 </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
