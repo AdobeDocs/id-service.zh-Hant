@@ -4,8 +4,8 @@ keywords: ID 服務
 seo-description: 2016 年 Experience Cloud ID 服務的功能發佈、更新或變更。
 seo-title: 2016 年發行說明
 title: 2016 年發行說明
-uuid: 7a314a-3a-3ff8-4561-9c64-6c10d2223887
-translation-type: tm+mt
+uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,16 +15,16 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 2016 年 Experience Cloud ID 服務的功能發佈、更新或變更。
 
-[Experience Cloud 發行說明](https://marketing.adobe.com/resources/help/en_US/whatsnew/)也會納入這些變更。請參閱[之前的發行說明](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)，瞭解以往的公告。[!DNL Experience Cloud]
+這些變更也記錄在 [Experience Cloud 發行說明](https://marketing.adobe.com/resources/help/zh_TW/whatsnew/)中。請參閱[先前發行說明](https://marketing.adobe.com/resources/help/zh_TW/whatsnew/?f=c_legacy_releases.html)，瞭解以往的 [!DNL Experience Cloud] 公告。
 
-## 1.10版 {#section-7d719b3213344a46858835042e0214ed}
+## 版本 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
 2016 年 11 月
 
 >[!IMPORTANT]
 >
->* 1.10版需要 [!DNL AppMeasurement] 1.8.0版。
->* 使用 Marketing Cloud ID Service Library 2.0.0+ 時，Adobe Media Optimizer 將依預設開始進行 ID 同步。請參閱[瞭解 ID 同步和匹配率](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-match-rates.html)。
+>* 1.10 版需要 [!DNL AppMeasurement] 1.8.0。
+>* 使用 Marketing Cloud ID Service Library 2.0.0+ 時，Adobe Media Optimizer 將依預設開始進行 ID 同步。請參閱[瞭解 ID 同步與匹配率](https://marketing.adobe.com/resources/help/zh_TW/mcvid/mcvid-match-rates.html)。
 >
 
 
@@ -32,18 +32,18 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 **修正和改良**
 
 * 新增如何在伺服器端環境中實施 ID 服務的指示。
-* 新增 `Visitor.overwriteCrossDomainMCIDAndAID`，此布林值函數可讓您覆寫在其他網域上擁有的 Experience Cloud 和 Analytics ID。請參閱 [覆寫訪客ID](../mcvid-library/mcvid-function-vars/mcvid-overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde)。
+* 新增 `Visitor.overwriteCrossDomainMCIDAndAID`，此布林值函數可讓您覆寫在其他網域上擁有的 Experience Cloud 和 Analytics ID。請參閱[覆寫訪客 ID](../mcvid-library/mcvid-function-vars/mcvid-overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde)。
 
-* 新增 `TS = UTC` 時間戳記 作為 `visitor.appendVisitorIDsTo` 函數的屬性。ID 服務會使用時間戳記來判斷是否應該以 5 分鐘的逾時間隔在重新導向 URL 中使用 ID。請參閱 [附加訪客 ID 函數](../mcvid-library/mcvid-get-set/mcvid-appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
+* 新增 `TS = UTC` 時間戳記 作為 `visitor.appendVisitorIDsTo` 函數的屬性。ID 服務會使用時間戳記來判斷是否應該以 5 分鐘的逾時間隔在重新導向 URL 中使用 ID。請參閱[附加訪客 ID 函數](../mcvid-library/mcvid-get-set/mcvid-appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
 
-* 新增 `Visitor.getLocationHint,` 可傳回地區ID的新函數。請參閱 [取得地區ID(位置提示)](../mcvid-library/mcvid-get-set/mcvid-getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c)。
+* 新增 `Visitor.getLocationHint,`，此新函數可傳回地區 ID。請參閱[取得地區 ID (位置提示)](../mcvid-library/mcvid-get-set/mcvid-getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c)。
 
-* 新增 `idSyncByURL` 和 `idSyncByDataSource` 這兩項功能，可讓您在 Destination Publishing iFrame 中手動實施 ID 同步。請參閱 [依URL或資料來源的ID同步](../mcvid-library/mcvid-get-set/mcvid-idsync.md#reference-b01b88c083434cf8abbeabd3c6956c48)。
+* 新增 `idSyncByURL` 和 `idSyncByDataSource` 這兩項功能，可讓您在 Destination Publishing iFrame 中手動實施 ID 同步。請參閱[依 URL 或資料來源執行 ID 同步作業](../mcvid-library/mcvid-get-set/mcvid-idsync.md#reference-b01b88c083434cf8abbeabd3c6956c48)。
 
 * 修正若出現 `disableThirdPartyCalls:true` 時封鎖 AppMeasurement 追蹤呼叫的錯誤。
 * 修正會讓 ID 服務無法將 Experience Cloud ID (MID) 傳遞至其他網域的錯誤。
 
-## 1.9.0版 {#section-04e1b4d4b10d40468f2116b8119998e7}
+## 版本 1.9.0 {#section-04e1b4d4b10d40468f2116b8119998e7}
 
 2016 年 10 月
 
@@ -55,9 +55,9 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 **新文件及修訂的文件**
 
-**新功能：**[從AMCV Cookie取得地區和使用者ID](../mcvid-reference/mcvid-regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
+**新增:** [從 AMCV Cookie 取得地區與使用者 ID](../mcvid-reference/mcvid-regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
 
-## 1.8.0版 {#section-69f2eb5b246b4c7aafe116b7a2a5448a}
+## 版本 1.8.0 {#section-69f2eb5b246b4c7aafe116b7a2a5448a}
 
 2016 年 9 月
 
@@ -71,7 +71,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 **修正和改良**
 
-* 新增 `idSyncAttachIframeOnWindowLoad` 作為選用布林值標幟，您可以在 `Visitor.getInstance` 函數中加以設定。當 `idSyncAttachIframeOnWindowLoad= true`，ID 服務會在視窗負載上載入 ID 同步 iFrame。根據預設，ID 服務會儘快載入 iFrame。此標幟會「取代」**已廢止的 `idSyncAttachIframeASAP`。請參閱 [Visitor. getInstance函數變數](../mcvid-library/mcvid-function-vars/mcvid-function-vars.md)。
+* 新增 `idSyncAttachIframeOnWindowLoad` 作為選用布林值標幟，您可以在 `Visitor.getInstance` 函數中加以設定。當 `idSyncAttachIframeOnWindowLoad= true`，ID 服務會在視窗負載上載入 ID 同步 iFrame。根據預設，ID 服務會儘快載入 iFrame。此標幟會「取代」**已廢止的 `idSyncAttachIframeASAP`。請參閱 [Visitor.getInstance 函數變數](../mcvid-library/mcvid-function-vars/mcvid-function-vars.md)。
 
 * 新增相關功能，支援針對網頁轉換數，在網域、原生應用程式和混合式應用程式中追蹤 [!DNL Experience Cloud] ID。請參閱[附加訪客 ID 輔助函數](../mcvid-library/mcvid-get-set/mcvid-appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)。
 
@@ -79,19 +79,19 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 **新文件及修訂的文件**
 
-修訂： [Experience Cloud ID服務的需求](../mcvid-reference/mcvid-requirements.md)
+修訂: [Experience Cloud ID 服務的需求](../mcvid-reference/mcvid-requirements.md)
 
 **已知問題**
 
-在同一頁上使用 [!DNL Audience Manager] DIL 程式碼和 visitorAPI.js 程式碼的客戶，應將 DIL 變數設為 `secureDataCollection= false`。請參閱 [secureDataCollection](https://marketing.adobe.com/resources/help/en_US/aam/?f=dil-secure-data-collection.html)。
+在同一頁上使用 [!DNL Audience Manager] DIL 程式碼和 visitorAPI.js 程式碼的客戶，應將 DIL 變數設為 `secureDataCollection= false`。請參閱 [secureDataCollection](https://marketing.adobe.com/resources/help/zh_TW/aam/?f=dil-secure-data-collection.html)。
 
-## 1.6.0版 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
+## 版本 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
 2016 年 7 月
 
 >[!IMPORTANT]
 >
->[!DNL Experience Cloud] ID服務1.6.0版 *需要* AppMeasurement for JavaScript1.6.2版。如果您升級至ID服務1.6.0版，請確定您使用正確的AppMeasurement代碼版本。
+>[!DNL Experience Cloud] ID 服務 1.6.0 版*需要* JavaScript 適用的 AppMeasurement 1.6.2 版。如果您升級至 ID 服務 1.6.0 版，請務必確定所用的 AppMeasurement 程式碼版本正確無誤。
 
 <table id="table_5472AAFA0DD2495DB8D92DEBE44A07A9"> 
  <thead> 
@@ -116,10 +116,10 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 * 將 `d_fieldgroup` 參數新增至 `dpm.demdex.net` 的 ID 同步呼叫。這項新參數會用於內部疑難排解和偵錯目的。
 
 * 將標題屬性新增至 ID 服務 iFrame。當使用者與線上內容互動且需要協助時，iFrame 標題可協助螢幕閱讀程式提供頁面資訊給使用者。iFrame 標題屬性設為 `Adobe ID Syncing iFrame`。
-* 新增 `idSyncAttachIframeASAP: true` 作為選用旗標，您可以在 `Visitor.getInstance` 函數中加以設定。若為 `true`，ID 服務便會儘快載入 ID 同步 iFrame。此設計旨在協助提升 ID 同步比對速度。依預設，ID 服務會在視窗載入時載入 iFrame。請參閱 [Visitor. getInstance函數變數](../mcvid-library/mcvid-function-vars/mcvid-function-vars.md)。
+* 新增 `idSyncAttachIframeASAP: true` 作為選用旗標，您可以在 `Visitor.getInstance` 函數中加以設定。若為 `true`，ID 服務便會儘快載入 ID 同步 iFrame。此設計旨在協助提升 ID 同步比對速度。依預設，ID 服務會在視窗載入時載入 iFrame。請參閱 [Visitor.getInstance 函數變數](../mcvid-library/mcvid-function-vars/mcvid-function-vars.md)。
 
 * 修正回呼函數的錯誤，此錯誤使 AppMeasurement 陷入無限迴圈中。
-* 將預設 `loadTimeout` 時間間隔從 500 毫秒變更為 30,000 毫秒。請參閱 [Visitor. getInstance函數變數](../mcvid-library/mcvid-function-vars/mcvid-function-vars.md)。
+* 將預設 `loadTimeout` 時間間隔從 500 毫秒變更為 30,000 毫秒。請參閱 [Visitor.getInstance 函數變數](../mcvid-library/mcvid-function-vars/mcvid-function-vars.md)。
 
 **新文件及修訂的文件**
 
@@ -133,7 +133,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 * [Experience Cloud ID 服務規定](../mcvid-reference/mcvid-requirements.md)
 * [測試及驗證 Experience Cloud ID 服務](../mcvid-implementation-guides/mcvid-test-verify.md)
 
-## 1.5.7版 {#section-735b4989a5744a42aeb2d97602dbda62}
+## 版本 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
 
 2016 年 6 月
 
@@ -147,11 +147,11 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
  <tbody> 
   <tr> 
    <td colname="col1"> <p>變更 <span class="codeph">iframe.sandbox</span> 屬性 </p> </td> 
-   <td colname="col2"> <p>iFrame 現已設定為 <span class="codeph">iframe.sandbox='allow-scripts allow-same-origin';</span>。 </p> <p>僅允許這兩個 Token 協助改善安全性，並提供 ID 服務需要用來同步 ID 的基本功能。 </p> <p>Internet Explorer 9 或更早版本均不支援 sandbox 屬性。如需詳細資訊，請參閱 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" format="https" scope="external">iFrame 文件</a>中的「屬性」一節。 </p> </td> 
+   <td colname="col2"> <p>iFrame 現已設定為 <span class="codeph">iframe.sandbox='allow-scripts allow-same-origin';</span>。 </p> <p>僅允許這兩個 Token 協助改善安全性，並提供 ID 服務需要用來同步 ID 的基本功能。 </p> <p>Internet Explorer 9 或更早版本均不支援 sandbox 屬性。如需詳細資訊，請參閱 <a href="https://developer.mozilla.org/zh_TW/docs/Web/HTML/Element/iframe" format="https" scope="external">iFrame 文件</a>中的「屬性」一節。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>對 Experience Cloud ID (MID) 進行編碼 </p> </td> 
-   <td colname="col2"> <p>ID 服務會對伺服器傳回的 MID 值或 <span class="codeph">visitor.setMarketingCloudVisitorID()</span> 函式設定的 MID 值進行編碼。如需MID的詳細資訊，請參閱 <a href="../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local"> Cookie和Experience Cloud ID </a>。 </p> </td> 
+   <td colname="col2"> <p>ID 服務會對伺服器傳回的 MID 值或 <span class="codeph">visitor.setMarketingCloudVisitorID()</span> 函式設定的 MID 值進行編碼。如需有關 MID 的詳細資訊，請參閱 <a href="../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local">Cookie 與 Experience Cloud ID</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -160,7 +160,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 若無舊版的 Analytics 訪客 ID，則訪客 API 不會再藉由 Audience Manager 強制執行額外的重新同步呼叫。
 
-## 第 1.5.x 版 {#section-a62ae48275324058b57edf66ee5a579f}
+## 第 1.5.x 版{#section-a62ae48275324058b57edf66ee5a579f}
 
 2016 年 5 月 
 
@@ -178,7 +178,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 [實施適用於 Target 的 Experience Cloud ID 服務](../mcvid-implementation-guides/mcvid-setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
 
-## 第1.5.4版 {#section-1a44ba147fb3440ea7dec551faee3528}
+## 版本 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
 2016 年 3 月
 
