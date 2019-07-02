@@ -4,8 +4,8 @@ keywords: ID 服務
 seo-description: 這些設定可讓實施於 iFrame 及上層頁面的不同 ID 服務代碼執行個體互相通訊。這兩個設定專為協助解決 2 個特定使用案例問題而設計。在特定使用案例中，您可能需要控制上層頁面/網域，並擁有載入您所控制網域之 iFrame 的 ID 服務代碼。VisitorAPI.js 程式碼 2.2 以上版本皆已提供這兩種設定。
 seo-title: whitelistParentDomain 及 whitelistIframeDomains
 title: whitelistParentDomain 及 whitelistIframeDomains
-uuid: 6b66a4d0-fea2-4d98-963e-3c4 f4 ab1 eb6
-translation-type: tm+mt
+uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -20,7 +20,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 <ul class="simplelist"> 
  <li> <a href="../../mcvid-library/mcvid-function-vars/mcvid-whitelistdomain.md#section-f645198bbaba4fba8961acb6e88d1470" format="dita" scope="local"> 語法 </a> </li> 
  <li> <a href="../../mcvid-library/mcvid-function-vars/mcvid-whitelistdomain.md#section-09d0049fe88a473baa69d404c50bf8ae" format="dita" scope="local"> 程式碼範例 </a> </li> 
- <li> <a href="../../mcvid-library/mcvid-function-vars/mcvid-whitelistdomain.md#section-fc2eeb93546b406fae3b102dbcd11de7" format="dita" scope="local"> 使用個案 </a> </li> 
+ <li> <a href="../../mcvid-library/mcvid-function-vars/mcvid-whitelistdomain.md#section-fc2eeb93546b406fae3b102dbcd11de7" format="dita" scope="local"> 使用案例 </a> </li> 
  <li> <a href="../../mcvid-library/mcvid-function-vars/mcvid-whitelistdomain.md#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2" format="dita" scope="local"> 設定安全與安全性 </a> </li> 
  <li> <a href="../../mcvid-library/mcvid-function-vars/mcvid-whitelistdomain.md#section-30c6a9f4dcdc4265a1149260b97cc057" format="dita" scope="local"> 支援的訪客 API 方法 </a> </li> 
 </ul>
@@ -38,19 +38,19 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> WhitelistparentDomain：「 <span class="varname"> parain name of parent page </span>」 </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> whitelistParentDomain: " <span class="varname"> 上層頁面的網域名稱 </span>" </span> </p> </td> 
    <td colname="col2"> <p>接受單一網域名稱以字串形式傳入。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> WhitelistiframeDomain：[ <span class="varname"> 「iFrame網域」，「iFrame網域」，「iFrame網域」 </span>] </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> whitelistIframeDomains: [ <span class="varname"> "iFrame 網域","iFrame 網域","iFrame 網域" </span>] </span> </p> </td> 
    <td colname="col2"> <p>接受一個或多個 iFrame 網域名稱以陣列形式傳入。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 程式碼範例 {#section-09d0049fe88a473baa69d404c50bf8ae}
+## 程式碼範例{#section-09d0049fe88a473baa69d404c50bf8ae}
 
-您設定 [!DNL ID service] 的程式碼可能類似於此範例。
+您已設定的 [!DNL ID service]程式碼看起來可能類似於此範例。
 
 ```js
 //Instantiate Visitor 
@@ -64,7 +64,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 );
 ```
 
-## 使用個案 {#section-fc2eeb93546b406fae3b102dbcd11de7}
+## 使用案例 {#section-fc2eeb93546b406fae3b102dbcd11de7}
 
 當瀏覽器封鎖第三方 Cookie 或下列任一情況發生時，這些設定有助於解決設定 ID 服務 Cookie 和指派訪客 ID 的問題:
 
@@ -73,7 +73,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 
 >[!TIP]
 >
->當您使用 [視訊心率在IFrame中提供視訊時，也可能會想要實作這些設定](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/)。影片心率需要有 ID 服務 ID (MID) 才能正常運作。
+>透過[視訊心率](https://marketing.adobe.com/resources/help/zh_TW/sc/appmeasurement/hbvideo/)在 iFrame 中提供影片時，您可能也想實作這些設定。影片心率需要有 ID 服務 ID (MID) 才能正常運作。
 
 **使用案例 1: 在 iFrame 和上層頁面實施瀏覽器封鎖第三方 Cookie 及 ID 服務**
 
@@ -144,7 +144,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
  </tbody> 
 </table>
 
-## 設定安全與安全性 {#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2}
+## 設定安全與安全性{#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2}
 
 您可以安全地實施這些設定，因為:
 
@@ -152,7 +152,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 * 這些設定只會與程式碼所指定的網域和 iFrames 通訊。
 * iFrame 與上層頁面之間的通訊會採用特定的格式。如果上層頁面的 ID 服務沒有接收到採用預期格式的要求，則此共用程序就會失敗。
 
-## 支援的訪客 API 方法 {#section-30c6a9f4dcdc4265a1149260b97cc057}
+## 支援的訪客 API 方法{#section-30c6a9f4dcdc4265a1149260b97cc057}
 
 實施這些白名單設定時，ID 服務支援有限的公用 API 方法集。支援的方法會依上述使用案例而有所不同。
 
