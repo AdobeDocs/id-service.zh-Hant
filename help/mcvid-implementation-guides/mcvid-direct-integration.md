@@ -2,16 +2,16 @@
 description: 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實施能讓他們在這些裝置上使用該 ID 服務，這些裝置包括遊戲主機、智慧型電視或其他支援網際網路連線的設備。請參閱本節以瞭解語法、程式碼範例和定義。
 keywords: ID 服務
 seo-description: 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實施能讓他們在這些裝置上使用該 ID 服務，這些裝置包括遊戲主機、智慧型電視或其他支援網際網路連線的設備。請參閱本節以瞭解語法、程式碼範例和定義。
-seo-title: 直接與Experience Cloud ID服務整合
-title: 直接與Experience Cloud ID服務整合
-uuid: de502f7e-cffd-4130-b3 ca-7d6 b9 a9 cae9
-translation-type: tm+mt
+seo-title: 與 Experience Cloud ID 服務直接整合
+title: 與 Experience Cloud ID 服務直接整合
+uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
 
 
-# 直接與Experience Cloud ID服務整合 {#direct-integration-with-the-experience-cloud-id-service}
+# 與 Experience Cloud ID 服務直接整合 {#direct-integration-with-the-experience-cloud-id-service}
 
 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實施能讓他們在這些裝置上使用該 ID 服務，這些裝置包括遊戲主機、智慧型電視或其他支援網際網路連線的設備。請參閱本節以瞭解語法、程式碼範例和定義。
 
@@ -21,7 +21,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ![](assets/directSyntax.png)
 
-在語法範例中， `d_` 首碼會將呼叫中的索引鍵值配對識別為系統層級變數。您可以將幾 `d_` 個參數傳遞至ID服務，但請繼續專注於上方代碼中所示的索引鍵值配對。如需關於其他變數的詳細資訊，請參閱 [DCS API 呼叫支援的屬性](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html)。
+在這個語法範例中，前置詞 `d_` 會做為系統層級變數，用於識別呼叫中的機碼-值組。您可以將幾個 `d_` 參數傳遞至 ID 服務，但要把重點放在上述程式碼中的機碼-值組上。如需其他變數的詳細資訊，請參閱[支援的 DCS API 呼叫屬性](https://marketing.adobe.com/resources/help/zh_TW/aam/dcs-keys.html)。
 
 ID 服務支援 HTTP 和 HTTPS 呼叫。使用 HTTPS 以透過安全網頁傳遞資料。
 
@@ -44,7 +44,7 @@ ID 服務會傳回 JSON 物件中的資料，如下所示。您的回應可能�
 }
 ```
 
-## 定義的請求和回應參數 {#section-4a9912b545364dc4acad4f1ea5ec641d}
+## 已定義的要求與回應參數 {#section-4a9912b545364dc4acad4f1ea5ec641d}
 
 **要求參數**
 
@@ -58,22 +58,22 @@ ID 服務會傳回 JSON 物件中的資料，如下所示。您的回應可能�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p>由 <span class="keyword">Adobe</span> 控制的舊版網域。請參閱<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">瞭解向 Demdex 網域進行的呼叫</a>。 </p> </td> 
+   <td colname="col2"> <p>由 <span class="keyword">Adobe</span> 控制的舊版網域。請參閱<a href="https://marketing.adobe.com/resources/help/zh_TW/aam/demdex-calls.html" format="https" scope="external">瞭解向 Demdex 網域進行的呼叫</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 訪客 ID。請參閱 <a href="../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local"> Cookie 和 Experience Cloud ID 服務</a>. </p> </td> 
+   <td colname="col2"> <p>Experience Cloud 訪客 ID。請參閱<a href="../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local"> Cookie 和 Experience Cloud ID 服務</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>您的 Experience Cloud 組織 ID。如需尋找此 ID 的協助，請參閱 <a href="../mcvid-reference/mcvid-requirements.md" format="dita" scope="local"> Experience Cloud ID 服務規定</a>. </p> </td> 
+   <td colname="col2"> <p>您的 Experience Cloud 組織 ID。如需尋找此 ID 的協助，請參閱<a href="../mcvid-reference/mcvid-requirements.md" format="dita" scope="local"> Experience Cloud ID 服務規定</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
-   <td colname="col2"> <p>一個可選參數，可將資料提供者ID(DPID)、唯一使用者ID(DPUUID)和 <a href="../mcvid-reference/mcvid-authenticated-state.md" format="dita" scope="local"> 驗證狀態ID傳遞</a> 至ID服務。如程式碼範例所示，以非列印用的控制字元 <span class="codeph">%01</span> 將 DPID 和 DPUUID 隔開。 </p> <p> <b>DPID 與 DPUUID</b> </p> <p>在 <span class="codeph">d_cid</span> 參數中，將每個相關的 DPID 和 DPUUID 組合指派至相同的 <span class="codeph">d_cid</span> 參數。如此，能讓您在單一要求中傳回多個 ID 集合。另外，以非列印用的控制字元 <span class="codeph">%01</span> 將 DPID、DPUUID 和選用的驗證標幟隔開。在下列範例中，提供者和使用者的 ID 都會以<b>粗體</b>文字強調顯示。 </p> 
+   <td colname="col2"> <p>此選用參數會將資料提供者 ID (DPID)、唯一使用者 ID (DPUUID) 及 <a href="../mcvid-reference/mcvid-authenticated-state.md" format="dita" scope="local"> 驗證狀態 ID</a> 傳給 ID 服務。如程式碼範例所示，以非列印用的控制字元 <span class="codeph">%01</span> 將 DPID 和 DPUUID 隔開。 </p> <p> <b>DPID 與 DPUUID</b> </p> <p>在 <span class="codeph">d_cid</span> 參數中，將每個相關的 DPID 和 DPUUID 組合指派至相同的 <span class="codeph">d_cid</span> 參數。如此，能讓您在單一要求中傳回多個 ID 集合。另外，以非列印用的控制字元 <span class="codeph">%01</span> 將 DPID、DPUUID 和選用的驗證標幟隔開。在下列範例中，提供者和使用者的 ID 都會以<b>粗體</b>文字強調顯示。 </p> 
     <ul id="ul_2E19D837296B40E9ACD096495CF711C5"> 
      <li id="li_5B94B057654440B99B989BA60E4ED053">語法: <span class="codeph">...d_cid=DPID%01DPUUID%01authentication state...</span> </li> 
-     <li id="li_B07833EF51D54F088574B7B7F9FB841A">範例： <span class="codeph">… d_ cid=123%01456%11</span> </li> 
+     <li id="li_B07833EF51D54F088574B7B7F9FB841A">範例: <span class="codeph">...d_cid=123%01456%011...</span> </li> 
     </ul> <p> <b>驗證狀態</b> </p> <p>這是 <span class="codeph">d_cid</span> 參數中的選用 ID，以整數方式呈現，而且能根據下列使用者的驗證狀態來識別使用者: </p> 
     <ul id="ul_E2B36922B11C4AA2A9016B6E2DC9EDAA"> 
      <li id="li_31C018E3F9514B938C73EF40C436715F"> <span class="codeph"> 0</span> (未知) </li> 
@@ -88,7 +88,7 @@ ID 服務會傳回 JSON 物件中的資料，如下所示。您的回應可能�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>ID 服務是一個依地理位置分佈且負載平衡的系統。ID 會識別處理呼叫的資料中心所在的地區。請參閱 <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external">DCS 地區 ID、位置與主機名稱</a>。 </p> </td> 
+   <td colname="col2"> <p>ID 服務是一個依地理位置分佈且負載平衡的系統。ID 會識別處理呼叫的資料中心所在的地區。請參閱 <a href="https://marketing.adobe.com/resources/help/zh_TW/aam/dcs-regions.html" format="https" scope="external">DCS 地區 ID、位置與主機名稱</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
