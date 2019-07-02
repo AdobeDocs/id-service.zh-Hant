@@ -4,8 +4,8 @@ keywords: ID 服務
 seo-description: 指定目標發佈範本是否應該針對 HTTPS 連線使用 Akamai。
 seo-title: idSyncSSLUseAkamai
 title: idSyncSSLUseAkamai
-uuid: 501cc37-c3 ab-4454-bfcf-3e3 c3 e8 b5 ca
-translation-type: tm+mt
+uuid: 501ccc37-c3ab-4454-bfcf-3e3c3e8b5ca3
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
