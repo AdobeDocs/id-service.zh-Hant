@@ -1,10 +1,10 @@
 ---
-description: 在您的網站啓用選擇加入後，請使用驗證方法測試服務是否如預期使用瀏覽器中的開發人員工具運作。
-seo-description: 在您的網站啓用選擇加入後，請使用驗證方法測試服務是否如預期使用瀏覽器中的開發人員工具運作。
+description: 在網站上啟用選擇加入後，請使用瀏覽器中的開發人員工具，運用驗證方法測試該服務是否順利運作。
+seo-description: 在網站上啟用選擇加入後，請使用瀏覽器中的開發人員工具，運用驗證方法測試該服務是否順利運作。
 seo-title: 驗證選擇加入服務
 title: 驗證選擇加入服務
-uuid: 1743360a-d757-4e50-8697-0fa92 b302 cbc
-translation-type: tm+mt
+uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -12,9 +12,9 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 # 驗證選擇加入服務{#validating-opt-in-service}
 
-在您的網站啓用選擇加入後，請使用驗證方法測試服務是否如預期使用瀏覽器中的開發人員工具運作。
+在網站上啟用選擇加入後，請使用瀏覽器中的開發人員工具，運用驗證方法測試該服務是否順利運作。
 
-## 使用案例1：啓用選擇加入 {#section-c8fe1ee3711b420c8186c7057abbecb3}
+## 使用案例 1: 啟用選擇加入服務 {#section-c8fe1ee3711b420c8186c7057abbecb3}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -30,7 +30,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 在上例中，我們在網頁中安裝下列 Adobe JS 標籤: ECID、AAM、Analytics 和 Target。
 
-**如何證明選擇加入的工作如預期：**
+**如何證實選擇加入順利運作:**
 
 您不應該看到任何傳送到 Adobe 伺服器的要求:
 
@@ -42,7 +42,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 >[!NOTE]
 >
->您可能會看見呼叫， `http://dpm.demdex.net/optOutStatus`這是一個「唯讀」端點，用來擷取訪客的退出狀態。此端點不會導致任何第三方 Cookie 成功建立，且不會收集頁面中的任何資訊。
+>您可能會看到目標為 `http://dpm.demdex.net/optOutStatus` 的呼叫，這是「唯讀」端點，用來擷取訪客的選擇退出狀態。此端點不會導致任何第三方 Cookie 成功建立，且不會收集頁面中的任何資訊。
 
 您不應該會看到 Adobe 標籤建立的任何 Cookie: AMCV_{{YOUR_ORG_ID}}、mbox、demdex、s_cc、s_sq、everest_g_v2、everest_session_v2
 
@@ -50,7 +50,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 ![](assets/use_case_1_2.png)
 
-## 使用案例 2: 啟用選擇加入與儲存 {#section-bd28326f52474fa09a2addca23ccdc0f}
+## 使用案例 2: 啟用選擇加入與儲存{#section-bd28326f52474fa09a2addca23ccdc0f}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -61,7 +61,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 使用案例 2 中唯一的差異在於，您會看到*一個新 Cookie*，此 Cookie 會包含訪客提供的選擇加入權限: **adobeujs-optin**
 
-## 使用案例3: 啟用選擇加入及預先核准 Adobe Analytics {#section-257fe582b425496cbf986d0ec12d3692}
+## 使用案例3: 啟用選擇加入及預先核准 Adobe Analytics{#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -81,7 +81,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 ![](assets/use_case_3_2.png)
 
-## 使用案例 4: 啟用選擇加入與 IAB {#section-64331998954d4892960dcecd744a6d88}
+## 使用案例 4: 啟用選擇加入與 IAB{#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
