@@ -4,8 +4,8 @@ keywords: ID 服務
 seo-description: 呼叫此 ID 服務函數可判斷 ID 服務是否產生用戶端 Experience Cloud 訪客 ID (MID)。適用於 VisitorAPI.js 1.7.0 版或更新版本。
 seo-title: isClientSideMarketingCloudVisitorID
 title: isClientSideMarketingCloudVisitorID
-uuid: 1c39ac60-1d2b-4ed4-a2 ea-30d680 e61 e10
-translation-type: tm+mt
+uuid: 1c39ac60-1d2b-4ed4-a2ea-30d680e61e10
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
