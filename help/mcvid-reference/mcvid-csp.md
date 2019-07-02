@@ -4,8 +4,8 @@ keywords: ID 服務
 seo-description: 內容安全性原則 (CSP) 是一項 HTTP 標題和安全性功能，能讓瀏覽器控制要在網頁中載入的資源類型。如果您使用 ID 服務，且訂下嚴格的 CSP 以使用白名單來接受來自值得信賴網域的資料，請檢視本節的內容。您需要將此處所列的 Adobe 網域新增至您的 CSP 白名單中。
 seo-title: 內容安全性原則及 Experience Cloud ID 服務
 title: 內容安全性原則及 Experience Cloud ID 服務
-uuid: 7399edf3-01c1-4730-834e-e2 d2 c5791 ff
-translation-type: tm+mt
+uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,9 +15,9 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 內容安全性原則 (CSP) 是一項 HTTP 標題和安全性功能，能讓瀏覽器控制要在網頁中載入的資源類型。如果您使用 ID 服務，且訂下嚴格的 CSP 以使用白名單來接受來自值得信賴網域的資料，請檢視本節的內容。您需要將此處所列的 Adobe 網域新增至您的 CSP 白名單中。
 
-## CSP 檢視 {#section-5fde5c00a678455c914b8307a8caab82}
+## CSP 檢視{#section-5fde5c00a678455c914b8307a8caab82}
 
-CSP使用HTTP標題 `Content-Security-Policy` 來控制瀏覽器接受或載入頁面的資源類型。套用 CSP 能協助您避免以下情形:
+CSP 會利用 HTTP 標頭 `Content-Security-Policy` 來控制瀏覽器要接受或在網頁中要載入的資源類型。套用 CSP 能協助您避免以下情形:
 
 * 在來源為未知或未加入白名單的情況下載入 JavaScript 檔案。
 * 遭受跨網站指令檔 (XXS) 的攻擊。
@@ -53,14 +53,14 @@ CSP使用HTTP標題 `Content-Security-Policy` 來控制瀏覽器接受或載入�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>訪客 ID 服務</b> </p> </td> 
-   <td colname="col2"> <p>修改您的 CSP 以包含 <span class="codeph">*.demdex.net</span>。 </p> <p>對 <span class="codeph"> demdex. net</span> 網域的呼叫會用來產生 <a href="../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local"> Cookie和Experience Cloud ID Service</a> 以及ID同步。亦請參閱<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">瞭解向 Demdex 網域進行的呼叫</a>。 </p> </td> 
+   <td colname="col2"> <p>修改您的 CSP 以包含 <span class="codeph">*.demdex.net</span>。 </p> <p>對 <span class="codeph"> demdex.net</span> 網域發出的呼叫用於產生 <a href="../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local">Cookie 與 Experience Cloud ID 服務</a>及用於 ID 同步。亦請參閱<a href="https://marketing.adobe.com/resources/help/zh_TW/aam/demdex-calls.html" format="https" scope="external">瞭解向 Demdex 網域進行的呼叫</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
->* [內容安全性原則參考](https://content-security-policy.com/)
->* [MDN: 內容安全性原則](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
->* [Wikipedia: 內容安全性原則](https://en.wikipedia.org/wiki/Content_Security_Policy)
+>* [內容安全性原則參照](https://content-security-policy.com/)
+>* [MDN: 內容安全性原則](https://developer.mozilla.org/zh-TW/docs/Web/HTTP/CSP)
+>* [維基百科: 內容安全性原則](https://en.wikipedia.org/wiki/Content_Security_Policy)
 
