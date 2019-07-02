@@ -1,11 +1,11 @@
 ---
 description: 選用的布林值標幟，可防止 ID 服務對其他網域進行呼叫。
-keywords: 跨網域追蹤；ID服務
+keywords: 跨網域追蹤;ID 服務
 seo-description: 選用的布林值標幟，可防止 ID 服務對其他網域進行呼叫。
 seo-title: 停用第三方通話
 title: 停用第三方通話
 uuid: e92ce1f5-67a4-476c-9d04-41d4e96b1592
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 選用的布林值標幟，可防止 ID 服務對其他網域進行呼叫。
 
-**語法：**` `disableThirdPartyCalls：true| false」(預設為 `false`。)
+**語法:** ` ` disableThirdPartyCalls: true|false`` (預設為 `false`false)。
 
 若 `disableThirdPartyCalls: true`，ID 服務將不會呼叫其他網域。
 
