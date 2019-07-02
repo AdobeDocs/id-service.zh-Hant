@@ -4,8 +4,8 @@ keywords: ID 服務
 seo-description: 選用的布林值標幟，可停用 ID 同步。
 seo-title: disableIdSyncs
 title: disableIdSyncs
-uuid: bea1de8-53c8-4a15-bcf5-f0869763 a32 e
-translation-type: tm+mt
+uuid: 8bea1de8-53c8-4a15-bcf5-f0869763a32e
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -17,9 +17,9 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 >[!NOTE]
 >
->2018年月18日發行的版本中， `idSyncDisableSyncs` 此 `disableIdSyncs` 組態已重新命名並重新命名。
+>此設定原為 `idSyncDisableSyncs`，已在 2018 年 1 月 18 日發行的 v3.0 版本中重新命名為 `disableIdSyncs`。
 
-**語法：**`disableIdSyncs: true|false` (預設 `false`為。)
+**語法:** `disableIdSyncs: true|false` (預設為 `false`。)
 
 **程式碼範例**
 
