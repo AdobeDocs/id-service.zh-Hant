@@ -5,7 +5,7 @@ seo-description: 此協助方法可讓您附加至增補資料 ID (SDID) 做為�
 seo-title: appendSupplementalDataIDTo
 title: appendSupplementalDataIDTo
 uuid: f3504d82-8da3-4971-818b-3df57df4ec2d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -19,14 +19,14 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 <ul class="simplelist"> 
  <li> <a href="../../mcvid-library/mcvid-get-set/mcvid-appendsupplementaldataidto.md#section-cbb0b2f73bcc418386796c24c01b2365" format="dita" scope="local"> 語法與程式碼範例 </a> </li> 
- <li> <a href="../../mcvid-library/mcvid-get-set/mcvid-appendsupplementaldataidto.md#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4" format="dita" scope="local"> 程式碼輸出 </a> </li> 
+ <li> <a href="../../mcvid-library/mcvid-get-set/mcvid-appendsupplementaldataidto.md#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4" format="dita" scope="local"> 範例輸出 </a> </li> 
  <li> <a href="../../mcvid-library/mcvid-get-set/mcvid-appendsupplementaldataidto.md#section-cbb0b2f73bcc418386796c24c01b2365" format="dita" scope="local"> 語法與程式碼範例 </a> </li> 
  <li> <a href="../../mcvid-library/mcvid-get-set/mcvid-appendsupplementaldataidto.md#section-99946715cefa4acc95200b093db5297e" format="dita" scope="local"> 使用 sdidParamExpiry 變更 SDID 逾時 </a> </li> 
 </ul>
 
 ## 語法與程式碼範例 {#section-cbb0b2f73bcc418386796c24c01b2365}
 
-**語法：**` appendSupplementalDataIDTo( *`URLLSDID`*, *``*)`
+**語法:** ` appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
 
 **程式碼範例**
 
@@ -40,7 +40,7 @@ var pageB = "www.domain.com/pageB";
 var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219");
 ```
 
-## 程式碼輸出 {#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
+## 範例輸出{#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
 
 如下所示，URL 在呼叫接收頁面時，重新導向會包含訪客的 SDID、您的組織 ID 以及 UNIX 時間戳記。
 
@@ -50,11 +50,11 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219
 
 ## 使用 sdidParamExpiry 變更 SDID 逾時 {#section-99946715cefa4acc95200b093db5297e}
 
-[sdidParametropSignment](../../mcvid-library/mcvid-function-vars/mcvid-sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) 設定可讓您使用 `appendSupplementalDataIDTo` helper函數，在將該ID從一個頁面傳遞至另一個頁面時變更預設的SDID過期間隔。依預設，接收頁面的 ID 服務程式碼有 30 秒的時間，取得透過所述頁面傳送的 URL 提供的 SDID。如果接收頁面的 ID 服務程式碼無法在 30 秒內擷取 SDID，則會要求新的 SDID。此功能主要適用於需要從某一頁面傳遞 SDID 至另外一個頁面，同時還要控制逾時時間間隔的 A4T 客戶。
+使用 `appendSupplementalDataIDTo` 協助函數將該 ID 從一個頁面傳至另一個頁面時，[sdidParamExpiry](../../mcvid-library/mcvid-function-vars/mcvid-sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) 設定可讓您變更預設的 SDID 過期時間間隔。依預設，接收頁面的 ID 服務程式碼有 30 秒的時間，取得透過所述頁面傳送的 URL 提供的 SDID。如果接收頁面的 ID 服務程式碼無法在 30 秒內擷取 SDID，則會要求新的 SDID。此功能主要適用於需要從某一頁面傳遞 SDID 至另外一個頁面，同時還要控制逾時時間間隔的 A4T 客戶。
 
 如果您需要變更預設的 SDID 逾時，請使用下列語法將 `sdidParamExpiry` 新增至 `Visitor.getInstance` 函數:
 
-**語法：**` sdidParamExpiry: *`時間(秒)`*`
+**語法:** ` sdidParamExpiry: *`以秒為單位的時間`*`
 
 **程式碼範例**
 
