@@ -1,6 +1,6 @@
 ---
 source-git-commit: 676f6ca9c37f77fe24dbc3ceb9aef2d540b3adbe
-translation-type: tm+mt
+translation-type: ht
 
 ---
 # Adobe 行為準則
@@ -44,6 +44,6 @@ translation-type: tm+mt
 
 未真誠遵守或執行「行為準則」的專案維護人員可能會面臨暫時或永久的處置，此由專案領導權之其他成員所決定。
 
-## 歸因
+## 出處
 
-本行為準則改編自 [https://contributor-covenant.org/version/1/4 所提供的](https://contributor-covenant.org)貢獻者公約[ 1.4 版。](https://contributor-covenant.org/version/1/4/)
+本行為準則改編自 [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/) 所提供的[貢獻者公約](https://contributor-covenant.org) 1.4 版。
