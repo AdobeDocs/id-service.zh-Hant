@@ -1,11 +1,11 @@
 ---
-description: 2018年Experience Cloud ID服務的發行、更新或變更。
+description: 2018 年 Experience Cloud ID 服務的功能發佈、更新或變更。
 keywords: ID 服務
-seo-description: 2018年Experience Cloud ID服務的發行、更新或變更。
+seo-description: 2018 年 Experience Cloud ID 服務的功能發佈、更新或變更。
 seo-title: 2018 年發行說明
 title: 2018 年發行說明
-uuid: 771b5b11-a8 e3-464c-b65 e-b15135584 ACE
-translation-type: tm+mt
+uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 # 2018 年發行說明 {#release-notes}
 
-2018年Experience Cloud ID服務的發行、更新或變更。
+2018 年 Experience Cloud ID 服務的功能發佈、更新或變更。
 
 ## 3.3 版 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -57,7 +57,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
  </tbody> 
 </table>
 
-## 3.1.2 版 {#section-3cba186f74fe4f2186a9ca2e5e0a2514}
+## 版本 3.1.2 {#section-3cba186f74fe4f2186a9ca2e5e0a2514}
 
 <table id="table_9FA4E20C996746A2A4219C9A0F759AD1"> 
  <thead> 
@@ -74,11 +74,11 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
  </tbody> 
 </table>
 
-## 3.1.0 版 {#section-a20c8278bf9643018965330415091e53}
+## 版本 3.1.0 {#section-a20c8278bf9643018965330415091e53}
 
 >[!NOTE]
 >
->建議您在最早的時間，從3.1.0版升級至最新版本。請參閱 3.1.2 版說明。Adobe Launch、DTM 及 AppMeasurement 都會提供最新套件。
+>建議您盡快從 3.1.0 版升級至最新版本。請參閱 3.1.2 版說明。Adobe Launch、DTM 及 AppMeasurement 都會提供最新套件。
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
@@ -95,7 +95,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
  </tbody> 
 </table>
 
-## 3.0 版 {#section-5fcaef66e8b343238abeb10048dc5747}
+## 版本 3.0 {#section-5fcaef66e8b343238abeb10048dc5747}
 
 <table id="table_7E9224D6CC924A2DB5119171C9DC5443"> 
  <thead> 
