@@ -1,10 +1,10 @@
 ---
-description: 用來管理選擇加入服務的範例使用案例和解決方案。
-seo-description: 用來管理選擇加入服務的範例使用案例和解決方案。
+description: 管理選擇加入服務的使用案例與解決方案範例。
+seo-description: 管理選擇加入服務的使用案例與解決方案範例。
 seo-title: 選擇加入使用案例
 title: 選擇加入使用案例
-uuid: d75a44d5-b713-43d1-b5 b6-95d1 d0 d213 a7
-translation-type: tm+mt
+uuid: d75a44d5-b713-43d1-b5b6-95d1d0d213a7
+translation-type: ht
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 # 選擇加入使用案例 {#opt-in-use-cases}
 
-用來管理選擇加入服務的範例使用案例和解決方案。
+管理選擇加入服務的使用案例與解決方案範例。
 
 ## 提示與疑難排解 {#section-5c566366410f4a8f89eca0d3f556d99f}
 
@@ -20,9 +20,9 @@ source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 * 選擇加入是按各網域的實作。不會處理跨網域的實作。
 * 若要停用特定資料庫的第三方呼叫，您需要分別在各資料庫中設定此偏好設定。
 
-## 選擇加入案例 {#section-1178053c065c430bba26f82ef383a71c}
+## 選擇加入案例{#section-1178053c065c430bba26f82ef383a71c}
 
-這些使用案例是使用選擇加入服務的範例。
+以下使用案例為使用選擇加入服務的想法範例。
 
 <table id="table_83C85343611344D8A8315157C1B4240F"> 
  <thead> 
