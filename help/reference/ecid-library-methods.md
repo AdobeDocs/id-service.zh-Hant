@@ -1,87 +1,87 @@
 ---
-title: Safari ITP世界中的ECID程式庫方法
-seo-title: Safari ITP世界中的ECID程式庫方法
-description: Adobe ECID(ID服務)程式庫的文件。
-seo-description: Adobe ECID(ID服務)程式庫的文件。
-translation-type: tm+mt
+title: Safari ITP 領域的 ECID 程式庫方法
+seo-title: Safari ITP 領域的 ECID 程式庫方法
+description: Adobe ECID (ID 服務) 程式庫的文件。
+seo-description: Adobe ECID (ID 服務) 程式庫的文件。
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
 
 
-# Safari ITP世界中的ECID程式庫方法
+# Safari ITP 領域的 ECID 程式庫方法
 
-當Safari透過ITP強化跨網域追蹤時，Adobe必須維護支援客戶以及消費者隱私權和選擇的程式庫最佳做法。
+由於 Safari 透過 ITP 加強管制跨網域追蹤，因此 Adobe 必須持續落實程式庫最佳實務，既支援客戶又能維護消費者的隱私和選擇。
 
-Apple於2019年月21日推出ITP最新更新(智慧追蹤防止)。不同於先前針對第三方Cookie的版本，本版本詳細說明第一方Cookie的新追蹤防範措施。所有透過document. cookie API(通常稱為「用戶端」Cookie)設定的第一方永久性Cookie，都會在天內暫停。第三方Cookie將繼續遭到封鎖，如舊版ITP中所述。如需IDP2.1的詳細資訊以及Adobe解決方案的影響，請閱讀 [Safari ITP2.1對Adobe Experience Cloud和Experience Platform客戶](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)的影響。
+2019 年 2 月 21 日，Apple 公布了 ITP 的最新更新 (智慧防追蹤功能)。此版本詳細說明第一方 Cookie 的防追蹤新措施，有別於先前版本著重於第三方 Cookie。透過 document.cookie API 設定的所有第一方永續性 Cookie (通常稱為「用戶端」Cookie)，有效期限最多為 7 天。第三方 Cookie 將如舊版 ITP 所述，繼續遭到封鎖。如需深入瞭解 ITP 2.1 及 Adobe 解決方案的影響，請參閱 [Safari ITP 2.1 對 Adobe Experience Cloud 和 Experience Platform Customers 的影響](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
 
-## Safari ITP常見問答集的Adobe ECID
+## Adobe ECID for Safari ITP 常見問題集
 
-**為甚麼AMCV Cookie是由客戶的第一方網域(受ITP2.1影響)所設定的AMCV Cookie設定？**
+**為何 Experience Cloud ID 程式庫 (ECID) 在客戶第一方網域中設定的 AMCV Cookie，會受到 ITP 2.1 的影響?**
 
-AMCV Cookie目前依賴document. cookie API，並透過「用戶端」設定。Safari偏好從客戶伺服器設定的Cookie。
+AMCV Cookie 目前主要依賴 document. cookie API，並透過「用戶端」設定。Safari 偏好從客戶伺服器設定的 Cookie。
 
-**為甚麼透過CNAME追蹤伺服器設定Cookie，更適合在Safari中追蹤？**
+**為何透過 CNAME 追蹤伺服器設定 Cookie，勝過在 Safari 中追蹤?**
 
-ITP的規則著重於給予開發人員掌控權。透過CNAME憑證實施無法單獨透過JavaScript完成。Adobe CNAME認證計劃(伺服器端追蹤)與ITP一致，多年來一直屬於Adobe策略的一部分。ECID程式庫是將ECID程式庫功能移至CNAME實作的發佈方法。
+ITP 的規則強調將控制權還給開發人員。透過 CNAME 憑證實作，無法單獨透過 JavaScript 完成。Adobe 的 CNAME 憑證計畫 (伺服器端追蹤) 與 ITP 一致，且多年來一直是 Adobe 策略的一部分。ECID 程式庫目前發布將 ECID 程式庫功能移至 CNAME 實作的方法。
 
-**當現今的Analytics訪客追蹤方法與CNAME搭配使用時，為何Adobe會專注於ECID程式庫？**
+**現今其他 Analytics 訪客追蹤方法都與 CNAME 搭配使用，為何 Adobe 反而將重心放在 ECID 程式庫?**
 
-ECID程式庫、AMCV Cookie和ECID(也稱為MID)是將所有Adobe解決方案整合在一個ID之下的方法。此ID將繼續是Adobe產品藍圖中的優先Cookie層級ID，也是Adobe Experience Platform的預設Cookie ID。
+ECID 程式庫、AMCV Cookie 和 ECID (也稱為 MID) 一開始是一種將所有 Adobe 解決方案整合至一個 ID 下的方法。此 ID 未來在 Adobe 產品藍圖中仍會是優先 Cookie 層級 ID，現在則是 Adobe Experience Platform 的預設 Cookie ID。
 
-**CNAME是否可協助客戶進行多網域追蹤？**
+**CNAME 可以協助客戶啟用多個網域追蹤嗎?**
 
-先前包含CNAME先前存在的規則和警告仍然存在。在某些情況下，CNAME可協助多網域藍本。如果您有一個主要進入網站，可在訪客瀏覽其他網域之前加以識別，則CNAME可在不接受第三方Cookie的瀏覽器中啓用多網域追蹤。然而，雖然CNAME在某些情況下可提供多網域協助，但ECID將ECID移轉至CNAME實作的原因是持續的訪客識別，而非多網域追蹤。如需CNAME和多網域的詳細資訊，請參閱 [資料收集CNAME和跨網域追蹤](/help/reference/analytics-reference/cname.md)。
+之前與 CNAME 同時存在的規則和警告仍然存在。某些情況下，CNAME 在多重網域的案例中有其用處。如果您有一個主要進入網站，可在使用者造訪其他網域之前識別使用者的身分，那麼 CNAME 將可讓您在不接受第三方 Cookie 的瀏覽器中啟用多重網域追蹤功能。雖然 CNAME 可以在某些情況下提供多重網域協助，不過將 ECID 移轉至 CNAME 實作的原因是為了永續執行訪客身分識別，並非為了多重網域追蹤。如需深入瞭解 CNAME 和多重網域，請參閱[資料收集 CNAME 和跨網域追蹤](/help/reference/analytics-reference/cname.md)。
 
-當額外的ITP變更發行時，將會新增更多常見問題。若需更多諮詢，請造訪 [Adobe Experience League](https://experienceleague.adobe.com/#recommended/solutions/analytics)。
+一有其他 ITP 變更，我們會在此處新增更多常見問題。若需更多資訊，請造訪 [Adobe Experience League](https://experienceleague.adobe.com/#recommended/solutions/analytics)。
 
-## ITP相關變更、方法和組態
+## ITP 相關變更、方法和設定
 
-在Safari中建立其他方法以追蹤時，將會新增為此頁面的參考。
+在 Safari 中建立其他追蹤方法時，這些方法將新增於此頁面作為參考。
 
->[!NOTE]*ECID* = *MID* = *MID* = MID= MID。
+>以下所有文件中的 [!NOTE] *ECID* = *MID* = *MCID*。
 
-請參閱以下有關ITP和ECID程式庫使用情形的相關努力。
+如需 ITP 和 ECID 程式庫使用情況相關資訊，請參閱下文。
 
-## 使用ECID程式庫和CNAME追蹤來延長訪客ID有效期
+## 使用 ECID 程式庫和 CNAME 追蹤延長訪客 ID 的有效期限
 
-ITP2.1阻礙編寫用戶端Cookie的能力，因而削弱了提供準確訪客追蹤資訊的能力。因此，Adobe的CNAME追蹤伺服器會推出變更，將訪客的Experience Cloud ID(ECID)儲存在第一方Cookie中。
+ITP 2.1 會使寫入用戶端 Cookie 的能力受到限制，導致向客戶提供的訪客追蹤資訊，準確度大打折扣。因此，我們已著手調整 Adobe 的 CNAME 追蹤伺服器，將訪客的 Experience Cloud ID (ECID) 儲存在第一方 Cookie。
 
-這項變更只適用於在第一方上下文中使用Analytics CNAME的ECID客戶。如果您是目前未使用CNAME的Analytics客戶，或是非Analytics客戶，則您仍然符合CNAME記錄的資格。請聯絡客戶服務或您的帳戶代表，開始註冊 [CNAME](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/adobe_managed_cert_pgm.html)。
+這項變更只適用於在第一方情境中使用 Analytics CNAME 的 ECID 客戶。如果您是尚未使用 CNAME 的 Analytics 客戶，或甚至不是 Analytics 客戶，還是符合使用 CNAME 記錄的資格。請聯絡客戶服務或您的帳戶代表，開始註冊 [CNAME](https://marketing.adobe.com/resources/help/zh_TW/whitepapers/first_party_cookies/adobe_managed_cert_pgm.html)。
 
-升級至ECID程式庫v4.3.0+以利用此項變更。
+若要使用此項變更，請升級至 ECID 程式庫 4.3.0 版以上。
 
 **設計**
 
-在對demdex. net提出ID要求並擷取ECID後，如果在您的ECID程式庫中設定追蹤伺服器，則會對客戶的網域提出ID要求。This endpoint reads the ecid param from the query string, and sets a new [cookie](/help/introduction/cookies.md) that comprises only the ECID and an expiration date two years in the future. 每次以這種方式呼叫此端點時， `s_ecid` 會以兩年期間的有效期來重寫Cookie。ECID程式庫必須更新至v4.3.0，才能擷取此Cookie的值。
+對 demdex. net 提出 ID 要求並擷取 ECID 後，如果在您的 ECID 程式庫中設定追蹤伺服器，會對客戶的網域提出 ID 要求。此端點會從查詢字串讀取 eid param，並設定只包含 ECID 和兩年期限的新 [Cookie](/help/introduction/cookies.md)。每次以這種方式呼叫此端點時，`s_ecid` Cookie 的有效期限將會重新覆寫為呼叫當天的兩年後。ECID 程式庫必須更新至 4.3.0 版，才能擷取此 Cookie 的值。
 
-此新 `s_ecid` Cookie會遵循與AMCV Cookie相同的退出狀態。如果從 `s_ecid` Cookie讀取eid，則一律會呼叫demdex來擷取該ID的最新退出狀態，並儲存在AMCV Cookie中。
+這個新 `s_ecid` Cookie 會依循與 AMCV Cookie 相同的選擇退出狀態。如果從 `s_ecid` Cookie 讀取 eid，每次都會呼叫 demdex 來擷取該 ID 的最新選擇退出狀態，並將 demdex 儲存在 AMCV Cookie 中。
 
-此外，如果您的消費者已透過此 [方法](https://marketing.adobe.com/resources/help/en_US/sc/implement/opt_out_link.html)選擇退出Analytics追蹤，則會刪除此 `s_ecid` Cookie。
+此外，如果您的消費者已透過此[方法](https://marketing.adobe.com/resources/help/zh_TW/sc/implement/opt_out_link.html)選擇退出 Analytics 追蹤，系統就會刪除此 `s_ecid` Cookie。
 
-使用trackingServer或trackingServerSecure初始化程式庫時，應將追蹤伺服器名稱提供給visitorJS程式庫。這應該符合Analytics設定中的trackingServer設定。
+使用 trackingServer 或 trackingServerSecure 初始化程式庫時，應將追蹤伺服器名稱提供給 visitorJS 程式庫。此名稱應符合 Analytics 設定中的 trackingServer 設定。
 
-如果您選擇不運用此方法，請將下列組態新增至您的ECID程式庫實施：discardtrackingServerCID。當此組態設定為true時，訪客程式庫不會讀取第一方追蹤伺服器所設定的MID。
+如果您選擇不使用此方法，請將下列設定新增至您的 ECID 程式庫實作：discardtrackingServerCID。此設定設為 true 時，訪客程式庫不會讀取第一方追蹤伺服器設定的 MID。
 
 ![](assets/itp-proposal-v1.png)
 
-## 使用appendVisitorIDSTO方法進行跨網域追蹤(在您自己公司的多個網域內)
+## 使用 appendVisitorIDsTo 方法執行跨網域追蹤 (在自己公司的多個網域內)
 
-當瀏覽器封鎖第三方Cookie時，此函數可讓您跨網域共用訪客的ECID。若要使用此函數，您必須先實施 ID 服務，且擁有來源和目的地的網域。可在VisitorAPI. js1.7.0版或更新版本中使用(但不適用於1.10.0版)。
+瀏覽器封鎖第三方 Cookie 時，此函數可讓您跨網域共用訪客的 ECID。若要使用此函數，您必須先實作 ID 服務，且擁有來源和目的地的網域。此函數可在 VisitorAPI. js 1.7.0 版或更新版本中使用 (但不適用於 1.10.0 版)。
 
 **設計**
 
-* 當訪客瀏覽至您的其他網域時，Visitor. appendVisitorIDSTO(url)會傳回包含附加為查詢參數之ECID的URL。
+* 訪客瀏覽至您的其他網域時，Visitor.appendVisitorIDsTo(url) 會傳回一個附加 ECID 作為查詢參數的 URL。
 
-   使用此URL從原始網域重新導向至目的地網域。
+   使用此 URL 可從原始網域重新導向至目的地網域。
 
-* 目的地網域上的ID服務程式碼會從URL擷取ECID，而不是向Adobe傳送請求給Adobe的ID。
+* 目的地網域的 ID 服務程式碼會從 URL 提取 ECID，而非傳送要求向 Adobe 索取該訪客的 ID。
 
    此要求包含第三方 Cookie ID，而該 ID 在此案件中無法使用。
 
-* 目的地頁面上的ID服務程式碼使用傳入的ECID來追蹤訪客。
+* 目的地頁面上的 ID 服務程式碼會使用傳入的 ECID 追蹤訪客。
 
    >[!NOTE]
-   >如果目的地頁面已有先前瀏覽的ECID，則覆寫現有Cookie的決定會受到此config OverwriteRossDomainMCIDAndAID的控制。如需此組態的詳細資訊，請參閱 [OverliteRossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md)。
+   >如果目的地頁面已有先前瀏覽行為的 ECID，則覆寫現有 Cookie 的決定會受到此 config OverwriteRossDomainMCIDAndAID 控制。如需此設定的詳細資訊，請參閱 [OverliteRossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md)。
    >
-   >如需此方法的詳細資訊，請參閱 [appendVisitorIDSTO(跨網域追蹤)](/help/library/get-set/appendvisitorid.md) 參考頁面。
+   >如需深入瞭解此方法，請參閱 [appendVisitorIDSTO (跨網域追蹤)](/help/library/get-set/appendvisitorid.md) 參考頁面。
