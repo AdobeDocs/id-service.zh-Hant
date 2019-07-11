@@ -1,11 +1,11 @@
 ---
-description: idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實施 ID 同步。這兩個函數適用於 VisitorAPI.js 1.10 版或更新版本。
+description: idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實作 ID 同步。這兩個函數適用於 VisitorAPI.js 1.10 版或更新版本。
 keywords: ID 服務
-seo-description: idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實施 ID 同步。這兩個函數適用於 VisitorAPI.js 1.10 版或更新版本。
+seo-description: idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實作 ID 同步。這兩個函數適用於 VisitorAPI.js 1.10 版或更新版本。
 seo-title: 依 URL 或資料來源執行 ID 同步作業
 title: 依 URL 或資料來源執行 ID 同步作業
-uuid: ff83d910-8375-4295-9f2a-e14 c15 eee09 a
-translation-type: tm+mt
+uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -13,13 +13,13 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 # 依 URL 或資料來源執行 ID 同步作業{#id-synchronization-by-url-or-data-source}
 
-idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實施 ID 同步。這兩個函數適用於 VisitorAPI.js 1.10 版或更新版本。
+idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實作 ID 同步。這兩個函數適用於 VisitorAPI.js 1.10 版或更新版本。
 
 內容:
 
 <ul class="simplelist"> 
  <li> <a href="../../library/get-set/idsync.md#section-90ac61617482463aaf4c57009b830332" format="dita" scope="local"> 語法、屬性和巨集 </a> </li> 
- <li> <a href="../../library/get-set/idsync.md#section-0115615c37584a19a2ab11e917c4e7e9" format="dita" scope="local"> 程式碼範例和輸出 </a> </li> 
+ <li> <a href="../../library/get-set/idsync.md#section-0115615c37584a19a2ab11e917c4e7e9" format="dita" scope="local"> 範例程式碼和輸出 </a> </li> 
 </ul>
 
 ## 語法、屬性和巨集 {#section-90ac61617482463aaf4c57009b830332}
@@ -38,14 +38,14 @@ idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destina
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByURL(); </span> </p> </td> 
    <td colname="col2"> <p>在不同的資料合作夥伴和 <span class="keyword">Audience Manager</span> 之間，使用自訂 ID 同步 URL。 </p> <p> 
      <draft-comment>
-       不同資料合作夥伴和Audience Manager之間。例如，合作夥伴x會使用此項目將使用者ID與合作夥伴y同步，然後將其傳送至Audience Manager。 
+       不同資料合作夥伴和 Audience Manager 之間。例如，合作夥伴 x 會用來與合作夥伴 y 同步使用者 ID，然後再將該使用者 ID 傳送給 Audience Manager。 
      </draft-comment> </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByDataSource(); </span> </p> </td> 
    <td colname="col2"> <p>已知 DPID 和 DPUUID，並想使用標準 ID 同步 URL 格式將其傳送給 <span class="keyword">Audience Manager</span>。 </p> <p> 
      <draft-comment>
-       當您已知道使用者ID並想要傳送至Audience Manager時。 
+       當您已知使用者 ID 且想傳送給 Audience Manager。 
      </draft-comment> </p> </td> 
   </tr> 
  </tbody> 
@@ -91,34 +91,34 @@ idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destina
 
 兩個函數都接受下列巨集:
 
-* ** `%TIMESTAMP%`：**產生時間戳記(以毫秒為單位)。用於快取破產。
-* ** `%DID%`：**插入使用者的Audience Manager ID。
-* ** `%HTTP_PROTO%`：**設定通訊通訊協定( `http` 或 `https`)。
+* ** `%TIMESTAMP%`: **產生時間戳記 (單位為毫秒)。用於快取破產。
+* ** `%DID%`: **插入使用者的 Audience Manager ID。
+* ** `%HTTP_PROTO%`: **設定通訊協定 (`http` 或 `https`)。
 
-## 程式碼範例和輸出 {#section-0115615c37584a19a2ab11e917c4e7e9}
+## 範例程式碼和輸出 {#section-0115615c37584a19a2ab11e917c4e7e9}
 
-如果成功，這兩個函數都會傳回 `Successfully queued` 。如果失敗則傳回錯誤訊息字串。
+如果執行成功，兩個函數會傳回 `Successfully queued`。如果失敗則傳回錯誤訊息字串。
 
 **visitor.idSyncByURL**
 
 <table id="table_56AD8291DF9445C69CC2BF50435E1626"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 程式碼範例 </th> 
-   <th colname="col2" class="entry"> 程式碼輸出 </th> 
+   <th colname="col1" class="entry"> 範例程式碼 </th> 
+   <th colname="col2" class="entry"> 範例輸出 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code class="syntax javascript"> 訪客
-var visitor= Visitor. getInstance(「Marketing-CLOUD-OG-ID-HERE」，{})；
+   <td colname="col1"> <p> <code class="syntax javascript"> //Instatiate Visitor 
+      var visitor = Visitor.getInstance("MARKETING-CLOUD-ORG-ID-HERE",{});
 
-    //&amp; amp；nbsp；火焰與火焰；nbsp；url&amp; amp；nbsp；與Amamp；nbsp；巨集與amp；nbsp；replacedvisitor
-    . idSyncByURL({
-    &amp; amp；nbsp；dpid：&amp; amp；nbsp；&#39;24&#39;與amp；nbsp；//&amp; amp；nbsp；必須與amp；nbsp；&amp; amp；nbsp；a&amp; amp；nbsp；字串
-    與amp；nbsp；url：&amp; amp；nbsp；&#39;//su.addthis.com/red/usync?pid=16&amp;amp;puid=%DID%&amp;amp;url=%HTTP_PROTO%%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D&#39;,&amp;nbsp;minutesToLive:&amp;nbsp;20160&amp;nbsp;//&amp;nbsp;optional,&amp;nbsp;defaults&amp;nbsp;to&amp;nbsp;20160&amp;nbsp;minutes&amp;nbsp;(14&amp;nbsp;days)&amp;nbsp
-    ；
-    })；&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+    //&amp;nbsp;Fires&amp;nbsp;url&amp;nbsp;with&amp;nbsp;macros&amp;nbsp;replaced
+    visitor.idSyncByURL({
+    &amp;nbsp;dpid:&amp;nbsp;&#39;24&#39;,&amp;nbsp;//&amp;nbsp;must&amp;nbsp;be&amp;nbsp;a&amp;nbsp;string
+    &amp;nbsp;url:&amp;nbsp;&#39;//su.addthis.com/red/usync?pid=16&amp;amp;puid=%DID%&amp;amp;url=%HTTP_PROTO%%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D&#39;,
+    &amp;nbsp;minutesToLive:&amp;nbsp;20160&amp;nbsp;//&amp;nbsp;optional,&amp;nbsp;defaults&amp;nbsp;to&amp;nbsp;20160&amp;nbsp;minutes&amp;nbsp;(14&amp;nbsp;days)&amp;nbsp;
+    }); &lt;/code&gt; &lt;/p&gt; &lt;/td&gt;
 <td colname="col2"> <p> <span class="codeph"> http://su.addthis.com/red/usync?pid=16&amp;puid=28777806459181003670799219185178493848&amp;url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D </span> </p> </td> 
   </tr> 
  </tbody> 
@@ -129,27 +129,27 @@ var visitor= Visitor. getInstance(「Marketing-CLOUD-OG-ID-HERE」，{})；
 <table id="table_90D61A7E715D47238AAFF2808B33C2F0"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 程式碼範例 </th> 
-   <th colname="col2" class="entry"> 程式碼輸出 </th> 
+   <th colname="col1" class="entry"> 範例程式碼 </th> 
+   <th colname="col2" class="entry"> 範例輸出 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code class="syntax javascript"> 訪客
-var visitor= Visitor. getInstance(「Marketing-CLOUD-OG-ID-HERE」，{})；
+   <td colname="col1"> <p> <code class="syntax javascript"> //Instantiate Visitor 
+      var visitor = Visitor.getInstance("MARKETING-CLOUD-ORG-ID-HERE",{});
 
-    //&amp; amp；nbsp；火焰與火焰；nbsp；&#39;http:/https:&#39;&amp;nbsp;+&amp;nbsp;&#39;//dpm.demdex.net/ibs:dpid=&amp;lt;dpid&amp;gt;&amp;amp;dpuuid=&amp;lt;dpuuid&amp;gt;&#39;visitor.idSyncByDataSource(
-    {
-    &amp; amp；nbsp；dpid：&amp; amp；nbsp；&#39;24&#39;與amp；nbsp；//&amp; amp；nbsp；必須與amp；nbsp；&amp; amp；nbsp；a&amp; amp；nbsp；字串
-    與amp；nbsp；dpuuid：&amp; amp；nbsp；&#39;98765&#39;和amp；nbsp；//&amp; amp；nbsp；必須與amp；nbsp；&amp; amp；nbsp；a&amp; amp；nbsp；字串
-    與amp；nbsp；TargetToLive：&amp; amp；nbsp；20160&amp; amp；nbsp；//&amp; amp；nbsp；選擇性與amp；nbsp；預設與amp；nbsp；to&amp; amp；nbsp；20160&amp; amp；nbsp；分鐘與amp；nbsp；(14與amp；nbsp；日)；nbsp；
-    })；&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+    //&amp;nbsp;Fires&amp;nbsp;&#39;http:/https:&#39;&amp;nbsp;+&amp;nbsp;&#39;//dpm.demdex.net/ibs:dpid=&amp;lt;dpid&amp;gt;&amp;amp;dpuuid=&amp;lt;dpuuid&amp;gt;&#39;
+    visitor.idSyncByDataSource({
+    &amp;nbsp;dpid:&amp;nbsp;&#39;24&#39;,&amp;nbsp;//&amp;nbsp;must&amp;nbsp;be&amp;nbsp;a&amp;nbsp;string
+    &amp;nbsp;dpuuid:&amp;nbsp;&#39;98765&#39;,&amp;nbsp;//&amp;nbsp;must&amp;nbsp;be&amp;nbsp;a&amp;nbsp;string
+    &amp;nbsp;minutesToLive:&amp;nbsp;20160&amp;nbsp;//&amp;nbsp;optional,&amp;nbsp;defaults&amp;nbsp;to&amp;nbsp;20160&amp;nbsp;minutes&amp;nbsp;(14&amp;nbsp;days)&amp;nbsp;
+    }); &lt;/code&gt; &lt;/p&gt; &lt;/td&gt;
 <td colname="col2"> <p> <span class="codeph"> http://dpm.demdex.net/ibs:dpid=24&amp;dpuuid=98765 </span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
->* [DIL idSync](https://marketing.adobe.com/resources/help/en_US/aam/r_dil_idsync.html)
+>* [DIL idSync](https://marketing.adobe.com/resources/help/zh_TW/aam/r_dil_idsync.html)
 
