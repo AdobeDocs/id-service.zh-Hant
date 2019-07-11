@@ -1,11 +1,11 @@
 ---
-description: 呼叫這些ID服務函數，以判斷Experience Cloud ID Service、Analytics或Audience Manager ID請求的逾時狀態。適用於 VisitorAPI.js 1.7.0 版或更新版本。
+description: 呼叫這些 ID 服務函數可判斷 Experience Cloud ID 服務、Analytics 或 Audience Manager ID 要求的逾時狀態。適用於 VisitorAPI.js 1.7.0 版或更新版本。
 keywords: ID 服務
-seo-description: 呼叫這些ID服務函數，以判斷Experience Cloud ID Service、Analytics或Audience Manager ID請求的逾時狀態。適用於 VisitorAPI.js 1.7.0 版或更新版本。
+seo-description: 呼叫這些 ID 服務函數可判斷 Experience Cloud ID 服務、Analytics 或 Audience Manager ID 要求的逾時狀態。適用於 VisitorAPI.js 1.7.0 版或更新版本。
 seo-title: callTimeOut 方法
 title: callTimeOut 方法
-uuid: e5047498-11db-4945-b356-c92 b7 d447573
-translation-type: tm+mt
+uuid: e5047498-11db-4945-b356-c92b7d447573
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
@@ -13,9 +13,9 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 # callTimeOut 方法{#calltimeout-methods}
 
-呼叫這些ID服務函數，以判斷Experience Cloud ID Service、Analytics或Audience Manager ID請求的逾時狀態。適用於 VisitorAPI.js 1.7.0 版或更新版本。
+呼叫這些 ID 服務函數可判斷 Experience Cloud ID 服務、Analytics 或 Audience Manager ID 要求的逾時狀態。適用於 VisitorAPI.js 1.7.0 版或更新版本。
 
-## 逾時函數 {#section-e08228ef5f9b45c9a84139bbb763164a}
+## 逾時函數{#section-e08228ef5f9b45c9a84139bbb763164a}
 
 <table id="table_B3ACE584B3224D838070D32A8462EF28"> 
  <thead> 
@@ -27,15 +27,15 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Experience Cloud ID 服務 </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor. mCIDCallTimedOut()</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.MCIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="keyword"> Analytics</span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor. analyticsCallTimedOut()</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.AnalyticsIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="keyword"> Audience Manager</span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor. aIAmCallTimedOut()</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.AAMIDCallTimedOut()</span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
