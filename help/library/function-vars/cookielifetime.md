@@ -4,8 +4,8 @@ keywords: ID 服務
 seo-description: 此變數可讓您覆寫 AMCV Cookie 的預設期限間隔。
 seo-title: cookieLifetime
 title: cookieLifetime
-uuid: cd945db3-429a-4625-ac3 f-69ac259377 a3
-translation-type: tm+mt
+uuid: cd945db3-429a-4625-ac3f-69ac259377a3
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -15,9 +15,9 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 此變數可讓您覆寫 AMCV Cookie 的預設期限間隔。
 
-根據預設 [!DNL Experience Cloud] ，ID服務Cookie會在24個月後過期。以秒數設定時間間隔。
+根據預設，[!DNL Experience Cloud] ID 服務 Cookie 在 24 個月後過期。以秒數設定時間間隔。
 
-**語法：**` cookieLifetime: *`期限(秒)`*`
+**語法:** ` cookieLifetime: *`以秒為單位的期限`*`
 
 **程式碼範例**
 
