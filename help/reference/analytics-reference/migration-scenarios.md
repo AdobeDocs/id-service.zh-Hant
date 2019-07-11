@@ -5,7 +5,7 @@ seo-description: 包含伺服器範例設定和必要的移轉步驟。
 seo-title: Experience Cloud ID 服務移轉案例
 title: Experience Cloud ID 服務移轉案例
 uuid: 9e229045-6508-48c4-ae39-9537b4941853
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
@@ -34,7 +34,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 * **Analytics JavaScript 檔案**: 多個 JavaScript 檔案。一個檔案用於主要網站，另一個檔案用於個別 CMS 中維護的支援區段。
 * **其他資料收集方法**: 一個網站區段上的硬式編碼影像標籤
 
-首先，此客戶應找出其 Adobe Experience Cloud 組織 ID (請參閱[需求](../../reference/requirements.md))。接著，應該設定移轉寬限期，因為他們使用多個 JavaScript 檔案。This customer will also set up visitor migration and then migrate from `*.2o7.net` to `*.sc.omtrdc.net`.
+首先，此客戶應找出其 Adobe Experience Cloud 組織 ID (請參閱[需求](../../reference/requirements.md))。接著，應該設定移轉寬限期，因為他們使用多個 JavaScript 檔案。此客戶也將設定訪客移轉，然後從 `*.2o7.net` 移轉至 `*.sc.omtrdc.net`。
 
 當此客戶更新至最新的 Analytics JavaScript 程式碼以準備開始使用 [!DNL Experience Cloud] ID 服務時，他們也將更新所有的硬式編碼影像標籤，以改用 JavaScript。
 
