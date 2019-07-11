@@ -4,8 +4,8 @@ keywords: ID 服務
 seo-description: 多部分、頂級網域需要此變數，其中 URL 最後 2 個部分的其中一個部分大於兩個字元。
 seo-title: cookieDomain
 title: cookieDomain
-uuid: a57e5477-c07 b-4d54-8aea-8e8 b152 f1423
-translation-type: tm+mt
+uuid: a57e5477-c07b-4d54-8aea-8e8b152f1423
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -15,12 +15,12 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 多部分、頂級網域需要此變數，其中 URL 最後 2 個部分的其中一個部分大於兩個字元。
 
-**語法：**` cookieDomain: " *`URL`*"` (不需要 `www` 前置詞)。
+**語法:** ` cookieDomain: " *`URL`*"` (前置詞 `www` 非必要)。
 
-**使用個案**
+**使用案例**
 
 * 必填: `www.example.com.uk`
-* 不需要： `www.example.co.uk`
+* 非必要: `www.example.co.uk`
 
 **程式碼範例**
 
