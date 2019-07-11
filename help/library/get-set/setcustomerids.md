@@ -4,8 +4,8 @@ keywords: ID 服務
 seo-description: setCustomerIDs 會設定 1 或多個機碼值組，定義客戶 ID 及其驗證狀態。
 seo-title: setCustomerIDs
 title: setCustomerIDs
-uuid: 4f960f98-cec2-4db6-84ea-0259e2128 ea2
-translation-type: tm+mt
+uuid: 4f960f98-cec2-4db6-84ea-0259e2128ea2
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -17,7 +17,7 @@ setCustomerIDs 會設定 1 或多個機碼值組，定義客戶 ID 及其驗證�
 
 **語法:** `visitor.setCustomerIDs()`
 
-如下列程式碼範例所示，您可以設定單一或多個 ID。請參閱[客戶 ID 和驗證狀態](../../reference/authenticated-state.md)，以瞭解詳細資訊和範例。
+如下列程式碼範例所示，您可以設定單一或多個 ID。如需詳細資訊和範例，請參閱[客戶 ID 和驗證狀態](../../reference/authenticated-state.md)。
 
 ```js
 // Single ID with a single authentication state 
