@@ -2,26 +2,26 @@
 description: 關於搭配 ID 服務使用其他 Experience Cloud 解決方案的功能、功用和問題之常見問題集。
 keywords: ID 服務
 seo-description: 關於搭配 ID 服務使用其他 Experience Cloud 解決方案的功能、功用和問題之常見問題集。
-seo-title: 其他Experience Cloud解決方案的常見問答集
-title: 其他Experience Cloud解決方案的常見問答集
-uuid: 7d848663-6cbb-4d80-ab06-7b6 d2 dc20 e2 b
-translation-type: tm+mt
+seo-title: 其他 Experience Cloud 解決方案的常見問題集
+title: 其他 Experience Cloud 解決方案的常見問題集
+uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# FAQs for other Experience Cloud solutions{#faqs-for-other-experience-cloud-solutions}
+# 其他 Experience Cloud 解決方案的常見問題集{#faqs-for-other-experience-cloud-solutions}
 
 關於搭配 ID 服務使用其他 Experience Cloud 解決方案的功能、功用和問題之常見問題集。
 
-## Dynamic Tag Management (DTM) {#section-7ac4b9c1f1fd45a5a03eac3fb5968af7}
+## 動態標籤管理 (DTM) {#section-7ac4b9c1f1fd45a5a03eac3fb5968af7}
 
 **我是否可使用「動態標籤管理」來部署訪客 ID 服務?**
 
 可以，這是慣用和推薦的部署選項。
 
-請參閱[透過 DTM 實現的標準實施](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)。
+請參閱[透過 DTM 實現的標準實作](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)。
 
 ## Analytics 與 Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
