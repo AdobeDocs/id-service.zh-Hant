@@ -1,11 +1,11 @@
 ---
-description: 其他Experience Cloud ID服務功能和函數的相關資訊。
+description: 其他 Experience Cloud ID 服務特色與功能的相關資訊。
 keywords: ID 服務
-seo-description: 其他Experience Cloud ID服務功能和函數的相關資訊。
+seo-description: 其他 Experience Cloud ID 服務特色與功能的相關資訊。
 seo-title: 參考
 title: 參考
-uuid: 9e8f50db-1fdf-4fbc-89e5-4431bb6402d
-translation-type: tm+mt
+uuid: 9e8f50db-1fdf-4fbc-89e5-4431bb6402d5
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
@@ -13,9 +13,9 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 # 參考 {#reference}
 
-其他Experience Cloud ID服務功能和函數的相關資訊。
+其他 Experience Cloud ID 服務特色與功能的相關資訊。
 
-* [Analytics參考概述](analytics-reference/analytics-reference.md)
+* [Analytics 參考概述](analytics-reference/analytics-reference.md)
 * [內容安全性原則及 Experience Cloud ID 服務](csp.md)
 * [Experience Cloud ID 服務的 COPPA 支援](coppa.md)
 * [Experience Cloud ID 服務的 CORS 支援](cors.md)
