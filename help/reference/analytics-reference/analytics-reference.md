@@ -4,8 +4,8 @@ keywords: ID 服務
 seo-description: Adobe Analytics 獨有的 ID 服務功能。
 seo-title: Analytics 參考
 title: Analytics 參考
-uuid: 215f0394-a436-4f0 c-9a52-3b387048 e40 e
-translation-type: tm+mt
+uuid: 215f0394-a436-4f0c-9a52-3b387048e40e
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
