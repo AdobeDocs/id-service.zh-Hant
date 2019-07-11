@@ -1,11 +1,11 @@
 ---
-description: 選用的布林值標幟，可控制瀏覽器如何從Experience Cloud ID服務要求資源。
+description: 此選用的布林值標幟可控制瀏覽器從 Experience Cloud ID 服務要求資源的方式。
 keywords: ID 服務
-seo-description: 選用的布林值標幟，可控制瀏覽器如何從Experience Cloud ID服務要求資源。
+seo-description: 此選用的布林值標幟可控制瀏覽器從 Experience Cloud ID 服務要求資源的方式。
 seo-title: useCORSOnly
 title: useCORSOnly
-uuid: 607dc035-dffc-4f4 d-be51-08ef6 c0 a8 fad
-translation-type: tm+mt
+uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
@@ -13,9 +13,9 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 # useCORSOnly{#usecorsonly}
 
-選用的布林值標幟，可控制瀏覽器如何從Experience Cloud ID服務要求資源。
+此選用的布林值標幟可控制瀏覽器從 Experience Cloud ID 服務要求資源的方式。
 
-**語法：**`useCORSOnly: true|false` (預設 `false`為。)
+**語法:** `useCORSOnly: true|false` (預設為 `false`。)
 
 **概述**
 
@@ -23,7 +23,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 >[!IMPORTANT]
 >
->`Set useCORSOnly: true` 如果您有嚴格的安全要求。請僅在確信所有訪客使用的瀏覽器都支援 CORS 的情形下，才啟用此模式。在不支援 CORS 的瀏覽器上，使用者體驗不受影響。不過，不支援 CORS 的瀏覽器無法向 [!DNL Adobe Experience Cloud] 要求資源或交換資料。
+>若您對於安全性有嚴格的要求，則 `Set useCORSOnly: true`。請僅在確信所有訪客使用的瀏覽器都支援 CORS 的情形下，才啟用此模式。在不支援 CORS 的瀏覽器上，使用者體驗不受影響。不過，不支援 CORS 的瀏覽器無法向 [!DNL Adobe Experience Cloud] 要求資源或交換資料。
 
 **程式碼範例**
 
