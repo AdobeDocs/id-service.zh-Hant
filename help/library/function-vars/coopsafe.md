@@ -4,8 +4,8 @@ keywords: ID 服務
 seo-description: 選用的布林值設定，可決定 ID 服務是否要將資料傳送至 Adobe Experience Cloud Device Co-op。
 seo-title: isCoopSafe
 title: isCoopSafe
-uuid: 4dfa1f35-0a88-48d1-9484-d88 cb53 ad461
-translation-type: tm+mt
+uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -19,7 +19,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 <ul class="simplelist"> 
  <li> <a href="../../library/function-vars/coopsafe.md#section-4883eda6beb8437182bcc82bb58fae41" format="dita" scope="local"> 需求 </a> </li> 
- <li> <a href="../../library/function-vars/coopsafe.md#section-d18af2b903f248e18ae8108aaf0a8ebb" format="dita" scope="local"> 使用個案 </a> </li> 
+ <li> <a href="../../library/function-vars/coopsafe.md#section-d18af2b903f248e18ae8108aaf0a8ebb" format="dita" scope="local"> 使用案例 </a> </li> 
  <li> <a href="../../library/function-vars/coopsafe.md#section-952f56724a2b4d349340e26fbaf33ddd" format="dita" scope="local"> 語法與程式碼範例 </a> </li> 
  <li> <a href="../../library/function-vars/coopsafe.md#section-fcd441933506493faefaa6b51f194a17" format="dita" scope="local"> 事件呼叫 POST 參數 </a> </li> 
  <li> <a href="../../library/function-vars/coopsafe.md#section-9281c39c8b6249d7864100b5cbca7dc6" format="dita" scope="local"> Post-Instantiation API </a> </li> 
@@ -27,14 +27,14 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ## 要求 {#section-4883eda6beb8437182bcc82bb58fae41}
 
-若要使用 `isCoopSafe` ，您必須：
+若要使用 `isCoopSafe`，您必須:
 
 * 使用 2.4 版或更新版本的 ID 服務程式碼。
-* 參與 [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/en_US/mcdc/)。潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
+* 參與 [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/zh_TW/mcdc/)。潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
 
 * 請和您的 [!DNL Adobe] 顧問合作，在您的 Device co-op 帳戶上設定白名單或是黑名單標幟。沒有啟用可這些標幟的自助式路徑。
 
-## 使用個案 {#section-d18af2b903f248e18ae8108aaf0a8ebb}
+## 使用案例 {#section-d18af2b903f248e18ae8108aaf0a8ebb}
 
 `isCoopSafe` 有助於解決關於 Device co-op 現有或潛在成員資料收集的 2 個使用案例。這些關於網站訪客資料如何傳給 Device co-op 的使用案例有助於建立設備圖形。以下表格說明 `isCoopSafe` 如何搭配其他使用案例以封鎖或傳送資料給裝置圖形
 
@@ -137,7 +137,7 @@ POST 參數告知 [!DNL Experience Cloud] Device Co-op 是否能在裝置圖像�
 Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 -->
 
->[!MORE_贊_ this]
+>[!MORE_LIKE_THIS]
 >
->* [DIL isCoopSafe](https://marketing.adobe.com/resources/help/en_US/aam/dil-coopsafe.html)
+>* [DIL isCoopSafe](https://marketing.adobe.com/resources/help/zh_TW/aam/dil-coopsafe.html)
 
