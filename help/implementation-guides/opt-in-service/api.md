@@ -4,8 +4,8 @@ seo-description: 選擇加入資料庫 API 與組態設定參考資料。
 seo-title: 選擇加入參考資料
 title: 選擇加入參考資料
 uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
-translation-type: ht
-source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+translation-type: tm+mt
+source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
 
@@ -25,9 +25,9 @@ adobe.OptInCategories = {
 }
 ```
 
-## 選擇加入設定參數{#section-d66018342baf401389f248bb381becbf}
+## 選擇加入設定參數 {#section-d66018342baf401389f248bb381becbf}
 
-本節探討如何使用 API 來設定選擇加入。大部分的設定與實作可使用 Launch 擴充功能來完成。
+本節探討如何使用 API 來設定選擇加入。大部分的組態和實作都可使用Experience Platform Launch擴充功能完成。
 
 訪客 JavaScript 的 `getInstance()` 函數中提供選擇加入設定，可實例化全域 `adobe` 物件。下表列出與選擇加入服務有關的訪客 JS 設定。
 
@@ -55,7 +55,7 @@ adobe.OptInCategories = {
 
 覆寫預設之 13 個月到期日的秒數
 
-## 同意參數的變更{#section-c3d85403ff0d4394bd775c39f3d001fc}
+## 同意參數的變更 {#section-c3d85403ff0d4394bd775c39f3d001fc}
 
 訪客在您的網站上體驗時，可能會隨時首次設定偏好設定，或使用您的 CMP 變更偏好設定。以初始設定初始化訪客 JS 後，就能使用使用下列函數變更訪客的權限:
 
@@ -129,7 +129,7 @@ adobe.OptInCategories = {
 
 視狀態值而定，值為 true 或 false。當工作流程形式的同意已開始但尚未完成時，選擇加入會回報此屬性為 false。
 
-## 選擇加入物件的方法{#section-e0417801a82548d199d833010033e433}
+## 選擇加入物件的方法 {#section-e0417801a82548d199d833010033e433}
 
 **`approve(categories, shouldWaitForComplete)`**
 
@@ -202,7 +202,7 @@ optIn.fetchPermissions(callback, true);
 
 拒絕所有現有類別。
 
-## 選擇加入物件的事件{#section-06f25b33cab54bafb053183e937fb710}
+## 選擇加入物件的事件 {#section-06f25b33cab54bafb053183e937fb710}
 
 **`complete`:**
 
