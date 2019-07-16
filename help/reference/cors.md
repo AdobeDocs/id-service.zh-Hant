@@ -1,19 +1,19 @@
 ---
-description: 瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Cloud ID 服務支援 CORS 標準，以允許這些用戶端的跨原始資源要求。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
+description: 瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Platform Identity Service支援可讓這些用戶端、跨原始資源要求的CORS標準。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
 keywords: ID 服務
-seo-description: 瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Cloud ID 服務支援 CORS 標準，以允許這些用戶端的跨原始資源要求。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
-seo-title: Experience Cloud ID 服務的 CORS 支援
-title: Experience Cloud ID 服務的 CORS 支援
+seo-description: 瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Platform Identity Service支援可讓這些用戶端、跨原始資源要求的CORS標準。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
+seo-title: Experience Platform Identity Service中的CORS支援
+title: Experience Platform Identity Service中的CORS支援
 uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Experience Cloud ID 服務的 CORS 支援 {#cors-support-in-the-experience-cloud-id-service}
+# CORS Support in the Experience Platform Identity Service {#cors-support-in-the-experience-cloud-id-service}
 
-瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Cloud ID 服務支援 CORS 標準，以允許這些用戶端的跨原始資源要求。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
+瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Platform Identity Service支援可讓這些用戶端、跨原始資源要求的CORS標準。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
 
 ## 相同來源政策和 ID 服務要求的問題 {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
@@ -25,7 +25,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 如果兩個頁面共用這些特性則瀏覽器會允許要求，若不共用則封鎖資源要求。
 
-## CORS 可解決相同來源政策的問題{#section-76c87ec3295d447bab220c84f138c235}
+## CORS 可解決相同來源政策的問題 {#section-76c87ec3295d447bab220c84f138c235}
 
 CORS 提供在不同網域間要求資源的安全、有效方法。CORS 規格包含一組 HTTP 標題，供瀏覽器用來傳送、接收和評估資源要求。評估資源要求稱為*`preflight check`*。這項檢查可讓瀏覽器和伺服器判斷應允許或是封鎖哪些要求。預檢檢查對於要求資源的應用程式、API 或指令檔是透明的。資源要求程序中有兩個很重要的標題:
 
@@ -76,7 +76,7 @@ CORS 提供在不同網域間要求資源的安全、有效方法。CORS 規格�
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>提高安全性</b> </p> </td> 
-   <td colname="col2"> <p>CORS 使用 <a href="https://developer.mozilla.org/zh-TW/docs/Web/API/XMLHttpRequest" format="https" scope="external"> XMLHttpRequest</a> 來要求與傳輸資料。此方法比 JSONP 要求更安全。它可確保絕對無法執行 DCS 回應中可能包含的任意 JavaScript。CORS XMLHttpRequest 回應裝載是由 ID 服務 JavaScript 剖析，不是單純在回撥函數中執行。 </p> <p> <p>注意: 為了接受 Cookie，<span class="codeph">XMLHttpRequest</span> 物件的 <span class="codeph">withCredentials</span> 屬性必須設定為 <span class="codeph">true</span>。Chrome、Firefox、Internet Explorer (10 以上版本)、Opera 和 Safari 都支援此屬性。 </p> </p> </td> 
+   <td colname="col2"> <p>CORS 使用 <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" format="https" scope="external"> XMLHttpRequest</a> 來要求與傳輸資料。此方法比 JSONP 要求更安全。它可確保絕對無法執行 DCS 回應中可能包含的任意 JavaScript。CORS XMLHttpRequest 回應裝載是由 ID 服務 JavaScript 剖析，不是單純在回撥函數中執行。 </p> <p> <p>注意: 為了接受 Cookie，<span class="codeph">XMLHttpRequest</span> 物件的 <span class="codeph">withCredentials</span> 屬性必須設定為 <span class="codeph">true</span>。Chrome、Firefox、Internet Explorer (10 以上版本)、Opera 和 Safari 都支援此屬性。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>改進效能</b> </p> </td> 
