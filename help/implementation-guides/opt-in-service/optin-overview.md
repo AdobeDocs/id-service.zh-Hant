@@ -4,8 +4,8 @@ seo-description: 如果您可以在使用者造訪網站時，在他們的裝置
 seo-title: 選擇加入服務
 title: 選擇加入服務
 uuid: aebd72ad-4118-471b-9755-d08a72caa0fd
-translation-type: ht
-source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
+translation-type: tm+mt
+source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 透過使用選擇加入服務，您可指定訪客是否能選擇一次加入所有 Adobe 解決方案，或依序提出解決方案以要求各方案的權限。客戶完成並記錄核准程序後，您便可以從所有的 Adobe 解決方案擷取 CMP 訪客核准。
 
-使用 [Adobe Launch](https://docs.adobelaunch.com/) 搭配[選擇加入擴充功能](../../implementation-guides/opt-in-service/launch.md)即可輕鬆實作和設定選擇加入服務。亦可使用 [DTM](../../implementation-guides/opt-in-service/optin-dtm.md) 進行實作和設定。
+The Opt-in service is implemented and configured easily using [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) with the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md). 亦可使用 [DTM](../../implementation-guides/opt-in-service/optin-dtm.md) 進行實作和設定。
 
 請參閱[設定選擇加入服務](../../implementation-guides/opt-in-service/getting-started.md)瞭解如何開始使用。
 
@@ -30,7 +30,7 @@ source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 >
 >本文件的內容不是法律建議，且用意並非要取代法律建議。設定選擇加入實作時，請向貴公司的法務部門諮詢同意與實務的相關建議。
 
-## 所有 Experience Cloud 解決方案的選擇加入{#section-053e6224505542cf961896f0ca869e52}
+## 所有 Experience Cloud 解決方案的選擇加入 {#section-053e6224505542cf961896f0ca869e52}
 
 選擇加入服務是根據您自身需求，用來建立同意選擇加入工作流程的工具，可讓您設計在使用者或同意控制者給予同意之前和之後所使用的反應 (執行標籤) 工作流程。
 
