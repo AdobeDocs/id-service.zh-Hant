@@ -4,8 +4,8 @@ product: ID 服務
 audience: 終端使用者
 user-guide-title: Experience Cloud ID 服務說明
 user-guide-url: /content/help/tw/id-service/using/home.html
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 + 實作指南 {#implementation-guides}
    + [實作指南](implementation-guides/implementation-guides.md)
    + [實作方式](implementation-guides/implementation-methods.md)
-   + [使用 Launch 實作](implementation-guides/ecid-implement-with-launch.md)
+   + [使用Experience Platform Launch進行實作](implementation-guides/ecid-implement-with-launch.md)
    + [使用 DTM 實作](implementation-guides/standard.md)
    + [實作 Analytics](implementation-guides/setup-analytics.md)
    + [實作 Target](implementation-guides/setup-target.md)
@@ -36,7 +36,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
       + [選擇加入服務概述](implementation-guides/opt-in-service/optin-overview.md)
       + [設定選擇加入服務](implementation-guides/opt-in-service/getting-started.md)
       + [驗證選擇加入服務](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
-      + [使用 Launch 設定選擇加入](implementation-guides/opt-in-service/launch.md)
+      + [使用Experience Platform Launch設定選擇加入](implementation-guides/opt-in-service/launch.md)
       + [使用 DTM 設定選擇加入](implementation-guides/opt-in-service/optin-dtm.md)
       + [選擇加入使用案例](implementation-guides/opt-in-service/use-cases.md)
       + [選擇加入參考資料](implementation-guides/opt-in-service/api.md)
