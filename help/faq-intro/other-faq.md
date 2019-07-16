@@ -5,8 +5,8 @@ seo-description: 關於搭配 ID 服務使用其他 Experience Cloud 解決方�
 seo-title: 其他 Experience Cloud 解決方案的常見問題集
 title: 其他 Experience Cloud 解決方案的常見問題集
 uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ## Analytics 與 Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
-**在我實作 Experience Cloud ID 服務後，使用者的瀏覽歷史記錄會從[!DNL Adobe Analytics]匯出到[!DNL Audience Manager]嗎?**
+**實作Experience Platform Identity Service後，將會從[!DNL Adobe Analytics]使用者[!DNL Audience Manager]的瀏覽記錄匯出嗎？**
 
 您有兩個選擇:
 
