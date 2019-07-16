@@ -2,16 +2,16 @@
 description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie，以及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
 keywords: playstation;ID 服務
 seo-description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie，以及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
-seo-title: Cookie 和 Experience Cloud ID 服務
-title: Cookie 和 Experience Cloud ID 服務
+seo-title: Cookie和Experience Platform Identity Service
+title: Cookie和Experience Platform Identity Service
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Cookie 和 Experience Cloud ID 服務{#cookies-and-the-experience-cloud-id-service}
+# Cookies and the Experience Platform Identity Service{#cookies-and-the-experience-cloud-id-service}
 
 ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie，以及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
 
@@ -114,7 +114,7 @@ AMCVS Cookie 會作為標幟，指出工作階段已初始化。其值一律為 
  </tbody> 
 </table>
 
-如需相關資訊，請參閱[瞭解向 Demdex 網域進行的呼叫](https://marketing.adobe.com/resources/help/zh_TW/aam/demdex-calls.html)。
+For related information, see [Understanding Calls to the Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
 
 ## 產生 Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -124,4 +124,4 @@ ID 服務在您的頁面載入時隨即開始建立 MID。在此過程中，`vis
 
 ## 下一步 {#section-8db1727a63bc4ff68b495f270315d453}
 
-請參閱 [Experience Cloud ID 服務如何要求與設定 ID...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)。
+See [How the Experience Platform Identity Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
