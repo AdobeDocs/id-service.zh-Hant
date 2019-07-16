@@ -5,8 +5,8 @@ seo-description: 2015 年發行說明和更新。
 seo-title: 2015 年發行說明
 title: 2015 年發行說明
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 2015 年 11 月
 
-兒童網路隱私保護法 (COPPA) 禁止在未經父母明確同意下，透過網路收集 13 歲以下兒童的個人資訊。客戶擔憂 COPPA 會在 [!DNL Experience Cloud] ID 服務程式碼中新增選用變數，使該程式碼無法在第三方瀏覽器網域中設定 Cookie。請參閱 [Experience Cloud ID 服務的 COPPA 支援](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)。適用於 1.5.3 版或更高版本。
+兒童網路隱私保護法 (COPPA) 禁止在未經父母明確同意下，透過網路收集 13 歲以下兒童的個人資訊。客戶擔憂 COPPA 會在 [!DNL Experience Cloud] ID 服務程式碼中新增選用變數，使該程式碼無法在第三方瀏覽器網域中設定 Cookie。See [COPPA Support in the Experience Platform Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). 適用於 1.5.3 版或更高版本。
 
 ## 版本 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
@@ -47,7 +47,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 此版本中的文件修訂包括:
 
 * [API 方法與程式碼程式庫](../library/library.md#concept-ff27497375644a898d47984aefb21c97): 重新整理內容與文字。在大多數情況下，每個方法會有專屬的頁面。
-* [Experience Cloud ID 服務的需求](../reference/requirements.md): 修訂內容與已識別的文字。
+* [Experience Platform Identity Service的需求](../reference/requirements.md)：修訂內容和重新整理的文字。
 
 ## 版本 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
