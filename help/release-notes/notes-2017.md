@@ -1,21 +1,21 @@
 ---
-description: 2017 年 Experience Cloud ID 服務的功能發佈、更新或變更。
+description: 2017年Experience Platform Identity Service的功能發行、更新或變更。
 keywords: ID 服務
-seo-description: 2017 年 Experience Cloud ID 服務的功能發佈、更新或變更。
+seo-description: 2017年Experience Platform Identity Service的功能發行、更新或變更。
 seo-title: 2017 年發行說明
 title: 2017 年發行說明
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # 2017 年發行說明 {#release-notes}
 
-2017 年 Experience Cloud ID 服務的功能發佈、更新或變更。
+2017年Experience Platform Identity Service的功能發行、更新或變更。
 
-這些變更也記錄在 [Experience Cloud 發行說明](https://marketing.adobe.com/resources/help/zh_TW/whatsnew/)中。如需以往的 ID 服務發行說明，請參閱[先前發行說明](https://marketing.adobe.com/resources/help/zh_TW/whatsnew/?f=c_legacy_releases.html)或此頁面最下方的連結。
+[Experience Cloud 發行說明](https://marketing.adobe.com/resources/help/en_US/whatsnew/)也會納入這些變更。如需查看較早的 ID 服務發行說明，請參閱[之前的發行說明](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)或此頁面底部的連結。
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * 先前在瀏覽器中按上一頁按鈕時會造成 ID 服務擲回錯誤，這個與 Chrome 相關的錯誤已經修正。
 * 現在當事件呼叫回應中的地區 ID 變更時，ID 服務就會重新進行 ID 同步。
-* 新增文件，[內容安全性原則及 Experience Cloud ID 服務](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)，說明如何將 ID 服務使用的 Adobe 網域呼叫加入白名單。
+* 新增文件，[內容安全政策和Experience Platform Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)，說明如何對ID服務使用的Adobe網域進行白名單呼叫。
 
 ## 版本 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -123,7 +123,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  </tbody> 
 </table>
 
-## 5 月的文件更新{#section-1d36b91bb7a140ce8a145251ffac9f2f}
+## 5 月的文件更新 {#section-1d36b91bb7a140ce8a145251ffac9f2f}
 
 <table id="table_CD031A716A694E8FA89695C9B614BC91"> 
  <thead> 
@@ -192,7 +192,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **新增文件**
 
-[搭配使用 DNS 預先擷取功能與不同的 Experience Cloud 解決方案和服務`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/zh_TW/mcloud/dns-prefetch.html)
+[搭配不同的 Experience Cloud 解決方案和服務使用 DNS 預先擷取`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
 
 ## 版本 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
@@ -208,6 +208,6 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 * 修正若訪客啟用廣告封鎖程式而該封鎖程式被設定為排除 demdex.net 網域時，ID 服務無法立即失效的錯誤。這是相當罕見且不尋常的錯誤，因為大多數的廣告封鎖工具不會封鎖 demdex.net 網域。(MCID-233)
 * 修正因 ID 服務代碼和客戶網站上的自訂指令碼互動所引發的錯誤。此問題導致 Internet Explorer 9 無法載入網頁。(MCID-206)
 
-## 前幾年{#section-aaabe2b7b0f04641b24acffc11cd7d2e}
+## 前幾年 {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
 舊版的 ID 服務發行說明。
