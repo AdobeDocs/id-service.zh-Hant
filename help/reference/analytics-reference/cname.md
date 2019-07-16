@@ -5,8 +5,8 @@ seo-description: 'null'
 seo-title: 資料收集 CNAME 和跨網域追蹤
 title: 資料收集 CNAME 和跨網域追蹤
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
@@ -21,9 +21,9 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 demdex.net Cookie 可讓訪客 ID 服務提供與 Analytics 中的 s_vi Cookie 相同層級的跨網域追蹤，其中，有些瀏覽器會接受 Cookie 並跨網域使用，有些瀏覽器則會拒絕。
 
-## 資料收集 CNAME{#section-48fd186d376a48079769d12c4bd9f317}
+## 資料收集 CNAME {#section-48fd186d376a48079769d12c4bd9f317}
 
-在資料收集伺服器設定 Analytics Cookie 時，許多客戶都將資料收集伺服器 CNAME 記錄設定為[第一方 Cookie 實作](https://marketing.adobe.com/resources/help/zh_TW/whitepapers/first_party_cookies/)的一部分，以避免發生瀏覽器拒絕第三方 Cookie 的問題。此程序會將您的資料收集伺服器網域設定為符合您的網站網域，使訪客 ID Cookie 設為第一方 Cookie。
+在資料收集伺服器設定 Analytics Cookie 時，許多客戶都將資料收集伺服器 CNAME 記錄設定為[第一方 Cookie 實作](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/)的一部分，以避免發生瀏覽器拒絕第三方 Cookie 的問題。此程序會將您的資料收集伺服器網域設定為符合您的網站網域，使訪客 ID Cookie 設為第一方 Cookie。
 
 由於訪客 ID 服務會將訪客 Cookie 直接設定在目前使用 JavaScript 之網站的網域上，因此在設定第一方 Cookie 時已不需要此設定。
 
@@ -45,6 +45,6 @@ demdex.net Cookie 可讓訪客 ID 服務提供與 Analytics 中的 s_vi Cookie �
 
 因此，您的收集網域應該是人們經常瀏覽的網域，如此才能跨網域識別訪客。如果沒有可用於資料收集網域的*常見*網域，則維護資料收集網域的 CNAME 就無法獲得跨網域優勢。如果未先造訪主要進入網站，則訪客在次要網站與主要網站中的識別會不同。
 
-## 使用 Experience Cloud ID 服務啟用 CNAME 支援{#section-25d4feb686d944e3a877d7aad8dbdf9a}
+## Enable CNAME support with the Experience Platform Identity Service {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
 設定 `visitor.marketingCloudServerSecure` 變數即可啟用資料收集伺服器 CNAME 支援。
