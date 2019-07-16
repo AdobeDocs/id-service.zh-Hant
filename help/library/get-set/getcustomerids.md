@@ -1,19 +1,19 @@
 ---
-description: getCustomerIDs 會傳回 Experience Cloud ID 服務設定的所有客戶 ID。
+description: getCustomerIDs會傳回Experience Platform Identity Service設定的任何客戶ID。
 keywords: ID 服務
-seo-description: getCustomerIDs 會傳回 Experience Cloud ID 服務設定的所有客戶 ID。
+seo-description: getCustomerIDs會傳回Experience Platform Identity Service設定的任何客戶ID。
 seo-title: getCustomerIDs
 title: getCustomerIDs
 uuid: 4eb6ff00-2a92-46b6-b9a6-8e0c6e2e73d1
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # getCustomerIDs{#getcustomerids}
 
-getCustomerIDs 會傳回 Experience Cloud ID 服務設定的所有客戶 ID。
+getCustomerIDs會傳回Experience Platform Identity Service設定的任何客戶ID。
 
 <!--
 Is there anything else we can say about this??
