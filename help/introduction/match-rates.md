@@ -1,19 +1,19 @@
 ---
-description: 概述 Experience Cloud ID 服務 (包括 Adobe Media Optimizer 和 ID 服務) 中的 ID 同步程序與匹配率。
+description: 概述Experience Platform Identity Service中的ID同步程序和匹配率，包括Adobe Media Optimizer和ID服務。
 keywords: ID 服務
-seo-description: 概述 Experience Cloud ID 服務 (包括 Adobe Media Optimizer 和 ID 服務) 中的 ID 同步程序與匹配率。
+seo-description: 概述Experience Platform Identity Service中的ID同步程序和匹配率，包括Adobe Media Optimizer和ID服務。
 seo-title: 瞭解 ID 同步和匹配率
 title: 瞭解 ID 同步和匹配率
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # 瞭解 ID 同步和匹配率{#understanding-id-synchronization-and-match-rates}
 
-概述 Experience Cloud ID 服務 (包括 Adobe Media Optimizer 和 ID 服務) 中的 ID 同步程序與匹配率。
+概述Experience Platform Identity Service中的ID同步程序和匹配率，包括Adobe Media Optimizer和ID服務。
 
 ## ID 同步和匹配率 {#section-f652aae7234945e89d26dd833c5215fb}
 
@@ -33,7 +33,7 @@ ID 服務會即時同步 ID。此程序在瀏覽器中運作，而非透過伺�
 
 **步驟 1: 載入頁面**
 
-訪客造訪您的網站並載入頁面時，`Visitor.getInstance` 函數會向 ID 服務發出 [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) 或 JSON-P 呼叫。ID 服務使用 Cookie 回應，其中包含訪客的 [!DNL Experience Cloud] ID (MID)。MID 是指派給每個網站訪客的唯一 ID。另請參閱 [Cookie 和 Experience Cloud ID 服務](../introduction/cookies.md)。
+訪客造訪您的網站並載入頁面時，`Visitor.getInstance` 函數會向 ID 服務發出 [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) 或 JSON-P 呼叫。ID 服務使用 Cookie 回應，其中包含訪客的 [!DNL Experience Cloud] ID (MID)。MID 是指派給每個網站訪客的唯一 ID。See also, [Cookies and the Experience Platform Identity Service](../introduction/cookies.md).
 
 **步驟 2: 載入 iFrame**
 
@@ -43,7 +43,7 @@ ID 服務會即時同步 ID。此程序在瀏覽器中運作，而非透過伺�
 * 能盡快載入。如果您覺得太快了，則可在視窗載入事件後再載入 iFrame (不建議)。請參閱[idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) 以了解詳細資訊。
 * 防止 iFrame 中的程式碼影響或是取得上層頁面的存取權。
 
-另請參閱,[Experience Cloud ID 服務如何請求與設定 ID...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+另請參閱,[Experience Platform Identity Service Requests and Sets ID….](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
 
 **步驟 3: 觸發 ID 同步**
 
@@ -59,11 +59,11 @@ http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<
 </varname>>
 ```
 
-另請參閱[傳入資料傳輸的 ID 同步](https://marketing.adobe.com/resources/help/zh_TW/aam/c_id_sync_in.html)。
+另請參閱[連入資料傳輸的 ID 同步](https://marketing.adobe.com/resources/help/en_US/aam/c_id_sync_in.html)。
 
 **步驟 4: 儲存 ID**
 
-同步的 ID 會儲存在[邊緣與核心資料伺服器](https://marketing.adobe.com/resources/help/zh_TW/aam/c_compedge.html)中。
+同步後的 ID 儲存在 [Edge 和核心資料伺服器](https://marketing.adobe.com/resources/help/en_US/aam/c_compedge.html)。
 
 ## 同步服務負責管理 ID 同步作業 {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
@@ -78,9 +78,9 @@ http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<
 
 ## 與 Adobe Media Optimizer 進行 ID 同步 {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Media Optimizer] 是 iFrame 型 ID 同步程序的例外情況。由於 [!DNL Media Optimizer] 是值得信賴的網域，ID 同步會從上層頁面而不是在 [!DNL Destination Publishing iFrame] 進行。同步期間，ID 服務會在 [!DNL Media Optimizer] 呼叫 `cm.eversttech.net`，這是 [!DNL Media Optimizer] 在 Adobe 收購前所使用的舊版網域名稱。將資料傳送至 [!DNL Media Optimizer] 有助於改善匹配率，而且這是使用 2.0 版 (或更新版本) 的 ID 服務之客戶的專屬自動功能。另請參閱 [Media Optimizer Cookie](https://marketing.adobe.com/resources/help/zh_TW/whitepapers/cookies/cookies_media_optimizer.html)。
+[!DNL Adobe Media Optimizer] 是 iFrame 型 ID 同步程序的例外情況。由於 [!DNL Media Optimizer] 是值得信賴的網域，ID 同步會從上層頁面而不是在 [!DNL Destination Publishing iFrame] 進行。同步期間，ID 服務會在 [!DNL Media Optimizer] 呼叫 `cm.eversttech.net`，這是 [!DNL Media Optimizer] 在 Adobe 收購前所使用的舊版網域名稱。將資料傳送至 [!DNL Media Optimizer] 有助於改善匹配率，而且這是使用 2.0 版 (或更新版本) 的 ID 服務之客戶的專屬自動功能。另請參閱 [Media Optimizer Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html)。
 
 >[!MORE_LIKE_THIS]
 >
->* [瞭解向 Demdex 網域進行的呼叫](https://marketing.adobe.com/resources/help/zh_TW/aam/demdex-calls.html)
+>* [瞭解傳至 Demdex 網域的呼叫](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
 
