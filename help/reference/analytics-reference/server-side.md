@@ -5,8 +5,8 @@ seo-description: 在某些實作中，訪客 ID 會從 JavaScript 傳至伺服�
 seo-title: 混用 JavaScript 的伺服器端實作
 title: 混用 JavaScript 的伺服器端實作
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
-translation-type: ht
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+translation-type: tm+mt
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
@@ -21,7 +21,7 @@ ID 服務 API 提供了 [getMarketingCloudVisitorID](../../library/get-set/getmc
 
 >[!IMPORTANT]
 >
->適用於 Java 的 AppMeasurement 目前不支援 Experience Cloud ID 服務。
+>Java適用的AppMeasurement目前不支援Experience Platform Identity Service。
 
 ## 資料插入 API {#section-955ce7664a4646d38b3005cb2df40baf}
 
@@ -29,8 +29,8 @@ ID 服務 API 提供了 [getMarketingCloudVisitorID](../../library/get-set/getmc
 
 在 `<marketingCloudVisitorID>` 元素中加入 Experience Cloud 訪客 ID。
 
-請參閱[支援的 XML 標記](https://marketing.adobe.com/developer/en_US/documentation/data-insertion/r-supported-tags)。
+請參閱[支援的 XML 標籤](https://marketing.adobe.com/developer/en_US/documentation/data-insertion/r-supported-tags)。
 
 ## Java 適用的 AppMeasurement {#section-d664b94934924d048300d9c2b6560085}
 
-適用於 Java 的 AppMeasurement 目前不支援 Experience Cloud ID 服務。
+Java適用的AppMeasurement目前並不支援Experience Platform Identity Service。
