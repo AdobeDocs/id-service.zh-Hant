@@ -1,19 +1,19 @@
 ---
-description: 概述Experience Platform Identity Service中的ID同步程序和匹配率，包括Adobe Media Optimizer和ID服務。
+description: 概述Experience Cloud Identity Service中的ID同步程序和匹配率，包括Adobe Media Optimizer和ID服務。
 keywords: ID 服務
-seo-description: 概述Experience Platform Identity Service中的ID同步程序和匹配率，包括Adobe Media Optimizer和ID服務。
+seo-description: 概述Experience Cloud Identity Service中的ID同步程序和匹配率，包括Adobe Media Optimizer和ID服務。
 seo-title: 瞭解 ID 同步和匹配率
 title: 瞭解 ID 同步和匹配率
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # 瞭解 ID 同步和匹配率{#understanding-id-synchronization-and-match-rates}
 
-概述Experience Platform Identity Service中的ID同步程序和匹配率，包括Adobe Media Optimizer和ID服務。
+概述Experience Cloud Identity Service中的ID同步程序和匹配率，包括Adobe Media Optimizer和ID服務。
 
 ## ID 同步和匹配率 {#section-f652aae7234945e89d26dd833c5215fb}
 
@@ -33,17 +33,17 @@ ID 服務會即時同步 ID。此程序在瀏覽器中運作，而非透過伺�
 
 **步驟 1: 載入頁面**
 
-訪客造訪您的網站並載入頁面時，`Visitor.getInstance` 函數會向 ID 服務發出 [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) 或 JSON-P 呼叫。ID 服務使用 Cookie 回應，其中包含訪客的 [!DNL Experience Cloud] ID (MID)。MID 是指派給每個網站訪客的唯一 ID。See also, [Cookies and the Experience Platform Identity Service](../introduction/cookies.md).
+訪客造訪您的網站並載入頁面時，`Visitor.getInstance` 函數會向 ID 服務發出 [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) 或 JSON-P 呼叫。ID 服務使用 Cookie 回應，其中包含訪客的 [!DNL Experience Cloud] ID (MID)。MID 是指派給每個網站訪客的唯一 ID。See also, [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
 
 **步驟 2: 載入 iFrame**
 
-當頁面本文載入時，ID 服務會載入一個 iFrame (稱為*`Destination Publishing iFrame`*。[!DNL Destination Publishing iFrame] 會在不同於上層頁面的網域中載入。這種設計有助於確保頁面效能並提高安全性，因為 iFrame:
+當頁面本文載入時，ID 服務會載入一個 iFrame (稱為&#x200B;*`Destination Publishing iFrame`*。[!DNL Destination Publishing iFrame] 會在不同於上層頁面的網域中載入。這種設計有助於確保頁面效能並提高安全性，因為 iFrame:
 
 * 相對於上層頁面為非同步載入。這表示上層頁面可與 [!DNL Destination Publishing iFrame] 分開載入。載入 iFrame 以及在 iFrame 中載入 ID 同步像素不會影響上層頁面或使用者體驗。
 * 能盡快載入。如果您覺得太快了，則可在視窗載入事件後再載入 iFrame (不建議)。請參閱[idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) 以了解詳細資訊。
 * 防止 iFrame 中的程式碼影響或是取得上層頁面的存取權。
 
-另請參閱,[Experience Platform Identity Service Requests and Sets ID….](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
+另請參閱,[Experience Cloud Identity Service請求和設定ID的方式….](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
 
 **步驟 3: 觸發 ID 同步**
 
@@ -67,7 +67,7 @@ http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<
 
 ## 同步服務負責管理 ID 同步作業 {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
-*`Sync Services`*一詞指的是負責 ID 同步作業的內部 [!DNL Experience Cloud] 技術。此服務預設為啟用。若要停用，請新增一個[選用變數](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414)至 ID 服務 `Visitor.getInstance` 函數。同步服務可以匹配不同的 [!DNL Experience Cloud] ID，例如:
+*`Sync Services`*&#x200B;一詞指的是負責 ID 同步作業的內部 [!DNL Experience Cloud] 技術。此服務預設為啟用。若要停用，請新增一個[選用變數](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414)至 ID 服務 `Visitor.getInstance` 函數。同步服務可以匹配不同的 [!DNL Experience Cloud] ID，例如:
 
 * 第三方 [!DNL Experience Cloud] Cookie ID 和第一方 [!DNL Experience Cloud] ID。
 
