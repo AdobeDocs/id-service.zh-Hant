@@ -1,19 +1,19 @@
 ---
-description: 2017年Experience Platform Identity Service的功能發行、更新或變更。
+description: 2017年Experience Cloud Identity Service的功能發行、更新或變更。
 keywords: ID 服務
-seo-description: 2017年Experience Platform Identity Service的功能發行、更新或變更。
+seo-description: 2017年Experience Cloud Identity Service的功能發行、更新或變更。
 seo-title: 2017 年發行說明
 title: 2017 年發行說明
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # 2017 年發行說明 {#release-notes}
 
-2017年Experience Platform Identity Service的功能發行、更新或變更。
+2017年Experience Cloud Identity Service的功能發行、更新或變更。
 
 [Experience Cloud 發行說明](https://marketing.adobe.com/resources/help/en_US/whatsnew/)也會納入這些變更。如需查看較早的 ID 服務發行說明，請參閱[之前的發行說明](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)或此頁面底部的連結。
 
@@ -51,7 +51,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * 先前在瀏覽器中按上一頁按鈕時會造成 ID 服務擲回錯誤，這個與 Chrome 相關的錯誤已經修正。
 * 現在當事件呼叫回應中的地區 ID 變更時，ID 服務就會重新進行 ID 同步。
-* 新增文件，[內容安全政策和Experience Platform Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)，說明如何對ID服務使用的Adobe網域進行白名單呼叫。
+* 新增文件，[內容安全政策和Experience Cloud Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)，說明如何對ID服務使用的Adobe網域進行白名單呼叫。
 
 ## 版本 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
