@@ -1,19 +1,19 @@
 ---
-description: 這些指示適用於想要使用Experience Platform Identity Service且不使用動態標籤管理(DTM)的Analytics和Audience Manager客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
+description: 這些指示適用於想要使用Experience Cloud Identity Service且不使用動態標籤管理(DTM)的Analytics和Audience Manager客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
 keywords: ID 服務
-seo-description: 這些指示適用於想要使用Experience Platform Identity Service且不使用動態標籤管理(DTM)的Analytics和Audience Manager客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
-seo-title: 實作適用於Analytics和Audience Manager的Experience Platform Identity Service
-title: 實作適用於Analytics和Audience Manager的Experience Platform Identity Service
+seo-description: 這些指示適用於想要使用Experience Cloud Identity Service且不使用動態標籤管理(DTM)的Analytics和Audience Manager客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
+seo-title: 實作適用於Analytics和Audience Manager的Experience Cloud Identity Service
+title: 實作適用於Analytics和Audience Manager的Experience Cloud Identity Service
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Implement the Experience Platform Identity Service for Analytics and Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
+# Implement the Experience Cloud Identity Service for Analytics and Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-這些指示適用於想要使用Experience Platform Identity Service且不使用動態標籤管理(DTM)的Analytics和Audience Manager客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
+這些指示適用於想要使用Experience Cloud Identity Service且不使用動態標籤管理(DTM)的Analytics和Audience Manager客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
 
 >[!IMPORTANT]
 >
@@ -40,7 +40,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ID 服務需要 `VisitorAPI.js` 程式碼程式庫。若要下載此程式碼程式庫:
 
-1. 前往 **[!UICONTROL 管理]** &gt; **[!UICONTROL 代碼管理器**]。
+1. 前往&#x200B;**[!UICONTROL 管理]** &gt; **[!UICONTROL 代碼管理器**]。
 
 1. 在「代碼管理器」中，按一下 **[!UICONTROL JavaScript (新)]** 或 **[!UICONTROL JavaScript (舊)]**。即會下載壓縮的程式碼程式庫。
 
@@ -103,7 +103,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE",
 
 >[!IMPORTANT]
 >
->*請勿*變更組織 ID 中的字元大小寫。ID 區分大小寫，需如實使用。
+>*請勿*&#x200B;變更組織 ID 中的字元大小寫。ID 區分大小寫，需如實使用。
 
 ## 步驟 5: 將追蹤伺服器新增至 Visitor.getInstance {#section-0dfc52096ac2427f86045aab9a0e0dfc}
 
@@ -179,7 +179,7 @@ If any of these use cases apply to your situation, ask [Customer Care](https://h
 
 當您的實作可擷取 MID，而非讀取 s_vi Cookie 之後，則可停止寬限期。
 
-See also, [Cookies and the Experience Platform Identity Service](../introduction/cookies.md).
+See also, [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
 
 **點擊流資料整合**
 
@@ -199,7 +199,7 @@ See also, [Cookies and the Experience Platform Identity Service](../introduction
 
 * [AMCV Cookie](../introduction/cookies.md)，在托管頁面的網域中。
 * 透過 [Adobe 偵錯工具](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html)檢查 Analytics 影像請求中的 MID 值。
-* See also, [Test and Verify the Experience Platform Identity Service](../implementation-guides/test-verify.md).
+* See also, [Test and Verify the Experience Cloud Identity Service](../implementation-guides/test-verify.md).
 
 如需確認伺服器端轉送，請參閱[如何確認您的伺服器端轉送實施情形](https://marketing.adobe.com/resources/help/en_US/reference/ssf-verify.html)。
 
