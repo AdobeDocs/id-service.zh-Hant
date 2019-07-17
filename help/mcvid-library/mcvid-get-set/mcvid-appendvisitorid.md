@@ -72,7 +72,7 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>DTM</b> </p> </td> 
-   <td colname="col2"> <p> <a href="/content/help/tw/zh-Hant/dtm/kb/how-to-set-marketing-cloud-id-service-helper-function-in-adobe-d.html" format="https" scope="external"> 在 DTM 中，設定 appendVisitorIDTo 函數 </a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://helpx.adobe.com/tw/dtm/kb/how-to-set-marketing-cloud-id-service-helper-function-in-adobe-d.html" format="https" scope="external"> 在 DTM 中，設定 appendVisitorIDTo 函數 </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>SDK</b> </p> </td> 
