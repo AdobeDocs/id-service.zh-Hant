@@ -1,19 +1,19 @@
 ---
-description: 在部署Experience Platform Identity Service之前，您應瞭解當您使用不同方法或JavaScript檔案收集資料時，此服務對多個網域訪客追蹤的影響以及潛在問題。
+description: 在部署Experience Cloud Identity Service之前，您應瞭解當您使用不同方法或JavaScript檔案收集資料時，此服務對多個網域訪客追蹤的影響以及潛在問題。
 keywords: ID 服務
-seo-description: 在部署Experience Platform Identity Service之前，您應瞭解當您使用不同方法或JavaScript檔案收集資料時，此服務對多個網域訪客追蹤的影響以及潛在問題。
-seo-title: Experience Platform Identity Service移轉決策點
-title: Experience Platform Identity Service移轉決策點
+seo-description: 在部署Experience Cloud Identity Service之前，您應瞭解當您使用不同方法或JavaScript檔案收集資料時，此服務對多個網域訪客追蹤的影響以及潛在問題。
+seo-title: Experience Cloud Identity Service移轉決策點
+title: Experience Cloud Identity Service移轉決策點
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Experience Platform Identity Service移轉決策點
+# Experience Cloud Identity Service移轉決策點
 
-在部署Experience Platform Identity Service之前，您應瞭解當您使用不同方法或JavaScript檔案收集資料時，此服務對多個網域訪客追蹤的影響以及潛在問題。
+在部署Experience Cloud Identity Service之前，您應瞭解當您使用不同方法或JavaScript檔案收集資料時，此服務對多個網域訪客追蹤的影響以及潛在問題。
 
 請回答本節中的問題，有助於確定您所應執行的其他移轉步驟。
 
@@ -42,7 +42,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ## 如果您有資料收集 CNAME，您是否有多個網域?
 
-如果多個網域會將資料傳送至至*相同的報表套裝*，則建議資料收集包含 CNAME。這有助於追蹤不同網域的訪客。如果您只在單一網域收集資料，則維護資料收集 CNAME 將沒有益處。
+如果多個網域會將資料傳送至至&#x200B;*相同的報表套裝*，則建議資料收集包含 CNAME。這有助於追蹤不同網域的訪客。如果您只在單一網域收集資料，則維護資料收集 CNAME 將沒有益處。
 
 <table id="table_D132BCA243E54657AEC930559343FDD3"> 
  <thead> 
@@ -71,7 +71,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ## 您是否有多個 Analytics JavaScript 檔案，或您是否追蹤 Flash 應用程式或視訊?
 
-如果您的網站上有多個會將資料傳送至*相同的報表套裝*的 Analytics JavaScript 檔案或 Flash 應用程式或視訊，則應設定寬限期，以便在您開始使用 [!DNL Experience Cloud] ID 服務時能繼續以 Analytics ID 識別訪客。
+如果您的網站上有多個會將資料傳送至&#x200B;*相同的報表套裝*&#x200B;的 Analytics JavaScript 檔案或 Flash 應用程式或視訊，則應設定寬限期，以便在您開始使用 [!DNL Experience Cloud] ID 服務時能繼續以 Analytics ID 識別訪客。
 
 <table id="table_8A4EA063AF4345B69BC98537E2E702BA"> 
  <thead> 
