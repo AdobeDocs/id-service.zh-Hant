@@ -1,19 +1,19 @@
 ---
-description: 選用的布林值標幟，可控制瀏覽器向Experience Platform Identity Service請求資源的方式。
+description: 選用的布林值標幟，可控制瀏覽器向Experience Cloud Identity Service請求資源的方式。
 keywords: ID 服務
-seo-description: 選用的布林值標幟，可控制瀏覽器向Experience Platform Identity Service請求資源的方式。
+seo-description: 選用的布林值標幟，可控制瀏覽器向Experience Cloud Identity Service請求資源的方式。
 seo-title: useCORSOnly
 title: useCORSOnly
 uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # useCORSOnly{#usecorsonly}
 
-選用的布林值標幟，可控制瀏覽器向Experience Platform Identity Service請求資源的方式。
+選用的布林值標幟，可控制瀏覽器向Experience Cloud Identity Service請求資源的方式。
 
 **語法:** `useCORSOnly: true|false` (預設為 `false`。)
 
