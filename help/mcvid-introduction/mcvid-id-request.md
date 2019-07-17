@@ -19,7 +19,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 >
 >如果您不熟悉 Experience Cloud ID 服務建立訪客 ID 的方式，請先花點時間檢閱 [Experience Cloud](../mcvid-introduction/mcvid-cookies.md)。
 
-**秘訣:** 另請觀看[說明跨網域追蹤功能的 ID 服務影片](/content/help/tw/zh-Hant/marketing-cloud-core/kb/MCID/CrossDomain.html)。
+**秘訣:** 另請觀看[說明跨網域追蹤功能的 ID 服務影片](https://helpx.adobe.com/tw//marketing-cloud-core/kb/MCID/CrossDomain.html)。
 
 ## 請求 Experience Cloud ID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 
