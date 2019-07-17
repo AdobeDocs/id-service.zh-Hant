@@ -1,19 +1,19 @@
 ---
-description: Experience Platform Identity Service取代舊有Analytics訪客ID方法。
+description: Experience Cloud Identity Service取代舊有Analytics訪客ID方法。
 keywords: ID 服務
-seo-description: Experience Platform Identity Service取代舊有Analytics訪客ID方法。
+seo-description: Experience Cloud Identity Service取代舊有Analytics訪客ID方法。
 seo-title: 設定 Analytics 和 Experience Cloud ID
 title: 設定 Analytics 和 Experience Cloud ID
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # 設定 Analytics 和 Experience Cloud ID{#setting-analytics-and-experience-cloud-ids}
 
-Experience Platform Identity Service取代舊有Analytics訪客ID方法。
+Experience Cloud Identity Service取代舊有Analytics訪客ID方法。
 
 實作 ID 服務之後，此程式碼會在 AppMeasurement 之前執行。ID 服務會擷取 Experience Cloud 和 Analytics ID，讓這些值在 AppMeasurement 載入時即已備妥。
 
@@ -86,7 +86,7 @@ JavaScript 可讀取和寫入第一方網域中設定的 Cookie (目前網站的
  </tbody> 
 </table>
 
-在許多情況下，您可能會在一個呼叫中看見 2 或 3 個不同的 ID，但 Analytics 將會使用清單中第一個出現的 ID 做為正式的 [!DNL Experience Cloud] ID。例如，如果您設定自訂訪客 ID (內含於 &quot;vid&quot; 查詢參數中)，則在同一個點擊可能存在其他 ID 時，將優先使用該自訂訪客 ID。
+在許多情況下，您可能會在一個呼叫中看見 2 或 3 個不同的 ID，但 Analytics 將會使用清單中第一個出現的 ID 做為正式的 [!DNL Experience Cloud] ID。例如，如果您設定自訂訪客 ID (內含於 "vid" 查詢參數中)，則在同一個點擊可能存在其他 ID 時，將優先使用該自訂訪客 ID。
 
 >[!MORE_LIKE_THIS]
 >
