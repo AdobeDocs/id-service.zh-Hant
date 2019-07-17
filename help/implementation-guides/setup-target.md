@@ -1,19 +1,19 @@
 ---
-description: 這些指示適用於想要使用Experience Platform Identity Service且不使用動態標籤管理(DTM)的目標客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
+description: 這些指示適用於想要使用Experience Cloud Identity Service且不使用動態標籤管理(DTM)的目標客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
 keywords: ID 服務
-seo-description: 這些指示適用於想要使用Experience Platform Identity Service且不使用動態標籤管理(DTM)的目標客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
-seo-title: 實作適用於Target的Experience Platform Identity Service
-title: 實作適用於Target的Experience Platform Identity Service
+seo-description: 這些指示適用於想要使用Experience Cloud Identity Service且不使用動態標籤管理(DTM)的目標客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
+seo-title: 實作適用於Target的Experience Cloud Identity Service
+title: 實作適用於Target的Experience Cloud Identity Service
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Implement the Experience Platform Identity Service for Target{#implement-the-experience-cloud-id-service-for-target}
+# Implement the Experience Cloud Identity Service for Target{#implement-the-experience-cloud-id-service-for-target}
 
-這些指示適用於想要使用Experience Platform Identity Service且不使用動態標籤管理(DTM)的目標客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
+這些指示適用於想要使用Experience Cloud Identity Service且不使用動態標籤管理(DTM)的目標客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
 
 >[!IMPORTANT]
 >
@@ -60,7 +60,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 >[!IMPORTANT]
 >
->*請勿*變更組織 ID 中的字元大小寫。ID 區分大小寫，需如實使用。
+>*請勿*&#x200B;變更組織 ID 中的字元大小寫。ID 區分大小寫，需如實使用。
 
 ## 步驟 4: 將訪客 API 程式碼新增至頁面 {#section-02d8dd7678b64a85b5abc1c4ef0845dd}
 
@@ -77,7 +77,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 * 檢查托管頁面之網域中的 AMCV Cookie。
 * 驗證 `mboxMCGVID` 是否顯示在您的 [!DNL Target] 請求中，而且其是否包含 [!DNL Experience Cloud] ID (MID)。
 
-See [Cookies and the Experience Platform Identity Service](../introduction/cookies.md) for information about the AMCV cookie and the MID.
+See [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md) for information about the AMCV cookie and the MID.
 
 **部署**
 
