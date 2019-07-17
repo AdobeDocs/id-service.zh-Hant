@@ -6,7 +6,7 @@ seo-title: 從 AMCV Cookie 或 ID 服務取得地區和使用者 ID
 title: 從 AMCV Cookie 或 ID 服務取得地區和使用者 ID
 uuid: bdd9d001-f29f-4ff0-800b-8182243da218
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 AMCV Cookie 包含您網站訪客的 Experience Cloud ID (MID) 和地區 ID。這些 ID 以機碼值組的形式儲存。mid:user ID 保有訪客的 Experience Cloud ID。aamlh:region ID 保有網站訪客的地區 ID。您可透過剖析 AMCV Cookie 來復原此項資訊。
 
-For more information, see [Get User IDs and Regions Through the Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/aam/dcs-mcid-ids.html).
+For more information, see [Get User IDs and Regions Through the Experience Cloud Identity Service](https://marketing.adobe.com/resources/help/en_US/aam/dcs-mcid-ids.html).
 
 如果您是 [!DNL Audience Manager] 客戶，您可從資料收集伺服器 (DCS) 傳送的回應中取得地區 ID。請參閱[從 DCS 回應取得使用者 ID 和區域](https://marketing.adobe.com/resources/help/en_US/aam/dcs-aam-ids.html)。
 
