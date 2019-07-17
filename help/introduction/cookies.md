@@ -2,16 +2,16 @@
 description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie，以及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
 keywords: playstation;ID 服務
 seo-description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie，以及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
-seo-title: Cookie和Experience Platform Identity Service
-title: Cookie和Experience Platform Identity Service
+seo-title: Cookie和Experience Cloud Identity Service
+title: Cookie和Experience Cloud Identity Service
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Cookies and the Experience Platform Identity Service{#cookies-and-the-experience-cloud-id-service}
+# Cookies and the Experience Cloud Identity Service{#cookies-and-the-experience-cloud-id-service}
 
 ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie，以及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
 
@@ -124,4 +124,4 @@ ID 服務在您的頁面載入時隨即開始建立 MID。在此過程中，`vis
 
 ## 下一步 {#section-8db1727a63bc4ff68b495f270315d453}
 
-See [How the Experience Platform Identity Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+See [How the Experience Cloud Identity Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
