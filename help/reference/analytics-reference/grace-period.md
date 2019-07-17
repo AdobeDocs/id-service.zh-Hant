@@ -33,4 +33,4 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ## 如何啟用寬限期?  {#section-512d5cd8570e483cbdd8b04457a16ced}
 
-請聯絡[客戶服務](/content/help/tw/zh-Hant/marketing-cloud/contact-support.html)。
+請聯絡[客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)。
