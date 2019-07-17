@@ -1,19 +1,19 @@
 ---
-description: 瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Platform Identity Service支援可讓這些用戶端、跨原始資源要求的CORS標準。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
+description: 瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Cloud Identity Service支援啓用這些用戶端、跨原始資源要求的CORS標準。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
 keywords: ID 服務
-seo-description: 瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Platform Identity Service支援可讓這些用戶端、跨原始資源要求的CORS標準。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
-seo-title: Experience Platform Identity Service中的CORS支援
-title: Experience Platform Identity Service中的CORS支援
+seo-description: 瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Cloud Identity Service支援啓用這些用戶端、跨原始資源要求的CORS標準。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
+seo-title: Experience Cloud Identity Service中的CORS支援
+title: Experience Cloud Identity Service中的CORS支援
 uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# CORS Support in the Experience Platform Identity Service {#cors-support-in-the-experience-cloud-id-service}
+# CORS Support in the Experience Cloud Identity Service {#cors-support-in-the-experience-cloud-id-service}
 
-瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Platform Identity Service支援可讓這些用戶端、跨原始資源要求的CORS標準。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
+瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Cloud Identity Service支援啓用這些用戶端、跨原始資源要求的CORS標準。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
 
 ## 相同來源政策和 ID 服務要求的問題 {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
@@ -27,7 +27,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ## CORS 可解決相同來源政策的問題 {#section-76c87ec3295d447bab220c84f138c235}
 
-CORS 提供在不同網域間要求資源的安全、有效方法。CORS 規格包含一組 HTTP 標題，供瀏覽器用來傳送、接收和評估資源要求。評估資源要求稱為*`preflight check`*。這項檢查可讓瀏覽器和伺服器判斷應允許或是封鎖哪些要求。預檢檢查對於要求資源的應用程式、API 或指令檔是透明的。資源要求程序中有兩個很重要的標題:
+CORS 提供在不同網域間要求資源的安全、有效方法。CORS 規格包含一組 HTTP 標題，供瀏覽器用來傳送、接收和評估資源要求。評估資源要求稱為&#x200B;*`preflight check`*。這項檢查可讓瀏覽器和伺服器判斷應允許或是封鎖哪些要求。預檢檢查對於要求資源的應用程式、API 或指令檔是透明的。資源要求程序中有兩個很重要的標題:
 
 * `Origin`: 識別要求來源的要求標題。
 * `Access-Control-Allow-Origin`: 指出資源是否可與要求者共用的回應標題。
