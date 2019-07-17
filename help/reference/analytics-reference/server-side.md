@@ -6,7 +6,7 @@ seo-title: 混用 JavaScript 的伺服器端實作
 title: 混用 JavaScript 的伺服器端實作
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -21,7 +21,7 @@ ID 服務 API 提供了 [getMarketingCloudVisitorID](../../library/get-set/getmc
 
 >[!IMPORTANT]
 >
->Java適用的AppMeasurement目前不支援Experience Platform Identity Service。
+>Java適用的AppMeasurement目前不支援Experience Cloud Identity Service。
 
 ## 資料插入 API {#section-955ce7664a4646d38b3005cb2df40baf}
 
@@ -33,4 +33,4 @@ ID 服務 API 提供了 [getMarketingCloudVisitorID](../../library/get-set/getmc
 
 ## Java 適用的 AppMeasurement {#section-d664b94934924d048300d9c2b6560085}
 
-Java適用的AppMeasurement目前並不支援Experience Platform Identity Service。
+Java適用的AppMeasurement目前並不支援Experience Cloud Identity Service。
