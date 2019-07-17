@@ -6,7 +6,7 @@ seo-title: 搭配 A4T 以及伺服器端的 Target 實作使用 ID 服務
 title: 搭配 A4T 以及伺服器端的 Target 實作使用 ID 服務
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -153,7 +153,7 @@ Response.send("
 
 **DTM 設定**
 
-在 ID 服務例項的 **[!UICONTROL 一般 &gt; 設定]** 區段中將下列項目新增為名稱-值組:
+在 ID 服務例項的&#x200B;**[!UICONTROL 一般 &gt; 設定]**&#x200B;區段中將下列項目新增為名稱-值組:
 
 * **[!UICONTROL 名稱:]** serverState
 * **[!UICONTROL 值:]** %serverState%
@@ -166,7 +166,7 @@ Response.send("
 
 ![](assets/server_side_dtm.png)
 
-另請參閱,[適用於DTM的Experience Platform Identity Service設定](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)。
+另請參閱,[適用於DTM的Experience Cloud身分服務設定](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)。
 
 **不透過 DTM 取得伺服器狀態**
 
