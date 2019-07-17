@@ -59,7 +59,7 @@ mid=20265673158980419722735089753036633573
 
 **失敗**
 
-若 Debugger 發生以下情況，請聯絡[客戶服務](/content/help/tw/zh-Hant/marketing-cloud/contact-support.html):
+若 Debugger 發生以下情況，請聯絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html):
 
 * 無法傳回 MID。
 * 傳回錯誤訊息，指出您的 ID 尚未佈建。
