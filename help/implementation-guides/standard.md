@@ -1,23 +1,23 @@
 ---
-description: 較舊的實施使用動態標籤管理(DTM)來設定、部署和整合Experience Platform Identity Service與其他Experience Cloud解決方案。
+description: 較舊的實施使用動態標籤管理(DTM)來設定、部署和整合Experience Cloud Identity Service與其他Experience Cloud解決方案。
 keywords: ID 服務
-seo-description: 較舊的實施使用動態標籤管理(DTM)來設定、部署和整合Experience Platform Identity Service與其他Experience Cloud解決方案。
+seo-description: 較舊的實施使用動態標籤管理(DTM)來設定、部署和整合Experience Cloud Identity Service與其他Experience Cloud解決方案。
 seo-title: 透過動態標籤管理來實作
 title: 透過動態標籤管理來實作
 uuid: c4f752c4-392e-4909-b178-911706857064
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # 透過動態標籤管理來實作{#implementation-with-dynamic-tag-management}
 
-較舊的實施使用動態標籤管理(DTM)來設定、部署和整合Experience Platform Identity Service與其他Experience Cloud解決方案。
+較舊的實施使用動態標籤管理(DTM)來設定、部署和整合Experience Cloud Identity Service與其他Experience Cloud解決方案。
 
 ## 透過動態標籤管理來實作{#topic-6f4ed5d96977406ca991e50f3fbd5b01}
 
-較舊的實施使用動態標籤管理(DTM)來設定、部署和整合Experience Platform Identity Service與其他Experience Cloud解決方案。
+較舊的實施使用動態標籤管理(DTM)來設定、部署和整合Experience Cloud Identity Service與其他Experience Cloud解決方案。
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ DTM 是簡單且功能強大的工具。如果您尚未使用過 DTM，強烈建
 
 ## 部署準則 {#concept-54a2ec49af8f4bfca9207b1d404e8e1a}
 
-請先檢閱這些要求和程序，然後再嘗試使用動態標籤管理(DTM)實作Experience Platform Identity Service。
+請先檢閱這些要求和程序，然後再嘗試使用動態標籤管理(DTM)實作Experience Cloud Identity Service。
 
 <!--
 mcvid-dtm-deployment.xml
@@ -70,7 +70,7 @@ Customers must provide a CNAME or use [!DNL *.sc.omtrdc] for [regional data coll
 
 新 [!DNL Analytics] 客戶應為資料收集[建立報表套裝](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html)。
 
-## Implement the Experience Platform Identity Service with DTM {#task-a659cf19dea84ad48edabe0b72ef9f5c}
+## Implement the Experience Cloud Identity Service with DTM {#task-a659cf19dea84ad48edabe0b72ef9f5c}
 
 請依照這些步驟來透過動態標籤管理 (DTM) 實作 ID 服務。
 
@@ -84,27 +84,27 @@ Customers must provide a CNAME or use [!DNL *.sc.omtrdc] for [regional data coll
 mcvid-dtm-implement.xml
 -->
 
-**實作步驟** 若要使用 DTM 實作 ID 服務:
+**實作步驟**&#x200B;若要使用 DTM 實作 ID 服務:
 
 1. 在 DTM [!DNL Dashboard] 中，按一下您要使用的 Web 屬性。
-1. 在您選定 Web 屬性的 **[!UICONTROL 概述]** 標籤中，按一下 **[!UICONTROL 新增工具]**。
-1. In the **[!UICONTROL Tool Type]** list, click **[!UICONTROL Experience Platform Identity Service]**.
+1. 在您選定 Web 屬性的&#x200B;**[!UICONTROL 概述]**&#x200B;標籤中，按一下&#x200B;**[!UICONTROL 新增工具]**。
+1. In the **[!UICONTROL Tool Type]** list, click **[!UICONTROL Experience Cloud Identity Service]**.
 
    >[!NOTE]
    >
-   >此動作會使用您的組織 ID 填入 **[!UICONTROL Experience Clould 組織 ID]** 方塊。如果 DTM 帳戶未連結至 [!DNL Experience Cloud]，您必須提供此 ID。若要連結帳戶，請參閱[在 Experience Cloud 中連結帳戶](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html)。如需如何找到組織 ID 的相關資訊，請參閱[需求](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26)。
+   >此動作會使用您的組織 ID 填入 **[!UICONTROL Experience Clould 組織 ID]**&#x200B;方塊。如果 DTM 帳戶未連結至 [!DNL Experience Cloud]，您必須提供此 ID。若要連結帳戶，請參閱[在 Experience Cloud 中連結帳戶](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html)。如需如何找到組織 ID 的相關資訊，請參閱[需求](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26)。
 
-1. 在 **[!UICONTROL 追蹤伺服器]** 方塊中輸入追蹤伺服器的名稱。If you&#39;re not sure how to find your tracking server see the [FAQ](../faq-intro/faq.md) and [Correctly Populate the trackingServer and trackingServerSecure variables](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
-1. 按一下 **[!UICONTROL 建立工具]** 和 **[!UICONTROL 儲存變更]**。
+1. 在&#x200B;**[!UICONTROL 追蹤伺服器]**&#x200B;方塊中輸入追蹤伺服器的名稱。If you're not sure how to find your tracking server see the [FAQ](../faq-intro/faq.md) and [Correctly Populate the trackingServer and trackingServerSecure variables](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+1. 按一下&#x200B;**[!UICONTROL 建立工具]**&#x200B;和&#x200B;**[!UICONTROL 儲存變更]**。
 
-   儲存後，就會將 ID 服務設定為 DTM 中的工具。不過，此工具尚未可供使用。DTM 工具仍需經過 DTM 發佈/核准程序，您也可以設定其他參數。如需 DTM 核准程序的相關資訊，請參閱[使用者基本入門](https://marketing.adobe.com/resources/help/en_US/dtm/user-basics-jump-start.html)影片。如需可新增至 DTM 之其他參數的相關資訊，請參閱[適用於DTM的Experience Platform Identity Service設定](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)。
+   儲存後，就會將 ID 服務設定為 DTM 中的工具。不過，此工具尚未可供使用。DTM 工具仍需經過 DTM 發佈/核准程序，您也可以設定其他參數。如需 DTM 核准程序的相關資訊，請參閱[使用者基本入門](https://marketing.adobe.com/resources/help/en_US/dtm/user-basics-jump-start.html)影片。如需可新增至 DTM 之其他參數的相關資訊，請參閱[適用於DTM的Experience Cloud身分服務設定](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)。
 
 >[!MORE_LIKE_THIS]
 >
 >* [Web 屬性](https://marketing.adobe.com/resources/help/en_US/dtm/web_property.html)
 
 
-## Experience Platform Identity Service Settings for DTM {#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
+## Experience Cloud Identity Service Settings for DTM {#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
 
 說明 [!DNL Organization ID]、[!DNL General] 和 [!DNL Customer Settings] 欄位及如何用於 [!DNL Experience Cloud] ID 服務。
 
@@ -124,7 +124,7 @@ mcvid-dtm-settings.xml
 
 ![](assets/orgID.png)
 
-See also [Cookies and the Experience Platform Identity Service](../introduction/cookies.md).
+See also [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
 
 ## 一般設定 {#section-071d358e40f84629a8901b893dd61392}
 
@@ -136,7 +136,7 @@ See also [Cookies and the Experience Platform Identity Service](../introduction/
 
 **自動要求訪客 ID**
 
-When checked, dynamic tag management to automatically calls the `getMarketingCloudVisitorID()` method before loading any of the Adobe solutions that use the Experience Platform Identity Service.
+When checked, dynamic tag management to automatically calls the `getMarketingCloudVisitorID()` method before loading any of the Adobe solutions that use the Experience Cloud Identity Service.
 
 請參閱 [getMarketingCloudVisitorID](../library/get-set/getmcvid.md)。
 
@@ -170,7 +170,7 @@ Analytics 資料收集所用的安全追蹤伺服器的名稱。這是寫入影�
 
 **設定**
 
-這些欄位可讓您新增[函數變數](../library/function-vars/function-vars.md)做為機碼值組。按一下 **[!UICONTROL 「新增」]，新增一或多個變數至 ID 服務實作。**
+這些欄位可讓您新增[函數變數](../library/function-vars/function-vars.md)做為機碼值組。按一下&#x200B;**[!UICONTROL 「新增」]，新增一或多個變數至 ID 服務實作。**
 
 ![](assets/dtmVars.png)
 
@@ -196,7 +196,7 @@ Analytics 資料收集所用的安全追蹤伺服器的名稱。這是寫入影�
 
 可根據訪客的驗證狀態 (例如，登入、登出) 來識別訪客的選項。請參閱[客戶 ID 和驗證狀態](../reference/authenticated-state.md)。
 
-## Test and verify the Experience Platform Identity Service {#concept-644fdbef433b46ba9c0634ac95eaa680}
+## Test and verify the Experience Cloud Identity Service {#concept-644fdbef433b46ba9c0634ac95eaa680}
 
 這些指示、工具和程序可協助您判斷 ID 服務是否正確運作。這些測試適用於一般的 ID 服務，以及不同的 ID 服務與 [!DNL Experience Cloud] 解決方案組合。
 
@@ -220,7 +220,7 @@ mcvid-test-verify.xml
 
 ## 使用 Adobe 偵錯工具進行測試 {#section-861365abc24b498e925b3837ea81d469}
 
-如果您在 [!DNL Experience Cloud ID] 偵錯工具回應中看到 [!DNL Adobe] (MID)，代表您的服務整合已正確設定。See [Cookies and the Experience Platform Identity Service](../introduction/cookies.md) for more information about the MID.
+如果您在 [!DNL Experience Cloud ID] 偵錯工具回應中看到 [!DNL Adobe] (MID)，代表您的服務整合已正確設定。See [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md) for more information about the MID.
 
 若要使用 [!DNL Adobe][ 偵錯工具驗證 ID 服務的狀態](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html):
 
