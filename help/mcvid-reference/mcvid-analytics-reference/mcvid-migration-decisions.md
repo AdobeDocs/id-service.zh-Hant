@@ -63,7 +63,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
      <li id="li_32E2CD3E58454E20A642BADE507AE86E">確定新追蹤伺服器<a href="https://marketing.adobe.com/resources/help/zh_TW/whitepapers/rdc/" format="https" scope="external">符合 RDC 標準</a>。 </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">先從 CNAME 移至 RDC 追蹤伺服器，幾個月後再移轉至 <span class="keyword">Experience Cloud</span> ID 服務。 </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>請勿</i>使用 <span class="codeph"> *.2o7.net</span> 追蹤伺服器。 </li> 
-     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">聯絡<a href="/content/help/tw/zh-Hant/marketing-cloud/contact-support.html" format="https" scope="external">客戶服務</a>以設定訪客移轉。這可確保一致的訪客數。 </li> 
+     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">聯絡<a href="https://helpx.adobe.com/tw/marketing-cloud/contact-support.html" format="https" scope="external">客戶服務</a>以設定訪客移轉。這可確保一致的訪客數。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
