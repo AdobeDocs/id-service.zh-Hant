@@ -1,12 +1,12 @@
 ---
-description: 關於與Experience Platform Identity Service搭配使用Analytics的功能、功能和問題的常見問題。
-keywords: Experience Platform Identity Service
+description: 關於與Experience Cloud Identity Service搭配使用Analytics的功能、功能和問題的常見問題。
+keywords: Experience Cloud Identity Service
 seo-description: 關於與Identity Service搭配使用Analytics的功能、功能和問題的常見問題。
 seo-title: Analytics與Identity Service FAQ
 title: Analytics與Identity Service FAQ
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -41,7 +41,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 **為何 Experience Cloud ID (MID) 參數不在 Analytics 要求中?**
 
-If the Identity Service is returning information correctly but you do not see the `MID` parameter, make sure that you&#39;ve upgraded to a supported version of AppMeasurement.
+If the Identity Service is returning information correctly but you do not see the `MID` parameter, make sure that you've upgraded to a supported version of AppMeasurement.
 
 **我的網站可以使用H程式碼和JavaScript適用的AppMeasurement搭配Identity Service嗎？**
 
