@@ -6,7 +6,7 @@ seo-title: appendVisitorIDsTo (跨網域追蹤)
 title: appendVisitorIDsTo (跨網域追蹤)
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ## 在第三方 Cookie 遭到瀏覽器封鎖時跨網域追蹤訪客 {#section-7251d88befd440b4b79520e33c5aa44a}
 
-ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Platform Identity Service](../../introduction/cookies.md) ). 第一方 Cookie 包含 MID，即為一組該訪客專用的個別的 ID。第三方 Cookie 包含另一組由 ID 服務用來產生 MID 的 ID。若瀏覽器封鎖此第三方 Cookie，ID 服務將無法:
+ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Cloud Identity Service](../../introduction/cookies.md) ). 第一方 Cookie 包含 MID，即為一組該訪客專用的個別的 ID。第三方 Cookie 包含另一組由 ID 服務用來產生 MID 的 ID。若瀏覽器封鎖此第三方 Cookie，ID 服務將無法:
 
 * 在訪客導覽至其他網域時，針對該網站訪客重新產生個別 ID。
 * 跨不同網域追蹤屬於貴組織的訪客。
