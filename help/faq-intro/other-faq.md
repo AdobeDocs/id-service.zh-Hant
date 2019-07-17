@@ -6,7 +6,7 @@ seo-title: 其他 Experience Cloud 解決方案的常見問題集
 title: 其他 Experience Cloud 解決方案的常見問題集
 uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ## Analytics 與 Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
-**實作Experience Platform Identity Service後，將會從[!DNL Adobe Analytics]使用者[!DNL Audience Manager]的瀏覽記錄匯出嗎？**
+**在實作Experience Cloud Identity[!DNL Adobe Analytics][!DNL Audience Manager]Service後，使用者的瀏覽歷史記錄是否會匯出？**
 
 您有兩個選擇:
 
