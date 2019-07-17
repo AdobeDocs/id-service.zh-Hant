@@ -1,19 +1,19 @@
 ---
-description: 使用這些組態，將呼叫Experience Platform Identity Service的預設網域名稱變更為您自己的子網域名稱。
+description: 使用這些組態，將呼叫Experience Cloud Identity Service的預設網域名稱變更為您自己的子網域名稱。
 keywords: ID 服務
-seo-description: 使用這些組態，將呼叫Experience Platform Identity Service的預設網域名稱變更為您自己的子網域名稱。
+seo-description: 使用這些組態，將呼叫Experience Cloud Identity Service的預設網域名稱變更為您自己的子網域名稱。
 seo-title: audienceManagerServer 及 audienceManagerServerSecure
 title: audienceManagerServer 及 audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # audienceManagerServer 及 audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
-使用這些組態，將呼叫Experience Platform Identity Service的預設網域名稱變更為您自己的子網域名稱。
+使用這些組態，將呼叫Experience Cloud Identity Service的預設網域名稱變更為您自己的子網域名稱。
 
 **語法:**
 
@@ -30,7 +30,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 * 貴公司記錄的 [!DNL Audience Manager] 子網域名稱。向您的顧問確認或取得此名稱。
 * 與您的[!DNL Organization ID] 相關聯的子網域名稱。
-* *兩個*設定參數均具備相同的子網域名稱。
+* *兩個*&#x200B;設定參數均具備相同的子網域名稱。
 
 **程式碼範例**
 
