@@ -6,7 +6,7 @@ seo-title: 客戶 ID 和驗證狀態
 title: 客戶 ID 和驗證狀態
 uuid: 643df363-224a-463e-a332-be59926b47e7
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 >
 >客戶屬性與核心服務功能需要 `setCustomerIDs` (客戶 ID 同步化)。同步客戶 ID 是 [!DNL Analytics] 支援的選用身分識別方法。[!DNL Target] 需要客戶屬性的 `Visitor.AuthState.AUTHENTICATED` 才能運作。如需範例，請參閱[核心服務 - 如何啟用您的解決方案](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=core_services)。
 
-Beginning with Experience Platform Identity Service v1.5+, `setCustomerIDs` includes the optional `AuthState` object. `AuthState` 會根據訪客的驗證狀態 (例如，登入、登出) 來識別訪客。您可使用表格中列出的狀態值來設定驗證狀態。驗證狀態會以整數傳回。
+Beginning with Experience Cloud Identity Service v1.5+, `setCustomerIDs` includes the optional `AuthState` object. `AuthState` 會根據訪客的驗證狀態 (例如，登入、登出) 來識別訪客。您可使用表格中列出的狀態值來設定驗證狀態。驗證狀態會以整數傳回。
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
