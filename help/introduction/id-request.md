@@ -2,22 +2,22 @@
 description: 概述 ID 請求與回應程序。這些範例涵蓋在個別網站、跨不同網站，以及針對由不同 Experience Cloud 客戶 (具有自己的組織 ID) 管理的網站，進行 ID 指派。
 keywords: ID 服務
 seo-description: 概述 ID 請求與回應程序。這些範例涵蓋在個別網站、跨不同網站，以及針對由不同 Experience Cloud 客戶 (具有自己的組織 ID) 管理的網站，進行 ID 指派。
-seo-title: Experience Platform Identity Service的要求和設定ID
-title: Experience Platform Identity Service的要求和設定ID
+seo-title: Experience Cloud Identity Service要求和設定ID的方式
+title: Experience Cloud Identity Service要求和設定ID的方式
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# How the Experience Platform Identity Service requests and sets IDs{#how-the-experience-cloud-id-service-requests-and-sets-ids}
+# How the Experience Cloud Identity Service requests and sets IDs{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
 概述 ID 請求與回應程序。這些範例涵蓋在個別網站、跨不同網站，以及針對由不同 Experience Cloud 客戶 (具有自己的組織 ID) 管理的網站，進行 ID 指派。
 
 >[!NOTE]
 >
->If you&#39;re not familiar with how the Experience Platform Identity Service creates the visitor ID, take a moment to review [Experience Cloud](../introduction/cookies.md).
+>If you're not familiar with how the Experience Cloud Identity Service creates the visitor ID, take a moment to review [Experience Cloud](../introduction/cookies.md).
 
 **提示:** 請參閱[跨網域追蹤的 ID 服務影片](https://helpx.adobe.com/marketing-cloud-core/kb/MCID/CrossDomain.html)。
 
