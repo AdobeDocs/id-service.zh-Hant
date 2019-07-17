@@ -2,22 +2,22 @@
 description: 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實作能讓他們在這些裝置上使用該 ID 服務，這些裝置包括遊戲主機、智慧型電視或其他支援網際網路連線的設備。請參閱本節以瞭解語法、程式碼範例和定義。
 keywords: ID 服務
 seo-description: 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實作能讓他們在這些裝置上使用該 ID 服務，這些裝置包括遊戲主機、智慧型電視或其他支援網際網路連線的設備。請參閱本節以瞭解語法、程式碼範例和定義。
-seo-title: 與Experience Platform Identity Service直接整合
-title: 與Experience Platform Identity Service直接整合
+seo-title: 與Experience Cloud Identity Service直接整合
+title: 與Experience Cloud Identity Service直接整合
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Direct integration with the Experience Platform Identity Service {#direct-integration-with-the-experience-cloud-id-service}
+# Direct integration with the Experience Cloud Identity Service {#direct-integration-with-the-experience-cloud-id-service}
 
 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實作能讓他們在這些裝置上使用該 ID 服務，這些裝置包括遊戲主機、智慧型電視或其他支援網際網路連線的設備。請參閱本節以瞭解語法、程式碼範例和定義。
 
 ## 語法 {#section-a4754afec5ad40b6be00d6f1011d68bb}
 
-如果裝置無法使用 VisitorAPI.js 或 SDK 程式碼程式庫，可以直接呼叫由 ID 服務使用的資料收集伺服器 (DCS)。若要這麼做，您可以呼叫 `dpm.demdex.net`，並根據下列格式提出要求。*斜體*表示變數預留位置。
+如果裝置無法使用 VisitorAPI.js 或 SDK 程式碼程式庫，可以直接呼叫由 ID 服務使用的資料收集伺服器 (DCS)。若要這麼做，您可以呼叫 `dpm.demdex.net`，並根據下列格式提出要求。*斜體*&#x200B;表示變數預留位置。
 
 ![](assets/directSyntax.png)
 
@@ -62,11 +62,11 @@ ID 服務會傳回 JSON 物件中的資料，如下所示。您的回應可能�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 訪客 ID。請參閱<a href="../introduction/cookies.md" format="dita" scope="local"> Cookie和Experience Platform Identity Service</a>。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud 訪客 ID。請參閱<a href="../introduction/cookies.md" format="dita" scope="local"> Cookie和Experience Cloud Identity Service</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>您的 Experience Cloud 組織 ID。如需尋找此 ID 的協助，請參閱<a href="../reference/requirements.md" format="dita" scope="local"> Experience Platform Identity Service的需求</a>。 </p> </td> 
+   <td colname="col2"> <p>您的 Experience Cloud 組織 ID。如需尋找此 ID 的協助，請參閱<a href="../reference/requirements.md" format="dita" scope="local"> Experience Cloud Identity Service的需求</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
