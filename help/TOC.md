@@ -2,15 +2,15 @@
 cloud: platform-cloud
 product: ID 服務
 audience: 終端使用者
-user-guide-title: Experience Platform Identity Service說明
+user-guide-title: Experience Cloud Identity Service說明
 user-guide-url: /content/help/tw/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Experience Platform Identity Service Help {#using}
+# Experience Cloud Identity Service Help {#using}
 
 + [ID 服務說明](home.md)
 + 概述 {#intro}
