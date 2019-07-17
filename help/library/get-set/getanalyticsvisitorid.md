@@ -1,19 +1,19 @@
 ---
-description: 傳回在Experience Platform Identity Service實作之前儲存在s_ vi Cookie中的舊有Analytics ID(如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
+description: 傳回在Experience Cloud Identity Service實作之前儲存在s_ vi Cookie中的舊有Analytics ID(如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
 keywords: ID 服務
-seo-description: 傳回在Experience Platform Identity Service實作之前儲存在s_ vi Cookie中的舊有Analytics ID(如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
+seo-description: 傳回在Experience Cloud Identity Service實作之前儲存在s_ vi Cookie中的舊有Analytics ID(如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-傳回在Experience Platform Identity Service實作之前儲存在s_ vi Cookie中的舊有Analytics ID(如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
+傳回在Experience Cloud Identity Service實作之前儲存在s_ vi Cookie中的舊有Analytics ID(如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
 
 **語法** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
