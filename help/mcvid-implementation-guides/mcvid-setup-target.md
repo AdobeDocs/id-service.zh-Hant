@@ -25,7 +25,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ## 步驟 1: 取得 ID 服務程式碼 {#section-b32ba0548aa546a79dd38be59832a53e}
 
-[!DNL ID Service]需要 `VisitorAPI.js` 程式碼程式庫。請聯絡[客戶服務](/content/help/tw/zh-Hant/marketing-cloud/contact-support.html)以取得此程式碼。
+[!DNL ID Service]需要 `VisitorAPI.js` 程式碼程式庫。請聯絡[客戶服務](https://helpx.adobe.com/tw/content/help/tw/zh-Hant/marketing-cloud/contact-support.html)以取得此程式碼。
 
 ## 步驟 2: 將 Visitor.getInstance 函數新增至 ID 服務程式碼 {#section-287ef2958e9f43858fe9d630ae519e22}
 
