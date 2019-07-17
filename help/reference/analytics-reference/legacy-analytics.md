@@ -1,23 +1,23 @@
 ---
-description: 概述Experience Platform Identity Service如何與舊版Analytics ID搭配運作。
+description: 概述Experience Cloud Identity Service如何與舊版Analytics ID搭配運作。
 keywords: ID 服務
-seo-description: 概述Experience Platform Identity Service如何與舊版Analytics ID搭配運作。
+seo-description: 概述Experience Cloud Identity Service如何與舊版Analytics ID搭配運作。
 seo-title: Analytics 與 Experience Cloud ID 請求
 title: Analytics 與 Experience Cloud ID 請求
 uuid: 28beed16-7ef9-4824-8e82-853930756eca
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Analytics 與 Experience Cloud ID 請求{#analytics-and-experience-cloud-id-requests}
 
-概述Experience Platform Identity Service如何與舊版Analytics ID搭配運作。
+概述Experience Cloud Identity Service如何與舊版Analytics ID搭配運作。
 
 ## 摘要 {#section-64d8523ff7634cb987d0c6480f587dd3}
 
-過去Experience Platform Identity Service已緊密整合至Adobe Analytics。除了保有 Analytics 的完整，現在也可執行 [!DNL Experience Cloud] 中其他解決方案和功能的重要功能。Because of this historical legacy, checking for or writing an Analytics ID works a little differently than with the generic process described in [How the Experience Platform Identity Service Requests and Sets IDs...](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a). 如需深入瞭解檢查 ID 的作業順序，請參閱[設定 Analytics 與 Experience Cloud ID](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6)。
+過去Experience Cloud Identity Service已緊密整合至Adobe Analytics。除了保有 Analytics 的完整，現在也可執行 [!DNL Experience Cloud] 中其他解決方案和功能的重要功能。Because of this historical legacy, checking for or writing an Analytics ID works a little differently than with the generic process described in [How the Experience Cloud Identity Service Requests and Sets IDs...](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a). 如需深入瞭解檢查 ID 的作業順序，請參閱[設定 Analytics 與 Experience Cloud ID](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6)。
 
 ## 未在瀏覽器中設定 AMCV Cookie {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
 
@@ -37,7 +37,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>已設定 s_vi Cookie</b> </p> </td> 
-   <td colname="col2"> <p>當具有s_ vi Cookie的網站訪客首次遇到Experience Platform Identity Service時，此服務會： </p> 
+   <td colname="col2"> <p>當具有s_ vi Cookie的網站訪客首次遇到Experience Cloud Identity Service時，此服務會： </p> 
     <ul id="ul_BE584810280D4874AF802A9247011787"> 
      <li id="li_AA395B09A3174AF78F3EC10053E2E4F5">將儲存在 s_vi Cookie 中的 <span class="keyword">Analytics</span> ID 寫入 AMCV Cookie。這會寫入成為 <span class="keyword">Analytics</span> ID (AID)。此動作<i>不會</i>影響訪客計數。<span class="keyword">Analytics</span> 將繼續使用舊有 ID 識別使用者。 </li> 
      <li id="li_8735DE21FEA542BA8024109B8FE1E2ED">將 MID 寫入 AMCV Cookie。MID 可識別不同解決方案中的使用者。 </li> 
