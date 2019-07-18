@@ -4,7 +4,7 @@ seo-description: 選擇加入資料庫 API 與組態設定參考資料。
 seo-title: 選擇加入參考資料
 title: 選擇加入參考資料
 uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
@@ -27,7 +27,7 @@ adobe.OptInCategories = {
 
 ## 選擇加入設定參數 {#section-d66018342baf401389f248bb381becbf}
 
-本節探討如何使用 API 來設定選擇加入。大部分的組態和實作都可使用Experience Platform Launch擴充功能完成。
+本節探討如何使用 API 來設定選擇加入。大部分的設定與實作都可使用 Experience Platform Launch 擴充功能來完成。
 
 訪客 JavaScript 的 `getInstance()` 函數中提供選擇加入設定，可實例化全域 `adobe` 物件。下表列出與選擇加入服務有關的訪客 JS 設定。
 
@@ -105,7 +105,7 @@ adobe.OptInCategories = {
 
 `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe)`
 
-以非同步方式擷取權限清單。權限授予/拒絕程序完成後，會使用權限清單呼叫回呼。將 * 的值設為 *true`shouldAutoSubscribe`，會登錄往後任何的選擇加入變更。以下為 `adobe.OptIn` 的屬性:
+以非同步方式擷取權限清單。權限授予/拒絕程序完成後，會使用權限清單呼叫回呼。將 *的值設為* true`shouldAutoSubscribe`，會登錄往後任何的選擇加入變更。以下為 `adobe.OptIn` 的屬性:
 
 **`permissions`**
 
