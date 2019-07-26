@@ -2,16 +2,16 @@
 description: 包含伺服器範例設定和必要的移轉步驟。
 keywords: ID 服務
 seo-description: 包含伺服器範例設定和必要的移轉步驟。
-seo-title: Experience Cloud身分服務移轉案例
-title: Experience Cloud身分服務移轉案例
+seo-title: Experience Cloud Identity 服務移轉案例
+title: Experience Cloud Identity 服務移轉案例
 uuid: 9e229045-6508-48c4-ae39-9537b4941853
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Experience Cloud Identity Service Migration Scenarios {#experience-cloud-id-service-migration-scenarios}
+# Experience Cloud Identity 服務移轉案例 {#experience-cloud-id-service-migration-scenarios}
 
 包含伺服器範例設定和必要的移轉步驟。
 
