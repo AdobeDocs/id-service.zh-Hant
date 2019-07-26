@@ -1,11 +1,11 @@
 ---
-description: 呼叫這些ID服務函數，以判斷Experience Cloud Identity Service、Analytics或Audience Manager ID請求的逾時狀態。適用於 VisitorAPI.js 1.7.0 版或更新版本。
+description: 呼叫這些 ID 服務函數可判斷 Experience Cloud Identity 服務、Analytics 或 Audience Manager ID 要求的逾時狀態。適用於 VisitorAPI.js 1.7.0 版或更新版本。
 keywords: ID 服務
-seo-description: 呼叫這些ID服務函數，以判斷Experience Cloud Identity Service、Analytics或Audience Manager ID請求的逾時狀態。適用於 VisitorAPI.js 1.7.0 版或更新版本。
+seo-description: 呼叫這些 ID 服務函數可判斷 Experience Cloud Identity 服務、Analytics 或 Audience Manager ID 要求的逾時狀態。適用於 VisitorAPI.js 1.7.0 版或更新版本。
 seo-title: callTimeOut 方法
 title: callTimeOut 方法
 uuid: e5047498-11db-4945-b356-c92b7d447573
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,9 +13,9 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # callTimeOut 方法{#calltimeout-methods}
 
-呼叫這些ID服務函數，以判斷Experience Cloud Identity Service、Analytics或Audience Manager ID請求的逾時狀態。適用於 VisitorAPI.js 1.7.0 版或更新版本。
+呼叫這些 ID 服務函數可判斷 Experience Cloud Identity 服務、Analytics 或 Audience Manager ID 要求的逾時狀態。適用於 VisitorAPI.js 1.7.0 版或更新版本。
 
-## 逾時函數 {#section-e08228ef5f9b45c9a84139bbb763164a}
+## 逾時函數{#section-e08228ef5f9b45c9a84139bbb763164a}
 
 <table id="table_B3ACE584B3224D838070D32A8462EF28"> 
  <thead> 
@@ -26,7 +26,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Experience Cloud Identity Service </p> </td> 
+   <td colname="col1"> <p>Experience Cloud Identity 服務 </p> </td> 
    <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.MCIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
