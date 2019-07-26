@@ -1,11 +1,11 @@
 ---
-description: 2018年Experience Cloud Identity Service的功能發行、更新或變更。
+description: 2018 年 Experience Cloud Identity 服務的功能發佈、更新或變更。
 keywords: ID 服務
-seo-description: 2018年Experience Cloud Identity Service的功能發行、更新或變更。
+seo-description: 2018 年 Experience Cloud Identity 服務的功能發佈、更新或變更。
 seo-title: 2018 年發行說明
 title: 2018 年發行說明
 uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # 2018 年發行說明 {#release-notes}
 
-2018年Experience Cloud Identity Service的功能發行、更新或變更。
+2018 年 Experience Cloud Identity 服務的功能發佈、更新或變更。
 
 ## 3.3 版 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -52,7 +52,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
   </tr> 
   <tr> 
    <td colname="col1"> 公開 Git 存放庫提供 ECID JS </td> 
-   <td colname="col2"> 公開 Git 存放庫現於 https://github.com/Adobe-Marketing-Cloud/id-service/releases，開放所有 Experience Cloud 客戶使用 ECID JS。 </td> 
+   <td colname="col2"> 公開 Git 存放庫現於 https://github.com/Adobe-Marketing-Cloud/id-service/releases ，開放所有 Experience Cloud 客戶使用 ECID JS。 </td> 
   </tr> 
  </tbody> 
 </table>
@@ -69,7 +69,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
  <tbody> 
   <tr> 
    <td colname="col1"> <p>不重複訪客計數出現不符實情的尖峰 </p> </td> 
-   <td colname="col2"> <p>在Experience Cloud Identity Service3.1.0發行後，我們發現在實施此版本時，獨特訪客計數中會產生不真實的尖峰。只有在最新版的 ECID v3.1.0，而且使用者在 Safari 瀏覽器的隱私權設定中選取「僅允許來自目前的網站」時，才會發生此問題。3.1.2 版會修正此問題。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud Identity Service 3.1.0 版發行後，我們發現實作本版本時，不重複訪客計數會出現與事實不符的尖峰。只有在最新版的 ECID v3.1.0，而且使用者在 Safari 瀏覽器的隱私權設定中選取「僅允許來自目前的網站」時，才會發生此問題。3.1.2 版會修正此問題。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -78,7 +78,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 >[!NOTE]
 >
->建議您盡快從 3.1.0 版升級至最新版本。請參閱 3.1.2 版說明。最新的套件可在Adobe Experience Platform Launch、DTM和AppMeasurement中使用。
+>建議您盡快從 3.1.0 版升級至最新版本。請參閱 3.1.2 版說明。Adobe Experience Platform Launch、DTM 及 AppMeasurement 都會提供最新套件。
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
