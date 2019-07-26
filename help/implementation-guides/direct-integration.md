@@ -2,16 +2,16 @@
 description: 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實作能讓他們在這些裝置上使用該 ID 服務，這些裝置包括遊戲主機、智慧型電視或其他支援網際網路連線的設備。請參閱本節以瞭解語法、程式碼範例和定義。
 keywords: ID 服務
 seo-description: 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實作能讓他們在這些裝置上使用該 ID 服務，這些裝置包括遊戲主機、智慧型電視或其他支援網際網路連線的設備。請參閱本節以瞭解語法、程式碼範例和定義。
-seo-title: 與Experience Cloud Identity Service直接整合
-title: 與Experience Cloud Identity Service直接整合
+seo-title: 與 Experience Cloud Identity 服務直接整合
+title: 與 Experience Cloud Identity 服務直接整合
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Direct integration with the Experience Cloud Identity Service {#direct-integration-with-the-experience-cloud-id-service}
+# 與 Experience Cloud Identity 服務直接整合 {#direct-integration-with-the-experience-cloud-id-service}
 
 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實作能讓他們在這些裝置上使用該 ID 服務，這些裝置包括遊戲主機、智慧型電視或其他支援網際網路連線的設備。請參閱本節以瞭解語法、程式碼範例和定義。
 
@@ -21,7 +21,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ![](assets/directSyntax.png)
 
-在這個語法範例中，前置詞 `d_` 會做為系統層級變數，用於識別呼叫中的機碼-值組。您可以將幾個 `d_` 參數傳遞至 ID 服務，但要把重點放在上述程式碼中的機碼-值組上。如需關於其他變數的詳細資訊，請參閱 [DCS API 呼叫支援的屬性](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html)。
+在這個語法範例中，前置詞 `d_` 會做為系統層級變數，用於識別呼叫中的機碼-值組。您可以將幾個 `d_` 參數傳遞至 ID 服務，但要把重點放在上述程式碼中的機碼-值組上。如需其他變數的詳細資訊，請參閱[支援的 DCS API 呼叫屬性](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html)。
 
 ID 服務支援 HTTP 和 HTTPS 呼叫。使用 HTTPS 以透過安全網頁傳遞資料。
 
@@ -62,15 +62,15 @@ ID 服務會傳回 JSON 物件中的資料，如下所示。您的回應可能�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 訪客 ID。請參閱<a href="../introduction/cookies.md" format="dita" scope="local"> Cookie和Experience Cloud Identity Service</a>。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud 訪客 ID。請參閱<a href="../introduction/cookies.md" format="dita" scope="local"> Cookie 與 Experience Cloud Identity 服務</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>您的 Experience Cloud 組織 ID。如需尋找此 ID 的協助，請參閱<a href="../reference/requirements.md" format="dita" scope="local"> Experience Cloud Identity Service的需求</a>。 </p> </td> 
+   <td colname="col2"> <p>您的 Experience Cloud 組織 ID。如需尋找此 ID 的協助，請參閱<a href="../reference/requirements.md" format="dita" scope="local"> Experience Cloud Identity 服務的需求</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
-   <td colname="col2"> <p>此選用參數會將資料提供者 ID (DPID)、唯一使用者 ID (DPUUID) 及 <a href="../reference/authenticated-state.md" format="dita" scope="local"> 驗證狀態 ID</a> 傳給 ID 服務。如程式碼範例所示，以非列印用的控制字元 <span class="codeph">%01</span> 將 DPID 和 DPUUID 隔開。 </p> <p> <b>DPID 與 DPUUID</b> </p> <p>在 <span class="codeph">d_cid</span> 參數中，將每個相關的 DPID 和 DPUUID 組合指派至相同的 <span class="codeph">d_cid</span> 參數。如此，能讓您在單一要求中傳回多個 ID 集合。另外，以非列印用的控制字元 <span class="codeph">%01</span> 將 DPID、DPUUID 和選用的驗證標幟隔開。在下列範例中，提供者和使用者的 ID 都會以<b>粗體</b>文字強調顯示。 </p> 
+   <td colname="col2"> <p>此選用參數會將資料提供者 ID (DPID)、唯一使用者 ID (DPUUID) 及<a href="../reference/authenticated-state.md" format="dita" scope="local">驗證狀態 ID</a> 傳給 ID 服務。如程式碼範例所示，以非列印用的控制字元 <span class="codeph">%01</span> 將 DPID 和 DPUUID 隔開。 </p> <p> <b>DPID 與 DPUUID</b> </p> <p>在 <span class="codeph">d_cid</span> 參數中，將每個相關的 DPID 和 DPUUID 組合指派至相同的 <span class="codeph">d_cid</span> 參數。如此，能讓您在單一要求中傳回多個 ID 集合。另外，以非列印用的控制字元 <span class="codeph">%01</span> 將 DPID、DPUUID 和選用的驗證標幟隔開。在下列範例中，提供者和使用者的 ID 都會以<b>粗體</b>文字強調顯示。 </p> 
     <ul id="ul_2E19D837296B40E9ACD096495CF711C5"> 
      <li id="li_5B94B057654440B99B989BA60E4ED053">語法: <span class="codeph">...d_cid=DPID%01DPUUID%01authentication state...</span> </li> 
      <li id="li_B07833EF51D54F088574B7B7F9FB841A">範例: <span class="codeph">...d_cid=123%01456%011...</span> </li> 
