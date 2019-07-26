@@ -1,11 +1,11 @@
 ---
-description: Experience Cloud Identity Service標準和非標準實作的指示和程式碼範例。
+description: 適用於 Experience Cloud Identity 服務的標準及非標準實作指示與程式碼範例。
 keywords: ID 服務
-seo-description: Experience Cloud Identity Service標準和非標準實作的指示和程式碼範例。
+seo-description: 適用於 Experience Cloud Identity 服務的標準及非標準實作指示與程式碼範例。
 seo-title: 實作指南
 title: 實作指南
 uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # 實作方式
 
-Experience Cloud Identity Service標準和非標準實作的指示和程式碼範例。
+適用於 Experience Cloud Identity 服務的標準及非標準實作指示與程式碼範例。
 
 >[!IMPORTANT]
 >
