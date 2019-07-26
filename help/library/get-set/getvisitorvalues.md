@@ -5,7 +5,7 @@ seo-description: 這是非同步 API，依預設會為 Analytics、ID 服務、�
 seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -108,7 +108,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>訪客的 Experience Cloud ID。 </p> <p>請參閱<a href="../../introduction/cookies.md" format="dita" scope="local"> Cookie和Experience Cloud Identity Service </a>。 </p> </td> 
+   <td colname="col2"> <p>訪客的 Experience Cloud ID。 </p> <p>請參閱<a href="../../introduction/cookies.md" format="dita" scope="local"> Cookie 與 Experience Cloud Identity 服務</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
