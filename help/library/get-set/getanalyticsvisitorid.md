@@ -1,11 +1,11 @@
 ---
-description: 傳回在Experience Cloud Identity Service實作之前儲存在s_ vi Cookie中的舊有Analytics ID(如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
+description: 傳回在 Experience Cloud Identity 服務實作前儲存於 s_vi Cookie 的舊有 Analytics ID (如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
 keywords: ID 服務
-seo-description: 傳回在Experience Cloud Identity Service實作之前儲存在s_ vi Cookie中的舊有Analytics ID(如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
+seo-description: 傳回在 Experience Cloud Identity 服務實作前儲存於 s_vi Cookie 的舊有 Analytics ID (如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-傳回在Experience Cloud Identity Service實作之前儲存在s_ vi Cookie中的舊有Analytics ID(如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
+傳回在 Experience Cloud Identity 服務實作前儲存於 s_vi Cookie 的舊有 Analytics ID (如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
 
 **語法** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
@@ -44,7 +44,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 發生下列情況時，您會在查詢字串中看到 `aid` 參數:
 
 * 正確部署 [!DNL Experience Cloud] ID 服務。
-* 造訪網站的使用者已在 [!DNL Analytics]s_vi Cookie[ 中儲存之前的 ](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html) ID。
+* 使用者造訪的網站具有原先就儲存在 [s_vi Cookie](https://marketing.adobe.com/resources/help/zh_TW/whitepapers/cookies/?f=cookies_analytics.html) 中的現有 [!DNL Analytics] ID。
 
 **案例 2**
 
@@ -52,5 +52,5 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!MORE_LIKE_THIS]
 >
->* [Analytics Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
+>* [Analytics Cookie](https://marketing.adobe.com/resources/help/zh_TW/whitepapers/cookies/cookies_analytics.html)
 
