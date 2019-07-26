@@ -1,11 +1,11 @@
 ---
-description: 可讓您使用Experience Cloud Identity Service進行程式設計的屬性、方法和組態。
+description: 屬性、方法和設定可讓您以程式設計方式使用 Experience Cloud Identity 服務。
 keywords: ID 服務
-seo-description: 可讓您使用Experience Cloud Identity Service進行程式設計的屬性、方法和組態。
+seo-description: 屬性、方法和設定可讓您以程式設計方式使用 Experience Cloud Identity 服務。
 seo-title: ID 服務 API
 title: ID 服務 API
 uuid: 9663cf9d-64be-4b68-a0e1-c1a1eb70fbd5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # ID 服務 API{#id-service-api}
 
-可讓您使用Experience Cloud Identity Service進行程式設計的屬性、方法和組態。
+屬性、方法和設定可讓您以程式設計方式使用 Experience Cloud Identity 服務。
 
 * [設定概述](function-vars/function-vars.md)
 * [方法概述](get-set/get-set.md)
