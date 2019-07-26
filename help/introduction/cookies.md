@@ -1,19 +1,19 @@
 ---
-description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie，以及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
+description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie 及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
 keywords: playstation;ID 服務
-seo-description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie，以及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
-seo-title: Cookie和Experience Cloud Identity Service
-title: Cookie和Experience Cloud Identity Service
+seo-description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie 及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
+seo-title: Cookie 與 Experience Cloud Identity 服務
+title: Cookie 與 Experience Cloud Identity 服務
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Cookies and the Experience Cloud Identity Service{#cookies-and-the-experience-cloud-id-service}
+# Cookie 與 Experience Cloud Identity 服務{#cookies-and-the-experience-cloud-id-service}
 
-ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie，以及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
+ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie 及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
 
 ## 瞭解 ID 服務 Cookie {#section-f438168beaec409ab8b2cc58bd021e26}
 
@@ -28,7 +28,7 @@ ID 服務有賴 AMCV、AMCVS 和 Demdex Cookie 才能順利運作。這些 Cooki
 **ID 服務 Cookie 不具備的功能**
 
 * 儲存、傳輸或執行電腦病毒。
-* 存取或儲存個人識別資訊 (PII)，例如：您的電子郵件地址。
+* 存取或儲存個人識別資訊 (PII)，例如: 您的電子郵件地址。
 * 控制電腦的軟硬體。
 * 造成電腦不穩定或是產生效能問題。
 * 追蹤網站上沒有使用 ID 服務的使用者。
@@ -114,7 +114,7 @@ AMCVS Cookie 會作為標幟，指出工作階段已初始化。其值一律為 
  </tbody> 
 </table>
 
-For related information, see [Understanding Calls to the Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
+如需相關資訊，請參閱[瞭解向 Demdex 網域進行的呼叫](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)。
 
 ## 產生 Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -124,4 +124,4 @@ ID 服務在您的頁面載入時隨即開始建立 MID。在此過程中，`vis
 
 ## 下一步 {#section-8db1727a63bc4ff68b495f270315d453}
 
-See [How the Experience Cloud Identity Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+請參閱 [Experience Cloud Identity 服務如何要求與設定 ID...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)。
