@@ -5,7 +5,7 @@ seo-description: 關於搭配 ID 服務使用其他 Experience Cloud 解決方�
 seo-title: 其他 Experience Cloud 解決方案的常見問題集
 title: 其他 Experience Cloud 解決方案的常見問題集
 uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -15,9 +15,9 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 關於搭配 ID 服務使用其他 Experience Cloud 解決方案的功能、功用和問題之常見問題集。
 
-## 動態標籤管理 (DTM) {#section-7ac4b9c1f1fd45a5a03eac3fb5968af7}
+## Dynamic Tag Management (DTM) {#section-7ac4b9c1f1fd45a5a03eac3fb5968af7}
 
-**我是否可使用「動態標籤管理」來部署訪客 ID 服務?**
+**我是否可使用「Dynamic Tag Management」來部署訪客 ID 服務?**
 
 可以，這是慣用和推薦的部署選項。
 
@@ -25,7 +25,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ## Analytics 與 Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
-**在實作Experience Cloud Identity[!DNL Adobe Analytics][!DNL Audience Manager]Service後，使用者的瀏覽歷史記錄是否會匯出？**
+**在我實作 Experience Cloud Identity 服務後，使用者的瀏覽歷史記錄會從[!DNL Adobe Analytics]匯出到[!DNL Audience Manager]嗎?**
 
 您有兩個選擇:
 
