@@ -2,27 +2,27 @@
 cloud: platform-cloud
 product: ID 服務
 audience: 終端使用者
-user-guide-title: Experience Cloud Identity Service說明
+user-guide-title: Experience Cloud Identity 服務說明
 user-guide-url: /content/help/tw/id-service/using/home.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Experience Cloud Identity Service Help {#using}
+# Experience Cloud Identity 服務說明 {#using}
 
 + [ID 服務說明](home.md)
 + 概述 {#intro}
    + [概述](introduction/overview.md)
    + [關於 ID 服務](introduction/about-id-service.md)
-   + [Cookie 和 ID 服務](introduction/cookies.md)
+   + [Cookie 與 ID 服務](introduction/cookies.md)
    + [ ID 服務如何要求與設定 ID](introduction/id-request.md)
-   + [瞭解 同步和匹配率](introduction/match-rates.md)
+   + [了解同步和匹配率](introduction/match-rates.md)
 + 實作指南 {#implementation-guides}
    + [實作指南](implementation-guides/implementation-guides.md)
    + [實作方式](implementation-guides/implementation-methods.md)
-   + [使用Experience Platform Launch進行實作](implementation-guides/ecid-implement-with-launch.md)
+   + [使用 Experience Platform Launch 實作](implementation-guides/ecid-implement-with-launch.md)
    + [使用 DTM 實作](implementation-guides/standard.md)
    + [實作 Analytics](implementation-guides/setup-analytics.md)
    + [實作 Target](implementation-guides/setup-target.md)
@@ -36,7 +36,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
       + [選擇加入服務概述](implementation-guides/opt-in-service/optin-overview.md)
       + [設定選擇加入服務](implementation-guides/opt-in-service/getting-started.md)
       + [驗證選擇加入服務](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
-      + [使用Experience Platform Launch設定選擇加入](implementation-guides/opt-in-service/launch.md)
+      + [使用 Experience Platform Launch 設定選擇加入](implementation-guides/opt-in-service/launch.md)
       + [使用 DTM 設定選擇加入](implementation-guides/opt-in-service/optin-dtm.md)
       + [選擇加入使用案例](implementation-guides/opt-in-service/use-cases.md)
       + [選擇加入參考資料](implementation-guides/opt-in-service/api.md)
@@ -98,10 +98,10 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
    + [ID 服務規定](reference/requirements.md)
    + [影片心率和 ID 服務](reference/heartbeat.md)
    + [Data Workbench 與 ID 服務](reference/dwb.md)
-+ 常見問題解答 {#faqs}
-   + [常見問題解答概述](faq-intro/faq-intro.md)
-   + [ID 服務常見問題解答](faq-intro/faq.md)
-   + [Analytics 與 ID 服務常見問題](faq-intro/analytics-faq.md)
++ 常見問題集 {#faqs}
+   + [常見問題集概述](faq-intro/faq-intro.md)
+   + [ID 服務常見問題集](faq-intro/faq.md)
+   + [Analytics 與 ID 服務常見問題集](faq-intro/analytics-faq.md)
    + [其他 Experience Cloud 解決方案的常見問題集](faq-intro/other-faq.md)
 + ID 服務發行說明 {#release-notes}
    + [2019 年發行說明](release-notes/release-notes.md)
