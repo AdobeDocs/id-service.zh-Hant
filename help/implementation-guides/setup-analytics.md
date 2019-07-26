@@ -1,19 +1,19 @@
 ---
-description: 這些指示適用於想要使用Experience Cloud Identity Service且不使用動態標籤管理(DTM)的Analytics客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
+description: 這些指示適用於想使用 Experience Cloud Identity 服務但不想使用 Dynamic Tag Management (DTM) 的 Analytics 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
 keywords: ID 服務
-seo-description: 這些指示適用於想要使用Experience Cloud Identity Service且不使用動態標籤管理(DTM)的Analytics客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
-seo-title: 實作Experience Cloud Identity Service for Analytics
-title: 實作Experience Cloud Identity Service for Analytics
+seo-description: 這些指示適用於想使用 Experience Cloud Identity 服務但不想使用 Dynamic Tag Management (DTM) 的 Analytics 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
+seo-title: 實作適用於 Analytics 的 Experience Cloud Identity 服務
+title: 實作適用於 Analytics 的 Experience Cloud Identity 服務
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Implement the Experience Cloud Identity Service for Analytics {#implement-the-experience-cloud-id-service-for-analytics}
+# 實作適用於 Analytics 的 Experience Cloud Identity 服務{#implement-the-experience-cloud-id-service-for-analytics}
 
-這些指示適用於想要使用Experience Cloud Identity Service且不使用動態標籤管理(DTM)的Analytics客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
+這些指示適用於想使用 Experience Cloud Identity 服務但不想使用 Dynamic Tag Management (DTM) 的 Analytics 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
 
 >[!IMPORTANT]
 >
@@ -96,7 +96,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 ## 步驟 3: 將您的 Experience Cloud 組織 ID 新增至 Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-在 `Visitor.getInstance` 函數中，將 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` 取代為 [!DNL Experience Cloud] 組織 ID。如果您不知道組織 ID，可以在 [!DNL Experience Cloud] 管理頁面中找到。另請參閱[管理 - 核心服務](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html)。您編輯的函數看起來可能類似於下列範例。
+在 `Visitor.getInstance` 函數中，將 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` 取代為 [!DNL Experience Cloud] 組織 ID。如果您不知道組織 ID，可以在 [!DNL Experience Cloud] 管理頁面中找到。另請參閱[管理員 -核心服務](https://marketing.adobe.com/resources/help/zh_TW/mcloud/admin_getting_started.html)。您編輯的函數看起來可能類似於下列範例。
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -134,7 +134,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 
 
-If you're not sure how to find your tracking server see the [FAQ](../faq-intro/faq.md) and [Correctly Populate the trackingServer and trackingServerSecure variables](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+若不清楚如何尋找您的追蹤伺服器，請參閱[常見問題集](../faq-intro/faq.md)和[正確填入 trackingServer 及 trackingServerSecure 變數](https://helpx.adobe.com/tw/analytics/kb/determining-data-center.html#)。
 
 ## 步驟 5: 更新您的 AppMeasurement.js 或 s_code.js 檔案 {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
@@ -164,7 +164,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 步驟 7: (選用) 設定寬限期 {#section-7bbb2f72c26e4abeb8881e18366797a3}
 
-If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). 寬限期可執行最多 180 天。您可以視需要更新寬限期。
+若其中有任何使用案例適用於您的情況，請要求[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)設定暫時的[寬限期](../reference/analytics-reference/grace-period.md)。寬限期可執行最多 180 天。您可以視需要更新寬限期。
 
 **部分實作**
 
@@ -178,13 +178,13 @@ If any of these use cases apply to your situation, ask [Customer Care](https://h
 
 當您的實作可擷取 MID，而非讀取 s_vi Cookie 之後，則可停止寬限期。
 
-See, [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
+請參閱 [Cookie 與 Experience Cloud Identity 服務](../introduction/cookies.md)。
 
 如果您將資料從點擊流資料資料源傳送至內部系統，而且該程序使用 `visid_high` 和 `visid_low` 欄位，則需要寬限期。
 
 您的資料擷取程序可使用 `post_visid_high` 和 `post_visid_low` 欄之後，即可停止寬限期。
 
-請參閱[點擊流資料欄位參考](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html)。
+請參閱[點按流資料欄參考](https://marketing.adobe.com/resources/help/zh_TW/sc/clickstream/datafeeds_reference.html)。
 
 **點擊流 (Clickstream) 資料擷取**
 
@@ -197,9 +197,9 @@ See, [Cookies and the Experience Cloud Identity Service](../introduction/cookies
 若要測試您的 ID 服務實作，請檢查:
 
 * 托管網頁之網域中的 [AMCV Cookie](../introduction/cookies.md)。
-* 透過 [!DNL Analytics]Adobe 偵錯工具[檢查 ](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html) 影像請求中的 MID 值。
+* [!DNL Analytics] 影像要求中的 MID 值 (使用 [Adobe Debugger 工具](https://marketing.adobe.com/resources/help/zh_TW/sc/implement/debugger.html))。
 
-See, [Test and Verify the Experience Cloud Identity Service](../implementation-guides/test-verify.md).
+請參閱[測試及驗證 Experience Cloud Identity 服務](../implementation-guides/test-verify.md)。
 
 **部署程式碼**
 
