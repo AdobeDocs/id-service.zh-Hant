@@ -1,19 +1,19 @@
 ---
-description: 在部署Experience Cloud Identity Service之前，您應瞭解當您使用不同方法或JavaScript檔案收集資料時，此服務對多個網域訪客追蹤的影響以及潛在問題。
+description: 部署 Experience Cloud Identity 服務之前，請先瞭解如果使用不同方法或透過 JavaScript 檔案收集資料，此服務會對多網域的訪客追蹤功能造成哪些影響及潛在問題。
 keywords: ID 服務
-seo-description: 在部署Experience Cloud Identity Service之前，您應瞭解當您使用不同方法或JavaScript檔案收集資料時，此服務對多個網域訪客追蹤的影響以及潛在問題。
-seo-title: Experience Cloud Identity Service移轉決策點
-title: Experience Cloud Identity Service移轉決策點
+seo-description: 部署 Experience Cloud Identity 服務之前，請先瞭解如果使用不同方法或透過 JavaScript 檔案收集資料，此服務會對多網域的訪客追蹤功能造成哪些影響及潛在問題。
+seo-title: Experience Cloud Identity 服務移轉決策點
+title: Experience Cloud Identity 服務移轉決策點
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Experience Cloud Identity Service移轉決策點
+# Experience Cloud Identity 服務移轉決策點
 
-在部署Experience Cloud Identity Service之前，您應瞭解當您使用不同方法或JavaScript檔案收集資料時，此服務對多個網域訪客追蹤的影響以及潛在問題。
+部署 Experience Cloud Identity 服務之前，請先瞭解如果使用不同方法或透過 JavaScript 檔案收集資料，此服務會對多網域的訪客追蹤功能造成哪些影響及潛在問題。
 
 請回答本節中的問題，有助於確定您所應執行的其他移轉步驟。
 
@@ -60,10 +60,10 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
    <td colname="col1"> <p>單一網域 </p> </td> 
    <td colname="col2"> <p>使用單一網域表示如果您不想再管理資料收集 CNAME，可以從資料收集 CNAME 移轉出來。不過，如果您的 CNAME 仍在運作中，則不需要變更。 </p> <p>如果您要移除 CNAME: </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
-     <li id="li_32E2CD3E58454E20A642BADE507AE86E">確定新追蹤伺服器<a href="https://marketing.adobe.com/resources/help/en_US/whitepapers/rdc/" format="https" scope="external">符合 RDC 標準</a>。 </li> 
+     <li id="li_32E2CD3E58454E20A642BADE507AE86E">確定新追蹤伺服器<a href="https://marketing.adobe.com/resources/help/zh_TW/whitepapers/rdc/" format="https" scope="external">符合 RDC 標準</a>。 </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">先從 CNAME 移至 RDC 追蹤伺服器，幾個月後再移轉至 <span class="keyword">Experience Cloud</span> ID 服務。 </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>請勿</i>使用 <span class="codeph"> *.2o7.net</span> 追蹤伺服器。 </li> 
-     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">聯絡<a href="https://helpx.adobe.com/marketing-cloud/contact-support.html" format="https" scope="external">客戶服務</a>以設定訪客移轉。這可確保一致的訪客數。 </li> 
+     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">聯絡<a href="https://helpx.adobe.com/tw/marketing-cloud/contact-support.html" format="https" scope="external">客戶服務</a>以設定訪客移轉。這可確保一致的訪客數。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -87,7 +87,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
      <li id="li_4366CC8EB7A54A959568E3761ABBBF23">多個 Analytics Javascript 檔案 </li> 
      <li id="li_B8A8132019EA48088E4F37E36F153D76">其他資料收集方法 </li> 
     </ul> </td> 
-   <td colname="col2"> <p>您應設定訪客 ID 服務寬限期，以便開始將訪客 ID 服務用於每個 JavaScript 檔案和其他資料收集程式庫。請參閱<a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">ID 服務寬限期</a>。 </p> </td> 
+   <td colname="col2"> <p>您應設定訪客 ID 服務寬限期，以便開始將訪客 ID 服務用於每個 JavaScript 檔案和其他資料收集程式庫。請參閱 <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">ID 服務寬限期</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>單一 Analytics JavaScript 檔案 </p> </td> 
