@@ -2,16 +2,16 @@
 description: 這些指示、工具和程序可協助您判斷 ID 服務是否正確運作。這些測試適用於一般的 ID 服務，以及不同的 ID 服務與 Experience Cloud 解決方案組合。
 keywords: ID 服務
 seo-description: 這些指示、工具和程序可協助您判斷 ID 服務是否正確運作。這些測試適用於一般的 ID 服務，以及不同的 ID 服務與 Experience Cloud 解決方案組合。
-seo-title: 測試並驗證Experience Cloud Identity Service
-title: 測試並驗證Experience Cloud Identity Service
+seo-title: '測試及驗證 Experience Cloud Identity 服務 '
+title: 測試及驗證 Experience Cloud Identity 服務
 uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Test and verify the Experience Cloud Identity Service{#test-and-verify-the-experience-cloud-id-service}
+# 測試及驗證 Experience Cloud Identity 服務{#test-and-verify-the-experience-cloud-id-service}
 
 這些指示、工具和程序可協助您判斷 ID 服務是否正確運作。這些測試適用於一般的 ID 服務，以及不同的 ID 服務與 Experience Cloud 解決方案組合。
 
@@ -27,13 +27,13 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 **工具**
 
-[Adobe 偵錯工具](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html)和 [Charles HTTP Proxy](https://www.charlesproxy.com/) 可協助您判斷 ID 服務是否已設定為正確地搭配 Analytics 運作。本節中的資訊是以 Adobe 偵錯工具和 Charles 傳回的結果為主。不過，您當然可以使用最適合您的任何工具或偵錯工具。
+[Adobe Debugger](https://marketing.adobe.com/resources/help/zh_TW/sc/implement/debugger.html) 及 [Charles HTTP Proxy](https://www.charlesproxy.com/) 可協助您判斷 ID 服務是否已正確設定為搭配 Analytics 使用。本節中的資訊是以 Adobe 偵錯工具和 Charles 傳回的結果為主。不過，您當然可以使用最適合您的任何工具或偵錯工具。
 
-## 使用 Adobe 偵錯工具進行測試 {#section-861365abc24b498e925b3837ea81d469}
+## 使用 Adobe 偵錯工具進行測試{#section-861365abc24b498e925b3837ea81d469}
 
-如果您在 [!DNL Experience Cloud ID] 偵錯工具回應中看到 [!DNL Adobe] (MID)，代表您的服務整合已正確設定。See [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md) for more information about the MID.
+如果您在 [!DNL Experience Cloud ID] 偵錯工具回應中看到 [!DNL Adobe] (MID)，代表您的服務整合已正確設定。請參閱 [Cookie 與 Experience Cloud Identity 服務](../introduction/cookies.md)，以瞭解有關 MID 的資訊。
 
-若要使用 [!DNL Adobe][ 偵錯工具驗證 ID 服務的狀態](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html):
+若要使用 [!DNL Adobe] [Debugger](https://marketing.adobe.com/resources/help/zh_TW/sc/implement/debugger.html) 驗證 ID 服務的狀態:
 
 1. 清除瀏覽器 Cookie 或開啟匿名瀏覽工作階段。
 1. 載入包含 ID 服務程式碼的測試頁面。
@@ -59,7 +59,7 @@ mid=20265673158980419722735089753036633573
 
 **失敗**
 
-如果偵錯工具發生下列情形，請聯絡[客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html):
+若 Debugger 發生以下情況，請聯絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html):
 
 * 無法傳回 MID。
 * 傳回錯誤訊息，指出您的 ID 尚未佈建。
@@ -85,7 +85,7 @@ mid=20265673158980419722735089753036633573
 
 **Charles 中的成功 ID 服務回應**
 
-當[資料收集伺服器](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) (DCS) 的回應傳回 MID 時，表示您的帳戶已正確佈建。MID 是以使用下列語法的機碼-值組傳回: `d_mid: *`visitor Experience Cloud ID`*`。查看 [!DNL Response] 標籤中的 MID，如下所示。
+當來自[資料收集伺服器](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) (DCS) 的回應傳回 MID，表示您的帳號已正確佈建 ID 服務。MID 是以使用下列語法的機碼-值組傳回: `d_mid: *`visitor Experience Cloud ID`*`。查看 [!DNL Response] 標籤中的 MID，如下所示。
 
 ![](assets/charles_response_success.png)
 
@@ -95,4 +95,4 @@ mid=20265673158980419722735089753036633573
 
 ![](assets/charles_response_unsuccessful.png)
 
-如需錯誤碼的相關詳細資訊，請參閱 [DCS 錯誤碼、訊息和範例](https://marketing.adobe.com/resources/help/en_US/aam/dcs_error_codes.html)。
+如需有關錯誤碼的詳細資訊，請參閱 [DCS 錯誤碼、訊息與範例](https://marketing.adobe.com/resources/help/en_US/aam/dcs_error_codes.html)。
