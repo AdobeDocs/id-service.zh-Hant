@@ -5,7 +5,7 @@ seo-description: 這些範例涵蓋 2 個與直接整合和 Experience Cloud ID 
 seo-title: 直接整合的使用案例
 title: 直接整合的使用案例
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -18,7 +18,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 >[!TIP]
 >
 >* 研究使用案例前，請先檢閱並瞭解[程式碼語法和變數](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9)。
->* For more information about the MID, see [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
+>* 如需有關 MID 的詳細資訊，請參閱 [Cookie 與 Experience Cloud Identity 服務](../introduction/cookies.md)。
 >
 
 
