@@ -5,7 +5,7 @@ seo-description: Experience Cloud ID Service(ECID)支援SHA-256雜湊演算法�
 seo-title: SHA256雜湊支援setCustomerIDs
 title: SHA256雜湊支援setCustomerIDs
 translation-type: tm+mt
-source-git-commit: 0311d57391a0a9d5ac5a0bba255ca71bdffd67c0
+source-git-commit: ac1131be75fd04b51cd1d646086e1802a43afb18
 
 ---
 
@@ -15,8 +15,8 @@ source-git-commit: 0311d57391a0a9d5ac5a0bba255ca71bdffd67c0
 Experience Cloud ID Service(ECID)支援SHA-256雜湊演算法，可讓您傳入客戶ID或電子郵件地址，並傳遞雜湊ID。這是選用Javascript方法，可將雜湊識別碼傳送至Experience Cloud。在傳送客戶ID之前，您可以繼續使用自己的雜湊方式。
 有兩種方法可使用setCustomerIDs實作雜湊支援，如下章節所述：
 
-* 在ECID中使用setCustomerIDs方法
-* 在Adobe Experience Platform Launch中新增動作
+* [在ECID中使用setCustomerIDs方法](/help/reference/hashing-support.md#use-setcustomerids-method)
+* [在Adobe Experience Platform Launch中新增動作](/help/reference/hashing-support.md#add-action-launch)
 
 ## Use the `setCustomerIDs` method in ECID {#use-setcustomerids-method}
 
