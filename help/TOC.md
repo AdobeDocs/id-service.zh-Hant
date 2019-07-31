@@ -4,8 +4,8 @@ product: ID 服務
 audience: 終端使用者
 user-guide-title: Experience Cloud Identity 服務說明
 user-guide-url: /content/help/tw/id-service/using/home.html
-translation-type: ht
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+translation-type: tm+mt
+source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
 
 ---
 
@@ -98,6 +98,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
    + [ID 服務規定](reference/requirements.md)
    + [影片心率和 ID 服務](reference/heartbeat.md)
    + [Data Workbench 與 ID 服務](reference/dwb.md)
+   + [SHA256雜湊支援setCustomerIDs](reference/hashing-support.md)
 + 常見問題集 {#faqs}
    + [常見問題集概述](faq-intro/faq-intro.md)
    + [ID 服務常見問題集](faq-intro/faq.md)
