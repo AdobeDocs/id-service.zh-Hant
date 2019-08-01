@@ -5,8 +5,8 @@ seo-description: 此選用的布林值標幟可防止 Experience Cloud Identity 
 seo-title: disableThirdPartyCookies
 title: disableThirdPartyCookies
 uuid: 7ed5aa16-44ca-4702-878a-1a208ca95270
-translation-type: ht
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+translation-type: tm+mt
+source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 >
 >此設定原為 `idSyncDisable3rdPartySyncing`，已在 2018 年 1 月 18 日發行的 v3.0 版本中重新命名為 `disableThirdPartyCookies`。
 
-**語法:** `disableThirdPartyCookies: true|false` (預設為 `false`。)適用於 `VisitorAPI.js` v1.5.3 或更高版本。
+**語法:** `disableThirdPartyCookies: true|false` (預設為 `false`。)`VisitorAPI.js` 針對v3.0.0或更新版本。
 
 當 `disableThirdPartyCookies: true` 時，ID 服務不會傳回第三方 demdex.net Cookie (請參閱 [Cookie 與 Experience Cloud Identity 服務](../../introduction/cookies.md))。如果網站訪客在瀏覽器中已擁有此 Cookie，ID 服務不會使用該 Cookie 來建立新的 Experience Cloud ID (MID) 或傳回現有 ID。相反地，ID 服務會在第一方 Cookie 中建立新的隨機 ID。啟用後，您可以利用 ID 服務收集資料，並在不同的 Experience Cloud 解決方案之間共用資料。
 
