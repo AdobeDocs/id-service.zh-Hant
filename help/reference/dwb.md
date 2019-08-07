@@ -5,8 +5,8 @@ seo-description: 遵循下列指示，將 Experience Cloud ID 欄位整合至 Da
 seo-title: Data Workbench 與 Experience Cloud Identity 服務
 title: Data Workbench 與 Experience Cloud Identity 服務
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
-translation-type: ht
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+translation-type: tm+mt
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -17,9 +17,9 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 若要更新 [Data Workbench](https://marketing.adobe.com/resources/help/en_US/insight/) 以使用 ID 服務:
 
-1. 找到最新版 [Decoder Group](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html) 設定檔。
+1. 找出目前的[解碼器群組](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html)設定檔。
 
-   通常 [!DNL Decoder Group] 位於 [!DNL Profile Manager] 中的下列路徑: `Dataset\Log Processing\Decoding Instructions.cfg`。1. 從設定檔複製最新的解碼器格式。
+   Typically, the [!DNL Decoder Group] is located in a [!UICONTROL Profile Manager] on this path: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. 從設定檔複製最新的解碼器格式。
 1. 在原始解碼器格式下方貼上解碼器格式。
 1. 開啟解碼器格式並將這些新欄位位置新增至清單結尾:
 
