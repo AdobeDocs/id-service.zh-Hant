@@ -5,8 +5,8 @@ seo-description: 使用這些設定，可將呼叫 Experience Cloud Identity 服
 seo-title: audienceManagerServer 及 audienceManagerServerSecure
 title: audienceManagerServer 及 audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
-translation-type: ht
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+translation-type: tm+mt
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -22,14 +22,14 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 **用途**
 
-[!DNL Experience Cloud] ID 服務通常會在 [!DNL Adobe] 呼叫 `dpm.demdex.net`。有時候，您會覺得此目的地看起來太普遍或太像「第三方」而不想進行呼叫。要讓 ID 服務呼叫看起來更像第一方呼叫，您可以使用這些設定將您的 [!DNL Audience Manager] 子網域名稱新增到 `demdex.net`，如下所示。如需 `dpm.demdex.net` 呼叫的詳細資訊，請參閱[瞭解向 Demdex 網域進行的叫呼](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)。
+[!DNL Experience Cloud] ID 服務通常會在 [!DNL Adobe] 呼叫 `dpm.demdex.net`。有時候，您會覺得此目的地看起來太普遍或太像「第三方」而不想進行呼叫。要讓 ID 服務呼叫看起來更像第一方呼叫，您可以使用這些設定將您的 [!DNL Audience Manager] 子網域名稱新增到 `demdex.net`，如下所示。如需關於 `dpm.demdex.net` 呼叫的詳細資訊，請參閱[瞭解向 Demdex 網域進行的呼叫](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)。
 
 **需求**
 
 這些設定要求您使用:
 
 * 貴公司記錄的 [!DNL Audience Manager] 子網域名稱。向您的顧問確認或取得此名稱。
-* 與您的[!DNL Organization ID] 相關聯的子網域名稱。
+* 與您的[!UICONTROL 組織 ID] 關聯的子網域名稱。
 * *兩個*&#x200B;設定參數均具備相同的子網域名稱。
 
 **程式碼範例**
