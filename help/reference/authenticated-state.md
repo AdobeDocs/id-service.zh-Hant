@@ -6,7 +6,7 @@ seo-title: 客戶 ID 和驗證狀態
 title: 客戶 ID 和驗證狀態
 uuid: 643df363-224a-463e-a332-be59926b47e7
 translation-type: tm+mt
-source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
+source-git-commit: 603540150edcdc76aacf407aeb6421c5b8386f56
 
 ---
 
@@ -92,7 +92,7 @@ source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
 >* ID 區分大小寫。
 >* 請僅用未經編碼的值當成 ID。
 >* 客戶 ID 與驗證狀態未儲存在訪客 ID Cookie 中。每個頁面或應用程式內容都必須設定這兩項。
->* 您不應在客戶 ID 中加入任何個人識別資訊 (PII)。如果您要使用 PII 來識別訪客 (例如電子郵件地址)，建議您改為儲存經過雜湊或加密處理的資訊。ECID程式庫提供雜湊使用者識別碼的支援。See [SHA256 Hashing Support for setCustomerIDs](/help/reference/hashing-support.md).
+>* 您不應在客戶 ID 中加入任何個人識別資訊 (PII)。如果您要使用 PII 來識別訪客 (例如電子郵件地址)，建議您改為儲存經過雜湊或加密處理的資訊。ECID 程式庫支援使用雜湊處理使用者識別碼。請參閱 [setCustomerIDs 的 SHA256 雜湊支援](/help/reference/hashing-support.md)
 >
 
 
@@ -220,4 +220,4 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## 通知 Analytics 與 Audience Manager 客戶 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-如果您要將宣告的 ID 傳遞至 [!DNL Audience Manager]，`userid` 物件必須符合與資料來源相關的整合程式碼。For more information, see the [!DNL Visitor ID Service] section in the [Configure Merge Rules Code](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html) documentation.
+如果您要將宣告的 ID 傳遞至 [!DNL Audience Manager]，`userid` 物件必須符合與資料來源相關的整合程式碼。如需詳細資訊，請參閱[設定合併規則程式碼](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html)文件中的[!UICONTROL 訪客 ID 服務]章節。
