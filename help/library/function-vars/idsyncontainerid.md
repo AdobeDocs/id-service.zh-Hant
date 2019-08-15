@@ -5,7 +5,7 @@ seo-description: 此屬性會設定資料來源容器 ID 以供 ID 同步之用�
 seo-title: idSyncContainerID
 title: idSyncContainerID
 uuid: e35dc48b-1aa1-41e3-91c1-ef1e9d2d8b90
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
