@@ -5,7 +5,7 @@ seo-description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie �
 seo-title: Cookie 與 Experience Cloud Identity 服務
 title: Cookie 與 Experience Cloud Identity 服務
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -25,7 +25,7 @@ ID 服務有賴 AMCV、AMCVS 和 Demdex Cookie 才能順利運作。這些 Cooki
 * 沿用此唯一 ID，以便 ID 服務與其他 Experience Cloud 解決方案收集和共用資料。
 * 在您的網域間追蹤使用者。不過，您需要擁有這些其他網域，並在其中部署了 ID 服務程式碼。
 
-### ID Service Ookies無法執行的動作
+### ID 服務 Cookie 不具備的功能
 
 * 儲存、傳輸或執行電腦病毒。
 * 存取或儲存個人識別資訊 (PII)，例如: 您的電子郵件地址。
@@ -114,7 +114,7 @@ AMCVS Cookie 會作為標幟，指出工作階段已初始化。其值一律為 
  </tbody> 
 </table>
 
-For related information, see [Understanding Calls to the Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
+如需相關資訊，請參閱[瞭解向 Demdex 網域進行的呼叫](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)。
 
 ## 產生 Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
