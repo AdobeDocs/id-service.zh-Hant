@@ -6,7 +6,7 @@ seo-title: 依 URL 或資料來源執行 ID 同步作業
 title: 依 URL 或資料來源執行 ID 同步作業
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
 translation-type: tm+mt
-source-git-commit: cc050064465f6d94621e9f4b8879be3c2bd18a47
+source-git-commit: b83b192655f59a728b488b4e2a9aa2efbcf093f0
 
 ---
 
@@ -29,10 +29,7 @@ idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destina
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByURL(); </span> </p> </td> 
-   <td colname="col2"> <p>在不同的資料合作夥伴和 <span class="keyword">Audience Manager</span> 之間，使用自訂 ID 同步 URL。 </p> <p> 
-     <draft-comment>
-       不同資料合作夥伴和 Audience Manager 之間。例如，合作夥伴 x 會用來與合作夥伴 y 同步使用者 ID，然後再將該使用者 ID 傳送給 Audience Manager。 
-     </draft-comment> </p> </td> 
+   <td colname="col2"> <p>在不同的資料合作夥伴和 <span class="keyword">Audience Manager</span> 之間，使用自訂 ID 同步 URL。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByDataSource(); </span> </p> </td> 
@@ -110,7 +107,9 @@ idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destina
 
 **範例輸出**
 
-`http://su.addthis.com/red/usync?pid=16&puid=28777806459181003670799219185178493848&url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D`
+```
+http://su.addthis.com/red/usync?pid=16&puid=28777806459181003670799219185178493848&url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D
+```
 
 ### visitor.idSyncByDataSource
 
@@ -129,7 +128,9 @@ idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destina
 
 **範例輸出**
 
-`http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765`
+```
+http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
+```
 
 >[!MORE_LIKE_THIS]
 >
