@@ -5,7 +5,7 @@ seo-description: 多部分、頂級網域需要此變數，其中 URL 最後 2 �
 seo-title: cookieDomain
 title: cookieDomain
 uuid: a57e5477-c07b-4d54-8aea-8e8b152f1423
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
