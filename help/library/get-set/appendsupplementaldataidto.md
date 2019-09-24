@@ -5,7 +5,7 @@ seo-description: 此協助方法可讓您附加至增補資料 ID (SDID) 做為�
 seo-title: appendSupplementalDataIDTo
 title: appendSupplementalDataIDTo
 uuid: f3504d82-8da3-4971-818b-3df57df4ec2d
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -40,7 +40,7 @@ var pageB = "www.domain.com/pageB";
 var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219");
 ```
 
-## 範例輸出{#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
+## 範例輸出 {#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
 
 如下所示，URL 在呼叫接收頁面時，重新導向會包含訪客的 SDID、您的組織 ID 以及 UNIX 時間戳記。
 
