@@ -5,7 +5,7 @@ seo-description: 概述 Experience Cloud Identity 服務 (包括 Adobe Media Opt
 seo-title: 瞭解 ID 同步和匹配率
 title: 瞭解 ID 同步和匹配率
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -51,11 +51,11 @@ ID 同步是一個可在 Destination Publishing iFrame 中觸發的 URL。如以
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-另請參閱[傳入資料傳輸的 ID 同步](https://marketing.adobe.com/resources/help/en_US/aam/c_id_sync_in.html)。
+另請參閱[連入資料傳輸的 ID 同步](https://marketing.adobe.com/resources/help/en_US/aam/c_id_sync_in.html)。
 
 **步驟 4: 儲存 ID**
 
-同步的 ID 會儲存在[邊緣與核心資料伺服器](https://marketing.adobe.com/resources/help/en_US/aam/c_compedge.html)中。
+同步後的 ID 儲存在 [Edge 和核心資料伺服器](https://marketing.adobe.com/resources/help/en_US/aam/c_compedge.html)。
 
 ## 同步服務負責管理 ID 同步作業 {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
@@ -70,9 +70,9 @@ ID 同步是一個可在 Destination Publishing iFrame 中觸發的 URL。如以
 
 ## 與 Adobe Media Optimizer 進行 ID 同步 {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Media Optimizer] 是 iFrame 型 ID 同步程序的例外情況。由於 [!DNL Media Optimizer] 是值得信賴的網域，ID 同步會從上層頁面進行，而非 [!UICONTROL Destination Publishing iFrame]。同步期間，ID 服務會在 [!DNL Media Optimizer] 呼叫 `cm.eversttech.net`，這是 [!DNL Media Optimizer] 在 Adobe 收購前所使用的舊版網域名稱。將資料傳送至 [!DNL Media Optimizer] 有助於改善匹配率，而且這是使用 2.0 版 (或更新版本) 的 ID 服務之客戶的專屬自動功能。另請參閱 [Media Optimizer Cookie](https://marketing.adobe.com/resources/help/zh_TW/whitepapers/cookies/cookies_media_optimizer.html)。
+[!DNL Adobe Media Optimizer] 是 iFrame 型 ID 同步程序的例外情況。由於 [!DNL Media Optimizer] 是值得信賴的網域，ID 同步會從上層頁面進行，而非 [!UICONTROL Destination Publishing iFrame]。同步期間，ID 服務會在 [!DNL Media Optimizer] 呼叫 `cm.eversttech.net`，這是 [!DNL Media Optimizer] 在 Adobe 收購前所使用的舊版網域名稱。將資料傳送至 [!DNL Media Optimizer] 有助於改善匹配率，而且這是使用 2.0 版 (或更新版本) 的 ID 服務之客戶的專屬自動功能。另請參閱 [Media Optimizer Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html)。
 
 >[!MORE_LIKE_THIS]
 >
->* [瞭解向 Demdex 網域進行的呼叫](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
+>* [瞭解傳至 Demdex 網域的呼叫](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
 
