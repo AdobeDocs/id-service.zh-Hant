@@ -5,7 +5,7 @@ seo-description: 適用於 Experience Cloud Identity 服務的標準及非標準
 seo-title: 實作指南
 title: 實作指南
 uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
