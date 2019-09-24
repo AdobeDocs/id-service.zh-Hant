@@ -5,7 +5,7 @@ seo-description: 選用的布林值設定，可決定 ID 服務是否要將資�
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -30,7 +30,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 若要使用 `isCoopSafe`，您必須:
 
 * 使用 2.4 版或更新版本的 ID 服務程式碼。
-* 參與 [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/zh_TW/mcdc/)。潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
+* 參與 [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/en_US/mcdc/)。潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
 
 * 請和您的 [!DNL Adobe] 顧問合作，在您的 Device co-op 帳戶上設定白名單或是黑名單標幟。沒有啟用可這些標幟的自助式路徑。
 
@@ -67,9 +67,9 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 布林值選項決定 Device Co-op 是否使用客戶資料。
 
-* `isCoopSafe: true`: 行動 SDK 或是網站所蒐集的訪客資料*可以*用來協助建立裝置圖形。
+* `isCoopSafe: true`: 行動 SDK 或是網站所蒐集的訪客資料&#x200B;*可以*&#x200B;用來協助建立裝置圖形。
 
-* `isCoopSafe: false`: 行動 SDK 或是網站所蒐集的訪客資料*不可以*用來協助建立裝置圖形。
+* `isCoopSafe: false`: 行動 SDK 或是網站所蒐集的訪客資料&#x200B;*不可以*&#x200B;用來協助建立裝置圖形。
 
 **程式碼範例**
 
@@ -139,5 +139,5 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
 >[!MORE_LIKE_THIS]
 >
->* [DIL isCoopSafe](https://marketing.adobe.com/resources/help/zh_TW/aam/dil-coopsafe.html)
+>* [DIL isCoopSafe](https://marketing.adobe.com/resources/help/en_US/aam/dil-coopsafe.html)
 
