@@ -5,7 +5,7 @@ seo-description: 屬性、方法和設定可讓您以程式設計方式使用 Ex
 seo-title: ID 服務 API
 title: ID 服務 API
 uuid: 9663cf9d-64be-4b68-a0e1-c1a1eb70fbd5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
