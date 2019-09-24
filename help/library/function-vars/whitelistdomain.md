@@ -5,7 +5,7 @@ seo-description: 這些設定可讓實作於 iFrame 及上層頁面的不同 ID 
 seo-title: whitelistParentDomain 及 whitelistIframeDomains
 title: whitelistParentDomain 及 whitelistIframeDomains
 uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -73,7 +73,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 
 >[!TIP]
 >
->透過[視訊心率](https://marketing.adobe.com/resources/help/zh_TW/sc/appmeasurement/hbvideo/)在 iFrame 中提供影片時，您可能也想實作這些設定。影片心率需要有 ID 服務 ID (MID) 才能正常運作。
+>You may also want to implement these configurations when you're serving video in an iFrame with [Video Heartbeat](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/). 影片心率需要有 ID 服務 ID (MID) 才能正常運作。
 
 **使用案例 1: 在 iFrame 和上層頁面實作瀏覽器封鎖第三方 Cookie 及 ID 服務**
 
