@@ -5,7 +5,7 @@ seo-description: 關於搭配 ID 服務使用其他 Experience Cloud 解決方�
 seo-title: 其他 Experience Cloud 解決方案的常見問題集
 title: 其他 Experience Cloud 解決方案的常見問題集
 uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
