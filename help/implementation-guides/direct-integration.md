@@ -5,7 +5,7 @@ seo-description: 如果客戶的裝置無法接受或使用我們的 JavaScript 
 seo-title: 與 Experience Cloud Identity 服務直接整合
 title: 與 Experience Cloud Identity 服務直接整合
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -21,7 +21,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ![](assets/directSyntax.png)
 
-在這個語法範例中，前置詞 `d_` 會做為系統層級變數，用於識別呼叫中的機碼-值組。您可以將幾個 `d_` 參數傳遞至 ID 服務，但要把重點放在上述程式碼中的機碼-值組上。如需其他變數的詳細資訊，請參閱[支援的 DCS API 呼叫屬性](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html)。
+在這個語法範例中，前置詞 `d_` 會做為系統層級變數，用於識別呼叫中的機碼-值組。您可以將幾個 `d_` 參數傳遞至 ID 服務，但要把重點放在上述程式碼中的機碼-值組上。如需關於其他變數的詳細資訊，請參閱 [DCS API 呼叫支援的屬性](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html)。
 
 ID 服務支援 HTTP 和 HTTPS 呼叫。使用 HTTPS 以透過安全網頁傳遞資料。
 
