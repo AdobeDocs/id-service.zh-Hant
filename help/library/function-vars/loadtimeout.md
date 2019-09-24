@@ -5,7 +5,7 @@ seo-description: '設定逾時間隔 (單位: 毫秒)。用於通知其他解決
 seo-title: loadTimeout
 title: loadTimeout
 uuid: f627e044-bd73-49a4-8a90-6d19aa566751
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -17,7 +17,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 **語法:** ` loadTimeout: *`以毫秒為單位的間隔`*`
 
-預設值為 30,000 毫秒 (30 秒)。我們強烈建議您*不要*變更預設值。
+預設值為 30,000 毫秒 (30 秒)。我們強烈建議您&#x200B;*不要*&#x200B;變更預設值。
 
 >[!NOTE]
 >
