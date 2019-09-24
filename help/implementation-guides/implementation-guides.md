@@ -6,7 +6,7 @@ seo-title: ID 服務實作指南
 solution: Experience Cloud
 title: 實作指南
 uuid: null
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -20,7 +20,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ## 標準實作
 
-標準實作使用 [Adobe Exprience Platform Launch](https://docs.adobelaunch.com/) 來協助您開始使用 ID 服務，以及整合 ID 服務與其他 Experience Cloud 解決方案。強烈建議您使用 Experience Platform Launch 來實作 ID 服務。
+A standard implementation uses [Adobe Exprience Platform Launch](https://docs.adobelaunch.com/) to help you get started with the ID service and integrate it with other Experience Cloud solutions. 強烈建議您使用 Experience Platform Launch 來實作 ID 服務。
 
 ## 實作資源
 
