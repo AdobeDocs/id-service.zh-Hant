@@ -5,7 +5,7 @@ seo-description: 這些指示適用於想使用 Experience Cloud Identity 服務
 seo-title: 實作適用於 Target 的 Experience Cloud Identity 服務
 title: 實作適用於 Target 的 Experience Cloud Identity 服務
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -25,7 +25,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ## 步驟 1: 取得 ID 服務程式碼 {#section-b32ba0548aa546a79dd38be59832a53e}
 
-[!UICONTROL ID 服務]需要 `VisitorAPI.js` 程式碼程式庫。請聯絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)以取得此程式碼。
+[!UICONTROL ID 服務]需要 `VisitorAPI.js` 程式碼程式庫。聯絡[客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)以取得此程式碼。
 
 ## 步驟 2: 將 Visitor.getInstance 函數新增至 ID 服務程式碼 {#section-287ef2958e9f43858fe9d630ae519e22}
 
@@ -54,7 +54,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 ## 步驟 3: 將您的 Experience Cloud 組織 ID 新增至 Visitor.getInstance {#section-522b1877be9243c39b222859b821f0ce}
 
-在 `Visitor.getInstance` 函數中，將 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` 取代為 [!DNL Experience Cloud] 組織 ID。如果您不知道組織 ID，可以在 [!DNL Experience Cloud] 管理頁面中找到。另請參閱[管理員 -核心服務](https://marketing.adobe.com/resources/help/zh_TW/mcloud/admin_getting_started.html)。您編輯的函數看起來可能類似於下列範例。
+在 `Visitor.getInstance` 函數中，將 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` 取代為 [!DNL Experience Cloud] 組織 ID。如果您不知道組織 ID，可以在 [!DNL Experience Cloud] 管理頁面中找到。另請參閱[管理 - 核心服務](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html)。您編輯的函數看起來可能類似於下列範例。
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg");`
 
