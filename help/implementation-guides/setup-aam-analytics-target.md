@@ -5,7 +5,7 @@ seo-description: 這些指示適用於想使用 Experience Cloud Identity 服務
 seo-title: 實作適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity 服務
 title: 實作適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity 服務
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -26,13 +26,13 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ## 步驟1: 規劃伺服器端轉送 {#section-880797cc992d4755b29cada7b831f1fc}
 
-除了此處所述步驟以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客戶也應移轉至伺服器端轉送。伺服器端轉送功能可讓您移除 DIL (Audience Manager 的資料收集程式碼)，並將其取代為[對象管理模組](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html)。如需詳細資訊，請參閱[伺服器端轉送功能文件](https://marketing.adobe.com/resources/help/zh_TW/reference/ssf.html)。
+除了此處所述步驟以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客戶也應移轉至伺服器端轉送。伺服器端轉送可讓您移除 DIL (Audience Manager 的資料收集程式碼)，改為使用[觀眾管理模組](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html)。如需詳細資訊，請參閱[伺服器端轉送文件](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html)。
 
 移轉至伺服器端轉送需要規劃與協調。此程序包括對您的網站程式碼進行外部變更，以及 Adobe 佈建您的帳戶所必須進行的內部步驟。事實上，其中許多移轉程序必須同時進行，以及同時發行。您的實作路徑應依照以下事件順序進行:
 
 1. 與您的 [!DNL Analytics] 和 [!DNL Audience Manager] 聯絡人合作，一同規劃 ID 服務與伺服器端轉送移轉。選擇追蹤伺服器是此規劃的重要一部分。
 
-1. 完成[整合與佈建網站](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES)上的表單即可開始使用。
+1. 填寫[整合與佈建網站](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES)上的表單，開始進行。
 
 1. 同時實作 ID 服務與 [!DNL Audience Management Module]。為了正常運作，[!DNL Audience Management Module] (伺服器端轉送) 和 ID 服務必須針對相同的頁面集同時發行。
 
@@ -132,7 +132,7 @@ Analytics 使用追蹤伺服器來進行資料收集。
 * Experience Cloud 伺服器 URL = 追蹤伺服器 URL
 * Experience Cloud 伺服器安全 URL = 追蹤伺服器安全 URL
 
-若不清楚如何尋找您的追蹤伺服器，請參閱[常見問題集](../faq-intro/faq.md)和[正確填入 trackingServer 及 trackingServerSecure 變數](https://helpx.adobe.com/tw/analytics/kb/determining-data-center.html#)。
+若不清楚如何尋找您的追蹤伺服器，請參閱[常見問題集](../faq-intro/faq.md)以及[正確填入 trackingServer 和 trackingServerSecure 變數](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
 
 ## 步驟 6: 更新您的 AppMeasurement.js 檔案 {#section-5517e94a09bc44dfb492ebca14b43048}
 
@@ -144,7 +144,7 @@ Analytics 使用追蹤伺服器來進行資料收集。
 
 >[!IMPORTANT]
 >
->此時您應移除 [!DNL Audience Manager] DIL 程式碼，改為使用「對象管理模組」。請參閱[實作伺服器端轉送](https://marketing.adobe.com/resources/help/zh_TW/reference/ssf.html)以取得指示。
+>此時您應移除 [!DNL Audience Manager] DIL 程式碼，改為使用「對象管理模組」。如需指示，請參閱[實施伺服器端轉送](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html)。
 
 ***(可選用，但建議使用)*建立自訂 Prop**
 
@@ -164,7 +164,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 步驟 8: (選用) 設定寬限期 {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-若其中有任何使用案例適用於您的情況，請要求[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)設定暫時的[寬限期](../reference/analytics-reference/grace-period.md)。寬限期可執行最多 180 天。您可以視需要更新寬限期。
+If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). 寬限期可執行最多 180 天。您可以視需要更新寬限期。
 
 **部分實作**
 
@@ -186,7 +186,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 您的資料擷取程序可使用 `post_visid_high` 和 `post_visid_low` 欄之後，即可停止寬限期。
 
-另請參閱[點按流資料欄參考](https://marketing.adobe.com/resources/help/zh_TW/sc/clickstream/datafeeds_reference.html)。
+另請參閱[點擊流資料欄位參考](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html)。
 
 ## 步驟 9: 測試並驗證 {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -194,7 +194,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 >[!TIP]
 >
->您可以使用 [Adobe Debugger](https://marketing.adobe.com/resources/help/zh_TW/sc/implement/?f=debugger.html) 或 [Charles HTTP Proxy](https://www.charlesproxy.com/) 來檢查這些解決方案專屬的 ID。不過，您當然可以使用最適合您的任何工具或偵錯工具。
+>You can use the [Adobe Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=debugger.html) or the [Charles HTTP proxy](https://www.charlesproxy.com/) to check for these solution-specific IDs. 不過，您當然可以使用最適合您的任何工具或偵錯工具。
 
 **所有解決方案**
 
@@ -221,7 +221,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 若要測試伺服器端轉送，請參閱:
 
 * [如何判斷您的帳戶是否準備就緒，已可接收轉送的資料](https://marketing.adobe.com/resources/help/en_US/aam/ssf-success.html)
-* [如何判斷您的帳戶是否準備好接收轉送的資料](https://marketing.adobe.com/resources/help/en_US/aam/ssf-fail.html)
+* [如何判斷您的帳戶是否尚未準備就緒，無法接收轉送的資料](https://marketing.adobe.com/resources/help/en_US/aam/ssf-fail.html)
 
 **Target**
 
