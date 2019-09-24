@@ -4,7 +4,7 @@ seo-description: Adobe Experience Platform Launch 是設定及部署 Experience 
 seo-title: 使用 Launch 實作
 title: 使用 Launch 實作
 uuid: b3282f8e-82b8-4635-8c80-1b365e8a9693
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -16,7 +16,7 @@ Adobe Experience Platform Launch 是設定及部署 Experience Cloud Identity �
 
 ## 關於 Launch {#section-611711602854464ea351a4af80a8dafe}
 
-[Adobe Experience Platform Launch](https://docs.adobelaunch.com/) 是 Adobe 新一代的標籤管理功能，內建於 Adobe Experience Cloud。Launch 讓客戶能夠:
+[Adobe Experience Platform Launch](https://docs.adobelaunch.com/) 是Adobe Experience cloud內建的新一代Adobe標籤管理功能。 Launch 讓客戶能夠:
 
 * 使用稱為擴充功能的整合來部署用戶端網頁產品。
 * 持續在 Adobe 和其他廠商的行銷與廣告產品間擷取、定義、管理和共用資料
