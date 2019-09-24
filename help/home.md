@@ -5,7 +5,7 @@ seo-description: Adobe Experience Cloud Identity 服務 (以下簡稱為「ID �
 seo-title: Experience Cloud Identity 服務
 title: Experience Cloud Identity 服務
 uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
 
 ---
@@ -37,14 +37,14 @@ Adobe Experience Cloud Identity 服務 (以下簡稱為「ID 服務」) 提供�
     </draft-comment> </td> 
    <td colname="col2"> <p> <b>發行說明</b> </p> <p><b>4.4 版</b> 2019 年 7 月 17 日發行版本包含 <a href="reference/hashing-support.md" format="dita" scope="local">SHA-256 雜湊演算法</a>支援，可讓您傳入客戶 ID 或電子郵件地址，然後傳出雜湊 ID。</p><p><b>4.0 版</b> 2019 年 2 月 12 日發行版本包含<a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local">選擇加入服務</a>，用於識別您是否可在使用者造訪您的網站時於其裝置上或瀏覽器上放置 Cookie。 </p> <p> 
      <ul id="ul_4F06F170F214492780C7D25A069F799F"> 
-      <li id="li_45A7CD556FE44F4DAB035C736A058F36"> 請參閱最新的 <a href="https://marketing.adobe.com/resources/help/zh_TW/whatsnew/" format="https" scope="external">Experience Cloud 發行說明</a>，瞭解全新功能和修正內容。 </li> 
+      <li id="li_45A7CD556FE44F4DAB035C736A058F36"> 請參閱最新的 <a href="https://marketing.adobe.com/resources/help/en_US/whatsnew/" format="https" scope="external">Experience Cloud 發行說明</a>，瞭解全新功能和修正內容。 </li> 
       <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">請參閱<a href="https://marketing-stage.adobe.com/resources/help/en_US/whatsnew/c_legacy_releases.html" format="html" scope="external">之前的發行說明</a>，瞭解以往的發行。 </li> 
      </ul> </p> <p> <b>Experience Cloud 資源</b> </p> <p> 
      <ul id="ul_E30EC96BDC624B5591F0470D430B7F41"> 
-      <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"> <a href="https://www.adobe.com/tw/privacy.html" format="http" scope="external"> Adobe 隱私中心</a> </li> 
-      <li id="li_A54C1EB170EA4B8FA6A81B90AB0C39DD"> <a href="https://www.adobe.com/tw/marketing-cloud.html" scope="external" format="http"> Adobe Experience Cloud</a> </li> 
-      <li id="li_1938F7044F544481A6CC0F45CC22B80A"> <a href="http://helpx.adobe.com/tw/learning.html?promoid=KAUDK" scope="external" format="http"> Adobe 培訓和教學課程</a> </li> 
-      <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://marketing.adobe.com/resources/help/zh_TW/home/index.html" scope="external" format="https"> 產品文件首頁</a> </li> 
+      <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"> <a href="http://www.adobe.com/privacy.html" format="http" scope="external"> Adobe 隱私中心</a> </li> 
+      <li id="li_A54C1EB170EA4B8FA6A81B90AB0C39DD"> <a href="http://www.adobe.com/marketing-cloud.html" scope="external" format="http"> Adobe Experience Cloud</a> </li> 
+      <li id="li_1938F7044F544481A6CC0F45CC22B80A"> <a href="http://helpx.adobe.com/learning.html?promoid=KAUDK" scope="external" format="http"> Adobe 培訓和教學課程</a> </li> 
+      <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://marketing.adobe.com/resources/help/en_US/home/index.html" scope="external" format="https"> 產品文件首頁</a> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
