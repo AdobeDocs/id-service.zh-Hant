@@ -5,7 +5,7 @@ seo-description: 當訪客從一個網域瀏覽到第二個網域時，此屬性
 seo-title: overwriteCrossDomainMCIDAndAID
 title: overwriteCrossDomainMCIDAndAID
 uuid: 8e48127a-ac62-4ea0-9756-2a27b20ecbcf
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
