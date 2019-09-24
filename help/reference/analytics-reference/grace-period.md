@@ -5,7 +5,7 @@ seo-description: 如果您有多個 JavaScript 檔案會傳送資料至相同的
 seo-title: ID 服務寬限期
 title: ID 服務寬限期
 uuid: 10a7db7d-de32-4379-914f-edaf929efa32
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -29,8 +29,8 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 如果您只有單一 Analytics JavaScript 檔案，且未使用任何其他 AppMeasurement 程式庫，則不需要寬限期。您可以在單一 JavaScript 檔案中進行更新，在造訪期間，系統將會使用 Marketing Cloud ID 一致地識別新訪客。
 
-如果您有多個 JavaScript 檔案會傳送資料至*相同報表套裝*，或是您要在網站上使用其他技術 (例如 Flash 視訊測量)，建議您設定寬限期。
+如果您有多個 JavaScript 檔案會傳送資料至&#x200B;*相同報表套裝*，或是您要在網站上使用其他技術 (例如 Flash 視訊測量)，建議您設定寬限期。
 
-## 如何啟用寬限期?  {#section-512d5cd8570e483cbdd8b04457a16ced}
+## 如何啟用寬限期?   {#section-512d5cd8570e483cbdd8b04457a16ced}
 
-請聯絡[客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)。
+Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
