@@ -5,7 +5,7 @@ seo-description: 傳回 Experience Cloud Identity 服務地區 ID。地區 ID (�
 seo-title: getLocationHint
 title: getLocationHint
 uuid: cdc312b7-d270-4a5c-a2bb-0fbb37f1e2f4
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -17,7 +17,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 **語法:** ` var *`變數名稱`* = visitor.getLocationHint()`
 
-如需地區 ID 與對應位置的清單，請參閱 [DCS 地區 ID、位置與主機名稱](https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html)。
+如需關於地區 ID 和對應位置的清單，請參閱 [DCS 地區 ID、位置與主機名稱](https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html)。
 
 **程式碼範例**
 
