@@ -5,7 +5,7 @@ seo-description: 此功能主要是為 A4T 客戶所設計，可協助解決在�
 seo-title: resetState
 title: resetState
 uuid: ed7be76d-a7ee-4e51-b26c-456ff85fd096
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
