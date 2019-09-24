@@ -5,7 +5,7 @@ seo-description: 2016 年 Experience Cloud Identity 服務的功能發佈、更�
 seo-title: 2016 年發行說明
 title: 2016 年發行說明
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 2016 年 Experience Cloud Identity 服務的功能發佈、更新或變更。
 
-這些變更也記錄在 [Experience Cloud 發行說明](https://marketing.adobe.com/resources/help/zh_TW/whatsnew/)中。請參閱[先前發行說明](https://marketing.adobe.com/resources/help/zh_TW/whatsnew/?f=c_legacy_releases.html)，瞭解以往的 [!DNL Experience Cloud] 公告。
+[Experience Cloud 發行說明](https://marketing.adobe.com/resources/help/en_US/whatsnew/)也會納入這些變更。請參閱[之前的發行說明](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)，瞭解以往的公告。[!DNL Experience Cloud]
 
 ## 版本 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -145,7 +145,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
  <tbody> 
   <tr> 
    <td colname="col1"> <p>變更 <span class="codeph">iframe.sandbox</span> 屬性 </p> </td> 
-   <td colname="col2"> <p>iFrame 現已設定為 <span class="codeph">iframe.sandbox='allow-scripts allow-same-origin';</span>。 </p> <p>僅允許這兩個 Token 協助改善安全性，並提供 ID 服務需要用來同步 ID 的基本功能。 </p> <p>Internet Explorer 9 或更早版本均不支援 sandbox 屬性。如需詳細資訊，請參閱 <a href="https://developer.mozilla.org/zh_TW/docs/Web/HTML/Element/iframe" format="https" scope="external">iFrame 文件</a>中的「屬性」一節。 </p> </td> 
+   <td colname="col2"> <p>iFrame 現已設定為 <span class="codeph">iframe.sandbox='allow-scripts allow-same-origin';</span>。 </p> <p>僅允許這兩個 Token 協助改善安全性，並提供 ID 服務需要用來同步 ID 的基本功能。 </p> <p>Internet Explorer 9 或更早版本均不支援 sandbox 屬性。如需詳細資訊，請參閱 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" format="https" scope="external">iFrame 文件</a>中的「屬性」一節。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>對 Experience Cloud ID (MID) 進行編碼 </p> </td> 
