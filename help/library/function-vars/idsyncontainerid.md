@@ -5,7 +5,7 @@ seo-description: 此屬性會設定資料來源容器 ID 以供 ID 同步之用�
 seo-title: idSyncContainerID
 title: idSyncContainerID
 uuid: e35dc48b-1aa1-41e3-91c1-ef1e9d2d8b90
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -37,7 +37,7 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 });
 ```
 
-## 什麼是容器? 我會在何時使用到?   {#section-6aed44fbe9d6401a8f912cb0d98339a7}
+## 什麼是容器? 我會在何時使用到?    {#section-6aed44fbe9d6401a8f912cb0d98339a7}
 
 **容器**
 
