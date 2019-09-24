@@ -4,7 +4,7 @@ seo-description: 在網站上啟用選擇加入後，請使用瀏覽器中的開
 seo-title: 驗證選擇加入服務
 title: 驗證選擇加入服務
 uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 ---
@@ -26,7 +26,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 載入頁面前，請清除快取和 Cookie。
 
-在 Chrome 中，以滑鼠右鍵按一下網頁，然後選取「檢查」。如上方截圖所示，請選取*「網路」*標籤以檢視瀏覽器提出的要求。
+在 Chrome 中，以滑鼠右鍵按一下網頁，然後選取「檢查」。如上方截圖所示，請選取&#x200B;*「網路」*&#x200B;標籤以檢視瀏覽器提出的要求。
 
 在上例中，我們在網頁中安裝下列 Adobe JS 標籤: ECID、AAM、Analytics 和 Target。
 
@@ -46,11 +46,11 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 您不應該會看到 Adobe 標籤建立的任何 Cookie: AMCV_{{YOUR_ORG_ID}}、mbox、demdex、s_cc、s_sq、everest_g_v2、everest_session_v2
 
-在 Chrome 中，前往*「應用程式」*標籤，展開*「儲存」*下的*「Cookies」*區段，然後選取您網站的網域名稱:
+在 Chrome 中，前往&#x200B;*「應用程式」*&#x200B;標籤，展開&#x200B;*「儲存」*&#x200B;下的&#x200B;*「Cookies」*&#x200B;區段，然後選取您網站的網域名稱:
 
 ![](assets/use_case_1_2.png)
 
-## 使用案例 2: 啟用選擇加入與儲存{#section-bd28326f52474fa09a2addca23ccdc0f}
+## 使用案例 2: 啟用選擇加入與儲存 {#section-bd28326f52474fa09a2addca23ccdc0f}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -59,9 +59,9 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-使用案例 2 中唯一的差異在於，您會看到*一個新 Cookie*，此 Cookie 會包含訪客提供的選擇加入權限: **adobeujs-optin**
+使用案例 2 中唯一的差異在於，您會看到&#x200B;*一個新 Cookie*，此 Cookie 會包含訪客提供的選擇加入權限: **adobeujs-optin**
 
-## 使用案例3: 啟用選擇加入及預先核准 Adobe Analytics{#section-257fe582b425496cbf986d0ec12d3692}
+## 使用案例3: 啟用選擇加入及預先核准 Adobe Analytics {#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -81,7 +81,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 ![](assets/use_case_3_2.png)
 
-## 使用案例 4: 啟用選擇加入與 IAB{#section-64331998954d4892960dcecd744a6d88}
+## 使用案例 4: 啟用選擇加入與 IAB {#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -92,7 +92,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 **如何在頁面上檢視您目前的 IAB 同意:**
 
-開啟開發人員工具，然後選取*「主控台」*標籤。貼上下列程式碼片段，然後按下 Enter 鍵:
+開啟開發人員工具，然後選取&#x200B;*「主控台」*&#x200B;標籤。貼上下列程式碼片段，然後按下 Enter 鍵:
 
 ```
 <codeblock>
