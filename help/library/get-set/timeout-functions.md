@@ -5,7 +5,7 @@ seo-description: 呼叫這些 ID 服務函數可判斷 Experience Cloud Identity
 seo-title: callTimeOut 方法
 title: callTimeOut 方法
 uuid: e5047498-11db-4945-b356-c92b7d447573
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 呼叫這些 ID 服務函數可判斷 Experience Cloud Identity 服務、Analytics 或 Audience Manager ID 要求的逾時狀態。適用於 VisitorAPI.js 1.7.0 版或更新版本。
 
-## 逾時函數{#section-e08228ef5f9b45c9a84139bbb763164a}
+## 逾時函數 {#section-e08228ef5f9b45c9a84139bbb763164a}
 
 <table id="table_B3ACE584B3224D838070D32A8462EF28"> 
  <thead> 
