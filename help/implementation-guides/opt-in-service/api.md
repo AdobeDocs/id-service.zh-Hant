@@ -4,7 +4,7 @@ seo-description: 選擇加入資料庫 API 與組態設定參考資料。
 seo-title: 選擇加入參考資料
 title: 選擇加入參考資料
 uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
