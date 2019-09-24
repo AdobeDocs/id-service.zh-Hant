@@ -5,7 +5,7 @@ seo-description: 關於使用 ID 服務的功能、功用和問題之常見問�
 seo-title: ID 服務常見問題集
 title: ID 服務常見問題集
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -35,7 +35,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 將 VisitorAPI.js 程式庫放置在程式碼中 `<head>` 區段的頁面頂端。這可確保在頁面本文載入前向 ID 發出呼叫，同時可大幅提升傳回 ID 的成功率。
 
-ID 服務呼叫為非同步呼叫，且是向 [demdex.net 網域](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html) 發出的唯一呼叫。ID 服務呼叫不會阻擋其他元素載入頁面。
+ID 服務呼叫為非同步，且只會向 [demdex.net domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html) 發出呼叫。ID 服務呼叫不會阻擋其他元素載入頁面。
 
 若是 [!DNL Target] 客戶，在頁面的 `<body>` 放置 ID 服務程式碼可能會增加其成功封鎖 [!DNL Target] 呼叫的機率。如果您必須在頁面本文中放置 ID 服務程式碼，應放置在開放的 `<body>` 標籤後。
 
@@ -67,7 +67,7 @@ ID 服務呼叫為非同步呼叫，且是向 [demdex.net 網域](https://market
 
 相較於透過 JSONP 進行資源要求，透過 CORS 一般成效比較好。相對於頁面上其他同步和非同步呼叫︳若是使用 JSONP，某些瀏覽器會將要求排入佇列並取消優先順序。CORS 有助確保在瀏覽器呼叫堆疊中會將這些要求以高優先順序來處理。
 
-請參閱 [Experience Cloud Identity 服務的 CORS 支援](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
+請參閱 [Experience Cloud Identity 服務的 CORS 支援](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
 
 ## 安全性 {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
@@ -87,5 +87,5 @@ ID 服務呼叫為非同步呼叫，且是向 [demdex.net 網域](https://market
 
 >[!MORE_LIKE_THIS]
 >
->* [客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)
+>* [客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
