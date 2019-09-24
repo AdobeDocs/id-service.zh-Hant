@@ -5,7 +5,7 @@ seo-description: 關於搭配 Identity 服務使用 Analytics 的功能、功用
 seo-title: Analytics 與 Identity 服務常見問題集
 title: Analytics 與 Identity 服務常見問題集
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -23,7 +23,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 然而，有時候客戶會將 Analytics AppMeasurement 檔案分割成個別的檔案。舉例來說，有些客戶可能會在一個檔案中放置設定變數，然後使用第二個檔案放置外掛程式，接著再將 AppMeasurement 程式碼放到第三個檔案。我們建議您不要這麼做。
 
-如果您無法找到自己的追蹤伺服器資訊，則您的 Analytics 例項可能並未正確設定。若您找不到您的追蹤伺服器資訊，請聯絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)。
+如果您無法找到自己的追蹤伺服器資訊，則您的 Analytics 例項可能並未正確設定。如果您找不到自己的追蹤伺服器資訊，請聯絡[客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)。
 
 **如果我使用 Identity 服務並變更追蹤伺服器，會發生什麼事?**
 
@@ -35,7 +35,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 如果您有可在客戶造訪其他網域之前加以識別的主要進入網站，則 CNAME 將可讓您在不接受第三方 Cookie 的瀏覽器 (例如 Safari) 中使用跨網域追蹤功能。
 
-在接受第三方 Cookie 的瀏覽器中，要求擷取訪客 ID 期間，Cookie 會設定於 [demdex.net 網域](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)中。此 Cookie 可讓 Identity 服務在所有使用相同組織 ID 設定的網域上，傳回相同的 Experience Cloud 訪客 ID。在拒絕第三方 Cookie 的瀏覽器中，會為每個網域指派一個新的 Experience Cloud 訪客 ID。
+在接受第三方 Cookie 的瀏覽器中，[demdex.net 網域](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)會在要求擷取訪客 ID 期間設定 Cookie。此 Cookie 可讓 Identity 服務在所有使用相同組織 ID 設定的網域上，傳回相同的 Experience Cloud 訪客 ID。在拒絕第三方 Cookie 的瀏覽器中，會為每個網域指派一個新的 Experience Cloud 訪客 ID。
 
 即使已設定 CNAME，如果未先造訪主要進入網站，則在不接受第三方 Cookie 的瀏覽器中將會以不同的方式識別次要網站與主要網站中的訪客。
 
@@ -51,7 +51,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 **什麼是寬限期以及我該如何設定寬限期?**
 
-請參閱 [Identity 服務寬限期](../reference/analytics-reference/grace-period.md)及聯絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)。
+請參 [閱身分服務寬限期](../reference/analytics-reference/grace-period.md) ，並聯絡 [客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)。
 
 **為什麼我需要移轉至即時資料蒐集 (RDC) 才能使用 Identity 服務?**
 
@@ -66,7 +66,7 @@ RDC 可以提升全域效能，此外為了確保您的實作可針對未來採�
 * 繼續使用舊有的 s_vi Cookie。這造成了資料蒐集的不一致。
 * 當訪客從調查導覽至彈出式視窗時發生重複計數訪客。
 
-## Cookie{#section-b7d5384fbedd47b09e1030211c39a3d1}
+## Cookie {#section-b7d5384fbedd47b09e1030211c39a3d1}
 
 **如果 Identity 服務無法設定 AMCV Cookie，Analytics 中會發生什麼事?**
 
@@ -90,5 +90,5 @@ RDC 可以提升全域效能，此外為了確保您的實作可針對未來採�
 
 >[!MORE_LIKE_THIS]
 >
->* [客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)
+>* [客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
