@@ -4,7 +4,7 @@ seo-description: 將選擇加入服務實作為 Experience Cloud 解決方案所
 seo-title: 設定選擇加入服務
 title: 設定選擇加入服務
 uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
@@ -42,7 +42,7 @@ source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 1. 貴公司的隱私權要求將依您選擇遵循 GDPR 規定的方式而定。瞭解貴公司隱私權團隊可接受以預先同意狀態使用的資料庫為何。
 
-若採用 [Adobe Launch](https://docs.adobelaunch.com/)，請使用[選擇加入服務擴充功能](../../implementation-guides/opt-in-service/launch.md)來設定選擇加入服務。
+如果使用 [Adobe Launch](https://docs.adobelaunch.com/)，請善加利用 [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
 
 ## 選擇加入服務類別 {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
@@ -97,7 +97,7 @@ Visitor.getInstance("YOUR_ORG_ID", {
 
 ## 選擇加入工作流程 {#section-70cd243dec834c8ea096488640ae20a5}
 
-選擇加入服務支援可從多個要求週期收集權限的工作流程，且一次會指定一項偏好設定。使用下列函數並將 ** 設為 `shouldWaitForComplete`true，您的解決方案便能夠收集一個解決方案或全部類別之子集合的同意，然後收集下一個解決方案或類別子集合的同意。從首次呼叫開始，`adobe.optIn.status` 屬性會*擱置*，直到流程結束時呼叫 `adobe.optIn.complete()` 為止。呼叫後，狀態會設為 *complete*。
+選擇加入服務支援可從多個要求週期收集權限的工作流程，且一次會指定一項偏好設定。使用下列函數並將 ** 設為 `shouldWaitForComplete`true，您的解決方案便能夠收集一個解決方案或全部類別之子集合的同意，然後收集下一個解決方案或類別子集合的同意。從首次呼叫開始，`adobe.optIn.status` 屬性會&#x200B;*擱置*，直到流程結束時呼叫 `adobe.optIn.complete()` 為止。呼叫後，狀態會設為 *complete*。
 
 ```
 adobe.optIn.approve(['AAM', 'ECID'], true); 
