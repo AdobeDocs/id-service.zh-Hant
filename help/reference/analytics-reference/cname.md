@@ -5,7 +5,7 @@ seo-description: 'null'
 seo-title: 資料收集 CNAME 和跨網域追蹤
 title: 資料收集 CNAME 和跨網域追蹤
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -21,7 +21,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 demdex.net Cookie 可讓訪客 ID 服務提供與 Analytics 中的 s_vi Cookie 相同層級的跨網域追蹤，其中，有些瀏覽器會接受 Cookie 並跨網域使用，有些瀏覽器則會拒絕。
 
-## 資料收集 CNAME{#section-48fd186d376a48079769d12c4bd9f317}
+## 資料收集 CNAME {#section-48fd186d376a48079769d12c4bd9f317}
 
 在資料收集伺服器設定 Analytics Cookie 時，許多客戶都將資料收集伺服器 CNAME 記錄設定為[第一方 Cookie 實作](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/)的一部分，以避免發生瀏覽器拒絕第三方 Cookie 的問題。此程序會將您的資料收集伺服器網域設定為符合您的網站網域，使訪客 ID Cookie 設為第一方 Cookie。
 
