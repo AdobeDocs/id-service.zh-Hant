@@ -6,7 +6,7 @@ seo-title: Cookie 與 Experience Cloud Identity 服務
 title: Cookie 與 Experience Cloud Identity 服務
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: 57161205bb48a82db223a733f384ea8338596b7e
 
 ---
 
@@ -121,6 +121,18 @@ For related information, see [Understanding Calls to the Demdex Domain](https://
 Experience Cloud ID (MID) 是依照組織 ID 和 demdex ID 利用數學公式計算出來。只要這些 ID 保持不變，為特定用戶產生正確的 MID 只是單純的數學問題。每次使用相同的組織 ID 與 Demdex ID，就能獲得相同的 MID 值。這使得 ID 服務可以追蹤由您控制以及使用 ID 服務程式碼設定之網域的訪客。
 
 ID 服務在您的頁面載入時隨即開始建立 MID。在此過程中，`visitorAPI.js` 程式碼資料庫提供的程式碼會將您的組織 ID 以事件呼叫的形式傳送至 ID 服務。ID 服務分別在 AMCV 與 Demdex Cookie 中，建立並回傳 MID 與 Demdex ID。
+
+## Cookie的安全標幟
+
+下表說明Experience Cloud cookie如何運用安全標幟：
+
+| Cookie（設定者） | httpOnly | 安全 | SameSite |
+|--- |--- |--- |--- |
+| demdex（http回應） | 無 | 是 | "無" |
+| AMCV(Javascript) | 無 | 可配置 | 取消設定（預設為Lax） |
+| AMCVS(Javascript) | 無 | 可配置 | 取消設定（預設為Lax） |
+
+*注意：如需使用安全屬性設定AMCV和AMCVS cookie的詳細資訊，請參閱[secureCookie主題](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/securecookie.html)。*
 
 ## 下一步 {#section-8db1727a63bc4ff68b495f270315d453}
 
