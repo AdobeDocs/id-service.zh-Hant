@@ -5,7 +5,7 @@ seo-description: 除了 Experience Cloud 訪客 ID 之外，您還可以將其�
 seo-title: 客戶 ID 和驗證狀態
 title: 客戶 ID 和驗證狀態
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
 
 ---
@@ -17,11 +17,11 @@ source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
 
 ## 驗證狀態 {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-`setCustomerIDs` 方法接受同一位訪客擁有多個客戶 ID。這可幫助您識別或鎖定不同裝置上的個別使用者。例如，您可以將這些 ID 上傳至 [ 作為](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html)客戶屬性[!DNL Experience Cloud]，並在不同解決方案中使用此資料。
+`setCustomerIDs` 方法接受同一位訪客擁有多個客戶 ID。這可幫助您識別或鎖定不同裝置上的個別使用者。例如，您可以將這些 ID 上傳至 [ 作為](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/customer-attributes/attributes.html)客戶屬性[!DNL Experience Cloud]，並在不同解決方案中使用此資料。
 
 >[!IMPORTANT]
 >
->客戶屬性與核心服務功能需要 `setCustomerIDs` (客戶 ID 同步化)。同步客戶 ID 是 [!DNL Analytics] 支援的選用身分識別方法。[!DNL Target] 需要客戶屬性的 `Visitor.AuthState.AUTHENTICATED` 才能運作。如需範例，請參閱[核心服務 - 如何啟用您的解決方案](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html)。
+>客戶屬性與核心服務功能需要 `setCustomerIDs` (客戶 ID 同步化)。同步客戶 ID 是 [!DNL Analytics] 支援的選用身分識別方法。[!DNL Target] 需要客戶屬性的 `Visitor.AuthState.AUTHENTICATED` 才能運作。如需範例，請參閱[核心服務 - 如何啟用您的解決方案](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/about-core-services/core-services.html)。
 
 從 Experience Cloud Identity 服務 1.5 版以後的版本開始，`setCustomerIDs` 即包括可選用的 `AuthState` 物件。`AuthState` 會根據訪客的驗證狀態 (例如，登入、登出) 來識別訪客。您可使用表格中列出的狀態值來設定驗證狀態。驗證狀態會以整數傳回。
 
@@ -90,7 +90,7 @@ source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
 >[!IMPORTANT]
 >
 >* ID 區分大小寫。
->* 僅對您的ID使用未編碼值。
+>* 請僅用未經編碼的值當成 ID。
 >* 客戶 ID 與驗證狀態未儲存在訪客 ID Cookie 中。每個頁面或應用程式內容都必須設定這兩項。
 >* 您不應在客戶 ID 中加入任何個人識別資訊 (PII)。如果您要使用 PII 來識別訪客 (例如電子郵件地址)，建議您改為儲存經過雜湊或加密處理的資訊。ECID 程式庫支援使用雜湊處理使用者識別碼。請參閱 [setCustomerIDs 的 SHA256 雜湊支援](/help/reference/hashing-support.md)
 >
@@ -215,9 +215,9 @@ Object customerIDs = visitor.getCustomerIDs();
 
 [!DNL Experience Cloud] ID 服務支援 Android 和 iOS SDK 程式碼中的客戶 ID 與驗證狀態。請參閱下列程式碼程式庫:
 
-* [Android SDK 方法](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html)
-* [iOS SDK 方法](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html)
+* [Android SDK 方法](https://docs.adobe.com/content/help/zh-Hant/mobile-services/android/overview.html)
+* [iOS SDK 方法](https://docs.adobe.com/content/help/zh-Hant/mobile-services/ios/overview.html)
 
 ## 通知 Analytics 與 Audience Manager 客戶 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-如果您要將宣告的 ID 傳遞至 [!DNL Audience Manager]，`userid` 物件必須符合與資料來源相關的整合程式碼。如需詳細資訊，請參閱[設定合併規則程式碼](https://docs.adobe.com/help/en/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code)文件中的[!UICONTROL 訪客 ID 服務]章節。
+如果您要將宣告的 ID 傳遞至 [!DNL Audience Manager]，`userid` 物件必須符合與資料來源相關的整合程式碼。如需詳細資訊，請參閱[設定合併規則程式碼](https://docs.adobe.com/help/zh-Hant/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code)文件中的[!UICONTROL 訪客 ID 服務]章節。
