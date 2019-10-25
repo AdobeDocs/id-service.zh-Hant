@@ -5,7 +5,7 @@ seo-description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie �
 seo-title: Cookie 與 Experience Cloud Identity 服務
 title: Cookie 與 Experience Cloud Identity 服務
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7d7ecdf65cca67539b1b63c8811a0bad04c694c3
 
 ---
@@ -114,7 +114,7 @@ AMCVS Cookie 會作為標幟，指出工作階段已初始化。其值一律為 
  </tbody> 
 </table>
 
-For related information, see [Understanding Calls to the Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
+如需相關資訊，請參閱[瞭解向 Demdex 網域進行的呼叫](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)。
 
 ## 產生 Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -122,17 +122,17 @@ Experience Cloud ID (MID) 是依照組織 ID 和 demdex ID 利用數學公式計
 
 ID 服務在您的頁面載入時隨即開始建立 MID。在此過程中，`visitorAPI.js` 程式碼資料庫提供的程式碼會將您的組織 ID 以事件呼叫的形式傳送至 ID 服務。ID 服務分別在 AMCV 與 Demdex Cookie 中，建立並回傳 MID 與 Demdex ID。
 
-## Cookie旗標
+## Cookie 標幟
 
-下表說明Experience Cloud cookie的標幟：
+下表說明 Experience Cloud Cookie 的標幟:
 
-| Cookie（設定者） | httpOnly | 安全 | SameSite |
+| Cookie (設定者) | httpOnly | Secure | SameSite |
 |--- |--- |--- |--- |
-| demdex（http回應） | 無 | 是 | "無" |
-| AMCV(Javascript) | 無 | 可配置 | 取消設定（預設為Lax） |
-| AMCVS(Javascript) | 無 | 可配置 | 取消設定（預設為Lax） |
+| demdex (http 回應) | 無 | 是 | "無" |
+| AMCV (Javascript) | 無 | 可設定 | 未設定 (預設為 Lax) |
+| AMCVS (Javascript) | 無 | 可設定 | 未設定 (預設為 Lax) |
 
-*注意：如需使用安全屬性設定AMCV和AMCVS cookie的詳細資訊，請參閱[secureCookie主題](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/securecookie.html)。*
+*注意: 如需使用安全屬性設定 AMCV 和 AMCVS Cookie 的相關資訊，請參閱[secureCookie](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/securecookie.html)主題。*
 
 ## 下一步 {#section-8db1727a63bc4ff68b495f270315d453}
 
