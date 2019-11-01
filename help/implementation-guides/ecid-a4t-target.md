@@ -6,7 +6,7 @@ seo-title: 搭配 A4T 以及伺服器端的 Target 實作使用 ID 服務
 title: 搭配 A4T 以及伺服器端的 Target 實作使用 ID 服務
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -197,7 +197,7 @@ Response.send("
 * AppMeasurement 傳送關於頁面點擊的資料給 [!DNL Analytics]，包括 SDID。
 * [!DNL Analytics] 和 [!DNL Target] 比較這名訪客的 SDID。當 SDID 相同時，[!DNL Target] 和 [!DNL Analytics]便將伺服器端呼叫和用戶端呼叫結合在一起。此時，兩個解決方案將這名訪客視為同一人。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [來自 Node Package Manager 的伺服器端 ID 服務套件](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
 
