@@ -6,7 +6,7 @@ seo-title: Experience Cloud Identity 服務的 COPPA 支援
 title: Experience Cloud Identity 服務的 COPPA 支援
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
 translation-type: tm+mt
-source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -43,7 +43,7 @@ var visitor = Visitor.getInstance("insert marketing cloud ID here", {
 
 設為 `true` 時，`disableThirdPartyCookies` 物件會阻止 DCS 傳回第三方的 demdex.net Cookie。如果網站訪客在瀏覽器中已擁有此 Cookie，ID 服務不會使用該 Cookie 來建立新的 [!DNL Experience Cloud] ID 或傳回現有 ID。相反地，[!DNL Experience Cloud] ID 服務會在第一方 Cookie 中建立新的隨機 ID。啟用後，您可以利用 ID 服務收集資料，並在不同的 [!DNL Experience Cloud] 解決方案之間共用資料，包括 COPPA 允許的其他內部作業。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Adobe 隱私中心](http://www.adobe.com/privacy.html)
 >* [什麼是 COPPA? ](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
