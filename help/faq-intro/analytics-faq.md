@@ -6,7 +6,7 @@ seo-title: Analytics 與 Identity 服務常見問題集
 title: Analytics 與 Identity 服務常見問題集
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -88,7 +88,7 @@ RDC 可以提升全域效能，此外為了確保您的實作可針對未來採�
 >
 >搭配預設設定使用最新的 VisitorAPI.js 和 AppMeasurement.js 時，應避免上述三種罕見情況所造成的嚴重或明顯影響。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
