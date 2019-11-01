@@ -6,7 +6,7 @@ seo-title: Experience Cloud Identity 服務的需求
 title: Experience Cloud Identity 服務的需求
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -156,7 +156,7 @@ ID 服務至少需要下方所列的 SDK 版本。
 * [Android SDK 方法](https://marketing.adobe.com/resources/help/en_US/mobile/android/c_marketing_cloud.html)
 * [iOS SKD 方法](https://marketing.adobe.com/resources/help/en_US/mobile/ios/marketing_cloud.html)
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [程式碼程式庫](../library/library.md#concept-ff27497375644a898d47984aefb21c97)
 
