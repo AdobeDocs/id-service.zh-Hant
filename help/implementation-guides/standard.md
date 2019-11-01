@@ -6,7 +6,7 @@ seo-title: 透過 Dynamic Tag Management 來實作
 title: 透過 Dynamic Tag Management 來實作
 uuid: c4f752c4-392e-4909-b178-911706857064
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -51,7 +51,7 @@ mcvid-dtm-deployment.xml
 
 * [啟用您的核心服務解決方案](https://marketing.adobe.com/resources/help/en_US/mcloud/core_services.html):實作Experience Cloud並成為管理員。 此程序會針對核心服務 (例如客戶屬性和 Experience Cloud 受眾) 導入最新的解決方案。
 * [動態標籤管理快速入門](https://marketing.adobe.com/resources/help/en_US/dtm/get_started.html)
-* [Jump Start Videos](https://marketing.adobe.com/resources/help/en_US/dtm/jump-start-videos.html): A series of short videos that demonstrate how to perform basic DTM tasks.
+* [快速開始影片](https://marketing.adobe.com/resources/help/en_US/dtm/jump-start-videos.html):演示如何執行基本DTM工作的一連串短片。
 
 **ID 服務程式碼放置和載入順序**
 
@@ -98,11 +98,6 @@ mcvid-dtm-implement.xml
 1. 按一下&#x200B;**[!UICONTROL 建立工具]**&#x200B;和&#x200B;**[!UICONTROL 儲存變更]**。
 
    儲存後，就會將 ID 服務設定為 DTM 中的工具。不過，此工具尚未可供使用。DTM 工具仍需經過 DTM 發佈/核准程序，您也可以設定其他參數。如需 DTM 核准程序的相關資訊，請參閱[使用者基本入門](https://marketing.adobe.com/resources/help/en_US/dtm/user-basics-jump-start.html)影片。如需可新增至 DTM 的其他參數相關資訊，請參閱 [DTM 的 Experience Cloud Identity 服務設定](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)。
-
->[!MORE_LIKE_THIS]
->
->* [Web 屬性](https://marketing.adobe.com/resources/help/en_US/dtm/web_property.html)
-
 
 ## DTM 的 Experience Cloud Identity 服務設定 {#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
 
@@ -285,3 +280,8 @@ mid=20265673158980419722735089753036633573
 ![](assets/charles_response_unsuccessful.png)
 
 如需錯誤碼的相關詳細資訊，請參閱 [DCS 錯誤碼、訊息和範例](https://marketing.adobe.com/resources/help/en_US/aam/dcs_error_codes.html)。
+
+>[!MORELIKETHIS]
+>
+>* [Web 屬性](https://marketing.adobe.com/resources/help/en_US/dtm/web_property.html)
+
