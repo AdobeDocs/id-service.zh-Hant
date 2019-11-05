@@ -5,7 +5,7 @@ seo-description: 兒童網路隱私保護法 (COPPA) 禁止在未經父母明確
 seo-title: Experience Cloud Identity 服務的 COPPA 支援
 title: Experience Cloud Identity 服務的 COPPA 支援
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -45,6 +45,6 @@ var visitor = Visitor.getInstance("insert marketing cloud ID here", {
 
 >[!MORELIKETHIS]
 >
->* [Adobe 隱私中心](http://www.adobe.com/privacy.html)
+>* [Adobe 隱私中心](https://www.adobe.com/tw/privacy.html)
 >* [什麼是 COPPA? ](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
 
