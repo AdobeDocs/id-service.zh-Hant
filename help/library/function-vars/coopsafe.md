@@ -5,7 +5,7 @@ seo-description: 選用的布林值設定，可決定 ID 服務是否要將資�
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -30,7 +30,7 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 若要使用 `isCoopSafe`，您必須:
 
 * 使用 2.4 版或更新版本的 ID 服務程式碼。
-* 參與 [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/en_US/mcdc/)。潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
+* 參與 [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/zh_TW/mcdc/)。潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
 
 * 請和您的 [!DNL Adobe] 顧問合作，在您的 Device co-op 帳戶上設定白名單或是黑名單標幟。沒有啟用可這些標幟的自助式路徑。
 
