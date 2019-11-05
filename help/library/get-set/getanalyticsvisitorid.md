@@ -5,7 +5,7 @@ seo-description: 傳回在 Experience Cloud Identity 服務實作前儲存於 s_
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -44,7 +44,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 發生下列情況時，您會在查詢字串中看到 `aid` 參數:
 
 * 正確部署 [!DNL Experience Cloud] ID 服務。
-* 造訪網站的使用者已在 [!DNL Analytics]s_vi Cookie[ 中儲存之前的 ](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html) ID。
+* 造訪網站的使用者已在 [s_vi Cookie](https://marketing.adobe.com/resources/help/zh_TW/whitepapers/cookies/?f=cookies_analytics.html) 中儲存之前的 [!DNL Analytics] ID。
 
 **案例 2**
 
@@ -52,5 +52,5 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!MORELIKETHIS]
 >
->* [Analytics Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
+>* [Analytics Cookie](https://marketing.adobe.com/resources/help/zh_TW/whitepapers/cookies/cookies_analytics.html)
 
