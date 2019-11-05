@@ -5,7 +5,7 @@ seo-description: 影片心率必須與 Experience Cloud Identity 服務搭配使
 seo-title: 影片心率和 Experience Cloud Identity 服務
 title: 影片心率和 Experience Cloud Identity 服務
 uuid: 07986a78-23ac-4fd4-ab8f-be9275616a29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -17,5 +17,5 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 >[!MORELIKETHIS]
 >
->* [使用視訊心率在 Analytics 中測量視訊](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/)
+>* [使用視訊心率在 Analytics 中測量視訊](https://marketing.adobe.com/resources/help/zh_TW/sc/appmeasurement/hbvideo/)
 
