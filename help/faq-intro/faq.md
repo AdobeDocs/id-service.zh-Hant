@@ -5,7 +5,7 @@ seo-description: 關於使用 ID 服務的功能、功用和問題之常見問�
 seo-title: ID 服務常見問題集
 title: ID 服務常見問題集
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -83,9 +83,9 @@ ID 服務呼叫為非同步，且只會向 [demdex.net domain](https://marketing
 
 如果您有嚴格的安全要求，請將 ID 服務 API 設定為 `useCORSOnly: true`。請僅在確信您網站訪客使用的瀏覽器都支援 CORS 的情形下，才啟用此模式。
 
-請參閱[Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) 及 [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)。
+請參閱 [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) 及 [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)。
 
 >[!MORELIKETHIS]
 >
->* [客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)
 
