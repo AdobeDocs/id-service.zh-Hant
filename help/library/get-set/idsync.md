@@ -5,7 +5,7 @@ seo-description: idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可
 seo-title: 依 URL 或資料來源執行 ID 同步作業
 title: 依 URL 或資料來源執行 ID 同步作業
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -134,5 +134,5 @@ http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
 
 >[!MORELIKETHIS]
 >
->* [DIL idSync](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
+>* [DIL idSync](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
 
