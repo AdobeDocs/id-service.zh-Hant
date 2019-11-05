@@ -5,7 +5,7 @@ seo-description: 概述 Experience Cloud Identity 服務 (包括 Adobe Media Opt
 seo-title: 瞭解 ID 同步和匹配率
 title: 瞭解 ID 同步和匹配率
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -70,7 +70,7 @@ ID 同步是一個可在 Destination Publishing iFrame 中觸發的 URL。如以
 
 ## 與 Adobe Media Optimizer 進行 ID 同步 {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Media Optimizer] 是 iFrame 型 ID 同步程序的例外情況。由於 [!DNL Media Optimizer] 是值得信賴的網域，ID 同步會從上層頁面進行，而非 [!UICONTROL Destination Publishing iFrame]。同步期間，ID 服務會在 [!DNL Media Optimizer] 呼叫 `cm.eversttech.net`，這是 [!DNL Media Optimizer] 在 Adobe 收購前所使用的舊版網域名稱。將資料傳送至 [!DNL Media Optimizer] 有助於改善匹配率，而且這是使用 2.0 版 (或更新版本) 的 ID 服務之客戶的專屬自動功能。另請參閱 [Media Optimizer Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html)。
+[!DNL Adobe Media Optimizer] 是 iFrame 型 ID 同步程序的例外情況。由於 [!DNL Media Optimizer] 是值得信賴的網域，ID 同步會從上層頁面進行，而非 [!UICONTROL Destination Publishing iFrame]。同步期間，ID 服務會在 [!DNL Media Optimizer] 呼叫 `cm.eversttech.net`，這是 [!DNL Media Optimizer] 在 Adobe 收購前所使用的舊版網域名稱。將資料傳送至 [!DNL Media Optimizer] 有助於改善匹配率，而且這是使用 2.0 版 (或更新版本) 的 ID 服務之客戶的專屬自動功能。另請參閱 [Media Optimizer Cookie](https://marketing.adobe.com/resources/help/zh_TW/whitepapers/cookies/cookies_media_optimizer.html)。
 
 >[!MORELIKETHIS]
 >
