@@ -5,7 +5,7 @@ seo-description: 這些指示適用於擁有混合式伺服器端及用戶端 Ta
 seo-title: 搭配 A4T 以及伺服器端的 Target 實作使用 ID 服務
 title: 搭配 A4T 以及伺服器端的 Target 實作使用 ID 服務
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -36,7 +36,7 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ## 步驟 1: 要求頁面 {#section-c12e82633bc94e8b8a65747115d0dda8}
 
-當訪客提出 HTTP 要求以載入網頁時，就是伺服器端活動的開始。在此步驟中，您的伺服器會收到此要求並檢查[AMCV Cookie](../introduction/cookies.md).AMCV Cookie 包含訪客的 [!DNL Experience Cloud] ID (MID)。
+當訪客提出 HTTP 要求以載入網頁時，就是伺服器端活動的開始。在此步驟中，您的伺服器會收到此要求並檢查 [AMCV Cookie](../introduction/cookies.md)。AMCV Cookie 包含訪客的 [!DNL Experience Cloud] ID (MID)。
 
 ## 步驟 2: 產生 ID 服務裝載 {#section-c86531863db24bd9a5b761c1a2e0d964}
 
@@ -166,7 +166,7 @@ Response.send("
 
 ![](assets/server_side_dtm.png)
 
-另請參閱, [DTM 的 Experience Cloud Identity 服務設定 ](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)。
+另請參閱 [DTM 的 Experience Cloud Identity 服務設定 ](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)。
 
 **不透過 DTM 取得伺服器狀態**
 
