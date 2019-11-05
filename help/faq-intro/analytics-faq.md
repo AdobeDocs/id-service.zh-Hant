@@ -5,7 +5,7 @@ seo-description: 關於搭配 Identity 服務使用 Analytics 的功能、功用
 seo-title: Analytics 與 Identity 服務常見問題集
 title: Analytics 與 Identity 服務常見問題集
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -23,7 +23,7 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 然而，有時候客戶會將 Analytics AppMeasurement 檔案分割成個別的檔案。舉例來說，有些客戶可能會在一個檔案中放置設定變數，然後使用第二個檔案放置外掛程式，接著再將 AppMeasurement 程式碼放到第三個檔案。我們建議您不要這麼做。
 
-如果您無法找到自己的追蹤伺服器資訊，則您的 Analytics 例項可能並未正確設定。如果您找不到自己的追蹤伺服器資訊，請聯絡[客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)。
+如果您無法找到自己的追蹤伺服器資訊，則您的 Analytics 例項可能並未正確設定。如果您找不到自己的追蹤伺服器資訊，請聯絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)。
 
 **如果我使用 Identity 服務並變更追蹤伺服器，會發生什麼事?**
 
@@ -51,7 +51,7 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 **什麼是寬限期以及我該如何設定寬限期?**
 
-請參 [閱身分服務寬限期](../reference/analytics-reference/grace-period.md) ，並聯絡 [客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)。
+參閱 [ Identity 服務寬期限](../reference/analytics-reference/grace-period.md)並聯絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)。
 
 **為什麼我需要移轉至即時資料蒐集 (RDC) 才能使用 Identity 服務?**
 
@@ -90,5 +90,5 @@ RDC 可以提升全域效能，此外為了確保您的實作可針對未來採�
 
 >[!MORELIKETHIS]
 >
->* [客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)
 
