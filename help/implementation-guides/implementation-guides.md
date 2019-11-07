@@ -7,7 +7,7 @@ solution: Experience Cloud
 title: 實作指南
 uuid: null
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: e75a448a2fa1c384c88f00648a6f868a886c6569
 
 ---
 
@@ -16,7 +16,9 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 適用於 Experience Cloud Identity 服務的標準及非標準實作指示與程式碼範例。
 
-重要: 開始進行這些程序之前，請務必閱讀並了解 ID 服務需求。
+>[!IMPORTANT]
+>
+>開始進行這些程序之前，請務必閱讀並瞭解 [ID 服務需求](../reference/requirements.md)。
 
 ## 標準實作
 
@@ -24,7 +26,6 @@ A standard implementation uses [Adobe Exprience Platform Launch](https://docs.ad
 
 ## 實作資源
 
-* [實作指南](implementation-guides.md)
 * [實作方式](implementation-methods.md)
 * [使用 Experience Platform Launch 實作](ecid-implement-with-launch.md)
 * [透過 Dynamic Tag Management 來實作](standard.md)
