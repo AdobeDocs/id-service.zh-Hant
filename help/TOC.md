@@ -4,7 +4,7 @@ product: ID 服務
 audience: 終端使用者
 user-guide-title: Experience Cloud Identity 服務說明
 user-guide-url: /content/help/zh-Hant/id-service/using/home.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9de8fc07d30b5b641bc1445420973052605d25b6
 
 ---
@@ -19,8 +19,8 @@ source-git-commit: 9de8fc07d30b5b641bc1445420973052605d25b6
    + [Cookie 與 ID 服務](introduction/cookies.md)
    + [ ID 服務如何要求與設定 ID](introduction/id-request.md)
    + [了解同步和匹配率](introduction/match-rates.md)
-+ 實施 {#implementation}
-   + [實作方式](implementation-guides/implementation-methods.md)
++ 實作 {#implementation}
+   + [實作方法](implementation-guides/implementation-methods.md)
    + [實作指南](implementation-guides/implementation-guides.md)
    + [使用 Experience Platform Launch 實作](implementation-guides/ecid-implement-with-launch.md)
    + [使用 DTM 實作](implementation-guides/standard.md)
