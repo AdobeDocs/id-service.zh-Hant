@@ -1,11 +1,11 @@
 ---
 cloud: platform-cloud
-product: ID 服務
-audience: 終端使用者
-user-guide-title: Experience Cloud Identity 服務說明
-user-guide-url: /content/help/zh-Hant/id-service/using/home.html
-translation-type: ht
-source-git-commit: 9de8fc07d30b5b641bc1445420973052605d25b6
+product: ID Service
+audience: end-user
+user-guide-title: Experience Cloud Identity Service Help
+user-guide-url: /content/help/en/id-service/using/home.html
+translation-type: tm+mt
+source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
 
 ---
 
@@ -32,7 +32,7 @@ source-git-commit: 9de8fc07d30b5b641bc1445420973052605d25b6
    + [與 ID 服務直接整合](implementation-guides/direct-integration.md)
    + [直接整合的使用案例](implementation-guides/direct-integration-examples.md)
    + [測試及驗證 ID 服務](implementation-guides/test-verify.md)
-   + 選擇加入服務文件 {#opt-in-service}
+   + 選擇加入服務 {#opt-in-service}
       + [選擇加入服務概述](implementation-guides/opt-in-service/optin-overview.md)
       + [設定選擇加入服務](implementation-guides/opt-in-service/getting-started.md)
       + [驗證選擇加入服務](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
