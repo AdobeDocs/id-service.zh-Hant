@@ -1,20 +1,20 @@
 ---
-description: 使用選擇加入的 IAB 增效模組連接其同意管理平台 (CMP)。
-seo-description: 使用選擇加入的 IAB 增效模組連接其同意管理平台 (CMP)。
+description: 將其同意管理平台(CMP)與Opt-in』s Audience Manager plugin for IAB Transparency and Connection Framework(TCF)連結。
+seo-description: 將其同意管理平台(CMP)與Audience Manager外掛程式(IAB透明度與同意框架(TCF)連接。
 seo-title: (測試版) 搭配 IAB 架構使用選擇加入服務
 title: (測試版) 搭配 IAB 架構使用選擇加入服務
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
 
 ---
 
 
 # (測試版) 搭配 IAB 架構使用選擇加入服務{#beta-using-opt-in-services-with-iab-framework}
 
-使用選擇加入的 IAB 增效模組連接其同意管理平台 (CMP)。
+將其同意管理平台(CMP)與Audience manager的選擇加入的IAB外掛程式連結。
 
-Audience Manager customers using [IAB Transparency and Consent Framework (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) can connect their Consent Management Platform (CMP) with Opt-in’s IAB plugin. 選擇加入是 ECID JavaScript 資料庫中內嵌的一項功能，視 CMP 中設定的訪客偏好設定而定，可停用個別 Adobe 解決方案資料庫。當使用 ECID 資料庫實作 IAB 增效模組時，遵循 IAB 的 CMP 中的訪客偏好設定會自動對應到選擇加入。收到同意時，這些偏好設定會啟用以 Audience Manager 為基礎的資料庫 (DIL 與 ECID) 和相關聯的呼叫。
+使用 [](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) IAB透明與同意架構(TCF)的Audience manager客戶可將其同意管理平台(CMP)與選擇加入的Audience Manager Plugin for IAB TCF連結。 選擇加入是 ECID JavaScript 資料庫中內嵌的一項功能，視 CMP 中設定的訪客偏好設定而定，可停用個別 Adobe 解決方案資料庫。當使用 ECID 資料庫實作 IAB 增效模組時，遵循 IAB 的 CMP 中的訪客偏好設定會自動對應到選擇加入。收到同意時，這些偏好設定會啟用以 Audience Manager 為基礎的資料庫 (DIL 與 ECID) 和相關聯的呼叫。
 
 ## 實作支援 IAB 的 CMP {#section-9fd2403b548947dbb1921ac6ff9d0c82}
 
