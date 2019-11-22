@@ -4,7 +4,7 @@ seo-title: Safari ITP 領域的 ECID 程式庫方法
 description: Adobe ECID (ID 服務) 程式庫的文件。
 seo-description: Adobe ECID (ID 服務) 程式庫的文件。
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: 51abd7b0f38da4c3375c0d2fe48d8bf96bdfb387
 
 ---
 
@@ -29,10 +29,6 @@ ITP 的規則強調將控制權還給開發人員。透過 CNAME 憑證實作，
 
 ECID 程式庫、AMCV Cookie 和 ECID (也稱為 MID) 一開始是一種將所有 Adobe 解決方案整合至一個 ID 下的方法。此 ID 未來在 Adobe 產品藍圖中仍會是優先 Cookie 層級 ID，現在則是 Adobe Experience Platform 的預設 Cookie ID。
 
-**CNAME 可以協助客戶啟用多個網域追蹤嗎?**
-
-之前與 CNAME 同時存在的規則和警告仍然存在。某些情況下，CNAME 在多重網域的案例中有其用處。如果您有一個主要進入網站，可在使用者造訪其他網域之前識別使用者的身分，那麼 CNAME 將可讓您在不接受第三方 Cookie 的瀏覽器中啟用多重網域追蹤功能。雖然 CNAME 可以在某些情況下提供多重網域協助，不過將 ECID 移轉至 CNAME 實作的原因是為了永續執行訪客身分識別，並非為了多重網域追蹤。如需深入瞭解 CNAME 和多重網域，請參閱[資料收集 CNAME 和跨網域追蹤](/help/reference/analytics-reference/cname.md)。
-
 一有其他 ITP 變更，我們會在此處新增更多常見問題。For more inquiries, please visit [Adobe Experience League](https://experienceleague.adobe.com/#recommended/solutions/analytics).
 
 ## ITP 相關變更、方法和設定
@@ -47,7 +43,7 @@ ECID 程式庫、AMCV Cookie 和 ECID (也稱為 MID) 一開始是一種將所�
 
 ITP 2.1 會使寫入用戶端 Cookie 的能力受到限制，導致向客戶提供的訪客追蹤資訊，準確度大打折扣。因此，我們已著手調整 Adobe 的 CNAME 追蹤伺服器，將訪客的 Experience Cloud ID (ECID) 儲存在第一方 Cookie。
 
-這項變更只適用於在第一方情境中使用 Analytics CNAME 的 ECID 客戶。如果您是尚未使用 CNAME 的 Analytics 客戶，或甚至不是 Analytics 客戶，還是符合使用 CNAME 記錄的資格。Contact Customer Care or your account representative to start the process of registering for a [CNAME](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/adobe_managed_cert_pgm.html).
+這項變更只適用於在第一方情境中使用 Analytics CNAME 的 ECID 客戶。如果您是尚未使用 CNAME 的 Analytics 客戶，或甚至不是 Analytics 客戶，還是符合使用 CNAME 記錄的資格。請連絡客戶服務或您的帳戶代表，以開始註冊 [CNAME](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/adobe_managed_cert_pgm.html)。
 
 若要使用此項變更，請升級至 ECID 程式庫 4.3.0 版以上。
 
@@ -57,7 +53,7 @@ ITP 2.1 會使寫入用戶端 Cookie 的能力受到限制，導致向客戶提�
 
 這個新 `s_ecid` Cookie 會依循與 AMCV Cookie 相同的選擇退出狀態。如果從 `s_ecid` Cookie 讀取 eid，每次都會呼叫 demdex 來擷取該 ID 的最新選擇退出狀態，並將 demdex 儲存在 AMCV Cookie 中。
 
-In addition, if your consumer has opted out of Analytics tracking via this [method](https://marketing.adobe.com/resources/help/en_US/sc/implement/opt_out_link.html), this `s_ecid` cookie will be deleted.
+此外，如果您的消費者已選擇透過此方法退出Analytics追 [蹤](https://marketing.adobe.com/resources/help/en_US/sc/implement/opt_out_link.html)，則 `s_ecid` 會刪除此Cookie。
 
 使用 trackingServer 或 trackingServerSecure 初始化程式庫時，應將追蹤伺服器名稱提供給 visitorJS 程式庫。此名稱應符合 Analytics 設定中的 trackingServer 設定。
 
