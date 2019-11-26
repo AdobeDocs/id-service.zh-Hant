@@ -6,7 +6,7 @@ seo-title: 資料收集 CNAME 和跨網域追蹤
 title: 資料收集 CNAME 和跨網域追蹤
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
 translation-type: tm+mt
-source-git-commit: 588c4b29ebd3cccea4f2ab032f69a4b6c6e97f2a
+source-git-commit: 989b5f537848a7506a96e2eac17409f8b0307217
 
 ---
 
@@ -26,11 +26,11 @@ source-git-commit: 588c4b29ebd3cccea4f2ab032f69a4b6c6e97f2a
 - 第一方ID —— 可用於測量您自己網站訪客的第一方ID。 此ID會儲存在第一個參數ID中，同時儲存在用戶端Cookie和伺服器端Cookie中（使用CNAME）。
 - 第三方ID（可選）-儲存在demdex.net上的單獨第三方ID，可用於測量跨多個網域（例如example.com和example.net）的訪客
 
-Analytics一律會使用第一方ID，如果已啟用第三方ID並呈現，則每個網站上的第一方ID將相同。 不過，若因您的設定或瀏覽器封鎖第三方Cookie而停用第三方ID，則無法將兩個網站上的流量連結在一起。
+Analytics會使用第一方ID，除非已啟用第三方ID，否則瀏覽器會允許我們使用該ID。 第三方ID是客戶前取名的，因此客戶無法在Analytics中將資料與其他客戶結合。
 
 ## 舊版Analytics網域
 
-在數年前訪客ID服務啟動之前，許多客戶使用原生分析網域來設定ID Cookie。 這些 `omtrdc.net`包 `2o7.net` 括或CNAME的網域。 `omtrdc.net`, `2o7.net` 且在某些情況下，會使用CNAME'd網域來儲存第三方Cookie。 以此方式設定的Cookie一律僅限於單一客戶，因此客戶無法跨公司合併其資料。 只有當客戶想要追蹤其擁有之網站的使用者(例如example.com、example.co.jp)時，才會使用第三方CNAMED的網域（有時稱為友好的第三方網域）。 此方法已遭淘汰，以提供更強穩和隱私權感知的訪客ID服務。 客戶應在可行時，立即移至每個網域具有CNAME的訪客ID服務。
+在啟動Adobe訪客ID服務之前，許多客戶都使用原生分析網域來設定ID Cookie。 這些 `omtrdc.net`包 `2o7.net` 括或CNAME的網域。 `omtrdc.net`, `2o7.net`在某些情況下，會使用CNAME'd網域來儲存第三方Cookie。 以此方式設定的Cookie僅限於單一客戶，因此客戶無法將其資料與其他客戶的資料結合。 當客戶想要追蹤其擁有之網站(例如example.com、example.co.jp)上的使用者時，會使用第三方CNAMED的網域（有時稱為友好的第三方網域）。 此方法或使用CNAME支援好記的第三方網域已不建議使用，以提供更強穩且具隱私權的訪客ID服務。 客戶應在可行時，立即移至每個網域具有CNAME的訪客ID服務。
 
 ## 提供您自己的身分
 
@@ -44,9 +44,9 @@ Analytics一律會使用第一方ID，如果已啟用第三方ID並呈現，則�
 
 Adobe仍建議搭配使用CNAME與訪客ID服務。 這可讓第一方訪客ID使用HTTP Cookies持續存在，讓Cookie更持久。
 
-## 退出
+## OPTOUT
 
-Adobe提供API來與我們的系統共用退出訊號，讓您為使用者提供退出追蹤的方式。 如需詳細指示，請 [參閱退出](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/data-collection/opt-out.md)[和加入](https://docs.adobe.com/content/help/en/id-service/using/implementation-guides/opt-in-service/optin-overview.md)
+Adobe為客戶提供API，讓他們與我們的系統共用選擇退出訊號，讓客戶進而可讓使用者選擇追蹤。 我們提供客戶如何實施適當控制以支援使用者選擇的詳細指示；選擇 [退出API](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/data-collection/opt-out.md) ，或在取得 [同意前防止Cookie觸發的](https://docs.adobe.com/content/help/en/id-service/using/implementation-guides/opt-in-service/optin-overview.md) 選項。
 
 ## 使用 Experience Cloud Identity 服務啟用 CNAME 支援 {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
