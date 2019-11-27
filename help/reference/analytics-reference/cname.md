@@ -6,48 +6,45 @@ seo-title: 資料收集 CNAME 和跨網域追蹤
 title: 資料收集 CNAME 和跨網域追蹤
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
 translation-type: tm+mt
-source-git-commit: 989b5f537848a7506a96e2eac17409f8b0307217
+source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 ---
 
 
-# 資料收集與識別{#data-collection-and-identity}
+# 資料收集 CNAME 和跨網域追蹤{#data-collection-cnames-and-cross-domain-tracking}
 
-在分析中，有三種方式可用來識別訪客。
+如果您有可在客戶造訪其他網域之前加以識別的主要進入網站，則 CNAME 將可讓您在不接受第三方 Cookie 的瀏覽器 (例如 Safari) 中使用跨網域追蹤功能。
 
-- 使用訪 [客ID服務](https://docs.adobe.com/content/help/en/id-service/using/home.md)
-- 使用舊 [版Analytics訪客ID](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-overview.md)
-- 提供其個人身分
+在接受第三方 Cookie 的瀏覽器中，會在訪客 ID 提出請求期間，由資料收集伺服器設定 Cookie。此 Cookie 可讓訪客 ID 服務在所有使用相同 Experience Cloud 組織 ID 設定的網域上，傳回相同的 Experience Cloud 訪客 ID。
 
-## Using the Visitor ID Service{#using-the-visitor-id-service}
+在拒絕第三方 Cookie 的瀏覽器中，會為每個網域指派一個新的 Experience Cloud 訪客 ID。
 
-訪客ID服務是識別訪客的建議方式。 它基於兩個元件
+demdex.net Cookie 可讓訪客 ID 服務提供與 Analytics 中的 s_vi Cookie 相同層級的跨網域追蹤，其中，有些瀏覽器會接受 Cookie 並跨網域使用，有些瀏覽器則會拒絕。
 
-- 第一方ID —— 可用於測量您自己網站訪客的第一方ID。 此ID會儲存在第一個參數ID中，同時儲存在用戶端Cookie和伺服器端Cookie中（使用CNAME）。
-- 第三方ID（可選）-儲存在demdex.net上的單獨第三方ID，可用於測量跨多個網域（例如example.com和example.net）的訪客
+## 資料收集 CNAME {#section-48fd186d376a48079769d12c4bd9f317}
 
-Analytics會使用第一方ID，除非已啟用第三方ID，否則瀏覽器會允許我們使用該ID。 第三方ID是客戶前取名的，因此客戶無法在Analytics中將資料與其他客戶結合。
+在資料收集伺服器設定 Analytics Cookie 時，許多客戶都將資料收集伺服器 CNAME 記錄設定為[第一方 Cookie 實作](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/)的一部分，以避免發生瀏覽器拒絕第三方 Cookie 的問題。此程序會將您的資料收集伺服器網域設定為符合您的網站網域，使訪客 ID Cookie 設為第一方 Cookie。
 
-## 舊版Analytics網域
+由於訪客 ID 服務會將訪客 Cookie 直接設定在目前使用 JavaScript 之網站的網域上，因此在設定第一方 Cookie 時已不需要此設定。
 
-在啟動Adobe訪客ID服務之前，許多客戶都使用原生分析網域來設定ID Cookie。 這些 `omtrdc.net`包 `2o7.net` 括或CNAME的網域。 `omtrdc.net`, `2o7.net`在某些情況下，會使用CNAME'd網域來儲存第三方Cookie。 以此方式設定的Cookie僅限於單一客戶，因此客戶無法將其資料與其他客戶的資料結合。 當客戶想要追蹤其擁有之網站(例如example.com、example.co.jp)上的使用者時，會使用第三方CNAMED的網域（有時稱為友好的第三方網域）。 此方法或使用CNAME支援好記的第三方網域已不建議使用，以提供更強穩且具隱私權的訪客ID服務。 客戶應在可行時，立即移至每個網域具有CNAME的訪客ID服務。
+具有單一 Web 屬性 (單一網域) 的客戶可從資料收集 CNAME 移轉走，改為使用其預設的資料收集主機名稱 (`omtrdc.net` 或 `2o7.net`)。
 
-## 提供您自己的身分
+但在資料收集中使用 CNAME 具有附帶好處，而可讓您在不接受第三方 Cookie 之瀏覽器中的主要登陸網域與其他網域之間追蹤訪客。具有多個 Web 屬性 (多個網域) 的客戶可能會因為保持使用資料收集 CNAME 而獲益。下一節說明跨網域訪客如何進行追蹤。
 
-如果客戶選擇透過Adobe的識別系統，並透過提供自訂訪客ID來建置自己 [的系統](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-custom.md)。 如果您選擇此路由，有些事需要注意。
+## CNAME 支援跨網域追蹤的方式 {#section-78925af798e24917b9abed79de290ad9}
 
-- 您需要實作選擇退出和適當的隱私權控制
-- 該ID僅適用於Analytics
-- 您必須負責保存該ID
+由於第一方 Cookie 可在 Apple Safari 和某些其他瀏覽器中用於第三方上下文的方式，CNAME 可讓您在主要網域與其他使用相同追蹤伺服器的網域之間追蹤客戶。
 
-## 資料收集CNAMES
+例如，您在 `mymainsite.com` 有一個主要網站。您可以將 CNAME 記錄設定為指向您的安全資料收集伺服器: `smetrics.mymainsite.com`。
 
-Adobe仍建議搭配使用CNAME與訪客ID服務。 這可讓第一方訪客ID使用HTTP Cookies持續存在，讓Cookie更持久。
+當使用者造訪 `mymainsite.com` 時，資料收集伺服器會設定 ID 服務 Cookie。由於資料收集伺服器的網域符合網站的網域，所以允許這個行為，這也稱為在&#x200B;*第一方內容*&#x200B;中使用 Cookie，或&#x200B;*第一方 Cookie*。
 
-## OPTOUT
+如果您也在其他網站上使用相同的資料收集伺服器 (例如 `myothersiteA.com` 和 `myothersiteB.com`)，而訪客稍後瀏覽這些網站，則在瀏覽 `mymainsite.com` 期間所設定的 Cookie 會透過 HTTPS 要求傳送給資料收集伺服器 (請記住，即使網域不符合目前網站的網域，瀏覽器仍會透過所有 HTTPS 要求將所有 Cookie 傳送至該網域)。這也稱為在&#x200B;*第三方內容*&#x200B;中使用 Cookie，或&#x200B;*第三方 Cookie*，如此可在其他網域中使用相同的訪客 ID。請注意，瀏覽器在第三方內容中處理 Cookie 的方式與第一方 Cookie 不同。
 
-Adobe為客戶提供API，讓他們與我們的系統共用選擇退出訊號，讓客戶進而可讓使用者選擇追蹤。 我們提供客戶如何實施適當控制以支援使用者選擇的詳細指示；選擇 [退出API](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/data-collection/opt-out.md) ，或在取得 [同意前防止Cookie觸發的](https://docs.adobe.com/content/help/en/id-service/using/implementation-guides/opt-in-service/optin-overview.md) 選項。
+*注意: 無論 Cookie 是否已設定，Safari 都會在第三方內容中封鎖所有 Cookie。*
+
+因此，您的收集網域應該是人們經常瀏覽的網域，如此才能跨網域識別訪客。如果沒有可用於資料收集網域的&#x200B;*常見*&#x200B;網域，則維護資料收集網域的 CNAME 就無法獲得跨網域優勢。如果未先造訪主要進入網站，則訪客在次要網站與主要網站中的識別會不同。
 
 ## 使用 Experience Cloud Identity 服務啟用 CNAME 支援 {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
-資料收集伺服器CNAME支 [援可啟用設定CNAME](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-first-party.md) ，並在Experience Cloud Identity service中設定 `visitor.marketingCloudServerSecure` 變數，以及在AppMeasurement中設定 `s.trackingServerSecure` 變數。
+設定 `visitor.marketingCloudServerSecure` 變數即可啟用資料收集伺服器 CNAME 支援。
