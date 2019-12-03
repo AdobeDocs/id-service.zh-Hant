@@ -1,12 +1,12 @@
 ---
 description: 內容安全性原則 (CSP) 是一項 HTTP 標題和安全性功能，能讓瀏覽器控制要在網頁中載入的資源類型。如果您使用 ID 服務，且訂下嚴格的 CSP 以使用白名單來接受來自值得信賴網域的資料，請檢視本節的內容。您需要將此處所列的 Adobe 網域新增至您的 CSP 白名單中。
-keywords: ID 服務
+keywords: ID Service
 seo-description: 內容安全性原則 (CSP) 是一項 HTTP 標題和安全性功能，能讓瀏覽器控制要在網頁中載入的資源類型。如果您使用 ID 服務，且訂下嚴格的 CSP 以使用白名單來接受來自值得信賴網域的資料，請檢視本節的內容。您需要將此處所列的 Adobe 網域新增至您的 CSP 白名單中。
 seo-title: 內容安全性原則及 Experience Cloud Identity 服務
 title: 內容安全性原則及 Experience Cloud Identity 服務
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+translation-type: tm+mt
+source-git-commit: fbfea06bc2a4493b6d9b84a8f367749e1d803650
 
 ---
 
@@ -53,14 +53,17 @@ CSP 會利用 HTTP 標頭 `Content-Security-Policy` 來控制瀏覽器要接受�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>訪客 ID 服務</b> </p> </td> 
-   <td colname="col2"> <p>修改您的 CSP 以包含 <span class="codeph">*.demdex.net</span>。 </p> <p>對 <span class="codeph">demdex.net</span> 網域發出的呼叫用於產生 <a href="../introduction/cookies.md" format="dita" scope="local">Cookie 與 Experience Cloud Identity 服務</a>及用於 ID 同步。亦請參閱<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">瞭解向 Demdex 網域進行的呼叫</a>。 </p> </td> 
-  </tr> 
+   <td colname="col2"> <p>修改您的 CSP 以包含 <span class="codeph">*.demdex.net</span>。 </p> <p>對 <span class="codeph">demdex.net</span> 網域發出的呼叫用於產生 <a href="../introduction/cookies.md" format="dita" scope="local">Cookie 與 Experience Cloud Identity 服務</a>及用於 ID 同步。亦請參閱<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">瞭解向 Demdex 網域進行的呼叫</a>。 </p> </td> </tr> 
+ <tr>
+ <td colname="col1"> <p> <b>Activity map外掛程式</b> </p> </td> 
+ <td colname="col2"> <p>修改您的CSP以包含*omniture.com </p></td> 
+ </tr>
  </tbody> 
 </table>
 
 >[!MORELIKETHIS]
 >
 >* [內容安全性原則參考](https://content-security-policy.com/)
->* [MDN: 內容安全性原則](https://developer.mozilla.org/zh-TW/docs/Web/HTTP/CSP)
+>* [MDN: 內容安全性原則](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
 >* [Wikipedia: 內容安全性原則](https://en.wikipedia.org/wiki/Content_Security_Policy)
 
