@@ -5,14 +5,14 @@ seo-title: (測試版) 搭配 IAB 架構使用選擇加入服務
 title: (測試版) 搭配 IAB 架構使用選擇加入服務
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
 translation-type: tm+mt
-source-git-commit: 27d3da940e4bba20a4eba86edfc44bf834173d6a
+source-git-commit: 65947bf4078222561060501178bf28b3c6cfed7c
 
 ---
 
 
 # (測試版) 搭配 IAB 架構使用選擇加入服務{#beta-using-opt-in-services-with-iab-framework}
 
-將其同意管理平台(CMP)與Opt-in的Audience Manager IAB外掛程式(for Audience Manager)連結。
+將「同意管理平台」(CMP)與「選擇加入」的「Audience Manager Plugin for IAB TCF」連結。
 
 使用 [IAB 透明與同意架構 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) 的 Audience Manager 客戶，可連結其同意管理平台 (CMP) 和選擇加入之適用於 IAB TCF 的 Audience Manager 增效模組。選擇加入是 ECID JavaScript 資料庫中內嵌的一項功能，視 CMP 中設定的訪客偏好設定而定，可停用個別 Adobe 解決方案資料庫。當IAB TCF的Audience manager外掛程式與ECID程式庫一起實作時，您符合IAB的CMP的訪客偏好設定會自動對應至選擇加入。 收到同意時，這些偏好設定會啟用以 Audience Manager 為基礎的資料庫 (DIL 與 ECID) 和相關聯的呼叫。
 
@@ -44,7 +44,7 @@ Visitor.getInstance("YOUR_ORG_ID", {
 
 >[!IMPORTANT]
 >
->Audience Manager 需要&#x200B;*目的 1、2 和 5 的同意，加上廠商同意*，才能部署 Cookie，並初始化或執行 ID 同步。請[在此](https://docs.adobe.com/help/en/audience-manager/user-guide/overview/gdpr/aam-iab-plugin.html)參閱 Audience Manager 文件中 IAB 增效模組的詳細資訊。
+>Audience Manager 需要&#x200B;*目的 1、2 和 5 的同意，加上廠商同意*，才能部署 Cookie，並初始化或執行 ID 同步。在Audience manager檔案中，閱讀更多有關IAB TCF的Audience manager外掛程式的 [資訊](https://docs.adobe.com/help/en/audience-manager/user-guide/overview/gdpr/aam-iab-plugin.html)。
 
 For more information on how to validate both Opt-in and the Audience Manager plug-in for IAB, check use case #4 in the validation guide [here](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0).
 
