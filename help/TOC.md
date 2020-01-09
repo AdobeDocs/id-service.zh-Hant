@@ -4,8 +4,8 @@ product: ID Service
 audience: end-user
 user-guide-title: Experience Cloud Identity Service Help
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
+translation-type: tm+mt
+source-git-commit: 453a14a4b725dd14f445b089d083a83a5d2ffaa4
 
 ---
 
@@ -94,6 +94,7 @@ source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
    + [ID 服務的 CORS 支援](reference/cors.md)
    + [客戶 ID 和驗證狀態](reference/authenticated-state.md)
    + [Safari ITP 領域的 ECID 程式庫方法](reference/ecid-library-methods.md)
+   + [識別獨特訪客](reference/unique-vis-method.md)
    + [從 AMCV Cookie 或 ID 服務取得地區和使用者 ID](reference/regions.md)
    + [ID 服務規定](reference/requirements.md)
    + [影片心率和 ID 服務](reference/heartbeat.md)
