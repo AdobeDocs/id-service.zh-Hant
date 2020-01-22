@@ -6,7 +6,7 @@ seo-title: 內容安全性原則及 Experience Cloud Identity 服務
 title: 內容安全性原則及 Experience Cloud Identity 服務
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
 translation-type: tm+mt
-source-git-commit: e3d63e2ad5f1f58f5444f2aa353b4144b0454fc4
+source-git-commit: 4c642bd9f1ca6841f6d532cef2c11ce4acca0b61
 
 ---
 
@@ -62,7 +62,6 @@ CSP 會利用 HTTP 標頭 `Content-Security-Policy` 來控制瀏覽器要接受�
 </table>
 
 >[!MORELIKETHIS]
->
 >* [內容安全性原則參考](https://content-security-policy.com/)
 >* [MDN: 內容安全性原則](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
 >* [Wikipedia: 內容安全性原則](https://en.wikipedia.org/wiki/Content_Security_Policy)
