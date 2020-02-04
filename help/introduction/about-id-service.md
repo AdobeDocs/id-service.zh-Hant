@@ -1,12 +1,12 @@
 ---
-description: Experience Platform Identity 服務在 Adobe Experience Cloud 中扮演的角色。
-keywords: ID 服務
-seo-description: Experience Platform Identity 服務在 Adobe Experience Cloud 中扮演的角色。
+description: Experience Cloud Identity 服務在 Adobe Experience Cloud 中的角色。
+keywords: ID Service
+seo-description: Experience Cloud Identity 服務在 Adobe Experience Cloud 中的角色。
 seo-title: 關於 ID 服務
 title: 概述
 uuid: c52d6155-00a0-4fc5-9d8e-5ce00b8d01e6
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: 6c314656c134a697540c289560c67ca3ab88bc63
 
 ---
 
@@ -35,7 +35,7 @@ Experience Cloud Identity 服務可為 Experience Cloud 核心服務、解決方
 
 * 建立通用機碼或 ID 以用於連結設定檔和身分識別。
 * 在多個解決方案中辨識唯一裝置。
-* 在客戶網域中設定第一方 Cookie 以確保可在相同網域進行追蹤。請參閱 [Experience Cloud](../introduction/cookies.md)。
+* 在客戶網域中設定第一方 Cookie 以確保可在相同網域進行追蹤。請參閱[Experience Cloud](../introduction/cookies.md).
 * 從 [!DNL Experience Cloud] 客戶和合作夥伴接收別名和 ID 對應。
 * 在 [!DNL Experience Cloud] 中管理 ID 同步。
 * 在各廣告技術生態系統中，支援不同第三方的 ID 同步。
