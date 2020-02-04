@@ -1,12 +1,12 @@
 ---
 description: Experience Cloud Identity 服務會取代舊有的 Analytics 訪客 ID 方法。
-keywords: ID 服務
-seo-description: Experience Platform Identity 服務會取代舊有的 Analytics 訪客 ID 方法。
+keywords: ID Service
+seo-description: Experience Cloud Identity 服務會取代舊有的 Analytics 訪客 ID 方法。
 seo-title: 設定 Analytics 和 Experience Cloud ID
 title: 設定 Analytics 和 Experience Cloud ID
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
-translation-type: ht
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+translation-type: tm+mt
+source-git-commit: 6c314656c134a697540c289560c67ca3ab88bc63
 
 ---
 
@@ -60,12 +60,12 @@ JavaScript 可讀取和寫入第一方網域中設定的 Cookie (目前網站的
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <img id="image_9F3E58898A1B4F40BBDEF5ADE362E55C" src="assets/step1_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/zh_TW/sc/implement/?f=visid_custom" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_custom" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
    <td colname="col3"> <p>設定 s.visitorID 時 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_77A06981672745B6AEA8BB4D55911CCA" src="assets/step2_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/zh_TW/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (s_vi Cookie)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (s_vi Cookie)</a> </p> </td> 
    <td colname="col3"> <p>在您部署 <span class="keyword">Experience Cloud</span> ID 服務之前訪客已有 s_vi Cookie，或是您已設定<a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">寬限期</a>。 </p> </td> 
   </tr> 
   <tr> 
@@ -75,18 +75,18 @@ JavaScript 可讀取和寫入第一方網域中設定的 Cookie (目前網站的
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_6F0ED8FE3EF846CA8E6ECCC3C0070D85" src="assets/step4_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/zh_TW/sc/implement/?f=visid_fallback" format="http" scope="external"> fid (H.25.3 或更新版本的後援 Cookie，或 JavaScript 適用的 AppMeasurement)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> fid (H.25.3 或更新版本的後援 Cookie，或 JavaScript 適用的 AppMeasurement)</a> </p> </td> 
    <td colname="col3"> <p>瀏覽器不接受第三方 Cookie 且 Analytics 追蹤伺服器已設定為第三方追蹤伺服器。 </p> <p> <p>注意: 如果您已在網站上實作 ID 服務，則舊版識別碼 <span class="codeph">fid</span> 並未使用。在此情況下就不需要 <span class="codeph">fid</span>，因為第一方 <a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV Cookie</a> 已將其淘汰。保留它是為了支援舊版程式碼且供歷史記錄之用。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/zh_TW/sc/implement/?f=visid_fallback" format="http" scope="external"> IP 位址、使用者代理、閘道 IP 位址</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> IP 位址、使用者代理、閘道 IP 位址</a> </p> </td> 
    <td colname="col3"> <p>訪客的瀏覽器不接受 Cookie。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-在許多情況下，您可能會在一個呼叫中看見 2 或 3 個不同的 ID，但 Analytics 將會使用清單中第一個出現的 ID 做為正式的 [!DNL Experience Cloud] ID。例如，如果您設定自訂訪客 ID (內含於 "vid" 查詢參數中)，則在同一個點擊可能存在其他 ID 時，將優先使用該自訂訪客 ID。
+在許多情況下，您可能會在一個呼叫中看見 2 或 3 個不同的 ID，但 Analytics 將會使用清單中第一個出現的 ID 做為正式的 [!DNL Experience Cloud] ID。例如，如果您設定自訂訪客 ID (內含於 &quot;vid&quot; 查詢參數中)，則在同一個點擊可能存在其他 ID 時，將優先使用該自訂訪客 ID。
 
 >[!MORELIKETHIS]
 >
