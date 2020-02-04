@@ -5,7 +5,7 @@ seo-description: 內容安全性原則 (CSP) 是一項 HTTP 標題和安全性�
 seo-title: 內容安全性原則及 Experience Cloud Identity 服務
 title: 內容安全性原則及 Experience Cloud Identity 服務
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4c642bd9f1ca6841f6d532cef2c11ce4acca0b61
 
 ---
@@ -17,7 +17,7 @@ source-git-commit: 4c642bd9f1ca6841f6d532cef2c11ce4acca0b61
 
 ## CSP 檢視  {#section-5fde5c00a678455c914b8307a8caab82}
 
-CSP 會利用 HTTP 標頭 `Content-Security-Policy` 來控制瀏覽器要接受或在網頁中要載入的資源類型。套用 CSP 能協助您避免以下情形:
+CSP 會利用 HTTP 標頭 `Content-Security-Policy` 來控制瀏覽器要接受或在網頁中要載入的資源類型。套用 CSP 能協助您避免以下情形：
 
 * 在來源為未知或未加入白名單的情況下載入 JavaScript 檔案。
 * 遭受跨網站指令檔 (XXS) 的攻擊。
@@ -41,7 +41,7 @@ CSP 會利用 HTTP 標頭 `Content-Security-Policy` 來控制瀏覽器要接受�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>AppMeasurement</b> </p> </td> 
-   <td colname="col2"> <p>修改您的 CSP 以包含以下項目: </p> <p> 
+   <td colname="col2"> <p>修改您的 CSP 以包含以下項目： </p> <p> 
      <ul id="ul_7522AE83A03A4115A84DF5B32D6DD79B"> 
       <li id="li_AB1EC161FB154BEDA1BEFE76C8A38A90"> <span class="codeph"> *.2o7.net</span> </li> 
       <li id="li_4B12A283716746949201528CD6AF529E"> <span class="codeph"> *.omtrdc.net</span> </li> 
@@ -56,13 +56,13 @@ CSP 會利用 HTTP 標頭 `Content-Security-Policy` 來控制瀏覽器要接受�
    <td colname="col2"> <p>修改您的 CSP 以包含 <span class="codeph">*.demdex.net</span>。 </p> <p>對 <span class="codeph">demdex.net</span> 網域發出的呼叫用於產生 <a href="../introduction/cookies.md" format="dita" scope="local">Cookie 與 Experience Cloud Identity 服務</a>及用於 ID 同步。亦請參閱<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">瞭解向 Demdex 網域進行的呼叫</a>。 </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Activity Map 增效模組</b> </p> </td> 
- <td colname="col2"> <p>修改您的CSP以包含*.adobe.com。 **注意**:如果您在2020年1月之前已安裝Activity Map，您的瀏覽器仍會看到對*.omniture.com的初始要求，但會重新導向至*.adobe.com。 </p></td> 
+ <td colname="col2"> <p>修改您的 CSP 以包含 *.adobe.com。**注意**：如果您在 2020 年 1 日前即已安裝 Activity Map，您的瀏覽器仍會收到 *.omniture.com 的原始請求，但會將其重新導向 *.adobe.com。 </p></td> 
  </tr>
  </tbody> 
 </table>
 
 >[!MORELIKETHIS]
 >* [內容安全性原則參考](https://content-security-policy.com/)
->* [MDN: 內容安全性原則](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
->* [Wikipedia: 內容安全性原則](https://en.wikipedia.org/wiki/Content_Security_Policy)
+>* [MDN：內容安全性原則](https://developer.mozilla.org/zh-TW/docs/Web/HTTP/CSP)
+>* [Wikipedia：內容安全性原則](https://en.wikipedia.org/wiki/Content_Security_Policy)
 
