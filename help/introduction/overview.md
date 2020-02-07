@@ -4,7 +4,7 @@ seo-description: Experience Cloud Identity Service（舊稱訪客ID服務或Mark
 seo-title: Experience Cloud ID服務概觀
 title: Experience Cloud ID服務概觀
 translation-type: tm+mt
-source-git-commit: 9e020c3292a7c9f14ec77615a54ec61a37762eec
+source-git-commit: 6342ea02c74e6d1c96f987c5f2620246602ce6c5
 
 ---
 
@@ -15,7 +15,7 @@ The [!UICONTROL Experience Cloud Identity Service] enables the common identifica
 
 >[!NOTE]
 >
-> 您可能會看到先前名稱或縮寫的參考，例如ECID、Marketing Cloud ID服務(MID)和訪客ID服務。 這些指的是 [!UICONTROL Experience Cloud Identity Service]。 您也可能會看 [!UICONTROL 到Experience Platform Identity Service]。 要澄清：
+> 您可能會將ID服務的參照視為縮略詞或先前的名稱，例如ECID、Marketing Cloud ID服務(MID)和訪客ID服務。 這些指的是 [!UICONTROL Experience Cloud Identity Service]。 您也可能會看 [!UICONTROL 到Experience Platform Identity Service]。 要澄清：
 
 * [!UICONTROL Experience Platform Identity Service]:連結身分的服務。 它是提供人員型體驗管理的裝置連結服務。
 * [!UICONTROL Experience Cloud ID服務] (ECID):指派給網站訪客的唯一、永續性ID。 它是平台身分服務可使用的特定實體。
@@ -34,7 +34,7 @@ The [!UICONTROL Experience Cloud Identity Service] enables the common identifica
 
 * 建立通用機碼或 ID 以用於連結設定檔和身分識別。
 * 在多個解決方案中辨識唯一裝置。
-* 在客戶網域中設定第一方 Cookie 以確保可在相同網域進行追蹤。請參閱 Experience Cloud。
+* 在客戶網域中設定第一方 Cookie 以確保可在相同網域進行追蹤。請參閱 cookies和Experience Cloud [Identity Service上的檔案](https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html) ，以取得詳細資訊。
 * 從 Experience Cloud 客戶和合作夥伴接收別名和 ID 對應。
 * 在 Experience Cloud 中管理 ID 同步。
 * 在各廣告技術生態系統中，支援不同第三方的 ID 同步。
