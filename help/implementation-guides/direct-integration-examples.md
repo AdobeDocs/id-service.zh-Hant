@@ -1,19 +1,19 @@
 ---
 description: 這些範例涵蓋 2 個與直接整合和 Experience Cloud ID (MID) 相關的常見使用案例。MID 是每個網站訪客專屬的永久性唯一 ID。
-keywords: ID 服務
+keywords: ID Service
 seo-description: 這些範例涵蓋 2 個與直接整合和 Experience Cloud ID (MID) 相關的常見使用案例。MID 是每個網站訪客專屬的永久性唯一 ID。
 seo-title: 直接整合的使用案例
 title: 直接整合的使用案例
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: 6342ea02c74e6d1c96f987c5f2620246602ce6c5
 
 ---
 
 
 # 直接整合的使用案例 {#direct-integration-use-cases}
 
-這些範例涵蓋 2 個與直接整合和 Experience Cloud ID (MID) 相關的常見使用案例。MID 是每個網站訪客專屬的永久性唯一 ID。
+這些範例涵蓋直接整合和Experience Cloud ID（ECID或MID）的2個常見使用案例。 此ID是網站訪客的唯一永續ID。
 
 >[!TIP]
 >
