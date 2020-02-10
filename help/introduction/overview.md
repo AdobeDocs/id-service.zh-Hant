@@ -4,7 +4,7 @@ seo-description: Experience Cloud Identity Service（舊稱訪客ID服務或Mark
 seo-title: Experience Cloud ID服務概觀
 title: Experience Cloud ID服務概觀
 translation-type: tm+mt
-source-git-commit: 6342ea02c74e6d1c96f987c5f2620246602ce6c5
+source-git-commit: 98b72f87b188debd6a5f6b86822c3f714647de61
 
 ---
 
@@ -22,7 +22,7 @@ The [!UICONTROL Experience Cloud Identity Service] enables the common identifica
 
 當您的組織實作 ID 服務時，此 ID 可讓您在不同的 Experience Cloud 解決方案中識別相同的網站訪客及其資料。
 
-![](assets/ecid.png)
+![](assets/ecid-new.png)
 
 此外，ID 服務也能取代不同的解決方案專屬 ID (例如 Analytics AID)。而透過[客戶 ID 和驗證狀態](/help/reference/authenticated-state.md)功能，ID 服務可讓您將您的客戶 ID 傳遞至 Experience Cloud。但是請切記，ID 服務只能搭配您已訂閱的解決方案使用。如果您未註冊其他產品，便無法存取。
 
