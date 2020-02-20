@@ -4,8 +4,8 @@ product: ID Service
 audience: end-user
 user-guide-title: Experience Cloud Identity Service Help
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: 453a14a4b725dd14f445b089d083a83a5d2ffaa4
+translation-type: tm+mt
+source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 
 ---
 
@@ -106,7 +106,8 @@ source-git-commit: 453a14a4b725dd14f445b089d083a83a5d2ffaa4
    + [Analytics 與 ID 服務常見問題集](faq-intro/analytics-faq.md)
    + [其他 Experience Cloud 解決方案的常見問題集](faq-intro/other-faq.md)
 + ID 服務發行說明 {#release-notes}
-   + [2019 年發行說明](release-notes/release-notes.md)
+   + [2020 年發行說明](release-notes/release-notes.md)
+   + [2019 年發行說明](release-notes/notes-2019.md)
    + [2018 年發行說明](release-notes/notes-2018.md)
    + [2017 年發行說明](release-notes/notes-2017.md)
    + [2016 年發行說明](release-notes/notes-2016.md)
