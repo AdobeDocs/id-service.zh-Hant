@@ -5,7 +5,7 @@ seo-description: 這些範例涵蓋 2 個與直接整合和 Experience Cloud ID 
 seo-title: 直接整合的使用案例
 title: 直接整合的使用案例
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 
 ---
@@ -13,17 +13,17 @@ source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 
 # 直接整合的使用案例 {#direct-integration-use-cases}
 
-這些範例涵蓋直接整合和Experience Cloud ID（ECID或MID）的2個常見使用案例。 此ID是網站訪客的唯一永續ID。
+這些範例涵蓋 2 個與直接整合和 Experience Cloud ID (ECID 或 MID) 相關的常見使用案例。此 ID 是每個網站訪客專屬的永久性唯一 ID。
 
 >[!TIP]
 >
->* 研究使用案例前，請先檢閱並瞭解[程式碼語法和變數](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9)。
+>* 參閱使用案例前，請先檢閱並瞭解[程式碼語法和變數](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9)。
 >* 如需有關 MID 的詳細資訊，請參閱 [Cookie 與 Experience Cloud Identity 服務](../introduction/cookies.md)。
 >
 
 
 
-## 使用案例 1: 我有 Experience Cloud ID (MID)，但想傳遞我自己的訪客 ID，並設定驗證狀態 {#section-a67d89a343754d1286d03cf08d34b806}
+## 使用案例 1：我有 Experience Cloud ID (MID)，但想傳遞我自己的訪客 ID，並設定驗證狀態 {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
@@ -35,7 +35,7 @@ source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>條件</b> </p> </td> 
-   <td colname="col2"> <p>此使用案例假設您: </p> 
+   <td colname="col2"> <p>此使用案例假設您： </p> 
     <ul id="ul_F20231F83EE84889B78971A64E758757"> 
      <li id="li_20F3E96493724CD2BAF4B20AEE5CBF23">已有網站訪客的 MID。我們將這個 ID 稱為 1234。 </li> 
      <li id="li_A358C58CC58C4FCBB7250F5ED108AA71">透過您自己的唯一 ID 認識此訪客。我們將這個 ID 稱為 9876。 </li> 
@@ -45,7 +45,7 @@ source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>動作</b> </p> </td> 
-   <td colname="col2"> <p>基於上述條件，請對 ID 服務進行呼叫，並須包含: </p> 
+   <td colname="col2"> <p>基於上述條件，請對 ID 服務進行呼叫，並須包含： </p> 
     <ul id="ul_9ECB1A65266644E89E949C57D202D5A4"> 
      <li id="li_10A6F5A9C54D44A08F4F2E405E6019E2">MID (1234)。 </li> 
      <li id="li_4869572B40E54C54B88A2474DAC475A8">您的資料提供者 ID。這是指派至貴公司的唯一 ID。我們將這個 ID 稱為 4444。 </li> 
@@ -55,17 +55,17 @@ source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>解決方案與程式碼範例</b> </p> </td> 
-   <td colname="col2"> <p>呼叫 ID 服務的格式如下所示: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>請注意，範例呼叫包含以下內容的方式: </p> 
+   <td colname="col2"> <p>呼叫 ID 服務的格式如下所示： </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>請注意，範例呼叫包含以下內容的方式： </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
-     <li id="li_FAB1FAE703DB48D1A32EE72684028964">MID: <span class="codeph">d_mid=1234</span> </li> 
-     <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">加入您的訪客唯一 ID 的 MID: <span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
-     <li id="li_D428DBF765234DD78DDF152C5EE8AB69">驗證狀態 ID: <span class="codeph">...d_cid=4444%019876%011</span> (提示: 這是最後一碼)。 </li> 
+     <li id="li_FAB1FAE703DB48D1A32EE72684028964">MID：<span class="codeph">d_mid=1234</span> </li> 
+     <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">加入您的訪客唯一 ID 的 MID：<span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
+     <li id="li_D428DBF765234DD78DDF152C5EE8AB69">驗證狀態 ID：<span class="codeph">...d_cid=4444%019876%011</span> (提示：這是最後一碼)。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 使用案例 2: 我沒有 MID 且需要產生一個 MID {#section-8e81291f8b684de8b88fae4002ae0029}
+## 使用案例 2：我沒有 MID 且需要產生一個 MID {#section-8e81291f8b684de8b88fae4002ae0029}
 
 <table id="table_666A92693F8A413096DF6A64770C1141"> 
  <thead> 
@@ -77,7 +77,7 @@ source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>條件</b> </p> </td> 
-   <td colname="col2"> <p>此使用案例假設您: </p> 
+   <td colname="col2"> <p>此使用案例假設您： </p> 
     <ul id="ul_BF3BD821907B46A4B2EFA63146D35722"> 
      <li id="li_E658AE0671D14558B65FDD8992F25996">沒有網站訪客的 MID。 </li> 
      <li id="li_28A48BB3F71C4E4297F95A2D3E10AD7B">需要向 ID 服務要求 MID。 </li> 
@@ -90,7 +90,7 @@ source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>解決方案與程式碼範例</b> </p> </td> 
-   <td colname="col2"> <p>呼叫 ID 服務的格式如下所示: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>請注意，範例呼叫含有您組織 ID <span class="codeph">(d_orgid=5555)</span> 的方式。系統會傳回此訪客的 <span class="keyword">Experience Cloud</span> ID。 </p> </td> 
+   <td colname="col2"> <p>呼叫 ID 服務的格式如下所示： </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>請注意，範例呼叫含有您組織 ID <span class="codeph">(d_orgid=5555)</span> 的方式。系統會傳回此訪客的 <span class="keyword">Experience Cloud</span> ID。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
