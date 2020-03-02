@@ -1,28 +1,28 @@
 ---
-description: Experience Cloud Identity 服務的功能發佈、更新或變更。
+description: 提供 Experience Cloud Identity 服務的功能發佈、更新或變更資訊。
 keywords: ID Service
-seo-description: Experience Cloud Identity 服務的功能發佈、更新或變更。
+seo-description: 提供 Experience Cloud Identity 服務的功能發佈、更新或變更資訊。
 seo-title: 2019 年發行說明
 title: 2019 年發行說明
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 
 ---
 
 
-# Experience Cloud release notes - 2019 {#release-notes}
+# Experience Cloud 發行說明 - 2019 {#release-notes}
 
-Experience Cloud Identity 服務的功能發佈、更新或變更。
+提供 Experience Cloud Identity 服務的功能發佈、更新或變更資訊。
 
 ## 4.4.1 版
 
-在ECID Launch Extension中新增媒體分析的選擇加入核准前核取方塊(CORE-33185)
+在 ECID Launch Extension 中新增媒體分析在核准加入服務前的核取方塊 (CORE-33185)
 
 **修正**
 
-* ECID啟動擴充功能preOptInApprovals輸入字串剖析問題(CORE-34041)
-* 使用trackingServer時的效能下降(CORE-32387)
+* ECID 啟動擴充功能 preOptInApprovals 輸入字串剖析問題 (CORE-34041)
+* 使用 trackingServer 時效能下降 (CORE-32387)
 
 ## 版本 4.4 {#version-4point4}
 
@@ -50,22 +50,22 @@ Experience Cloud Identity 服務的功能發佈、更新或變更。
 
 ## 4.1 版
 
-依新 `publishDestinations` API變更更新。 透過此更新，頁面的反向連結資訊可在 ID 同步期間公開 (如有需要)。(CORE - 23693)
+依據新 `publishDestinations` API 變更更新。透過此更新，頁面的反向連結資訊可在 ID 同步期間公開 (如有需要)。(CORE - 23693)
 
 
 ## 4.2 版
 
-支援IAB TCF的Audience manager外掛程式，可透過ECID選擇加入物件取得。
+支援適用於 IAB TCF 的 Audience Manager 增效模組，這可透過 ECID 選擇加入物件取得。
 
 **修正**
 
-* IAB + OptIn無法取得MID以重新造訪客戶(CORE-26022)
-* 修正DTM(DTM-12958)中選擇加入doesOptInApply組態的錯誤
-* ECID選擇退出會停用ID同步(CORE-23814)
+* IAB + OptIn 無法取得 MID 以重新造訪客戶 (CORE-26022)
+* 修正 DTM 中選擇加入 doesOptInApply 組態的錯誤 (DTM-12958)
+* ECID 選擇退出會停用 ID 同步功能 (CORE-23814)
 
 ## 版本 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**選擇加入服務**。選擇加入是 Experience Cloud ID (ECID) 的擴充功能，可讓您控制 Experience Cloud 資料庫是否可以在網頁上建立訪客的 Cookie，以及使用哪個資料庫來執行。Using [Experience Platform Launch](https://docs.adobelaunch.com/), you can simplify gathering visitor opt-in consents for Experience Cloud solution by enabling Analytics, Target, Audience Manager, and other or all select Experience Cloud solutions to opt-in to your consent management system.
+**選擇加入服務**。選擇加入是 Experience Cloud ID (ECID) 的擴充功能，可讓您控制 Experience Cloud 資料庫是否可以在網頁上建立訪客的 Cookie，以及使用哪個資料庫來執行。您可以使用 [Experience Platform Launch](https://docs.adobelaunch.com/)，讓 Analytics、Target、Audience Manager 及其他或所有指定 Experience Cloud 解決方案選擇加入您的同意管理系統，簡化 Experience Cloud 解決方案收集訪客是否同意選擇加入的程序。
 
 ## 版本 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
