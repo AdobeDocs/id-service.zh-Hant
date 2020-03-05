@@ -5,8 +5,8 @@ seo-description: 內容安全性原則 (CSP) 是一項 HTTP 標題和安全性�
 seo-title: 內容安全性原則及 Experience Cloud Identity 服務
 title: 內容安全性原則及 Experience Cloud Identity 服務
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
-source-git-commit: 4c642bd9f1ca6841f6d532cef2c11ce4acca0b61
+translation-type: tm+mt
+source-git-commit: 7255228470a59a537251c3a3eec686f52a2b76ec
 
 ---
 
@@ -52,8 +52,14 @@ CSP 會利用 HTTP 標頭 `Content-Security-Policy` 來控制瀏覽器要接受�
    <td colname="col2"> <p>修改您的 CSP 以包含 <span class="codeph">*.tt.omtrdc.net</span>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>訪客 ID 服務</b> </p> </td> 
-   <td colname="col2"> <p>修改您的 CSP 以包含 <span class="codeph">*.demdex.net</span>。 </p> <p>對 <span class="codeph">demdex.net</span> 網域發出的呼叫用於產生 <a href="../introduction/cookies.md" format="dita" scope="local">Cookie 與 Experience Cloud Identity 服務</a>及用於 ID 同步。亦請參閱<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">瞭解向 Demdex 網域進行的呼叫</a>。 </p> </td> </tr> 
+   <td colname="col1"> <p> <b>Experience Cloud ID服務與Audience Manager</b> </p> </td> 
+   <td colname="col2"> <p>修改您的CSP以包含下列網域。</p> 
+   <p><ul>
+   <li>connect-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
+   <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
+   <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
+   <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
+   <li>如果您使用Adobe Launch來部署標籤，您也必須新 <code>https://assets.adobedtm.com</code> 增至網域清單。</li></ul></p> <p>對 <span class="codeph">demdex.net</span> 網域發出的呼叫用於產生 <a href="../introduction/cookies.md" format="dita" scope="local">Cookie 與 Experience Cloud Identity 服務</a>及用於 ID 同步。亦請參閱<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">瞭解向 Demdex 網域進行的呼叫</a>。 </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Activity Map 增效模組</b> </p> </td> 
  <td colname="col2"> <p>修改您的 CSP 以包含 *.adobe.com。**注意**：如果您在 2020 年 1 日前即已安裝 Activity Map，您的瀏覽器仍會收到 *.omniture.com 的原始請求，但會將其重新導向 *.adobe.com。 </p></td> 
@@ -63,6 +69,6 @@ CSP 會利用 HTTP 標頭 `Content-Security-Policy` 來控制瀏覽器要接受�
 
 >[!MORELIKETHIS]
 >* [內容安全性原則參考](https://content-security-policy.com/)
->* [MDN：內容安全性原則](https://developer.mozilla.org/zh-TW/docs/Web/HTTP/CSP)
+>* [MDN：內容安全性原則](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
 >* [Wikipedia：內容安全性原則](https://en.wikipedia.org/wiki/Content_Security_Policy)
 
