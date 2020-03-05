@@ -1,16 +1,16 @@
 ---
 description: 連結同意管理平台 (CMP) 和選擇加入的適用於 IAB 透明與同意架構 (TCF) Audience Manager 增效模組。
 seo-description: 連結同意管理平台 (CMP) 和適用於 IAB 透明與同意架構 (TCF) 的 Audience Manager 增效模組。
-seo-title: (測試版) 搭配 IAB 架構使用選擇加入服務
-title: (測試版) 搭配 IAB 架構使用選擇加入服務
+seo-title: 搭配IAB Framework使用選擇加入服務
+title: 搭配IAB Framework使用選擇加入服務
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
-translation-type: ht
-source-git-commit: ab85467ad0f9f661c472eb373809c699c4b9130f
+translation-type: tm+mt
+source-git-commit: 5c20510d9b2174b14599eab04fb694389ff87589
 
 ---
 
 
-# (測試版) 搭配 IAB 架構使用選擇加入服務{#beta-using-opt-in-services-with-iab-framework}
+# Using Opt-in Services with IAB Framework{#using-opt-in-services-with-iab-framework}
 
 連結同意管理平台 (CMP) 和選擇加入之適用於 IAB TCF 的 Audience Manager 增效模組。
 
@@ -44,7 +44,7 @@ Visitor.getInstance("YOUR_ORG_ID", {
 
 >[!IMPORTANT]
 >
->Audience Manager 需要&#x200B;*目的 1、2 和 5 的同意，加上廠商同意*，才能部署 Cookie，並初始化或執行 ID 同步。若要深入瞭解有關適用於 IAB TCF 的 Audience Manager 增效模組，請參閱[這裡](https://docs.adobe.com/help/zh-Hant/audience-manager/user-guide/overview/gdpr/aam-iab-plugin.html)的 Audience Manager 文件。
+>Audience Manager 需要&#x200B;*目的 1、2 和 5 的同意，加上廠商同意*，才能部署 Cookie，並初始化或執行 ID 同步。若要深入瞭解有關適用於 IAB TCF 的 Audience Manager 增效模組，請參閱[這裡](https://docs.adobe.com/help/en/audience-manager/user-guide/overview/gdpr/aam-iab-plugin.html)的 Audience Manager 文件。
 
 如需如何驗證選擇加入和適用於 IAB TCF 的 Audience Manager 增效模組的詳細資訊，請在[這裡](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0)參閱驗證指南中的使用案例 4。
 
@@ -52,6 +52,6 @@ Visitor.getInstance("YOUR_ORG_ID", {
 
 * [IAB 透明與同意架構 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) - IAB 標準的詳細資訊
 * [Adobe 選擇加入](../../implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360) - 選擇加入的詳細資訊；選擇加入為平台解決方案中同意管理的必要元件
-* [Audience Manager 中的](https://marketing-beta.adobe.com/resources/help/aam/iab-support/aam-iab-support.html) IAB 透明與同意架構 (TCF) 支援
-* [您的隱私權選擇](https://www.adobe.com/tw/privacy/opt-out.html#customeruse) - 另一個可由使用者自行決定的隱私權選項是，是可使用其他全域選擇退出工具來選擇退出所有資料收集。全域選擇退出優先於選擇加入和 IAB 驗證
+* [Audience Manager 中的](https://docs.adobe.com/content/help/en/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html) IAB 透明與同意架構 (TCF) 支援
+* [您的隱私權選擇](https://www.adobe.com/privacy/opt-out.html#customeruse) - 另一個可由使用者自行決定的隱私權選項是，是可使用其他全域選擇退出工具來選擇退出所有資料收集。全域選擇退出優先於選擇加入和 IAB 驗證
 
