@@ -5,8 +5,8 @@ seo-description: 提供 Experience Cloud Identity 服務的功能發佈、更新
 seo-title: 2019 年發行說明
 title: 2019 年發行說明
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: ht
-source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
+translation-type: tm+mt
+source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 
 ---
 
@@ -17,12 +17,12 @@ source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 
 ## 4.4.1 版
 
-在 ECID Launch Extension 中新增媒體分析在核准加入服務前的核取方塊 (CORE-33185)
+在 ECID Launch Extension 中新增媒體分析在核准加入服務前的核取方塊.
 
 **修正**
 
-* ECID 啟動擴充功能 preOptInApprovals 輸入字串剖析問題 (CORE-34041)
-* 使用 trackingServer 時效能下降 (CORE-32387)
+* ECID啟動擴充功能preOptInApprovals輸入字串剖析問題。
+* 使用trackingServer時的效能下降。
 
 ## 版本 4.4 {#version-4point4}
 
@@ -32,15 +32,11 @@ source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 
 **修正、增強功能、改進項目**
 
-* 我們已對 `cookieDomain` 進行設定上的更新。ECID 程式庫現在會篩選掉 `initConfig` 中的空白字串 `cookieDomain`，並使用由 getDomain 方法傳回的頂層 Cookie 網域。(CORE - 29223)
-
-* 我們已在 `localVisitor` 中修正 `getVisitorValues` 的相關問題。(CORE - 31287)
-
-* 我們已修正 Safari 瀏覽器中，`getVisitorValue` 方法傳回的 MCOTOUT 值不一致的錯誤。(CORE - 29719)
-
+* 我們已對 `cookieDomain` 進行設定上的更新。ECID 程式庫現在會篩選掉 `initConfig` 中的空白字串 `cookieDomain`，並使用由 getDomain 方法傳回的頂層 Cookie 網域。
+* 我們已在 `getVisitorValues` 中修正 `localVisitor` 的相關問題。
+* 我們已修正 Safari 瀏覽器中，`getVisitorValue` 方法傳回的 MCOTOUT 值不一致的錯誤。
 * 我們更新了選擇加入程式庫，新增 `optIn.off` 以取消訂閱事件。
-* 我們修正了與 setTimeout 函數相關的錯誤，其中 `setTimeout` 在某些客戶網站上違反了內容安全性原則 (CSP)。(CORE - 30623)
-
+* 我們修正了與 setTimeout 函數相關的錯誤，其中 `setTimeout` 在某些客戶網站上違反了內容安全性原則 (CSP)。
 
 ## 版本 4.3 {#version-4point3}
 
@@ -50,8 +46,7 @@ source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 
 ## 4.1 版
 
-依據新 `publishDestinations` API 變更更新。透過此更新，頁面的反向連結資訊可在 ID 同步期間公開 (如有需要)。(CORE - 23693)
-
+依據新 `publishDestinations` API 變更更新。透過此更新，頁面的反向連結資訊可在 ID 同步期間公開 (如有需要)。
 
 ## 4.2 版
 
@@ -59,9 +54,9 @@ source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 
 **修正**
 
-* IAB + OptIn 無法取得 MID 以重新造訪客戶 (CORE-26022)
-* 修正 DTM 中選擇加入 doesOptInApply 組態的錯誤 (DTM-12958)
-* ECID 選擇退出會停用 ID 同步功能 (CORE-23814)
+* IAB + OptIn 無法取得 MID 以重新造訪客戶.
+* 已修正DTM中選擇加入doesOptInApply組態的錯誤。
+* ECID 選擇退出會停用 ID 同步功能.
 
 ## 版本 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
@@ -72,4 +67,4 @@ source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 | 項目 | 說明 |
 |---|---|
 | 傳入字串時，無法使用 `disableIdSyncs` 標幟。 | 此問題已修正。`getInstance` 函數的 `disableidSyncs` 參數所設定的值現會執行。 |
-| 第三方 iFrame 未取得 ECID | 修正 Safari Mobile 上的 ECID 和多種 iFrame 中的 ECID 無法使用的問題。 |
+| 協力廠商iFrames未取得ECID | 已修正Safari Mobil和不同iFrames中無法運作的ECID。 |
