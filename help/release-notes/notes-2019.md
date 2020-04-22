@@ -5,7 +5,7 @@ seo-description: 提供 Experience Cloud Identity 服務的功能發佈、更新
 seo-title: 2019 年發行說明
 title: 2019 年發行說明
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 
 ---
@@ -17,12 +17,12 @@ source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 
 ## 4.4.1 版
 
-在 ECID Launch Extension 中新增媒體分析在核准加入服務前的核取方塊.
+在 ECID Launch Extension 中新增媒體分析在核准加入服務前的核取方塊。
 
 **修正**
 
-* ECID啟動擴充功能preOptInApprovals輸入字串剖析問題。
-* 使用trackingServer時的效能下降。
+* ECID 啟動擴充功能 preOptInApprovals 輸入字串剖析問題。
+* 使用 trackingServer 時效能下降。
 
 ## 版本 4.4 {#version-4point4}
 
@@ -54,9 +54,9 @@ source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 
 **修正**
 
-* IAB + OptIn 無法取得 MID 以重新造訪客戶.
-* 已修正DTM中選擇加入doesOptInApply組態的錯誤。
-* ECID 選擇退出會停用 ID 同步功能.
+* IAB + OptIn 無法取得 MID 以重新造訪客戶。
+* 修正 DTM 中選擇加入 doesOptInApply 組態的錯誤。
+* ECID 選擇退出會停用 ID 同步功能。
 
 ## 版本 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
@@ -67,4 +67,4 @@ source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 | 項目 | 說明 |
 |---|---|
 | 傳入字串時，無法使用 `disableIdSyncs` 標幟。 | 此問題已修正。`getInstance` 函數的 `disableidSyncs` 參數所設定的值現會執行。 |
-| 協力廠商iFrames未取得ECID | 已修正Safari Mobil和不同iFrames中無法運作的ECID。 |
+| 協力廠商 iFrames 未取得 ECID | 修正 Safari Mobil 和不同 iFrames 上 ECID 無法運作的問題。 |
