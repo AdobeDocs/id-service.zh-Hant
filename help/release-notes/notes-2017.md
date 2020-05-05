@@ -1,12 +1,12 @@
 ---
 description: 2017 年 Experience Cloud Identity 服務的功能發佈、更新或變更。
-keywords: ID 服務
+keywords: ID Service
 seo-description: 2017 年 Experience Cloud Identity 服務的功能發佈、更新或變更。
 seo-title: 2017 年發行說明
 title: 2017 年發行說明
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 2017 年 Experience Cloud Identity 服務的功能發佈、更新或變更。
 
-[Experience Cloud 發行說明](https://marketing.adobe.com/resources/help/en_US/whatsnew/)也會納入這些變更。如需查看較早的 ID 服務發行說明，請參閱[之前的發行說明](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)或此頁面底部的連結。
+這些變更也會在 [Experience Cloud發行說明中擷取](https://docs.adobe.com/content/help/zh-Hant/release-notes/experience-cloud/current.html)。
 
 >[!NOTE]
 >
@@ -49,9 +49,9 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **錯誤修正與其他變更**
 
-* 先前在瀏覽器中按上一頁按鈕時會造成 ID 服務擲回錯誤，這個與 Chrome 相關的錯誤已經修正。
-* 現在當事件呼叫回應中的地區 ID 變更時，ID 服務就會重新進行 ID 同步。
-* 新增文件，[內容安全性原則及 Experience Cloud Identity 服務](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)，說明如何將 ID 服務使用的 Adobe 網域呼叫加入白名單。
+* 修正當在瀏覽器中按一下上一頁按鈕時，造成ID服務擲回錯誤的Chrome相關錯誤。
+* 現在，當事件呼叫回應中的區域ID變更時，ID服務會重新引發ID同步。
+* Added new documentation, [Content Security Policies and the Experience Cloud Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), that explains how to whitelist calls to Adobe domains used by the ID service.
 
 ## 版本 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -74,7 +74,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **修訂後的文件**
 
-更新及修訂[常見問題集](/help/faq-intro/faq-intro.md)以將不同的 [!DNL Experience Cloud] 解決方案納入不同的常見問題集中。
+更新並修訂常見問 [答集](/help/faq-intro/faq-intro.md) ，加入不同解決方案的個別常見 [!DNL Experience Cloud] 問答集。
 
 ## 版本 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
@@ -101,8 +101,8 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **錯誤修正與其他變更**
 
-* 修正在 VisitorAPI.js v2.2 中，ID 服務和 Target 無法搭配 Internet Explorer 使用的錯誤。
-* 修訂程式碼，協助改善 ID 服務傳送資料至 Destination Publishing iFrame (目的地發佈 iFrame) 的方式。此修訂可降低 CPU 使用量。
+* 修正VisitorAPI.js v2.2中ID服務與Target無法在Internet Explorer中搭配運作的錯誤。
+* 修訂程式碼，以協助改善ID服務傳送資料至「目標發佈iFrame」的方式。 這有助於降低CPU使用量。
 
 ## 版本 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
 
@@ -118,12 +118,12 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/whitelistdomain.md#reference-999899ff7b5b429a8824c9db7a379808" format="dita" scope="local"> whitelistParentDomain 及 whitelistIframeDomains </a> </p> </td> 
-   <td colname="col2"> <p>這些設定可讓實作於 iFrame 及上層頁面的不同 ID 服務代碼執行個體互相通訊。這兩個設定專為協助解決 2 個特定使用案例問題而設計。在特定使用案例中，您可能需要控制上層頁面/網域，並擁有載入您所控制網域之 iFrame 的 ID 服務代碼。 </p> </td> 
+   <td colname="col2"> <p>這些設定可讓實作於 iFrame 及上層頁面的不同 ID 服務代碼執行個體互相通訊。這些程式碼可協助您解決2種特定使用案例的問題，例如您可能控制或無法控制上層頁面／網域，且您在您控制之網域的iFrame中載入ID服務程式碼。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 5 月的文件更新 {#section-1d36b91bb7a140ce8a145251ffac9f2f}
+## Documentation Updates for May {#section-1d36b91bb7a140ce8a145251ffac9f2f}
 
 <table id="table_CD031A716A694E8FA89695C9B614BC91"> 
  <thead> 
@@ -180,7 +180,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
    <td colname="col2"> <p>該屬性會設定 <span class="keyword">Audience Manager</span> 所使用的容器 ID 以供 ID 同步之用。請參閱 <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external">idSyncContainerID</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>ID 服務 API 方法，<span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
+   <td colname="col1"> <p>ID service API method, <span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
    <td colname="col2"> <p>此公用方法可附加至<span class="wintitle">增補資料 ID</span> (SDID) 作為查詢字串參數，以重新導向 URL。請參閱 <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>。(MCID-285) </p> </td> 
   </tr> 
  </tbody> 
@@ -188,11 +188,11 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **修正**
 
-修正導致 ID 服務不使用儲存在 AMCV Cookie 中的 ID，而對伺服器作出無謂呼叫以取得 ID 的錯誤。(MCID-296)
+修正ID服務會針對ID而非使用儲存在AMCV Cookie中的ID，進行備援伺服器呼叫的錯誤。 (MCID-296)
 
 **新增文件**
 
-[搭配不同的 Experience Cloud 解決方案和服務使用 DNS 預先擷取`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
+[使用DNS預取搭配不同的Experience Cloud解決方案和服務](https://docs.adobe.com/content/help/en/core-services/interface/more-resources/dns-prefetch.html)
 
 ## 版本 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
@@ -204,10 +204,10 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **修正和改良**
 
-* 修正 AppMeasurement 無法追蹤對 Analytics 之呼叫的錯誤。(MCID-254、MCID-256、MCID-286)
-* 修正若訪客啟用廣告封鎖程式而該封鎖程式被設定為排除 demdex.net 網域時，ID 服務無法立即失效的錯誤。這是相當罕見且不尋常的錯誤，因為大多數的廣告封鎖工具不會封鎖 demdex.net 網域。(MCID-233)
-* 修正因 ID 服務代碼和客戶網站上的自訂指令碼互動所引發的錯誤。此問題導致 Internet Explorer 9 無法載入網頁。(MCID-206)
+* 修正AppMeasurement無法對Analytics進行追蹤呼叫的錯誤。 (MCID-254、MCID-256、MCID-286)
+* 修正當訪客啟用廣告封鎖程式且該封鎖程式設定為排除demdex.net網域時，ID服務無法立即失敗的錯誤。 這是個罕見且不尋常的錯誤，因為大部分的廣告封鎖工具並未封鎖demdex.net網域。 (MCID-233)
+* 修正ID服務程式碼與客戶網站上自訂指令碼互動所造成的錯誤。 此問題導致Internet Explorer 9無法載入網頁。 (MCID-206)
 
-## 前幾年 {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
+## 往年 {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
 舊版的 ID 服務發行說明。
