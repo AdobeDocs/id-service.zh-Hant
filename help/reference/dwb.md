@@ -1,23 +1,23 @@
 ---
-description: 遵循下列指示，將 Experience Cloud ID 欄位整合至 Data Workbench。此程序可讓您在資料資訊源中使用永久 Experience Cloud ID，以便與 Adobe Experience Cloud 中的其他產品進行更有力的整合，提供強大的訪客追蹤功能。
-keywords: ID 服務
-seo-description: 遵循下列指示，將 Experience Cloud ID 欄位整合至 Data Workbench。此程序可讓您在資料資訊源中使用永久 Experience Cloud ID，以便與 Adobe Experience Cloud 中的其他產品進行更有力的整合，提供強大的訪客追蹤功能。
+description: 請依照下列指示，將Experience Cloud ID欄位整合至資料工作台。 此程式可讓您在資料饋送中使用永久性的Experience Cloud ID，這可讓您與Adobe Experience Cloud中的其他產品更緊密整合，並提供增強的訪客追蹤功能。
+keywords: ID Service
+seo-description: 請依照下列指示，將Experience Cloud ID欄位整合至資料工作台。 此程式可讓您在資料饋送中使用永久性的Experience Cloud ID，這可讓您與Adobe Experience Cloud中的其他產品更緊密整合，並提供增強的訪客追蹤功能。
 seo-title: Data Workbench 與 Experience Cloud Identity 服務
 title: Data Workbench 與 Experience Cloud Identity 服務
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # Data Workbench 與 Experience Cloud Identity 服務 {#data-workbench-and-the-experience-cloud-id-service}
 
-遵循下列指示，將 Experience Cloud ID 欄位整合至 Data Workbench。此程序可讓您在資料資訊源中使用永久 Experience Cloud ID，以便與 Adobe Experience Cloud 中的其他產品進行更有力的整合，提供強大的訪客追蹤功能。
+請依照下列指示，將Experience Cloud ID欄位整合至資料工作台。 此程式可讓您在資料饋送中使用永久性的Experience Cloud ID，這可讓您與Adobe Experience Cloud中的其他產品更緊密整合，並提供增強的訪客追蹤功能。
 
-若要更新 [Data Workbench](https://marketing.adobe.com/resources/help/en_US/insight/) 以使用 ID 服務:
+To update [Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/home.html) to use the ID service:
 
-1. 找出目前的[解碼器群組](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html)設定檔。
+1. 找出目前的 [解碼器群組](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html) 設定檔案。
 
    [!DNL Decoder Group] 通常位於[!UICONTROL 設定檔管理員]中，路徑如下: `Dataset\Log Processing\Decoding Instructions.cfg`。1. 從設定檔複製最新的解碼器格式。
 1. 在原始解碼器格式下方貼上解碼器格式。
@@ -25,9 +25,9 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
    * `x-mcvisid`
    * `x-tnt-action`
-   如果您不打算使用或定義這些欄位，請將欄位保留空白。**解碼指示**
+   如果您不打算使用或定義這些欄位，請將欄位保留空白。**解碼指令**
 
-請參閱下方完整的解碼器內容，包括上述的新欄位。
+請參閱以下完整的解碼器內容，包括上述新欄位。
 
 ```js
 Log Processing Include = LogProcessingInclude:   
