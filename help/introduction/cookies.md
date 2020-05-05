@@ -1,12 +1,12 @@
 ---
 description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie 及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
-keywords: playstation;ID 服務
+keywords: playstation;ID Service
 seo-description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie 及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
 seo-title: Cookie 與 Experience Cloud Identity 服務
 title: Cookie 與 Experience Cloud Identity 服務
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: ht
-source-git-commit: 7d7ecdf65cca67539b1b63c8811a0bad04c694c3
+translation-type: tm+mt
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -17,21 +17,21 @@ ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie 及 Demdex Cookie�
 
 ## 瞭解 ID 服務 Cookie {#section-f438168beaec409ab8b2cc58bd021e26}
 
-ID 服務有賴 AMCV、AMCVS 和 Demdex Cookie 才能順利運作。這些 Cookie 只是儲存 ID 服務所使用之資料的檔案。這些 ID 服務與其他網站或服務儲存在瀏覽器中的第一方或第三方 Cookie 相同，都不具危險性和惡意，且也遵守與管理其他第一方或第三方 Cookie 相同的規則。請參考下方各節以取得 ID 服務所使用 Cookie 的更多資訊。
+ID服務需仰賴AMCV、AMCVS和Demdex Cookie才能正常運作。 這些Cookie只是儲存ID服務所使用資料的檔案。 這些ID服務Cookie與網站或服務在瀏覽器中儲存的其他第一方或第三方Cookie並無危險、惡意或不同，且遵循的規則與其他第一方和第三方Cookie相同。 請參考下方各節以取得 ID 服務所使用 Cookie 的更多資訊。
 
 ### ID 服務 Cookie 具備的功能
 
-* 為您的網站訪客設定並儲存唯一的 ID (MID)。
-* 沿用此唯一 ID，以便 ID 服務與其他 Experience Cloud 解決方案收集和共用資料。
-* 在您的網域間追蹤使用者。不過，您需要擁有這些其他網域，並在其中部署了 ID 服務程式碼。
+* 設定並儲存網站訪客的唯一ID(MID)。
+* 保留此唯一ID，讓ID服務可以收集資料並與其他Experience Cloud解決方案共用。
+* 跨網域追蹤使用者。 但是，這需要您擁有其他網域，並在網域上部署ID服務程式碼。
 
 ### ID 服務 Cookie 不具備的功能
 
 * 儲存、傳輸或執行電腦病毒。
 * 存取或儲存個人識別資訊 (PII)，例如: 您的電子郵件地址。
-* 控制電腦的軟硬體。
-* 造成電腦不穩定或是產生效能問題。
-* 追蹤網站上沒有使用 ID 服務的使用者。
+* 控制電腦硬體或軟體。
+* 使電腦不穩定或導致效能問題。
+* 追蹤未使用ID服務之網站的使用者。
 
 ## AMCV Cookie {#section-c55af54828dc4cce89f6118655d694c8}
 
@@ -49,7 +49,7 @@ AMCV_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **內容**
 
-AMCV Cookie 包含 Experience Cloud 訪客 ID 或 MID。MID 儲存在遵循下列語法的機碼-值組中: `mid|<Experience Cloud ID>`。
+AMCV Cookie包含Experience Cloud訪客ID或MID。 MID 儲存在遵循下列語法的機碼-值組中: `mid|<Experience Cloud ID>`。
 
 完整格式的機碼值組類似以下:
 
@@ -57,13 +57,13 @@ AMCV Cookie 包含 Experience Cloud 訪客 ID 或 MID。MID 儲存在遵循下�
 mid|20265673158980419722735089753036633573
 ```
 
-此永久識別碼會啟用跨解決方案資料共用。
+此永續性識別碼可讓跨解決方案資料共用。
 
 **網域**
 
-已在瀏覽器的第一方網域中設定 AMCV Cookie。這表示在使用者目前造訪網站的網域中已設定此 Cookie。因此，ID 服務程式碼與其他 Experience Cloud 程式碼程式庫可讀取儲存在 AMCV Cookie 中的 MID。
+AMCV Cookie是在瀏覽器的第一方網域中設定。 這表示它是在使用者目前造訪之網站的網域中設定。 因此，ID服務程式碼和其他Experience Cloud程式碼程式庫可讀取儲存在AMCV Cookie中的MID。
 
-然而，因為已在第一方網域中設定 AMCV Cookie，所以無法用它來追蹤與識別不同網域的使用者。相反地，當網站訪客導覽至不同網域時，ID 服務將依賴組織 ID 與 Demdex ID，才能傳回正確的 MID。
+不過，由於AMCV Cookie是在第一方網域中設定，因此無法用來追蹤和識別不同網域的使用者。 相反地，當網站訪客導覽至不同網域時，ID服務會依賴組織ID和Demdex ID傳回正確的MID。
 
 ## AMCVS Cookie {#section-92a9454f1ac645948f9059b9fad928bf}
 
@@ -79,17 +79,17 @@ AMCVS_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **內容**
 
-AMCVS Cookie 會作為標幟，指出工作階段已初始化。其值一律為 `1`，直到工作階段結束為止。
+AMCVS Cookie會作為指示已初始化作業的旗標。 其值一律為 `1`，直到工作階段結束為止。
 
 **網域**
 
-已在瀏覽器的第一方網域中設定 AMCVS Cookie。這表示在使用者目前造訪網站的網域中已設定此 Cookie。
+AMCVS Cookie是在瀏覽器的第一方網域中設定。 這表示它是在使用者目前造訪之網站的網域中設定。
 
 ![](assets/AMCVS-cookie.png)
 
 ## Demdex Cookie {#section-7ff7d96d6e4141b08a84a75a63d7814c}
 
-下表列出並定義 Demdex Cookie 的一些重要屬性。
+下表列出並定義Demdex Cookie的某些重要屬性。
 
 <table id="table_18E3CAF3550E4BB6A199736AACE39202"> 
  <thead> 
@@ -101,26 +101,26 @@ AMCVS Cookie 會作為標幟，指出工作階段已初始化。其值一律為 
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>名稱</b> </p> </td> 
-   <td colname="col2"> <p>Cookie 名稱為「demdex」。 </p> </td> 
+   <td colname="col2"> <p>Cookie名稱為「demdex」。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>內容</b> </p> </td> 
-   <td colname="col2"> <p>Demdex Cookie 包含由 DCS 產生的 Demdex ID。 </p> </td> 
+   <td colname="col2"> <p>Demdex Cookie包含由DCS產生的Demdex ID。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>網域</b> </p> </td> 
-   <td colname="col2"> <p>已在瀏覽器的第三方 demdex.net 網域中設定 Demdex Cookie。此網域有別於使用者目前造訪的網站。 </p> <p>與第一方網域不同，AMCV Cookie、Demdex Cookie 與 ID 會可在不同網域中持續存在。Demdex ID 與您的組織 ID 是允許 ID 服務回傳並識別具有正確訪客 ID 的網站訪問者的通用值。 </p> </td> 
+   <td colname="col2"> <p>Demdex Cookie是在瀏覽器的第三方demdex.net網域中設定。 此網域與使用者目前造訪的網站不同。 </p> <p>與第一方不同，AMCV Cookie、Demdex Cookie和ID會持續存在於不同的網域。 Demdex ID和您的組織ID是允許ID服務傳回並識別具有正確訪客ID的網站訪客的通用值。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-如需相關資訊，請參閱[瞭解向 Demdex 網域進行的呼叫](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)。
+如需相關資訊，請參閱[瞭解向 Demdex 網域進行的呼叫](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/reference/demdex-calls.html)。
 
 ## 產生 Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
-Experience Cloud ID (MID) 是依照組織 ID 和 demdex ID 利用數學公式計算出來。只要這些 ID 保持不變，為特定用戶產生正確的 MID 只是單純的數學問題。每次使用相同的組織 ID 與 Demdex ID，就能獲得相同的 MID 值。這使得 ID 服務可以追蹤由您控制以及使用 ID 服務程式碼設定之網域的訪客。
+Experience Cloud ID (MID) 是依照組織 ID 和 demdex ID 利用數學公式計算出來。只要這些ID保持不變，為特定使用者產生正確的MID就只是數學問題。 使用相同的組織ID和Demdex ID，您每次都會獲得相同的MID值。 這可讓ID服務追蹤您控制並設定ID服務程式碼的網域訪客。
 
-ID 服務在您的頁面載入時隨即開始建立 MID。在此過程中，`visitorAPI.js` 程式碼資料庫提供的程式碼會將您的組織 ID 以事件呼叫的形式傳送至 ID 服務。ID 服務分別在 AMCV 與 Demdex Cookie 中，建立並回傳 MID 與 Demdex ID。
+當頁面載入時，ID服務會開始建立MID。 在此過程中，`visitorAPI.js` 程式碼資料庫提供的程式碼會將您的組織 ID 以事件呼叫的形式傳送至 ID 服務。ID 服務分別在 AMCV 與 Demdex Cookie 中，建立並回傳 MID 與 Demdex ID。
 
 ## Cookie 標幟
 
@@ -128,7 +128,7 @@ ID 服務在您的頁面載入時隨即開始建立 MID。在此過程中，`vis
 
 | Cookie (設定者) | httpOnly | Secure | SameSite |
 |--- |--- |--- |--- |
-| demdex (http 回應) | 無 | 是 | "無" |
+| demdex (http 回應) | 無 | 是 | &quot;無&quot; |
 | AMCV (Javascript) | 無 | 可設定 | 未設定 (預設為 Lax) |
 | AMCVS (Javascript) | 無 | 可設定 | 未設定 (預設為 Lax) |
 
