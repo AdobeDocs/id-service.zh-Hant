@@ -1,19 +1,19 @@
 ---
-description: getInstance 可針對特定 Experience Cloud 組織 ID 傳回訪客 ID 物件。必須有此例項，才能初始化透過 s.visitor 提供給 AppMeasurement 的訪客 ID 物件。
-keywords: ID 服務
-seo-description: getInstance 可針對特定 Experience Cloud 組織 ID 傳回訪客 ID 物件。必須有此例項，才能初始化透過 s.visitor 提供給 AppMeasurement 的訪客 ID 物件。
+description: getInstance會傳回指定Experience Cloud組織ID的訪客ID物件。 這是初始化透過s.visitor提供給AppMeasurement的訪客ID物件所必需的。
+keywords: ID Service
+seo-description: getInstance會傳回指定Experience Cloud組織ID的訪客ID物件。 這是初始化透過s.visitor提供給AppMeasurement的訪客ID物件所必需的。
 seo-title: getInstance
 title: getInstance
 uuid: 259b88a6-e3d0-4aab-b935-566099bdab98
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # getInstance{#getinstance}
 
-getInstance 可針對特定 Experience Cloud 組織 ID 傳回訪客 ID 物件。必須有此例項，才能初始化透過 s.visitor 提供給 AppMeasurement 的訪客 ID 物件。
+getInstance會傳回指定Experience Cloud組織ID的訪客ID物件。 這是初始化透過s.visitor提供給AppMeasurement的訪客ID物件所必需的。
 
 **語法**
 
@@ -33,7 +33,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 >[!CAUTION]
 >
->*請勿*&#x200B;以 `var visitor = new Visitor` 實例化 Visitor 函數。您必須使用此處指出的適當函數呼叫。套用至 [!UICONTROL VisitorAPI.js] 程式碼資料庫第三版或是更新版本。
+>*請勿*&#x200B;以 `var visitor = new Visitor` 實例化 Visitor 函數。您必須使用此處指出的適當函數呼叫。Applies to [!UICONTROL VisitorAPI.js] code library v3.0 or higher.
 
 **ActionScript/Flash**
 
@@ -51,7 +51,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-如果 `getInstance` 找不到現有例項，則會建立與傳回新例項。This is similar to the [ `s_gi()` function ](https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=function_s_gi.html) in [!DNL AppMeasurement].
+如果 `getInstance` 找不到現有例項，則會建立與傳回新例項。這類似於中 [ 的 `s_gi()` 函 ](https://docs.adobe.com/content/help/en/analytics/implementation/vars/functions/s-gi.html) 數 [!DNL AppMeasurement]。
 
 **常見用法**
 
