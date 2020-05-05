@@ -1,12 +1,12 @@
 ---
 description: 請參閱本節，確定您使用的解決方案、服務及程式碼版本是 Experience Cloud Identity 服務所要求的正確版本。
-keywords: ID 服務
+keywords: ID Service
 seo-description: 請參閱本節，確定您使用的解決方案、服務及程式碼版本是 Experience Cloud Identity 服務所要求的正確版本。
 seo-title: Experience Cloud Identity 服務的需求
 title: Experience Cloud Identity 服務的需求
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: ht
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+translation-type: tm+mt
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -35,19 +35,19 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
      <li id="li_13962F2CB1764091A84863BE499675A2">將內嵌頁尾程式碼放置在結束 <span class="codeph">&lt;/body&gt;</span> 標籤中。 </li> 
     </ul> <p>如果發生以下情形，標準實作將不受支援: </p> 
     <ul id="ul_3B62559317ED4C7AA548C3B8DBA281F7"> 
-     <li id="li_1F16C6D412944197BEA56BC24730782C"> 您將這些 DTM 內嵌程式碼放置在標記和/或頁面程式碼中的其他位置。 </li> 
-     <li id="li_05615C01F3A947BBBD41046E68377224"> 以非同步方式、呼叫/回撥方法或包裝函式附加、新增或載入 DTM 程式碼。 </li> 
-     <li id="li_B2137DFF627B473FA876580449026D2B">將多個內嵌程式碼例項放在同一頁面上。 </li> 
-    </ul> <p>另請參閱<a href="https://marketing.adobe.com/resources/help/zh_TW/dtm/?f=deployment.html" format="https" scope="external">內嵌程式碼和托管選項</a>。 </p> </td> 
+     <li id="li_1F16C6D412944197BEA56BC24730782C"> 將這些DTM內嵌代碼中的任一個放置在標籤和／或頁面代碼中的其他位置。 </li> 
+     <li id="li_05615C01F3A947BBBD41046E68377224"> 使用非同步方法、呼叫／回呼方法或包裝函式附加、新增或載入DTM程式碼。 </li> 
+     <li id="li_B2137DFF627B473FA876580449026D2B">在相同頁面上包含多個內嵌代碼例項。 </li> 
+    </ul> <p>另請參閱<a href="https://docs.adobe.com/content/help/zh-Hant/dtm/using/client-side/deployment.html" format="https" scope="external">內嵌程式碼和托管選項</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> 非標準實作 </a> </p> </td> 
-   <td colname="col2"> <p>對於非標準或手動實作，您必須依照本指南所述的程序來設定 ID 服務。如同上方的 DTM 指引，如果程式碼放置和載入錯誤，會建立不受支援的實施。 </p> </td> 
+   <td colname="col2"> <p>對於非標準或手動實作，您必須依照本指南所述的程序來設定 ID 服務。如同上方的 DTM 指引，如果程式碼放置和載入錯誤，會建立不受支援的實作。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Experience Cloud 需求: 組織 ID {#section-a02f537129a64ffbb690d5738d360c26}
+## Experience Cloud Requirements: Organization ID {#section-a02f537129a64ffbb690d5738d360c26}
 
 若要使用 ID 服務，貴公司必須啟用 [!DNL Experience Cloud] 並擁有組織 ID。如果您不確定公司的 [!DNL Experience Cloud] 狀態且需要尋找組織 ID，請檢查下列清單。
 
@@ -58,22 +58,22 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 <table id="table_6C74B676EB094C568D2439FDCC9A7830"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Experience Cloud 狀態 </th> 
+   <th colname="col1" class="entry"> Experience Cloud狀態 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>已啟用</b> </p> </td> 
-   <td colname="col2"> <p>如果貴公司已啟用 <span class="keyword">Experience Cloud</span>，但您沒有公司的組織 ID，請參閱<a href="https://marketing.adobe.com/resources/help/zh_TW/mcloud/organizations.html" format="https" scope="external">組織 ID</a> (向下捲動至「<i>尋找組織 ID</i>」一節)。 </p> </td> 
+   <td colname="col2"> <p>如果貴公司已啟用 <span class="keyword">Experience Cloud</span>，但您沒有公司的組織 ID，請參閱<a href="https://docs.adobe.com/content/help/zh-Hant/core-services/interface/manage-users-and-products/organizations.html" format="https" scope="external">組織 ID</a> (向下捲動至「<i>尋找組織 ID</i>」一節)。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>不確定</b> </p> </td> 
-   <td colname="col2"> <p> 如果您不清楚公司的 <span class="keyword">Experience Cloud</span> 狀態，但同事可使用 Adobe ID 登入 <a href="https://marketing.adobe.com" format="https" scope="external">marketing.adobe.com</a>，請詢問負責管理 Adobe 帳戶的人員。如果您可登入即表示已啟用，管理員就可檢視您的組織 ID。若要尋找組織 ID，請參閱 <a href="https://marketing.adobe.com/resources/help/zh_TW/mcloud/?f=admin_getting_started" format="https" scope="external">Experience Cloud 管理</a>的「管理頁面」一節。 </p> </td> 
+   <td colname="col2"> <p> 如果您不清楚公司的 <span class="keyword">Experience Cloud</span> 狀態，但同事可使用 Adobe ID 登入 <a href="https://experiencecloud.adobe.com" format="https" scope="external">marketing.adobe.com</a>，請詢問負責管理 Adobe 帳戶的人員。如果您可登入即表示已啟用，管理員就可檢視您的組織 ID。若要尋找組織 ID，請參閱 <a href="https://docs.adobe.com/help/zh-Hant/core-services/interface/experience-cloud.html" format="https" scope="external">Experience Cloud 管理</a>的「管理頁面」一節。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>未啟用</b> </p> </td> 
-   <td colname="col2"> <p> 如果貴公司未啟用 Experience Cloud，請參閱<a href="https://marketing.adobe.com/resources/help/zh_TW/mcloud/?f=admin_getting_started" format="https" scope="external">核心服務 - 啟用解決方案</a>以便開始使用。 </p> </td> 
+   <td colname="col2"> <p> 如果貴公司未啟用 Experience Cloud，請參閱<a href="https://docs.adobe.com/content/help/zh-Hant/core-services/interface/about-core-services/core-services.html" format="https" scope="external">核心服務 - 啟用解決方案</a>以便開始使用。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -95,7 +95,7 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 <table id="table_8E773F76DBCB4797A0C117080CA8707C"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Experience Cloud 解決方案 </th> 
+   <th colname="col1" class="entry"> Experience Cloud解決方案 </th> 
    <th colname="col3" class="entry"> 程式碼程式庫 </th> 
    <th colname="col4" class="entry"> 版本需求 </th> 
   </tr> 
@@ -108,7 +108,7 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
   </tr> 
   <tr> 
    <td colname="col1" morerows="2"> <p> <b> <span class="keyword"> Analytics </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> AppMeasurement.js</span> </p> <p>請參閱 <a href="https://marketing.adobe.com/resources/help/zh_TW/sc/implement/?f=appmeasure_mjs.html" format="https" scope="external">JavaScript 適用的 AppMeasurement</a>。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> AppMeasurement.js</span> </p> <p>請參閱 <a href="https://docs.adobe.com/content/help/zh-Hant/analytics/implementation/js/overview.html" format="https" scope="external">JavaScript 適用的 AppMeasurement</a>。 </p> </td> 
    <td colname="col4"> <p>1.6.4 或更新版本。 </p> </td> 
   </tr> 
   <tr> 
@@ -116,12 +116,12 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
    <td colname="col4"> <p>H.27 </p> <p> <p>注意:<span class="keyword"> Analytics</span> s_code H.27 版不再支援 ID 服務 1.6.0 版發行。請將您的程式碼升級至最新版 AppMeasurement。 </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p>影片心率 </p> <p>請參閱 <a href="https://marketing.adobe.com/resources/help/zh_TW/sc/appmeasurement/hbvideo/index.html" format="https" scope="external">JavaScript 適用的影片心率 2.x</a>。 </p> </td> 
+   <td colname="col3"> <p>影片心率 </p> <p>請參閱 <a href="https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/media-overview.html" format="https" scope="external">JavaScript 適用的影片心率 2.x</a>。 </p> </td> 
    <td colname="col4"> <p>2.0 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> 請參閱<a href="https://marketing.adobe.com/resources/help/en_US/aam/?f=c_dil.html" format="https" scope="external">資料整合程式庫</a> (DIL)。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> 請參閱<a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">資料整合程式庫</a> (DIL)。 </p> </td> 
    <td colname="col4"> <p>5.0 </p> <p> 
      <draft-comment>
        (從原來的 4.9 版更新) 
@@ -129,19 +129,19 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>請參閱 <a href="https://marketing.adobe.com/resources/help/zh_TW/target/ov/?f=c_mbox_technical.html" format="https" scope="external">Mbox 程式碼</a>。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>請參閱 <a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">Mbox 程式碼</a>。 </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>請參閱 <a href="https://marketing.adobe.com/resources/help/zh_TW/target/ov2/c_target-atjs-implementation.html" format="https" scope="external">at.js 實作</a>。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>請參閱 <a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">at.js 實作</a>。 </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Android 和 iOS 的 SDK 需求 {#section-73b2446fba8e463888642c7d7dfd94f1}
+## Android和iOS的SDK需求 {#section-73b2446fba8e463888642c7d7dfd94f1}
 
-ID 服務至少需要下方所列的 SDK 版本。
+ID服務至少需要下列的SDK版本。
 
 * Android: 4.11.0
 * iOS: 4.11.0
@@ -150,11 +150,11 @@ ID 服務至少需要下方所列的 SDK 版本。
 >
 >建議您使用最新版程式碼，而非需求所列的最低版本。
 
-您必須為 ID 服務啟用 SDK 程式碼。請在 [Adobe Mobile Services](https://mobilemarketing.adobe.com/) 帳戶中，為每個應用程式啟用並下載最新的 SDK 程式碼。另請參閱:
+您必須為 ID 服務啟用 SDK 程式碼。Enable and download the latest SDK code for each app from your [Adobe Mobile Services](https://mobilemarketing.adobe.com/) account. 另請參閱:
 
-* [配置 SDK 訪客 ID 服務選項](https://marketing.adobe.com/resources/help/zh_TW/mobile/t_config_visitor.html)
-* [Android SDK 方法](https://marketing.adobe.com/resources/help/zh_TW/mobile/android/c_marketing_cloud.html)
-* [iOS SKD 方法](https://marketing.adobe.com/resources/help/zh_TW/mobile/ios/marketing_cloud.html)
+* [配置 SDK 訪客 ID 服務選項](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
+* [Android SDK方法](https://docs.adobe.com/content/help/en/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
+* [iOS SKD方法](https://docs.adobe.com/content/help/en/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
 
 >[!MORELIKETHIS]
 >
