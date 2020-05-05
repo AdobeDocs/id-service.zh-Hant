@@ -1,19 +1,19 @@
 ---
-description: 這些指示適用於想使用 Experience Cloud Identity 服務但不想使用 Dynamic Tag Management (DTM) 的 Target 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
-keywords: ID 服務
-seo-description: 這些指示適用於想使用 Experience Cloud Identity 服務但不想使用 Dynamic Tag Management (DTM) 的 Target 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
+description: 這些指示適用於想使用 Experience Cloud Identity 服務但不想使用 Dynamic Tag Management (DTM) 的 Target 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM可簡化實作工作流程，並自動確保正確的程式碼放置和順序。
+keywords: ID Service
+seo-description: 這些指示適用於想使用 Experience Cloud Identity 服務但不想使用 Dynamic Tag Management (DTM) 的 Target 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM可簡化實作工作流程，並自動確保正確的程式碼放置和順序。
 seo-title: 實作適用於 Target 的 Experience Cloud Identity 服務
 title: 實作適用於 Target 的 Experience Cloud Identity 服務
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # 實作適用於 Target 的 Experience Cloud Identity 服務{#implement-the-experience-cloud-id-service-for-target}
 
-這些指示適用於想使用 Experience Cloud Identity 服務但不想使用 Dynamic Tag Management (DTM) 的 Target 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化工作流程並自動確保程式碼的放置和順序正確無誤。
+這些指示適用於想使用 Experience Cloud Identity 服務但不想使用 Dynamic Tag Management (DTM) 的 Target 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM可簡化實作工作流程，並自動確保正確的程式碼放置和順序。
 
 >[!IMPORTANT]
 >
@@ -25,17 +25,17 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ## 步驟 1: 取得 ID 服務程式碼 {#section-b32ba0548aa546a79dd38be59832a53e}
 
-[!UICONTROL ID 服務]需要 `VisitorAPI.js` 程式碼程式庫。聯絡[客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)以取得此程式碼。
+[!UICONTROL ID 服務]需要 `VisitorAPI.js` 程式碼程式庫。聯絡 [客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html) ，以取得此程式碼。
 
 ## 步驟 2: 將 Visitor.getInstance 函數新增至 ID 服務程式碼 {#section-287ef2958e9f43858fe9d630ae519e22}
 
-**第 1 部分: 複製下方的 Visitor.getInstance 函數**
+**第1部分： 複製下方的Visitor.getInstance函式**
 
 ```js
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE"); 
 ```
 
-**第 2 部分: 將函數程式碼新增至 VisitorAPI.js 檔案**
+**第二部分： 新增函式程式碼至VisitorAPI.js檔案**
 
 將 `Visitor.getInstance` 函數放置在程式碼區塊之後的檔案結尾。您編輯的檔案應該看起來如下所示:
 
@@ -54,7 +54,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 ## 步驟 3: 將您的 Experience Cloud 組織 ID 新增至 Visitor.getInstance {#section-522b1877be9243c39b222859b821f0ce}
 
-在 `Visitor.getInstance` 函數中，將 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` 取代為 [!DNL Experience Cloud] 組織 ID。如果您不知道組織 ID，可以在 [!DNL Experience Cloud] 管理頁面中找到。另請參閱[管理 - 核心服務](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html)。您編輯的函數看起來可能類似於下列範例。
+在 `Visitor.getInstance` 函數中，將 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` 取代為 [!DNL Experience Cloud] 組織 ID。如果您不知道組織 ID，可以在 [!DNL Experience Cloud] 管理頁面中找到。另請參閱「管 [理——核心服務」](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/manage-users-and-products/admin-getting-started.html)。 您編輯的函數看起來可能類似於下列範例。
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg");`
 
@@ -74,12 +74,11 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 若要測試您的 ID 服務實作:
 
-* 檢查托管頁面之網域中的 AMCV Cookie。
+* 檢查托管您頁面之網域中的AMCV Cookie。
 * 驗證 `mboxMCGVID` 是否顯示在您的 [!DNL Target] 請求中，而且其是否包含 [!DNL Experience Cloud] ID (MID)。
 
 請參閱 [Cookie 與 Experience Cloud Identity 服務](../introduction/cookies.md)，以瞭解有關 AMCV Cookie 與 MID 的資訊。
 
 **部署**
 
-當程式碼通過測試後，進行部署。
-
+在程式碼通過測試後進行部署。
