@@ -1,19 +1,19 @@
 ---
-description: 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實作能讓他們在這些裝置上使用該 ID 服務，這些裝置包括遊戲主機、智慧型電視或其他支援網際網路連線的設備。請參閱本節以瞭解語法、程式碼範例和定義。
-keywords: ID 服務
-seo-description: 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實作能讓他們在這些裝置上使用該 ID 服務，這些裝置包括遊戲主機、智慧型電視或其他支援網際網路連線的設備。請參閱本節以瞭解語法、程式碼範例和定義。
+description: 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實作能讓他們在這些裝置上使用該 ID 服務，這包括遊戲主機、智慧型電視或其他可上網的裝置。 請參閱本節，以取得語法、程式碼範例和定義。
+keywords: ID Service
+seo-description: 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實作能讓他們在這些裝置上使用該 ID 服務，這包括遊戲主機、智慧型電視或其他可上網的裝置。 請參閱本節，以取得語法、程式碼範例和定義。
 seo-title: 與 Experience Cloud Identity 服務直接整合
 title: 與 Experience Cloud Identity 服務直接整合
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # 與 Experience Cloud Identity 服務直接整合 {#direct-integration-with-the-experience-cloud-id-service}
 
-如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實作能讓他們在這些裝置上使用該 ID 服務，這些裝置包括遊戲主機、智慧型電視或其他支援網際網路連線的設備。請參閱本節以瞭解語法、程式碼範例和定義。
+如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實作能讓他們在這些裝置上使用該 ID 服務，這包括遊戲主機、智慧型電視或其他可上網的裝置。 請參閱本節，以取得語法、程式碼範例和定義。
 
 ## 語法 {#section-a4754afec5ad40b6be00d6f1011d68bb}
 
@@ -21,19 +21,19 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ![](assets/directSyntax.png)
 
-在這個語法範例中，前置詞 `d_` 會做為系統層級變數，用於識別呼叫中的機碼-值組。您可以將幾個 `d_` 參數傳遞至 ID 服務，但要把重點放在上述程式碼中的機碼-值組上。如需關於其他變數的詳細資訊，請參閱 [DCS API 呼叫支援的屬性](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html)。
+在這個語法範例中，前置詞 `d_` 會做為系統層級變數，用於識別呼叫中的機碼-值組。您可以將幾個 `d_` 參數傳遞至 ID 服務，但要把重點放在上述程式碼中的機碼-值組上。For more information about other variables, see [Supported Attributes for DCS API calls](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
 
-ID 服務支援 HTTP 和 HTTPS 呼叫。使用 HTTPS 以透過安全網頁傳遞資料。
+ID服務支援HTTP和HTTPS呼叫。 使用HTTPS從安全頁面傳送資料。
 
 ## 範例要求 {#section-26302b8851704888b6f8e6b2071bcdb0}
 
-您的要求看起來可能類似於下列範例。冗長的變數已縮短。
+您的請求看起來可能類似於下列範例。 長變數已縮短。
 
 ![](assets/directExample.png)
 
 ## 範例回應 {#section-89bc103b3e9e4a8b98e74c32897b1200}
 
-ID 服務會傳回 JSON 物件中的資料，如下所示。您的回應可能會有所不同。
+ID服務會傳回JSON物件中的資料，如下所示。 您的回應可能不同。
 
 ```js
 {
@@ -58,15 +58,15 @@ ID 服務會傳回 JSON 物件中的資料，如下所示。您的回應可能�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p>由 <span class="keyword">Adobe</span> 控制的舊版網域。請參閱<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">瞭解向 Demdex 網域進行的呼叫</a>。 </p> </td> 
+   <td colname="col2"> <p>由 <span class="keyword">Adobe</span> 控制的舊版網域。請參閱<a href="https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">瞭解向 Demdex 網域進行的呼叫</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 訪客 ID。請參閱<a href="../introduction/cookies.md" format="dita" scope="local"> Cookie 與 Experience Cloud Identity 服務</a>。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud訪客ID。 See <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud Identity Service</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>您的 Experience Cloud 組織 ID。如需尋找此 ID 的協助，請參閱<a href="../reference/requirements.md" format="dita" scope="local"> Experience Cloud Identity 服務的需求</a>。 </p> </td> 
+   <td colname="col2"> <p>您的Experience Cloud組織ID。 如需尋找此ID的協助，請參 <a href="../reference/requirements.md" format="dita" scope="local"> 閱Experience Cloud Identity Service的需求</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
@@ -88,7 +88,7 @@ ID 服務會傳回 JSON 物件中的資料，如下所示。您的回應可能�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>ID 服務是一個依地理位置分佈且負載平衡的系統。ID 會識別處理呼叫的資料中心所在的地區。請參閱 <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external">DCS 地區 ID、位置與主機名稱</a>。 </p> </td> 
+   <td colname="col2"> <p>ID服務是地理上分散且負載平衡的系統。 ID可識別處理呼叫的資料中心的區域。 請參閱 <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS 地區 ID、位置與主機名稱</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
@@ -96,18 +96,18 @@ ID 服務會傳回 JSON 物件中的資料，如下所示。您的回應可能�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_blob</span> </p> </td> 
-   <td colname="col2"> <p>加密的 JavaScript 中繼資料區塊blob 的大小限制為 512 位元組以下。 </p> </td> 
+   <td colname="col2"> <p>JavaScript中繼資料的加密區塊。 大小限制將blob限制為512個位元組或更少。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_ver</span> </p> </td> 
-   <td colname="col2"> <p>必填.這會設定 API 版本編號。將此值設定為 <span class="codeph">d_ver=2</span>。 </p> </td> 
+   <td colname="col2"> <p>必填.這會設定API版本號碼。 將此值設定為 <span class="codeph">d_ver=2</span>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **回應參數**
 
-某些回應參數屬於要求的一部分，並已在上一節加以定義。
+部分回應參數是請求的一部分，並已在上節中定義。
 
 <table id="table_58D0E8876DDC4A81B1F24F845E87EC18"> 
  <thead> 
@@ -119,7 +119,7 @@ ID 服務會傳回 JSON 物件中的資料，如下所示。您的回應可能�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> id_sync_ttl</span> </p> </td> 
-   <td colname="col2"> <p>重新同步的時間間隔 (以秒為單位加以指定)。預設時間間隔為 604,800 秒 (7 天)。 </p> </td> 
+   <td colname="col2"> <p>重新同步間隔，以秒為單位指定。 預設間隔為604,800秒（7天）。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
