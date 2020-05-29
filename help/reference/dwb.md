@@ -1,25 +1,28 @@
 ---
-description: 請依照下列指示，將Experience Cloud ID欄位整合至資料工作台。 此程式可讓您在資料饋送中使用永久性的Experience Cloud ID，這可讓您與Adobe Experience Cloud中的其他產品更緊密整合，並提供增強的訪客追蹤功能。
+description: 請依照下列指示，將 Experience Cloud ID 欄位整合到 Data Workbench 中。此程序可讓您在資料摘要中使用永續性 Experience Cloud ID，如此即可與 Adobe Experience Cloud 中的其他產品更緊密整合，並提供更強的訪客追蹤功能。
 keywords: ID Service
-seo-description: 請依照下列指示，將Experience Cloud ID欄位整合至資料工作台。 此程式可讓您在資料饋送中使用永久性的Experience Cloud ID，這可讓您與Adobe Experience Cloud中的其他產品更緊密整合，並提供增強的訪客追蹤功能。
-seo-title: Data Workbench 與 Experience Cloud Identity 服務
-title: Data Workbench 與 Experience Cloud Identity 服務
+seo-description: 請依照下列指示，將 Experience Cloud ID 欄位整合到 Data Workbench 中。此程序可讓您在資料摘要中使用永續性 Experience Cloud ID，如此即可與 Adobe Experience Cloud 中的其他產品更緊密整合，並提供更強的訪客追蹤功能。
+seo-title: Data Workbench 與 Experience Cloud Identity Service
+title: Data Workbench 與 Experience Cloud Identity Service
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '260'
+ht-degree: 100%
 
 ---
 
 
-# Data Workbench 與 Experience Cloud Identity 服務 {#data-workbench-and-the-experience-cloud-id-service}
+# Data Workbench 與 Experience Cloud Identity Service {#data-workbench-and-the-experience-cloud-id-service}
 
-請依照下列指示，將Experience Cloud ID欄位整合至資料工作台。 此程式可讓您在資料饋送中使用永久性的Experience Cloud ID，這可讓您與Adobe Experience Cloud中的其他產品更緊密整合，並提供增強的訪客追蹤功能。
+請依照下列指示，將 Experience Cloud ID 欄位整合到 Data Workbench 中。此程序可讓您在資料摘要中使用永續性 Experience Cloud ID，如此即可與 Adobe Experience Cloud 中的其他產品更緊密整合，並提供更強的訪客追蹤功能。
 
-To update [Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/home.html) to use the ID service:
+若要更新 [Data Workbench](https://docs.adobe.com/content/help/zh-Hant/data-workbench/using/home.html) 以使用 ID 服務：
 
-1. 找出目前的 [解碼器群組](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html) 設定檔案。
+1. 找出目前的[解碼器群組](https://docs.adobe.com/content/help/zh-Hant/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html)組態檔。
 
-   [!DNL Decoder Group] 通常位於[!UICONTROL 設定檔管理員]中，路徑如下: `Dataset\Log Processing\Decoding Instructions.cfg`。1. 從設定檔複製最新的解碼器格式。
+   [!DNL Decoder Group] 通常位於[!UICONTROL 設定檔管理員]中，路徑如下：`Dataset\Log Processing\Decoding Instructions.cfg`。1. 從設定檔複製最新的解碼器格式。
 1. 在原始解碼器格式下方貼上解碼器格式。
 1. 開啟解碼器格式並將這些新欄位位置新增至清單結尾:
 
