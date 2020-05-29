@@ -5,8 +5,11 @@ seo-description: 選用的布林值設定，可決定 ID 服務是否要將資�
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '604'
+ht-degree: 100%
 
 ---
 
@@ -30,7 +33,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 若要使用 `isCoopSafe`，您必須:
 
 * 使用 2.4 版或更新版本的 ID 服務程式碼。
-* 參與 [Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html)。 潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
+* 參與 [Experience Cloud Device Co-op](https://docs.adobe.com/content/help/zh-Hant/device-co-op/using/about/overview.html)。潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
 
 * 請和您的 [!DNL Adobe] 顧問合作，在您的 Device co-op 帳戶上設定白名單或是黑名單標幟。沒有啟用可這些標幟的自助式路徑。
 
@@ -54,8 +57,8 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
    <td colname="col1"> <p> <b>第三方網站上的 DIL</b> </p> </td> 
    <td colname="col2"> <p>新增 <span class="codeph">isCoopSafe</span> 至您的 ID 服務程式碼，以便在第三方網站上使用；因此，您可能會: </p> <p> 
      <ul id="ul_C27BB26510314834A2A7CD99D46DA4AC"> 
-      <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">無法確保已驗證的訪客擁有或未接受使用期限合約。 </li> 
-      <li id="li_26D0561BF32B4278B0A6B5082C17FED8">需要控制Device Co-op使用該資料來建立裝置圖形的方式。 </li> 
+      <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">無法確定已驗證的訪客是否已接受使用條款合約。 </li> 
+      <li id="li_26D0561BF32B4278B0A6B5082C17FED8">需要控制 Device Co-op 使用該資料來建立裝置圖形的方式。 </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -63,17 +66,17 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ## 語法與程式碼範例 {#section-952f56724a2b4d349340e26fbaf33ddd}
 
-**語法:** `isCoopSafe: true | false`
+**語法：** `isCoopSafe: true | false`
 
 布林值選項決定 Device Co-op 是否使用客戶資料。
 
-* `isCoopSafe: true`: 行動 SDK 或是網站所蒐集的訪客資料&#x200B;*可以*&#x200B;用來協助建立裝置圖形。
+* `isCoopSafe: true`：行動 SDK 或是網站所蒐集的訪客資料&#x200B;*可以*&#x200B;用來協助建立裝置圖形。
 
-* `isCoopSafe: false`: 行動 SDK 或是網站所蒐集的訪客資料&#x200B;*不可以*&#x200B;用來協助建立裝置圖形。
+* `isCoopSafe: false`：行動 SDK 或是網站所蒐集的訪客資料&#x200B;*不可以*&#x200B;用來協助建立裝置圖形。
 
 **程式碼範例**
 
-當您的ID服務程式碼執行個體化時，請設定此設定：
+當您的 ID 服務程式碼實例化時，請進行此設定:
 
 ```js
 var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here",{ 
@@ -94,17 +97,17 @@ POST 參數告知 [!DNL Experience Cloud] Device Co-op 是否能在裝置圖像�
 <table id="table_0A544534CA904F4D9836A34B8C1EACBB"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 配置狀態 </th> 
-   <th colname="col2" class="entry"> POST參數 </th> 
+   <th colname="col1" class="entry"> 設定狀態 </th> 
+   <th colname="col2" class="entry"> POST 參數 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> isCoopSafe: true </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> isCoopSafe：true </span> </p> </td> 
    <td colname="col2"> <p> <span class="codeph"> d_coop_safe=1 </span> </p> <p>Device Co-op 可以使用訪客資料來協助建立裝置圖像。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> isCoopSafe: false </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> isCoopSafe：false </span> </p> </td> 
    <td colname="col2"> <p> <span class="codeph"> d_coop_unsafe=1 </span> </p> <p>Device Co-op 不可以使用訪客資料來協助建立裝置圖像。 </p> </td> 
   </tr> 
  </tbody> 
@@ -112,7 +115,7 @@ POST 參數告知 [!DNL Experience Cloud] Device Co-op 是否能在裝置圖像�
 
 ## Post-Instantiation API {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
-這些 API 允許您覆寫 `isCoopSafe` 狀態。這些是必要的，因為它們可讓您變更訪客在網站上或頁面未重新整理的單一頁面應用程式中的執行個體化後／登入後狀態。 例如，如果使用者對您的網站或應用程式進行驗證，而之後又接受允許Device Co-op使用其資料的使用條款原則，您就需要呼叫這些API。
+這些 API 允許您覆寫 `isCoopSafe` 狀態。這是必要的 API，因為它們可讓您變更訪客在頁面未重新整理的網站或單一頁面應用程式中的具現化後/登入後狀態。例如，如果使用者在對您的網站或應用程式進行驗證後，接受了允許 Device Co-op 使用其資料的使用條款原則，您就需要呼叫這些 API。
 
 <table id="table_BAA96B1F82BE48C3A61A1AF1367BA45C"> 
  <thead> 
@@ -139,5 +142,5 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
 >[!MORELIKETHIS]
 >
->* [DIL isCoopSafe](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html)
+>* [DIL isCoopSafe](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html)
 
