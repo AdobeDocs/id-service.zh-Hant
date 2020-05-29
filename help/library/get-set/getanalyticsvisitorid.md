@@ -1,23 +1,26 @@
 ---
-description: 傳回在 Experience Cloud Identity 服務實作前儲存於 s_vi Cookie 的舊有 Analytics ID (如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
+description: 傳回在 Experience Cloud Identity Service 實作前儲存於 s_vi Cookie 的舊有 Analytics ID (如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
 keywords: ID Service
-seo-description: 傳回在 Experience Cloud Identity 服務實作前儲存於 s_vi Cookie 的舊有 Analytics ID (如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
+seo-description: 傳回在 Experience Cloud Identity Service 實作前儲存於 s_vi Cookie 的舊有 Analytics ID (如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '338'
+ht-degree: 100%
 
 ---
 
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-傳回在 Experience Cloud Identity 服務實作前儲存於 s_vi Cookie 的舊有 Analytics ID (如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
+傳回在 Experience Cloud Identity Service 實作前儲存於 s_vi Cookie 的舊有 Analytics ID (如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
 
 **語法** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
-通常，此函式會與需要讀取訪客ID的自訂解決方案搭配使用。 標準實作不會使用它。 `getAnalyticsVisitorID` 也會使用回呼函數讀取 [!DNL Analytics] ID，並將其帶入您的系統或應用程式。
+此函數通常會用於需要讀取訪客 ID 的自訂解決方案。標準實作不會使用此函數。`getAnalyticsVisitorID` 也會使用回呼函數讀取 [!DNL Analytics] ID，並將其帶入您的系統或應用程式。
 
 **範例程式碼**
 
@@ -44,7 +47,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 發生下列情況時，您會在查詢字串中看到 `aid` 參數:
 
 * 正確部署 [!DNL Experience Cloud] ID 服務。
-* 造訪網站的使用者已在 [s_vi Cookie](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679) 中儲存之前的 [!DNL Analytics] ID。
+* 造訪網站的使用者已在 [s_vi Cookie](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679) 中儲存之前的 [!DNL Analytics] ID。
 
 **案例 2**
 
@@ -52,5 +55,5 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!MORELIKETHIS]
 >
->* [Analytics Cookie](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-privacy.html)
+>* [Analytics Cookie](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/ec-cookies/cookies-privacy.html)
 
