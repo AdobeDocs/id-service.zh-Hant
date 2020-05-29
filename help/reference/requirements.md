@@ -1,19 +1,22 @@
 ---
-description: 請參閱本節，確定您使用的解決方案、服務及程式碼版本是 Experience Cloud Identity 服務所要求的正確版本。
+description: 請參閱本節，確定您使用的解決方案、服務及程式碼版本是 Experience Cloud Identity Service 所要求的正確版本。
 keywords: ID Service
-seo-description: 請參閱本節，確定您使用的解決方案、服務及程式碼版本是 Experience Cloud Identity 服務所要求的正確版本。
-seo-title: Experience Cloud Identity 服務的需求
-title: Experience Cloud Identity 服務的需求
+seo-description: 請參閱本節，確定您使用的解決方案、服務及程式碼版本是 Experience Cloud Identity Service 所要求的正確版本。
+seo-title: Experience Cloud Identity Service 的需求
+title: Experience Cloud Identity Service 的需求
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '783'
+ht-degree: 100%
 
 ---
 
 
-# Experience Cloud Identity 服務的需求{#requirements-for-the-experience-cloud-id-service}
+# Experience Cloud Identity Service 的需求{#requirements-for-the-experience-cloud-id-service}
 
-請參閱本節，確定您使用的解決方案、服務及程式碼版本是 Experience Cloud Identity 服務所要求的正確版本。
+請參閱本節，確定您使用的解決方案、服務及程式碼版本是 Experience Cloud Identity Service 所要求的正確版本。
 
 ## 需求可確保實作成功並獲得支援 {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
@@ -35,9 +38,9 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
      <li id="li_13962F2CB1764091A84863BE499675A2">將內嵌頁尾程式碼放置在結束 <span class="codeph">&lt;/body&gt;</span> 標籤中。 </li> 
     </ul> <p>如果發生以下情形，標準實作將不受支援: </p> 
     <ul id="ul_3B62559317ED4C7AA548C3B8DBA281F7"> 
-     <li id="li_1F16C6D412944197BEA56BC24730782C"> 將這些DTM內嵌代碼中的任一個放置在標籤和／或頁面代碼中的其他位置。 </li> 
-     <li id="li_05615C01F3A947BBBD41046E68377224"> 使用非同步方法、呼叫／回呼方法或包裝函式附加、新增或載入DTM程式碼。 </li> 
-     <li id="li_B2137DFF627B473FA876580449026D2B">在相同頁面上包含多個內嵌代碼例項。 </li> 
+     <li id="li_1F16C6D412944197BEA56BC24730782C"> 將其中一個 DTM 內嵌程式碼放置在標記和/或頁面代碼中的其他位置。 </li> 
+     <li id="li_05615C01F3A947BBBD41046E68377224"> 使用非同步方法、呼叫/回呼方法或包裝函式附加、新增或載入 DTM 程式碼。 </li> 
+     <li id="li_B2137DFF627B473FA876580449026D2B">在相同頁面上包含多個內嵌程式碼例項。 </li> 
     </ul> <p>另請參閱<a href="https://docs.adobe.com/content/help/zh-Hant/dtm/using/client-side/deployment.html" format="https" scope="external">內嵌程式碼和托管選項</a>。 </p> </td> 
   </tr> 
   <tr> 
@@ -47,7 +50,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
  </tbody> 
 </table>
 
-## Experience Cloud Requirements: Organization ID {#section-a02f537129a64ffbb690d5738d360c26}
+## Experience Cloud 需求：組織 ID {#section-a02f537129a64ffbb690d5738d360c26}
 
 若要使用 ID 服務，貴公司必須啟用 [!DNL Experience Cloud] 並擁有組織 ID。如果您不確定公司的 [!DNL Experience Cloud] 狀態且需要尋找組織 ID，請檢查下列清單。
 
@@ -58,7 +61,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 <table id="table_6C74B676EB094C568D2439FDCC9A7830"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Experience Cloud狀態 </th> 
+   <th colname="col1" class="entry"> Experience Cloud 狀態 </th> 
    <th colname="col2" class="entry"> 說明 </th> 
   </tr> 
  </thead>
@@ -78,7 +81,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
  </tbody> 
 </table>
 
-## Analytics 需求: 地區資料收集 (RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
+## Analytics 需求：地區資料收集 (RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
 所有追蹤伺服器均已轉換為 RDC，因此不需要變更 Analytics 追蹤伺服器。[更多資訊...](https://docs.adobe.com/content/help/en/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
 
@@ -95,14 +98,14 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 <table id="table_8E773F76DBCB4797A0C117080CA8707C"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Experience Cloud解決方案 </th> 
+   <th colname="col1" class="entry"> Experience Cloud 解決方案 </th> 
    <th colname="col3" class="entry"> 程式碼程式庫 </th> 
    <th colname="col4" class="entry"> 版本需求 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="keyword"></span>  Experience Cloud ID 服務</b> </p> </td> 
+   <td colname="col1"> <p> <b><span class="keyword"></span> Experience Cloud ID 服務</b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> VisitorAPI.js</span> </p> </td> 
    <td colname="col4"> <p>2.0 或更新版本 </p> </td> 
   </tr> 
@@ -113,7 +116,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
   </tr> 
   <tr> 
    <td colname="col3"> <p> <span class="codeph"> s_code.js</span> </p> </td> 
-   <td colname="col4"> <p>H.27 </p> <p> <p>注意:<span class="keyword"> Analytics</span> s_code H.27 版不再支援 ID 服務 1.6.0 版發行。請將您的程式碼升級至最新版 AppMeasurement。 </p> </p> </td> 
+   <td colname="col4"> <p>H.27 </p> <p> <p>注意：<span class="keyword">Analytics</span> s_code H.27 版不再支援 ID 服務 1.6.0 版發行。請將您的程式碼升級至最新版 AppMeasurement。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col3"> <p>影片心率 </p> <p>請參閱 <a href="https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/media-overview.html" format="https" scope="external">JavaScript 適用的影片心率 2.x</a>。 </p> </td> 
@@ -121,7 +124,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> 請參閱<a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">資料整合程式庫</a> (DIL)。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> 請參閱<a href="https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">資料整合程式庫</a> (DIL)。 </p> </td> 
    <td colname="col4"> <p>5.0 </p> <p> 
      <draft-comment>
        (從原來的 4.9 版更新) 
@@ -129,32 +132,32 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>請參閱 <a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">Mbox 程式碼</a>。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>請參閱 <a href="https://docs.adobe.com/content/help/zh-Hant/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">Mbox 程式碼</a>。 </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>請參閱 <a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">at.js 實作</a>。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>請參閱 <a href="https://docs.adobe.com/content/help/zh-Hant/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">at.js 實作</a>。 </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Android和iOS的SDK需求 {#section-73b2446fba8e463888642c7d7dfd94f1}
+## Android 和 iOS 的 SDK 需求{#section-73b2446fba8e463888642c7d7dfd94f1}
 
-ID服務至少需要下列的SDK版本。
+ID 服務至少需要下列 SDK 版本。
 
-* Android: 4.11.0
-* iOS: 4.11.0
+* Android：4.11.0
+* iOS：4.11.0
 
 >[!TIP]
 >
 >建議您使用最新版程式碼，而非需求所列的最低版本。
 
-您必須為 ID 服務啟用 SDK 程式碼。Enable and download the latest SDK code for each app from your [Adobe Mobile Services](https://mobilemarketing.adobe.com/) account. 另請參閱:
+您必須為 ID 服務啟用 SDK 程式碼。請在 [Adobe Mobile Services](https://mobilemarketing.adobe.com/) 帳戶中，為每個應用程式啟用並下載最新的 SDK 程式碼。另請參閱:
 
-* [配置 SDK 訪客 ID 服務選項](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
-* [Android SDK方法](https://docs.adobe.com/content/help/en/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
-* [iOS SKD方法](https://docs.adobe.com/content/help/en/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
+* [配置 SDK 訪客 ID 服務選項](https://docs.adobe.com/content/help/zh-Hant/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
+* [Android SDK 方法](https://docs.adobe.com/content/help/zh-Hant/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
+* [iOS SKD 方法](https://docs.adobe.com/content/help/zh-Hant/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
 
 >[!MORELIKETHIS]
 >
