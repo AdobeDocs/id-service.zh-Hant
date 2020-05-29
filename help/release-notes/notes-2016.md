@@ -1,21 +1,24 @@
 ---
-description: 2016 年 Experience Cloud Identity 服務的功能發佈、更新或變更。
+description: 2016 年 Experience Cloud Identity Service 的功能發佈、更新或變更。
 keywords: ID Service
-seo-description: 2016 年 Experience Cloud Identity 服務的功能發佈、更新或變更。
+seo-description: 2016 年 Experience Cloud Identity Service 的功能發佈、更新或變更。
 seo-title: 2016 年發行說明
 title: 2016 年發行說明
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '1162'
+ht-degree: 100%
 
 ---
 
 
 # 2016 年發行說明 {#release-notes}
 
-2016 年 Experience Cloud Identity 服務的功能發佈、更新或變更。
+2016 年 Experience Cloud Identity Service 的功能發佈、更新或變更。
 
-這些變更也會在 [Experience Cloud發行說明中擷取](https://docs.adobe.com/content/help/zh-Hant/release-notes/experience-cloud/current.html)。
+這些變更也包含在 [Experience Cloud 發行說明](https://docs.adobe.com/content/help/zh-Hant/release-notes/experience-cloud/current.html)中。
 
 ## 版本 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -24,7 +27,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 >[!IMPORTANT]
 >
 >* 1.10 版需使用 [!UICONTROL AppMeasurement] 1.8.0 版。
->* 使用 Experience Cloud Identity Service Library 2.0.0+ 時，Adobe Media Optimizer 會依預設開始執行 ID 同步作業。請參閱[瞭解 ID 同步和匹配率](/help/introduction/match-rates.md)。
+>* 使用 Experience Cloud Identity Service Library 2.0.0+ 時，Adobe Media Optimizer 會依預設開始執行 ID 同步作業。請參閱[了解 ID 同步和匹配率](/help/introduction/match-rates.md)。
 
 
 **修正和改良**
@@ -32,7 +35,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 * 新增如何在伺服器端環境中實作 ID 服務的指示。
 * 新增 `Visitor.overwriteCrossDomainMCIDAndAID`，此布林值函數可讓您覆寫在其他網域上擁有的 Experience Cloud 和 Analytics ID。請參閱[覆寫訪客 ID](../library/function-vars/overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde)。
 
-* 新增 `TS = UTC` 時間戳記 作為 `visitor.appendVisitorIDsTo` 函數的屬性。ID服務使用時間戳記，以判斷是否應根據5分鐘的時效間隔，在重新導向URL中使用ID。 See [Append Visitor ID Function](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
+* 新增 `TS = UTC` 時間戳記 作為 `visitor.appendVisitorIDsTo` 函數的屬性。ID 服務會使用時間戳記，判斷是否應根據 5 分鐘的時效間隔在重新導向 URL 中使用 ID。請參閱[附加訪客 ID 函數](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)。
 
 * 新增 `Visitor.getLocationHint,`，此新函數可傳回地區 ID。請參閱[取得地區 ID (位置提示)](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c)。
 
@@ -47,13 +50,13 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 **修正和改良**
 
-* 已修正將Audience Manager唯一使用者ID(AAMUUID)作為Experience Cloud ID傳遞至ID服務的錯誤。
-* 如果AMCV Cookie的存留時間(TTL)已過期，只要Cookie包含Experience Cloud ID,ID服務仍會將該資訊傳回伺服器。 此呼叫後，ID服務會進行非同步呼叫以更新Cookie。 這有助於改善效能，因為ID服務不需要等待伺服器回應。 它可使用現有的AMCV Cookie值，然後請求更新。
-* ID服務會直接在頁面上自動同步Experience Cloud ID(MID)與Adobe Media Optimizer和其他內部Adobe網域。 已針對所有現有帳戶與新帳戶啟用自動同步。這有助於改善Media Optimizer的比對率。 適用於 VisitorAPI.js 1.8 或更新版本。另請參閱[了解 ID 同步和比對率](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)。
+* 修正了將 Audience Manager 唯一使用者 ID (AAMUUID) 做為 Experience Cloud ID 傳至 ID 服務的錯誤。
+* 如果 AMCV Cookie 的存留時間 (TTL) 已過期，只要 Cookie 包含 Experience Cloud ID，ID 服務仍會將該資訊傳回至伺服器。在此呼叫後，ID 服務會進行非同步呼叫以更新 Cookie。這有助於改善效能，因為 ID 服務不需要等待伺服器回應。它可使用現有的 AMCV Cookie 值，然後請求更新。
+* ID 服務會直接在頁面上自動同步 Experience Cloud ID (MID) 與 Adobe Media Optimizer 和其他內部 Adobe 網域。已針對所有現有帳戶與新帳戶啟用自動同步。這有助於改善 Media Optimizer 的匹配率。適用於 VisitorAPI.js 1.8 或更新版本。另請參閱[了解 ID 同步和比對率](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)。
 
 **新文件及修訂的文件**
 
-**新增:** [從 AMCV Cookie 取得地區與使用者 ID](../reference/regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
+**新增：**[從 AMCV Cookie 取得地區與使用者 ID](../reference/regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
 
 ## 版本 1.8.0 {#section-69f2eb5b246b4c7aafe116b7a2a5448a}
 
@@ -77,11 +80,11 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 **新文件及修訂的文件**
 
-修訂: [Experience Cloud Identity 服務的需求](../reference/requirements.md)
+修訂：[Experience Cloud Identity Service 的需求](../reference/requirements.md)
 
 **已知問題**
 
-在同一頁上使用 [!DNL Audience Manager] DIL 程式碼和 visitorAPI.js 程式碼的客戶，應將 DIL 變數設為 `secureDataCollection= false`。請參 [閱secureDataCollection](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html)。
+在同一頁上使用 [!DNL Audience Manager] DIL 程式碼和 visitorAPI.js 程式碼的客戶，應將 DIL 變數設為 `secureDataCollection= false`。請參閱 [secureDataCollection](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/dil-api/dil-overview.html)。
 
 ## 版本 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
@@ -100,10 +103,10 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>跨原始資源共用(CORS) </p> </td> 
-   <td colname="col2"> <p>CORS可讓瀏覽器從目前網域以外的網域要求資源。 Experience Cloud Identity 服務支援 CORS 標準，以允許用戶端的跨原始資源要求。ID服務會在不支援CORS的瀏覽器上回復為JSONP請求。 </p> <p>請參閱: </p> 
+   <td colname="col1"> <p>跨原始資源共用 (CORS) </p> </td> 
+   <td colname="col2"> <p>CORS 可讓瀏覽器從現行網域以外的網域請求資源。Experience Cloud Identity Service 支援 CORS 標準，以允許用戶端的跨原始資源要求。此 ID 服務在不支援 CORS 的瀏覽器上會回復為 JSONP 請求。 </p> <p>請參閱: </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
-     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Experience Cloud Identity 服務的 CORS 支援 </a> </li> 
+     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Experience Cloud Identity Service 的 CORS 支援 </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -111,10 +114,10 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 **修正和改良**
 
-* 將 `d_fieldgroup` 參數新增至 `dpm.demdex.net` 的 ID 同步呼叫。此新參數用於內部疑難排解和除錯。
+* 將 `d_fieldgroup` 參數新增至 `dpm.demdex.net` 的 ID 同步呼叫。這個新參數可用於內部疑難排解和偵錯。
 
-* 已新增標題屬性至ID服務iFrame。 iFrame標題可協助螢幕閱讀程式為需要協助的使用者提供頁面資訊，以便與線上內容互動。 iFrame 標題屬性設為 `Adobe ID Syncing iFrame`。
-* 新增 `idSyncAttachIframeASAP: true` 作為選用旗標，您可以在 `Visitor.getInstance` 函數中加以設定。若為 `true`，ID 服務便會儘快載入 ID 同步 iFrame。這可協助改善ID同步比對率。 依預設，ID服務會在視窗載入時載入iFrame。 請參閱 [Visitor.getInstance 函數變數](../library/function-vars/function-vars.md)。
+* 在 ID 服務 iFrame 中新增了標題屬性。iFrame 標題可協助螢幕助讀程式為需要協助的使用者提供頁面資訊，以便他們操作線上內容。iFrame 標題屬性設為 `Adobe ID Syncing iFrame`。
+* 新增 `idSyncAttachIframeASAP: true` 作為選用旗標，您可以在 `Visitor.getInstance` 函數中加以設定。若為 `true`，ID 服務便會儘快載入 ID 同步 iFrame。其目的是要改善 ID 同步匹配率。依預設，ID 服務會在視窗載入時載入 iFrame。請參閱 [Visitor.getInstance 函數變數](../library/function-vars/function-vars.md)。
 
 * 修正回呼函數的錯誤，此錯誤使 AppMeasurement 陷入無限迴圈中。
 * 將預設 `loadTimeout` 時間間隔從 500 毫秒變更為 30,000 毫秒。請參閱 [Visitor.getInstance 函數變數](../library/function-vars/function-vars.md)。
@@ -123,13 +126,13 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 **新增**
 
-* [實作適用於 Analytics 的 Experience Cloud Identity 服務](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
-* [實作適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity 服務](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
+* [實作適用於 Analytics 的 Experience Cloud Identity Service](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
+* [實作適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity Service](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **修訂**
 
-* [Experience Cloud Identity 服務的需求](../reference/requirements.md)
-* [測試及驗證 Experience Cloud Identity 服務](../implementation-guides/test-verify.md)
+* [Experience Cloud Identity Service 的需求](../reference/requirements.md)
+* [測試及驗證 Experience Cloud Identity Service](../implementation-guides/test-verify.md)
 
 ## 版本 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
 
@@ -145,7 +148,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
  <tbody> 
   <tr> 
    <td colname="col1"> <p>變更 <span class="codeph">iframe.sandbox</span> 屬性 </p> </td> 
-   <td colname="col2"> <p>iFrame 現已設定為 <span class="codeph">iframe.sandbox='allow-scripts allow-same-origin';</span>。 </p> <p>僅允許這兩個 Token 協助改善安全性，並提供 ID 服務需要用來同步 ID 的基本功能。 </p> <p>Internet Explorer 9 或更早版本均不支援 sandbox 屬性。如需詳細資訊，請參閱 <a href="https://developer.mozilla.org/zh_TW/docs/Web/HTML/Element/iframe" format="https" scope="external">iFrame 文件</a>中的「屬性」一節。 </p> </td> 
+   <td colname="col2"> <p>iFrame 現已設定為 <span class="codeph">iframe.sandbox='allow-scripts allow-same-origin';</span>。 </p> <p>僅允許這兩個 Token 協助改善安全性，並提供 ID 服務需要用來同步 ID 的基本功能。 </p> <p>Internet Explorer 9 或更早版本均不支援 sandbox 屬性。如需詳細資訊，請參閱 <a href="https://developer.mozilla.org/zh-TW/docs/Web/HTML/Element/iframe" format="https" scope="external">iFrame 文件</a>中的「屬性」一節。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>對 Experience Cloud ID (MID) 進行編碼 </p> </td> 
@@ -156,7 +159,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 **修正**
 
-當沒有舊版Analytics訪客ID時，訪客API不再強制與Audience Manager進行額外的重新同步呼叫。
+若無舊有的 Analytics 訪客 ID，訪客 API 即不會再藉由 Audience Manager 強制執行額外的重新同步呼叫。
 
 ## 第 1.5.x 版 {#section-a62ae48275324058b57edf66ee5a579f}
 
@@ -164,9 +167,9 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 **文件更新**
 
-* [Android和iOS的SDK需求](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
-* [Data Workbench 與 Experience Cloud Identity 服務](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
-* [測試及驗證 Experience Cloud Identity 服務](../implementation-guides/test-verify.md)
+* [Android 和 iOS 的 SDK 需求](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
+* [Data Workbench 與 Experience Cloud Identity Service](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
+* [測試及驗證 Experience Cloud Identity Service](../implementation-guides/test-verify.md)
 
 ## 第 1.5.x 版 {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
 
@@ -174,7 +177,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 **文件更新**
 
-[實作適用於 Target 的 Experience Cloud Identity 服務](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
+[實作適用於 Target 的 Experience Cloud Identity Service](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
 
 ## 版本 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
@@ -201,9 +204,9 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 **文件更新**
 
-* [實作適用於 Analytics 的 Experience Cloud Identity 服務](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd): 說明如何使用 [!DNL Analytics] 設定 ID 服務的全新程序。
+* [實作適用於 Analytics 的 Experience Cloud Identity Service](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)：說明如何使用 [!DNL Analytics] 設定 ID 服務的全新程序。
 
-* [Experience Cloud Identity 服務移轉決策點](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257): 修訂內容，以求清晰明瞭。使用單一網域表示，如果您不想再管理資料收集CNAME，可以從中移轉。 不過，如果您的CNAME運作正常，則不需要變更。
+* [Experience Cloud Identity Service 移轉決策點](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257)：修訂內容，以求清晰明瞭。使用單一網域意味著，如果您不想再管理資料收集 CNAME，您可以進行移轉。不過，如果您的 CNAME 正常運作，則不需要變更。
 
 ## 1.5.3 版 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
@@ -221,7 +224,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../reference/authenticated-state.md" format="dita" scope="local"> 客戶 ID 和驗證狀態 </a> </p> </td> 
-   <td colname="col2"> <p>修訂文字。 客戶ID必須僅以未編碼值傳入。 編碼ID將建立雙重編碼識別碼。 </p> </td> 
+   <td colname="col2"> <p>已修訂文字。客戶 ID 必須以未編碼值的形式傳入。對 ID 進行編碼，將會產生雙重編碼的識別碼。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
