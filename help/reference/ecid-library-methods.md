@@ -3,8 +3,11 @@ title: Safari ITP 領域的 ECID 程式庫方法
 seo-title: Safari ITP 領域的 ECID 程式庫方法
 description: Adobe ECID (ID 服務) 程式庫的文件。
 seo-description: Adobe ECID (ID 服務) 程式庫的文件。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '1090'
+ht-degree: 100%
 
 ---
 
@@ -31,7 +34,7 @@ ECID 程式庫、AMCV Cookie 和 ECID (也稱為 MID) 一開始是一種將所�
 
 **CNAME 可以協助客戶啟用多個網域追蹤嗎？**
 
-之前與 CNAME 同時存在的規則和警告仍然存在。某些情況下，CNAME 在多重網域的案例中有其用處。如果您有一個主要進入網站，可在使用者造訪其他網域之前識別使用者的身分，那麼 CNAME 將可讓您在不接受第三方 Cookie 的瀏覽器中啟用多重網域追蹤功能。雖然 CNAME 可以在某些情況下提供多重網域協助，不過將 ECID 移轉至 CNAME 實作的原因是為了永續執行訪客身分識別，並非為了多重網域追蹤。如需深入瞭解 CNAME 和多重網域，請參閱[資料收集 CNAME 和跨網域追蹤](/help/reference/analytics-reference/cname.md)。
+之前與 CNAME 同時存在的規則和警告仍然存在。某些情況下，CNAME 在多重網域的案例中有其用處。如果您有一個主要進入網站，可在使用者造訪其他網域之前識別使用者的身分，那麼 CNAME 將可讓您在不接受第三方 Cookie 的瀏覽器中啟用多重網域追蹤功能。雖然 CNAME 可以在某些情況下提供多重網域協助，不過將 ECID 移轉至 CNAME 實作的原因是為了永續執行訪客身分識別，並非為了多重網域追蹤。如需深入了解 CNAME 和多重網域，請參閱[資料收集 CNAME 和跨網域追蹤](/help/reference/analytics-reference/cname.md)。
 
 一有其他 ITP 變更，我們會在此處新增更多常見問題。若需更多資訊，請造訪 [Adobe Experience League](https://experienceleague.adobe.com/tw/#recommended/solutions/analytics)。
 
@@ -57,7 +60,7 @@ ITP 2.1 會使寫入用戶端 Cookie 的能力受到限制，導致向客戶提�
 
 這個新 `s_ecid` Cookie 會依循與 AMCV Cookie 相同的選擇退出狀態。如果從 `s_ecid` Cookie 讀取 eid，每次都會呼叫 demdex 來擷取該 ID 的最新選擇退出狀態，並將 demdex 儲存在 AMCV Cookie 中。
 
-此外，如果您的消費者已透過此[方法](https://docs.adobe.com/content/help/en/analytics/implementation/js/opt-out.html)選擇退出 Analytics 追蹤，則系統會刪除這個 `s_ecid` Cookie。
+此外，如果您的消費者已透過此[方法](https://docs.adobe.com/content/help/zh-Hant/analytics/implementation/js/opt-out.html)選擇退出 Analytics 追蹤，則系統會刪除這個 `s_ecid` Cookie。
 
 使用 trackingServer 或 trackingServerSecure 初始化程式庫時，應將追蹤伺服器名稱提供給 visitorJS 程式庫。此名稱應符合 Analytics 設定中的 trackingServer 設定。
 
