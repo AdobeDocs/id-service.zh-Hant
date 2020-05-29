@@ -1,19 +1,22 @@
 ---
-description: 使用這些設定，可將呼叫 Experience Cloud Identity 服務使用的預設網域名稱變更為您擁有的子網域名稱。
+description: 使用這些設定，可將呼叫 Experience Cloud Identity Service 使用的預設網域名稱變更為您擁有的子網域名稱。
 keywords: ID Service
-seo-description: 使用這些設定，可將呼叫 Experience Cloud Identity 服務使用的預設網域名稱變更為您擁有的子網域名稱。
+seo-description: 使用這些設定，可將呼叫 Experience Cloud Identity Service 使用的預設網域名稱變更為您擁有的子網域名稱。
 seo-title: audienceManagerServer 及 audienceManagerServerSecure
 title: audienceManagerServer 及 audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '243'
+ht-degree: 100%
 
 ---
 
 
 # audienceManagerServer 及 audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
-使用這些設定，可將呼叫 Experience Cloud Identity 服務使用的預設網域名稱變更為您擁有的子網域名稱。
+使用這些設定，可將呼叫 Experience Cloud Identity Service 使用的預設網域名稱變更為您擁有的子網域名稱。
 
 **語法:**
 
@@ -22,15 +25,15 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 **用途**
 
-[!DNL Experience Cloud] ID 服務通常會在 [!DNL Adobe] 呼叫 `dpm.demdex.net`。有時候，您會覺得此目的地看起來太普遍或太像「第三方」而不想進行呼叫。要讓 ID 服務呼叫看起來更像第一方呼叫，您可以使用這些設定將您的 [!DNL Audience Manager] 子網域名稱新增到 `demdex.net`，如下所示。For more information about the `dpm.demdex.net` call, see [Understanding Calls to the Demdex Domain](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/reference/demdex-calls.html).
+[!DNL Experience Cloud] ID 服務通常會在 [!DNL Adobe] 呼叫 `dpm.demdex.net`。有時候，您會覺得此目的地看起來太普遍或太像「第三方」而不想進行呼叫。要讓 ID 服務呼叫看起來更像第一方呼叫，您可以使用這些設定將您的 [!DNL Audience Manager] 子網域名稱新增到 `demdex.net`，如下所示。如需 `dpm.demdex.net` 呼叫的詳細資訊，請參閱[了解向 Demdex 網域進行的叫呼](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/reference/demdex-calls.html)。
 
 **需求**
 
-這些配置要求您使用：
+若要進行這些設定，您必須使用：
 
 * 貴公司記錄的 [!DNL Audience Manager] 子網域名稱。向您的顧問確認或取得此名稱。
-* The subdomain name associated with your [!UICONTROL Organization ID].
-* *兩個配置參* 數都具有相同的子域名。
+* 與您的[!UICONTROL 組織 ID] 相關聯的子網域名稱。
+* 具有相同子網域名稱的&#x200B;*兩個*&#x200B;設定參數。
 
 **程式碼範例**
 
