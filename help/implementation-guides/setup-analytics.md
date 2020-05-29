@@ -1,19 +1,22 @@
 ---
-description: 這些指示適用於想使用 Experience Cloud Identity 服務但不想使用 Dynamic Tag Management (DTM) 的 Analytics 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM可簡化實作工作流程，並自動確保正確的程式碼放置和順序。
+description: 這些指示適用於想使用 Experience Cloud Identity Service 但不想使用 Dynamic Tag Management (DTM) 的 Analytics 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 keywords: ID Service
-seo-description: 這些指示適用於想使用 Experience Cloud Identity 服務但不想使用 Dynamic Tag Management (DTM) 的 Analytics 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM可簡化實作工作流程，並自動確保正確的程式碼放置和順序。
-seo-title: 實作適用於 Analytics 的 Experience Cloud Identity 服務
-title: 實作適用於 Analytics 的 Experience Cloud Identity 服務
+seo-description: 這些指示適用於想使用 Experience Cloud Identity Service 但不想使用 Dynamic Tag Management (DTM) 的 Analytics 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
+seo-title: 實作適用於 Analytics 的 Experience Cloud Identity Service
+title: 實作適用於 Analytics 的 Experience Cloud Identity Service
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '1087'
+ht-degree: 100%
 
 ---
 
 
-# 實作適用於 Analytics 的 Experience Cloud Identity 服務{#implement-the-experience-cloud-id-service-for-analytics}
+# 實作適用於 Analytics 的 Experience Cloud Identity Service{#implement-the-experience-cloud-id-service-for-analytics}
 
-這些指示適用於想使用 Experience Cloud Identity 服務但不想使用 Dynamic Tag Management (DTM) 的 Analytics 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM可簡化實作工作流程，並自動確保正確的程式碼放置和順序。
+這些指示適用於想使用 Experience Cloud Identity Service 但不想使用 Dynamic Tag Management (DTM) 的 Analytics 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 
 >[!IMPORTANT]
 >
@@ -34,11 +37,11 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 1. [(選用) 設定寬限期](../implementation-guides/setup-analytics.md#section-7bbb2f72c26e4abeb8881e18366797a3)
 1. [測試並部署 ID 服務程式碼](../implementation-guides/setup-analytics.md#section-e9c1764ac21a4ec5be1ff338c0e2e01b)
 
-## 步驟 1: 下載 ID 服務程式碼 {#section-ead9403a6b7e45b887f9ac959ef89f7f}
+## 步驟 1：下載 ID 服務程式碼 {#section-ead9403a6b7e45b887f9ac959ef89f7f}
 
-[!UICONTROL ID 服務]需要 `VisitorAPI.js` 程式碼程式庫。若要下載此程式碼程式庫:
+[!UICONTROL ID 服務]需要 `VisitorAPI.js` 程式碼程式庫。若要下載此程式碼程式庫：
 
-1. Go to **[!UICONTROL Admin]** > **[!UICONTROL Code Manager]**.
+1. 前往&#x200B;**[!UICONTROL 管理]** > **[!UICONTROL 代碼管理器]**。
 1. 在[!UICONTROL 代碼管理器]中，按一下 **[!UICONTROL JavaScript (新)]** 或 **[!UICONTROL JavaScript (舊)]**。
 
    即會下載壓縮的程式碼程式庫。
@@ -49,13 +52,13 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 >[!IMPORTANT]
 >
->* 舊版ID服務API將此函式放置在不同的位置，並需要不同的語法。 如果您要從1.4版之前的版 [本移轉](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572)，請注意此處說明的新位置和語法。
->* ALL CAPS中的代碼是實際值的預留位置。 以您的組織ID、追蹤伺服器URL或其他命名值取代此文字。
+>* 舊版 ID 服務 API 將此函數放置在不同的位置，且需要不同的語法。如果您要從 [1.4 版](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572)之前的版本移轉，請留意此處說明的新位置和語法。
+>* ALL CAPS 中的程式碼是實際值的預留位置。請將此文字取代為您的組織 ID、追蹤伺服器 URL 或其他指定值。
 >
 
 
 
-**第1部分： 複製下方的Visitor.getInstance函式**
+**第 1 部分：複製下方的 Visitor.getInstance 函數**
 
 ```js
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE", { 
@@ -69,7 +72,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 }); 
 ```
 
-**第二部分： 新增函式程式碼至VisitorAPI.js檔案**
+**第 2 部分：將函數程式碼新增至 VisitorAPI.js 檔案**
 
 將 `Visitor.getInstance` 函數放置在程式碼區塊之後的檔案結尾。您編輯的檔案應該看起來如下所示:
 
@@ -94,9 +97,9 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 }); 
 ```
 
-## 步驟 3: 將您的 Experience Cloud 組織 ID 新增至 Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
+## 步驟 3：將您的 Experience Cloud 組織 ID 新增至 Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-在 `Visitor.getInstance` 函數中，將 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` 取代為 [!DNL Experience Cloud] 組織 ID。如果您不知道組織 ID，可以在 [!DNL Experience Cloud] 管理頁面中找到。另請參閱「管 [理——核心服務」](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/manage-users-and-products/admin-getting-started.html)。 您編輯的函數看起來可能類似於下列範例。
+在 `Visitor.getInstance` 函數中，將 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` 取代為 [!DNL Experience Cloud] 組織 ID。如果您不知道組織 ID，可以在 [!DNL Experience Cloud] 管理頁面中找到。另請參閱[管理 - 核心服務](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/manage-users-and-products/admin-getting-started.html)。您編輯的函數看起來可能類似於下列範例。
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -104,30 +107,30 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 >
 >*請勿*&#x200B;變更組織 ID 中的字元大小寫。ID 區分大小寫，需如實使用。
 
-## 步驟 4: 將追蹤伺服器新增至 Visitor.getInstance {#section-70ec9ebff47940d8ab520be5ec4728c5}
+## 步驟 4：將追蹤伺服器新增至 Visitor.getInstance {#section-70ec9ebff47940d8ab520be5ec4728c5}
 
 追蹤伺服器用於 [!DNL Analytics] 資料收集。
 
-**第 1 部分: 尋找您的追蹤伺服器 URL**
+**第 1 部分：尋找您的追蹤伺服器 URL**
 
 檢查 `s_code.js` 或 `AppMeasurement.js` 檔案，以尋找追蹤伺服器 URL。您想根據下列變數指定 URL:
 
 * `s.trackingServer`
 * `s.trackingServerSecure`
 
-**第二部分： 設定追蹤伺服器變數**
+**第 2 部分：設定追蹤伺服器變數**
 
-若要決定要使用的追蹤伺服器變數：
+若要確認所應使用的追蹤伺服器變數：
 
-1. 回答下面決策表中的問題。 使用與答案對應的變數。
-1. 以追蹤伺服器URL取代追蹤伺服器預留位置。
+1. 回答下列決策對照表中的問題。請使用與您的答案相對應的變數。
+1. 將追蹤伺服器預留位置取代為您的追蹤伺服器 URL。
 1. 將未使用的追蹤伺服器與 [!DNL Experience Cloud] 伺服器變數從程式碼中移除。
 
 ![](assets/tracking-server-matrix.png)
 
 >[!NOTE]
 >
->使用時，請將 [!DNL Experience Cloud] 伺服器 URL 與其對應的追蹤伺服器 URL 配對，如下所示: >
+>使用時，請將 [!DNL Experience Cloud] 伺服器 URL 與其對應的追蹤伺服器 URL 配對，如下所示：>
 >* [!DNL Experience Cloud] 伺服器 URL = 追蹤伺服器 URL
 >* [!DNL Experience Cloud] 伺服器安全 URL = 追蹤伺服器安全 URL
 >
@@ -136,7 +139,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 若不清楚如何尋找您的追蹤伺服器，請參閱[常見問題集](../faq-intro/faq.md)和[正確填入 trackingServer 及 trackingServerSecure 變數](https://helpx.adobe.com/tw/analytics/kb/determining-data-center.html#)。
 
-## 步驟 5: 更新您的 AppMeasurement.js 或 s_code.js 檔案 {#section-b53113aea1bd4de896e0e4e9a7edee19}
+## 步驟 5：更新您的 AppMeasurement.js 或 s_code.js 檔案 {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
 將此函數新增至 `AppMeasurement.js` 或 `s_code.js` 檔案:
 
@@ -153,7 +156,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI Missing");
 ```
 
-## 步驟 6: 將訪客 API 程式碼新增至頁面 {#section-d46d6aa324c842f2931d901e38d6db1d}
+## 步驟 6：將訪客 API 程式碼新增至頁面 {#section-d46d6aa324c842f2931d901e38d6db1d}
 
 將 `VisitorAPI.js` 檔案放入每個頁面的 `<head>` 標籤中。將 `VisitorAPI.js` 檔案放到頁面中時:
 
@@ -162,33 +165,33 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 測試並驗證之後，將程式碼移至生產環境。
 
-## 步驟 7: (選用) 設定寬限期 {#section-7bbb2f72c26e4abeb8881e18366797a3}
+## 步驟 7：(選用) 設定寬限期 {#section-7bbb2f72c26e4abeb8881e18366797a3}
 
-If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). 寬限期最多可執行180天。 如有需要，您可以續約寬限期。
+若其中有任何使用案例適用於您的情況，請要求[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)設定暫時的[寬限期](../reference/analytics-reference/grace-period.md)。寬限期最多可達 180 天。如有必要，您可以更新寬限期。
 
 **部分實作**
 
-如果部分頁面使用 ID 服務，部分頁面未使用，且這些頁面全部都向相同的 [!DNL Analytics] 報表套裝報告，則您需要寬限期。如果您有跨網域報告的全域報告套裝，就很常見。
+如果部分頁面使用 ID 服務，部分頁面未使用，且這些頁面全部都向相同的 [!DNL Analytics] 報表套裝報告，則您需要寬限期。如果您有跨網域報告的全域報告套裝，就常會有此需要。
 
-在將ID服務部署在所有報告至相同報告套裝的網頁上後，停止寬限期。
+在所有向相同報告套裝報告的網頁上部署 ID 服務後，請停止寬限期。
 
-**s_vi Cookie需求**
+**s_vi Cookie 需求**
 
-如果您要求新訪客在移轉至ID服務後擁有s_vi Cookie，則需要寬限期。 如果實作讀取 s_vi Cookie 並將其儲存在變數中，這個情況是很常見的。
+如果您要求新訪客在移轉至 ID 服務後必須要有 s_vi Cookie，則需要寬限期。如果實作讀取 s_vi Cookie 並將其儲存在變數中，這個情況是很常見的。
 
 當您的實作可擷取 MID，而非讀取 s_vi Cookie 之後，則可停止寬限期。
 
-請參閱 [Cookie 與 Experience Cloud Identity 服務](../introduction/cookies.md)。
+請參閱 [Cookie 與 Experience Cloud Identity Service](../introduction/cookies.md)。
 
 如果您將資料從點擊流資料資料源傳送至內部系統，而且該程序使用 `visid_high` 和 `visid_low` 欄位，則需要寬限期。
 
 您的資料擷取程序可使用 `post_visid_high` 和 `post_visid_low` 欄之後，即可停止寬限期。
 
-請參閱點 [按流資料欄參考](https://docs.adobe.com/content/help/zh-Hant/analytics/export/analytics-data-feed/data-feed-overview.html)。
+請參閱[點按流資料欄參考](https://docs.adobe.com/content/help/zh-Hant/analytics/export/analytics-data-feed/data-feed-overview.html)。
 
 **點擊流 (Clickstream) 資料擷取**
 
-## 步驟 8: 測試並部署 ID 服務程式碼 {#section-e9c1764ac21a4ec5be1ff338c0e2e01b}
+## 步驟 8：測試並部署 ID 服務程式碼 {#section-e9c1764ac21a4ec5be1ff338c0e2e01b}
 
 您可以依照以下流程進行測試和部署。
 
@@ -196,16 +199,16 @@ If any of these use cases apply to your situation, ask [Customer Care](https://h
 
 若要測試您的 ID 服務實作，請檢查:
 
-* [托管頁面](../introduction/cookies.md) 之網域中的AMCV Cookie。
-* 使用 [!DNL Analytics] Adobe [除錯工具在影像要求中](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html)的MID值。
+* [AMCV Cookie](../introduction/cookies.md)，位於託管頁面的網域中。
+* [!DNL Analytics] 影像請求中的 MID 值 (使用 [Adobe 偵錯工具](https://docs.adobe.com/content/help/zh-Hant/analytics/implementation/validate/debugger.html))。
 
-請參閱[測試及驗證 Experience Cloud Identity 服務](../implementation-guides/test-verify.md)。
+請參閱[測試及驗證 Experience Cloud Identity Service](../implementation-guides/test-verify.md)。
 
 **部署程式碼**
 
-在程式碼通過測試後進行部署。
+在程式碼通過測試後加以部署。
 
-如果您在步驟7中啟用寬 [限期](../implementation-guides/setup-analytics.md#section-7bbb2f72c26e4abeb8881e18366797a3):
+如果您在[步驟 7](../implementation-guides/setup-analytics.md#section-7bbb2f72c26e4abeb8881e18366797a3) 中啟用了寬限期：
 
 * 請確保 [!DNL Analytics] ID (AID) 與 MID 位於影像請求中。
 * 當您符合中止條件時，請記得停用寬限期。
