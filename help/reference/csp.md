@@ -5,11 +5,11 @@ seo-description: 內容安全性原則 (CSP) 是 HTTP 標題和安全性功能�
 seo-title: 內容安全性原則及 Experience Cloud Identity Service
 title: 內容安全性原則及 Experience Cloud Identity Service
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
-source-wordcount: '539'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: acf10dd734132662698791e473c1f3f4dda85d67
+workflow-type: tm+mt
+source-wordcount: '619'
+ht-degree: 87%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 內容安全性原則 (CSP) 是 HTTP 標題和安全性功能，可讓瀏覽器控制要在網頁上載入的資源類型。如果您使用 ID 服務，且具備使用白名單接受來自受信任網域之資源的嚴格 CSP，請詳閱本節。您必須將此處所列的 Adobe 網域新增至 CSP 白名單。
 
-## CSP 檢視  {#section-5fde5c00a678455c914b8307a8caab82}
+## CSP 檢視   {#section-5fde5c00a678455c914b8307a8caab82}
 
 CSP 會利用 HTTP 標頭 `Content-Security-Policy` 來控制瀏覽器要接受或在網頁中要載入的資源類型。套用 CSP 能協助您避免以下情形：
 
@@ -66,6 +66,10 @@ CSP 的使用十分常見，且眾所周知。本文件的目的並非詳細說�
  <tr>
  <td colname="col1"> <p> <b>Activity Map 增效模組</b> </p> </td> 
  <td colname="col2"> <p>修改您的 CSP 以包含 *.adobe.com。**注意**：如果您在 2020 年 1 日前即已安裝 Activity Map，您的瀏覽器仍會收到 *.omniture.com 的原始請求，但會將其重新導向 *.adobe.com。 </p></td> 
+ </tr>
+ <tr>
+ <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
+ <td colname="col2"> <p>如果您對查詢字串參數有控制項，請務必將參數「s_kwcid」和「ef_id」列入白名單。 從技術上講，Advertising Analytics僅使用「s_kwcid」，但如果您取得Ad Cloud Search或DSP，則也會使用「ef_id」。 這些查詢字串參數是英數字元。 's_kwcid'參數使用''!'' character和「ef_id」參數使用":"字元。 如果您封鎖"!" 字元，您也需要將它列入白名單。</p></td> 
  </tr>
  </tbody> 
 </table>
