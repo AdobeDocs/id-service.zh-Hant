@@ -5,11 +5,11 @@ seo-description: 內容安全性原則 (CSP) 是 HTTP 標題和安全性功能�
 seo-title: 內容安全性原則及 Experience Cloud Identity Service
 title: 內容安全性原則及 Experience Cloud Identity Service
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: acf10dd734132662698791e473c1f3f4dda85d67
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '619'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 87%
 
 內容安全性原則 (CSP) 是 HTTP 標題和安全性功能，可讓瀏覽器控制要在網頁上載入的資源類型。如果您使用 ID 服務，且具備使用白名單接受來自受信任網域之資源的嚴格 CSP，請詳閱本節。您必須將此處所列的 Adobe 網域新增至 CSP 白名單。
 
-## CSP 檢視   {#section-5fde5c00a678455c914b8307a8caab82}
+## CSP 檢視{#section-5fde5c00a678455c914b8307a8caab82}
 
 CSP 會利用 HTTP 標頭 `Content-Security-Policy` 來控制瀏覽器要接受或在網頁中要載入的資源類型。套用 CSP 能協助您避免以下情形：
 
@@ -69,7 +69,7 @@ CSP 的使用十分常見，且眾所周知。本文件的目的並非詳細說�
  </tr>
  <tr>
  <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
- <td colname="col2"> <p>如果您對查詢字串參數有控制項，請務必將參數「s_kwcid」和「ef_id」列入白名單。 從技術上講，Advertising Analytics僅使用「s_kwcid」，但如果您取得Ad Cloud Search或DSP，則也會使用「ef_id」。 這些查詢字串參數是英數字元。 's_kwcid'參數使用''!'' character和「ef_id」參數使用":"字元。 如果您封鎖"!" 字元，您也需要將它列入白名單。</p></td> 
+ <td colname="col2"> <p>如果您對查詢字串參數有控制權，請務必將 `s_kwcid` 和 `ef_id` 參數列入白名單。就技術而言，Advertising Analytics 僅會使用 `s_kwcid`，但如果您取得 Ad Cloud Search 或 DSP，系統也會使用 `ef_id`。這些查詢字串參數均為英數字元。`s_kwcid` 參數會使用「!」字元，而 `ef_id` 參數會使用「:」字元。如果您禁止在 URL 中使用「!」字元，您也需要將其列入白名單。</p></td> 
  </tr>
  </tbody> 
 </table>
