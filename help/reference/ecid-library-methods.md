@@ -3,9 +3,9 @@ title: Safari ITP 領域的 ECID 程式庫方法
 seo-title: Safari ITP 領域的 ECID 程式庫方法
 description: Adobe ECID (ID 服務) 程式庫的文件。
 seo-description: Adobe ECID (ID 服務) 程式庫的文件。
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 100%
 
@@ -42,7 +42,9 @@ ECID 程式庫、AMCV Cookie 和 ECID (也稱為 MID) 一開始是一種將所�
 
 在 Safari 中建立其他追蹤方法時，這些方法將新增於此頁面作為參考。
 
->以下所有文件中的 [!NOTE]*ECID* = *MID* = *MCID*。
+>[!NOTE]
+>
+>以下所有文件中的 *ECID* = *MID* = *MCID*。
 
 如需 ITP 和 ECID 程式庫使用情況相關資訊，請參閱下文。
 
