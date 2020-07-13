@@ -5,9 +5,9 @@ seo-description: 內容安全性原則 (CSP) 是 HTTP 標題和安全性功能�
 seo-title: 內容安全性原則及 Experience Cloud Identity Service
 title: 內容安全性原則及 Experience Cloud Identity Service
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
-source-git-commit: acf10dd734132662698791e473c1f3f4dda85d67
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 內容安全性原則 (CSP) 是 HTTP 標題和安全性功能，可讓瀏覽器控制要在網頁上載入的資源類型。如果您使用 ID 服務，且具備使用白名單接受來自受信任網域之資源的嚴格 CSP，請詳閱本節。您必須將此處所列的 Adobe 網域新增至 CSP 白名單。
 
-## CSP 檢視{#section-5fde5c00a678455c914b8307a8caab82}
+## CSP 檢視 {#section-5fde5c00a678455c914b8307a8caab82}
 
 CSP 會利用 HTTP 標頭 `Content-Security-Policy` 來控制瀏覽器要接受或在網頁中要載入的資源類型。套用 CSP 能協助您避免以下情形：
 
@@ -75,6 +75,7 @@ CSP 的使用十分常見，且眾所周知。本文件的目的並非詳細說�
 </table>
 
 >[!MORELIKETHIS]
+>
 >* [內容安全性原則參考](https://content-security-policy.com/)
 >* [MDN：內容安全性原則](https://developer.mozilla.org/zh-TW/docs/Web/HTTP/CSP)
 >* [Wikipedia：內容安全性原則](https://en.wikipedia.org/wiki/Content_Security_Policy)
