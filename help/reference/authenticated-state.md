@@ -1,12 +1,15 @@
 ---
 description: 除了 Experience Cloud 訪客 ID 之外，您還可以將其他客戶 ID 和驗證狀態與每個訪客建立關聯。
-keywords: ID 服務
+keywords: ID Service
 seo-description: 除了 Experience Cloud 訪客 ID 之外，您還可以將其他客戶 ID 和驗證狀態與每個訪客建立關聯。
 seo-title: 客戶 ID 和驗證狀態
 title: 客戶 ID 和驗證狀態
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: ht
-source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
+source-wordcount: '659'
+ht-degree: 69%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
 >
 >客戶屬性與核心服務功能需要 `setCustomerIDs` (客戶 ID 同步化)。同步客戶 ID 是 [!DNL Analytics] 支援的選用身分識別方法。[!DNL Target] 需要客戶屬性的 `Visitor.AuthState.AUTHENTICATED` 才能運作。如需範例，請參閱[核心服務 - 如何啟用您的解決方案](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/about-core-services/core-services.html)。
 
-從 Experience Cloud Identity 服務 1.5 版以後的版本開始，`setCustomerIDs` 即包括可選用的 `AuthState` 物件。`AuthState` 會根據訪客的驗證狀態 (例如，登入、登出) 來識別訪客。您可使用表格中列出的狀態值來設定驗證狀態。驗證狀態會以整數傳回。
+從 Experience Cloud Identity 服務 1.5 版以後的版本開始，`setCustomerIDs` 即包括可選用的 `AuthState` 物件。`AuthState` 會根據訪客的驗證狀態 (例如，登入、登出) 來識別訪客。您可以設定驗證狀態，其狀態值列在表中。 驗證狀態會以整數傳回。
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
@@ -54,7 +57,7 @@ source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
 
 ## 驗證狀態的使用案例 {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
-您可以視使用者在網頁屬性上執行的動作，以及使用者是否通過驗證而定，來指派驗證狀態給使用者。請查看下表的一些範例:
+您可以根據使用者在您的Web屬性上執行的動作以及是否經過驗證，將驗證狀態指派給使用者。 請參閱下表中的一些範例：
 
 <table id="table_3769E79304014C4F87094B87A8ACE4E0"> 
  <thead> 
@@ -66,10 +69,10 @@ source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
-   <td colname="col2"> <p>此狀態可用於如下案例: </p> <p> 
+   <td colname="col2"> <p>此狀態可用於以下情形： </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
-      <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">讀取電子郵件 (此動作可能表示讀者為目標收件者，但電子郵件可能也會轉寄)。 </li> 
-      <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">從電子郵件至登陸頁面依序點擊。 </li> 
+      <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">閱讀電子郵件（此動作可能表示讀者是預期的收件者，但電子郵件也可能已轉寄）。 </li> 
+      <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">從電子郵件點進至登陸頁面。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -78,7 +81,7 @@ source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
-   <td colname="col2"> <p>使用者通過驗證，但主動登出。使用者有意且確定中斷驗證狀態的連結。使用者不希望具有驗證身分。 </p> </td> 
+   <td colname="col2"> <p>已驗證用戶，但主動註銷。 用戶希望並且希望斷開與已驗證狀態的連接。 使用者不再想被視為已驗證。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -91,10 +94,8 @@ source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
 >
 >* ID 區分大小寫。
 >* 請僅用未經編碼的值當成 ID。
->* 客戶 ID 與驗證狀態未儲存在訪客 ID Cookie 中。每個頁面或應用程式內容都必須設定這兩項。
->* 您不應在客戶 ID 中加入任何個人識別資訊 (PII)。如果您要使用 PII 來識別訪客 (例如電子郵件地址)，建議您改為儲存經過雜湊或加密處理的資訊。ECID 程式庫支援使用雜湊處理使用者識別碼。請參閱 [setCustomerIDs 的 SHA256 雜湊支援](/help/reference/hashing-support.md)
->
-
+>* 客戶ID和驗證狀態不會儲存在訪客ID Cookie中。 必須針對每個頁面或應用程式內容設定。
+>* 您不應在客戶ID中包含任何個人識別資訊(PII)。 如果您要使用 PII 來識別訪客 (例如電子郵件地址)，建議您改為儲存經過雜湊或加密處理的資訊。ECID 程式庫支援使用雜湊處理使用者識別碼。請參閱 [setCustomerIDs 的 SHA256 雜湊支援](/help/reference/hashing-support.md)
 
 
 ```js
@@ -168,7 +169,7 @@ visitor.setCustomerIDs({
 
 **範例**
 
-傳回的客戶 ID 與驗證狀態資料看起來類似以下範例所示。
+傳回的客戶ID和驗證狀態資料看起來應類似下列範例。
 
 ```js
 Object customerIDs = visitor.getCustomerIDs(); 
@@ -213,10 +214,10 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## SDK 支援 {#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
-[!DNL Experience Cloud] ID 服務支援 Android 和 iOS SDK 程式碼中的客戶 ID 與驗證狀態。請參閱下列程式碼程式庫:
+[!DNL Experience Cloud] ID 服務支援 Android 和 iOS SDK 程式碼中的客戶 ID 與驗證狀態。請參閱下列程式碼庫：
 
 * [Android SDK 方法](https://docs.adobe.com/content/help/zh-Hant/mobile-services/android/overview.html)
-* [iOS SDK 方法](https://docs.adobe.com/content/help/zh-Hant/mobile-services/ios/overview.html)
+* [iOS SDK方法](https://docs.adobe.com/content/help/zh-Hant/mobile-services/ios/overview.html)
 
 ## 通知 Analytics 與 Audience Manager 客戶 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
