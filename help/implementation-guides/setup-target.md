@@ -5,9 +5,9 @@ seo-description: 這些指示適用於想使用 Experience Cloud Identity Servic
 seo-title: 實作適用於 Target 的 Experience Cloud Identity Service
 title: 實作適用於 Target 的 Experience Cloud Identity Service
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 100%
 
@@ -22,8 +22,6 @@ ht-degree: 100%
 >
 >* [先閱讀需求](../reference/requirements.md)，再開始使用。
 >* 先在開發環境中設定與測試此程式碼，然後才在生產中實作。
->
-
 
 
 ## 步驟 1：取得 ID 服務程式碼 {#section-b32ba0548aa546a79dd38be59832a53e}
