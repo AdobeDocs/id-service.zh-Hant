@@ -5,9 +5,9 @@ seo-description: 這些指示適用於想使用 Experience Cloud Identity Servic
 seo-title: 實作適用於 Analytics 和 Audience Manager 的 Experience Cloud Identity Service
 title: 實作適用於 Analytics 和 Audience Manager 的 Experience Cloud Identity Service
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '1303'
 ht-degree: 100%
 
@@ -23,8 +23,6 @@ ht-degree: 100%
 >* [先閱讀需求](../reference/requirements.md)，再開始使用。
 >* 此程序需要用到 AppMeasurement。使用 s_code 的客戶無法完成此程序。
 >* 先在開發環境中設定與測試此程式碼，然後才在生產中實作。
->
-
 
 
 ## 步驟1：規劃伺服器端轉送 {#section-880797cc992d4755b29cada7b831f1fc}
@@ -55,8 +53,6 @@ ID 服務需要 `VisitorAPI.js` 程式碼程式庫。若要下載此程式碼程
 >
 >* 舊版 ID 服務 API 將此函數放置在不同的位置，且需要不同的語法。如果您要從 [1.4 版](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572)之前的版本移轉，請留意此處說明的新位置和語法。
 >* ALL CAPS 中的程式碼是實際值的預留位置。請將此文字取代為您的組織 ID、追蹤伺服器 URL 或其他指定值。
->
-
 
 
 **第 1 部分：複製下方的 Visitor.getInstance 函數**
