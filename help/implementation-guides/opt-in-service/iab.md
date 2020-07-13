@@ -4,9 +4,9 @@ seo-description: 連結同意管理平台 (CMP) 和適用於 IAB 透明與同意
 seo-title: 搭配 IAB 架構使用「選擇加入」服務
 title: 搭配 IAB 架構使用「選擇加入」服務
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
-translation-type: ht
-source-git-commit: 4c37c8dd3b76dbf17b955864f0562363350eaecd
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 100%
 
@@ -15,7 +15,9 @@ ht-degree: 100%
 
 # 搭配 IAB 架構使用「選擇加入」服務{#using-opt-in-services-with-iab-framework}
 
->[!IMPORTANT] 以下文件僅適用於 IAB 2.0。使用者需使用 Visitor.js version 5.0 才能使用 IAB 2.0。
+>[!IMPORTANT]
+>
+> 以下文件僅適用於 IAB 2.0。使用者需使用 Visitor.js version 5.0 才能使用 IAB 2.0。
 
 將「同意管理平台」(CMP) 與「選擇加入」的 IAB 透明度與同意架構 (TCF) 外掛程式連線。
 
