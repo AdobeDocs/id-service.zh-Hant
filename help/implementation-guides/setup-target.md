@@ -5,9 +5,9 @@ seo-description: 這些指示適用於想使用 Experience Cloud Identity Servic
 seo-title: 實作適用於 Target 的 Experience Cloud Identity Service
 title: 實作適用於 Target 的 Experience Cloud Identity Service
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '459'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ## 步驟 1：取得 ID 服務程式碼 {#section-b32ba0548aa546a79dd38be59832a53e}
 
-[!UICONTROL ID 服務]需要 `VisitorAPI.js` 程式碼程式庫。聯絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)以取得此程式碼。
+[!UICONTROL ID 服務]需要 `VisitorAPI.js` 程式碼程式庫。連絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)以取得此程式碼。
 
 ## 步驟 2：將 Visitor.getInstance 函數新增至 ID 服務程式碼 {#section-287ef2958e9f43858fe9d630ae519e22}
 
@@ -38,7 +38,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 **第 2 部分：將函數程式碼新增至 VisitorAPI.js 檔案**
 
-將 `Visitor.getInstance` 函數放置在程式碼區塊之後的檔案結尾。您編輯的檔案應該看起來如下所示:
+將 `Visitor.getInstance` 函數放置在程式碼區塊之後的檔案結尾。完成編輯的檔案應該如下所示：
 
 ```js
 /* 
@@ -73,7 +73,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 **測試和驗證**
 
-若要測試您的 ID 服務實作:
+若要測試您的 ID 服務實作：
 
 * 在您的頁面託管所在的網域中檢查是否有 AMCV Cookie。
 * 驗證 `mboxMCGVID` 是否顯示在您的 [!DNL Target] 請求中，而且其是否包含 [!DNL Experience Cloud] ID (MID)。
