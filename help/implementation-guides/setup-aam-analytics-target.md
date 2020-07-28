@@ -5,9 +5,9 @@ seo-description: 這些指示適用於想使用 Experience Cloud Identity Servic
 seo-title: 實作適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity Service
 title: 實作適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity Service
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1572'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->開始前請先參閱 ID 服務[需求](../reference/requirements.md)，並注意本實作專屬的下列需求:
+>開始前，請先參閱 ID 服務[需求](../reference/requirements.md)，並注意本實作特有的下列需求：
 >
 >* 使用 s_code 的客戶無法完成此程序。請升級至 mbox 程式碼 v61 以完成此程序。
 >* 請&#x200B;*先*&#x200B;在開發環境中設定與測試此程式碼，然後才在生產環境中實作。
@@ -30,9 +30,9 @@ ht-degree: 100%
 
 除了此處所述步驟以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客戶也應移轉至伺服器端轉送。伺服器端轉送功能可讓您移除 DIL (Audience Manager 的資料收集程式碼)，並將其取代為[對象管理模組](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html)。如需詳細資訊，請參閱[伺服器端轉送文件](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/server-side-forwarding/ssf.html)。
 
-要移轉至伺服器端轉送，必須進行規劃和協調。此程序牽涉到對您的網站程式碼進行的外部變更，以及 Adobe 為了佈建您的帳戶而須執行的內部步驟。事實上，其中許多移轉程序都需要並行執行，並且一起發行。您的實作路徑應依照以下事件順序進行:
+要移轉至伺服器端轉送，必須進行規劃和協調。此程序牽涉到對您的網站程式碼進行的外部變更，以及 Adobe 為了佈建您的帳戶而須執行的內部步驟。事實上，其中許多移轉程序都需要並行執行，並且一起發行。您的實作路徑應依照以下事件順序進行：
 
-1. 與您的 [!DNL Analytics] 和 [!DNL Audience Manager] 聯絡人合作，一同規劃 ID 服務與伺服器端轉送移轉。選擇追蹤伺服器是此規劃的重要一部分。
+1. 與您的 [!DNL Analytics] 和 [!DNL Audience Manager] 連絡人合作，一同規劃 ID 服務與伺服器端轉送移轉。選擇追蹤伺服器是此規劃的重要一部分。
 
 1. 完成[整合與佈建網站](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES)上的表單即可開始使用。
 
@@ -71,7 +71,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE",
 
 **第 2 部分：將函數程式碼新增至 Visitor API.js 檔案**
 
-將 `Visitor.getInstance` 函數放置在程式碼區塊之後的檔案結尾。您編輯的檔案應該看起來如下所示:
+將 `Visitor.getInstance` 函數放置在程式碼區塊之後的檔案結尾。完成編輯的檔案應該如下所示：
 
 ```js
 /* 
@@ -110,7 +110,7 @@ Analytics 會使用追蹤伺服器進行資料收集。
 
 **第 1 部分：尋找您的追蹤伺服器 URL**
 
-檢查 `s_code.js` 或 `AppMeasurement.js` 檔案，以尋找追蹤伺服器 URL。您想根據下列變數指定 URL:
+檢查 `s_code.js` 或 `AppMeasurement.js` 檔案，以尋找追蹤伺服器 URL。您想根據下列變數指定 URL：
 
 * `s.trackingServer`
 * `s.trackingServerSecure`
@@ -127,7 +127,7 @@ Analytics 會使用追蹤伺服器進行資料收集。
 
 >[!NOTE]
 >
->使用時，請將 Experience Cloud 伺服器 URL 與其對應的追蹤伺服器 URL 配對，如下所示:
+>使用時，請將 Experience Cloud 伺服器 URL 與其對應的追蹤伺服器 URL 配對，如下所示：
 
 * Experience Cloud 伺服器 URL = 追蹤伺服器 URL
 * Experience Cloud 伺服器安全 URL = 追蹤伺服器安全 URL
@@ -148,7 +148,7 @@ Analytics 會使用追蹤伺服器進行資料收集。
 
 ***(可選用，但建議使用)*建立自訂 Prop **
 
-在 `AppMeasurement.js` 中設定自訂 prop 以測量涵蓋範圍.將此自訂 Prop 新增至 `doPlugins` 檔案的 `AppMeasurement.js` 函數:
+在 `AppMeasurement.js` 中設定自訂 prop 以測量涵蓋範圍.將此自訂 Prop 新增至 `doPlugins` 檔案的 `AppMeasurement.js` 函數：
 
 ```js
 // prop1 is used as an example only. Choose any available prop. 
@@ -157,7 +157,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 步驟 7：將訪客 API 程式碼新增至頁面 {#section-c2bd096a3e484872a72967b6468d3673}
 
-將 ` [!UICONTROL VisitorAPI.js]` 檔案放入每個頁面的 `<head>` 標籤中。將 `VisitorAPI.js` 檔案放到頁面中時:
+將 ` [!UICONTROL VisitorAPI.js]` 檔案放入每個頁面的 `<head>` 標籤中。將 `VisitorAPI.js` 檔案放到頁面中時：
 
 * 放在 `<head>` 區段的開頭處，使其出現在其他解決方案標籤的前面。
 * 必須在 AppMeasurement 及其他 [!DNL Experience Cloud] 解決方案的程式碼之前執行此檔案。
