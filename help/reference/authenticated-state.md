@@ -5,11 +5,11 @@ seo-description: 除了 Experience Cloud 訪客 ID 之外，您還可以將其�
 seo-title: 客戶 ID 和驗證狀態
 title: 客戶 ID 和驗證狀態
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '659'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 69%
 >
 >客戶屬性與核心服務功能需要 `setCustomerIDs` (客戶 ID 同步化)。同步客戶 ID 是 [!DNL Analytics] 支援的選用身分識別方法。[!DNL Target] 需要客戶屬性的 `Visitor.AuthState.AUTHENTICATED` 才能運作。如需範例，請參閱[核心服務 - 如何啟用您的解決方案](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/about-core-services/core-services.html)。
 
-從 Experience Cloud Identity 服務 1.5 版以後的版本開始，`setCustomerIDs` 即包括可選用的 `AuthState` 物件。`AuthState` 會根據訪客的驗證狀態 (例如，登入、登出) 來識別訪客。您可以設定驗證狀態，其狀態值列在表中。 驗證狀態會以整數傳回。
+從 Experience Cloud Identity 服務 1.5 版以後的版本開始，`setCustomerIDs` 即包括可選用的 `AuthState` 物件。`AuthState` 會根據訪客的驗證狀態 (例如，登入、登出) 來識別訪客。您可使用表中的狀態數值設定驗證狀態。驗證狀態會以整數傳回。
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
@@ -45,7 +45,7 @@ ht-degree: 69%
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED </span> </p> </td> 
    <td colname="col2"> <p> <span class="codeph"> 1 </span> </p> </td> 
-   <td colname="col3"> <p>驗證特殊例項、頁面，或應用程式。 </p> <p> <p>注意: 為了正常運作，<span class="keyword">Target</span> 的客戶屬性需要此狀態。 </p> </p> </td> 
+   <td colname="col3"> <p>驗證特殊例項、頁面，或應用程式。 </p> <p> <p>注意：為了正常運作，<span class="keyword">Target</span> 的客戶屬性需要此狀態。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
@@ -57,7 +57,7 @@ ht-degree: 69%
 
 ## 驗證狀態的使用案例 {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
-您可以根據使用者在您的Web屬性上執行的動作以及是否經過驗證，將驗證狀態指派給使用者。 請參閱下表中的一些範例：
+您可以根據使用者對 Web 屬性所執行的動作及是否驗證，為使用者指派驗證狀態。請參閱下表的幾個範例：
 
 <table id="table_3769E79304014C4F87094B87A8ACE4E0"> 
  <thead> 
@@ -69,10 +69,10 @@ ht-degree: 69%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
-   <td colname="col2"> <p>此狀態可用於以下情形： </p> <p> 
+   <td colname="col2"> <p>此狀態適用的情境包括： </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
-      <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">閱讀電子郵件（此動作可能表示讀者是預期的收件者，但電子郵件也可能已轉寄）。 </li> 
-      <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">從電子郵件點進至登陸頁面。 </li> 
+      <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">閱讀電子郵件 (此動作可能代表讀者即是預期的收件者，但電子郵件也可能已經轉寄)。 </li> 
+      <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">從電子郵件點進登陸頁面。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -81,7 +81,7 @@ ht-degree: 69%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
-   <td colname="col2"> <p>已驗證用戶，但主動註銷。 用戶希望並且希望斷開與已驗證狀態的連接。 使用者不再想被視為已驗證。 </p> </td> 
+   <td colname="col2"> <p>使用者已完成驗證，但已主動登出。使用者希望且刻意中斷已驗證的狀態。使用者不想維持已驗證狀態。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -94,8 +94,8 @@ ht-degree: 69%
 >
 >* ID 區分大小寫。
 >* 請僅用未經編碼的值當成 ID。
->* 客戶ID和驗證狀態不會儲存在訪客ID Cookie中。 必須針對每個頁面或應用程式內容設定。
->* 您不應在客戶ID中包含任何個人識別資訊(PII)。 如果您要使用 PII 來識別訪客 (例如電子郵件地址)，建議您改為儲存經過雜湊或加密處理的資訊。ECID 程式庫支援使用雜湊處理使用者識別碼。請參閱 [setCustomerIDs 的 SHA256 雜湊支援](/help/reference/hashing-support.md)
+>* 客戶 ID 和驗證狀態不會儲存在訪客 ID Cookie 中，每個頁面或應用程式內容皆需個別設定。
+>* 請勿在客戶 ID 中提供任何個人識別資訊 (PII)。如果您要使用 PII 來識別訪客 (例如電子郵件地址)，建議您改為儲存經過雜湊或加密處理的資訊。ECID 程式庫支援使用雜湊處理使用者識別碼。請參閱 [setCustomerIDs 的 SHA256 雜湊支援](/help/reference/hashing-support.md)
 
 
 ```js
@@ -147,7 +147,7 @@ visitor.setCustomerIDs({
 
 ## 傳回客戶 ID 與驗證狀態 {#section-71a610546188478fa9a3185a01d6e83b}
 
-使用 `getCustomerIDs` 以傳回客戶 ID 與相關的驗證狀態。此方法會以整數傳回訪客的驗證狀態。
+使用 `getCustomerIDs` 以傳回客戶 ID 與相關的驗證狀態。這種方法會以整數傳回訪客的驗證狀態。
 
 **語法**
 
@@ -169,7 +169,7 @@ visitor.setCustomerIDs({
 
 **範例**
 
-傳回的客戶ID和驗證狀態資料看起來應類似下列範例。
+傳回的客戶 ID 和驗證狀態資料應該類似下列範例。
 
 ```js
 Object customerIDs = visitor.getCustomerIDs(); 
@@ -214,10 +214,10 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## SDK 支援 {#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
-[!DNL Experience Cloud] ID 服務支援 Android 和 iOS SDK 程式碼中的客戶 ID 與驗證狀態。請參閱下列程式碼庫：
+[!DNL Experience Cloud] ID 服務支援 Android 和 iOS SDK 程式碼中的客戶 ID 與驗證狀態。請參閱下列程式碼資料庫：
 
 * [Android SDK 方法](https://docs.adobe.com/content/help/zh-Hant/mobile-services/android/overview.html)
-* [iOS SDK方法](https://docs.adobe.com/content/help/zh-Hant/mobile-services/ios/overview.html)
+* [iOS SDK 方法](https://docs.adobe.com/content/help/zh-Hant/mobile-services/ios/overview.html)
 
 ## 通知 Analytics 與 Audience Manager 客戶 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
