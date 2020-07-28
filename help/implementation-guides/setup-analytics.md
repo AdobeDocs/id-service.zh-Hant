@@ -5,9 +5,9 @@ seo-description: 這些指示適用於想使用 Experience Cloud Identity Servic
 seo-title: 實作適用於 Analytics 的 Experience Cloud Identity Service
 title: 實作適用於 Analytics 的 Experience Cloud Identity Service
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1087'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 >* 先在開發環境中設定與測試此程式碼，然後才在生產中實作。
 
 
-請依照以下步驟實作 Adobe Analytics 的 ID 服務:
+請依照以下步驟實作 Adobe Analytics 的 ID 服務：
 
 1. [下載 ID 服務程式碼](../implementation-guides/setup-analytics.md#section-ead9403a6b7e45b887f9ac959ef89f7f)
 1. [將 Visitor.getInstance 函數新增至 ID 服務程式碼](../implementation-guides/setup-analytics.md#section-6053a6b7c16c466a9f9fdbf9cb9db3df)
@@ -46,7 +46,7 @@ ht-degree: 100%
 
 1. 解壓縮程式碼檔案，並開啟 `VisitorAPI.js` 檔案。
 
-## 步驟 2.將 Visitor.getInstance 函數新增至 ID 服務程式碼 {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
+## 步驟 2：將 Visitor.getInstance 函數新增至 ID 服務程式碼 {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
 
 >[!IMPORTANT]
 >
@@ -70,7 +70,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 **第 2 部分：將函數程式碼新增至 VisitorAPI.js 檔案**
 
-將 `Visitor.getInstance` 函數放置在程式碼區塊之後的檔案結尾。您編輯的檔案應該看起來如下所示:
+將 `Visitor.getInstance` 函數放置在程式碼區塊之後的檔案結尾。完成編輯的檔案應該如下所示：
 
 ```js
 /* 
@@ -109,7 +109,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 **第 1 部分：尋找您的追蹤伺服器 URL**
 
-檢查 `s_code.js` 或 `AppMeasurement.js` 檔案，以尋找追蹤伺服器 URL。您想根據下列變數指定 URL:
+檢查 `s_code.js` 或 `AppMeasurement.js` 檔案，以尋找追蹤伺服器 URL。您想根據下列變數指定 URL：
 
 * `s.trackingServer`
 * `s.trackingServerSecure`
@@ -126,7 +126,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 >[!NOTE]
 >
->使用時，請將 [!DNL Experience Cloud] 伺服器 URL 與其對應的追蹤伺服器 URL 配對，如下所示:
+>使用時，請將 [!DNL Experience Cloud] 伺服器 URL 與其對應的追蹤伺服器 URL 配對，如下所示：
 >
 >* [!DNL Experience Cloud] 伺服器 URL = 追蹤伺服器 URL
 >* [!DNL Experience Cloud] 伺服器安全 URL = 追蹤伺服器安全 URL
@@ -136,7 +136,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 ## 步驟 5：更新您的 AppMeasurement.js 或 s_code.js 檔案 {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
-將此函數新增至 `AppMeasurement.js` 或 `s_code.js` 檔案:
+將此函數新增至 `AppMeasurement.js` 或 `s_code.js` 檔案：
 
 `s.visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE");`
 
@@ -144,7 +144,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 ***(可選用，但建議使用)*建立自訂 Prop **
 
-在 `AppMeasurement.js` 或 `s_code.js` 中設定自訂 prop，以測量涵蓋範圍.將此自訂 Prop 新增至 `doPlugins` 或 `AppMeasurement.js` 檔案的 `s_code.js` 函數:
+在 `AppMeasurement.js` 或 `s_code.js` 中設定自訂 prop，以測量涵蓋範圍.將此自訂 Prop 新增至 `doPlugins` 或 `AppMeasurement.js` 檔案的 `s_code.js` 函數：
 
 ```js
 // prop1 is used as an example only. Choose any available prop. 
@@ -153,7 +153,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 步驟 6：將訪客 API 程式碼新增至頁面 {#section-d46d6aa324c842f2931d901e38d6db1d}
 
-將 `VisitorAPI.js` 檔案放入每個頁面的 `<head>` 標籤中。將 `VisitorAPI.js` 檔案放到頁面中時:
+將 `VisitorAPI.js` 檔案放入每個頁面的 `<head>` 標籤中。將 `VisitorAPI.js` 檔案放到頁面中時：
 
 * 放在 `<head>` 區段的開頭處，使其出現在其他解決方案標籤的前面。
 * 必須在 AppMeasurement 及其他 [!DNL Experience Cloud] 解決方案的程式碼之前執行此檔案。
@@ -192,7 +192,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 **測試和驗證**
 
-若要測試您的 ID 服務實作，請檢查:
+若要測試您的 ID 服務實作，請檢查：
 
 * [AMCV Cookie](../introduction/cookies.md)，位於託管頁面的網域中。
 * [!DNL Analytics] 影像請求中的 MID 值 (使用 [Adobe 偵錯工具](https://docs.adobe.com/content/help/zh-Hant/analytics/implementation/validate/debugger.html))。
