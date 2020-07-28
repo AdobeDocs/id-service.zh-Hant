@@ -3,9 +3,9 @@ title: Safari ITP 領域的 ECID 程式庫方法
 seo-title: Safari ITP 領域的 ECID 程式庫方法
 description: Adobe ECID (ID 服務) 程式庫的文件。
 seo-description: Adobe ECID (ID 服務) 程式庫的文件。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1090'
 ht-degree: 100%
 
@@ -52,7 +52,7 @@ ECID 程式庫、AMCV Cookie 和 ECID (也稱為 MID) 一開始是一種將所�
 
 ITP 2.1 會使寫入用戶端 Cookie 的能力受到限制，導致向客戶提供的訪客追蹤資訊，準確度大打折扣。因此，我們已著手調整 Adobe 的 CNAME 追蹤伺服器，將訪客的 Experience Cloud ID (ECID) 儲存在第一方 Cookie。
 
-這項變更只適用於在第一方情境中使用 Analytics CNAME 的 ECID 客戶。如果您是尚未使用 CNAME 的 Analytics 客戶，或甚至不是 Analytics 客戶，還是符合使用 CNAME 記錄的資格。請聯絡客戶服務或您的客戶代表，以開始 [CNAME](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/ec-cookies/cookies-first-party.html) 的註冊程序。
+這項變更只適用於在第一方情境中使用 Analytics CNAME 的 ECID 客戶。如果您是尚未使用 CNAME 的 Analytics 客戶，或甚至不是 Analytics 客戶，還是符合使用 CNAME 記錄的資格。請連絡客戶服務或您的客戶代表，以開始 [CNAME](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/ec-cookies/cookies-first-party.html) 的註冊程序。
 
 若要使用此項變更，請升級至 ECID 程式庫 4.3.0 版以上。
 
