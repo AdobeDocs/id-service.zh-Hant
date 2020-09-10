@@ -1,22 +1,22 @@
 ---
-description: idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實作 ID 同步。VisitorAPI.js 1.10版或更新版本中提供這些功能。
+description: idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實作 ID 同步。VisitorAPI.js 1.10 (含) 以上版本均已提供這些函數。
 keywords: ID Service
-seo-description: idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實作 ID 同步。VisitorAPI.js 1.10版或更新版本中提供這些功能。
+seo-description: idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實作 ID 同步。VisitorAPI.js 1.10 (含) 以上版本均已提供這些函數。
 seo-title: 依 URL 或資料來源執行 ID 同步作業
 title: 依 URL 或資料來源執行 ID 同步作業
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '273'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
 
 # 依 URL 或資料來源執行 ID 同步作業{#id-synchronization-by-url-or-data-source}
 
-idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實作 ID 同步。VisitorAPI.js 1.10版或更新版本中提供這些功能。
+idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實作 ID 同步。VisitorAPI.js 1.10 (含) 以上版本均已提供這些函數。
 
 ## 語法、屬性和巨集 {#section-90ac61617482463aaf4c57009b830332}
 
@@ -26,7 +26,7 @@ idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destina
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 程式碼 </th> 
-   <th colname="col2" class="entry"> 同步用戶ID </th> 
+   <th colname="col2" class="entry"> 同步使用者 ID </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -43,7 +43,7 @@ idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destina
 
 **屬性**
 
-下表列出並定義了兩個函式的可用屬性。
+下表羅列及定義了兩個函數皆可使用的屬性。
 
 <table id="table_5343BE784E694C67B09A0A8878CF8001"> 
  <thead> 
@@ -57,33 +57,33 @@ idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destina
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpid </span> </td> 
    <td colname="col2"> 字串 </td> 
-   <td colname="col3"> <p>Audience Manager指派的資料提供者ID。 </p> </td> 
+   <td colname="col3"> <p>Audience Manager 指派的資料提供者 ID。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpuuid </span> </td> 
    <td colname="col2"> 字串 </td> 
-   <td colname="col3"> <p>資料提供者的使用者唯一ID。 </p> </td> 
+   <td colname="col3"> <p>資料提供者獨一無二的使用者 ID。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> minutesToLive </span> </td> 
    <td colname="col2"> 數字 </td> 
-   <td colname="col3"> <p> <i>（可選）</i> ，設定Cookie過期時間。 必須是整數。 預設值為20160分鐘（14天）。 </p> </td> 
+   <td colname="col3"> <p> <i>(選用)</i> 設定 Cookie 過期時間。值必須是整數。預設值為 20160 分鐘 (14天)。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> url </span> </td> 
    <td colname="col2"> 字串 </td> 
-   <td colname="col3"> <p>目標URL。 </p> </td> 
+   <td colname="col3"> <p>目的地 URL。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**宏**
+**巨集**
 
-這兩個函式都接受以下宏：
+這兩個函數都接受以下巨集：
 
-* `%TIMESTAMP%`: 產生時間戳記 (單位為毫秒)。用於快取破產。
-* `%DID%`: 插入使用者的 Audience Manager ID。
-* `%HTTP_PROTO%`: 設定通訊協定 (`http` 或 `https`)。
+* `%TIMESTAMP%`：產生時間戳記 (單位為毫秒)。用於快取破壞。
+* `%DID%`：插入使用者的 Audience Manager ID。
+* `%HTTP_PROTO%`；設定通訊協定 (`http` 或 `https`)。
 
 ## 範例程式碼和輸出 {#section-0115615c37584a19a2ab11e917c4e7e9}
 
