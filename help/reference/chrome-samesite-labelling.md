@@ -1,125 +1,125 @@
 ---
-title: Google Chrome SameSite標籤變更
-seo-title: Google Chrome SameSite標籤變更
-description: Adobe ECID (ID 服務) 程式庫的文件。
-seo-description: Adobe ECID (ID 服務) 程式庫的文件。
+title: Google Chrome SameSite 標籤異動
+seo-title: Google Chrome SameSite 標籤異動
+description: Adobe ECID (ID 服務) 程式庫文件。
+seo-description: Adobe ECID (ID 服務) 程式庫文件。
 translation-type: tm+mt
 source-git-commit: 592ca6ca6a72e57b728e286d0b730c5bd93c0c7b
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
-# Google Chrome SameSite標籤變更 {#google-chrome-samesite-labelling-changes}
+# Google Chrome SameSite 標籤異動 {#google-chrome-samesite-labelling-changes}
 
-SameSite屬性會告訴瀏覽器在第一方和第三方案例中何時及如何觸發Cookie。 SameSite屬性可以有三個值之一： `strict`、 `lax`或 `none`。 Chrome、Firefox、Edge、Safari和Opera自2017年11月推出 `strict` 以 `lax` 來都提供 `none` 支援。 不過，有些舊版瀏覽器不支援此設定。
+SameSite 屬性會告訴瀏覽器在第一方和第三方情境下觸發 Cookie 的時機和方式。SameSite 屬性可能具有以下任一值：`strict`、`lax` 或 `none`。Chrome、Firefox、Edge、Safari 和 Opera 自 2017 年 11 月起便支援 `strict` 和 `lax`，而 `none` 也已於 2018 年導入。然而，部分舊版瀏覽器並不支援此設定。
 
-在2020年2月，Google發行Chrome 80，並將預設設定從 `none` Cookie `lax` 沒有指定的SameSite屬性值時變更為。 此設定可防止在協力廠商內容（亦稱為「跨網站」）中使用Cookie。 隨後產生的任何第三方Cookie都必須設 `SameSite=none` 定為安全。
+2020 年 2 月，Google 發佈 Chrome 80，並將 Cookie 未指定 SameSite 屬性值時的預設設定從 `none` 變更為 `lax`。此設定可防止在第三方情境下使用 Cookie (亦稱為「跨網站」)。之後的第三方 Cookie 都必須設為 `SameSite=none`，並標為 secure。
 
-沒有指定SameSite屬性值的Cookie預設為 `lax`。
+未指定 SameSite 屬性值的 Cookie 會預設為 `lax`。
 
-請造訪 [Cookie標準檔案](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-03#section-4.1) ，以取得SameSite屬性的詳細資訊。
+如需 SameSite 屬性的詳細資訊，請參閱 [Cookie 標準文件](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-03#section-4.1)。
 
-## SameSite屬性值
+## SameSite 屬性值
 
-| SameSite屬性值 | 說明 |
+| SameSite 屬性值 | 說明 |
 | ------ | ------------ |
-| `strict` | 只有當反向連結頁面和登陸頁面都屬於Cookie的相同網域時，才會傳送具有此設定的Cookie。 |
-| `lax` | 只有當瀏覽器URL中顯示的網域符合Cookie的網域時，才會傳送具有此設定的Cookie。 這是Chrome中Cookie的新預設值。 |
-| `none` | 具有此設定的Cookie可供外部或第三方存取，例如「跨網站」。 在進行此變更之前， `none` 是Cookie的預設SameSite設定，因此使用此設定會使Cookie的行為方式與其傳統運作方式最類似。 不過，Google現在要求任何具有此設定的Cookie都必須指定安全標幟，這表示Cookie只會透過HTTPS建立並隨請求傳送。 所有不含安全標幟的跨網站Cookie都會被Google拒絕。 |
+| `strict` | 唯有參考頁面和登陸頁面與 Cookie 所屬的網域相同時，系統才會傳送採用此設定的 Cookie。 |
+| `lax` | 唯有瀏覽器 URL 中顯示的網域與 Cookie 的網域相符時，系統才會傳送採用此設定的 Cookie。這是 Chrome 中 Cookie 的新預設值。 |
+| `none` | 採用此設定的 Cookie 可供外部或第三方存取，例如「跨網站」。此次異動前，Cookie 的預設 SameSite 設定為 `none`，因此使用此設定的話，Cookie 的行為會與其傳統運作方式最為相似。不過，Google 現在要求所有採用此設定的 Cookie 都必須指定安全標幟，亦即 Cookie 只能應要求透過 HTTPS 建立及傳送。Google 會拒絕所有沒有安全標幟的跨網站 Cookie。 |
 
-## 身為Adobe Experience Cloud客戶，您需要瞭解的
+## Adobe Experience Cloud 客戶須知
 
-**不需要JavaScript更新**
+**不需更新 JavaScript**
 
-Adobe產品已發佈伺服器端更新，以設定具有適當屬性的第三方Cookie。 我們的客戶不需要JavaScript程式庫更新。
+Adobe 產品已發佈伺服器端更新，可使用適當屬性來設定第三方 Cookie。我們的客戶不需自行更新 JavaScript 資料庫。
 
-**確保協力廠商端點使用HTTPS**
+**確認第三方端點使用 HTTPS**
 
-所有客戶應確認其JavaScript設定是使用HTTPS來呼叫Adobe服務。 Target、Audience Manager和Experience Cloud Identity Service(ECID)會將協力廠商HTTP呼叫重新導向至其各自的HTTPS端點，以增加延遲。 這表示您不需要變更設定。 Analytics客戶應更新其實作，以便獨佔使用HTTPS，因為Analytics專屬的重新導向可能會造成資料遺失。
+所有客戶應確認其 JavaScript 設定是使用 HTTPS 來呼叫 Adobe 服務。Target、Audience Manager 和 Experience Cloud Identity Service (ECID) 會將第三方 HTTP 呼叫重新導向各自的 HTTPS 端點，但這麼做可能會增加延遲時間。換句話說，您不需變更設定。Analytics 客戶應更新實作，僅限使用 HTTPS，因為 Analytics 專有的重新導向機制可能會造成資料外洩。
 
-**正確標示的Cookie應如預期收集資料**
+**正確標示的 Cookie 應能順利收集資料**
 
-只要Cookie已正確標示，瀏覽器就不會採取任何動作來封鎖它們。 消費者可以選擇封鎖特定類型的Cookie，但目前這似乎只是選擇加入設定。
+只要正確標示 Cookie，瀏覽器就不會採取任何動作加以封鎖。消費者可選擇封鎖特定類型的 Cookie，但目前似乎只能使用選擇是否加入的設定來達成此目的。
 
-**沒有更新標籤的現有第三方Cookie將被忽略**
+**忽略未更新標籤的現有第三方 Cookie**
 
-在Chrome 80開始實施SameSite=之前建立的協力廠商Cookie`none` ，如果這些標幟不存在，Chrome 80將會忽略安全標幟設定。
+若第三方 Cookie 缺少 SameSite=`none` 和安全標幟，Chrome 80 會忽略在 Chrome 80 開始強制執行這些標幟設定前建立的第三方 Cookie。
 
-許多現有的Adobe協力廠商Cookie都沒有這些標幟，而且需要由Edge伺服器更新，使用者才能升級至Chrome 80，否則這些Cookie將會遺失。 當使用者造訪使用Cookie的任何網站時，Edge伺服器會自動更新。
+許多現有 Adobe 第三方 Cookie 都沒有這些標幟，且必須由 Edge 伺服器更新，使用者才能升級至 Chrome 80，否則這些 Cookie 就會遺失。使用者造訪使用 Cookie 的任何網站時，Edge 伺服器會自動更新。
 
-大部分的Adobe產品都已指派適當的標幟給Cookie。 但Analytics實作中，使用協力廠商資料收集且不使用ECID的情況除外。 客戶可能會遇到新訪客數量小幅度的暫時增加，否則將會回訪訪客。
+大部分 Adobe 產品均已為 Cookie 指派適當的標幟。使用第三方資料收集機制，但不使用 ECID 的 Analytics 實作則為例外。客戶的新訪客人數可能會短暫微幅增加，原因在於，原本系統會將這些新訪客視為舊訪客。
 
-**目的地和市集合作夥伴可能的Cookie比對減少（僅限Audience Manager）**
+**目的地和市集合作夥伴可能的 Cookie 比對減少 (僅限 Audience Manager)**
 
-雖然Adobe可控制Cookie的更新，但Adobe無法強制合作夥伴進行必要的變更。 使用目標合作夥伴或尚未進行這些更新之市場合作夥伴的Audience Manager客戶，Cookie比對可能會減少。
+雖然 Adobe 可控制其 Cookie 的更新狀況，但無法強制合作夥伴執行必要的變更作業。若 Audience Manager 客戶使用尚未完成這些更新的目的地或市集合作夥伴，Cookie 比對次數可能會因而減少。
 
-**Analytics好記的協力廠商Cookie(僅限Analytics`s_vi`Cookie)**
+**適合 Analytics 的第三方 Cookie (僅限 Analytics `s_vi` Cookie)**
 
-有些Analytics實作會使用Analytics CNAME別名，以啟用在 `s_vi` 該CNAME的網域中建立Cookie。 如果CNAME與您的網站位於相同的網域，則會將其指定為第一方Cookie。 不過，如果您擁有多個網域，並在所有網域間使用相同的CNAME進行資料收集，則會將其指定為這些其他網域上的第三方Cookie。
+部分 Analytics 實作會使用 Analytics CNAME 別名，於所在 CNAME 網域中建立 `s_vi` Cookie。如果 CNAME 與您的網站同屬相同網域，系統會將其指定為第一方 Cookie。不過，如果您有多個網域，並在所有網域上使用相同的 CNAME 來收集資料，則系統會將其指定為其他幾個網域的第三方 Cookie。
 
-隨著 `lax` 成為Chrome中新的預設SameSite設定，CNAME在其他網域中將不再顯示。
+隨著 `lax` 成為 Chrome 新的預設 SameSite 設定，CNAME 就不會在其他網域中顯示。
 
-為配合變更，Analytics現在已明確將Cookie的SameSite值設 `s_vi` 定為 `lax`。 若要在友好的協力廠商內容中使用此Cookie，請將SameSite值設為 `none`，這也表示您必須一律使用HTTPS。 請連絡客戶服務，變更您的安全CNAME的SameSite值。
+為配合此次異動，Analytics 已明確將 `s_vi` Cookie 的 SameSite 值設為 `lax`。若要在適合的第三方情境下使用此 Cookie，請將 SameSite 值設為 `none`，亦即您必須一律使用 HTTPS。請連絡客戶服務人員，為您的安全 CNAME 變更 SameSite 值。
 
 >[!IMPORTANT]
 >
->使用ECID的Analytics客戶、對每個網域使用個別CNAME的客戶，或僅使用第三方Analytics資料收集的客戶，不需執行此動作。
+> 使用 ECID 的 Analytics客戶、為每個網域使用個別 CNAME 的客戶，或僅使用第三方 Analytics 資料收集的客戶，不必執行此動作。
 
-## Adobe Standard訪客Cookie
+## Adobe 標準訪客 Cookie
 
-下表僅列出一般訪客標準Cookie。 如需其他Cookie設定，請參閱產品特定檔案或與Adobe代表聯絡。
+下表僅列出常見訪客標準 Cookie。如需其他 Cookie 設定，請參閱產品專屬文件，或與 Adobe 代表連絡。
 
 ### ECID
 
-| Cookie | 類型 | SameSite屬性 | 安全屬性 |
+| Cookie | 類型 | SameSite 屬性 | 安全屬性 |
 | ------ | ---- | ------------------ | ---------------- |
-| AMCV_###@AdobeOrg | 用戶端第一方 | 無增值*Chrome預設值為設 `lax` 定 | 可設定 |
-| AMCVS_###@AdobeOrg | 用戶端第一方 | 無增值*Chrome預設值為設 `lax` 定 | 可設定 |
+| AMCV_###@AdobeOrg | 用戶端第一方 | 未新增值 *Chrome 預設為 `lax` 設定 | 可設定 |
+| AMCVS_###@AdobeOrg | 用戶端第一方 | 未新增值 *Chrome 預設為 `lax` 設定 | 可設定 |
 | s_ecid | 伺服器端第一方 | SameSite==`lax` | 未設定 |
 
 ### Audience Manager
 
-| Cookie | 類型 | SameSite屬性 | 安全屬性 |
+| Cookie | 類型 | SameSite 屬性 | 安全屬性 |
 | ------ | ---- | ------------------ | ---------------- |
-| Demdex | 第三方 | `none` | 設為安全 |
-| Dextp | 第三方 | `none` | 設為安全 |
+| Demdex | 第三方 | `none` | 設為 secure |
+| Dextp | 第三方 | `none` | 設為 secure |
 
 ### Analytics
 
-| Cookie | 類型 | SameSite屬性 | 安全屬性 |
+| Cookie | 類型 | SameSite 屬性 | 安全屬性 |
 | ------ | ---- | ------------------ | ---------------- |
-| s_vi | <ul><li> 伺服器端第一方(若使用 `CNAME` </li> <li>使用2o7.net或omtrdc.net時的第三方</li></ul> | <ul><li>`lax` if first-party</li> <li>`none` if third party</li></ul> *客戶可以透過第一方網域的客戶服務票證編輯設定* | 設定，如果使用和 `none` HTTPS要求 |
-| s_fid | 用戶端第一方 | 無新增值*Chrome預設值為設 `lax` 定 | 未設定 |
+| s_vi | <ul><li> 使用 `CNAME` 時為伺服器端第一方 </li> <li>使用 2o7.net 或 omtrdc.net 時為第三方</li></ul> | <ul><li>第一方時為 `lax`</li> <li>第三方時為 `none`</li></ul> *客戶可透過第一方網域的客戶服務工單編輯設定* | 使用 `none` 和 HTTPS 要求時設定 |
+| s_fid | 用戶端第一方 | 未新增值 *Chrome 預設為 `lax` 設定 | 未設定 |
 
 ### Target
 
-| Cookie | 類型 | SameSite屬性 | 安全屬性 |
+| Cookie | 類型 | SameSite 屬性 | 安全屬性 |
 | ------ | ---- | ------------------ | ---------------- |
-| mbox | 第一方 | 無增值*Chrome預設值為設 `lax` 定 | 未設定 |
+| mbox | 第一方 | 未新增值 *Chrome 預設為 `lax` 設定 | 未設定 |
 
 ### Ad Cloud
 
-| Cookie | 類型 | SameSite屬性 | 安全屬性 |
+| Cookie | 類型 | SameSite 屬性 | 安全屬性 |
 | ------ | ---- | ------------------ | ---------------- |
-| everest_g_v2 | 第三方 | `none` *僅適用於Google Chrome和Chromium瀏覽器* | 設定，如果使用和 `none` HTTPS要求 |
-| data_adcloud | 第一方 | 無增值*Chrome預設值為設 `lax` 定 | 未設定 |
-| ev_tm | 第三方 | `none` *僅適用於Google Chrome和Chromium瀏覽器* | 設定，如果使用和 `none` HTTPS要求 |
+| everest_g_v2 | 第三方 | `none` *僅適用於 Google Chrome 和 Chromium 瀏覽器* | 使用 `none` 和 HTTPS 要求時設定 |
+| data_adcloud | 第一方 | 未新增值 *Chrome 預設為 `lax` 設定 | 未設定 |
+| ev_tm | 第三方 | `none` *僅適用於 Google Chrome 和 Chromium 瀏覽器* | 使用 `none` 和 HTTPS 要求時設定 |
 
 ### Bizible
 
-| Cookie | 類型 | SameSite屬性 | 安全屬性 |
+| Cookie | 類型 | SameSite 屬性 | 安全屬性 |
 | ------ | ---- | ------------------ | ---------------- |
 | _buid | 第三方 | `none` | Secure |
 
-### 馬克托·蒙奇金
+### Marketo Munchkin
 
-| Cookie | 類型 | SameSite屬性 | 安全屬性 |
+| Cookie | 類型 | SameSite 屬性 | 安全屬性 |
 | ------ | ---- | ------------------ | ---------------- |
-| _mkto_trk | 用戶端第一方 | 無增值*Chrome預設值為設 `lax` 定 | 可針對外部頁面進行設定 |
+| _mkto_trk | 用戶端第一方 | 未新增值 *Chrome 預設為 `lax` 設定 | 可針對外部頁面設定 |
 
-> !![IMPORTANT] Adobe協力廠商Cookie是在伺服器端
+> !![IMPORTANT] Adobe 第三方 Cookie 是在伺服器端設定
 
-如需詳細資訊，請參閱 [Target Google Chrome SameSite政策上的檔案](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html)。
+如需詳細資訊，請參閱 [Target 的 Google Chrome SameSite 原則](https://docs.adobe.com/content/help/zh-Hant/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html)文件。
