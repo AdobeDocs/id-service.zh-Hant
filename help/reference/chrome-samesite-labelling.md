@@ -3,9 +3,9 @@ title: Google Chrome SameSite 標籤異動
 seo-title: Google Chrome SameSite 標籤異動
 description: Adobe ECID (ID 服務) 程式庫文件。
 seo-description: Adobe ECID (ID 服務) 程式庫文件。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 592ca6ca6a72e57b728e286d0b730c5bd93c0c7b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1079'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ Adobe 產品已發佈伺服器端更新，可使用適當屬性來設定第三�
 
 >[!IMPORTANT]
 >
-> 使用 ECID 的 Analytics客戶、為每個網域使用個別 CNAME 的客戶，或僅使用第三方 Analytics 資料收集的客戶，不必執行此動作。
+>使用 ECID 的 Analytics 客戶、為每個網域使用個別 CNAME 的客戶，或僅使用第三方 Analytics 資料收集的客戶，不必執行此動作。
 
 ## Adobe 標準訪客 Cookie
 
