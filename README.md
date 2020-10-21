@@ -1,9 +1,16 @@
 ---
-source-git-commit: 676f6ca9c37f77fe24dbc3ceb9aef2d540b3adbe
-translation-type: ht
+source-git-commit: a49f9c8487e32ba23f0ec3c6c0ea39f8638695f3
+workflow-type: tm+mt
+translation-type: tm+mt
+source-wordcount: '520'
+ht-degree: 82%
 
 ---
 # 貢獻文章
+
+| EXL-PR | EXL | 預覽 | 啟動 | 已發佈 | 說明 |
+|--- |--- |--- |--- |--- |--- |
+| [![建置狀態](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/lastBuild/) | [![建置狀態](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/lastBuild) | [預覽URL](https://experienceleague.corp.adobe.com/docs/id-service/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [即時URL](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en) | [Authoring 指南](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 歡迎說明文件編撰團隊以外的社群成員和 Adobe 員工貢獻相關內容。
 
@@ -13,15 +20,15 @@ translation-type: ht
 
 ## 關於您對 Adobe 內容的貢獻
 
-請參閱 [Adobe 文件貢獻者指南](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)。
+請參閱 [Adobe Docs 貢獻者指南](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)。
 
-貢獻方式取決於您的身分和您要貢獻的變更類型:
+貢獻方式取決於您的身分和您要貢獻的變更類型：
 
 ### 微幅變更或請求
 
 若要提交請求，請按一下文章中的 **Log an issue** (登錄問題) 連結，在 GitHub 中開啟問題。指定標題和說明，然後按一下 **Submit new issue** (提交新問題)。
 
-若要請求微幅更新，請按一下文章中的 **Edit this page** (編輯此頁面) 連結，在 GitHub 中開啟來源文章。使用 GitHub UI 進行更新。如需詳細資訊，請參閱一般 [Adobe 文件貢獻者指南](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)。
+若要請求微幅更新，請按一下文章中的 **Edit this page** (編輯此頁面) 連結，在 GitHub 中開啟來源文章。使用 GitHub UI 進行更新。如需詳細資訊，請參閱一般 [Adobe Docs 貢獻者指南](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)。
 
 您為此存放庫文件和程式碼範例提交的微幅更正或釐清，均屬於 Adobe 使用條款規範的範圍。
 
@@ -35,7 +42,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### 由 Adobe 員工提出重大變更
 
-若您是 [!UICONTROL Adobe Experience Cloud] 解決方案產品團隊的技術撰寫人員、專案經理或開發人員，且您的工作正是貢獻或撰寫技術文章，請使用 `https://git.corp.adobe.com/AdobeDocs` 的私人存放庫。請參閱[內部協作指南](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html)。
+若您是 [!UICONTROL Adobe Experience Cloud] 解決方案產品團隊的技術撰寫人員、專案經理或開發人員，且您的工作正是貢獻或撰寫技術文章，請使用 `https://git.corp.adobe.com/AdobeDocs` 的私人存放庫。請參閱內 [部協作指南](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html)。
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -43,18 +50,18 @@ If you submit a pull request with significant changes to documentation and code 
 
 社群貢獻者可使用 GitHub UI 進行基本編輯或建立存放庫複本，提交重要貢獻。
 
-如需詳細資訊，請參閱 [Adobe 文件貢獻者指南](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)。
+如需詳細資訊，請參閱 [Adobe Docs 貢獻者指南](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)。
 
 ## 如何使用 Markdown 設定主題格式
 
-此存放庫中的所有文章皆使用 GitHub 精選的 Markdown 語言撰寫而成。若不熟悉 Markdown，請參閱:
+此存放庫中的所有文章皆使用 GitHub 精選的 Markdown 語言撰寫而成。若不熟悉 Markdown，請參閱：
 
 * [Markdown 基本介紹](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [可列印的 Markdown 速查表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [列印版 Markdown 速查表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## 標籤
 
-在公開存放庫中，系統會為提取請求指派自動化標籤，協助我們管理提取請求工作流程，同時協助您瞭解提取請求的最新狀況:
+在公開存放庫中，系統會為提取請求指派自動化標籤，協助我們管理提取請求工作流程，同時協助您瞭解提取請求的最新狀況：
 
-* **變更已傳送給作者**: 作者已收到處理提取請求的通知。
-* **準備合併**: 一切準備就緒，可供提取請求審核團隊審核。
+* **變更已傳送給作者**：作者已收到處理提取請求的通知。
+* **準備合併**：一切準備就緒，可供提取請求審核團隊審核。
