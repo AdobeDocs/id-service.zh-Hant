@@ -4,11 +4,11 @@ keywords: ID Service
 seo-description: 提供 Experience Cloud Identity 服務的功能發佈、更新或變更資訊。
 seo-title: 2020 年發行說明
 title: 2020 年發行說明
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d0057a8242dafca63101b1a2f569766bde11bea7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '145'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -28,4 +28,4 @@ ht-degree: 91%
 * 從 4.5 版開始，ECID 不允許使用者傳送空 ID 至 `setCustomerIDs` 方法。
 * 修正選擇加入功能設為 `doesOptInApply=false` 和 `isIabContext=true` 時發生的問題。
 
-如需 [所有產品的月度發行說明](https://docs.adobe.com/content/help/zh-Hant/release-notes/experience-cloud/current.html) ，請參閱Experience Cloud發行說明。
+如需查看所有產品每個月的發行說明，請參閱 [Experience Cloud 發行說明](https://docs.adobe.com/content/help/zh-Hant/release-notes/experience-cloud/current.html)。
