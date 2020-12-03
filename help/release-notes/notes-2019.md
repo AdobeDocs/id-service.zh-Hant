@@ -5,8 +5,11 @@ seo-description: 提供 Experience Cloud Identity 服務的功能發佈、更新
 seo-title: 2019 年發行說明
 title: 2019 年發行說明
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 100%
 
 ---
 
