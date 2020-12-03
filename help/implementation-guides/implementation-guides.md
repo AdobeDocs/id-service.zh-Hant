@@ -1,13 +1,16 @@
 ---
 description: 適用於 Experience Cloud Identity 服務的標準及非標準實作指示與程式碼範例。
-keywords: ID 服務
+keywords: ID Service
 seo-description: 適用於 Experience Cloud Identity 服務的標準及非標準實作指示與程式碼範例。
 seo-title: ID 服務實作指南
 solution: Experience Cloud
 title: 實作指南
 uuid: null
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e75a448a2fa1c384c88f00648a6f868a886c6569
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 100%
 
 ---
 
