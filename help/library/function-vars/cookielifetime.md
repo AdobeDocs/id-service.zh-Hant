@@ -1,12 +1,15 @@
 ---
 description: 此變數可讓您覆寫 AMCV Cookie 的預設期限間隔。
-keywords: ID 服務
+keywords: ID Service
 seo-description: 此變數可讓您覆寫 AMCV Cookie 的預設期限間隔。
 seo-title: cookieLifetime
 title: cookieLifetime
 uuid: cd945db3-429a-4625-ac3f-69ac259377a3
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '62'
+ht-degree: 100%
 
 ---
 
