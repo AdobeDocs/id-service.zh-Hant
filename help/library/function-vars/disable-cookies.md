@@ -1,12 +1,15 @@
 ---
 description: 此選用的布林值標幟可防止 Experience Cloud Identity 服務傳回第三方 demdex.net Cookie。
-keywords: ID 服務
+keywords: ID Service
 seo-description: 此選用的布林值標幟可防止 Experience Cloud Identity 服務傳回第三方 demdex.net Cookie。
 seo-title: disableThirdPartyCookies
 title: disableThirdPartyCookies
 uuid: 7ed5aa16-44ca-4702-878a-1a208ca95270
 translation-type: tm+mt
 source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
+workflow-type: tm+mt
+source-wordcount: '155'
+ht-degree: 60%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
 
 **語法:** `disableThirdPartyCookies: true|false` (預設為 `false`。)適用於 `VisitorAPI.js` v3.0.0 或更高版本。
 
-當 `disableThirdPartyCookies: true` 時，ID 服務不會傳回第三方 demdex.net Cookie (請參閱 [Cookie 與 Experience Cloud Identity 服務](../../introduction/cookies.md))。如果網站訪客在瀏覽器中已擁有此 Cookie，ID 服務不會使用該 Cookie 來建立新的 Experience Cloud ID (MID) 或傳回現有 ID。相反地，ID 服務會在第一方 Cookie 中建立新的隨機 ID。啟用後，您可以利用 ID 服務收集資料，並在不同的 Experience Cloud 解決方案之間共用資料。
+當 `disableThirdPartyCookies: true` 時，ID 服務不會傳回第三方 demdex.net Cookie (請參閱 [Cookie 與 Experience Cloud Identity 服務](../../introduction/cookies.md))。如果網站訪客的瀏覽器中已有此Cookie,ID服務將不會使用它建立新的Experience Cloud ID(MID)或傳回現有ID。 ID服務會在第一方Cookie中建立新的隨機MID。 啟用後，您就可以使用ID服務收集資料，並在不同的Experience Cloud解決方案間共用資料。
 
 **程式碼範例**
 
