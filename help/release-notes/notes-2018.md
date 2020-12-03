@@ -1,12 +1,15 @@
 ---
 description: 2018 年 Experience Cloud Identity 服務的功能發佈、更新或變更。
-keywords: ID 服務
+keywords: ID Service
 seo-description: 2018 年 Experience Cloud Identity 服務的功能發佈、更新或變更。
 seo-title: 2018 年發行說明
 title: 2018 年發行說明
 uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '489'
+ht-degree: 39%
 
 ---
 
@@ -26,8 +29,8 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>提高了 AMCV Cookie 的安全性 </p> </td> 
-   <td colname="col2"> <p>在內部安全性掃描期間，發現當使用 DTM 資料庫時，會發生用於工作階段管理的 Cookie 無法指定正確屬性的情況。這可能會導致 Cookie 資訊不慎遭共用。為解決此問題，我們已推出一項設定，可讓客戶將 AMCV Cookie 設為安全 Cookie。請參閱 <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>。 </p> </td> 
+   <td colname="col1"> <p>提高AMCV Cookie的安全性 </p> </td> 
+   <td colname="col2"> <p>在內部安全掃描期間，發現當使用DTM程式庫時，用於作業管理的Cookie無法指定正確的屬性。 這可能導致Cookie資訊不慎共用。 為解決此問題，我們引入了允許客戶將AMCV Cookie設為安全的組態。 請參閱 <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -43,15 +46,15 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>提高了 AMCV Cookie 的安全性 </p> </td> 
-   <td colname="col2"> <p>在內部安全性掃描期間，發現當使用 DTM 資料庫時，會發生用於工作階段管理的 Cookie 無法指定正確屬性的情況。這可能會導致 Cookie 資訊不慎遭共用。為解決此問題，我們已推出一項設定，可讓客戶將 AMCV Cookie 設為安全 Cookie。請參閱 secureCookie。 </p> </td> 
+   <td colname="col1"> <p>提高AMCV Cookie的安全性 </p> </td> 
+   <td colname="col2"> <p>在內部安全掃描期間，發現當使用DTM程式庫時，用於作業管理的Cookie無法指定正確的屬性。 這可能導致Cookie資訊不慎共用。 為解決此問題，我們引入了允許客戶將AMCV Cookie設為安全的組態。 請參閱 secureCookie。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>整合代碼和 ID 必須為數字或非空白的字串 </p> </td> 
-   <td colname="col2"> <p>修正含有非數字或非空白字串集合「代碼」或「ID」的資料，在驗證「setCustomerIDs」時出現的問題。 </p> </td> 
+   <td colname="col1"> <p>整合程式碼和ID必須是數字或非空字串 </p> </td> 
+   <td colname="col2"> <p>修正當資料包含非數字或非空字串的整合「code」或「id」時，驗證「setCustomerIDs」的問題。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 公開 Git 存放庫提供 ECID JS </td> 
+   <td colname="col1"> ECID JS可在Public Git repo中使用 </td> 
    <td colname="col2"> 公開 Git 存放庫現於 https://github.com/Adobe-Marketing-Cloud/id-service/releases ，開放所有 Experience Cloud 客戶使用 ECID JS。 </td> 
   </tr> 
  </tbody> 
@@ -69,7 +72,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
  <tbody> 
   <tr> 
    <td colname="col1"> <p>不重複訪客計數出現不符實情的尖峰 </p> </td> 
-   <td colname="col2"> <p>Experience Cloud Identity Service 3.1.0 版發行後，我們發現實作本版本時，不重複訪客計數會出現與事實不符的尖峰。只有在最新版的 ECID v3.1.0，而且使用者在 Safari 瀏覽器的隱私權設定中選取「僅允許來自目前的網站」時，才會發生此問題。3.1.2 版會修正此問題。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud Identity Service 3.1.0 版發行後，我們發現實作本版本時，不重複訪客計數會出現與事實不符的尖峰。此行為只會與最新版ECID v3.1.0一起呈現，而且如果使用者在Safari瀏覽器的隱私權設定中選取「僅允許從目前網站使用」選項，則會顯示。 3.1.2版修正了此問題。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -89,8 +92,8 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Cookie 設定在不正確的網域 </p> </td> 
-   <td colname="col2"> <p>我們修正的問題是暫時訪客 Cookie 會將 Cookie 設在「預設」Cookie 網域，而非設於組態 (initConfig) 中提供的網域。 </p> </td> 
+   <td colname="col1"> <p>在不正確的網域上設定Cookie </p> </td> 
+   <td colname="col2"> <p>我們修正臨時訪客Cookie在「預設」Cookie網域中設定Cookie，而非在設定(initConfig)中提供的網域中設定Cookie的錯誤。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -107,15 +110,15 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
  <tbody> 
   <tr> 
    <td colname="col1"> <p>適用於多重 ID 同步請求的執行緒禮讓作業 </p> </td> 
-   <td colname="col2"> <p><b>Iframe</b> </p> <p>若為執行多重 ID 同步的客戶，由於執行連續 CPU 運算，因此導致 UI 在某些情況下發生壅塞情況。我們推出了執行緒禮讓作業，藉此按照每個執行緒 100 毫秒的頻率隔離 ID 同步請求。 </p> <p>這項變革改善了使用 Visitor 2.3.0+ 與 DIL 6.10+ 之客戶的效能。 </p> </td> 
+   <td colname="col2"> <p><b>Iframe</b> </p> <p>對於執行多個ID同步的客戶，由於持續進行CPU計算，UI在某些情況下會遭到封鎖。 我們推出線程產生功能，將ID同步請求分隔為100毫秒。 </p> <p>這項變更將改善使用Visitor 2.3.0+和DIL 6.10+的客戶的效能。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 新增停用第三方呼叫的功能 </td> 
    <td colname="col2"> <p><b>JavaScript - 3.0.0</b> </p> <p>Adobe 重新命名下列用以允許停用第三方同步呼叫的設定。 </p> <p>idSyncDisableSyncs 重新命名為 disableIdSyncs </p> <p>idSyncDisable3rdPartySyncing 重新命名為 disableThirdPartyCookies </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Internet Explorer 支援 </p> </td> 
-   <td colname="col2"> <p>ID 服務不再支援 Internet Explorer 6、7、8 和 9。 </p> </td> 
+   <td colname="col1"> <p>Internet Explorer支援 </p> </td> 
+   <td colname="col2"> <p>ID服務不再支援Internet Explorer 6、7、8和9。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>更新至 getInstance 文件 </p> </td> 
