@@ -1,9 +1,9 @@
 ---
 title: 根據使用者同意使用選擇加入以控制 Experience Cloud 活動
 description: Adobe 選擇加入物件是 Adobe Experience Platform Identity Service 的擴充功能，旨在協助您根據一般使用者同意，控制哪些 Experience Cloud 解決方案能否在網頁上建立 Cookie 及啟動指標。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3aba8820ef40d068c732a637be5ab67652a8d35d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Adobe [!UICONTROL 選擇加入]物件是 Adobe [!UICONTROL Experience Platform I
 
 此外，最輕鬆設定[!UICONTROL 選擇加入]的方法是透過 Adobe Experience Platform Launch。觀看以下短片，瞭解設定方式。
 
->[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
 
 如果您沒有使用 Experience Platform Launch，可以在初始化全域「訪客」物件時指定[!UICONTROL 選擇加入]的設定，如[文件](https://marketing.adobe.com/resources/help/zh_TW/mcvid/getting-started.html)所示。
 
@@ -46,7 +46,7 @@ Adobe [!UICONTROL 選擇加入]物件是 Adobe [!UICONTROL Experience Platform I
 
 在以下影片中，請觀看頁面上的[!UICONTROL 選擇加入]快速示範，以及其如何影響 Experience Cloud 解決方案是否可設定 Cookie、啟動指標等。
 
->[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12)
 
 **注意：**&#x200B;請務必注意，撰寫本文時，[!UICONTROL 選擇加入]尚未內建於所有 Experience Cloud 解決方案的程式庫。目前支援[!UICONTROL 選擇加入]的程式庫：
 
