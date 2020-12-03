@@ -1,25 +1,28 @@
 ---
-description: 呼叫此 ID 服務函數可判斷 ID 服務是否產生用戶端 Experience Cloud 訪客 ID (MID)。適用於 VisitorAPI.js 1.7.0 版或更新版本。
-keywords: ID 服務
-seo-description: 呼叫此 ID 服務函數可判斷 ID 服務是否產生用戶端 Experience Cloud 訪客 ID (MID)。適用於 VisitorAPI.js 1.7.0 版或更新版本。
+description: 呼叫此ID服務函式，以判斷ID服務是否產生用戶端Experience Cloud訪客ID(MID)。 適用於 VisitorAPI.js 1.7.0 版或更新版本。
+keywords: ID Service
+seo-description: 呼叫此ID服務函式，以判斷ID服務是否產生用戶端Experience Cloud訪客ID(MID)。 適用於 VisitorAPI.js 1.7.0 版或更新版本。
 seo-title: isClientSideMarketingCloudVisitorID
 title: isClientSideMarketingCloudVisitorID
 uuid: 1c39ac60-1d2b-4ed4-a2ea-30d680e61e10
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 52%
 
 ---
 
 
 # isClientSideMarketingCloudVisitorID{#isclientsidemarketingcloudvisitorid}
 
-呼叫此 ID 服務函數可判斷 ID 服務是否產生用戶端 Experience Cloud 訪客 ID (MID)。適用於 VisitorAPI.js 1.7.0 版或更新版本。
+呼叫此ID服務函式，以判斷ID服務是否產生用戶端Experience Cloud訪客ID(MID)。 適用於 VisitorAPI.js 1.7.0 版或更新版本。
 
 **語法**
 
 `var *`variableName`* = visitor.isClientSideMarketingCloudVisitorID()`
 
-下表列出並說明此函數傳回的回應。
+下表列出並說明此函式傳回的回應。
 
 <table id="table_5D08A5DD6FD04F94818B0E8B790D3136"> 
  <thead> 
