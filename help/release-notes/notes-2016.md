@@ -5,9 +5,9 @@ seo-description: 2016 年 Experience Cloud Identity Service 的功能發佈、�
 seo-title: 2016 年發行說明
 title: 2016 年發行說明
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 100%
 
