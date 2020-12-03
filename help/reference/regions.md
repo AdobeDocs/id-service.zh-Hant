@@ -5,9 +5,9 @@ seo-description: AMCV Cookie 包含網站訪客的 Experience Cloud ID (MID) 和
 seo-title: 從 AMCV Cookie 或 ID 服務取得地區和使用者 ID
 title: 從 AMCV Cookie 或 ID 服務取得地區和使用者 ID
 uuid: bdd9d001-f29f-4ff0-800b-8182243da218
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 100%
 
