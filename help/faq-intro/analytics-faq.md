@@ -5,9 +5,9 @@ seo-description: 關於搭配 Identity Service 使用 Analytics 的功能、功�
 seo-title: Analytics 與 Identity Service 常見問題集
 title: Analytics 與 Identity Service 常見問題集
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 100%
 
