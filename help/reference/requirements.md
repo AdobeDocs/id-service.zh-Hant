@@ -5,9 +5,9 @@ seo-description: 請參閱本節，確定您使用的解決方案、服務及程
 seo-title: Experience Cloud Identity Service 的需求
 title: Experience Cloud Identity Service 的需求
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 100%
 
