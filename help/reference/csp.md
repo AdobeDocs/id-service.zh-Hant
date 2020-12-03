@@ -5,9 +5,9 @@ seo-description: 內容安全性原則 (CSP) 是 HTTP 標題和安全性功能�
 seo-title: 內容安全性原則及 Experience Cloud Identity Service
 title: 內容安全性原則及 Experience Cloud Identity Service
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 100%
 
