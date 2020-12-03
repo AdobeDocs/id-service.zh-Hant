@@ -1,12 +1,15 @@
 ---
 description: 2015 年發行說明和更新。
-keywords: ID 服務
+keywords: ID Service
 seo-description: 2015 年發行說明和更新。
 seo-title: 2015 年發行說明
 title: 2015 年發行說明
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 69%
 
 ---
 
@@ -25,26 +28,26 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 2015 年 9 月
 
-* 修正 Safari 瀏覽器在使用者封鎖第三方 Cookie 時，功能無法同步服務使其得以運作的問題。(AAM-20764)
+* 修正當使用者封鎖第三方Cookie時，同步服務無法運作的Safari瀏覽器錯誤。 (AAM-20764)
 
-* 對 ID 服務發出的呼叫現在也在 `d_visid_ver=` 參數中納入版本 ID。傳回 ID 有助於內部團隊疑難排解問題並提供支援。(AAM-20824)
+* 對 ID 服務發出的呼叫現在也在 `d_visid_ver=` 參數中納入版本 ID。傳回的ID可協助內部團隊疑難排解和支援問題。 (AAM-20824)
 
 
 ## 版本 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
 2015 年 8 月
 
-* 修正錯誤，防止 ID 服務在沒有可同步或可啟動的資料時請求 iframe。(AAM-20164)
-* 修正錯誤，此錯誤會讓 ID 服務無法正常設定多部分頂級網域的 Cookie。例如，如果您有一個類似 `my_company.co.uk` 的網域，在某些情況下，ID 服務只會在 `co.uk` 設定 Cookie。(AN-104683)
+* 修正錯誤，防止ID服務在沒有資料可同步或觸發時請求iframe。 (AAM-20164)
+* 修正ID服務無法正確設定多部分頂層網域Cookie的錯誤。 例如，如果您有一個類似 `my_company.co.uk` 的網域，在某些情況下，ID 服務只會在 `co.uk` 設定 Cookie。(AN-104683)
 
    此錯誤只會影響符合下列&#x200B;*所有*&#x200B;條件的部分用戶端:
 
-   * 使用 ID 服務。
-   * 已啟用[寬限期](../reference/analytics-reference/grace-period.md)*或*&#x200B;使用第一方 Cookie，且使用者封鎖第三方 Cookie。
+   * 使用ID服務。
+   * 已啟用[寬限期&#x200B;](../reference/analytics-reference/grace-period.md)*或*&#x200B;使用第一方 Cookie，且使用者封鎖第三方 Cookie。
 
    * 擁有的頁面具有多部分的頂級網域。
 
-此版本中的文件修訂包括:
+本版次的檔案修訂包括：
 
 * [API 方法與程式碼程式庫](../library/library.md#concept-ff27497375644a898d47984aefb21c97): 重新整理內容與文字。在大多數情況下，每個方法會有專屬的頁面。
 * [Experience Cloud Identity 服務的需求](../reference/requirements.md): 修訂內容與重新整理文字。
@@ -75,7 +78,7 @@ var visitor = Visitor.getInstance("016D5C175213CCA80A490D05@AdobeOrg",{
 
 2015 年 2 月
 
-修正 AAM Blob 和位置提示之請求逾時的處理。現在，針對逾時，系統會將目前頁面的這些欄位正確地保留空白，並進行所有回呼。逾時會被視為錯誤條件，因此會在下一頁再試一次。(AN-94473、AN-94474)
+修正AAM Blob和位置提示請求逾時的處理。 現在，在逾時時時，系統會將目前頁面的這些欄位正確保留空白，並進行所有回呼。 逾時會視為錯誤條件，因此會在下一頁再試一次。 (AN-94473、AN-94474)
 
 ## 版本 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
 
