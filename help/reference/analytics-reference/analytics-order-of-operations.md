@@ -5,9 +5,9 @@ seo-description: 在您部署訪客 ID 服務後，在 Analytics 中有 5 種方
 seo-title: Analytics ID 的作業順序
 title: Analytics ID 的作業順序
 uuid: cb1d136e-093f-43b0-a7e1-96f1e61fdad0
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 100%
 
