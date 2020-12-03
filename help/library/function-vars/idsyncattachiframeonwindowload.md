@@ -1,12 +1,15 @@
 ---
 description: 此選用的布林值標幟可控制 Experience Cloud Identity 服務載入 ID 同步 iFrame 的方式。
-keywords: ID 服務
+keywords: ID Service
 seo-description: 此選用的布林值標幟可控制 Experience Cloud Identity 服務載入 ID 同步 iFrame 的方式。
 seo-title: idSyncAttachIframeOnWindowLoad
 title: idSyncAttachIframeOnWindowLoad
 uuid: aa2c2fa4-2cab-4e08-8d35-729a6c3e459a
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 79%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 **語法:** ` `idSyncAttachIframeOnWindowLoad= true|false`` (預設為 `false`)。
 
-當 `idSyncAttachIframeOnWindowLoad: true` 時，ID 服務會在視窗載入時載入 ID 同步 iFrame。根據預設，ID 服務會儘快載入 ID 同步 iFrame，而非在視窗載入時才載入。
+當 `idSyncAttachIframeOnWindowLoad: true` 時，ID 服務會在視窗載入時載入 ID 同步 iFrame。依預設，ID服務會盡可能快速載入ID同步iFrame，而非在視窗載入時載入。
 
 **程式碼範例**
 
