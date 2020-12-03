@@ -1,19 +1,22 @@
 ---
-description: 此協助方法可讓您附加至增補資料 ID (SDID) 做為查詢字串參數，以重新導向 URL。如果您使用 A4T，而且需要從某個頁面保留 SDID 到另一個頁面，並將這些個別早訪結合在一起，這種方法就很實用。若要使用此函數，您必須先實作 ID 服務，且來源和目的地網域都使用相同的組織 ID。
-keywords: ID 服務
-seo-description: 此協助方法可讓您附加至增補資料 ID (SDID) 做為查詢字串參數，以重新導向 URL。如果您使用 A4T，而且需要從某個頁面保留 SDID 到另一個頁面，並將這些個別早訪結合在一起，這種方法就很實用。若要使用此函數，您必須先實作 ID 服務，且來源和目的地網域都使用相同的組織 ID。
+description: 此輔助方法可讓您將補充資料ID(SDID)附加為查詢字串參數至重新導向URL。 當使用A4T時，這很有用，您需要將SDID從一個頁面保存到另一個頁面，並將這些個別的造訪連結在一起。 若要使用此函數，您必須先實作 ID 服務，且來源和目的地網域都使用相同的組織 ID。
+keywords: ID Service
+seo-description: 此輔助方法可讓您將補充資料ID(SDID)附加為查詢字串參數至重新導向URL。 當使用A4T時，這很有用，您需要將SDID從一個頁面保存到另一個頁面，並將這些個別的造訪連結在一起。 若要使用此函數，您必須先實作 ID 服務，且來源和目的地網域都使用相同的組織 ID。
 seo-title: appendSupplementalDataIDTo
 title: appendSupplementalDataIDTo
 uuid: f3504d82-8da3-4971-818b-3df57df4ec2d
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 44%
 
 ---
 
 
 # appendSupplementalDataIDTo{#appendsupplementaldataidto}
 
-此協助方法可讓您附加至增補資料 ID (SDID) 做為查詢字串參數，以重新導向 URL。如果您使用 A4T，而且需要從某個頁面保留 SDID 到另一個頁面，並將這些個別早訪結合在一起，這種方法就很實用。若要使用此函數，您必須先實作 ID 服務，且來源和目的地網域都使用相同的組織 ID。
+此輔助方法可讓您將補充資料ID(SDID)附加為查詢字串參數至重新導向URL。 當使用A4T時，這很有用，您需要將SDID從一個頁面保存到另一個頁面，並將這些個別的造訪連結在一起。 若要使用此函數，您必須先實作 ID 服務，且來源和目的地網域都使用相同的組織 ID。
 
 內容:
 
@@ -50,7 +53,7 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219
 
 ## 使用 sdidParamExpiry 變更 SDID 逾時 {#section-99946715cefa4acc95200b093db5297e}
 
-使用 `appendSupplementalDataIDTo` 協助函數將該 ID 從一個頁面傳至另一個頁面時，[sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) 設定可讓您變更預設的 SDID 過期時間間隔。依預設，接收頁面的 ID 服務程式碼有 30 秒的時間，取得透過所述頁面傳送的 URL 提供的 SDID。如果接收頁面的 ID 服務程式碼無法在 30 秒內擷取 SDID，則會要求新的 SDID。此功能主要適用於需要從某一頁面傳遞 SDID 至另外一個頁面，同時還要控制逾時時間間隔的 A4T 客戶。
+使用 `appendSupplementalDataIDTo` 協助函數將該 ID 從一個頁面傳至另一個頁面時，[sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) 設定可讓您變更預設的 SDID 過期時間間隔。依預設，接收頁面上的ID服務程式碼有30秒可從轉介頁面傳送的URL取得SDID。 如果接收頁面上的ID服務程式碼在30秒內無法擷取SDID，則會要求新的SDID。 此功能主要適用於需要將SDID從一個頁面傳遞至另一個頁面，且想要控制此逾時間隔的A4T客戶。
 
 如果您需要變更預設的 SDID 逾時，請使用下列語法將 `sdidParamExpiry` 新增至 `Visitor.getInstance` 函數:
 
@@ -58,7 +61,7 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219
 
 **程式碼範例**
 
-設定您的 ID 服務程式碼後，看起來可能會近似於此範例。此範例將 SDID 逾時設為 15 秒。
+設定好後，您的ID服務程式碼看起來可能類似此範例。 此示例將SDID超時設定為15秒。
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
