@@ -1,12 +1,15 @@
 ---
 description: 多部分、頂級網域需要此變數，其中 URL 最後 2 個部分的其中一個部分大於兩個字元。
-keywords: ID 服務
+keywords: ID Service
 seo-description: 多部分、頂級網域需要此變數，其中 URL 最後 2 個部分的其中一個部分大於兩個字元。
 seo-title: cookieDomain
 title: cookieDomain
 uuid: a57e5477-c07b-4d54-8aea-8e8b152f1423
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '74'
+ht-degree: 100%
 
 ---
 
