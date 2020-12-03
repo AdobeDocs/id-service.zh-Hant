@@ -3,9 +3,9 @@ title: Google Chrome SameSite 標籤異動
 seo-title: Google Chrome SameSite 標籤異動
 description: Adobe ECID (ID 服務) 程式庫文件。
 seo-description: Adobe ECID (ID 服務) 程式庫文件。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 592ca6ca6a72e57b728e286d0b730c5bd93c0c7b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 100%
 
