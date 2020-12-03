@@ -5,9 +5,9 @@ seo-description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie �
 seo-title: Cookie 與 Experience Cloud Identity Service
 title: Cookie 與 Experience Cloud Identity Service
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 100%
 
@@ -135,7 +135,7 @@ Experience Cloud ID (MID) 是依照組織 ID 和 demdex ID 利用數學公式計
 | AMCV (Javascript) | 無 | 可設定 | 未設定 (預設為 Lax) |
 | AMCVS (Javascript) | 無 | 可設定 | 未設定 (預設為 Lax) |
 
-*注意：如需使用安全屬性設定 AMCV 和 AMCVS Cookie 的相關資訊，請參閱[secureCookie](https://docs.adobe.com/content/help/zh-Hant/id-service/using/id-service-api/configurations/securecookie.html)主題。*
+*注意：如需使用安全屬性設定 AMCV 和 AMCVS Cookie 的相關資訊，請參閱 [secureCookie](https://docs.adobe.com/content/help/zh-Hant/id-service/using/id-service-api/configurations/securecookie.html) 主題。*
 
 ## 下一步 {#section-8db1727a63bc4ff68b495f270315d453}
 
