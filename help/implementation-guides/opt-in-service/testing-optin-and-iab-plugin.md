@@ -6,6 +6,9 @@ title: 驗證選擇加入服務
 uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
 translation-type: tm+mt
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+workflow-type: tm+mt
+source-wordcount: '471'
+ht-degree: 27%
 
 ---
 
@@ -24,15 +27,15 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 ![](assets/use_case_1_1.png)
 
-載入頁面前，請清除快取和 Cookie。
+載入頁面前，請清除快取和Cookie。
 
-在 Chrome 中，以滑鼠右鍵按一下網頁，然後選取「檢查」。如上方截圖所示，請選取&#x200B;*「網路」*&#x200B;標籤以檢視瀏覽器提出的要求。
+在Chrome中，在網頁上按一下滑鼠右鍵，然後選取「檢查」。 如上述螢幕擷取中所示，請選取「 *網路* 」索引標籤，以檢視從瀏覽器提出的要求。
 
-在上例中，我們在網頁中安裝下列 Adobe JS 標籤: ECID、AAM、Analytics 和 Target。
+在上述範例中，我們在頁面上安裝了下列Adobe JS標籤：ECID、AAM、Analytics和Target。
 
 **如何證實選擇加入順利運作:**
 
-您不應該看到任何傳送到 Adobe 伺服器的要求:
+您不應看到任何對Adobe伺服器的要求：
 
 * demdex.net/id
 * demdex.net/event
@@ -42,15 +45,15 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 >[!NOTE]
 >
->您可能會看到目標為 `http://dpm.demdex.net/optOutStatus` 的呼叫，這是「唯讀」端點，用來擷取訪客的選擇退出狀態。此端點不會導致任何第三方 Cookie 成功建立，且不會收集頁面中的任何資訊。
+>您可能會看到目標為 `http://dpm.demdex.net/optOutStatus` 的呼叫，這是「唯讀」端點，用來擷取訪客的選擇退出狀態。此端點不會產生任何建立的第三方Cookie，也不會從頁面收集任何資訊。
 
-您不應該會看到 Adobe 標籤建立的任何 Cookie: AMCV_{{YOUR_ORG_ID}}、mbox、demdex、s_cc、s_sq、everest_g_v2、everest_session_v2
+您不應看到Adobe標籤所建立的任何Cookie:(AMCV_{{YOUR_ORG_ID}}、mbox、demdex、s_cc、s_sq、everest_g_v2、everest_session_v2)
 
-在 Chrome 中，前往&#x200B;*「應用程式」*&#x200B;標籤，展開&#x200B;*「儲存」*&#x200B;下的&#x200B;*「Cookies」*&#x200B;區段，然後選取您網站的網域名稱:
+在Chrome中，前往「應用程 *式* 」標籤，展開「儲存」下的「Cookie ****」區段，並選取您網站的網域名稱：
 
 ![](assets/use_case_1_2.png)
 
-## 使用案例 2: 啟用選擇加入與儲存 {#section-bd28326f52474fa09a2addca23ccdc0f}
+## 使用案例2:啟用選擇加入和儲存 {#section-bd28326f52474fa09a2addca23ccdc0f}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -59,9 +62,9 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-使用案例 2 中唯一的差異在於，您會看到&#x200B;*一個新 Cookie*，此 Cookie 會包含訪客提供的選擇加入權限: **adobeujs-optin**
+使用案例2的唯一差異是，您會看 *到新Cookie* ，其中包含訪客提供的「選擇加入」權限： **adobeujs-optin**
 
-## 使用案例3: 啟用選擇加入及預先核准 Adobe Analytics {#section-257fe582b425496cbf986d0ec12d3692}
+## 使用案例3:啟用選擇加入和預先核准Adobe Analytics {#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -73,15 +76,15 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-由於 Adobe Analytics 已預先通過選擇加入核准，您會在「網路」標籤中看到傳送至您追蹤伺服器的要求:
+由於Adobe Analytics已預先獲准加入，您會在「網路」索引標籤中看到追蹤伺服器的要求：
 
 ![](assets/use_case_3_1.png)
 
-且您會在「應用程式」標籤中看到 Analytics Cookie:
+而且您會在「應用程式」索引標籤中看到Analytics Cookie:
 
 ![](assets/use_case_3_2.png)
 
-## 使用案例 4: 啟用選擇加入與 IAB {#section-64331998954d4892960dcecd744a6d88}
+## 使用案例4:啟用選擇加入和IAB {#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -90,9 +93,9 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-**如何在頁面上檢視您目前的 IAB 同意:**
+**如何在頁面上檢視您目前的IAB同意：**
 
-開啟開發人員工具，然後選取&#x200B;*「主控台」*&#x200B;標籤。貼上下列程式碼片段，然後按下 Enter 鍵:
+開啟開發人員工具並選取「 *Console* 」標籤。 貼上下列程式碼片段，然後按Enter:
 
 ```
 <codeblock>
@@ -102,15 +105,15 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
   
 ```
 
-以下是目的 1、2 和 5 通過核准且 Audience Manager 廠商 ID 通過核准時的範例輸出結果:
+以下是核准目的1、2和5且核准Audience Manager廠商ID時的輸出範例：
 
-* demdex.net/id: 若有此呼叫，就表示 ECID 已從 demdex.net 要求 ID。
-* demdex.net/event: 若有此呼叫，就表示 DIL 資料收集呼叫順利運作。
-* demdex.net/dest5.html: 若有此呼叫，就表示已觸發 ID 同步。
+* demdex.net/id:此呼叫的出現證明ECID已向demdex.net要求ID
+* demdex.net/event:此呼叫的出現證明DIL資料收集呼叫正如預期運作。
+* demdex.net/dest5.html:此呼叫的出現證明ID同步正在觸發。
 
 ![](assets/use_case_4_1.png)
 
-如果下列任一情況無效，您便不會看到任何傳送到 Adobe 伺服器的要求，且不會有 Adobe Cookie:
+如果下列其中一項無效，您將看不到任何對Adobe伺服器的要求，也看不到任何Adobe Cookie:
 
-* 目的 1、2「或」5 未通過核准。
-* Audience Manager 廠商 ID 未通過核准。
+* 未核准用途1、2或5。
+* Audience Manager廠商ID未核准。
