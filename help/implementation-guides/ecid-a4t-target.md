@@ -1,25 +1,28 @@
 ---
-description: 這些指示適用於擁有混合式伺服器端及用戶端 Target、Analytics 和 ID實作的 A4T 客戶。需要在 NodeJS 或 Rhino 環境中執行 ID 服務的客戶也應檢視這份資訊。ID 服務的例項使用縮短版 VisitorAPI.js 程式碼程式庫，您可從 Node Package Manager (NPM) 下載與安裝。請查看本節的安裝指示及其他設定需求。
-keywords: ID 服務
-seo-description: 這些指示適用於擁有混合式伺服器端及用戶端 Target、Analytics 和 ID實作的 A4T 客戶。需要在 NodeJS 或 Rhino 環境中執行 ID 服務的客戶也應檢視這份資訊。ID 服務的例項使用縮短版 VisitorAPI.js 程式碼程式庫，您可從 Node Package Manager (NPM) 下載與安裝。請查看本節的安裝指示及其他設定需求。
+description: 這些指示適用於擁有混合式伺服器端及用戶端 Target、Analytics 和 ID實作的 A4T 客戶。需要在NodeJS或Rhino環境中執行ID服務的客戶也應檢視此資訊。 此ID服務例項使用VisitorAPI.js程式碼庫的縮短版本，您可從Node Package Manager(NPM)下載並安裝。 請參閱本節以瞭解安裝指示和其他配置要求。
+keywords: ID Service
+seo-description: 這些指示適用於擁有混合式伺服器端及用戶端 Target、Analytics 和 ID實作的 A4T 客戶。需要在NodeJS或Rhino環境中執行ID服務的客戶也應檢視此資訊。 此ID服務例項使用VisitorAPI.js程式碼庫的縮短版本，您可從Node Package Manager(NPM)下載並安裝。 請參閱本節以瞭解安裝指示和其他配置要求。
 seo-title: 搭配 A4T 以及伺服器端的 Target 實作使用 ID 服務
 title: 搭配 A4T 以及伺服器端的 Target 實作使用 ID 服務
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 65%
 
 ---
 
 
 # 搭配 A4T 以及伺服器端的 Target 實作使用 ID 服務 {#using-the-id-service-with-a-t-and-a-server-side-implementation-of-target}
 
-這些指示適用於擁有混合式伺服器端及用戶端 Target、Analytics 和 ID實作的 A4T 客戶。需要在 NodeJS 或 Rhino 環境中執行 ID 服務的客戶也應檢視這份資訊。ID 服務的例項使用縮短版 VisitorAPI.js 程式碼程式庫，您可從 Node Package Manager (NPM) 下載與安裝。請查看本節的安裝指示及其他設定需求。
+這些指示適用於擁有混合式伺服器端及用戶端 Target、Analytics 和 ID實作的 A4T 客戶。需要在NodeJS或Rhino環境中執行ID服務的客戶也應檢視此資訊。 此ID服務例項使用VisitorAPI.js程式碼庫的縮短版本，您可從Node Package Manager(NPM)下載並安裝。 請參閱本節以瞭解安裝指示和其他配置要求。
 
 ## 簡介 {#section-ab0521ff5bbd44c592c3eaab31c1de8b}
 
-當 A4T (及其他客戶) 有以下需要時，可以使用此 ID 服務版本:
+A4T（和其他客戶）可在需要時使用此版本的ID服務：
 
-* 在其伺服器上轉譯網頁內容並傳遞給瀏覽器進行最終顯示。
+* 在其伺服器上演算網頁內容，並將它傳送至瀏覽器以進行最終顯示。
 * 進行伺服器端 [!DNL Target] 呼叫。
 * 對 [!DNL Analytics] 進行用戶端 (在瀏覽器內) 呼叫。
 * 同步不同的 [!DNL Target] 和 [!DNL Analytics] ID，以判斷某個解決方案看到的訪客，與另一個解決方案看到的訪客是否為同一人。
@@ -36,18 +39,18 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ## 步驟 1: 要求頁面 {#section-c12e82633bc94e8b8a65747115d0dda8}
 
-當訪客提出 HTTP 要求以載入網頁時，就是伺服器端活動的開始。在此步驟中，您的伺服器會收到此要求並檢查 [AMCV Cookie](../introduction/cookies.md)。AMCV Cookie 包含訪客的 [!DNL Experience Cloud] ID (MID)。
+伺服器端活動從訪客提出載入網頁的HTTP請求時開始。 在此步驟中，您的伺服器會收到此要求並檢查 [AMCV Cookie](../introduction/cookies.md)。 AMCV Cookie 包含訪客的 [!DNL Experience Cloud] ID (MID)。
 
 ## 步驟 2: 產生 ID 服務裝載 {#section-c86531863db24bd9a5b761c1a2e0d964}
 
-接下來，您需要對 ID 服務發出伺服器端 *`payload request`*。裝載要求會:
+接下來，您需要對 ID 服務發出伺服器端 *`payload request`*。裝載請求：
 
-* 傳遞 AMCV Cookie 至 ID 服務。
-* 要求後續步驟中 Target 和 Analytics 所需的資料 (如下所述)。
+* 將AMCV Cookie傳遞至ID服務。
+* 請求Target和Analytics在後續步驟中所需的資料，如下所述。
 
 >[!NOTE]
 >
->此方法只會向 [!DNL Target] 要求單一 Mbox。如果您需在單一呼叫中要求多個 Mbox，請參閱 [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload)。
+>此方法只會向 [!DNL Target] 要求單一 Mbox。If you need to request multiple mboxes in a single call, see [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
 
 您的裝載要求應看起來像下列的程式碼範例。在程式碼範例中，`visitor.setCustomerIDs` 是選用函數。如需詳細資訊，請參閱[客戶 ID 和驗證狀態](../reference/authenticated-state.md)。
 
@@ -124,7 +127,7 @@ ID 服務會在類似下列範例的 JSON 物件中傳回裝載。[!DNL Target] 
 
 ## 步驟 4: 取得 ID 服務的伺服器狀態 {#section-8ebfd177d42941c1893bfdde6e514280}
 
-伺服器狀態資料包含伺服器上已完成的工作相關資訊。用戶端 ID 服務程式碼需要這項資訊。透過[!DNL Dynamic Tag Manager] (DTM) 實作 ID 服務的客戶，可以將 DTM 設定為透過該工具傳遞伺服器狀態資料。如果您是透過非標準程序設定 ID 服務，則需要使用您自己的程式碼來傳回伺服器狀態。用戶端 ID 服務和 [!DNL Analytics] 程式碼會在頁面載入時傳遞狀態資料給 Adobe。
+伺服器狀態資料包含伺服器上已完成工作的相關資訊。 用戶端ID服務程式碼需要此資訊。 透過[!DNL Dynamic Tag Manager] (DTM) 實作 ID 服務的客戶，可以將 DTM 設定為透過該工具傳遞伺服器狀態資料。如果您是透過非標準程序設定 ID 服務，則需要使用您自己的程式碼來傳回伺服器狀態。用戶端 ID 服務和 [!DNL Analytics] 程式碼會在頁面載入時傳遞狀態資料給 Adobe。
 
 **透過 DTM 取得伺服器狀態**
 
@@ -153,7 +156,7 @@ Response.send("
 
 **DTM 設定**
 
-在 ID 服務例項的&#x200B;**[!UICONTROL 一般 &gt; 設定]**&#x200B;區段中將下列項目新增為名稱-值組:
+在 ID 服務例項的&#x200B;**[!UICONTROL 一般 > 設定]**&#x200B;區段中將下列項目新增為名稱-值組:
 
 * **[!UICONTROL 名稱:]** serverState
 * **[!UICONTROL 值:]** %serverState%
@@ -162,11 +165,11 @@ Response.send("
    >
    >值名稱必須符合您在頁面程式碼中為 `serverState` 設定的變數名稱。
 
-您進行的設定應該看起來如下所示:
+您設定的設定應如下所示：
 
 ![](assets/server_side_dtm.png)
 
-另請參閱 [DTM 的 Experience Cloud Identity 服務設定 ](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)。
+See also, [Experience Cloud Identity Service Settings for DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
 
 **不透過 DTM 取得伺服器狀態**
 
@@ -191,9 +194,9 @@ Response.send("
 
 ## 步驟 5: 提供頁面並傳回 Experience Cloud 資料 {#section-4b5631a0d75a41febd6f43f8c214c263}
 
-這時，Web 伺服器會傳送頁面內容給訪客的頁面。從這時開始，由瀏覽器 (而非伺服器) 進行所有剩餘的 ID 服務與 [!DNL Analytics] 呼叫。例如，在瀏覽器中:
+這時，Web 伺服器會傳送頁面內容給訪客的頁面。從這時開始，由瀏覽器 (而非伺服器) 進行所有剩餘的 ID 服務與 [!DNL Analytics] 呼叫。例如，在瀏覽器中：
 
-* ID 服務從伺服器收到狀態資料，並將 SDID 傳遞至 AppMeasurement。
+* ID服務會從伺服器接收狀態資料，並將SDID傳遞至AppMeasurement。
 * AppMeasurement 傳送關於頁面點擊的資料給 [!DNL Analytics]，包括 SDID。
 * [!DNL Analytics] 和 [!DNL Target] 比較這名訪客的 SDID。當 SDID 相同時，[!DNL Target] 和 [!DNL Analytics]便將伺服器端呼叫和用戶端呼叫結合在一起。此時，兩個解決方案將這名訪客視為同一人。
 
