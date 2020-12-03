@@ -1,12 +1,15 @@
 ---
 description: 選用的布林值標幟，可防止 ID 服務對其他網域進行呼叫。
-keywords: 跨網域追蹤;ID 服務
+keywords: cross domain tracking;ID Service
 seo-description: 選用的布林值標幟，可防止 ID 服務對其他網域進行呼叫。
 seo-title: 停用第三方通話
 title: 停用第三方通話
 uuid: e92ce1f5-67a4-476c-9d04-41d4e96b1592
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 58%
 
 ---
 
@@ -21,15 +24,15 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 **用途**
 
-此變數設計給有下列需求的客戶:
+此變數是專為需要：
 
-* 想防止 ID 服務從其安全的已驗證頁面進行呼叫。
-* 要求網站訪客具有 Experience Cloud ID (MID)。
-* 其他 Experience Cloud 解決方案運作正常。
+* 防止ID服務從其安全、已驗證的頁面進行呼叫。
+* 擁有Experience Cloud ID(MID)的網站訪客。
+* 其他Experience Cloud解決方案可正常運作。
 
 **實作策略**
 
-由於其他 Experience Cloud 解決方案需倚賴 MID，ID 服務會呼叫 Adobe 以傳回並設定這個 ID。如果您想停止 ID 服務從已驗證的網站區域進行呼叫，請讓 ID 服務先從不需要驗證的頁面進行必要的呼叫。等網站訪客擁有 MID 後，您就能在已驗證網站區域的 ID 服務程式碼中設定 `disableThirdPartyCalls= true`。此處運用的假設是，大部分客戶必須先瀏覽至驗證頁面，才能取得網站安全部分的存取權限。
+由於其他Experience Cloud解決方案依賴MID,ID服務會呼叫Adobe以傳回並設定此ID。 如果您想停止 ID 服務從已驗證的網站區域進行呼叫，請讓 ID 服務先從不需要驗證的頁面進行必要的呼叫。等網站訪客擁有 MID 後，您就能在已驗證網站區域的 ID 服務程式碼中設定 `disableThirdPartyCalls= true`。這裡的假設是，大部分（如果不是全部）客戶在存取您網站的安全部分之前，都會導覽至驗證頁面。
 
 **程式碼範例**
 
