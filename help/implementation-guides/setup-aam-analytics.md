@@ -5,9 +5,9 @@ seo-description: 這些指示適用於想使用 Experience Cloud Identity Servic
 seo-title: 實作適用於 Analytics 和 Audience Manager 的 Experience Cloud Identity Service
 title: 實作適用於 Analytics 和 Audience Manager 的 Experience Cloud Identity Service
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1303'
 ht-degree: 100%
 
@@ -146,7 +146,7 @@ Analytics 會使用追蹤伺服器進行資料收集。
 >
 >此時您應移除 [!DNL Audience Manager] DIL 程式碼，改為使用「對象管理模組」。如需相關指示，請參閱[實作伺服器端轉送](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/server-side-forwarding/ssf.html)。
 
-***(可選用，但建議使用)*建立自訂 Prop **
+***(可選用，但建議使用)* 建立自訂 Prop **
 
 在 `AppMeasurement.js` 中設定自訂 prop 以測量涵蓋範圍.將此自訂 Prop 新增至 `doPlugins` 檔案的 `AppMeasurement.js` 函數：
 
