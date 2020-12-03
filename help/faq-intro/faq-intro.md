@@ -1,12 +1,15 @@
 ---
 description: 關於 Experience Cloud Identity 服務的常見問題集，以及關於 ID 服務和其他 Experience Cloud 解決方案組合的章節。
-keywords: ID 服務
+keywords: ID Service
 seo-description: 關於 Experience Cloud Identity 服務的常見問題集，以及關於 ID 服務和其他 Experience Cloud 解決方案組合的章節。
 seo-title: 常見問題集
 title: 常見問題集
 uuid: b075957b-165f-4087-99ad-bf608b4d4967
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 100%
 
 ---
 
