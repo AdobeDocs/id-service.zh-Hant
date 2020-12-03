@@ -5,9 +5,9 @@ seo-description: Adobe Experience Cloud Identity Service (以下簡稱為「ID �
 seo-title: Experience Cloud Identity Service
 title: Experience Cloud Identity Service
 uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 # Adobe Experience Cloud Identity Service {#experience-cloud-id-service}
 
-Adobe Experience Cloud Identity Service (以下簡稱為「ID 服務」) 提供永續性的通用 ID，可識別 Experience Cloud 所有解決方案的訪客。它可取代 Analytics、Audience Manager、Target 等服務及其他 Experience Cloud 解決方案或功能的 ID 產生碼。
+Adobe Experience Cloud Identity Service (以下簡稱為「ID 服務」) 提供永續性的通用 ID，可識別 Experience Cloud 所有解決方案的訪客。這可取代 Analytics、Audience Manager、Target 等服務及其他 Experience Cloud 解決方案或功能的 ID 產生碼。
 
 <table id="table_5E612F746A704FE095B809A013EE977F" class="simpletable"> 
  <tbody> 
