@@ -5,9 +5,9 @@ seo-description: idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可
 seo-title: 依 URL 或資料來源執行 ID 同步作業
 title: 依 URL 或資料來源執行 ID 同步作業
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 100%
 
