@@ -5,9 +5,9 @@ seo-description: 這些指示適用於想使用 Experience Cloud Identity Servic
 seo-title: 實作適用於 Analytics 的 Experience Cloud Identity Service
 title: 實作適用於 Analytics 的 Experience Cloud Identity Service
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 100%
 
@@ -142,7 +142,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 將程式碼放置在包含設定的相同區段 (例如 `trackDownloads`、`linkInternalFilters`、`charSet` 等)。
 
-***(可選用，但建議使用)*建立自訂 Prop **
+***(可選用，但建議使用)* 建立自訂 Prop **
 
 在 `AppMeasurement.js` 或 `s_code.js` 中設定自訂 prop，以測量涵蓋範圍.將此自訂 Prop 新增至 `doPlugins` 或 `AppMeasurement.js` 檔案的 `s_code.js` 函數：
 
