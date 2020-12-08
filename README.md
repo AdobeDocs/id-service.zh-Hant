@@ -1,16 +1,12 @@
 ---
-source-git-commit: a49f9c8487e32ba23f0ec3c6c0ea39f8638695f3
-workflow-type: ht
-translation-type: ht
-source-wordcount: '520'
+source-git-commit: 315d157c7eb5d7532056502d9a9b856dedf212c9
+workflow-type: tm+mt
+translation-type: tm+mt
+source-wordcount: '438'
 ht-degree: 100%
 
 ---
-# 投稿
-
-| EXL-PR | EXL | 預覽 | 啟動 | 已發佈 | 說明 |
-|--- |--- |--- |--- |--- |--- |
-| [![建置狀態](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/lastBuild/) | [![建置狀態](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/lastBuild) | [預覽 URL](https://experienceleague.corp.adobe.com/docs/id-service/using/home.html?lang=zh-tw) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [即時 URL](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-tw) | [文章撰寫指南](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=zh-tw) |
+# 貢獻文章
 
 歡迎說明文件編撰團隊以外的社群成員和 Adobe 員工貢獻相關內容。
 
