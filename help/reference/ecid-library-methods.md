@@ -4,41 +4,25 @@ seo-title: Safari ITP 領域的 ECID 程式庫方法
 description: Adobe ECID (ID 服務) 程式庫的文件。
 seo-description: Adobe ECID (ID 服務) 程式庫的文件。
 translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+source-git-commit: 012bf5db473b37b17e7af957c08da71b253c718f
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 100%
+source-wordcount: '810'
+ht-degree: 72%
 
 ---
 
 
 # Safari ITP 領域的 ECID 程式庫方法
 
+>[!NOTE]
+>
+>已進行更新，以反映2020年11月12日發佈的ITP最新變更，這是Big Sur OS版本的一部分。
+
 由於 Safari 透過 ITP 加強管制跨網域追蹤，因此 Adobe 必須持續落實程式庫最佳實務，既支援客戶又能維護消費者的隱私和選擇。
 
-2019 年 2 月 21 日，Apple 公布了 ITP 的最新更新 (智慧防追蹤功能)。此版本詳細說明第一方 Cookie 的防追蹤新措施，有別於先前版本著重於第三方 Cookie。透過 document.cookie API 設定的所有第一方永續性 Cookie (通常稱為「用戶端」Cookie)，有效期限最多為 7 天。第三方 Cookie 將如舊版 ITP 所述，繼續遭到封鎖。如需深入了解 ITP 2.1 及 Adobe 解決方案的影響，請參閱 [Safari ITP 2.1 對 Adobe Experience Cloud 和 Experience Platform Customers 的影響](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)。
+自2020年11月10日起，所有透過document.cookie API（通常稱為「用戶端」Cookie）設定的第一方永久性Cookie，以及透過Safari和行動iOS瀏覽器中第一方CNAME實作所設定的Cookie，其過期限制為7天。 如舊版ITP中所述，第三方Cookie將繼續遭到封鎖。 如需深入了解 ITP 2.1 及 Adobe 解決方案的影響，請參閱 [Safari ITP 2.1 對 Adobe Experience Cloud 和 Experience Platform Customers 的影響](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)。
 
-## Adobe ECID for Safari ITP 常見問題集
-
-**為何 Experience Cloud ID 程式庫 (ECID) 在客戶第一方網域中設定的 AMCV Cookie，會受到 ITP 2.1 的影響？**
-
-AMCV Cookie 目前主要依賴 document. cookie API，並透過「用戶端」設定。Safari 偏好從客戶伺服器設定的 Cookie。
-
-**為何透過 CNAME 追蹤伺服器設定 Cookie，勝過在 Safari 中追蹤？**
-
-ITP 的規則強調將控制權還給開發人員。透過 CNAME 憑證實作，無法單獨透過 JavaScript 完成。Adobe 的 CNAME 憑證計畫 (伺服器端追蹤) 與 ITP 一致，且多年來一直是 Adobe 策略的一部分。ECID 程式庫目前發布將 ECID 程式庫功能移至 CNAME 實作的方法。
-
-**現今其他 Analytics 訪客追蹤方法都與 CNAME 搭配使用，為何 Adobe 反而將重心放在 ECID 程式庫？**
-
-ECID 程式庫、AMCV Cookie 和 ECID (也稱為 MID) 一開始是一種將所有 Adobe 解決方案整合至一個 ID 下的方法。此 ID 未來在 Adobe 產品藍圖中仍會是優先 Cookie 層級 ID，現在則是 Adobe Experience Platform 的預設 Cookie ID。
-
-**CNAME 可以協助客戶啟用多個網域追蹤嗎？**
-
-之前與 CNAME 同時存在的規則和警告仍然存在。某些情況下，CNAME 在多重網域的案例中有其用處。如果您有一個主要進入網站，可在使用者造訪其他網域之前識別使用者的身分，那麼 CNAME 將可讓您在不接受第三方 Cookie 的瀏覽器中啟用多重網域追蹤功能。雖然 CNAME 可以在某些情況下提供多重網域協助，不過將 ECID 移轉至 CNAME 實作的原因是為了永續執行訪客身分識別，並非為了多重網域追蹤。如需深入了解 CNAME 和多重網域，請參閱[資料收集 CNAME 和跨網域追蹤](/help/reference/analytics-reference/cname.md)。
-
-一有其他 ITP 變更，我們會在此處新增更多常見問題。若需更多資訊，請造訪 [Adobe Experience League](https://experienceleague.adobe.com/tw/#recommended/solutions/analytics)。
-
-## ITP 相關變更、方法和設定
+## ITP相關更改、方法和配置
 
 在 Safari 中建立其他追蹤方法時，這些方法將新增於此頁面作為參考。
 
@@ -48,25 +32,31 @@ ECID 程式庫、AMCV Cookie 和 ECID (也稱為 MID) 一開始是一種將所�
 
 如需 ITP 和 ECID 程式庫使用情況相關資訊，請參閱下文。
 
-## 使用 ECID 程式庫和 CNAME 追蹤延長訪客 ID 的有效期限
+## 目前ITP和Apple WebKit的ECID程式庫行為
 
-ITP 2.1 會使寫入用戶端 Cookie 的能力受到限制，導致向客戶提供的訪客追蹤資訊，準確度大打折扣。因此，我們已著手調整 Adobe 的 CNAME 追蹤伺服器，將訪客的 Experience Cloud ID (ECID) 儲存在第一方 Cookie。
+ITP 2.1 會使寫入用戶端 Cookie 的能力受到限制，導致向客戶提供的訪客追蹤資訊，準確度大打折扣。因此，Adobe的CNAME追蹤伺服器中會引入變更，將訪客的Experience Cloud ID(ECID)儲存在第一方Cookie中。
 
 這項變更只適用於在第一方情境中使用 Analytics CNAME 的 ECID 客戶。如果您是尚未使用 CNAME 的 Analytics 客戶，或甚至不是 Analytics 客戶，還是符合使用 CNAME 記錄的資格。請連絡客戶服務或您的客戶代表，以開始 [CNAME](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/ec-cookies/cookies-first-party.html) 的註冊程序。
 
 若要使用此項變更，請升級至 ECID 程式庫 4.3.0 版以上。
 
+以下概述ECID程式庫與ITP 2.1的運作方式，以及Apple在Big Surr版本中所做的最新變更
+
 **設計**
 
 對 demdex. net 提出 ID 要求並擷取 ECID 後，如果在您的 ECID 程式庫中設定追蹤伺服器，會對客戶的網域提出 ID 要求。此端點會從查詢字串讀取 eid param，並設定只包含 ECID 和兩年期限的新 [Cookie](/help/introduction/cookies.md)。每次以這種方式呼叫此端點時，`s_ecid` Cookie 的有效期限將會重新覆寫為呼叫當天的兩年後。ECID 程式庫必須更新至 4.3.0 版，才能擷取此 Cookie 的值。
+
+>[!IMPORTANT]
+>
+>Big Sur更新中，透過CNAME設 `s_ecid` 定的Cookie也會持續7天。
 
 這個新 `s_ecid` Cookie 會依循與 AMCV Cookie 相同的選擇退出狀態。如果從 `s_ecid` Cookie 讀取 eid，每次都會呼叫 demdex 來擷取該 ID 的最新選擇退出狀態，並將 demdex 儲存在 AMCV Cookie 中。
 
 此外，如果您的消費者已透過此[方法](https://docs.adobe.com/content/help/zh-Hant/analytics/implementation/js/opt-out.html)選擇退出 Analytics 追蹤，則系統會刪除這個 `s_ecid` Cookie。
 
-使用 trackingServer 或 trackingServerSecure 初始化程式庫時，應將追蹤伺服器名稱提供給 visitorJS 程式庫。此名稱應符合 Analytics 設定中的 trackingServer 設定。
+The tracking server name should be supplied to the VisitorJS library when initializing the library using `trackingServer` or `trackingServerSecure`. This should match the `trackingServer` config in the Analytics configs.
 
-如果您選擇不使用此方法，請將下列設定新增至您的 ECID 程式庫實作：discardtrackingServerECID。此設定設為 true 時，訪客程式庫不會讀取第一方追蹤伺服器設定的 MID。
+If you choose not to take advantage of this method, add the following config to your ECID library implementation: `discardtrackingServerECID`. 當此設定設為true時，訪客庫不會讀取第一方追蹤伺服器所設定的MID。
 
 ![](assets/itp-proposal-v1.png)
 
