@@ -1,33 +1,33 @@
 ---
-description: ECID中可用來支援Google AMP頁面上AMCV Cookie的組態。
+description: ECID 內部的一種配置，可用於支援 Google AMP 頁面上的 AMCV Cookie。
 keywords: ID 服務
-seo-description: ECID中可用來支援Google AMP頁面上AMCV Cookie的組態。
-seo-title: 安全與相同網站組態
-title: 安全與相同網站組態
-translation-type: tm+mt
+seo-description: ECID 內部的一種配置，可用於支援 Google AMP 頁面上的 AMCV Cookie。
+seo-title: 安全和 SameSite 配置
+title: 安全和 SameSite 配置
+translation-type: ht
 source-git-commit: 702d20f3989f7749fb173496765d94c3a5af46dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '174'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
-# 安全與相同網站組態
+# 安全和 SameSite 配置
 
-此設定可讓您變更Cookie的設定，並支援Google AMP頁面上的[AMCV Cookie](../../introduction/cookies.md)。
+此配置讓您可以更改 Cookie 設定和支援 Google AMP 頁面上的 [AMCV Cookie](../../introduction/cookies.md)。
 
-Adobe訪客ID服務會以瀏覽器預設設定`SameSite = Lax`來設定ECID Cookie，如果頁面載入如Google AMP頁面的iframe，將無法存取此設定。 若要存取ECID Cookie，請使用下列組態將SameSite設定更新為`SameSite = None`。
+Adobe 訪客 ID 服務使用`SameSite = Lax`的瀏覽器預設設定來設定 ECID Cookie，如果頁面以 Google AMP 頁面之類的 iframe 載入，則無法存取 ECID Cookie。若要存取 ECID Cookie，請使用以下配置將 SameSite 設定更新為`SameSite = None`。
 
 >[!NOTE]
 >
->套用`SameSite = None`時，Cookie必須設為`Secure`，如此才能透過HTTPS連線傳送資料。
+>套用`SameSite = None`時，必須將 Cookie 設定為`Secure`，如此才能限制僅透過 HTTPS 連線傳送資料。
 
-**實作**:
+**實作**：
 
-如果您使用Adobe Experience Platform Launch，請將Experience CloudID擴充功能升級至5.1.0版，並設定`secureCookie: true`和`sameSiteCookie: none`。
+如果您使用的是 Adobe Experience Platform Launch，請將您的 Experience Cloud ID 擴充功能升級到版本 5.1.0，並且配置`secureCookie: true`和`sameSiteCookie: none`。
 
-如果您未使用Experience Platform Launch，請更新至最新的訪客5.1.0程式庫，並遵循下列設定，同時初始化訪客例項：
+如果您沒有使用 Experience Platform Launch，請在初始化訪客執行個體時更新到最新的訪客 5.1.0 資料庫並遵循以下配置：
 
 **程式碼範例**
 
