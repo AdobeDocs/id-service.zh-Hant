@@ -1,14 +1,14 @@
 ---
 description: Experience Cloud Identity Service 會取代舊有的 Analytics 訪客 ID 方法。
-keywords: ID Service
-seo-description: Experience Cloud Identity Service 會取代舊有的 Analytics 訪客 ID 方法。
+keywords: ID 服務
+seo-description: Experience Cloud Identity 服務會取代舊有的 Analytics 訪客 ID 方法。
 seo-title: 設定 Analytics 和 Experience Cloud ID
 title: 設定 Analytics 和 Experience Cloud ID
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '945'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,7 @@ Experience Cloud Identity Service 會取代舊有的 Analytics 訪客 ID 方法�
 
 JavaScript 可讀取和寫入在第一方網域 (現行網站的網域) 中設定的 Cookie。[!DNL Experience Cloud] ID 服務會使用此方法來設定包含所有訪客 ID 的 `AMCV_###@AdobeOrg` Cookie，使追蹤伺服器的網域不再需要符合網站的網域，即可儲存訪客 ID Cookie。在大多數情況下，這會是您設定 ID 服務 Cookie 時應優先採用的方式，因為可以避免 CNAME 記錄和 SSL 憑證的額外負荷。
 
-但在某些情況下，在 HTTP 標題中設定 Cookie 將有利於跨網域追蹤，其相關說明請見[資料收集 CNAME 和跨網域追蹤](../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d)。
+<!---However, there are a few situations where setting the cookie in the HTTP header is beneficial for cross-domain tracking, which is described in [Data Collection CNAMEs and Cross-Domain Tracking](../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d).-->
 
 ## 自訂 Analytics ID{#section-b6a7bd19e9ff432390010062450808f6}
 
