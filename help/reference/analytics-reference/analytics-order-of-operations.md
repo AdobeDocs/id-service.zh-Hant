@@ -1,18 +1,18 @@
 ---
-description: 在您部署訪客 ID 服務後，在 Analytics 中有 5 種方式可用來識別訪客。
-keywords: ID Service
-seo-description: 在您部署訪客 ID 服務後，在 Analytics 中有 5 種方式可用來識別訪客。
+description: 在您部署訪客 ID 服務後，在 Analytics 中有五種方式可用來識別訪客。
+keywords: ID 服務
+seo-description: 在您部署訪客 ID 服務後，在 Analytics 中有五種方式可用來識別訪客。
 seo-title: Analytics ID 的作業順序
 title: Analytics ID 的作業順序
 uuid: cb1d136e-093f-43b0-a7e1-96f1e61fdad0
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '329'
+exl-id: 8ee340fe-ef3b-40e6-9441-7ee0c9e20357
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '331'
 ht-degree: 100%
 
 ---
-
 
 # Analytics ID 的作業順序{#order-of-operations-for-analytics-ids}
 
@@ -51,9 +51,8 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>第 5<sup></sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/zh-Hant/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP 位址、使用者代理、閘道 IP 位址</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/zh-Hant/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP 位址、用戶代理程式、閘道 IP 位址</a> </p> </td> 
    <td colname="col3"> <p>訪客的瀏覽器不接受 Cookie。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
