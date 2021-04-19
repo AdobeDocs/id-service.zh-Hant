@@ -1,18 +1,18 @@
 ---
 description: 這是非同步 API，依預設會為 Analytics、ID 服務、資料收集退出、地理位置以及中繼資料「blob」內容傳回識別碼。您也可以透過選擇性的 visitor.FIELDS 列舉控制您要傳回的 ID。
-keywords: ID Service
+keywords: ID 服務
 seo-description: 這是非同步 API，依預設會為 Analytics、ID 服務、資料收集退出、地理位置以及中繼資料「blob」內容傳回識別碼。您也可以透過選擇性的 visitor.FIELDS 列舉控制您要傳回的 ID。
 seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '447'
+exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '449'
 ht-degree: 100%
 
 ---
-
 
 # getVisitorValues{#getvisitorvalues}
 
@@ -123,4 +123,3 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
  </tbody> 
 </table>
-
