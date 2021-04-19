@@ -4,20 +4,20 @@ seo-description: 將選擇加入服務實作為 Experience Cloud 解決方案所
 seo-title: 設定選擇加入服務
 title: 設定選擇加入服務
 uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
-translation-type: tm+mt
-source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
-workflow-type: tm+mt
+exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '941'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
-
 
 # 設定選擇加入服務{#setting-up-opt-in-service}
 
 將選擇加入服務實作為 Experience Cloud 解決方案所用的單一參考點 (在選擇加入中以類別形式參照)，以判斷是否要在訪客裝置上建立 Cookie。
 
-選擇加入服務是隨 Experience Cloud ID (ECID) 提供的 JavaScript 資料庫，且以 `adobe` 物件的形式存在於全域 `adobe.optIn` 物件的訪客 JS 中。安裝的選擇加入服務可讓您指定訪客是否可以選擇一次加入所有 Adobe 解決方案，或依序提出解決方案並要求各方案的權限。選擇加入服務的同意管理功能可讓您依照特定的隱私權需求，以各種設定來實作。
+選擇加入服務是隨 Experience Cloud ID (ECID) 提供的 JavaScript 程式庫，且以 `adobe` 物件的形式存在於全域 `adobe.optIn` 物件的訪客 JS 中。安裝的選擇加入服務可讓您指定訪客是否可以選擇一次加入所有 Adobe 解決方案，或依序提出解決方案並要求各方案的權限。選擇加入服務的同意管理功能可讓您依照特定的隱私權需求，以各種設定來實作。
 
 選擇加入服務可讓您指定訪客是否可以選擇一次加入所有 Adobe 解決方案，或依序提出解決方案並要求各方案的權限。客戶完成並記錄核准程序後，所有的 Adobe 解決方案便能擷取 CMP 訪客核准，並以相關的同意呼叫回應。
 
@@ -25,27 +25,27 @@ ht-degree: 78%
 
 1. ECID 4.0 版。
 
-   [下載](https://github.com/Adobe-Marketing-Cloud/id-service/releases) 最新的ECID版本。
+   [下載](https://github.com/Adobe-Marketing-Cloud/id-service/releases)最新 ECID 版本。
 
 1. 支援程式庫：
 
-   * ECID 4.0或更新版本
-   * AppMeasurement 2.11或更新版本
+   * ECID 4.0 或更新版本
+   * AppMeasurement 2.11 或更新版本
    * DIL 9.0
-   * AT.js 1.7.0版
-   * AT.js Launch擴充功能9.0版
-   * 針對Analytics,App Measurement 2.11（副檔名為1.6）
-   * 針對Target，擴充功能0.9.1
+   * AT.js 1.7.0 版
+   * AT.js Launch 擴充功能 9.0 版
+   * 對於 Analytics，則為 App Measurement 2.11 含擴充功能 1.6
+   * 對於 Target，則為擴充功能 0.9.1
 
-1. 熟悉同意管理架構，並瞭解您在選擇加入時使用的許可管理架構，並瞭解其他必要條件。
+1. 精通您將搭配選擇加入使用的同意管理架構，並了解其他任何先決條件。
 
    <!--
    For IAB, see here for additional pre-reqs.
    -->
 
-1. 您公司的隱私權要求將取決於您選擇如何遵守GDPR。 請注意您的公司隱私權團隊在事前同意狀態下可使用哪些資料庫。
+1. 貴公司的隱私要求將取決於您如何選擇遵守 GDPR。請注意貴公司的隱私團隊可以在同意前使用哪些程式庫。
 
-If using [Adobe Launch](https://docs.adobelaunch.com/), take advantage of the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
+如果使用 [Adobe Launch](https://docs.adobelaunch.com/)，請利用[選擇加入擴充功能](../../implementation-guides/opt-in-service/launch.md)來設定選擇加入服務。
 
 ## 選擇加入服務類別 {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
@@ -63,7 +63,7 @@ adobe.OptInCategories = {
 };
 ```
 
-選擇加入服務可讓您按照網站上使用的各 Adobe 解決方案來設定訪客的權限偏好設定。選擇加入服務包含資料庫，可按核准的類別儲存訪客的設定，並支援序列流程，即核准程序一次會收到一個各類別的「確認」或「拒絕」偏好設定。您可以設定解決方案/類別，來選擇以全部或個別解決方案加入。所有 Adobe 解決方案的用戶端資料庫取決於選擇加入服務，除非解決方案已授予權限，否則其不會產生 Cookie。選擇加入支援多種方法，可提供並更新目前訪客的同意設定。本節提供設定選擇加入服務偏好設定的範例。請參閱[選擇加入 API 參考資料](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867)，以取得函數和參數的完整清單。
+選擇加入服務可讓您按照網站上使用的各 Adobe 解決方案來設定訪客的權限偏好設定。選擇加入服務包含程式庫，可按核准的類別儲存訪客的設定，並支援序列流程，即核准程序一次會收到一個各類別的「確認」或「拒絕」偏好設定。您可以設定解決方案/類別，來選擇以全部或個別解決方案加入。所有 Adobe 解決方案的用戶端程式庫取決於選擇加入服務，除非解決方案已授予權限，否則其不會產生 Cookie。選擇加入支援多種方法，可提供並更新目前訪客的同意設定。本節提供設定選擇加入服務偏好設定的範例。請參閱[選擇加入 API 參考資料](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867)，以取得函數和參數的完整清單。
 
 訪客 JS 的 `getInstance()` 函數中提供選擇加入服務設定，可實例化全域 `adobe` 物件。下表列出與選擇加入服務有關的訪客 JS [組態設定](../../implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf)。
 
@@ -90,9 +90,9 @@ Visitor.getInstance("YOUR_ORG_ID", {
 });
 ```
 
-**處理同意變更**
+**處理同意的變更**
 
-訪客在您網站上的任何時間，都可能首次設定偏好設定，或可能會使用您的CMP變更其偏好設定。 使用初始設定初始化訪客JS後，即可變更訪客的權限。 請參閱[同意的變更](../../implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc)，以取得管理同意函數的清單。
+在訪客造訪您網站期間的任何時刻，他們可以初次設定偏好設定，也可以使用您的 CMP 變更其偏好設定。使用初始設定初始化訪客 JS 之後，可以變更訪客的權限。請參閱[同意的變更](../../implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc)，以取得管理同意函數的清單。
 
 <!--
 <p> *** <b>sample code block </b>*** </p>
@@ -112,9 +112,9 @@ adobe.optIn.complete();
 
 ## 檢查訪客的選擇加入權限 {#section-f136a9024e054d84881e6667fb7c94eb}
 
-當訪客變更其權限時，您需深入掌握變更後的權限，以便同意對儲存區與選擇加入服務所做的變更進行同步。使用權限功能檢查訪客的 [偏好設定](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155)，例如：
+當訪客變更其權限時，您需深入掌握變更後的權限，以便同意對儲存區與選擇加入服務所做的變更進行同步。使用[權限函數](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155)檢查訪客的偏好設定，例如：
 
-**fetchPermissions範例**
+**fetchPermissions 範例**
 
 ```
 optIn.fetchPermissions(function (permissions) { 
@@ -136,14 +136,13 @@ function callback() {
 optIn.fetchPermissions(callback, true);
 ```
 
-See [API documentation](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) for more details on these and any functions, properties, or configurations mentioned in this document.
+請參閱 [API 文件](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867)，以深入了解本文件提及的任何函數、屬性或設定。
 
 ## 儲存訪客偏好設定 {#section-ef2884ae67e34879bf7c7c3372706c9f}
 
 選擇加入服務提供儲存同意偏好設定的選項，適合開發環境或無法使用 CRM 的環境使用。將設定屬性 `isOptInStorageEnabled` 指定為 *true*，便會觸發選擇加入服務在您的網域中於訪客的系統上建立 Cookie。
 
-`adobe.optIn` 物件沒有狀態，不會提供儲存機制。您應在現有的「同意管理平台」(CMP)中管理Adobe同意設定（如果允許儲存自訂資料）。 或者，您可以將訪客偏好設定儲存在訪客瀏覽器的Cookie中。 您有兩個選項可以將使用者偏好設定提供給選擇加入服務:
+`adobe.optIn` 物件沒有狀態，不會提供儲存機制。其目的是讓您可以在現有的同意管理平台 (CMP) 中管理 Adobe 同意設定 (如果該平台可讓您儲存自訂資料)。您也可以將訪客偏好設定儲存在訪客瀏覽器上的 Cookie 中。您有兩個選項可以將用戶偏好設定提供給選擇加入服務:
 
 * 如果您的同意持續性解決方案 (不論是 CMP 還是訪客瀏覽器上的 Cookie) 允許及時擷取訪客偏好設定，則您可以在訪客初始化期間提供這些偏好設定給選擇加入服務。
 * 不過，如果擷取可能會是個耗時的流程，或是以非同步流程處理為最佳方式，您可以使用服務的 `approve()` 函數，在這些設定成功載入後用來提供這些設定。
-
