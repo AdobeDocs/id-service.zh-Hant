@@ -1,18 +1,18 @@
 ---
 description: 概述 Experience Cloud Identity Service 搭配舊有 Analytics ID 之使用方式。
-keywords: ID Service
-seo-description: 概述 Experience Cloud Identity Service 搭配舊有 Analytics ID 之使用方式。
+keywords: ID 服務
+seo-description: 概述 Experience Cloud Identity 服務搭配舊有 Analytics ID 之使用方式。
 seo-title: Analytics 與 Experience Cloud ID 請求
 title: Analytics 與 Experience Cloud ID 請求
 uuid: 28beed16-7ef9-4824-8e82-853930756eca
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '467'
+exl-id: 8c682159-e23a-4641-9ffd-e0028dc2f305
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '469'
 ht-degree: 100%
 
 ---
-
 
 # Analytics 與 Experience Cloud ID 請求{#analytics-and-experience-cloud-id-requests}
 
@@ -42,8 +42,8 @@ ht-degree: 100%
    <td colname="col1"> <p> <b>已設定 s_vi Cookie</b> </p> </td> 
    <td colname="col2"> <p>擁有 s_vi Cookie 的網站訪客首次遇到 Experience Cloud Identity Service 時，此服務會: </p> 
     <ul id="ul_BE584810280D4874AF802A9247011787"> 
-     <li id="li_AA395B09A3174AF78F3EC10053E2E4F5">將儲存在 s_vi Cookie 中的 <span class="keyword">Analytics</span> ID 寫入 AMCV Cookie。這會寫入成為 <span class="keyword">Analytics</span> ID (AID)。此動作<i>不會</i>影響訪客計數。<span class="keyword">Analytics</span> 將繼續使用舊有 ID 識別使用者。 </li> 
-     <li id="li_8735DE21FEA542BA8024109B8FE1E2ED">將 MID 寫入至 AMCV Cookie。MID 可跨不同的解決方案識別使用者。 </li> 
+     <li id="li_AA395B09A3174AF78F3EC10053E2E4F5">將儲存在 s_vi Cookie 中的 <span class="keyword">Analytics</span> ID 寫入 AMCV Cookie。這會寫入成為 <span class="keyword">Analytics</span> ID (AID)。此動作<i>不會</i>影響訪客計數。<span class="keyword">Analytics</span> 將繼續使用舊有 ID 識別用戶。 </li> 
+     <li id="li_8735DE21FEA542BA8024109B8FE1E2ED">將 MID 寫入至 AMCV Cookie。MID 可跨不同的解決方案識別用戶。 </li> 
     </ul> <p> <p>注意：若使用<a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">寬限期</a>，資料中心回應一律會包含儲存在 s_vi Cookie 中的舊有 ID。在寬限期期間，舊有 ID 會寫入 AMCV Cookie 為 AID 值。 </p> </p> </td> 
   </tr> 
  </tbody> 
@@ -51,7 +51,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->s_fid Cookie 所識別的使用者不會將其舊有的 FID 值移轉到 AMCV Cookie。有了 s_fid Cookie，使用者移轉時會如同 s_vi Cookie 不存在 (請參閱上述說明)，就像是全新訪客造訪您的網站。如需詳細資訊，請參閱 [Analytics Cookie](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/ec-cookies/cookies-analytics.html)。
+>s_fid Cookie 所識別的用戶不會將其舊有的 FID 值移轉到 AMCV Cookie。有了 s_fid Cookie，用戶移轉時會如同 s_vi Cookie 不存在 (請參閱上述說明)，就像是全新訪客造訪您的網站。如需詳細資訊，請參閱 [Analytics Cookie](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/ec-cookies/cookies-analytics.html)。
 
 ## 已在瀏覽器中設定 AMCV Cookie {#section-01c088fc565c4b24ba1722c7cc240310}
 
