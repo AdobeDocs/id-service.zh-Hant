@@ -1,18 +1,18 @@
 ---
 description: 關於搭配 Experience Cloud Identity Service 使用 Analytics 的功能、功用和問題之常見問題集。
-keywords: Experience Cloud Identity Service
-seo-description: 關於搭配 Identity Service 使用 Analytics 的功能、功用和問題之常見問題集。
+keywords: Experience Cloud Identity 服務
+seo-description: 關於搭配 Identity 服務使用 Analytics 的功能、功用和問題之常見問題集。
 seo-title: Analytics 與 Identity Service 常見問題集
 title: Analytics 與 Identity Service 常見問題集
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '989'
+exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '993'
 ht-degree: 100%
 
 ---
-
 
 # Analytics 與 Identity Service 常見問題集{#analytics-and-id-service-faqs}
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 
 **如果我使用 Identity Service 並變更追蹤伺服器，會發生什麼事？**
 
-已由 Identity Service 識別的使用者不會有任何變化。尚未移轉至 Identity Service 且仍由 Analytics Cookie 識別的舊版訪客則有影響。受影響的使用者人數，取決於 Identity Service 已生效多久。例如，Identity Service 已生效 1 星期的實作中，舊版訪客可能多於 Identity Service 已生效 6 個月的實作，因為當使用者返回網站時就已經經過移轉了。
+已由 Identity Service 識別的用戶不會有任何變化。尚未移轉至 Identity Service 且仍由 Analytics Cookie 識別的舊版訪客則有影響。受影響的用戶人數，取決於 Identity Service 已生效多久。例如，Identity Service 已生效 1 星期的實作中，舊版訪客可能多於 Identity Service 已生效 6 個月的實作，因為當用戶返回網站時就已經經過移轉了。
 
 ## 實作與設定 {#section-6028f55d5b514ae6a631c6a79f42fb89}
 
@@ -75,15 +75,15 @@ RDC 可以提升全域效能，此外為了確保您的實作可針對未來採�
 
 在三種情況下，新訪客的 Analytics 資料可能會受此影響：
 
-1. 終端使用者在 AMCV Cookie 成功設定之前 (在 30 秒逾時範圍內) 離開頁面。
+1. 終端用戶在 AMCV Cookie 成功設定之前 (在 30 秒逾時範圍內) 離開頁面。
 
    如果訪客在頁面載入完成前離開頁面，則不會傳送 Analytics 點擊。在此情況下，Analytics 將不會接收資料，且會認定資料因頁面提早關閉而遺失。根據我們的測試 (包含偏遠地理位置)，我們發現平均只有不到 1% 的流量有此情況。需要注意的是，即使未提供 Identity Service，這種情況也會出現；這是將 Analytics 資料收集程式碼包含在頁面底部的一種工具。
 
-1. 由於連接速度緩慢或瀏覽器「旋轉」，終端使用者在 30 秒逾時範圍內未獲得指派 Identity Service 或 Analytics ID。
+1. 由於連接速度緩慢或瀏覽器「旋轉」，終端用戶在 30 秒逾時範圍內未獲得指派 Identity Service 或 Analytics ID。
 
    Identity Service 和 Analytics ID 均未設定，系統將分配一個用戶端 ID 給訪客。雖然如此即可擷取 Analytics 資料，但若在後續頁面上設定了 Analytics ID，訪客的設定檔將會中斷。用戶端 ID 也不會與任何儲存在 Audience Manager 或 Analytics 中的現有訪客資料相符。如果兩個不同的網域傳送至相同的報告套裝，則此用戶端 ID 也會在 Analytics 中顯示為兩個不同的訪客。
 
-1. 終端使用者在 30 秒逾時範圍內未獲得分配 Identity Service ID，但會獲得分配標準 Analytics 追蹤 ID，而且不會啟用寬限期。
+1. 終端用戶在 30 秒逾時範圍內未獲得分配 Identity Service ID，但會獲得分配標準 Analytics 追蹤 ID，而且不會啟用寬限期。
 
    情況 3 與情況 2 的結果相同，即皆使用基於用戶端的 ID。
 
