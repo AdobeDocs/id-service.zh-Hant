@@ -1,18 +1,18 @@
 ---
 description: 這些設定可讓實作於 iFrame 及上層頁面的不同 ID 服務代碼執行個體互相通訊。這些設定可在您不一定控制上層頁面/網域，且在您已控制之網域的 iFrame 中載入 ID 服務程式碼的情況下，協助您解決兩種特定使用案例的問題。這些設定適用於 VisitorAPI.js 程式碼 2.2 版或更新版本。
-keywords: ID Service
+keywords: ID 服務
 seo-description: 這些設定可讓實作於 iFrame 及上層頁面的不同 ID 服務代碼執行個體互相通訊。這些設定可在您不一定控制上層頁面/網域，且在您已控制之網域的 iFrame 中載入 ID 服務程式碼的情況下，協助您解決兩種特定使用案例的問題。這些設定適用於 VisitorAPI.js 程式碼 2.2 版或更新版本。
 seo-title: whitelistParentDomain 及 whitelistIframeDomains
 title: whitelistParentDomain 及 whitelistIframeDomains
 uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '932'
+exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '934'
 ht-degree: 100%
 
 ---
-
 
 # whitelistParentDomain 及 whitelistIframeDomains{#whitelistparentdomain-and-whitelistiframedomains}
 
@@ -188,4 +188,3 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
   </tr> 
  </tbody> 
 </table>
-
