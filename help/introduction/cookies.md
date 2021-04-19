@@ -1,18 +1,18 @@
 ---
 description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie 及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
-keywords: playstation;ID Service
+keywords: playstation;ID 服務
 seo-description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie 及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
 seo-title: Cookie 與 Experience Cloud Identity Service
 title: Cookie 與 Experience Cloud Identity Service
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '994'
+exl-id: 727c6381-56b9-44b8-8e59-355d072769be
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '997'
 ht-degree: 100%
 
 ---
-
 
 # Cookie 與 Experience Cloud Identity Service{#cookies-and-the-experience-cloud-id-service}
 
@@ -26,7 +26,7 @@ ID 服務需仰賴 AMCV、AMCVS 和 Demdex Cookie 才能正常運作。這些 Co
 
 * 設定並儲存網站訪客的唯一 ID (MID)。
 * 保存此唯一 ID，讓 ID 服務能夠收集資料，並將其與其他 Experience Cloud 解決方案共用。
-* 跨網域追蹤使用者。但是，您必須擁有其他網域，並在這些網域上部署 ID 服務程式碼，才能進行此追蹤。
+* 跨網域追蹤用戶。但是，您必須擁有其他網域，並在這些網域上部署 ID 服務程式碼，才能進行此追蹤。
 
 ### ID 服務 Cookie 不具備的功能
 
@@ -34,7 +34,7 @@ ID 服務需仰賴 AMCV、AMCVS 和 Demdex Cookie 才能正常運作。這些 Co
 * 存取或儲存個人識別資訊 (PII)，例如：您的電子郵件地址。
 * 控制電腦硬體或軟體。
 * 使電腦不穩定或導致效能問題。
-* 在未使用 ID 服務的網站上追蹤使用者。
+* 在未使用 ID 服務的網站上追蹤用戶。
 
 ## AMCV Cookie {#section-c55af54828dc4cce89f6118655d694c8}
 
@@ -64,9 +64,9 @@ mid|20265673158980419722735089753036633573
 
 **網域**
 
-AMCV Cookie 設定於瀏覽器的第一方網域中。這表示此 Cookie 設定於使用者目前造訪之網站的網域中。因此，ID 服務程式碼和其他 Experience Cloud 程式碼程式庫可讀取儲存在 AMCV Cookie 中的 MID。
+AMCV Cookie 設定於瀏覽器的第一方網域中。這表示此 Cookie 設定於用戶目前造訪之網站的網域中。因此，ID 服務程式碼和其他 Experience Cloud 程式碼程式庫可讀取儲存在 AMCV Cookie 中的 MID。
 
-但由於 AMCV Cookie 設定於第一方網域中，因此無法跨不同的網域追蹤和識別使用者。實際上，當網站訪客瀏覽至不同網域時，ID 服務需仰賴組織 ID 和 Demdex ID 以傳回正確的 MID。
+但由於 AMCV Cookie 設定於第一方網域中，因此無法跨不同的網域追蹤和識別用戶。實際上，當網站訪客瀏覽至不同網域時，ID 服務需仰賴組織 ID 和 Demdex ID 以傳回正確的 MID。
 
 ## AMCVS Cookie {#section-92a9454f1ac645948f9059b9fad928bf}
 
@@ -86,7 +86,7 @@ AMCVS Cookie 可作為指出工作階段已初始化的旗標。其值一律為 
 
 **網域**
 
-AMCVS Cookie 設定於瀏覽器的第一方網域中。這表示此 Cookie 設定於使用者目前造訪之網站的網域中。
+AMCVS Cookie 設定於瀏覽器的第一方網域中。這表示此 Cookie 設定於用戶目前造訪之網站的網域中。
 
 ![](assets/AMCVS-cookie.png)
 
@@ -112,7 +112,7 @@ AMCVS Cookie 設定於瀏覽器的第一方網域中。這表示此 Cookie 設�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>網域</b> </p> </td> 
-   <td colname="col2"> <p>Demdex Cookie 設定於瀏覽器的第三方 demdex.net 網域中。此網域與使用者目前造訪的網站不同。 </p> <p>不同於第一方 AMCV Cookie，Demdex Cookie 和 ID 會跨不同的網域而持續保存。Demdex ID 和您的組織 ID 是一種通用值，可讓 ID 服務以正確的訪客 ID 傳回及識別網站訪客。 </p> </td> 
+   <td colname="col2"> <p>Demdex Cookie 設定於瀏覽器的第三方 demdex.net 網域中。此網域與用戶目前造訪的網站不同。 </p> <p>不同於第一方 AMCV Cookie，Demdex Cookie 和 ID 會跨不同的網域而持續保存。Demdex ID 和您的組織 ID 是一種通用值，可讓 ID 服務以正確的訪客 ID 傳回及識別網站訪客。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -121,7 +121,7 @@ AMCVS Cookie 設定於瀏覽器的第一方網域中。這表示此 Cookie 設�
 
 ## 產生 Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
-Experience Cloud ID (MID) 是依照組織 ID 和 demdex ID 利用數學公式計算出來。只要這些 ID 保持不變，為特定使用者產生正確的 MID 就只是數學問題。在組織 ID 和 Demdex ID 保持不變的情況下，您每次都會獲得相同的 MID 值。這可讓 ID 服務能夠在您所控制且已設定 ID 服務程式碼的網域間追蹤訪客。
+Experience Cloud ID (MID) 是依照組織 ID 和 demdex ID 利用數學公式計算出來。只要這些 ID 保持不變，為特定用戶產生正確的 MID 就只是數學問題。在組織 ID 和 Demdex ID 保持不變的情況下，您每次都會獲得相同的 MID 值。這可讓 ID 服務能夠在您所控制且已設定 ID 服務程式碼的網域間追蹤訪客。
 
 當頁面載入時，ID 服務就會開始建立 MID。在此過程中，`visitorAPI.js` 程式碼程式庫提供的程式碼會將您的組織 ID 以事件呼叫的形式傳送至 ID 服務。ID 服務分別在 AMCV 與 Demdex Cookie 中，建立並回傳 MID 與 Demdex ID。
 
@@ -132,8 +132,8 @@ Experience Cloud ID (MID) 是依照組織 ID 和 demdex ID 利用數學公式計
 | Cookie (設定者) | httpOnly | Secure | SameSite |
 |--- |--- |--- |--- |
 | demdex (http 回應) | 無 | 是 | &quot;無&quot; |
-| AMCV (Javascript) | 無 | 可設定 | 未設定 (預設為 Lax) |
-| AMCVS (Javascript) | 無 | 可設定 | 未設定 (預設為 Lax) |
+| AMCV (JavaScript) | 無 | 可設定 | 未設定 (預設為 Lax) |
+| AMCVS (JavaScript) | 無 | 可設定 | 未設定 (預設為 Lax) |
 
 *注意：如需使用安全屬性設定 AMCV 和 AMCVS Cookie 的相關資訊，請參閱 [secureCookie](https://docs.adobe.com/content/help/zh-Hant/id-service/using/id-service-api/configurations/securecookie.html) 主題。*
 
