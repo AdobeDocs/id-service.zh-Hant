@@ -4,14 +4,14 @@ seo-description: Adobe Experience Platform Launch 是設定及部署 Experience 
 seo-title: 使用 Launch 實作
 title: 使用 Launch 實作
 uuid: b3282f8e-82b8-4635-8c80-1b365e8a9693
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
+exl-id: cf197fde-3b93-4578-b24e-2db5633f043c
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '189'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
-
 
 # 使用 Launch 實作{#implement-with-launch}
 
@@ -19,9 +19,8 @@ Adobe Experience Platform Launch 是設定及部署 Experience Cloud Identity �
 
 ## 關於 Launch {#section-611711602854464ea351a4af80a8dafe}
 
-[Adobe Experience Platform Launch](https://docs.adobelaunch.com/) 是Adobe Experience Cloud內建的新一代Adobe標籤管理功能。 Launch使客戶端能夠：
+[Adobe Experience Platform Launch](https://docs.adobelaunch.com/) 是內建在 Adobe Experience Cloud 的新一代 Adobe 標籤管理功能。Launch 可讓用戶端：
 
 * 使用稱為擴充功能的整合功能，部署用戶端網頁產品
-* 在其他廠商和Adobe的行銷和廣告產品之間，以一致的方式擷取、定義、管理和分享資料
-* Launch是進階的JavaScript傳送系統，可評估條件並執行動作，以有效率地部署用戶端程式庫和產品。 它提供高度可擴充的方式來管理和建立擴充功能，以及一套強穩的API，以與Adobe Experience Cloud進行程式化互動。
-
+* 一致地在其他廠商和 Adobe 提供的行銷與廣告產品之間擷取、定義、管理和共用資料。
+* Launch 是進階 JavaScript 交付系統，可評估條件和執行的動作，以便有效率且有效地部署用戶端程式庫和產品。它提供具備高度擴充性的方法來管理及建置擴充功能，並搭配一組強大的 API，便能以程式設計方式與 Adobe Experience Cloud 互動。
