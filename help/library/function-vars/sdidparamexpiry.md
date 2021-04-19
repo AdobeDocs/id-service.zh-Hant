@@ -1,24 +1,24 @@
 ---
-description: 此設定可讓您使用appendSupplementalDataIDTo協助函式，將該ID從一個頁面傳遞至另一個頁面時，覆寫預設的補充資料ID(SDID)過期間隔。 依預設，接收頁面上的ID服務程式碼有30秒可從轉介頁面傳送的URL取得SDID。 如果接收頁面上的ID服務程式碼在30秒內無法擷取SDID，則會要求新的SDID。 此功能主要適用於需要將SDID從一個頁面傳遞至另一個頁面，且想要控制此逾時間隔的A4T客戶。
-keywords: ID Service
-seo-description: 此設定可讓您使用appendSupplementalDataIDTo協助函式，將該ID從一個頁面傳遞至另一個頁面時，覆寫預設的補充資料ID(SDID)過期間隔。 依預設，接收頁面上的ID服務程式碼有30秒可從轉介頁面傳送的URL取得SDID。 如果接收頁面上的ID服務程式碼在30秒內無法擷取SDID，則會要求新的SDID。 此功能主要適用於需要將SDID從一個頁面傳遞至另一個頁面，且想要控制此逾時間隔的A4T客戶。
+description: 此設定可讓您在使用 appendSupplementalDataIDTo helper 函數將某個頁面的 Supplemental Data ID (SDID) 傳遞給另一個頁面時，覆寫該 ID 的預設到期間隔。根據預設，接收頁面上的 ID 服務程式碼有 30 秒的時間可取得參考頁面所傳送的 URL 中的 SDID。如果接收頁面上的 ID 服務程式碼無法在少於 30 秒的情況下擷取 SDID，它會要求新的 SDID。此功能主要適用於需要在不同頁面之間傳遞 SDID 以及想要控制此逾時間隔的 A4T 客戶。
+keywords: ID 服務
+seo-description: 此設定可讓您在使用 appendSupplementalDataIDTo helper 函數將某個頁面的 Supplemental Data ID (SDID) 傳遞給另一個頁面時，覆寫該 ID 的預設到期間隔。根據預設，接收頁面上的 ID 服務程式碼有 30 秒的時間可取得參考頁面所傳送的 URL 中的 SDID。如果接收頁面上的 ID 服務程式碼無法在少於 30 秒的情況下擷取 SDID，它會要求新的 SDID。此功能主要適用於需要在不同頁面之間傳遞 SDID 以及想要控制此逾時間隔的 A4T 客戶。
 seo-title: sdidParamExpiry
 title: sdidParamExpiry
 uuid: cdaf7e2d-b196-4c70-936d-8a98191cbb85
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 7%
+exl-id: 5458ffa5-03d1-4c52-907d-c50fe00ce35d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '357'
+ht-degree: 100%
 
 ---
 
-
 # sdidParamExpiry{#sdidparamexpiry}
 
-此設定可讓您使用appendSupplementalDataIDTo協助函式，將該ID從一個頁面傳遞至另一個頁面時，覆寫預設的補充資料ID(SDID)過期間隔。 依預設，接收頁面上的ID服務程式碼有30秒可從轉介頁面傳送的URL取得SDID。 如果接收頁面上的ID服務程式碼在30秒內無法擷取SDID，則會要求新的SDID。 此功能主要適用於需要將SDID從一個頁面傳遞至另一個頁面，且想要控制此逾時間隔的A4T客戶。
+此設定可讓您在使用 appendSupplementalDataIDTo helper 函數將某個頁面的 Supplemental Data ID (SDID) 傳遞給另一個頁面時，覆寫該 ID 的預設到期間隔。根據預設，接收頁面上的 ID 服務程式碼有 30 秒的時間可取得參考頁面所傳送的 URL 中的 SDID。如果接收頁面上的 ID 服務程式碼無法在少於 30 秒的情況下擷取 SDID，它會要求新的 SDID。此功能主要適用於需要在不同頁面之間傳遞 SDID 以及想要控制此逾時間隔的 A4T 客戶。
 
-**覆寫SDID逾時**
+**覆寫 SDID 逾時**
 
 如果您需要變更預設的 SDID 逾時，請使用下列語法將 `sdidParamExpiry` 新增至 `Visitor.getInstance` 函數:
 
@@ -26,7 +26,7 @@ ht-degree: 7%
 
 **程式碼範例**
 
-設定好後，您的ID服務程式碼可能會看起來類似此範例。 此示例將SDID超時設定為15秒。 此組態可與 [appendSupplementalDataIDTo](../../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d) helper方法搭配運作。
+在設定您的 ID 服務程式碼之後，它可能與這個範例類似。此範例將 SDID 逾時設定為 15 秒。此設定適用於 [appendSupplementalDataIDTo](../../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d) helper 方法。
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
@@ -39,4 +39,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 var pageB = "www.domain.com/pageB"; 
 var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219"); 
 ```
-
