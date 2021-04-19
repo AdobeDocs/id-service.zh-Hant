@@ -1,18 +1,18 @@
 ---
 description: 關於使用 ID 服務的功能、功用和問題之常見問題集。
-keywords: ID Service
+keywords: ID 服務
 seo-description: 關於使用 ID 服務的功能、功用和問題之常見問題集。
 seo-title: ID 服務常見問題集
 title: ID 服務常見問題集
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '804'
+exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '806'
 ht-degree: 100%
 
 ---
-
 
 # ID 服務常見問題集{#id-service-faqs}
 
@@ -48,7 +48,7 @@ ID 服務呼叫為非同步呼叫，且是向 [demdex.net 網域](https://docs.a
 
 請參閱[概述](../introduction/overview.md)。
 
-**使用 ID 服務時，哪些因素會導致頁面載入速度緩慢或影響使用者體驗？**
+**使用 ID 服務時，哪些因素會導致頁面載入速度緩慢或影響用戶體驗？**
 
 可能的情況很難全數列舉。有數十億的消費者客戶端連線至我們的服務，而其各種不同的連線位置和方式，都可能影響到效能。例如:
 
