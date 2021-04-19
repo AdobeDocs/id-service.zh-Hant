@@ -1,18 +1,18 @@
 ---
 description: 使用這些設定，可將呼叫 Experience Cloud Identity Service 使用的預設網域名稱變更為您擁有的子網域名稱。
-keywords: ID Service
-seo-description: 使用這些設定，可將呼叫 Experience Cloud Identity Service 使用的預設網域名稱變更為您擁有的子網域名稱。
+keywords: ID 服務
+seo-description: 使用這些設定，可將呼叫 Experience Cloud Identity 服務使用的預設網域名稱變更為您擁有的子網域名稱。
 seo-title: audienceManagerServer 及 audienceManagerServerSecure
 title: audienceManagerServer 及 audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '243'
+exl-id: b740eb5c-ac4e-46f4-ba7c-1080d8d9292d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '245'
 ht-degree: 100%
 
 ---
-
 
 # audienceManagerServer 及 audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
@@ -49,4 +49,3 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
      } 
 );
 ```
-
