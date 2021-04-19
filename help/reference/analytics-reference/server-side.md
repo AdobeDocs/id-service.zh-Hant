@@ -1,18 +1,18 @@
 ---
 description: 在某些實作中，訪客 ID 會從 JavaScript 傳至伺服器，使伺服器可傳送其他 Analytics 事件 (例如購買)。
-keywords: ID Service
+keywords: ID 服務
 seo-description: 在某些實作中，訪客 ID 會從 JavaScript 傳至伺服器，使伺服器可傳送其他 Analytics 事件 (例如購買)。
 seo-title: 混用 JavaScript 的伺服器端實作
 title: 混用 JavaScript 的伺服器端實作
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '211'
+exl-id: 1986ee11-2021-4f34-bb56-6eaa87b6dd6d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '213'
 ht-degree: 100%
 
 ---
-
 
 # 混用 JavaScript 的伺服器端實作 {#server-side-implementation-mixed-with-javascript}
 
