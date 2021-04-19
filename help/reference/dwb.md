@@ -1,18 +1,18 @@
 ---
 description: 請依照下列指示，將 Experience Cloud ID 欄位整合到 Data Workbench 中。此程序可讓您在資料摘要中使用永續性 Experience Cloud ID，如此即可與 Adobe Experience Cloud 中的其他產品更緊密整合，並提供更強的訪客追蹤功能。
-keywords: ID Service
+keywords: ID 服務
 seo-description: 請依照下列指示，將 Experience Cloud ID 欄位整合到 Data Workbench 中。此程序可讓您在資料摘要中使用永續性 Experience Cloud ID，如此即可與 Adobe Experience Cloud 中的其他產品更緊密整合，並提供更強的訪客追蹤功能。
 seo-title: Data Workbench 與 Experience Cloud Identity Service
 title: Data Workbench 與 Experience Cloud Identity Service
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '260'
+exl-id: 1903918d-44e4-4790-ab1f-49f5bb701e31
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '262'
 ht-degree: 100%
 
 ---
-
 
 # Data Workbench 與 Experience Cloud Identity Service {#data-workbench-and-the-experience-cloud-id-service}
 
@@ -831,4 +831,3 @@ Log Processing Include = LogProcessingInclude:
   Stage = string: Default
   Transformations = vector: 0 items
 ```
-
