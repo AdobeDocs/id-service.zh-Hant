@@ -1,18 +1,18 @@
 ---
 description: 除了 Experience Cloud 訪客 ID 之外，您還可以將其他客戶 ID 和驗證狀態與每個訪客建立關聯。
-keywords: ID Service
+keywords: ID 服務
 seo-description: 除了 Experience Cloud 訪客 ID 之外，您還可以將其他客戶 ID 和驗證狀態與每個訪客建立關聯。
 seo-title: 客戶 ID 和驗證狀態
 title: 客戶 ID 和驗證狀態
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
-source-wordcount: '659'
+exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '661'
 ht-degree: 100%
 
 ---
-
 
 # 客戶 ID 和驗證狀態 {#customer-ids-and-authentication-states}
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## 驗證狀態 {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-`setCustomerIDs` 方法接受同一位訪客擁有多個客戶 ID。這可幫助您識別或鎖定不同裝置上的個別使用者。例如，您可以將這些 ID 上傳至 [ 作為](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/customer-attributes/attributes.html)客戶屬性[!DNL Experience Cloud]，並在不同解決方案中使用此資料。
+`setCustomerIDs` 方法接受同一位訪客擁有多個客戶 ID。這可幫助您識別或鎖定不同裝置上的個別用戶。例如，您可以將這些 ID 上傳至 [ 作為](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/customer-attributes/attributes.html)客戶屬性[!DNL Experience Cloud]，並在不同解決方案中使用此資料。
 
 >[!IMPORTANT]
 >
@@ -33,7 +33,7 @@ ht-degree: 100%
   <tr> 
    <th colname="col1" class="entry"> 驗證狀態 </th> 
    <th colname="col2" class="entry"> 狀態整數 </th> 
-   <th colname="col3" class="entry"> 使用者狀態 </th> 
+   <th colname="col3" class="entry"> 用戶狀態 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -57,7 +57,7 @@ ht-degree: 100%
 
 ## 驗證狀態的使用案例 {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
-您可以根據使用者對 Web 屬性所執行的動作及是否驗證，為使用者指派驗證狀態。請參閱下表的幾個範例：
+您可以根據用戶對 Web 屬性所執行的動作及是否驗證，為用戶指派驗證狀態。請參閱下表的幾個範例：
 
 <table id="table_3769E79304014C4F87094B87A8ACE4E0"> 
  <thead> 
@@ -77,11 +77,11 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED </span> </p> </td> 
-   <td colname="col2"> <p>使用者目前是以您網站或應用程式上使用中的工作階段驗證。 </p> </td> 
+   <td colname="col2"> <p>用戶目前是以您網站或應用程式上使用中的工作階段驗證。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
-   <td colname="col2"> <p>使用者已完成驗證，但已主動登出。使用者希望且刻意中斷已驗證的狀態。使用者不想維持已驗證狀態。 </p> </td> 
+   <td colname="col2"> <p>用戶已完成驗證，但已主動登出。用戶希望且刻意中斷已驗證的狀態。用戶不想維持已驗證狀態。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -95,7 +95,7 @@ ht-degree: 100%
 >* ID 區分大小寫。
 >* 請僅用未經編碼的值當成 ID。
 >* 客戶 ID 和驗證狀態不會儲存在訪客 ID Cookie 中，每個頁面或應用程式內容皆需個別設定。
->* 請勿在客戶 ID 中提供任何個人識別資訊 (PII)。如果您要使用 PII 來識別訪客 (例如電子郵件地址)，建議您改為儲存經過雜湊或加密處理的資訊。ECID 程式庫支援使用雜湊處理使用者識別碼。請參閱 [setCustomerIDs 的 SHA256 雜湊支援](/help/reference/hashing-support.md)
+>* 請勿在客戶 ID 中提供任何個人識別資訊 (PII)。如果您要使用 PII 來識別訪客 (例如電子郵件地址)，建議您改為儲存經過雜湊或加密處理的資訊。ECID 程式庫支援使用雜湊處理用戶識別碼。請參閱 [setCustomerIDs 的 SHA256 雜湊支援](/help/reference/hashing-support.md)
 
 
 ```js
@@ -214,7 +214,7 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## SDK 支援 {#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
-[!DNL Experience Cloud] ID 服務支援 Android 和 iOS SDK 程式碼中的客戶 ID 與驗證狀態。請參閱下列程式碼資料庫：
+[!DNL Experience Cloud] ID 服務支援 Android 和 iOS SDK 程式碼中的客戶 ID 與驗證狀態。請參閱下列程式碼程式庫：
 
 * [Android SDK 方法](https://docs.adobe.com/content/help/zh-Hant/mobile-services/android/overview.html)
 * [iOS SDK 方法](https://docs.adobe.com/content/help/zh-Hant/mobile-services/ios/overview.html)
