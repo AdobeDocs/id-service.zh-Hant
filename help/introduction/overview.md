@@ -3,14 +3,14 @@ description: Experience Cloud Identity 服務在 Adobe Experience Cloud 中的�
 seo-description: Experience Cloud Identity 服務 (原稱為訪客 ID 服務或 Marketing Cloud ID 服務) 可啟用 Experience Cloud 服務的共同識別架構，例如客戶屬性和對象。
 seo-title: Experience Cloud ID 服務概述
 title: Experience Cloud ID 服務概述
-translation-type: tm+mt
-source-git-commit: 98b72f87b188debd6a5f6b86822c3f714647de61
-workflow-type: tm+mt
+exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '615'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
-
 
 # Experience Cloud ID 服務概述
 
@@ -27,7 +27,7 @@ ht-degree: 77%
 
 ![](assets/ecid-new.png)
 
-此外，ID服務也可取代不同的解決方案專用ID（例如Analytics AID）。 And, through the [Customer IDs and Authentication States](/help/reference/authenticated-state.md) functionality, the ID service lets you pass in your own customer IDs to the Experience Cloud. 但請記住，ID服務僅適用於您已訂閱的解決方案。 如果您未註冊其他產品，則無法存取。
+此外，ID 服務也可以取代不同的解決方案專屬 ID (例如 Analytics AID)。透過[客戶 ID 和驗證狀態](/help/reference/authenticated-state.md)功能，ID 服務可讓您將您的客戶 ID 傳遞至 Experience Cloud。但是請牢記一點，ID 服務僅適用於您已經訂閱的解決方案。它無法讓您存取您尚未註冊的其他產品。
 
 展望未來，ID 服務將成為許多目前與未來 Experience Cloud 特色、增強功能與服務的必要元件。目前 ID 服務支援 [Analytics](http://www.adobe.com/tw/marketing-cloud/web-analytics.html)、[Audience Manager](http://www.adobe.com/tw/marketing-cloud/data-management-platform.html) 和 [Target](http://www.adobe.com/tw/marketing-cloud/testing-targeting.html)。此外，如果您想參與 Adobe Experience Cloud Device Co-op，也需要用到 ID 服務。如果您尚未實作 ID 服務，現在就是開始考慮移轉策略的最佳時機。如需 ID 服務之重要性和角色的詳細資訊，請參閱[為何您應認真考慮 Experience Cloud Identity 服務](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
 
@@ -35,16 +35,16 @@ ht-degree: 77%
 
 總而言之，ID 服務可以：
 
-* 建立可用來連結描述檔和身分的公用金鑰或ID。
-* 在多個解決方案間唯一識別裝置。
-* 在客戶的網域中設定第一方Cookie，以確保在相同網域上追蹤。 See the document on [cookies and Experience Cloud Identity Service](https://docs.adobe.com/content/help/zh-Hant/id-service/using/intro/cookies.html) for more information.
+* 建立可用來連結設定檔和身分識別的公用鍵或 ID。
+* 可唯一識別多個解決方案中的裝置。
+* 在客戶的網域中設定第一方 Cookie，以確保可在相同網域上追蹤。如需詳細資訊，請參閱 [Cookie 和 Experience Cloud Identity 服務](https://docs.adobe.com/content/help/zh-Hant/id-service/using/intro/cookies.html)的相關文件。
 * 從 Experience Cloud 客戶和合作夥伴接收別名和 ID 對應。
 * 在 Experience Cloud 中管理 ID 同步。
 * 在各廣告技術生態系統中，支援不同第三方的 ID 同步。
 
-## ID服務需求
+## ID 服務要求
 
-您的解決方案和其他Adobe程式碼庫必 [須符合特定需求](/help/reference/requirements.md) ，才能使用ID服務。
+您的解決方案和其他 Adobe 程式碼程式庫必須符合[某些要求](/help/reference/requirements.md)，您才可以使用 ID 服務。
 
 * [Cookie 與 Experience Cloud Identity 服務](cookies.md)：ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie 及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
 * [Experience Cloud Identity 服務如何要求與設定 ID](id-request.md)：概述 ID 要求與回應程序。這些範例涵蓋在個別網站、跨不同網站，以及針對由不同 Experience Cloud 客戶 (具有自己的組織 ID) 管理的網站，進行 ID 指派。
