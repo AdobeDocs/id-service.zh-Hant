@@ -5,14 +5,14 @@ seo-description: Experience Cloud Identity 服務會取代舊有的 Analytics �
 seo-title: 設定 Analytics 和 Experience Cloud ID
 title: 設定 Analytics 和 Experience Cloud ID
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
+exl-id: 7399ea16-d13e-452c-b8d9-8d0699566aa2
 translation-type: ht
-source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
 workflow-type: ht
 source-wordcount: '945'
 ht-degree: 100%
 
 ---
-
 
 # 設定 Analytics 和 Experience Cloud ID{#setting-analytics-and-experience-cloud-ids}
 
@@ -44,7 +44,7 @@ JavaScript 可讀取和寫入在第一方網域 (現行網站的網域) 中設�
 
 ## 自訂 Analytics ID{#section-b6a7bd19e9ff432390010062450808f6}
 
-在 Analytics 中，使用 `s.visitorID` 來設定客戶 ID 是辨識使用者的方法。不過使用 ID 服務匯出或匯入的 Analytics 資料整合，在訪客的識別方式為 `s.visitorID` 時無法正常運作。
+在 Analytics 中，使用 `s.visitorID` 來設定客戶 ID 是辨識用戶的方法。不過使用 ID 服務匯出或匯入的 Analytics 資料整合，在訪客的識別方式為 `s.visitorID` 時無法正常運作。
 
 這種狀況包括但不限於共用受眾、Analytics for Target (A4T) 和客戶屬性。對於這類整合內容，設定自訂 Analytics ID 的方法便不受支援。
 
@@ -83,7 +83,7 @@ JavaScript 可讀取和寫入在第一方網域 (現行網站的網域) 中設�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/zh-Hant/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP 位址、使用者代理、閘道 IP 位址</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/zh-Hant/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP 位址、用戶代理程式、閘道 IP 位址</a> </p> </td> 
    <td colname="col3"> <p>訪客的瀏覽器不接受 Cookie。 </p> </td> 
   </tr> 
  </tbody> 
