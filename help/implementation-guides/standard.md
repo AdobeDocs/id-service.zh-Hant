@@ -1,18 +1,18 @@
 ---
 description: 較舊的實作會使用 Dynamic Tag Management (DTM) 來設定及部署 Experience Cloud ID 服務，並將 Experience Cloud Identity Service 與其他 Experience Cloud 解決方案整合。
-keywords: ID Service
-seo-description: 較舊的實作會使用 Dynamic Tag Management (DTM) 來設定及部署 Experience Cloud ID 服務，並將 Experience Cloud Identity Service 與其他 Experience Cloud 解決方案整合。
+keywords: ID 服務
+seo-description: 較舊的實作會使用 Dynamic Tag Management (DTM) 來設定及部署 Experience Cloud ID 服務，並將 Experience Cloud Identity 服務與其他 Experience Cloud 解決方案整合。
 seo-title: 透過 Dynamic Tag Management 來實作
 title: 透過 Dynamic Tag Management 來實作
 uuid: c4f752c4-392e-4909-b178-911706857064
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '2056'
+exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '2058'
 ht-degree: 100%
 
 ---
-
 
 # 透過 Dynamic Tag Management 來實作{#implementation-with-dynamic-tag-management}
 
@@ -117,7 +117,7 @@ mcvid-dtm-settings.xml
 
 ## 組織 ID {#section-949b5a0d8af940558b04ff675cf53f77}
 
-這是與您佈建之 [!DNL Experience Cloud] 公司關聯的必要 ID。組織是可讓管理員設定使用者、群組，以及控制 [!DNL Experience Cloud] 中單一登入存取的實體。組織 ID 是 24 個字元的英數字串，後面接著 (而且必須包含) @AdobeOrg。[!DNL Experience Cloud] 管理員可以在 [「Experience Cloud > 工具」](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/manage-users-and-products/admin-getting-started.html)中找到此 ID。
+這是與您佈建之 [!DNL Experience Cloud] 公司關聯的必要 ID。組織是可讓管理員設定用戶、群組，以及控制 [!DNL Experience Cloud] 中單一登入存取的實體。組織 ID 是 24 個字元的英數字串，後面接著 (而且必須包含) @AdobeOrg。[!DNL Experience Cloud] 管理員可以在 [「Experience Cloud > 工具」](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/manage-users-and-products/admin-getting-started.html)中找到此 ID。
 
 ![](assets/orgID.png)
 
@@ -187,7 +187,7 @@ mcvid-dtm-settings.xml
 
 **值**
 
-此值應為包含使用者 ID 的資料元素。資料元素是適用於動態值 (例如來自用戶端專屬內部系統的 ID) 的容器。
+此值應為包含用戶 ID 的資料元素。資料元素是適用於動態值 (例如來自用戶端專屬內部系統的 ID) 的容器。
 
 **驗證狀態**
 
@@ -271,7 +271,7 @@ mid=20265673158980419722735089753036633573
 
 ### Charles 中的成功 ID 服務回應
 
-當[資料收集伺服器](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) 的回應傳回 MID 時，表示您的帳戶已正確佈建。MID 是以使用此語法的機碼值組傳回：`d_mid: visitor Experience Cloud ID`.查看 [!UICONTROL Response] 標籤中的 MID，如下所示。
+當[資料收集伺服器](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) 的回應傳回 MID 時，表示您的帳戶已正確佈建。MID 是以使用此語法的機碼值組傳回：`d_mid: visitor Experience Cloud ID`。查看 [!UICONTROL Response] 標籤中的 MID，如下所示。
 
 ![](assets/charles_response_success.png)
 
