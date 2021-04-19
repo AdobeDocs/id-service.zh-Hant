@@ -1,18 +1,18 @@
 ---
 description: 這些指示適用於想使用 Experience Cloud Identity Service 但不想使用 Dynamic Tag Management (DTM) 的 Analytics、Audience Manager 和 Target 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
-keywords: ID Service
-seo-description: 這些指示適用於想使用 Experience Cloud Identity Service 但不想使用 Dynamic Tag Management (DTM) 的 Analytics、Audience Manager 和 Target 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
+keywords: ID 服務
+seo-description: 這些指示適用於想使用 Experience Cloud Identity 服務但不想使用 Dynamic Tag Management (DTM) 的 Analytics、Audience Manager 和 Target 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 seo-title: 實作適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity Service
 title: 實作適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity Service
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
-source-wordcount: '1572'
+exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '1574'
 ht-degree: 100%
 
 ---
-
 
 # 實作適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity Service {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
@@ -244,4 +244,3 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 * 確定 Analytics ID (AID) 與 MID 位於影像請求中。
 * 當您符合[中止條件](../implementation-guides/setup-aam-analytics-target.md#section-aceacdb7d5794f25ac6ff46f82e148e1)時，請記得停用寬限期。
-
