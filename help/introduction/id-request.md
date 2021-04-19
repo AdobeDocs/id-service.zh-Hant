@@ -1,18 +1,18 @@
 ---
 description: ID 請求與回應程序的概述。這些範例涵蓋在個別網站、跨不同網站，以及針對由不同 Experience Cloud 客戶 (具有自己的組織 ID) 管理的網站，進行 ID 指派。
-keywords: ID Service
+keywords: ID 服務
 seo-description: ID 請求與回應程序的概述。這些範例涵蓋在個別網站、跨不同網站，以及針對由不同 Experience Cloud 客戶 (具有自己的組織 ID) 管理的網站，進行 ID 指派。
 seo-title: Experience Cloud Identity Service 如何請求與設定 ID
 title: Experience Cloud Identity Service 如何請求與設定 ID
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '804'
+exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '806'
 ht-degree: 100%
 
 ---
-
 
 # Experience Cloud Identity Service 如何請求與設定 ID{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
@@ -64,4 +64,3 @@ DCS 在收到組織 ID 和 Demdex ID 後，會為我們的網站訪客建立正�
 在此範例中，我們的訪客離開食品公司網站，並瀏覽至運動公司所屬的足球網站。當訪客造訪足球網站時，ID 檢查和請求程序的運作方式會與先前範例中說明的相同。不過，由於運動公司有其本身的組織 ID，因此 ID 服務會傳回不同的 MID。新的 MID 專屬於運動公司控管的網域，可讓企業在 [!DNL Experience Cloud] 的各解決方案中追蹤和共用訪客資料。該名訪客的 Demdex ID 仍維持不變，因為 Demdex ID 包含在第三方 Cookie 中，且會在不同網域中持續存在。
 
 ![](assets/req_resp.png)
-
