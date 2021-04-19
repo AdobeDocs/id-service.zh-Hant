@@ -1,18 +1,18 @@
 ---
 description: 此功能主要是為 A4T 客戶所設計，可協助解決在單一網站/螢幕或應用程式處理 ID 時遇到的問題。
-keywords: ID Service
+keywords: ID 服務
 seo-description: 此功能主要是為 A4T 客戶所設計，可協助解決在單一網站/螢幕或應用程式處理 ID 時遇到的問題。
 seo-title: resetState
 title: resetState
 uuid: ed7be76d-a7ee-4e51-b26c-456ff85fd096
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 69%
+exl-id: 8e8cb299-bb89-4bc1-8841-3091ce0cbd81
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '400'
+ht-degree: 100%
 
 ---
-
 
 # resetState{#resetstate}
 
@@ -22,8 +22,8 @@ ht-degree: 69%
 
 使用 ID 服務的 A4T 客戶可以視需要使用 `visitor.resetState()` 函數來執行下列作業:
 
-* 透過重新導向，將補充資料ID(SDID)或任何其他ID從一個頁面或螢幕傳遞至另一個頁面或螢幕。 通常，沒有此函式，ID服務就無法傳遞此ID。
-* 使用僅透過Ajax呼叫更新頁面或應用程式特定區段的程式碼，而您想要追蹤這些動作。 例如，假設您有一個頁面，其中按一下某個物件時，只會載入或變更特殊區段。 在此情況下，ID服務無法要求不同的ID，除非重新載入頁面。 但如果是使用 `visitor.resetState()`，則可以在下列條件下要求新的 ID。
+* 透過重新導向在不同頁面或畫面之間傳遞 Supplemental Data ID (SDID) 或其他任何 ID。通常一定要有這個函數，ID 服務才會傳遞此 ID。
+* 使用只會透過 Ajax 呼叫更新頁面或應用程式的特定區段的程式碼，而且您想要追蹤這些操作。舉例來說，假設您有一個頁面，在按下此頁面上的某個物件時，只會載入或變更特殊區段。在此情況下，除非重新載入頁面，否則 ID 服務無法要求不同的 ID。但如果是使用 `visitor.resetState()`，則可以在下列條件下要求新的 ID。
 
 請參閱以下的程式碼範例。
 
@@ -33,7 +33,7 @@ ht-degree: 69%
 
 ## 程式碼範例 {#section-d75b211bb4ea473887eb284de2ad838b}
 
-您的 ID 服務實作會影響您使用此函數的方式。請參閱下表以取得範例。
+您的 ID 服務實作會影響您使用此函數的方式。請參考下表的範例。
 
 **伺服器端實作**
 
@@ -66,7 +66,7 @@ visitor.resetState(serverState);
 
 **非標準實作** (不透過傳遞 ID)
 
-在此情況下，`visitor.resetState()` 可用於產生新的 ID。當使用者導覽至新畫面而不重新整理頁面，而且您需要新的ID時，這在單頁應用程式中很有用。
+在此情況下，`visitor.resetState()` 可用於產生新的 ID。當用戶導覽至新畫面而不重新整理頁面，而且您需要新的 ID 時，這在單頁應用程式中會很實用。
 
 ```js
  
@@ -90,6 +90,6 @@ var sdid1 = visitor.getSupplementalDataID("consumer3"); // sdid1: 5678
 var sdid2 = visitor.getSupplementalDataID("consumer4"); // sdid2: 5678
 ```
 
-**動態標籤管理 (DTM)**
+**動態標籤管理員 (DTM)**
 
 目前並未提供 `visitor.resetState()` () 的 DTM 設定路徑。
