@@ -1,18 +1,18 @@
 ---
 description: 這些指示適用於想使用 Experience Cloud Identity Service 但不想使用 Dynamic Tag Management (DTM) 的 Target 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
-keywords: ID Service
-seo-description: 這些指示適用於想使用 Experience Cloud Identity Service 但不想使用 Dynamic Tag Management (DTM) 的 Target 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
+keywords: ID 服務
+seo-description: 這些指示適用於想使用 Experience Cloud Identity 服務但不想使用 Dynamic Tag Management (DTM) 的 Target 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 seo-title: 實作適用於 Target 的 Experience Cloud Identity Service
 title: 實作適用於 Target 的 Experience Cloud Identity Service
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
-source-wordcount: '459'
+exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '461'
 ht-degree: 100%
 
 ---
-
 
 # 實作適用於 Target 的 Experience Cloud Identity Service{#implement-the-experience-cloud-id-service-for-target}
 
