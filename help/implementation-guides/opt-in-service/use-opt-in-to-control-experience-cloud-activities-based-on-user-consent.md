@@ -1,22 +1,22 @@
 ---
-title: 根據使用者同意使用選擇加入以控制 Experience Cloud 活動
-description: Adobe 選擇加入物件是 Adobe Experience Platform Identity Service 的擴充功能，旨在協助您根據一般使用者同意，控制哪些 Experience Cloud 解決方案能否在網頁上建立 Cookie 及啟動指標。
-translation-type: tm+mt
-source-git-commit: 3aba8820ef40d068c732a637be5ab67652a8d35d
-workflow-type: tm+mt
+title: 根據用戶同意使用選擇加入以控制 Experience Cloud 活動
+description: Adobe 選擇加入物件是 Adobe Experience Platform Identity Service 的擴充功能，旨在協助您根據一般用戶同意，控制哪些 Experience Cloud 解決方案能否在網頁上建立 Cookie 及啟動指標。
+exl-id: ac44e628-01ca-401c-864b-30fed0450e5f
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '554'
 ht-degree: 100%
 
 ---
 
+# 根據用戶同意控制 Experience Cloud 活動
 
-# 根據使用者同意控制 Experience Cloud 活動
-
-Adobe [!UICONTROL 選擇加入]物件是 Adobe [!UICONTROL Experience Platform Identity Service] 的擴充功能，旨在協助您根據一般使用者同意，控制哪些 Experience Cloud 解決方案能否在網頁上建立 Cookie 及啟動指標。
+Adobe [!UICONTROL 選擇加入]物件是 Adobe [!UICONTROL Experience Platform Identity Service] 的擴充功能，旨在協助您根據一般用戶同意，控制哪些 Experience Cloud 解決方案能否在網頁上建立 Cookie 及啟動指標。
 
 ## [!UICONTROL 選擇加入]的基本知識
 
-隱私權法規的一個重要面向是取得並傳達使用者同意透過哪種方式及供哪些人使用其個人資料。最新版 [!UICONTROL Identity Service] 包含的功能介於使用者 (UI) 和 Adobe 解決方案之間，並根據一般使用者是否同意，有條件觸發 (例如事前和事後同意) Adobe Experience Cloud 解決方案標籤。這如下圖所示：
+隱私權法規的一個重要面向是取得並傳達用戶同意透過哪種方式及供哪些人使用其個人資料。最新版 [!UICONTROL Identity Service] 包含的功能介於用戶 (UI) 和 Adobe 解決方案之間，並根據一般用戶是否同意，有條件觸發 (例如事前和事後同意) Adobe Experience Cloud 解決方案標籤。這如下圖所示：
 
 ![[!UICONTROL 選擇加入]的運作方式圖](assets/opt-in.png)
 
@@ -26,7 +26,7 @@ Adobe [!UICONTROL 選擇加入]物件是 Adobe [!UICONTROL Experience Platform I
 
 **如果在 Identity Service 中啟用[!UICONTROL 選擇加入] (透過布林值變數)，會延遲 Experience Cloud 解決方案程式庫觸發標籤或設定 Cookie，直到取得該解決方案的同意為止。**
 
-[!UICONTROL 選擇加入]也可讓您決定是否在使用者同意&#x200B;*之前*&#x200B;觸發任何標籤，然後儲存此同意資訊 (連同一般使用者提供的同意)，以便用於後續的點擊。[!UICONTROL 選擇加入]選項中可儲存同意，或者您可以整合 CMP，使其儲存同意選取項目。
+[!UICONTROL 選擇加入]也可讓您決定是否在用戶同意&#x200B;*之前*&#x200B;觸發任何標籤，然後儲存此同意資訊 (連同一般用戶提供的同意)，以便用於後續的點擊。[!UICONTROL 選擇加入]選項中可儲存同意，或者您可以整合 CMP，使其儲存同意選取項目。
 
 ## 啟用和設定[!UICONTROL 選擇加入]
 
