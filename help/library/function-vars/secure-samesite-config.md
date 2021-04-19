@@ -4,14 +4,14 @@ keywords: ID 服務
 seo-description: ECID 內部的一種配置，可用於支援 Google AMP 頁面上的 AMCV Cookie。
 seo-title: 安全和 SameSite 配置
 title: 安全和 SameSite 配置
+exl-id: c3bc44fc-5adc-4eae-8169-9d731d148458
 translation-type: ht
-source-git-commit: 702d20f3989f7749fb173496765d94c3a5af46dc
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
 workflow-type: ht
 source-wordcount: '174'
 ht-degree: 100%
 
 ---
-
 
 # 安全和 SameSite 配置
 
@@ -27,7 +27,7 @@ Adobe 訪客 ID 服務使用`SameSite = Lax`的瀏覽器預設設定來設定 EC
 
 如果您使用的是 Adobe Experience Platform Launch，請將您的 Experience Cloud ID 擴充功能升級到版本 5.1.0，並且配置`secureCookie: true`和`sameSiteCookie: none`。
 
-如果您沒有使用 Experience Platform Launch，請在初始化訪客執行個體時更新到最新的訪客 5.1.0 資料庫並遵循以下配置：
+如果您沒有使用 Experience Platform Launch，請在初始化訪客執行個體時更新到最新的訪客 5.1.0 程式庫並遵循以下配置：
 
 **程式碼範例**
 
