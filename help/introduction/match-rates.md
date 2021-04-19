@@ -1,18 +1,18 @@
 ---
 description: 概述 Experience Cloud Identity Service (包括 Adobe Media Optimizer 和 ID 服務) 中的 ID 同步程序與匹配率。
-keywords: ID Service
-seo-description: 概述 Experience Cloud Identity Service (包括 Adobe Media Optimizer 和 ID 服務) 中的 ID 同步程序與匹配率。
+keywords: ID 服務
+seo-description: 概述 Experience Cloud Identity 服務 (包括 Adobe Media Optimizer 和 ID 服務) 中的 ID 同步程序與匹配率。
 seo-title: 了解 ID 同步和匹配率
 title: 了解 ID 同步和匹配率
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '831'
+exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '833'
 ht-degree: 100%
 
 ---
-
 
 # 了解 ID 同步和匹配率{#understanding-id-synchronization-and-match-rates}
 
@@ -42,7 +42,7 @@ ID 服務會即時同步 ID。此程序可在瀏覽器中運作，而不憑藉�
 
 在載入頁面本文時，ID 服務會載入名為 *`Destination Publishing iFrame`* 的 iFrame。[!UICONTROL Destination Publishing iFrame] 會在不同於上層頁面的網域中載入。此設計有助於確保頁面效能並提高安全性，因為 iFrame 會：
 
-* 以與上層頁面非同步的方式載入。這表示上層頁面可與 [!UICONTROL Destination Publishing iFrame] 分開載入。載入 iFrame 以及從 iFrame 內載入 ID 同步像素，並不會影響到上層頁面或使用者體驗。
+* 以與上層頁面非同步的方式載入。這表示上層頁面可與 [!UICONTROL Destination Publishing iFrame] 分開載入。載入 iFrame 以及從 iFrame 內載入 ID 同步像素，並不會影響到上層頁面或用戶體驗。
 * 盡快載入。如果速度太快，您可以在視窗載入事件之後載入 iFrame (不建議使用)。請參閱 [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) 了解詳細資訊。
 * 防止 iFrame 中的程式碼存取或影響到上層頁面。
 
