@@ -1,28 +1,28 @@
 ---
 description: 2017 年 Experience Cloud Identity Service 的功能發佈、更新或變更。
-keywords: ID Service
-seo-description: 2017 年 Experience Cloud Identity Service 的功能發佈、更新或變更。
-seo-title: 2017 年發行說明
-title: 2017 年發行說明
+keywords: ID 服務
+seo-description: 2017 年 Experience Cloud Identity 服務的功能發佈、更新或變更。
+seo-title: 2017 年版本注意事項
+title: 2017 年版本注意事項
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '760'
+exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '762'
 ht-degree: 100%
 
 ---
 
-
-# 2017 年發行說明 {#release-notes}
+# 2017 年版本注意事項 {#release-notes}
 
 2017 年 Experience Cloud Identity Service 的功能發佈、更新或變更。
 
-這些變更也包含在 [Experience Cloud 發行說明](https://docs.adobe.com/content/help/zh-Hant/release-notes/experience-cloud/current.html)中。
+這些變更也包含在 [Experience Cloud 版本注意事項](https://docs.adobe.com/content/help/zh-Hant/release-notes/experience-cloud/current.html)中。
 
 >[!NOTE]
 >
->2017 年 3 月、4 月、5 月和 10 月均沒有針對客戶提供的發行說明或程式碼變更。針對上述月份，ID 服務程式碼均維持 v2.1 版不變。
+>2017 年 3 月、4 月、5 月和 10 月均沒有針對客戶提供的版本注意事項或程式碼變更。針對上述月份，ID 服務程式碼均維持 v2.1 版不變。
 
 ## 版本 2.5 {#section-27b441509124493f80984ed09bd9e88b}
 
@@ -93,7 +93,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> sdidParamExpiry</span> </p> </td> 
-   <td colname="col2"> <p>將其新增至 <span class="codeph">Visitor.getInstance</span> 函式後，此設定可讓您從某一頁面傳遞增補資料 ID (SDID) 至另外一個頁面時，覆寫該 ID 的預設過期時間間隔。您可以使用 <span class="codeph">sdidParamExpiry</span> 搭配 <span class="codeph">appendSupplimentalDataTo</span> Helper 函式。請參閱 <a href="../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458" format="dita" scope="local">sdidParamExpiry</a>。 </p> </td> 
+   <td colname="col2"> <p>將其新增至 <span class="codeph">Visitor.getInstance</span> 函式後，此設定可讓您從某一頁面傳遞 Supplemental Data ID (SDID) 至另外一個頁面時，覆寫該 ID 的預設過期時間間隔。您可以使用 <span class="codeph">sdidParamExpiry</span> 搭配 <span class="codeph">appendSupplimentalDataTo</span> Helper 函式。請參閱 <a href="../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458" format="dita" scope="local">sdidParamExpiry</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> resetState</span> </p> </td> 
@@ -184,7 +184,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID 服務 API 方法，<span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname">SDID</span>)</span></p> </td> 
-   <td colname="col2"> <p>此公用方法可附加至<span class="wintitle">增補資料 ID</span> (SDID) 作為查詢字串參數，以重新導向 URL。請參閱 <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>。(MCID-285) </p> </td> 
+   <td colname="col2"> <p>此公用方法可附加至 <span class="wintitle">Supplemental Data ID</span> (SDID) 作為查詢字串參數，以重新導向 URL。請參閱 <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>。(MCID-285) </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -213,4 +213,4 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 ## 過去幾年{#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
-舊版的 ID 服務發行說明。
+舊版的 ID 服務版本注意事項。
