@@ -1,18 +1,18 @@
 ---
 description: 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實作能讓他們在這些裝置上使用該 ID 服務，這類裝置包括遊戲主機、智慧型電視，或其他可上網的設備等等。請參閱本節，以取得語法、程式碼範例和定義。
-keywords: ID Service
+keywords: ID 服務
 seo-description: 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實作能讓他們在這些裝置上使用該 ID 服務，這類裝置包括遊戲主機、智慧型電視，或其他可上網的設備等等。請參閱本節，以取得語法、程式碼範例和定義。
 seo-title: 與 Experience Cloud Identity Service 直接整合
 title: 與 Experience Cloud Identity Service 直接整合
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '712'
+exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '714'
 ht-degree: 100%
 
 ---
-
 
 # 與 Experience Cloud Identity Service 直接整合 {#direct-integration-with-the-experience-cloud-id-service}
 
@@ -73,16 +73,16 @@ ID 服務會傳回 JSON 物件中的資料，如下所示。您的回應可能�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
-   <td colname="col2"> <p>此選用參數會將資料提供者 ID (DPID)、唯一使用者 ID (DPUUID) 及<a href="../reference/authenticated-state.md" format="dita" scope="local">驗證狀態 ID</a> 傳給 ID 服務。如程式碼範例所示，以非列印用的控制字元 <span class="codeph">%01</span> 將 DPID 和 DPUUID 隔開。 </p> <p> <b>DPID 與 DPUUID</b> </p> <p>在 <span class="codeph">d_cid</span> 參數中，將每個相關的 DPID 和 DPUUID 組合指派至相同的 <span class="codeph">d_cid</span> 參數。如此，能讓您在單一要求中傳回多個 ID 集合。另外，以非列印用的控制字元 <span class="codeph">%01</span> 將 DPID、DPUUID 和選用的驗證標幟隔開。在下列範例中，提供者和使用者的 ID 都會以<b>粗體</b>文字強調顯示。 </p> 
+   <td colname="col2"> <p>此選用參數會將資料提供者 ID (DPID)、唯一用戶 ID (DPUUID) 及<a href="../reference/authenticated-state.md" format="dita" scope="local">驗證狀態 ID</a> 傳給 ID 服務。如程式碼範例所示，以非列印用的控制字元 <span class="codeph">%01</span> 將 DPID 和 DPUUID 隔開。 </p> <p> <b>DPID 與 DPUUID</b> </p> <p>在 <span class="codeph">d_cid</span> 參數中，將每個相關的 DPID 和 DPUUID 組合指派至相同的 <span class="codeph">d_cid</span> 參數。如此，能讓您在單一要求中傳回多個 ID 集合。另外，以非列印用的控制字元 <span class="codeph">%01</span> 將 DPID、DPUUID 和選用的驗證標幟隔開。在下列範例中，提供者和用戶的 ID 都會以<b>粗體</b>文字強調顯示。 </p> 
     <ul id="ul_2E19D837296B40E9ACD096495CF711C5"> 
      <li id="li_5B94B057654440B99B989BA60E4ED053">語法：<span class="codeph">...d_cid=DPID%01DPUUID%01authentication state...</span> </li> 
      <li id="li_B07833EF51D54F088574B7B7F9FB841A">範例：<span class="codeph">...d_cid=123%01456%011...</span> </li> 
-    </ul> <p> <b>驗證狀態</b> </p> <p>這是 <span class="codeph">d_cid</span> 參數中的選用 ID，以整數方式呈現，而且能根據下列使用者的驗證狀態來識別使用者: </p> 
+    </ul> <p> <b>驗證狀態</b> </p> <p>這是 <span class="codeph">d_cid</span> 參數中的選用 ID，以整數方式呈現，而且能根據下列用戶的驗證狀態來識別用戶: </p> 
     <ul id="ul_E2B36922B11C4AA2A9016B6E2DC9EDAA"> 
      <li id="li_31C018E3F9514B938C73EF40C436715F"> <span class="codeph"> 0</span> (未知) </li> 
      <li id="li_1F125C3879324C2F8EF4613C0ECB5F02"> <span class="codeph"> 1</span> (驗證) </li> 
      <li id="li_EF6792D0115D407485079D5D7480D965"> <span class="codeph"> 2</span> (登出) </li> 
-    </ul> <p>若要指定驗證狀態，可在使用者 ID (UUID) 變數後方設定此標幟。以非列印用的控制字元 <span class="codeph">%01</span> 將 UUID 和選用的驗證標幟隔開。在下列範例中，驗證 ID 會以<b>粗體</b>文字強調顯示。 </p> <p>語法：<span class="codeph">...d_cid=DPID%01DPUUID%01authentication state</span> </p> <p>範例: </p> 
+    </ul> <p>若要指定驗證狀態，可在用戶 ID (UUID) 變數後方設定此標幟。以非列印用的控制字元 <span class="codeph">%01</span> 將 UUID 和選用的驗證標幟隔開。在下列範例中，驗證 ID 會以<b>粗體</b>文字強調顯示。 </p> <p>語法：<span class="codeph">...d_cid=DPID%01DPUUID%01authentication state</span> </p> <p>範例: </p> 
     <ul id="ul_4C1054CE860A4D9C8DD85C2A8020C47F"> 
      <li id="li_AD4000BF3E0146C0BD37B1EC513EC314">未知：<span class="codeph">...d_cid=123%01456%010...</span> </li> 
      <li id="li_B037D424AADA4D41BF29381A9602AE61">驗證：<span class="codeph">...d_cid=123%01456%011...</span> </li> 
@@ -126,4 +126,3 @@ ID 服務會傳回 JSON 物件中的資料，如下所示。您的回應可能�
   </tr> 
  </tbody> 
 </table>
-
