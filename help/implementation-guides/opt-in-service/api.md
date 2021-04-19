@@ -1,23 +1,23 @@
 ---
-description: 選擇加入資料庫 API 與組態設定參考資料。
-seo-description: 選擇加入資料庫 API 與組態設定參考資料。
+description: 選擇加入程式庫 API 與組態設定參考資料。
+seo-description: 選擇加入程式庫 API 與組態設定參考資料。
 seo-title: 選擇加入參考資料
 title: 選擇加入參考資料
 uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
-translation-type: tm+mt
-source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
-workflow-type: tm+mt
+exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '897'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
-
 # 選擇加入參考資料{#opt-in-reference}
 
-選擇加入資料庫 API 與組態設定參考資料。
+選擇加入程式庫 API 與組態設定參考資料。
 
-「選擇加入」功能會以類別提供同意設定：
+同意設定會當做類別提供給選擇加入函數：
 
 ```
 adobe.OptInCategories = { 
@@ -28,7 +28,7 @@ adobe.OptInCategories = {
 }
 ```
 
-## 選擇加入組態參數 {#section-d66018342baf401389f248bb381becbf}
+## 選擇加入設定參數 {#section-d66018342baf401389f248bb381becbf}
 
 本節探討如何使用 API 來設定選擇加入。大部分的設定與實作都可使用 Experience Platform Launch 擴充功能來完成。
 
@@ -36,7 +36,7 @@ adobe.OptInCategories = {
 
 **`doesOptInApply (boolean or function that evaluates to a boolean)`**：
 
-若為false，表示訪客不需要選擇加入。 導致Experience Cloud建立Cookie，不論選擇加入或退出的類別為何。 此組態會整體啟用或停用選擇加入。
+若為 false，則表示訪客不需要選擇加入。Experience Cloud 中的結果會建立 Cookie，無論類別為選擇加入還是選擇退出。此設定會整體啟用或停用選擇加入。
 
 **`preOptInApprovals (Object <adobe.OptInCategories enum: boolean>)`**
 
@@ -50,21 +50,21 @@ adobe.OptInCategories = {
 
 啟用選擇加入以將權限儲存在第一方 Cookie 中 (位於目前客戶的網域內)
 
-(選填) **`optInCookiesDomain (string)`**
+(選擇性) **`optInCookiesDomain (string)`**
 
 用於選擇加入 Cookie 的第一方網域或子網域 (若 `isOptInStorageEnabled` 為 true)
 
-(選填) **`optInStorageExpiry (integer)`**
+(選擇性) **`optInStorageExpiry (integer)`**
 
-覆寫預設13個月到期的秒數
+覆寫預設到期時間 13 個月的秒數
 
-## 對「同意」參數的更改 {#section-c3d85403ff0d4394bd775c39f3d001fc}
+## 同意參數的變更 {#section-c3d85403ff0d4394bd775c39f3d001fc}
 
-訪客在您網站上的任何時間，都可能首次設定偏好設定，或可能會使用您的CMP變更其偏好設定。 使用初始設定初始化訪客JS後，即可使用下列函式變更訪客的權限：
+在造訪您網站期間的任何時刻，訪客可以初次設定偏好設定，也可以使用您的 CMP 變更其偏好設定。使用初始設定初始化訪客 JS 之後，可以使用以下函數變更訪客的權限：
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 
-核准或選擇將訪客加入清單中的所有類別。如需shouldWaitForComplete參數的詳細資訊，請參 [閱選擇加入工作流程](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5)。
+核准或選擇將訪客加入清單中的所有類別。如需 shouldWaitForComplete 參數的詳細資訊，請參閱「[選擇加入工作流程](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5)」。
 
 **`adobe.optIn.deny(categories, shouldWaitForComplete)`**
 
@@ -72,7 +72,7 @@ adobe.OptInCategories = {
 
 **`adobe.optIn.approveAll()`**：
 
-如果您的網站建立權限要求是讓訪客概括授予或拒絕網站建立 Cookie 的權限，請依據訪客的回應使用 `approveAll()` 或 `denyAll()`。
+如果您請求允許網站建立 Cookie，以便訪客完全同意或拒絕授予網站建立 Cookie 的權限，請依據訪客的回應使用 `approveAll()` 或 `denyAll()`。
 
 **`adobe.optIn.denyAll()`**：
 
@@ -108,15 +108,15 @@ adobe.OptInCategories = {
 
 `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe)`
 
-非同步擷取權限清單。 在權限授與／拒絕程式完成後，會使用權限清單呼叫回呼。 將 *的值設為* true`shouldAutoSubscribe`，會登錄往後任何的選擇加入變更。以下為 `adobe.OptIn` 的屬性:
+非同步擷取權限清單。在完成權限授予/拒絕程序後，使用權限清單呼叫回呼。將 *的值設為* true`shouldAutoSubscribe`，會登錄往後任何的選擇加入變更。以下為 `adobe.OptIn` 的屬性:
 
 **`permissions`**
 
-此物件會以類別形式列出訪客授權或拒絕的所有 Experience Cloud 解決方案。範例: `{ aa: true, ecid: false, aam: true... }`
+此物件會以類別形式列出訪客授權或拒絕的所有 Experience Cloud 解決方案。範例：`{ aa: true, ecid: false, aam: true... }`
 
 **`status`**
 
-* 擱置
+* 擱置中
 * 已變更
 * 完成
 
@@ -126,18 +126,18 @@ adobe.OptInCategories = {
 
 **`isPending`**
 
-True或false，視狀態值而定。 對於尚未明確接受或拒絕權限的訪客，此屬性的加入報表為true
+True 或 false (視狀態值而定)。對於尚未明確接受或拒絕權限的訪客，選擇加入會針對這個屬性傳回 true
 
 **`isComplete`**
 
-True或false視狀態值而定。 當工作流程式同意已開始但未完成時，選擇加入可能會針對此屬性報告為false。
+True 或 false (視狀態值而定)。當工作流程式同意已開始但尚未完成時，選擇加入可能會針對這個屬性傳回 false。
 
 ## 選擇加入物件的方法 {#section-e0417801a82548d199d833010033e433}
 
 **`approve(categories, shouldWaitForComplete)`**
 
-**`categories`**: 要核准的一或多個類別。例如: `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
-**`shouldWaitForComplete`**: (選用) 布林值參數，預設為 false。如果您傳入 true，在您呼叫 `adobe.optIn.complete()` () 前，選擇加入不會完成核准程序。此程序類似工作流程。
+**`categories`**：要核准的一或多個類別。例如：`adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
+**`shouldWaitForComplete`**：(選擇性) 布林值參數，預設為 false。如果您傳入 true，在您呼叫 `adobe.optIn.complete()` () 前，選擇加入不會完成核准程序。此程序類似工作流程。
 
 ```
 <codeblock>
@@ -149,8 +149,8 @@ True或false視狀態值而定。 當工作流程式同意已開始但未完成�
 
 **`deny(categories, shouldWaitForComplete)`**
 
-* 通過1個或多個類別以檢查是否已批准。
-* 如果未傳遞任何類別，則會勾選「所有可用類別」。
+* 傳遞一個或多個類別，以查看它們是否已核准。
+* 如果未傳入任何類別，則會檢查所有可用類別。
 
 **`isApproved(categories)`**
 
@@ -162,7 +162,7 @@ True或false視狀態值而定。 當工作流程式同意已開始但未完成�
 
 **`fetchPermissions(callback, shouldAutoSubscribe)`**
 
-非同步API以擷取權限清單。 在權限授與／拒絕程式完成後，會使用權限清單呼叫回呼。 **`shouldAutoSubscribe`:** 協助工具公用程式會自動將此回呼訂閱至所有未來事件。 也就是說，每次在選擇加入中觸發核准或拒絕觸發時，都會呼叫回呼。 如此，您就可隨時更新，而不需自行訂閱活動。
+非同步處理 API 以擷取權限清單。在完成權限授予/拒絕程序後，使用權限清單呼叫回呼。**`shouldAutoSubscribe`：** Helper 公用程式，將會自動針對所有未來事件訂閱此回呼。這表示每當在選擇加入中觸發核准或拒絕時，都會呼叫此回呼。如此一來，您總是會保持更新，而不用自行訂閱這些事件。
 
 **範例**
 
@@ -195,7 +195,7 @@ optIn.fetchPermissions(callback, true);
 
 >[!NOTE]
 >
->只有在您傳遞 `shouldWaitForComplete` 參數以核准或拒絕時才使用。此 API 會完成核准程序。範例: `adobe.optIn.complete()`.
+>只有在您傳遞 `shouldWaitForComplete` 參數以核准或拒絕時才使用。此 API 會完成核准程序。範例：`adobe.optIn.complete()`。
 
 **`approveAll()`:**
 
