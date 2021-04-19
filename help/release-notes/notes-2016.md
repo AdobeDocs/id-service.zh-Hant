@@ -1,24 +1,24 @@
 ---
 description: 2016 年 Experience Cloud Identity Service 的功能發佈、更新或變更。
-keywords: ID Service
-seo-description: 2016 年 Experience Cloud Identity Service 的功能發佈、更新或變更。
-seo-title: 2016 年發行說明
-title: 2016 年發行說明
+keywords: ID 服務
+seo-description: 2016 年 Experience Cloud Identity 服務的功能發佈、更新或變更。
+seo-title: 2016 年版本注意事項
+title: 2016 年版本注意事項
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '1162'
+exl-id: f96b9869-6282-4090-b392-797608e25a51
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '1164'
 ht-degree: 100%
 
 ---
 
-
-# 2016 年發行說明 {#release-notes}
+# 2016 年版本注意事項 {#release-notes}
 
 2016 年 Experience Cloud Identity Service 的功能發佈、更新或變更。
 
-這些變更也包含在 [Experience Cloud 發行說明](https://docs.adobe.com/content/help/zh-Hant/release-notes/experience-cloud/current.html)中。
+這些變更也包含在 [Experience Cloud 版本注意事項](https://docs.adobe.com/content/help/zh-Hant/release-notes/experience-cloud/current.html)中。
 
 ## 版本 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -50,13 +50,13 @@ ht-degree: 100%
 
 **修正和改良**
 
-* 修正了將 Audience Manager 唯一使用者 ID (AAMUUID) 做為 Experience Cloud ID 傳至 ID 服務的錯誤。
+* 修正了將 Audience Manager 唯一用戶 ID (AAMUUID) 做為 Experience Cloud ID 傳至 ID 服務的錯誤。
 * 如果 AMCV Cookie 的存留時間 (TTL) 已過期，只要 Cookie 包含 Experience Cloud ID，ID 服務仍會將該資訊傳回至伺服器。在此呼叫後，ID 服務會進行非同步呼叫以更新 Cookie。這有助於改善效能，因為 ID 服務不需要等待伺服器回應。它可使用現有的 AMCV Cookie 值，然後請求更新。
 * ID 服務會直接在頁面上自動同步 Experience Cloud ID (MID) 與 Adobe Media Optimizer 和其他內部 Adobe 網域。已針對所有現有帳戶與新帳戶啟用自動同步。這有助於改善 Media Optimizer 的匹配率。適用於 VisitorAPI.js 1.8 或更新版本。另請參閱[了解 ID 同步和比對率](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)。
 
 **新文件及修訂的文件**
 
-**新增：**[從 AMCV Cookie 取得地區與使用者 ID](../reference/regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
+**新增：**[從 AMCV Cookie 取得地區與用戶 ID](../reference/regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
 
 ## 版本 1.8.0 {#section-69f2eb5b246b4c7aafe116b7a2a5448a}
 
@@ -116,7 +116,7 @@ ht-degree: 100%
 
 * 將 `d_fieldgroup` 參數新增至 `dpm.demdex.net` 的 ID 同步呼叫。這個新參數可用於內部疑難排解和偵錯。
 
-* 在 ID 服務 iFrame 中新增了標題屬性。iFrame 標題可協助螢幕助讀程式為需要協助的使用者提供頁面資訊，以便他們操作線上內容。iFrame 標題屬性設為 `Adobe ID Syncing iFrame`。
+* 在 ID 服務 iFrame 中新增了標題屬性。iFrame 標題可協助螢幕助讀程式為需要協助的用戶提供頁面資訊，以便他們操作線上內容。iFrame 標題屬性設為 `Adobe ID Syncing iFrame`。
 * 新增 `idSyncAttachIframeASAP: true` 作為選用旗標，您可以在 `Visitor.getInstance` 函數中加以設定。若為 `true`，ID 服務便會儘快載入 ID 同步 iFrame。其目的是要改善 ID 同步匹配率。依預設，ID 服務會在視窗載入時載入 iFrame。請參閱 [Visitor.getInstance 函數變數](../library/function-vars/function-vars.md)。
 
 * 修正回呼函數的錯誤，此錯誤使 AppMeasurement 陷入無限迴圈中。
@@ -228,4 +228,3 @@ ht-degree: 100%
   </tr> 
  </tbody> 
 </table>
-
