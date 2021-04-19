@@ -1,18 +1,18 @@
 ---
 description: 選用的布林值設定，可決定 ID 服務是否要將資料傳送至 Adobe Experience Cloud Device Co-op。
-keywords: ID Service
+keywords: ID 服務
 seo-description: 選用的布林值設定，可決定 ID 服務是否要將資料傳送至 Adobe Experience Cloud Device Co-op。
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '604'
+exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '606'
 ht-degree: 100%
 
 ---
-
 
 # isCoopSafe{#iscoopsafe}
 
@@ -92,7 +92,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 * `d_coop_safe=1`
 * `d_coop_unsafe=1`
 
-POST 參數告知 [!DNL Experience Cloud] Device Co-op 是否能在裝置圖像中包含使用者資料。以下表格定義了在事件呼叫中 `isCoopSafe` 布林值標幟與所傳遞的 POST 參數之間的關係。如果您沒有使用 `isCoopSafe`，這些都不會在事件呼叫中傳遞。
+POST 參數告知 [!DNL Experience Cloud] Device Co-op 是否能在裝置圖像中包含用戶資料。以下表格定義了在事件呼叫中 `isCoopSafe` 布林值標幟與所傳遞的 POST 參數之間的關係。如果您沒有使用 `isCoopSafe`，這些都不會在事件呼叫中傳遞。
 
 <table id="table_0A544534CA904F4D9836A34B8C1EACBB"> 
  <thead> 
@@ -115,7 +115,7 @@ POST 參數告知 [!DNL Experience Cloud] Device Co-op 是否能在裝置圖像�
 
 ## Post-Instantiation API {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
-這些 API 允許您覆寫 `isCoopSafe` 狀態。這是必要的 API，因為它們可讓您變更訪客在頁面未重新整理的網站或單一頁面應用程式中的具現化後/登入後狀態。例如，如果使用者在對您的網站或應用程式進行驗證後，接受了允許 Device Co-op 使用其資料的使用條款原則，您就需要呼叫這些 API。
+這些 API 允許您覆寫 `isCoopSafe` 狀態。這是必要的 API，因為它們可讓您變更訪客在頁面未重新整理的網站或單一頁面應用程式中的具現化後/登入後狀態。例如，如果用戶在對您的網站或應用程式進行驗證後，接受了允許 Device Co-op 使用其資料的使用條款原則，您就需要呼叫這些 API。
 
 <table id="table_BAA96B1F82BE48C3A61A1AF1367BA45C"> 
  <thead> 
