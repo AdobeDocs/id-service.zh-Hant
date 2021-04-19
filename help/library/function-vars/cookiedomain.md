@@ -1,18 +1,18 @@
 ---
 description: 多部分、頂級網域需要此變數，其中 URL 最後 2 個部分的其中一個部分大於兩個字元。
-keywords: ID Service
+keywords: ID 服務
 seo-description: 多部分、頂級網域需要此變數，其中 URL 最後 2 個部分的其中一個部分大於兩個字元。
 seo-title: cookieDomain
 title: cookieDomain
 uuid: a57e5477-c07b-4d54-8aea-8e8b152f1423
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
-source-wordcount: '74'
+exl-id: 280416ad-372a-4a59-a938-0f49c0ce300f
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '76'
 ht-degree: 100%
 
 ---
-
 
 # cookieDomain{#cookiedomain}
 
@@ -22,8 +22,8 @@ ht-degree: 100%
 
 **使用案例**
 
-* 必填: `www.example.com.uk`
-* 非必要: `www.example.co.uk`
+* 必填：`www.example.com.uk`
+* 非必要：`www.example.co.uk`
 
 **程式碼範例**
 
@@ -40,4 +40,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    cookieDomain:"example.com.uk" 
 });
 ```
-
