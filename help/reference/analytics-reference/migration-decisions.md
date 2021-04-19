@@ -5,14 +5,14 @@ seo-description: 部署 Experience Cloud Identity 服務之前，請先瞭解如
 seo-title: Experience Cloud Identity Service 移轉決策點
 title: Experience Cloud Identity Service 移轉決策點
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
+exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
 translation-type: ht
-source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
 workflow-type: ht
 source-wordcount: '679'
 ht-degree: 100%
 
 ---
-
 
 # Experience Cloud Identity Service 移轉決策點
 
@@ -66,7 +66,7 @@ ht-degree: 100%
      <li id="li_32E2CD3E58454E20A642BADE507AE86E">確定新追蹤伺服器<a href="https://docs.adobe.com/content/help/zh-Hant/analytics/technotes/rdc/regional-data-collection.html" format="https" scope="external">符合 RDC 標準</a>。 </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">先從 CNAME 移至 RDC 追蹤伺服器，幾個月後再移轉至 <span class="keyword">Experience Cloud</span> ID 服務。 </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>請勿</i>使用 <span class="codeph"> *.2o7.net</span> 追蹤伺服器。 </li> 
-     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">聯絡<a href="https://helpx.adobe.com/marketing-cloud/contact-support.html" format="https" scope="external">客戶服務</a>以設定訪客移轉。這可確保一致的訪客數。 </li> 
+     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">聯絡<a href="https://helpx.adobe.com/tw/marketing-cloud/contact-support.html" format="https" scope="external">客戶服務</a>以設定訪客移轉。這可確保一致的訪客數。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -74,7 +74,7 @@ ht-degree: 100%
 
 ## 您是否有多個 Analytics JavaScript 檔案，或您是否追蹤 Flash 應用程式或視訊？
 
-如果您的網站上有多個會將資料傳送至&#x200B;*相同的報表套裝*&#x200B;的 Analytics JavaScript 檔案或 Flash 應用程式或視訊，則應設定寬限期，以便在您開始使用 [!DNL Experience Cloud] ID 服務時能繼續以 Analytics ID 識別訪客。
+如果您的網站上有多個會將資料傳送至&#x200B;*相同報表套裝*&#x200B;的 Analytics JavaScript 檔案或 Flash 應用程式或影片，則應設定寬限期，以便在您開始使用 [!DNL Experience Cloud] ID 服務時能繼續以 Analytics ID 識別訪客。
 
 <table id="table_8A4EA063AF4345B69BC98537E2E702BA"> 
  <thead> 
@@ -117,7 +117,7 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1"> <p>Silverlight </p> </td> 
-   <td colname="col2"> <p>如果訪客可存取 Silverlight 內容及其他使用 <span class="keyword">Experience Cloud</span> ID 服務之網站上的區段，您需要從 Silverlight 移轉出來。ID 服務不支援 Silverlight。 </p> <p> 如果您追蹤以 Silverlight 為基礎的影片播放程式，廠商可能會提供您可改用的 JavaScript API。 </p> </td> 
+   <td colname="col2"> <p>如果訪客可存取 Silverlight 內容及其他使用 <span class="keyword">Experience Cloud</span> ID 服務之網站上的區段，您需要從 Silverlight 移轉出來。ID 服務不支援 Silverlight。 </p> <p> 如果您追蹤 Silverlight 型影片播放程式，廠商可能會提供您可改用的 JavaScript API。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>硬式編碼影像標籤 </p> </td> 
@@ -125,4 +125,3 @@ ht-degree: 100%
   </tr> 
  </tbody> 
 </table>
-
