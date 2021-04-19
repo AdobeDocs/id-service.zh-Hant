@@ -1,18 +1,18 @@
 ---
 description: 瀏覽器封鎖第三方 Cookie 時，此函數可讓您跨網域共用訪客的 Experience Cloud ID。若要使用此函數，您必須先實作 ID 服務，且擁有來源和目的地的網域。適用於 VisitorAPI.js 1.7.0 版或更新版本。
-keywords: ID Service
+keywords: ID 服務
 seo-description: 瀏覽器封鎖第三方 Cookie 時，此函數可讓您跨網域共用訪客的 Experience Cloud ID。若要使用此函數，您必須先實作 ID 服務，且擁有來源和目的地的網域。適用於 VisitorAPI.js 1.7.0 版或更新版本。
 seo-title: appendVisitorIDsTo (跨網域追蹤)
 title: appendVisitorIDsTo (跨網域追蹤)
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
-translation-type: tm+mt
-source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
-source-wordcount: '446'
+exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '448'
 ht-degree: 100%
 
 ---
-
 
 # appendVisitorIDsTo (跨網域追蹤){#appendvisitoridsto-cross-domain-tracking}
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ## 在第三方 Cookie 遭到瀏覽器封鎖時跨網域追蹤訪客 {#section-7251d88befd440b4b79520e33c5aa44a}
 
-當使用者造訪您的網站，ID 服務會將第一方和第三方 Cookie 寫入瀏覽器 (請參閱 [Cookie 與 Experience Cloud Identity Service](../../introduction/cookies.md))。第一方 Cookie 包含 MID，此為該訪客的唯一 ID。第三方 Cookie 包含 ID 服務用來產生 MID 的其他 ID。當瀏覽器封鎖此第三方 Cookie 時，ID 服務將無法：
+當用戶造訪您的網站，ID 服務會將第一方和第三方 Cookie 寫入瀏覽器 (請參閱 [Cookie 與 Experience Cloud Identity Service](../../introduction/cookies.md))。第一方 Cookie 包含 MID，此為該訪客的唯一 ID。第三方 Cookie 包含 ID 服務用來產生 MID 的其他 ID。當瀏覽器封鎖此第三方 Cookie 時，ID 服務將無法：
 
 * 在該網站訪客瀏覽至其他網域時為其重新產生唯一 ID。
 * 在組織所擁有的不同網域間追蹤訪客。
@@ -83,4 +83,3 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
   </tr> 
  </tbody> 
 </table>
-
