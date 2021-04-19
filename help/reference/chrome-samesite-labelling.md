@@ -3,14 +3,14 @@ title: Google Chrome SameSite 標籤異動
 seo-title: Google Chrome SameSite 標籤異動
 description: Adobe ECID (ID 服務) 程式庫文件。
 seo-description: Adobe ECID (ID 服務) 程式庫文件。
-translation-type: tm+mt
-source-git-commit: 592ca6ca6a72e57b728e286d0b730c5bd93c0c7b
-workflow-type: tm+mt
+exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '1079'
 ht-degree: 100%
 
 ---
-
 
 # Google Chrome SameSite 標籤異動 {#google-chrome-samesite-labelling-changes}
 
@@ -34,7 +34,7 @@ SameSite 屬性會告訴瀏覽器在第一方和第三方情境下觸發 Cookie 
 
 **不需更新 JavaScript**
 
-Adobe 產品已發佈伺服器端更新，可使用適當屬性來設定第三方 Cookie。我們的客戶不需自行更新 JavaScript 資料庫。
+Adobe 產品已發佈伺服器端更新，可使用適當屬性來設定第三方 Cookie。我們的客戶不需自行更新 JavaScript 程式庫。
 
 **確認第三方端點使用 HTTPS**
 
@@ -48,7 +48,7 @@ Adobe 產品已發佈伺服器端更新，可使用適當屬性來設定第三�
 
 若第三方 Cookie 缺少 SameSite=`none` 和安全標幟，Chrome 80 會忽略在 Chrome 80 開始強制執行這些標幟設定前建立的第三方 Cookie。
 
-許多現有 Adobe 第三方 Cookie 都沒有這些標幟，且必須由 Edge 伺服器更新，使用者才能升級至 Chrome 80，否則這些 Cookie 就會遺失。使用者造訪使用 Cookie 的任何網站時，Edge 伺服器會自動更新。
+許多現有 Adobe 第三方 Cookie 都沒有這些標幟，且必須由 Edge 伺服器更新，用戶才能升級至 Chrome 80，否則這些 Cookie 就會遺失。用戶造訪使用 Cookie 的任何網站時，Edge 伺服器會自動更新。
 
 大部分 Adobe 產品均已為 Cookie 指派適當的標幟。使用第三方資料收集機制，但不使用 ECID 的 Analytics 實作則為例外。客戶的新訪客人數可能會短暫微幅增加，原因在於，原本系統會將這些新訪客視為舊訪客。
 
