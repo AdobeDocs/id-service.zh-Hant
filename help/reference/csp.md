@@ -1,18 +1,18 @@
 ---
 description: 內容安全性原則 (CSP) 是 HTTP 標題和安全性功能，可讓瀏覽器控制要在網頁上載入的資源類型。如果您使用 ID 服務，且具備使用白名單接受來自受信任網域之資源的嚴格 CSP，請詳閱本節。您必須將此處所列的 Adobe 網域新增至 CSP 白名單。
-keywords: ID Service
+keywords: ID 服務
 seo-description: 內容安全性原則 (CSP) 是 HTTP 標題和安全性功能，可讓瀏覽器控制要在網頁上載入的資源類型。如果您使用 ID 服務，且具備使用白名單接受來自受信任網域之資源的嚴格 CSP，請詳閱本節。您必須將此處所列的 Adobe 網域新增至 CSP 白名單。
 seo-title: 內容安全性原則及 Experience Cloud Identity Service
 title: 內容安全性原則及 Experience Cloud Identity Service
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
-source-wordcount: '619'
+exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '621'
 ht-degree: 100%
 
 ---
-
 
 # 內容安全性原則及 Experience Cloud Identity Service{#content-security-policies-and-the-experience-cloud-id-service}
 
