@@ -4,24 +4,24 @@ seo-description: 連結同意管理平台 (CMP) 和適用於 IAB 透明與同意
 seo-title: 搭配 IAB 架構使用「選擇加入」服務
 title: 搭配 IAB 架構使用「選擇加入」服務
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '493'
 ht-degree: 100%
 
 ---
 
-
 # 搭配 IAB 架構使用「選擇加入」服務{#using-opt-in-services-with-iab-framework}
 
 >[!IMPORTANT]
 >
-> 以下文件僅適用於 IAB 2.0。使用者需使用 Visitor.js version 5.0 才能使用 IAB 2.0。
+> 以下文件僅適用於 IAB 2.0。用戶需使用 Visitor.js version 5.0 才能使用 IAB 2.0。
 
 將「同意管理平台」(CMP) 與「選擇加入」的 IAB 透明度與同意架構 (TCF) 外掛程式連線。
 
-使用 [IAB TCF](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) 的 Adobe Audience Manager 客戶可將「同意管理平台」(CMP) 與「選擇加入」的 IAB TCF 外掛程式連線。「選擇加入」是 ECID JavaScript 資料庫中內嵌的一項功能，視 CMP 中設定的訪客偏好設定而定，可停用個別 Adobe 解決方案資料庫。使用 ECID 資料庫實作「選擇加入」的 IAB TCF 外掛程式時，支援 IAB TCF 之 CMP 的訪客偏好設定會自動對應到「選擇加入」。收到同意時，這些偏好設定會啟用以 Audience Manager 為基礎的資料庫 (DIL 與 ECID) 和相關聯的呼叫。
+使用 [IAB TCF](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) 的 Adobe Audience Manager 客戶可將「同意管理平台」(CMP) 與「選擇加入」的 IAB TCF 外掛程式連線。「選擇加入」是 ECID JavaScript 程式庫中內嵌的一項功能，視 CMP 中設定的訪客偏好設定而定，可停用個別 Adobe 解決方案程式庫。使用 ECID 程式庫實作「選擇加入」的 IAB TCF 外掛程式時，支援 IAB TCF 之 CMP 的訪客偏好設定會自動對應到「選擇加入」。收到同意時，這些偏好設定會啟用以 Audience Manager 為基礎的程式庫 (DIL 與 ECID) 和相關聯的呼叫。
 
 ## 實作支援 IAB 的 CMP {#section-9fd2403b548947dbb1921ac6ff9d0c82}
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 如需詳細資訊，請參閱[互動廣告局 (Interactive Advertising Bureau) 文件](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/TCF-Implementation-Guidelines.md)。
 
-## 在您的 ECID JavaScript 資料庫中啟用「選擇加入」的 IAB TCF 外掛程式 {#section-77bf1b9ed67241a59e56c21ab752e82f}
+## 在您的 ECID JavaScript 程式庫中啟用「選擇加入」的 IAB TCF 外掛程式 {#section-77bf1b9ed67241a59e56c21ab752e82f}
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Visitor.getInstance("YOUR_ORG_ID", {
 });
 ```
 
-設定正確設定後，ECID 和 DIL 資料庫就會根據 CMP 和 IAB TCF 的同意標準啟用/停用。
+設定正確設定後，ECID 和 DIL 程式庫就會根據 CMP 和 IAB TCF 的同意標準啟用/停用。
 
 >[!IMPORTANT]
 >
@@ -60,4 +60,4 @@ Visitor.getInstance("YOUR_ORG_ID", {
 * [IAB 透明與同意架構 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) - IAB 標準的詳細資訊
 * [Adobe 選擇加入](../../implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360) -「選擇加入」的詳細資訊；「選擇加入」是平台解決方案中同意管理的必要元件
 * [Audience Manager](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html) 中的 IAB 透明與同意架構 (TCF) 支援
-* [您的隱私權選擇](https://www.adobe.com/tw/privacy/opt-out.html#customeruse) - 另一個可由使用者自行決定的隱私權選項，是使用其他全域選擇退出工具，選擇退出所有資料收集作業。全域「選擇退出」的效力優先於「選擇加入」和 IAB 驗證
+* [您的隱私權選擇](https://www.adobe.com/tw/privacy/opt-out.html#customeruse) - 另一個可由用戶自行決定的隱私權選項，是使用其他全域選擇退出工具，選擇退出所有資料收集作業。全域「選擇退出」的效力優先於「選擇加入」和 IAB 驗證
