@@ -1,14 +1,14 @@
 ---
 title: 識別不重複訪客
 description: Adobe ECID (ID 服務) 說明文件
-translation-type: tm+mt
-source-git-commit: 8ad5ae179540596913fccc59070aecc57b09f586
-workflow-type: tm+mt
+exl-id: 379dbf0a-814d-4348-9ac4-d0e8fc13b9dc
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '234'
 ht-degree: 100%
 
 ---
-
 
 # 識別不重複訪客
 
@@ -21,6 +21,6 @@ ht-degree: 100%
 |  3  | mid [Identity Service 設定的 AMCV_ cookie](https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.html) |  5  |  訪客的瀏覽器接受 Cookie (第一方)，且已部署 [!UICONTROL Identity Service]。 |
 |  4  | fid [H.25.3 或更新版本的後援 Cookie，或 JavaScript 適用的 AppMeasurement](https://docs.adobe.com/content/help/zh-Hant/analytics/technotes/visitor-identification.html) |  4  | 訪客的瀏覽器接受 Cookie (第一方)。  |
 |  5  |  [HTTP 行動訂閱者標題](https://docs.adobe.com/content/help/zh-Hant/analytics/technotes/visitor-identification.html)  |  2  | 系統將裝置識別為行動裝置。  |
-|  6  | [IP 位址、使用者代理、閘道 IP 位址](https://docs.adobe.com/content/help/zh-Hant/analytics/technotes/visitor-identification.html) |  1  | 訪客的瀏覽器不接受 Cookie。 |
+|  6  | [IP 位址、用戶代理程式、閘道 IP 位址](https://docs.adobe.com/content/help/zh-Hant/analytics/technotes/visitor-identification.html) |  1  | 訪客的瀏覽器不接受 Cookie。 |
 
 如需了解報告不重複訪客的方式，請參閱 [Analytics 中的不重複訪客](https://docs.adobe.com/content/help/zh-Hant/analytics/components/variables/dimensions-reports/reports-unique-visitors-v15-dsc.html)。
