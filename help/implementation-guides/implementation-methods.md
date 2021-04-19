@@ -1,18 +1,18 @@
 ---
 description: Experience Cloud Identity Service 的標準與非標準實作方法。
-keywords: ID Service
+keywords: ID 服務
 seo-description: Experience Cloud Identity Service 的標準與非標準實作方法。
 seo-title: 實作方法
 title: 實作方法
 uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
-translation-type: tm+mt
-source-git-commit: 63de22a29ebd8a504800d1045a69ea7eec05077a
-workflow-type: tm+mt
-source-wordcount: '149'
+exl-id: 0fe40a3c-bdcd-4290-bcd7-25344ff108d6
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '151'
 ht-degree: 100%
 
 ---
-
 
 # 實作方法
 
