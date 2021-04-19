@@ -1,18 +1,18 @@
 ---
 description: idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實作 ID 同步。VisitorAPI.js 1.10 (含) 以上版本均已提供這些函數。
-keywords: ID Service
+keywords: ID 服務
 seo-description: idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實作 ID 同步。VisitorAPI.js 1.10 (含) 以上版本均已提供這些函數。
 seo-title: 依 URL 或資料來源執行 ID 同步作業
 title: 依 URL 或資料來源執行 ID 同步作業
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
-source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
-source-wordcount: '273'
+exl-id: a22e6b47-00ff-4b51-9958-ddeccc1e507e
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '275'
 ht-degree: 100%
 
 ---
-
 
 # 依 URL 或資料來源執行 ID 同步作業{#id-synchronization-by-url-or-data-source}
 
@@ -26,7 +26,7 @@ idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destina
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 程式碼 </th> 
-   <th colname="col2" class="entry"> 同步使用者 ID </th> 
+   <th colname="col2" class="entry"> 同步用戶 ID </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -62,7 +62,7 @@ idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destina
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpuuid </span> </td> 
    <td colname="col2"> 字串 </td> 
-   <td colname="col3"> <p>資料提供者獨一無二的使用者 ID。 </p> </td> 
+   <td colname="col3"> <p>資料提供者獨一無二的用戶 ID。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> minutesToLive </span> </td> 
@@ -82,7 +82,7 @@ idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destina
 這兩個函數都接受以下巨集：
 
 * `%TIMESTAMP%`：產生時間戳記 (單位為毫秒)。用於快取破壞。
-* `%DID%`：插入使用者的 Audience Manager ID。
+* `%DID%`：插入用戶的 Audience Manager ID。
 * `%HTTP_PROTO%`；設定通訊協定 (`http` 或 `https`)。
 
 ## 範例程式碼和輸出 {#section-0115615c37584a19a2ab11e917c4e7e9}
