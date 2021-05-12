@@ -6,11 +6,10 @@ seo-title: Cookie 與 Experience Cloud Identity Service
 title: Cookie 與 Experience Cloud Identity Service
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
+source-git-commit: d2bc28329c68c54a85dcf714083b3fcb5afc5a14
+workflow-type: tm+mt
 source-wordcount: '997'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -28,7 +27,7 @@ ID 服務需仰賴 AMCV、AMCVS 和 Demdex Cookie 才能正常運作。這些 Co
 * 保存此唯一 ID，讓 ID 服務能夠收集資料，並將其與其他 Experience Cloud 解決方案共用。
 * 跨網域追蹤用戶。但是，您必須擁有其他網域，並在這些網域上部署 ID 服務程式碼，才能進行此追蹤。
 
-### ID 服務 Cookie 不具備的功能
+### ID服務Cookie無法做的事
 
 * 儲存、傳輸或執行電腦病毒。
 * 存取或儲存個人識別資訊 (PII)，例如：您的電子郵件地址。
@@ -52,12 +51,12 @@ AMCV_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **內容**
 
-AMCV Cookie 包含 Experience Cloud 訪客 ID 或 MID。MID 儲存在遵循下列語法的機碼-值組中：`mid|<Experience Cloud ID>`。
+AMCV Cookie 包含 Experience Cloud 訪客 ID 或 MID。MID 儲存在遵循下列語法的機碼-值組中：`MCMID|<Experience Cloud ID>`。
 
 完整格式的機碼值組類似以下:
 
 ```
-mid|20265673158980419722735089753036633573
+MCMID|20265673158980419722735089753036633573
 ```
 
 此永續性識別碼可用於跨解決方案的資料共用。
