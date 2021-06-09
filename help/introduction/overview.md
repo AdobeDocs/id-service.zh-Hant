@@ -4,10 +4,9 @@ seo-description: Experience Cloud Identity 服務 (原稱為訪客 ID 服務或 
 seo-title: Experience Cloud ID 服務概述
 title: Experience Cloud ID 服務概述
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '615'
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+workflow-type: tm+mt
+source-wordcount: '606'
 ht-degree: 100%
 
 ---
@@ -37,7 +36,7 @@ ht-degree: 100%
 
 * 建立可用來連結設定檔和身分識別的公用鍵或 ID。
 * 可唯一識別多個解決方案中的裝置。
-* 在客戶的網域中設定第一方 Cookie，以確保可在相同網域上追蹤。如需詳細資訊，請參閱 [Cookie 和 Experience Cloud Identity 服務](https://docs.adobe.com/content/help/zh-Hant/id-service/using/intro/cookies.html)的相關文件。
+* 在客戶的網域中設定第一方 Cookie，以確保可在相同網域上追蹤。如需詳細資訊，請參閱 [Cookie 和 Experience Cloud Identity 服務](./cookies.md)的相關文件。
 * 從 Experience Cloud 客戶和合作夥伴接收別名和 ID 對應。
 * 在 Experience Cloud 中管理 ID 同步。
 * 在各廣告技術生態系統中，支援不同第三方的 ID 同步。
