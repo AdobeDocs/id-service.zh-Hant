@@ -5,11 +5,10 @@ seo-description: Experience Cloud ID Service (ECID) 支援 SHA-256 雜湊演算�
 seo-title: setCustomerIDs 的 SHA256 雜湊支援
 title: setCustomerIDs 的 SHA256 雜湊支援
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '666'
-ht-degree: 100%
+source-git-commit: cca52e1ece7a31199cb86a286dd772a41f01eeaa
+workflow-type: tm+mt
+source-wordcount: '667'
+ht-degree: 98%
 
 ---
 
@@ -48,7 +47,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
     __proto__: Object
 ```
 
-<br>
+<br> 
 
 使用 `setCustomerIDs` 方法會呼叫 Experience Cloud ID Service，目標為 `dpm.demdex.net`，並加上 `d_cid_ic` 查詢參數 (包含經雜湊處理的客戶 ID)。範例呼叫看起來可能如下所示。已新增分行以避免混淆。
 
@@ -60,7 +59,7 @@ d_cid_ic=email%a6ea4cde5da5ae7cc68baae894d1d6544fca26254433b0fff7c2cb4843b4a097%
 ts=1563299964843
 ```
 
-<br>
+<br> 
 
 請參閱下表，以瞭解 `d_cid_ic` 參數和驗證狀態的說明。
 
@@ -70,13 +69,13 @@ ts=1563299964843
 
 ## 在 Adobe Experience Platform Launch 中新增動作 {#add-action-launch}
 
-Experience Platform Launch 是新一代 Adobe 標籤管理功能。請在 [Launch 產品文件](https://docs.adobe.com/content/help/zh-Hant/launch/using/overview.html)中進一步了解 Launch。
+Experience Platform Launch 是新一代 Adobe 標籤管理功能。請閱讀[Launch產品檔案](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hant)中有關Platform launch的詳細資訊。
 
 若要在 Launch 中新增動作，請閱讀 Adobe Launch 中的[規則文件](https://docs.adobe.com/help/zh-Hant/launch/using/reference/manage-resources/rules.html)，並查看下方的螢幕擷圖：
 
 ![](/help/reference/assets/hashing-support.png)
 
-<br>
+<br> 
 
 確認您的設定後，Launch 會將資料包裝進物件中，如下所示:
 
