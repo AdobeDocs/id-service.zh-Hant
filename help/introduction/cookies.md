@@ -6,9 +6,9 @@ seo-title: Cookie 與 Experience Cloud Identity Service
 title: Cookie 與 Experience Cloud Identity Service
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-source-git-commit: d2bc28329c68c54a85dcf714083b3fcb5afc5a14
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '987'
 ht-degree: 99%
 
 ---
@@ -27,7 +27,7 @@ ID 服務需仰賴 AMCV、AMCVS 和 Demdex Cookie 才能正常運作。這些 Co
 * 保存此唯一 ID，讓 ID 服務能夠收集資料，並將其與其他 Experience Cloud 解決方案共用。
 * 跨網域追蹤用戶。但是，您必須擁有其他網域，並在這些網域上部署 ID 服務程式碼，才能進行此追蹤。
 
-### ID服務Cookie無法做的事
+### ID 服務 Cookie 不具備的功能
 
 * 儲存、傳輸或執行電腦病毒。
 * 存取或儲存個人識別資訊 (PII)，例如：您的電子郵件地址。
@@ -116,7 +116,7 @@ AMCVS Cookie 設定於瀏覽器的第一方網域中。這表示此 Cookie 設�
  </tbody> 
 </table>
 
-如需相關資訊，請參閱[了解向 Demdex 網域進行的呼叫](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/reference/demdex-calls.html)。
+如需相關資訊，請參閱[了解向 Demdex 網域進行的呼叫](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)。
 
 ## 產生 Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -134,7 +134,7 @@ Experience Cloud ID (MID) 是依照組織 ID 和 demdex ID 利用數學公式計
 | AMCV (JavaScript) | 無 | 可設定 | 未設定 (預設為 Lax) |
 | AMCVS (JavaScript) | 無 | 可設定 | 未設定 (預設為 Lax) |
 
-*注意：如需使用安全屬性設定 AMCV 和 AMCVS Cookie 的相關資訊，請參閱 [secureCookie](https://docs.adobe.com/content/help/zh-Hant/id-service/using/id-service-api/configurations/securecookie.html) 主題。*
+*注意：如需使用安全屬性設定 AMCV 和 AMCVS Cookie 的相關資訊，請參閱 [secureCookie](../library/function-vars/securecookie.md) 主題。*
 
 ## 下一步 {#section-8db1727a63bc4ff68b495f270315d453}
 
