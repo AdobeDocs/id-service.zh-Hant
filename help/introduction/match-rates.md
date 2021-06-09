@@ -1,16 +1,15 @@
 ---
-description: 概述 Experience Cloud Identity Service (包括 Adobe Media Optimizer 和 ID 服務) 中的 ID 同步程序與匹配率。
+description: 概述 Experience Cloud Identity 服務 (包括 Adobe Media Optimizer 和 ID 服務) 中的 ID 同步程序與匹配率。
 keywords: ID 服務
 seo-description: 概述 Experience Cloud Identity 服務 (包括 Adobe Media Optimizer 和 ID 服務) 中的 ID 同步程序與匹配率。
 seo-title: 了解 ID 同步和匹配率
 title: 了解 ID 同步和匹配率
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '833'
-ht-degree: 100%
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 95%
 
 ---
 
@@ -54,11 +53,11 @@ ID 同步是在 Destination Publishing iFrame 中引發的 URL。如以下通用
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-另請參閱[連入資料傳輸的 ID 同步](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html)。
+另請參閱[連入資料傳輸的 ID 同步](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html?lang=en)。
 
 **步驟 4：儲存 ID**
 
-同步的 ID 會儲存在[邊緣與核心資料伺服器](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/reference/system-components/components-edge.html)中。
+同步的 ID 會儲存在[邊緣與核心資料伺服器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-edge.html?lang=en)中。
 
 ## 同步服務負責管理 ID 同步作業 {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
@@ -73,9 +72,9 @@ ID 同步是在 Destination Publishing iFrame 中引發的 URL。如以下通用
 
 ## ID 與 Adobe Advertising Cloud 同步{#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Advertising Cloud] (先前稱為 [!DNL Adobe Media Optimizer]) 是 iFrame 型 ID 同步程序的例外情況。由於 [!DNL Advertising Cloud] 是值得信賴的網域，ID 同步會從上層頁面進行，而非 [!UICONTROL Destination Publishing iFrame]。同步期間，ID 服務會在 [!DNL Advertising Cloud] 呼叫 `cm.eversttech.net`，這是 [!DNL Advertising Cloud] 在 Adobe 收購前所使用的舊版網域名稱。將資料傳送至 [!DNL Advertising Cloud] 有助於改善匹配率，而且這是使用 2.0 版 (或更新版本) 的 ID 服務之客戶的專屬自動功能。另請參閱 [Advertising Cloud Cookie](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/ec-cookies/cookies-advertising-cloud.html)。
+[!DNL Adobe Advertising Cloud] (先前稱為 [!DNL Adobe Media Optimizer]) 是 iFrame 型 ID 同步程序的例外情況。由於 [!DNL Advertising Cloud] 是值得信賴的網域，ID 同步會從上層頁面進行，而非 [!UICONTROL Destination Publishing iFrame]。同步期間，ID 服務會在 [!DNL Advertising Cloud] 呼叫 `cm.eversttech.net`，這是 [!DNL Advertising Cloud] 在 Adobe 收購前所使用的舊版網域名稱。將資料傳送至 [!DNL Advertising Cloud] 有助於改善匹配率，而且這是使用 2.0 版 (或更新版本) 的 ID 服務之客戶的專屬自動功能。另請參閱 [Advertising Cloud Cookie](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-advertising-cloud.html?lang=en)。
 
 >[!MORELIKETHIS]
 >
->* [了解向 Demdex 網域進行的呼叫](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/reference/demdex-calls.html)
+>* [了解向 Demdex 網域進行的呼叫](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)
 
