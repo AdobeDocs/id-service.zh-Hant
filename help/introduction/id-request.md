@@ -6,11 +6,10 @@ seo-title: Experience Cloud Identity Service 如何請求與設定 ID
 title: Experience Cloud Identity Service 如何請求與設定 ID
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+workflow-type: tm+mt
 source-wordcount: '806'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -35,7 +34,7 @@ ID 請求與回應程序的概述。這些範例涵蓋在個別網站、跨不�
 在此範例中，有一名新訪客進入食品公司所管理的披薩網站。食品公司在披薩網站上有 ID 服務程式碼。當披薩網站載入時，ID 服務程式碼會檢查披薩網域中是否有 AMCV Cookie。
 
 * 如果已設定 AMCV Cookie，網站訪客即會有 Experience Cloud ID。在此情況下，Cookie 會追蹤訪客並與其他 Experience Cloud 解決方案共用資料。
-* 如果未設定 AMCV Cookie，ID 服務程式碼會呼叫位於 `dpm.demdex.net/id` 的區域[資料收集伺服器](https://docs.adobe.com/content/help/zh-Hant/analytics/technotes/rdc/regional-data-collection.html)(DCS) (另請參閱[了解向 Demdex 網域進行的呼叫](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/reference/demdex-calls.html))。此呼叫包括食品公司的組織 ID。組織 ID 是在 ID 服務程式碼的 `Visitor.getInstance` 函數中設定。
+* 如果未設定AMCV Cookie,ID服務程式碼會呼叫位於`dpm.demdex.net/id`的區域[資料收集伺服器](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=en)(DCS)（另請參閱[了解向Demdex網域進行的呼叫](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)）。 此呼叫包括食品公司的組織 ID。組織 ID 是在 ID 服務程式碼的 `Visitor.getInstance` 函數中設定。
 
 ![](assets/request1.png)
 
