@@ -1,16 +1,12 @@
 ---
 description: getInstance 會傳回指定 Experience Cloud 組織 ID 的訪客 ID 物件。在初始化透過 s.visitor 提供給 AppMeasurement 的訪客 ID 物件時，必須要有此項目。
 keywords: ID 服務
-seo-description: getInstance 會傳回指定 Experience Cloud 組織 ID 的訪客 ID 物件。在初始化透過 s.visitor 提供給 AppMeasurement 的訪客 ID 物件時，必須要有此項目。
-seo-title: getInstance
 title: getInstance
-uuid: 259b88a6-e3d0-4aab-b935-566099bdab98
 exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '256'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 96%
 
 ---
 
@@ -54,7 +50,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-如果 `getInstance` 找不到現有例項，則會建立與傳回新例項。這類似於 [!DNL AppMeasurement] 中的 [ `s_gi()` 函數 ](https://docs.adobe.com/content/help/zh-Hant/analytics/implementation/vars/functions/s-gi.html)。
+如果 `getInstance` 找不到現有例項，則會建立與傳回新例項。這類似於 [!DNL AppMeasurement] 中的 [ `s_gi()` 函數 ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html)。
 
 **常見用法**
 
