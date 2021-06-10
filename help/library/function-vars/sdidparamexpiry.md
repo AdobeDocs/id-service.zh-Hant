@@ -1,15 +1,11 @@
 ---
 description: 此設定可讓您在使用 appendSupplementalDataIDTo helper 函數將某個頁面的 Supplemental Data ID (SDID) 傳遞給另一個頁面時，覆寫該 ID 的預設到期間隔。根據預設，接收頁面上的 ID 服務程式碼有 30 秒的時間可取得參考頁面所傳送的 URL 中的 SDID。如果接收頁面上的 ID 服務程式碼無法在少於 30 秒的情況下擷取 SDID，它會要求新的 SDID。此功能主要適用於需要在不同頁面之間傳遞 SDID 以及想要控制此逾時間隔的 A4T 客戶。
 keywords: ID 服務
-seo-description: 此設定可讓您在使用 appendSupplementalDataIDTo helper 函數將某個頁面的 Supplemental Data ID (SDID) 傳遞給另一個頁面時，覆寫該 ID 的預設到期間隔。根據預設，接收頁面上的 ID 服務程式碼有 30 秒的時間可取得參考頁面所傳送的 URL 中的 SDID。如果接收頁面上的 ID 服務程式碼無法在少於 30 秒的情況下擷取 SDID，它會要求新的 SDID。此功能主要適用於需要在不同頁面之間傳遞 SDID 以及想要控制此逾時間隔的 A4T 客戶。
-seo-title: sdidParamExpiry
 title: sdidParamExpiry
-uuid: cdaf7e2d-b196-4c70-936d-8a98191cbb85
 exl-id: 5458ffa5-03d1-4c52-907d-c50fe00ce35d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '357'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '257'
 ht-degree: 100%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 100%
 
 如果您需要變更預設的 SDID 逾時，請使用下列語法將 `sdidParamExpiry` 新增至 `Visitor.getInstance` 函數:
 
-**語法:** ` sdidParamExpiry: *`以秒為單位的時間`*`
+**語法：**` sdidParamExpiry: *`以秒為單位的時間`*`
 
 **程式碼範例**
 
