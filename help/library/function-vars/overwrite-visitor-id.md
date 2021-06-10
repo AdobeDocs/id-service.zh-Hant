@@ -1,15 +1,11 @@
 ---
 description: 當訪客從某個網域導覽到第二個網域時，此屬性會覆寫訪客的 Experience Cloud 和 Analytics ID。若要覆寫 ID，您必須在每個網域上擁有並已實作 ID 服務。此程式碼無法讓您在您沒有控制權的網域上覆寫 ID。
 keywords: ID 服務
-seo-description: 當訪客從某個網域導覽到第二個網域時，此屬性會覆寫訪客的 Experience Cloud 和 Analytics ID。若要覆寫 ID，您必須在每個網域上擁有並已實作 ID 服務。此程式碼無法讓您在您沒有控制權的網域上覆寫 ID。
-seo-title: overwriteCrossDomainMCIDAndAID
 title: overwriteCrossDomainMCIDAndAID
-uuid: 8e48127a-ac62-4ea0-9756-2a27b20ecbcf
 exl-id: 726261b1-c8d0-4b12-b0cb-52d7e21e7fac
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '448'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '397'
 ht-degree: 100%
 
 ---
