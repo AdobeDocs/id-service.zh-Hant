@@ -1,14 +1,10 @@
 ---
 description: 在網站上啟用選擇加入後，請使用瀏覽器中的開發人員工具，運用驗證方法測試該服務是否順利運作。
-seo-description: 在網站上啟用選擇加入後，請使用瀏覽器中的開發人員工具，運用驗證方法測試該服務是否順利運作。
-seo-title: 驗證選擇加入服務
 title: 驗證選擇加入服務
-uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '471'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '440'
 ht-degree: 100%
 
 ---
