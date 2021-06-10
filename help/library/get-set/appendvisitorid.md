@@ -1,16 +1,12 @@
 ---
 description: 瀏覽器封鎖第三方 Cookie 時，此函數可讓您跨網域共用訪客的 Experience Cloud ID。若要使用此函數，您必須先實作 ID 服務，且擁有來源和目的地的網域。適用於 VisitorAPI.js 1.7.0 版或更新版本。
 keywords: ID 服務
-seo-description: 瀏覽器封鎖第三方 Cookie 時，此函數可讓您跨網域共用訪客的 Experience Cloud ID。若要使用此函數，您必須先實作 ID 服務，且擁有來源和目的地的網域。適用於 VisitorAPI.js 1.7.0 版或更新版本。
-seo-title: appendVisitorIDsTo (跨網域追蹤)
 title: appendVisitorIDsTo (跨網域追蹤)
-uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '448'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 96%
 
 ---
 
@@ -77,8 +73,8 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
    <td colname="col1"> <p> <b>SDK</b> </p> </td> 
    <td colname="col2"> 
     <ul id="ul_9D7933FF68EE4C71BAE999B3747F8398"> 
-     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://docs.adobe.com/content/help/zh-Hant/mobile-services/android/experience-cloud-android/mc-methods.html" format="https" scope="external"> Android ID 服務方法 </a> </li> 
-     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://docs.adobe.com/content/help/zh-Hant/mobile-services/ios/exp-cloud-ios/mc-methods.html" format="https" scope="external"> iOS ID 服務方法 </a> </li> 
+     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/mc-methods.html" format="https" scope="external"> Android ID 服務方法 </a> </li> 
+     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/mc-methods.html" format="https" scope="external"> iOS ID 服務方法 </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
