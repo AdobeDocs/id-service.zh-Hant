@@ -1,16 +1,12 @@
 ---
 description: 這些指示適用於想使用 Experience Cloud Identity Service 但不想使用 Dynamic Tag Management (DTM) 的 Analytics、Audience Manager 和 Target 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 keywords: ID 服務
-seo-description: 這些指示適用於想使用 Experience Cloud Identity 服務但不想使用 Dynamic Tag Management (DTM) 的 Analytics、Audience Manager 和 Target 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
-seo-title: 實作適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity Service
 title: 實作適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity Service
-uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '1574'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '1498'
+ht-degree: 97%
 
 ---
 
@@ -28,7 +24,7 @@ ht-degree: 100%
 
 ## 步驟1：規劃伺服器端轉送 {#section-880797cc992d4755b29cada7b831f1fc}
 
-除了此處所述步驟以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客戶也應移轉至伺服器端轉送。伺服器端轉送功能可讓您移除 DIL (Audience Manager 的資料收集程式碼)，並將其取代為[對象管理模組](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html)。如需詳細資訊，請參閱[伺服器端轉送文件](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/server-side-forwarding/ssf.html)。
+除了此處所述步驟以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客戶也應移轉至伺服器端轉送。伺服器端轉送功能可讓您移除 DIL (Audience Manager 的資料收集程式碼)，並將其取代為[對象管理模組](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html)。如需詳細資訊，請參閱[伺服器端轉送文件](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/server-side-forwarding/ssf.html)。
 
 要移轉至伺服器端轉送，必須進行規劃和協調。此程序牽涉到對您的網站程式碼進行的外部變更，以及 Adobe 為了佈建您的帳戶而須執行的內部步驟。事實上，其中許多移轉程序都需要並行執行，並且一起發行。您的實作路徑應依照以下事件順序進行：
 
@@ -144,7 +140,7 @@ Analytics 會使用追蹤伺服器進行資料收集。
 
 >[!IMPORTANT]
 >
->此時您應移除 [!DNL Audience Manager] DIL 程式碼，改為使用「對象管理模組」。如需相關指示，請參閱[實作伺服器端轉送](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/server-side-forwarding/ssf.html)。
+>此時您應移除 [!DNL Audience Manager] DIL 程式碼，改為使用「對象管理模組」。如需相關指示，請參閱[實作伺服器端轉送](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html)。
 
 ***(可選用，但建議使用)* 建立自訂 Prop **
 
@@ -186,7 +182,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 您的資料擷取程序可使用 `post_visid_high` 和 `post_visid_low` 欄之後，即可停止寬限期。
 
-另請參閱[點按流資料欄參考](https://docs.adobe.com/content/help/zh-Hant/analytics/export/analytics-data-feed/data-feed-overview.html)。
+另請參閱[點按流資料欄參考](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html)。
 
 ## 步驟 9：測試並驗證 {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -194,7 +190,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 >[!TIP]
 >
->您可以使用 [Adobe 偵錯工具](https://docs.adobe.com/content/help/zh-Hant/analytics/implementation/validate/debugger.html)或 [Charles HTTP Proxy](https://www.charlesproxy.com/) 來檢查這些解決方案特有的 ID。不過，您當然可以使用最適合您的任何工具或偵錯工具。
+>您可以使用 [Adobe 偵錯工具](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html)或 [Charles HTTP Proxy](https://www.charlesproxy.com/) 來檢查這些解決方案特有的 ID。不過，您當然可以使用最適合您的任何工具或偵錯工具。
 
 **所有解決方案**
 
@@ -218,7 +214,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 **Audience Manager**
 
-若要測試伺服器端轉送，請參閱[如何驗證您的伺服器端轉送實作](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html)。
+若要測試伺服器端轉送，請參閱[如何驗證您的伺服器端轉送實作](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html)。
 
 **Target**
 
