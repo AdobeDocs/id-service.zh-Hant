@@ -1,16 +1,12 @@
 ---
 description: 部署 Experience Cloud Identity 服務之前，請先瞭解如果使用不同方法或透過 JavaScript 檔案收集資料，此服務會對多網域的訪客追蹤功能造成哪些影響及潛在問題。
 keywords: ID 服務
-seo-description: 部署 Experience Cloud Identity 服務之前，請先瞭解如果使用不同方法或透過 JavaScript 檔案收集資料，此服務會對多網域的訪客追蹤功能造成哪些影響及潛在問題。
-seo-title: Experience Cloud Identity Service 移轉決策點
 title: Experience Cloud Identity Service 移轉決策點
-uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '679'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '636'
+ht-degree: 98%
 
 ---
 
@@ -63,7 +59,7 @@ ht-degree: 100%
    <td colname="col1"> <p>單一網域 </p> </td> 
    <td colname="col2"> <p>使用單一網域意味著，如果您不想再管理資料收集 CNAME，您可以進行移轉。不過，如果您的 CNAME 正常運作，則不需要變更。 </p> <p>如果您移除了 CNAME： </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
-     <li id="li_32E2CD3E58454E20A642BADE507AE86E">確定新追蹤伺服器<a href="https://docs.adobe.com/content/help/zh-Hant/analytics/technotes/rdc/regional-data-collection.html" format="https" scope="external">符合 RDC 標準</a>。 </li> 
+     <li id="li_32E2CD3E58454E20A642BADE507AE86E">確定新追蹤伺服器<a href="https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html" format="https" scope="external">符合 RDC 標準</a>。 </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">先從 CNAME 移至 RDC 追蹤伺服器，幾個月後再移轉至 <span class="keyword">Experience Cloud</span> ID 服務。 </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>請勿</i>使用 <span class="codeph"> *.2o7.net</span> 追蹤伺服器。 </li> 
      <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">聯絡<a href="https://helpx.adobe.com/tw/marketing-cloud/contact-support.html" format="https" scope="external">客戶服務</a>以設定訪客移轉。這可確保一致的訪客數。 </li> 
