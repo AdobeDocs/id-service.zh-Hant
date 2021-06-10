@@ -1,15 +1,11 @@
 ---
 description: 將這些屬性傳入 Visitor.getInstance 靜態方法以設定 ID 服務。
 keywords: 組織 ID;ID 服務
-seo-description: 將這些屬性傳入 Visitor.getInstance 靜態方法以設定 ID 服務。
-seo-title: 設定
 title: 設定
-uuid: 2dfe1ed6-f3a6-4f5c-976b-eeb43738c20c
 exl-id: a369f624-d263-4287-bb7e-b89d584fa245
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '100'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '86'
 ht-degree: 100%
 
 ---
