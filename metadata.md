@@ -4,20 +4,12 @@ product: id service
 solution: Experience Cloud Services
 type: Documentation
 audience: end-user
-solution-title: 學習與支援
-solution-hub-url: https://helpx.adobe.com/tw/support/experience-cloud/core-services.html
-solution-image: assets/experience-cloud-logo-24.png
-getting-started-title: 快速入門
-getting-started-url: https://helpx.adobe.com/tw/experience-cloud-core-services/get-started.html
-tutorials-title: 教學課程
-tutorials-url: https://docs.adobe.com/content/help/zh-Hant/core-services-learn/tutorials/overview.html
 git-repo: https://git.corp.adobe.com/AdobeDocs/id-service.zh-Hant
 description: 身份識別服務
 index: true
-translation-type: ht
-source-git-commit: 6fa0d2eafa06878d8d4778ac7d45f7737b86d5a4
-workflow-type: ht
-source-wordcount: '38'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '13'
 ht-degree: 100%
 
 ---
