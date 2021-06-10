@@ -1,16 +1,12 @@
 ---
 description: 選用的布林值設定，可決定 ID 服務是否要將資料傳送至 Adobe Experience Cloud Device Co-op。
 keywords: ID 服務
-seo-description: 選用的布林值設定，可決定 ID 服務是否要將資料傳送至 Adobe Experience Cloud Device Co-op。
-seo-title: isCoopSafe
 title: isCoopSafe
-uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '606'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '578'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +29,7 @@ ht-degree: 100%
 若要使用 `isCoopSafe`，您必須:
 
 * 使用 2.4 版或更新版本的 ID 服務程式碼。
-* 參與 [Experience Cloud Device Co-op](https://docs.adobe.com/content/help/zh-Hant/device-co-op/using/about/overview.html)。潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
+* 參與 [Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html)。潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
 
 * 請和您的 [!DNL Adobe] 顧問合作，在您的 Device co-op 帳戶上設定白名單或是黑名單標幟。沒有啟用可這些標幟的自助式路徑。
 
@@ -142,5 +138,5 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
 >[!MORELIKETHIS]
 >
->* [DIL isCoopSafe](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html)
+>* [DIL isCoopSafe](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html)
 
