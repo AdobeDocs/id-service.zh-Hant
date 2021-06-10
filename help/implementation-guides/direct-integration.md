@@ -1,16 +1,12 @@
 ---
 description: 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實作能讓他們在這些裝置上使用該 ID 服務，這類裝置包括遊戲主機、智慧型電視，或其他可上網的設備等等。請參閱本節，以取得語法、程式碼範例和定義。
 keywords: ID 服務
-seo-description: 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實作能讓他們在這些裝置上使用該 ID 服務，這類裝置包括遊戲主機、智慧型電視，或其他可上網的設備等等。請參閱本節，以取得語法、程式碼範例和定義。
-seo-title: 與 Experience Cloud Identity Service 直接整合
 title: 與 Experience Cloud Identity Service 直接整合
-uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '714'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +20,7 @@ ht-degree: 100%
 
 ![](assets/directSyntax.png)
 
-在這個語法範例中，前置詞 `d_` 會做為系統層級變數，用於識別呼叫中的機碼-值組。您可以將幾個 `d_` 參數傳遞至 ID 服務，但要把重點放在上述程式碼中的機碼-值組上。如需其他變數的詳細資訊，請參閱[支援的 DCS API 呼叫屬性](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html)。
+在這個語法範例中，前置詞 `d_` 會做為系統層級變數，用於識別呼叫中的機碼-值組。您可以將幾個 `d_` 參數傳遞至 ID 服務，但要把重點放在上述程式碼中的機碼-值組上。如需其他變數的詳細資訊，請參閱[支援的 DCS API 呼叫屬性](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html)。
 
 ID 服務支援 HTTP 和 HTTPS 呼叫。使用 HTTPS 從安全頁面傳送資料。
 
@@ -61,7 +57,7 @@ ID 服務會傳回 JSON 物件中的資料，如下所示。您的回應可能�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p>由 <span class="keyword">Adobe</span> 控制的舊版網域。請參閱<a href="https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">了解向 Demdex 網域進行的呼叫</a>。 </p> </td> 
+   <td colname="col2"> <p>由 <span class="keyword">Adobe</span> 控制的舊版網域。請參閱<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hant" format="https" scope="external">了解向 Demdex 網域進行的呼叫</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
@@ -91,7 +87,7 @@ ID 服務會傳回 JSON 物件中的資料，如下所示。您的回應可能�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>ID 服務是分散於各處且負載平衡的系統。ID 可識別處理呼叫的資料中心所在的地區。請參閱 <a href="https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS 地區 ID、位置與主機名稱</a>。 </p> </td> 
+   <td colname="col2"> <p>ID 服務是分散於各處且負載平衡的系統。ID 可識別處理呼叫的資料中心所在的地區。請參閱 <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS 地區 ID、位置與主機名稱</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
