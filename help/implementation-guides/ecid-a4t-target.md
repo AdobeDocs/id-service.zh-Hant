@@ -1,15 +1,11 @@
 ---
 description: 這些指示適用於擁有混合式伺服器端及用戶端 Target、Analytics 和 ID實作的 A4T 客戶。需要在 NodeJS 或 Rhino 環境中執行 ID 服務的客戶也應該檢閱此資訊。ID 服務的這個執行個體會使用簡短版本的 VisitorAPI.js 程式碼程式庫，您可以從 Node Package Manager (NPM) 下載及安裝此程式庫。請檢閱此章節，以了解安裝指示和其他設定要求。
 keywords: ID 服務
-seo-description: 這些指示適用於擁有混合式伺服器端及用戶端 Target、Analytics 和 ID實作的 A4T 客戶。需要在 NodeJS 或 Rhino 環境中執行 ID 服務的客戶也應該檢閱此資訊。ID 服務的這個執行個體會使用簡短版本的 VisitorAPI.js 程式碼程式庫，您可以從 Node Package Manager (NPM) 下載及安裝此程式庫。請檢閱此章節，以了解安裝指示和其他設定要求。
-seo-title: 搭配 A4T 以及伺服器端的 Target 實作使用 ID 服務
 title: 搭配 A4T 以及伺服器端的 Target 實作使用 ID 服務
-uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '915'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '829'
 ht-degree: 100%
 
 ---
