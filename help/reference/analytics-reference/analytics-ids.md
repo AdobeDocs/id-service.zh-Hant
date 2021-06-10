@@ -1,16 +1,12 @@
 ---
-description: Experience Cloud Identity Service 會取代舊有的 Analytics 訪客 ID 方法。
+description: Experience Cloud Identity 服務會取代舊有的 Analytics 訪客 ID 方法。
 keywords: ID 服務
-seo-description: Experience Cloud Identity 服務會取代舊有的 Analytics 訪客 ID 方法。
-seo-title: 設定 Analytics 和 Experience Cloud ID
 title: 設定 Analytics 和 Experience Cloud ID
-uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 exl-id: 7399ea16-d13e-452c-b8d9-8d0699566aa2
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '945'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '917'
+ht-degree: 97%
 
 ---
 
@@ -34,7 +30,7 @@ Experience Cloud Identity Service 會取代舊有的 Analytics 訪客 ID 方法�
 
 不過，有些瀏覽器 (例如 Apple Safari) 不接受第三方 Cookie。這些 Cookie 是在瀏覽器中，從不同於現行網站的網域設定的。此外，如果訪客之前未造訪過該網域，Safari 也會封鎖第三方網域上的 Cookie。例如，如果您位於 `mysite.com` 而您的資料收集伺服器是 `mysite.omtrdc.net`，則瀏覽器可能會拒絕從 `mysite.omtrdc.net` HTTP 標題中傳回的 Cookie。
 
-為了避免此情況，許多客戶已針對其資料收集伺服器實作 CNAME 記錄。此時，[第三方 Cookie 實作](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/ec-cookies/cookies-first-party.html)策略就有機會派上用場。如果已設定 CNAME 記錄將客戶網域的主機名稱對應至資料收集伺服器 (例如，將 `metrics.mysite.com` 對應至 `mysite.omtrdc.net`)，因為資料收集網域現在符合網站的網域，所以可以儲存 [!DNL Experience Cloud] ID Cookie。儲存 ID 服務 Cookie 的可能性會因此而提高。但這會產生一些額外負荷，因為您必須設定 CNAME 記錄，並維護資料收集伺服器的 SSL 憑證。
+為了避免此情況，許多客戶已針對其資料收集伺服器實作 CNAME 記錄。此時，[第三方 Cookie 實作](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html?lang=zh-Hant)策略就有機會派上用場。如果已設定 CNAME 記錄將客戶網域的主機名稱對應至資料收集伺服器 (例如，將 `metrics.mysite.com` 對應至 `mysite.omtrdc.net`)，因為資料收集網域現在符合網站的網域，所以可以儲存 [!DNL Experience Cloud] ID Cookie。儲存 ID 服務 Cookie 的可能性會因此而提高。但這會產生一些額外負荷，因為您必須設定 CNAME 記錄，並維護資料收集伺服器的 SSL 憑證。
 
 **JavaScript**
 
@@ -63,12 +59,12 @@ JavaScript 可讀取和寫入在第一方網域 (現行網站的網域) 中設�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <img id="image_9F3E58898A1B4F40BBDEF5ADE362E55C" src="assets/step1_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/zh-Hant/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
    <td colname="col3"> <p>設定 s.visitorID 時 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_77A06981672745B6AEA8BB4D55911CCA" src="assets/step2_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/zh-Hant/core-services/interface/ec-cookies/cookies-analytics.html" format="http" scope="external"> aid (s_vi Cookie)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=zh-Hant" format="http" scope="external"> aid (s_vi Cookie)</a> </p> </td> 
    <td colname="col3"> <p>在您部署 <span class="keyword">Experience Cloud</span> ID 服務之前訪客已有 s_vi Cookie，或是您已設定<a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">寬限期</a>。 </p> </td> 
   </tr> 
   <tr> 
@@ -78,12 +74,12 @@ JavaScript 可讀取和寫入在第一方網域 (現行網站的網域) 中設�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_6F0ED8FE3EF846CA8E6ECCC3C0070D85" src="assets/step4_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/zh-Hant/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external"> fid (H.25.3 或更新版本的後援 Cookie，或 JavaScript 適用的 AppMeasurement)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external"> fid (H.25.3 或更新版本的後援 Cookie，或 JavaScript 適用的 AppMeasurement)</a> </p> </td> 
    <td colname="col3"> <p>瀏覽器不接受第三方 Cookie 且 Analytics 追蹤伺服器已設定為第三方追蹤伺服器。 </p> <p> <p>注意：如果您已在網站上實作 ID 服務，則舊版識別碼 <span class="codeph">fid</span> 並未使用。在此情況下就不需要 <span class="codeph">fid</span>，因為第一方 <a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV Cookie</a> 已將其淘汰。保留它是為了支援舊版程式碼且供歷史記錄之用。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/zh-Hant/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP 位址、用戶代理程式、閘道 IP 位址</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP 位址、用戶代理程式、閘道 IP 位址</a> </p> </td> 
    <td colname="col3"> <p>訪客的瀏覽器不接受 Cookie。 </p> </td> 
   </tr> 
  </tbody> 
