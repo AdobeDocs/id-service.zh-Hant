@@ -1,15 +1,11 @@
 ---
 description: 關於搭配 ID 服務使用其他 Experience Cloud 解決方案的功能、功用和問題之常見問題集。
 keywords: ID 服務
-seo-description: 關於搭配 ID 服務使用其他 Experience Cloud 解決方案的功能、功用和問題之常見問題集。
-seo-title: 其他 Experience Cloud 解決方案的常見問題集
 title: 其他 Experience Cloud 解決方案的常見問題集
-uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
 exl-id: d1164951-01c9-4375-981a-f87d8a280e4b
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '211'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '186'
 ht-degree: 100%
 
 ---
