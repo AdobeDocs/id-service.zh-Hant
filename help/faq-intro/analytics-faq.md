@@ -1,15 +1,11 @@
 ---
 description: 關於搭配 Experience Cloud Identity Service 使用 Analytics 的功能、功用和問題之常見問題集。
 keywords: Experience Cloud Identity 服務
-seo-description: 關於搭配 Identity 服務使用 Analytics 的功能、功用和問題之常見問題集。
-seo-title: Analytics 與 Identity Service 常見問題集
 title: Analytics 與 Identity Service 常見問題集
-uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '993'
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '970'
 ht-degree: 100%
 
 ---
@@ -38,7 +34,7 @@ ht-degree: 100%
 
 如果您有可在客戶造訪其他網域之前加以識別的主要進入網站，則 CNAME 將可讓您在不接受第三方 Cookie 的瀏覽器 (例如 Safari) 中使用跨網域追蹤功能。
 
-在接受第三方 Cookie 的瀏覽器中，請求擷取訪客 ID 期間，Cookie 會設定於 [demdex.net 網域](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/reference/demdex-calls.html)中。此 Cookie 可讓 Identity Service 在所有使用相同組織 ID 設定的網域上，傳回相同的 Experience Cloud 訪客 ID。在拒絕第三方 Cookie 的瀏覽器中，會為每個網域指派新的 Experience Cloud 訪客 ID。
+在接受第三方 Cookie 的瀏覽器中，請求擷取訪客 ID 期間，Cookie 會設定於 [demdex.net 網域](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hant)中。此 Cookie 可讓 Identity Service 在所有使用相同組織 ID 設定的網域上，傳回相同的 Experience Cloud 訪客 ID。在拒絕第三方 Cookie 的瀏覽器中，會為每個網域指派新的 Experience Cloud 訪客 ID。
 
 即使已設定 CNAME，若未先造訪主要進入網站，在不接受第三方 Cookie 的瀏覽器中，訪客在次要網站和主要網站上仍會識別為不同身分。
 
@@ -54,7 +50,7 @@ ht-degree: 100%
 
 **什麼是寬限期？應如何設定？**
 
-參閱 [ Identity Service 寬期限](../reference/analytics-reference/grace-period.md)並聯絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)。
+參閱 [ Identity Service 寬期限](../reference/analytics-reference/grace-period.md)並聯絡[客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)。
 
 **為什麼我需要移轉至即時資料蒐集 (RDC) 才能使用 Identity Service？**
 
@@ -93,5 +89,5 @@ RDC 可以提升全域效能，此外為了確保您的實作可針對未來採�
 
 >[!MORELIKETHIS]
 >
->* [客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)
+>* [客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
