@@ -1,15 +1,11 @@
 ---
 description: 這些設定可讓實作於 iFrame 及上層頁面的不同 ID 服務代碼執行個體互相通訊。這些設定可在您不一定控制上層頁面/網域，且在您已控制之網域的 iFrame 中載入 ID 服務程式碼的情況下，協助您解決兩種特定使用案例的問題。這些設定適用於 VisitorAPI.js 程式碼 2.2 版或更新版本。
 keywords: ID 服務
-seo-description: 這些設定可讓實作於 iFrame 及上層頁面的不同 ID 服務代碼執行個體互相通訊。這些設定可在您不一定控制上層頁面/網域，且在您已控制之網域的 iFrame 中載入 ID 服務程式碼的情況下，協助您解決兩種特定使用案例的問題。這些設定適用於 VisitorAPI.js 程式碼 2.2 版或更新版本。
-seo-title: whitelistParentDomain 及 whitelistIframeDomains
 title: whitelistParentDomain 及 whitelistIframeDomains
-uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '934'
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '860'
 ht-degree: 100%
 
 ---
@@ -76,7 +72,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 
 >[!TIP]
 >
->當您在 iFrame 中使用影片[活動訊號](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/media-overview.html)提供影片時，您也可以實作這些設定。影片心率必須要有 ID 服務 ID (MID) 才能正常運作。
+>當您在 iFrame 中使用影片[活動訊號](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)提供影片時，您也可以實作這些設定。影片心率必須要有 ID 服務 ID (MID) 才能正常運作。
 
 **使用案例 1：在 iFrame 和上層頁面實作瀏覽器封鎖第三方 Cookie 及 ID Service**
 
@@ -182,7 +178,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
    <td colname="col1"> <p> <b>案例 2</b> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_CCAD7E362E7F4DAB9D5C3E166EEE6BDD"> 
-      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID </span> </li> 
+      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID  </span> </li> 
       <li id="li_C6022223C8314B9C923202207C7472EA"> <span class="codeph"> getMarketingCloudVisitorID </span> </li> 
      </ul> </p> </td> 
   </tr> 
