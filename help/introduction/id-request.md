@@ -1,14 +1,11 @@
 ---
 description: ID 請求與回應程序的概述。這些範例涵蓋在個別網站、跨不同網站，以及針對由不同 Experience Cloud 客戶 (具有自己的組織 ID) 管理的網站，進行 ID 指派。
 keywords: ID 服務
-seo-description: ID 請求與回應程序的概述。這些範例涵蓋在個別網站、跨不同網站，以及針對由不同 Experience Cloud 客戶 (具有自己的組織 ID) 管理的網站，進行 ID 指派。
-seo-title: Experience Cloud Identity Service 如何請求與設定 ID
 title: Experience Cloud Identity Service 如何請求與設定 ID
-uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
-source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '762'
 ht-degree: 94%
 
 ---
