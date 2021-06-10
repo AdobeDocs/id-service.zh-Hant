@@ -1,14 +1,11 @@
 ---
 title: Google Chrome SameSite 標籤異動
-seo-title: Google Chrome SameSite 標籤異動
 description: Adobe ECID (ID 服務) 程式庫文件。
-seo-description: Adobe ECID (ID 服務) 程式庫文件。
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '1079'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '1065'
+ht-degree: 99%
 
 ---
 
@@ -122,4 +119,4 @@ Adobe 產品已發佈伺服器端更新，可使用適當屬性來設定第三�
 
 > !![IMPORTANT] Adobe 第三方 Cookie 是在伺服器端設定
 
-如需詳細資訊，請參閱 [Target 的 Google Chrome SameSite 原則](https://docs.adobe.com/content/help/zh-Hant/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html)文件。
+如需詳細資訊，請參閱 [Target 的 Google Chrome SameSite 原則](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html)文件。
