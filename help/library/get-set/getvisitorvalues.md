@@ -1,16 +1,12 @@
 ---
 description: 這是非同步 API，依預設會為 Analytics、ID 服務、資料收集退出、地理位置以及中繼資料「blob」內容傳回識別碼。您也可以透過選擇性的 visitor.FIELDS 列舉控制您要傳回的 ID。
 keywords: ID 服務
-seo-description: 這是非同步 API，依預設會為 Analytics、ID 服務、資料收集退出、地理位置以及中繼資料「blob」內容傳回識別碼。您也可以透過選擇性的 visitor.FIELDS 列舉控制您要傳回的 ID。
-seo-title: getVisitorValues
 title: getVisitorValues
-uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '449'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '407'
+ht-degree: 97%
 
 ---
 
@@ -103,7 +99,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>資料收集地區 ID。此為特定 ID 服務資料中心之地理位置的數值識別碼。 </p> <p>請參閱 <a href="https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS 地區 ID、位置與主機名稱</a>以及 <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>。 </p> </td> 
+   <td colname="col2"> <p>資料收集地區 ID。此為特定 ID 服務資料中心之地理位置的數值識別碼。 </p> <p>請參閱 <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS 地區 ID、位置與主機名稱</a>以及 <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
