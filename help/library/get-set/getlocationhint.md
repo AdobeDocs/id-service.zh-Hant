@@ -1,16 +1,12 @@
 ---
 description: 傳回 Experience Cloud Identity Service 地區 ID。地區 ID (或位置提示) 是特定 ID 服務資料中心之地理位置的數值識別碼。必須要有地區 ID，您才能對 Audience Manager 發出伺服器端 API 呼叫。
 keywords: ID 服務
-seo-description: 傳回 Experience Cloud Identity 服務地區 ID。地區 ID (或位置提示) 是特定 ID 服務資料中心之地理位置的數值識別碼。必須要有地區 ID，您才能對 Audience Manager 發出伺服器端 API 呼叫。
-seo-title: getLocationHint
 title: getLocationHint
-uuid: cdc312b7-d270-4a5c-a2bb-0fbb37f1e2f4
 exl-id: 0213f828-a985-4201-8a38-0a4b170ed057
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '232'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '185'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +16,7 @@ ht-degree: 100%
 
 **語法：**` var *`變數名稱`* = visitor.getLocationHint()`
 
-如需地區 ID 與對應位置的清單，請參閱 [DCS 地區 ID、位置與主機名稱](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html)。
+如需地區 ID 與對應位置的清單，請參閱 [DCS 地區 ID、位置與主機名稱](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html)。
 
 **程式碼範例**
 
