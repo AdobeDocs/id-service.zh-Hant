@@ -1,13 +1,11 @@
 ---
 description: Experience Cloud ID Service (ECID) 支援 SHA-256 雜湊演算法，可讓您傳入客戶 ID 或電子郵件地址，然後傳出雜湊 ID。這是選用的 JavaScript 方法，可將經雜湊處理的識別碼傳送至 Experience Cloud。在傳送客戶 ID 之前，您可以繼續使用自己的雜湊方法。
 keywords: ID 服務
-seo-description: Experience Cloud ID Service (ECID) 支援 SHA-256 雜湊演算法，可讓您傳入客戶 ID 或電子郵件地址，然後傳出雜湊 ID。這是選用的 JavaScript 方法，可將經雜湊處理的識別碼傳送至 Experience Cloud。在傳送客戶 ID 之前，您可以繼續使用自己的雜湊方法。
-seo-title: setCustomerIDs 的 SHA256 雜湊支援
 title: setCustomerIDs 的 SHA256 雜湊支援
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: cca52e1ece7a31199cb86a286dd772a41f01eeaa
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '606'
 ht-degree: 98%
 
 ---
@@ -36,7 +34,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 除了 Experience Cloud 訪客 ID 之外，您還可以將其他客戶 ID、驗證狀態和雜湊類型 (SHA-256) 與每個訪客建立關聯。如果您未提供任何雜湊類型，則會視為無雜湊。
 
-`setCustomerIDs` 方法接受同一位訪客擁有多個客戶 ID。這可幫助您識別或鎖定不同裝置上的個別用戶。例如，您可以將這些 ID 當做[客戶屬性](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/customer-attributes/attributes.html)上傳到 Experience Cloud，並在不同解決方案中存取此資料。
+`setCustomerIDs` 方法接受同一位訪客擁有多個客戶 ID。這可幫助您識別或鎖定不同裝置上的個別用戶。例如，您可以將這些 ID 當做[客戶屬性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html??lang=zh-Hant)上傳到 Experience Cloud，並在不同解決方案中存取此資料。
 
 客戶 ID、已驗證狀態和雜湊類型&#x200B;*不會*&#x200B;儲存在 Cookie 中以供稍後使用。客戶 ID、已驗證狀態和雜湊類型而是應該儲存在執行個體變數中，以使用 [`getCustomerIDs`](/help/library/get-set/getcustomerids.md) 加以擷取，如下所示：
 
