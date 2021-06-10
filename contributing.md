@@ -1,11 +1,13 @@
 ---
-source-git-commit: 676f6ca9c37f77fe24dbc3ceb9aef2d540b3adbe
-translation-type: ht
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 100%
 
 ---
 # 貢獻
 
-感謝您願意貢獻內容!
+感謝您願意貢獻內容！
 
 為本專案貢獻內容時應遵循的準則如下。
 
@@ -15,7 +17,7 @@ translation-type: ht
 
 ## 貢獻者指南文件
 
-請參閱[貢獻者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)。
+請參閱 [投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
 
 ## 有任何疑問嗎?
 
@@ -23,11 +25,11 @@ translation-type: ht
 
 ## 貢獻者授權協議 (CLA)
 
-本專案的所有第三方貢獻者均須簽署貢獻者授權合約。如此 Adobe 才能在專案中二次使用您貢獻的內容。[簽署我們的 CLA](http://opensource.adobe.com/cla.html)。Adobe CLA 只需提交一次，因此若您先前已提交過 Adobe CLA，您現在可以開始貢獻內容了!
+本專案的所有第三方貢獻者均須簽署貢獻者授權合約。如此 Adobe 才能在專案中二次使用您貢獻的內容。[敬請簽署我們的 CLA](http://opensource.adobe.com/cla.html)。Adobe CLA 只需提交一次，因此若您先前已提交過 Adobe CLA，您現在可以開始貢獻內容了!
 
 ## 程式碼審核
 
-所有提交內容皆應以提取請求的形式提出，且須經由專案提交者審核。如需傳送提取請求的詳細資訊，請參閱 [GitHub 提取請求文件](https://help.github.com/articles/about-pull-requests/)
+所有提交內容皆應以提取請求的形式提出，且須經由專案提交者審核。如需傳送提取請求的詳細資訊，請參閱 [GitHub 提取請求說明文件](https://help.github.com/articles/about-pull-requests/)。
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
@@ -40,4 +42,4 @@ submitting a pull request!
 
 ## 安全性問題
 
-安全性問題不應透過此問題追蹤器舉報。請改[向我們的安全性專家提報問題](https://helpx.adobe.com/security/alertus.html)
+安全性問題不應透過此問題追蹤器舉報。請改[向我們的安全性專家提報問題](https://helpx.adobe.com/tw/security/alertus.html)
