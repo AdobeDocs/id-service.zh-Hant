@@ -1,15 +1,11 @@
 ---
 description: 設定逾時間隔 (單位：毫秒)。用來告知其他解決方案 (例如 Analytics、Audience Manager、Target 等)ID 服務傳回回應要等候多久。
 keywords: ID 服務
-seo-description: 設定逾時間隔 (單位：毫秒)。用來告知其他解決方案 (例如 Analytics、Audience Manager、Target 等)ID 服務傳回回應要等候多久。
-seo-title: loadTimeout
 title: loadTimeout
-uuid: f627e044-bd73-49a4-8a90-6d19aa566751
 exl-id: 485264f4-ee24-4042-8be3-259e70462110
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '169'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '140'
 ht-degree: 100%
 
 ---
