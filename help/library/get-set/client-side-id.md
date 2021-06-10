@@ -1,15 +1,11 @@
 ---
 description: 呼叫此 ID 服務函數，以判斷 ID 服務是否產生了用戶端、Experience Cloud 訪客 ID (MID)。適用於 VisitorAPI.js 1.7.0 版或更新版本。
 keywords: ID 服務
-seo-description: 呼叫此 ID 服務函數，以判斷 ID 服務是否產生了用戶端、Experience Cloud 訪客 ID (MID)。適用於 VisitorAPI.js 1.7.0 版或更新版本。
-seo-title: isClientSideMarketingCloudVisitorID
 title: isClientSideMarketingCloudVisitorID
-uuid: 1c39ac60-1d2b-4ed4-a2ea-30d680e61e10
 exl-id: ed2672e7-da1a-4c02-9f4e-c14419ec9ec7
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '148'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '122'
 ht-degree: 100%
 
 ---
