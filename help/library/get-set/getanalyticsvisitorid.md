@@ -1,16 +1,12 @@
 ---
 description: 傳回在 Experience Cloud Identity Service 實作前儲存於 s_vi Cookie 的舊有 Analytics ID (如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
 keywords: ID 服務
-seo-description: 傳回在 Experience Cloud Identity 服務實作前儲存於 s_vi Cookie 的舊有 Analytics ID (如果有的話)。如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
-seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
-uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '340'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 91%
 
 ---
 
@@ -47,7 +43,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 發生下列情況時，您會在查詢字串中看到 `aid` 參數:
 
 * 正確部署 [!DNL Experience Cloud] ID 服務。
-* 造訪網站的用戶已在 [s_vi Cookie](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679) 中儲存之前的 [!DNL Analytics] ID。
+* 造訪網站的用戶已在 [s_vi Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679) 中儲存之前的 [!DNL Analytics] ID。
 
 **案例 2**
 
@@ -55,5 +51,5 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!MORELIKETHIS]
 >
->* [Analytics Cookie](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/ec-cookies/cookies-privacy.html)
+>* [Analytics Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html)
 
