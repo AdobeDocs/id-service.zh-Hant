@@ -1,15 +1,11 @@
 ---
 description: 兒童網路隱私保護法 (COPPA) 禁止在未經父母明確同意下，透過網路收集 13 歲以下兒童的個人資訊。客戶擔憂 COPPA 會在 Experience Cloud Identity 服務程式碼中新增選用變數，使該程式碼無法在第三方瀏覽器網域中設定 Cookie。
 keywords: ID 服務
-seo-description: 兒童網路隱私保護法 (COPPA) 禁止在未經父母明確同意下，透過網路收集 13 歲以下兒童的個人資訊。客戶擔憂 COPPA 會在 Experience Cloud Identity 服務程式碼中新增選用變數，使該程式碼無法在第三方瀏覽器網域中設定 Cookie。
-seo-title: Experience Cloud Identity 服務的 COPPA 支援
 title: Experience Cloud Identity 服務的 COPPA 支援
-uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
 exl-id: c7579f90-3011-4e26-b908-08907bf12ba2
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '403'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '343'
 ht-degree: 100%
 
 ---
