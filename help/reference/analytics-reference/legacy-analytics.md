@@ -1,15 +1,11 @@
 ---
-description: 概述 Experience Cloud Identity Service 搭配舊有 Analytics ID 之使用方式。
+description: 概述 Experience Cloud Identity 服務搭配舊有 Analytics ID 之使用方式。
 keywords: ID 服務
-seo-description: 概述 Experience Cloud Identity 服務搭配舊有 Analytics ID 之使用方式。
-seo-title: Analytics 與 Experience Cloud ID 請求
 title: Analytics 與 Experience Cloud ID 請求
-uuid: 28beed16-7ef9-4824-8e82-853930756eca
 exl-id: 8c682159-e23a-4641-9ffd-e0028dc2f305
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '469'
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '444'
 ht-degree: 100%
 
 ---
@@ -24,7 +20,7 @@ ht-degree: 100%
 
 ## 未在瀏覽器中設定 AMCV Cookie {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
 
-如果 [!DNL Experience Cloud] (AMCV) Cookie 不存在，您撥打 [!DNL Adobe] 的 ID 服務電話時，得到的回應會依據您是否擁有舊版 Analytics ID 而有所不同。舊版 [!DNL Analytics] ID 會儲存在 [s_vi Cookie](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/ec-cookies/cookies-analytics.html) 中。下表說明系統會如何根據 s_vi Cookie 的狀態，將 ID 覆寫至 AMCV Cookie。
+如果 [!DNL Experience Cloud] (AMCV) Cookie 不存在，您撥打 [!DNL Adobe] 的 ID 服務電話時，得到的回應會依據您是否擁有舊版 Analytics ID 而有所不同。舊版 [!DNL Analytics] ID 會儲存在 [s_vi Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=zh-Hant) 中。下表說明系統會如何根據 s_vi Cookie 的狀態，將 ID 覆寫至 AMCV Cookie。
 
 <table id="table_DC85FECE26DD424E841BA1059AF1E57F"> 
  <thead> 
@@ -51,7 +47,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->s_fid Cookie 所識別的用戶不會將其舊有的 FID 值移轉到 AMCV Cookie。有了 s_fid Cookie，用戶移轉時會如同 s_vi Cookie 不存在 (請參閱上述說明)，就像是全新訪客造訪您的網站。如需詳細資訊，請參閱 [Analytics Cookie](https://docs.adobe.com/content/help/zh-Hant/core-services/interface/ec-cookies/cookies-analytics.html)。
+>s_fid Cookie 所識別的用戶不會將其舊有的 FID 值移轉到 AMCV Cookie。有了 s_fid Cookie，用戶移轉時會如同 s_vi Cookie 不存在 (請參閱上述說明)，就像是全新訪客造訪您的網站。如需詳細資訊，請參閱 [Analytics Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)。
 
 ## 已在瀏覽器中設定 AMCV Cookie {#section-01c088fc565c4b24ba1722c7cc240310}
 
