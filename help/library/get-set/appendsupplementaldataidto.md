@@ -1,15 +1,11 @@
 ---
 description: 此 helper 方法可讓您將 Supplemental Data ID (SDID) 當做查詢字串參數附加到重新導向 URL 中。當使用 A4T 而且您需要在不同頁面保存 SDID 並將這些不同造訪拼貼在一起時，此方法會很實用。若要使用此函數，您必須先實作 ID 服務，且來源和目的地網域都使用相同的組織 ID。
 keywords: ID 服務
-seo-description: 此 helper 方法可讓您將 Supplemental Data ID (SDID) 當做查詢字串參數附加到重新導向 URL 中。當使用 A4T 而且您需要在不同頁面保存 SDID 並將這些不同造訪拼貼在一起時，此方法會很實用。若要使用此函數，您必須先實作 ID 服務，且來源和目的地網域都使用相同的組織 ID。
-seo-title: appendSupplementalDataIDTo
 title: appendSupplementalDataIDTo
-uuid: f3504d82-8da3-4971-818b-3df57df4ec2d
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '412'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '344'
 ht-degree: 100%
 
 ---
@@ -43,7 +39,7 @@ var pageB = "www.domain.com/pageB";
 var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219");
 ```
 
-## 範例輸出 {#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
+## 範例輸出  {#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
 
 如下所示，URL 在呼叫接收頁面時，重新導向會包含訪客的 SDID、您的組織 ID 以及 UNIX 時間戳記。
 
