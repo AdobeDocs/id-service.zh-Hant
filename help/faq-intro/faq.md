@@ -1,15 +1,11 @@
 ---
 description: 關於使用 ID 服務的功能、功用和問題之常見問題集。
 keywords: ID 服務
-seo-description: 關於使用 ID 服務的功能、功用和問題之常見問題集。
-seo-title: ID 服務常見問題集
 title: ID 服務常見問題集
-uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '806'
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '787'
 ht-degree: 100%
 
 ---
@@ -38,7 +34,7 @@ ht-degree: 100%
 
 將 VisitorAPI.js 程式庫放置在程式碼中 `<head>` 區段的頁面頂端。這可確保在頁面本文載入前向 ID 發出呼叫，同時可大幅提升傳回 ID 的成功率。
 
-ID 服務呼叫為非同步呼叫，且是向 [demdex.net 網域](https://docs.adobe.com/content/help/zh-Hant/audience-manager/user-guide/reference/demdex-calls.html) 發出的唯一呼叫。ID 服務呼叫不會阻擋其他元素載入頁面。
+ID 服務呼叫為非同步呼叫，且是向 [demdex.net 網域](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hant) 發出的唯一呼叫。ID 服務呼叫不會阻擋其他元素載入頁面。
 
 若是 [!DNL Target] 客戶，在頁面的 `<body>` 放置 ID 服務程式碼可能會增加其成功封鎖 [!DNL Target] 呼叫的機率。如果您必須在頁面本文中放置 ID 服務程式碼，應放置在開放的 `<body>` 標籤後。
 
