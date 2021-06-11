@@ -18,7 +18,6 @@ ht-degree: 100%
 >
 >* 參閱使用案例前，請先檢閱並瞭解[程式碼語法和變數](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9)。
 >* 如需有關 MID 的詳細資訊，請參閱 [Cookie 與 Experience Cloud Identity 服務](../introduction/cookies.md)。
-
 >
 
 
