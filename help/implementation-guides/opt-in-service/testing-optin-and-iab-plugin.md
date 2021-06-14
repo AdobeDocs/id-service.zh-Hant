@@ -3,7 +3,7 @@ description: 在網站上啟用選擇加入後，請使用瀏覽器中的開發�
 title: 驗證選擇加入服務
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '440'
 ht-degree: 100%
 
