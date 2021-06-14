@@ -3,7 +3,7 @@ description: 選擇加入程式庫 API 與組態設定參考資料。
 title: 選擇加入參考資料
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '886'
 ht-degree: 100%
 
@@ -128,7 +128,7 @@ True 或 false (視狀態值而定)。對於尚未明確接受或拒絕權限的
 
 True 或 false (視狀態值而定)。當工作流程式同意已開始但尚未完成時，選擇加入可能會針對這個屬性傳回 false。
 
-## 選擇加入物件的方法  {#section-e0417801a82548d199d833010033e433}
+## 選擇加入物件的方法 {#section-e0417801a82548d199d833010033e433}
 
 **`approve(categories, shouldWaitForComplete)`**
 
@@ -201,7 +201,7 @@ optIn.fetchPermissions(callback, true);
 
 拒絕所有現有類別。
 
-## 選擇加入物件的事件  {#section-06f25b33cab54bafb053183e937fb710}
+## 選擇加入物件的事件 {#section-06f25b33cab54bafb053183e937fb710}
 
 **`complete`:**
 
