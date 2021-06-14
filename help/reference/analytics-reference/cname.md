@@ -3,7 +3,7 @@ description: 如果您有可在客戶造訪其他網域之前加以識別的主�
 keywords: 操作順序；ID 服務
 title: CNAME 實施概觀
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '221'
 ht-degree: 100%
 
