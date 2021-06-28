@@ -4,9 +4,9 @@ keywords: ID 服務
 title: 實作方法
 exl-id: 0fe40a3c-bdcd-4290-bcd7-25344ff108d6
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '136'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 94%
 
 ## 標準實作 {#section-ea1e5270f2184f85a2e85214a6ac60cb}
 
-Adobe 強烈建議使用 [[!DNL Experience Platform Launch] 來實作 ID 服務。](https://experienceleague.adobe.com/docs/launch/using/implement/solutions/idservice-save.html)此方法可確保整合其他 [!DNL Experience Cloud] 解決方案、簡化實作工作流程，並自動確認程式碼的位置和順序正確無誤。
+Adobe 強烈建議使用 [[!DNL Experience Platform Launch] 來實作 ID 服務。](https://experienceleague.adobe.com/docs/launch/using/implement/solutions/idservice-save.html?lang=zh-Hant)此方法可確保整合其他 [!DNL Experience Cloud] 解決方案、簡化實作工作流程，並自動確認程式碼的位置和順序正確無誤。
 
 ## 非標準實作 {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
