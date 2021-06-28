@@ -4,9 +4,9 @@ keywords: ID 服務
 title: 與 Experience Cloud Identity Service 直接整合
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '656'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 
 ![](assets/directSyntax.png)
 
-在這個語法範例中，前置詞 `d_` 會做為系統層級變數，用於識別呼叫中的機碼-值組。您可以將幾個 `d_` 參數傳遞至 ID 服務，但要把重點放在上述程式碼中的機碼-值組上。如需其他變數的詳細資訊，請參閱[支援的 DCS API 呼叫屬性](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html)。
+在這個語法範例中，前置詞 `d_` 會做為系統層級變數，用於識別呼叫中的機碼-值組。您可以將幾個 `d_` 參數傳遞至 ID 服務，但要把重點放在上述程式碼中的機碼-值組上。如需其他變數的詳細資訊，請參閱[支援的 DCS API 呼叫屬性](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html?lang=zh-Hant)。
 
 ID 服務支援 HTTP 和 HTTPS 呼叫。使用 HTTPS 從安全頁面傳送資料。
 
@@ -87,7 +87,7 @@ ID 服務會傳回 JSON 物件中的資料，如下所示。您的回應可能�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>ID 服務是分散於各處且負載平衡的系統。ID 可識別處理呼叫的資料中心所在的地區。請參閱 <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS 地區 ID、位置與主機名稱</a>。 </p> </td> 
+   <td colname="col2"> <p>ID 服務是分散於各處且負載平衡的系統。ID 可識別處理呼叫的資料中心所在的地區。請參閱 <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=zh-Hant" format="https" scope="external">DCS 地區 ID、位置與主機名稱</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
