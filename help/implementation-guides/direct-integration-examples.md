@@ -4,7 +4,7 @@ keywords: ID 服務
 title: 直接整合的使用案例
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '443'
 ht-degree: 100%
 
@@ -17,7 +17,8 @@ ht-degree: 100%
 >[!TIP]
 >
 >* 參閱使用案例前，請先檢閱並瞭解[程式碼語法和變數](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9)。
->* 如需有關 MID 的詳細資訊，請參閱 [Cookie 與 Experience Cloud Identity 服務](../introduction/cookies.md)。
+>* 如需有關 MID 的詳細資訊，請參閱 [Cookie 與 Experience Cloud Identity Service](../introduction/cookies.md)。
+
 >
 
 
