@@ -4,9 +4,9 @@ keywords: ID 服務
 title: 實作適用於 Target 的 Experience Cloud Identity Service
 exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '401'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 ## 步驟 3：將您的 Experience Cloud 組織 ID 新增至 Visitor.getInstance {#section-522b1877be9243c39b222859b821f0ce}
 
-在 `Visitor.getInstance` 函數中，將 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` 取代為 [!DNL Experience Cloud] 組織 ID。如果您不知道組織 ID，可以在 [!DNL Experience Cloud] 管理頁面中找到。另請參閱[管理 - 核心服務](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html)。您編輯的函數看起來可能類似於下列範例。
+在 `Visitor.getInstance` 函數中，將 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` 取代為 [!DNL Experience Cloud] 組織 ID。如果您不知道組織 ID，可以在 [!DNL Experience Cloud] 管理頁面中找到。另請參閱[管理 - 核心服務](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hant)。您編輯的函數看起來可能類似於下列範例。
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg");`
 
