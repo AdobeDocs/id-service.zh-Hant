@@ -3,9 +3,9 @@ title: Safari ITP 領域的 ECID 程式庫方法
 description: Adobe ECID (ID 服務) 程式庫的文件。
 exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '791'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ ITP 2.1 會使寫入用戶端 Cookie 的能力受到限制，導致向客戶提�
 
 這個新 `s_ecid` Cookie 會依循與 AMCV Cookie 相同的選擇退出狀態。如果從 `s_ecid` Cookie 讀取 eid，每次都會呼叫 demdex 來擷取該 ID 的最新選擇退出狀態，並將 demdex 儲存在 AMCV Cookie 中。
 
-此外，如果您的消費者已透過此[方法](https://experienceleague.adobe.com/docs/analytics/implementation/js/opt-out.html)選擇退出 Analytics 追蹤，則系統會刪除這個 `s_ecid` Cookie。
+此外，如果您的消費者已透過此[方法](https://experienceleague.adobe.com/docs/analytics/implementation/js/opt-out.html?lang=zh-Hant)選擇退出 Analytics 追蹤，則系統會刪除這個 `s_ecid` Cookie。
 
 使用 `trackingServer` 或 `trackingServerSecure` 初始化程式庫時，應為 VisitorJS 程式庫提供追蹤伺服器名稱。此名稱應符合 Analytics 設定中的 `trackingServer` 設定。
 
