@@ -1,12 +1,12 @@
 ---
-description: Experience Cloud Identity 服務會取代舊有的 Analytics 訪客 ID 方法。
+description: Experience Cloud Identity Service 會取代舊有的 Analytics 訪客 ID 方法。
 keywords: ID 服務
 title: 設定 Analytics 和 Experience Cloud ID
 exl-id: 7399ea16-d13e-452c-b8d9-8d0699566aa2
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '917'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ JavaScript 可讀取和寫入在第一方網域 (現行網站的網域) 中設�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <img id="image_9F3E58898A1B4F40BBDEF5ADE362E55C" src="assets/step1_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/visitorid.html?lang=zh-Hant" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
    <td colname="col3"> <p>設定 s.visitorID 時 </p> </td> 
   </tr> 
   <tr> 
@@ -74,12 +74,12 @@ JavaScript 可讀取和寫入在第一方網域 (現行網站的網域) 中設�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_6F0ED8FE3EF846CA8E6ECCC3C0070D85" src="assets/step4_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external"> fid (H.25.3 或更新版本的後援 Cookie，或 JavaScript 適用的 AppMeasurement)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html?lang=zh-Hant" format="http" scope="external"> fid (H.25.3 或更新版本的後援 Cookie，或 JavaScript 適用的 AppMeasurement)</a> </p> </td> 
    <td colname="col3"> <p>瀏覽器不接受第三方 Cookie 且 Analytics 追蹤伺服器已設定為第三方追蹤伺服器。 </p> <p> <p>注意：如果您已在網站上實作 ID 服務，則舊版識別碼 <span class="codeph">fid</span> 並未使用。在此情況下就不需要 <span class="codeph">fid</span>，因為第一方 <a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV Cookie</a> 已將其淘汰。保留它是為了支援舊版程式碼且供歷史記錄之用。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP 位址、用戶代理程式、閘道 IP 位址</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/technotes/visitor-identification.html?lang=zh-Hant" format="http" scope="external"> IP 位址、用戶代理程式、閘道 IP 位址</a> </p> </td> 
    <td colname="col3"> <p>訪客的瀏覽器不接受 Cookie。 </p> </td> 
   </tr> 
  </tbody> 
