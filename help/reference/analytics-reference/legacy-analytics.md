@@ -1,10 +1,10 @@
 ---
-description: 概述 Experience Cloud Identity 服務搭配舊有 Analytics ID 之使用方式。
+description: 概述 Experience Cloud Identity Service 搭配舊有 Analytics ID 之使用方式。
 keywords: ID 服務
 title: Analytics 與 Experience Cloud ID 請求
 exl-id: 8c682159-e23a-4641-9ffd-e0028dc2f305
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '444'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->s_fid Cookie 所識別的用戶不會將其舊有的 FID 值移轉到 AMCV Cookie。有了 s_fid Cookie，用戶移轉時會如同 s_vi Cookie 不存在 (請參閱上述說明)，就像是全新訪客造訪您的網站。如需詳細資訊，請參閱 [Analytics Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)。
+>s_fid Cookie 所識別的用戶不會將其舊有的 FID 值移轉到 AMCV Cookie。有了 s_fid Cookie，用戶移轉時會如同 s_vi Cookie 不存在 (請參閱上述說明)，就像是全新訪客造訪您的網站。如需詳細資訊，請參閱 [Analytics Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=zh-Hant)。
 
 ## 已在瀏覽器中設定 AMCV Cookie {#section-01c088fc565c4b24ba1722c7cc240310}
 
