@@ -1,12 +1,12 @@
 ---
-description: 2016 年 Experience Cloud Identity 服務的功能發佈、更新或變更。
+description: 2016 年 Experience Cloud Identity Service 的功能發佈、更新或變更。
 keywords: ID 服務
 title: 2016 年版本注意事項
 exl-id: f96b9869-6282-4090-b392-797608e25a51
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 2016 年 Experience Cloud Identity Service 的功能發佈、更新或變更。
 
-這些變更也包含在 [Experience Cloud 版本注意事項](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)中。
+這些變更也包含在 [Experience Cloud 版本注意事項](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hant)中。
 
 ## 版本 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -80,7 +80,7 @@ ht-degree: 99%
 
 **已知問題**
 
-在同一頁上使用 [!DNL Audience Manager] DIL 程式碼和 visitorAPI.js 程式碼的客戶，應將 DIL 變數設為 `secureDataCollection= false`。請參閱 [secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html)。
+在同一頁上使用 [!DNL Audience Manager] DIL 程式碼和 visitorAPI.js 程式碼的客戶，應將 DIL 變數設為 `secureDataCollection= false`。請參閱 [secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html?lang=zh-Hant)。
 
 ## 版本 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
