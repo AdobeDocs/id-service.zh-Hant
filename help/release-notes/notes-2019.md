@@ -1,10 +1,10 @@
 ---
-description: Experience Cloud Identity 服務的功能發佈、更新或變更。
+description: Experience Cloud Identity Service 的功能發佈、更新或變更。
 keywords: ID 服務
 title: 2019 年版本注意事項
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '415'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Experience Cloud 版本注意事項 - 2019 {#release-notes}
 
-提供 Experience Cloud Identity 服務的功能發佈、更新或變更資訊。
+提供 Experience Cloud Identity Service 的功能發佈、更新或變更資訊。
 
 ## 4.4.1 版
 
@@ -59,7 +59,7 @@ ht-degree: 100%
 
 ## 版本 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**選擇加入服務**。選擇加入是 Experience Cloud ID (ECID) 的擴充功能，可讓您控制 Experience Cloud 程式庫是否可以在網頁上建立訪客的 Cookie，以及使用哪個程式庫來執行。您可以使用 [Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html)，讓 Analytics、Target、Audience Manager 及其他或所有指定 Experience Cloud 解決方案選擇加入您的同意管理系統，簡化 Experience Cloud 解決方案收集訪客是否同意選擇加入的程序。
+**選擇加入服務**。選擇加入是 Experience Cloud ID (ECID) 的擴充功能，可讓您控制 Experience Cloud 程式庫是否可以在網頁上建立訪客的 Cookie，以及使用哪個程式庫來執行。您可以使用 [Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hant)，讓 Analytics、Target、Audience Manager 及其他或所有指定 Experience Cloud 解決方案選擇加入您的同意管理系統，簡化 Experience Cloud 解決方案收集訪客是否同意選擇加入的程序。
 
 ## 版本 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
