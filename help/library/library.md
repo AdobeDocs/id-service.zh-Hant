@@ -1,10 +1,10 @@
 ---
-description: 屬性、方法和設定可讓您以程式設計方式使用 Experience Cloud Identity 服務。
+description: 屬性、方法和設定可讓您以程式設計方式使用 Experience Cloud Identity Service。
 keywords: ID 服務
 title: ID 服務 API
 exl-id: 60ae4927-e905-4252-b9ec-9cc74073e8d5
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '73'
 ht-degree: 100%
 
@@ -12,10 +12,10 @@ ht-degree: 100%
 
 # ID 服務 API{#id-service-api}
 
-屬性、方法和設定可讓您以程式設計方式使用 Experience Cloud Identity 服務。
+屬性、方法和設定可讓您以程式設計方式使用 Experience Cloud Identity Service。
 
-* [設定概述](function-vars/function-vars.md)
-* [方法概述](get-set/get-set.md)
+* [設定總覽](function-vars/function-vars.md)
+* [方法總覽](get-set/get-set.md)
 
 >[!NOTE]
 >
