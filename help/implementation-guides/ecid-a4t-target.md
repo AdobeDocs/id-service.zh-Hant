@@ -4,7 +4,7 @@ keywords: ID 服務
 title: 搭配 A4T 以及伺服器端的 Target 實作使用 ID 服務
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '829'
 ht-degree: 100%
 
