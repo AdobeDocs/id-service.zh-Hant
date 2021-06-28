@@ -1,10 +1,10 @@
 ---
-description: 使用這些設定，可將呼叫 Experience Cloud Identity 服務使用的預設網域名稱變更為您擁有的子網域名稱。
+description: 使用這些設定，可將呼叫 Experience Cloud Identity Service 使用的預設網域名稱變更為您擁有的子網域名稱。
 keywords: ID 服務
 title: audienceManagerServer 及 audienceManagerServerSecure
 exl-id: b740eb5c-ac4e-46f4-ba7c-1080d8d9292d
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '218'
 ht-degree: 100%
 
