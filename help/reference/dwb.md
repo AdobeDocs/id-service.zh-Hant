@@ -4,9 +4,9 @@ keywords: ID 服務
 title: Data Workbench 與 Experience Cloud Identity Service
 exl-id: 1903918d-44e4-4790-ab1f-49f5bb701e31
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '206'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 92%
 
 請依照下列指示，將 Experience Cloud ID 欄位整合到 Data Workbench 中。此程序可讓您在資料摘要中使用永續性 Experience Cloud ID，如此即可與 Adobe Experience Cloud 中的其他產品更緊密整合，並提供更強的訪客追蹤功能。
 
-若要更新 [Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/home.html) 以使用 ID 服務：
+若要更新 [Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/home.html?lang=zh-Hant) 以使用 ID 服務：
 
-1. 找出目前的[解碼器群組](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html)組態檔。
+1. 找出目前的[解碼器群組](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html?lang=zh-Hant)組態檔。
 
    [!DNL Decoder Group] 通常位於[!UICONTROL 設定檔管理員]中，路徑如下：`Dataset\Log Processing\Decoding Instructions.cfg`。1. 從設定檔複製最新的解碼器格式。
 1. 在原始解碼器格式下方貼上解碼器格式。
