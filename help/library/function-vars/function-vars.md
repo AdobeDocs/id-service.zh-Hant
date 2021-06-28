@@ -4,7 +4,7 @@ keywords: 組織 ID;ID 服務
 title: 設定
 exl-id: a369f624-d263-4287-bb7e-b89d584fa245
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '86'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >
 >*Experience Cloud ID JavaScript 程式庫*&#x200B;最近已移至其他位置。您可以在 [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases) 找到最新版的 ECID JS 程式庫。
 
-相關文章:
+相關文章：
 
 + [audienceManagerServer 及 audienceManagerServerSecure](subdomain-config.md)
 + [cookieDomain](cookiedomain.md)
