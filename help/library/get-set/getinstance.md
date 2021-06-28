@@ -4,9 +4,9 @@ keywords: ID 服務
 title: getInstance
 exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '226'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-如果 `getInstance` 找不到現有例項，則會建立與傳回新例項。這類似於 [!DNL AppMeasurement] 中的 [ `s_gi()` 函數 ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html)。
+如果 `getInstance` 找不到現有例項，則會建立與傳回新例項。這類似於 [!DNL AppMeasurement] 中的 [ `s_gi()` 函數 ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html?lang=zh-Hant)。
 
 **常見用法**
 
