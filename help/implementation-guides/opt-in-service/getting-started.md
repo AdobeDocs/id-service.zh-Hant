@@ -3,7 +3,7 @@ description: 將選擇加入服務實作為 Experience Cloud 解決方案所用�
 title: 設定選擇加入服務
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '908'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 1. 貴公司的隱私要求將取決於您如何選擇遵守 GDPR。請注意貴公司的隱私團隊可以在同意前使用哪些程式庫。
 
-如果使用 [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/home.html)，請利用[選擇加入擴充功能](../../implementation-guides/opt-in-service/launch.md)來設定選擇加入服務。
+如果使用 [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hant)，請利用[選擇加入擴充功能](../../implementation-guides/opt-in-service/launch.md)來設定選擇加入服務。
 
 ## 選擇加入服務類別 {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
