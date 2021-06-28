@@ -3,9 +3,9 @@ description: 連結同意管理平台 (CMP) 和「選擇加入」適用於 IAB �
 title: 搭配 IAB 架構使用「選擇加入」服務
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '468'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -55,5 +55,5 @@ Visitor.getInstance("YOUR_ORG_ID", {
 
 * [IAB 透明與同意架構 (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) - IAB 標準的詳細資訊
 * [Adobe 選擇加入](../../implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360) -「選擇加入」的詳細資訊；「選擇加入」是平台解決方案中同意管理的必要元件
-* [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html) 中的 IAB 透明與同意架構 (TCF) 支援
+* [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html?lang=zh-Hant) 中的 IAB 透明與同意架構 (TCF) 支援
 * [您的隱私權選擇](https://www.adobe.com/tw/privacy/opt-out.html#customeruse) - 另一個可由用戶自行決定的隱私權選項，是使用其他全域選擇退出工具，選擇退出所有資料收集作業。全域「選擇退出」的效力優先於「選擇加入」和 IAB 驗證
