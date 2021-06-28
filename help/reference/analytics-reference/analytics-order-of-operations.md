@@ -4,9 +4,9 @@ keywords: ID 服務
 title: Analytics ID 的作業順序
 exl-id: 8ee340fe-ef3b-40e6-9441-7ee0c9e20357
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '300'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 92%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>第 1<sup></sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/visitorid.html?lang=zh-Hant" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
    <td colname="col3"> <p>已設定 <span class="codeph">s.visitorID</span>。 </p> </td> 
   </tr> 
   <tr> 
@@ -42,12 +42,12 @@ ht-degree: 92%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>第 4<sup></sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external"> fid (H.25.3 或更新版本的後援 Cookie，或 JavaScript 適用的 AppMeasurement)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html?lang=zh-Hant" format="http" scope="external"> fid (H.25.3 或更新版本的後援 Cookie，或 JavaScript 適用的 AppMeasurement)</a> </p> </td> 
    <td colname="col3"> <p>瀏覽器不接受第三方 Cookie 且 Analytics 追蹤伺服器已設定為第三方追蹤伺服器。 </p> <p> <p>注意：如果您已在網站上實作 ID 服務，則舊版識別碼 <span class="codeph">fid</span> 並未使用。在此情況下就不需要 <span class="codeph">fid</span>，因為第一方 <a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV Cookie</a> 已將其淘汰。保留它是為了支援舊版程式碼且供歷史記錄之用。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>第 5<sup></sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP 位址、用戶代理程式、閘道 IP 位址</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/technotes/visitor-identification.html?lang=zh-Hant" format="http" scope="external"> IP 位址、用戶代理程式、閘道 IP 位址</a> </p> </td> 
    <td colname="col3"> <p>訪客的瀏覽器不接受 Cookie。 </p> </td> 
   </tr> 
  </tbody> 
