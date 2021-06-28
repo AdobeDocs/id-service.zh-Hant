@@ -1,18 +1,18 @@
 ---
-description: ID 請求與回應程序的概述。這些範例涵蓋在個別網站、跨不同網站，以及針對由不同 Experience Cloud 客戶 (具有自己的組織 ID) 管理的網站，進行 ID 指派。
+description: ID 請求與回應程序的總覽。這些範例涵蓋在個別網站、跨不同網站，以及針對由不同 Experience Cloud 客戶 (具有自己的組織 ID) 管理的網站，進行 ID 指派。
 keywords: ID 服務
 title: Experience Cloud Identity Service 如何請求與設定 ID
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '762'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Experience Cloud Identity Service 如何請求與設定 ID{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
-ID 請求與回應程序的概述。這些範例涵蓋在個別網站、跨不同網站，以及針對由不同 Experience Cloud 客戶 (具有自己的組織 ID) 管理的網站，進行 ID 指派。
+ID 請求與回應程序的總覽。這些範例涵蓋在個別網站、跨不同網站，以及針對由不同 Experience Cloud 客戶 (具有自己的組織 ID) 管理的網站，進行 ID 指派。
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ ID 請求與回應程序的概述。這些範例涵蓋在個別網站、跨不�
 在此範例中，有一名新訪客進入食品公司所管理的披薩網站。食品公司在披薩網站上有 ID 服務程式碼。當披薩網站載入時，ID 服務程式碼會檢查披薩網域中是否有 AMCV Cookie。
 
 * 如果已設定 AMCV Cookie，網站訪客即會有 Experience Cloud ID。在此情況下，Cookie 會追蹤訪客並與其他 Experience Cloud 解決方案共用資料。
-* 如果未設定AMCV Cookie,ID服務程式碼會呼叫位於`dpm.demdex.net/id`的區域[資料收集伺服器](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=en)(DCS)（另請參閱[了解向Demdex網域進行的呼叫](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)）。 此呼叫包括食品公司的組織 ID。組織 ID 是在 ID 服務程式碼的 `Visitor.getInstance` 函數中設定。
+* 如果未設定 AMCV Cookie，ID 服務程式碼會呼叫位於 `dpm.demdex.net/id` 的區域[資料收集伺服器](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=zh-Hant) (DCS) (另請參閱[了解向 Demdex 網域進行的呼叫](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hant))。此呼叫包括食品公司的組織 ID。組織 ID 是在 ID 服務程式碼的 `Visitor.getInstance` 函數中設定。
 
 ![](assets/request1.png)
 
