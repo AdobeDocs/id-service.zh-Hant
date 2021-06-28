@@ -4,9 +4,9 @@ keywords: ID 服務
 title: 測試及驗證 Experience Cloud Identity Service
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -26,13 +26,13 @@ ht-degree: 95%
 
 **工具**
 
-[Adobe 偵錯工具](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html)和 [Charles HTTP Proxy](https://www.charlesproxy.com/) 可協助您判斷 ID 服務是否已設定為正確地搭配 Analytics 運作。本節中的資訊以 Adobe 偵錯工具和 Charles 所傳回的結果為基礎。不過，您當然可以使用最適合您的任何工具或偵錯工具。
+[Adobe 偵錯工具](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=zh-Hant)和 [Charles HTTP Proxy](https://www.charlesproxy.com/) 可協助您判斷 ID 服務是否已設定為正確地搭配 Analytics 運作。本節中的資訊以 Adobe 偵錯工具和 Charles 所傳回的結果為基礎。不過，您當然可以使用最適合您的任何工具或偵錯工具。
 
 ## 使用 Adobe 偵錯工具進行測試{#section-861365abc24b498e925b3837ea81d469}
 
 如果您在 [!DNL Experience Cloud ID] 偵錯工具回應中看到 [!DNL Adobe] (MID)，代表您的服務整合已正確設定。請參閱 [Cookie 與 Experience Cloud Identity Service](../introduction/cookies.md)，以了解有關 MID 的資訊。
 
-若要使用 [!DNL Adobe][ 偵錯工具驗證 ID 服務的狀態](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html)：
+若要使用 [!DNL Adobe][ 偵錯工具驗證 ID 服務的狀態](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=zh-Hant)：
 
 1. 清除您的瀏覽器 Cookie，或開啟匿名瀏覽工作階段。
 1. 載入包含 ID 服務程式碼的測試頁面。
@@ -84,7 +84,7 @@ mid=20265673158980419722735089753036633573
 
 **Charles 中的成功 ID 服務回應**
 
-當[資料收集伺服器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) 的回應傳回 MID 時，表示您的帳戶已正確佈建。MID 是以使用下列語法的機碼-值組傳回：`d_mid: *`visitor Experience Cloud ID`*`。查看 [!UICONTROL Response] 標籤中的 MID，如下所示。
+當[資料收集伺服器](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=zh-Hant) (DCS) 的回應傳回 MID 時，表示您的帳戶已正確佈建。MID 是以使用下列語法的機碼-值組傳回：`d_mid: *`visitor Experience Cloud ID`*`。查看 [!UICONTROL Response] 標籤中的 MID，如下所示。
 
 ![](assets/charles_response_success.png)
 
@@ -94,4 +94,4 @@ mid=20265673158980419722735089753036633573
 
 ![](assets/charles_response_unsuccessful.png)
 
-如需有關錯誤碼的詳細資訊，請參閱 [DCS 錯誤碼、訊息與範例](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html)。
+如需有關錯誤碼的詳細資訊，請參閱 [DCS 錯誤碼、訊息與範例](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html?lang=zh-Hant)。
