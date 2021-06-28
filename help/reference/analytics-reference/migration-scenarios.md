@@ -1,16 +1,16 @@
 ---
 description: 包含伺服器範例設定和必要的移轉步驟。
 keywords: ID 服務
-title: Experience Cloud Identity 服務移轉案例
+title: Experience Cloud Identity Service 移轉案例
 exl-id: 419532bf-399f-4646-a95f-31c35535d6fc
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '380'
 ht-degree: 100%
 
 ---
 
-# Experience Cloud Identity 服務移轉案例 {#experience-cloud-id-service-migration-scenarios}
+# Experience Cloud Identity Service 移轉案例 {#experience-cloud-id-service-migration-scenarios}
 
 包含伺服器範例設定和必要的移轉步驟。
 
