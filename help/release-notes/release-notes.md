@@ -1,10 +1,10 @@
 ---
-description: Experience Cloud Identity 服務的功能發佈、更新或變更。
+description: Experience Cloud Identity Service 的功能發佈、更新或變更。
 keywords: ID 服務
 title: 2020 年版本注意事項
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '132'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Experience Cloud 版本注意事項 - 2020 {#release-notes}
 
-提供 Experience Cloud Identity 服務 (ECID) 的功能發佈、更新或變更資訊。
+提供 Experience Cloud Identity Service (ECID) 的功能發佈、更新或變更資訊。
 
 ## 4.6 版
 
@@ -25,4 +25,4 @@ ht-degree: 100%
 * 從 4.5 版開始，ECID 不允許用戶傳送空 ID 至 `setCustomerIDs` 方法。
 * 修正選擇加入功能設為 `doesOptInApply=false` 和 `isIabContext=true` 時發生的問題。
 
-如需查看所有產品每個月的版本注意事項，請參閱 [Experience Cloud 版本注意事項](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)。
+如需查看所有產品每個月的版本注意事項，請參閱 [Experience Cloud 版本注意事項](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hant)。
