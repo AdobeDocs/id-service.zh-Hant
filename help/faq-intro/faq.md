@@ -4,7 +4,7 @@ keywords: ID 服務
 title: ID 服務常見問題集
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '787'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 **ID 服務提供哪些功能？**
 
-請參閱[概述](../introduction/overview.md)。
+請參閱[總覽](../introduction/overview.md)。
 
 **為何 ID 服務未進行呼叫以擷取 Experience Cloud ID？**
 
@@ -42,7 +42,7 @@ ID 服務呼叫為非同步呼叫，且是向 [demdex.net 網域](https://experi
 
 否，此呼叫只會在頁面首次轉譯時執行，並在其後每 7 天執行一次。於此同時，不需要進行伺服器呼叫。ID 服務會在用戶端模式下運作，不需要進行伺服器呼叫以傳回 ID。
 
-請參閱[概述](../introduction/overview.md)。
+請參閱[總覽](../introduction/overview.md)。
 
 **使用 ID 服務時，哪些因素會導致頁面載入速度緩慢或影響用戶體驗？**
 
