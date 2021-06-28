@@ -1,10 +1,10 @@
 ---
-description: 呼叫這些 ID 服務函數可判斷 Experience Cloud Identity 服務、Analytics 或 Audience Manager ID 要求的逾時狀態。適用於 VisitorAPI.js 1.7.0 版或更新版本。
+description: 呼叫這些 ID 服務函數可判斷 Experience Cloud Identity Service、Analytics 或 Audience Manager ID 要求的逾時狀態。適用於 VisitorAPI.js 1.7.0 版或更新版本。
 keywords: ID 服務
 title: callTimeOut 方法
 exl-id: ff3a2c5e-a0a8-4257-b538-0e4ce454b4e8
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '125'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # callTimeOut 方法{#calltimeout-methods}
 
-呼叫這些 ID 服務函數可判斷 Experience Cloud Identity 服務、Analytics 或 Audience Manager ID 要求的逾時狀態。適用於 VisitorAPI.js 1.7.0 版或更新版本。
+呼叫這些 ID 服務函數可判斷 Experience Cloud Identity Service、Analytics 或 Audience Manager ID 要求的逾時狀態。適用於 VisitorAPI.js 1.7.0 版或更新版本。
 
 ## 逾時函數 {#section-e08228ef5f9b45c9a84139bbb763164a}
 
@@ -25,7 +25,7 @@ ht-degree: 100%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Experience Cloud Identity 服務 </p> </td> 
+   <td colname="col1"> <p>Experience Cloud Identity Service </p> </td> 
    <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.MCIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
