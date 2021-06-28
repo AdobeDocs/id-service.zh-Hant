@@ -1,10 +1,10 @@
 ---
 description: 關於搭配 Experience Cloud Identity Service 使用 Analytics 的功能、功用和問題之常見問題集。
-keywords: Experience Cloud Identity 服務
+keywords: Experience Cloud Identity Service
 title: Analytics 與 Identity Service 常見問題集
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '970'
 ht-degree: 100%
 
@@ -50,7 +50,7 @@ ht-degree: 100%
 
 **什麼是寬限期？應如何設定？**
 
-參閱 [ Identity Service 寬期限](../reference/analytics-reference/grace-period.md)並聯絡[客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)。
+參閱 [ Identity Service 寬期限](../reference/analytics-reference/grace-period.md)並聯絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)。
 
 **為什麼我需要移轉至即時資料蒐集 (RDC) 才能使用 Identity Service？**
 
@@ -89,5 +89,5 @@ RDC 可以提升全域效能，此外為了確保您的實作可針對未來採�
 
 >[!MORELIKETHIS]
 >
->* [客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)
 
