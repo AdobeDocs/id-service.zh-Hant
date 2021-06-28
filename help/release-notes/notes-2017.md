@@ -1,12 +1,12 @@
 ---
-description: 2017 年 Experience Cloud Identity 服務的功能發佈、更新或變更。
+description: 2017 年 Experience Cloud Identity Service 的功能發佈、更新或變更。
 keywords: ID 服務
 title: 2017 年版本注意事項
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '744'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 2017 年 Experience Cloud Identity Service 的功能發佈、更新或變更。
 
-這些變更也包含在 [Experience Cloud 版本注意事項](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)中。
+這些變更也包含在 [Experience Cloud 版本注意事項](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hant)中。
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **新增文件**
 
-[搭配不同的 Experience Cloud 解決方案和服務使用 DNS 預先擷取](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html)
+[搭配不同的 Experience Cloud 解決方案和服務使用 DNS 預先擷取](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html?lang=zh-Hant)
 
 ## 版本 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
