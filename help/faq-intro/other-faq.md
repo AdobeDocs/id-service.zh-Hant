@@ -4,7 +4,7 @@ keywords: ID 服務
 title: 其他 Experience Cloud 解決方案的常見問題集
 exl-id: d1164951-01c9-4375-981a-f87d8a280e4b
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '186'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ## Analytics 與 Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
-**在我實作 Experience Cloud Identity 服務後，用戶的瀏覽歷史記錄會從 [!DNL Adobe Analytics] 匯出到 [!DNL Audience Manager] 嗎?**
+**在我實作 Experience Cloud Identity Service 後，用戶的瀏覽歷史記錄會從 [!DNL Adobe Analytics] 匯出到 [!DNL Audience Manager] 嗎?**
 
 您有兩個選擇:
 
