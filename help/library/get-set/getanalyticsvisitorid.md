@@ -4,9 +4,9 @@ keywords: ID 服務
 title: getAnalyticsVisitorID
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '298'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 發生下列情況時，您會在查詢字串中看到 `aid` 參數:
 
 * 正確部署 [!DNL Experience Cloud] ID 服務。
-* 造訪網站的用戶已在 [s_vi Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679) 中儲存之前的 [!DNL Analytics] ID。
+* 造訪網站的用戶已在 [s_vi Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=zh-Hant#section-5d50a078de444d12b7d927d68ff3b679) 中儲存之前的 [!DNL Analytics] ID。
 
 **案例 2**
 
@@ -51,5 +51,5 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!MORELIKETHIS]
 >
->* [Analytics Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html)
+>* [Analytics Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html?lang=zh-Hant)
 
