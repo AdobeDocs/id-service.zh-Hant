@@ -3,18 +3,18 @@ description: 較舊的實作會使用 Dynamic Tag Management (DTM) 來設定及�
 keywords: ID 服務
 title: 透過 Dynamic Tag Management 來實作
 exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '1999'
-ht-degree: 100%
+source-git-commit: 0dde49ca194e4a86ea7957629eec79d0b75a1e81
+workflow-type: tm+mt
+source-wordcount: '2008'
+ht-degree: 99%
 
 ---
 
-# 透過 Dynamic Tag Management 來實作{#implementation-with-dynamic-tag-management}
+# 透過 Dynamic Tag Management 來實作 {#implementation-with-dynamic-tag-management}
 
 較舊的實作會使用 Dynamic Tag Management (DTM) 來設定及部署 Experience Cloud ID 服務，並將 Experience Cloud Identity Service 與其他 Experience Cloud 解決方案整合。
 
-## 透過 Dynamic Tag Management 來實作{#topic-6f4ed5d96977406ca991e50f3fbd5b01}
+## 透過 Dynamic Tag Management 來實作 {#topic-6f4ed5d96977406ca991e50f3fbd5b01}
 
 較舊的實作會使用 Dynamic Tag Management (DTM) 來設定及部署 Experience Cloud ID 服務，並將 Experience Cloud Identity Service 與其他 Experience Cloud 解決方案整合。
 
@@ -74,7 +74,7 @@ ID 服務的運作方式是向 [!DNL Adobe] 資料收集伺服器要求和接收
 
 **必要條件**
 
-* 啟用您的 [!DNL Experience Cloud] 解決方案並確認您擁有管理員權限。請參閱[啟用核心服務的解決方案](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=zh-Hant)。
+* 啟用您的 [!DNL Experience Cloud] 解決方案並確認您擁有管理員權限。請參閱[啟用核心服務的解決方案](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html)。
 
 * 在 DTM 中建立 Web 屬性。請參閱 DTM 的[建立 Web 屬性](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html?lang=zh-Hant)文件。
 
@@ -105,7 +105,7 @@ mcvid-dtm-implement.xml
 mcvid-dtm-settings.xml
 -->
 
-## 如何找到這些設定？{#section-c5b2d1c928944ae2b8565c1b182fe575}
+## 如何找到這些設定？ {#section-c5b2d1c928944ae2b8565c1b182fe575}
 
 您在 Dynamic Tag Management (DTM) 中新增並儲存 ID 服務做為工具後，就能使用這些設定。您也可按一下 DTM Web 屬性之[!UICONTROL 已安裝的工具]區段中的齒輪圖示，以存取這些設定。
 
@@ -139,7 +139,7 @@ mcvid-dtm-settings.xml
 
 如果您不知道追蹤伺服器 URL，請查看 `s_code.js` 或 `AppMeasurement.js` 檔案。請利用 `s.trackingServer` 變數設定 URL。
 
-請參閱 [ trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=zh-Hant) 和[正確填入 trackingServer 和 trackingServerSecure 變數](https://helpx.adobe.com/tw/analytics/kb/determining-data-center.html#)。
+請參閱 [ trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=zh-Hant) 和[正確填入 trackingServer 和 trackingServerSecure 變數](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
 
 **追蹤伺服器安全**
 
@@ -147,7 +147,7 @@ mcvid-dtm-settings.xml
 
 如果您不知道追蹤伺服器 URL，請查看 `s_code.js` 或 `AppMeasurement.js` 檔案。請利用 `s.trackingServerSecure` 變數設定 URL。
 
-請參閱 [ trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=zh-Hant) 和[正確填入 trackingServer 和 trackingServerSecure 變數](https://helpx.adobe.com/tw/analytics/kb/determining-data-center.html#)。
+請參閱 [ trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) 和[正確填入 trackingServer 和 trackingServerSecure 變數](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
 
 **Experience Cloud 伺服器**
 
@@ -171,7 +171,7 @@ mcvid-dtm-settings.xml
 >
 >在此設定 `cookieDomain` 變數。若多部分的頂層網域在 URL 的最後 2 個部分有其中之一包含 2 個以上的字元，則需要此變數。請參閱上述連結中的「設定變數」文件。
 
-## 客戶設定{#section-238d1272c1504d148fe38fb0ae5d71c2}
+## 客戶設定 {#section-238d1272c1504d148fe38fb0ae5d71c2}
 
 可讓您新增整合代碼或已驗證狀態的其他欄位。
 
@@ -179,7 +179,7 @@ mcvid-dtm-settings.xml
 
 **整合代碼**
 
-整合代碼是客戶提供的唯一 ID。整合代碼應包含您在 [!DNL Audience Manager] 中用來[建立資料來源](hhttps://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source)的值。
+整合代碼是客戶提供的唯一 ID。整合代碼應包含您在 [!DNL Audience Manager] 中用來[建立資料來源](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source)的值。
 
 **值**
 
@@ -211,11 +211,11 @@ mcvid-test-verify.xml
 
 [Adobe 偵錯工具](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=zh-Hant)和 [Charles HTTP Proxy](https://www.charlesproxy.com/) 可協助您判斷 ID 服務是否已設定為正確地搭配 Analytics 運作。本節中的資訊以 Adobe 偵錯工具和 Charles 所傳回的結果為基礎。不過，您當然可以使用最適合您的任何工具或偵錯工具。
 
-## 使用 Adobe 偵錯工具進行測試{#section-861365abc24b498e925b3837ea81d469}
+## 使用 Adobe 偵錯工具進行測試 {#section-861365abc24b498e925b3837ea81d469}
 
 如果您在 [!DNL Experience Cloud ID] 偵錯工具回應中看到 [!DNL Adobe] (MID)，代表您的服務整合已正確設定。請參閱 [Cookie 與 Experience Cloud Identity Service](../introduction/cookies.md)，以了解有關 MID 的資訊。
 
-若要使用 [!DNL Adobe][ 偵錯工具驗證 ID 服務的狀態](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=zh-Hant)：
+若要使用 [!DNL Adobe][ 偵錯工具驗證 ID 服務的狀態](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html)：
 
 1. 清除您的瀏覽器 Cookie，或開啟匿名瀏覽工作階段。
 1. 載入包含 ID 服務程式碼的測試頁面。
@@ -281,5 +281,5 @@ mid=20265673158980419722735089753036633573
 
 >[!MORELIKETHIS]
 >
->* [Web 屬性](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html?lang=zh-Hant)
+>* [Web 屬性](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html)
 
