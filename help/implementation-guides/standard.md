@@ -4,9 +4,9 @@ keywords: ID 服務
 title: 透過 Dynamic Tag Management 來實作
 exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
 source-git-commit: 0dde49ca194e4a86ea7957629eec79d0b75a1e81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2008'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->目前 [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hant) 是慣用且建議的實作工具，因為其具備 DTM 缺乏的功能，可協助簡化複雜的標籤管理工作，並將程式碼放置作業自動化。請參閱[透過 Launch 實作](../implementation-guides/ecid-implement-with-launch.md)。
+>目前 [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hant) 是慣用且建議的實作工具，因為其具備 DTM 缺乏的功能，可協助簡化複雜的標籤管理工作，並將程式碼放置作業自動化。請參閱[使用 Launch 實作](../implementation-guides/ecid-implement-with-launch.md)。
 
 ## Dynamic Tag Management 和 ID 服務 {#section-4a4c4fac5d0a4cbbaff8e1833f73657c}
 
@@ -74,7 +74,7 @@ ID 服務的運作方式是向 [!DNL Adobe] 資料收集伺服器要求和接收
 
 **必要條件**
 
-* 啟用您的 [!DNL Experience Cloud] 解決方案並確認您擁有管理員權限。請參閱[啟用核心服務的解決方案](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html)。
+* 啟用您的 [!DNL Experience Cloud] 解決方案並確認您擁有管理員權限。請參閱[啟用核心服務的解決方案](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=zh-Hant)。
 
 * 在 DTM 中建立 Web 屬性。請參閱 DTM 的[建立 Web 屬性](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html?lang=zh-Hant)文件。
 
@@ -139,7 +139,7 @@ mcvid-dtm-settings.xml
 
 如果您不知道追蹤伺服器 URL，請查看 `s_code.js` 或 `AppMeasurement.js` 檔案。請利用 `s.trackingServer` 變數設定 URL。
 
-請參閱 [ trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=zh-Hant) 和[正確填入 trackingServer 和 trackingServerSecure 變數](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
+請參閱 [ trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=zh-Hant) 和[正確填入 trackingServer 和 trackingServerSecure 變數](https://helpx.adobe.com/tw/analytics/kb/determining-data-center.html#)。
 
 **追蹤伺服器安全**
 
@@ -147,7 +147,7 @@ mcvid-dtm-settings.xml
 
 如果您不知道追蹤伺服器 URL，請查看 `s_code.js` 或 `AppMeasurement.js` 檔案。請利用 `s.trackingServerSecure` 變數設定 URL。
 
-請參閱 [ trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) 和[正確填入 trackingServer 和 trackingServerSecure 變數](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)。
+請參閱 [ trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=zh-Hant) 和[正確填入 trackingServer 和 trackingServerSecure 變數](https://helpx.adobe.com/tw/analytics/kb/determining-data-center.html#)。
 
 **Experience Cloud 伺服器**
 
@@ -179,7 +179,7 @@ mcvid-dtm-settings.xml
 
 **整合代碼**
 
-整合代碼是客戶提供的唯一 ID。整合代碼應包含您在 [!DNL Audience Manager] 中用來[建立資料來源](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source)的值。
+整合代碼是客戶提供的唯一 ID。整合代碼應包含您在 [!DNL Audience Manager] 中用來[建立資料來源](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html?lang=zh-Hant#create-data-source)的值。
 
 **值**
 
@@ -215,7 +215,7 @@ mcvid-test-verify.xml
 
 如果您在 [!DNL Experience Cloud ID] 偵錯工具回應中看到 [!DNL Adobe] (MID)，代表您的服務整合已正確設定。請參閱 [Cookie 與 Experience Cloud Identity Service](../introduction/cookies.md)，以了解有關 MID 的資訊。
 
-若要使用 [!DNL Adobe][ 偵錯工具驗證 ID 服務的狀態](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html)：
+若要使用 [!DNL Adobe][ 偵錯工具驗證 ID 服務的狀態](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=zh-Hant)：
 
 1. 清除您的瀏覽器 Cookie，或開啟匿名瀏覽工作階段。
 1. 載入包含 ID 服務程式碼的測試頁面。
@@ -257,7 +257,7 @@ mid=20265673158980419722735089753036633573
 
 ## 了解 Charles 的結果 {#section-c10c3dc0bb9945cbaffcf6fec7082fab}
 
-請參閱本節以了解當您使用 Charles 監控 HTTP 呼叫時，應至何處查看哪些項目。
+請參閱本節以了解當您使用 Charles 監視 HTTP 呼叫時，應至何處查看哪些項目。
 
 ### Charles 中的成功 ID 服務要求
 
@@ -281,5 +281,5 @@ mid=20265673158980419722735089753036633573
 
 >[!MORELIKETHIS]
 >
->* [Web 屬性](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html)
+>* [Web 屬性](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html?lang=zh-Hant)
 
