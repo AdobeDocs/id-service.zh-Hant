@@ -4,7 +4,7 @@ keywords: ID 服務
 title: Experience Cloud Identity Service 的需求
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '731'
 ht-degree: 100%
 
@@ -79,9 +79,9 @@ ht-degree: 100%
 
 ## Analytics 需求：地區資料收集 (RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-所有追蹤伺服器均已轉換為 RDC，因此不需要變更 Analytics 追蹤伺服器。[更多資訊...](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=en)
+所有追蹤伺服器均已轉換為 RDC，因此不需要變更 Analytics 追蹤伺服器。 [更多資訊...](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=zh-Hant)
 
-## 程式程式庫和版本需求 {#section-ad7542a4317d430fa79fc6b095beb84d}
+## 程式碼資料庫和版本需求 {#section-ad7542a4317d430fa79fc6b095beb84d}
 
 下節列出使用 [!DNL Experience Cloud] ID 服務所需的最低程式碼版本。
 
