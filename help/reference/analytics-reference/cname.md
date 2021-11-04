@@ -4,16 +4,16 @@ keywords: 操作順序；ID 服務
 title: CNAME 實施概觀
 exl-id: f95dda3c-7bb2-4c7d-a25a-a4d20b58fe27
 source-git-commit: 61f9f1888430ff0fdbb90a8cf6561bf23d204a45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '266'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 # CNAME 實施概觀{#cname-implementation-overview}
 
-CNAME 實施可讓您自訂 Adobe 使用的收集網域，以符合您自己的網域。這些網域也稱為第一方收集網域。 這些實作可讓Adobe使用JavaScript在伺服器端設定第一方Cookie，而非在用戶端。 過去，伺服器端第一方 Cookie 不受 Apple 智慧追蹤預防 (ITP) 原則所限制。但是，在 2020 年 11 月，[!DNL Apple] 已更新其原則，因此相關限制也適用於透過 CNAME 設定的 Cookie。目前，透過CNAME在伺服器端設定的Cookie，以及透過Javascript在用戶端設定的Cookie，在ITP下都限制為七天或24小時到期。 如需 ITP 原則的詳細資訊，請參閱這篇關於[追蹤預防](https://webkit.org/tracking-prevention/#intelligent-tracking-prevention-itp)的 [!DNL Apple] 文件。
+CNAME 實施可讓您自訂 Adobe 使用的集合網域，以符合您自己的網域。這些網域也稱為第一方集合網域。這些實施可讓 Adobe 在伺服器端上設定第一方 Cookie，而非使用 JavaScript 在用戶端上設定。過去，伺服器端第一方 Cookie 不受 Apple 智慧追蹤預防 (ITP) 原則所限制。但是，在 2020 年 11 月，[!DNL Apple] 已更新其原則，因此相關限制也適用於透過 CNAME 設定的 Cookie。目前，透過 CNAME 在伺服器端設定的 Cookie 和透過 JavaScript 在用戶端設定的 Cookie，依據 ITP 原則都限制為 7 天或 24 小時到期。如需 ITP 原則的詳細資訊，請參閱這篇關於[追蹤預防](https://webkit.org/tracking-prevention/#intelligent-tracking-prevention-itp)的 [!DNL Apple] 文件。
 
-雖然CNAME實作在Cookie存留期方面並未提供任何好處，但可能會有其他好處。 這些優點包括廣告封鎖程式和不太常見的瀏覽器無法將資料傳送至分類為追蹤的網域。 在這些情況下，使用CNAME可防止使用這些工具的使用者中斷資料收集作業。
+雖然 CNAME 實施無法在 Cookie 生命週期方面提供任何優勢，但它還是有一些其他的優點。這些優點包括廣告攔截程式和不太常見的瀏覽器，防止將資料傳送到遭其歸類為追蹤程式的網域。在這些情況下，使用 CNAME 可防止這些工具使用者的資料彙集中斷問題。
 
-此外，CNAME實作可讓您指定 **[!UICONTROL 選擇自訂RDC類型]** 可控制使用者點擊最初路由的位置。 大部分的客戶不使用自訂RDC類型。
+此外，CNAME 實施可讓您指定&#x200B;**[!UICONTROL 選擇自訂 RDC 類型]**，這控制了最初路由用戶點選的位置。大多數客戶不使用自訂 RDC 類型。
