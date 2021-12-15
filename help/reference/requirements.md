@@ -3,10 +3,10 @@ description: 請參閱本節，確定您使用的解決方案、服務及程式�
 keywords: ID 服務
 title: Experience Cloud Identity Service 的需求
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
-workflow-type: ht
-source-wordcount: '731'
-ht-degree: 100%
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '649'
+ht-degree: 98%
 
 ---
 
@@ -18,33 +18,13 @@ ht-degree: 100%
 
 成功且受支援的實作符合 (或超過) 程式碼需求，並遵循 [!DNL Adobe] 說明中的指示。不受支援的實作會產生無法預料的結果，並阻礙客戶服務和我們的工程團隊協助處理或解決您的 ID 服務相關問題。
 
-<table id="table_2216C44AA66248DCAA13BF64BDF2D88A"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 實作類型 </th> 
-   <th colname="col2" class="entry"> 說明 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <a href="../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445" format="dita" scope="local"> 標準實作</a> </p> </td> 
-   <td colname="col2"> <p>對於使用 Dynamic Tag Management (DTM) 的標準實作，您必須: </p> 
-    <ul id="ul_59CDE179566844B494F3068FF6333809"> 
-     <li id="li_CCCB6AFC08EE405F94C42216D3CE50AC"> 將內嵌標題程式碼放置在頁首的 <span class="codeph">&lt;head&gt;</span> 區段中。 </li> 
-     <li id="li_13962F2CB1764091A84863BE499675A2">將內嵌頁尾程式碼放置在結束 <span class="codeph">&lt;/body&gt;</span> 標籤中。 </li> 
-    </ul> <p>如果發生以下情形，標準實作將不受支援: </p> 
-    <ul id="ul_3B62559317ED4C7AA548C3B8DBA281F7"> 
-     <li id="li_1F16C6D412944197BEA56BC24730782C"> 將其中一個 DTM 內嵌程式碼放置在標記和/或頁面代碼中的其他位置。 </li> 
-     <li id="li_05615C01F3A947BBBD41046E68377224"> 使用非同步方法、呼叫/回呼方法或包裝函式附加、新增或載入 DTM 程式碼。 </li> 
-     <li id="li_B2137DFF627B473FA876580449026D2B">在相同頁面上包含多個內嵌程式碼例項。 </li> 
-    </ul> <p>另請參閱<a href="https://experienceleague.adobe.com/docs/dtm/using/client-side/deployment.html?lang=zh-Hant" format="https" scope="external">內嵌程式碼和托管選項</a>。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> 非標準實作 </a> </p> </td> 
-   <td colname="col2"> <p>對於非標準或手動實作，您必須依照本指南所述的程序來設定 ID 服務。如同上方的 DTM 指引，如果程式碼放置和載入錯誤，會建立不受支援的實作。 </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+### 標準實作
+
+請參閱 [Experience Platform標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant) 標準實作。
+
+### 非標準實作
+
+對於非標準或手動實作，您必須依照本指南所述的程序來設定 ID 服務。如同上方的 DTM 指引，如果程式碼放置和載入錯誤，會建立不受支援的實作。
 
 ## Experience Cloud 需求：組織 ID {#section-a02f537129a64ffbb690d5738d360c26}
 

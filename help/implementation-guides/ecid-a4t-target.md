@@ -3,9 +3,9 @@ description: 這些指示適用於擁有混合式伺服器端及用戶端 Target
 keywords: ID 服務
 title: 搭配 A4T 以及伺服器端的 Target 實作使用 ID 服務
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '829'
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '820'
 ht-degree: 100%
 
 ---
@@ -164,8 +164,6 @@ Response.send("
 您已進行的設定應該如下所示：
 
 ![](assets/server_side_dtm.png)
-
-也請參閱 [DTM 適用的 Experience Cloud Identity Service 設定](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)。
 
 **不透過 DTM 取得伺服器狀態**
 

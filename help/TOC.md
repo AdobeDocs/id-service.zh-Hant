@@ -5,11 +5,10 @@ user-guide-title: Experience Cloud Identity Service 說明
 breadcrumb-title: Identity Service 指南
 user-guide-description: ID 服務提供永續性的通用 ID，可識別 Experience Cloud 所有解決方案中的訪客。這可取代 Analytics、Audience Manager、Target 等服務及其他 Experience Cloud 解決方案或功能的 ID 產生碼。
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: 01d50f9def8916b45fac846de235363836ba0429
-workflow-type: ht
-source-wordcount: '397'
-ht-degree: 100%
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 98%
 
 ---
 
@@ -18,7 +17,7 @@ ht-degree: 100%
 
 + [ID 服務說明](home.md)
 + 概述 {#intro}
-   + [概述](introduction/overview.md)
+   + [總覽](introduction/overview.md)
    + [關於 ID 服務](introduction/about-id-service.md)
    + [Cookie 與 ID 服務](introduction/cookies.md)
    + [ ID 服務如何要求與設定 ID](introduction/id-request.md)
@@ -26,8 +25,7 @@ ht-degree: 100%
 + 實作 {#implementation}
    + [實作方法](implementation-guides/implementation-methods.md)
    + [實作指南](implementation-guides/implementation-guides.md)
-   + [使用 Experience Platform Launch 實作](implementation-guides/ecid-implement-with-launch.md)
-   + [使用 DTM 實作](implementation-guides/standard.md)
+   + [使用Experience Platform標籤實作](implementation-guides/ecid-implement-with-launch.md)
    + [實作 Analytics](implementation-guides/setup-analytics.md)
    + [實作 Target](implementation-guides/setup-target.md)
    + [實作 Analytics 與 Audience Manager](implementation-guides/setup-aam-analytics.md)
@@ -37,19 +35,19 @@ ht-degree: 100%
    + [直接整合的使用案例](implementation-guides/direct-integration-examples.md)
    + [測試及驗證 ID 服務](implementation-guides/test-verify.md)
    + 選擇加入服務 {#opt-in-service}
-      + [選擇加入服務概述](implementation-guides/opt-in-service/optin-overview.md)
+      + [選擇加入服務總覽](implementation-guides/opt-in-service/optin-overview.md)
       + [設定選擇加入服務](implementation-guides/opt-in-service/getting-started.md)
       + [驗證選擇加入服務](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
       + [使用 Experience Platform Launch 設定選擇加入](implementation-guides/opt-in-service/launch.md)
       + [使用 DTM 設定選擇加入](implementation-guides/opt-in-service/optin-dtm.md)
-      + [根據使用者同意控制 Experience Cloud 活動](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
+      + [根據用戶同意控制 Experience Cloud 活動](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
       + [選擇加入使用案例](implementation-guides/opt-in-service/use-cases.md)
       + [選擇加入參考資料](implementation-guides/opt-in-service/api.md)
-      + [搭配 IAB 架構使用選擇加入服務](implementation-guides/opt-in-service/iab.md)
+      + [搭配 IAB 架構使用「選擇加入」服務](implementation-guides/opt-in-service/iab.md)
 + ID 服務 API {#id-service-api}
    + [ID 服務 API 概述](library/library.md)
    + 設定 {#configurations}
-      + [設定概述](library/function-vars/function-vars.md)
+      + [設定總覽](library/function-vars/function-vars.md)
       + [audienceManagerServer 及 audienceManagerServerSecure](library/function-vars/subdomain-config.md)
       + [cookieDomain](library/function-vars/cookiedomain.md)
       + [cookieLifetime](library/function-vars/cookielifetime.md)
@@ -86,7 +84,7 @@ ht-degree: 100%
 + 參考 {#reference}
    + [參考概述](reference/reference.md)
    + Analytics 參考 {#analytics-reference}
-      + [Analytics 參考概述](reference/analytics-reference/analytics-reference.md)
+      + [Analytics 參考總覽](reference/analytics-reference/analytics-reference.md)
       + [CNAME 實施概觀](reference/analytics-reference/cname.md)
       + [設定 Analytics 和 Experience Cloud ID](reference/analytics-reference/analytics-ids.md)
       + [Analytics ID 的作業順序](reference/analytics-reference/analytics-order-of-operations.md)
@@ -102,7 +100,7 @@ ht-degree: 100%
    + [客戶 ID 和驗證狀態](reference/authenticated-state.md)
    + [Safari ITP 領域的 ECID 程式庫方法](reference/ecid-library-methods.md)
    + [識別不重複訪客](reference/unique-vis-method.md)
-   + [從 AMCV Cookie 或 ID 服務取得地區和使用者 ID](reference/regions.md)
+   + [從 AMCV Cookie 或 ID 服務取得地區和用戶 ID](reference/regions.md)
    + [ID 服務規定](reference/requirements.md)
    + [影片心率和 ID 服務](reference/heartbeat.md)
    + [Data Workbench 與 ID 服務](reference/dwb.md)
@@ -113,9 +111,9 @@ ht-degree: 100%
    + [Analytics 與 ID 服務常見問題集](faq-intro/analytics-faq.md)
    + [其他 Experience Cloud 解決方案的常見問題集](faq-intro/other-faq.md)
 + ID 服務發行說明 {#release-notes}
-   + [2020 年發行說明](release-notes/release-notes.md)
-   + [2019 年發行說明](release-notes/notes-2019.md)
-   + [2018 年發行說明](release-notes/notes-2018.md)
-   + [2017 年發行說明](release-notes/notes-2017.md)
-   + [2016 年發行說明](release-notes/notes-2016.md)
-   + [2015 年發行說明](release-notes/notes-2015.md)
+   + [2020 年版本注意事項](release-notes/release-notes.md)
+   + [2019 年版本注意事項](release-notes/notes-2019.md)
+   + [2018 年版本注意事項](release-notes/notes-2018.md)
+   + [2017 年版本注意事項](release-notes/notes-2017.md)
+   + [2016 年版本注意事項](release-notes/notes-2016.md)
+   + [2015 年版本注意事項](release-notes/notes-2015.md)

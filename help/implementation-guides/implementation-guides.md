@@ -5,9 +5,9 @@ solution: Experience Cloud
 title: 實作指南
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '190'
+source-git-commit: 8b8615b65dd3ea0427ba585a6707f059148d05e2
+workflow-type: tm+mt
+source-wordcount: '185'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,6 @@ ht-degree: 100%
 
 * [實作方法](implementation-methods.md)
 * [使用 Experience Platform Launch 實作](ecid-implement-with-launch.md)
-* [透過 Dynamic Tag Management 來實作](standard.md)
 * [實作適用於 Analytics 的 Experience Cloud Identity Service](setup-analytics.md)
 * [實作適用於 Target 的 Experience Cloud Identity Service](setup-target.md)
 * [實作適用於 Analytics 和 Audience Manager 的 Experience Cloud Identity Service](setup-aam-analytics.md)

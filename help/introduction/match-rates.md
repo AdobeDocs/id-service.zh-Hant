@@ -3,9 +3,9 @@ description: 概述 Experience Cloud Identity Service (包括 Adobe Media Optimi
 keywords: ID 服務
 title: 了解 ID 同步和匹配率
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '805'
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '785'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ ID 同步會比對 ID 服務所指派的 ID 與客戶指派給網站訪客的 ID
 
 **確保高匹配率**
 
-若想產生高匹配率，請務必正確設定 ID 服務 (請參閱[標準實作指南](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445))。正確的實作能夠確保高匹配率，因為可讓 ID 服務設定其運作所需的 Cookie，並將 ID 與已啟用的資料合作夥伴進行同步。不過，網際網路連線、從行動裝置收集資料或無線網路速度緩慢等因素，都可能影響到 ID 服務收集、同步及比對 ID 的效能。這些用戶端變數不在 ID 服務或 [!DNL Adobe] 的控制範圍之內。
+正確的實作能夠確保高匹配率，因為可讓 ID 服務設定其運作所需的 Cookie，並將 ID 與已啟用的資料合作夥伴進行同步。不過，網際網路連線、從行動裝置收集資料或無線網路速度緩慢等因素，都可能影響到 ID 服務收集、同步及比對 ID 的效能。這些用戶端變數不在 ID 服務或 [!DNL Adobe] 的控制範圍之內。
 
 ## 描述的 ID 同步程序 {#section-a541a85cbbc74f5682824b1a2ee2a657}
 
@@ -67,7 +67,7 @@ ID 同步是在 Destination Publishing iFrame 中引發的 URL。如以下通用
 * 第三方 [!DNL Experience Cloud] Cookie ID 和第三方資料提供者與鎖定平台 ID。這包括資料提供者、需求及/或供應方平台、廣告網路、交換等服務和平台。
 * 第一方 [!DNL Experience Cloud] Cookie ID 和跨裝置合作夥伴 ID。
 
-## ID 與 Adobe Advertising Cloud 同步{#section-642c885ea65d45ffb761f78838735016}
+## ID 與 Adobe Advertising Cloud 同步 {#section-642c885ea65d45ffb761f78838735016}
 
 [!DNL Adobe Advertising Cloud] (先前稱為 [!DNL Adobe Media Optimizer]) 是 iFrame 型 ID 同步程序的例外情況。由於 [!DNL Advertising Cloud] 是值得信賴的網域，ID 同步會從上層頁面進行，而非 [!UICONTROL Destination Publishing iFrame]。同步期間，ID 服務會在 [!DNL Advertising Cloud] 呼叫 `cm.eversttech.net`，這是 [!DNL Advertising Cloud] 在 Adobe 收購前所使用的舊版網域名稱。將資料傳送至 [!DNL Advertising Cloud] 有助於改善匹配率，而且這是使用 2.0 版 (或更新版本) 的 ID 服務之客戶的專屬自動功能。另請參閱 [Advertising Cloud Cookie](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-advertising-cloud.html?lang=zh-Hant)。
 
