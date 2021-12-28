@@ -4,9 +4,9 @@ keywords: ID 服務
 title: Experience Cloud Identity Service 的需求
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '649'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 ### 標準實作
 
-請參閱 [Experience Platform標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant) 標準實作。
+如需標準實作，請參閱 [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)。
 
 ### 非標準實作
 
