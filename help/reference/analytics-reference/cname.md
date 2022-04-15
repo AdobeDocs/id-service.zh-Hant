@@ -4,9 +4,9 @@ keywords: 操作順序；ID 服務
 title: CNAME 實施概觀
 exl-id: f95dda3c-7bb2-4c7d-a25a-a4d20b58fe27
 source-git-commit: d2586fc722be25df1b82caaf2cc6de6a2a6c31bf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -16,4 +16,4 @@ CNAME 實施可讓您自訂 Adobe 使用的集合網域，以符合您自己的�
 
 雖然 CNAME 實施無法在 Cookie 生命週期方面提供任何優勢，但它還是有一些其他的優點。這些優點包括廣告攔截程式和不太常見的瀏覽器，防止將資料傳送到遭其歸類為追蹤程式的網域。在這些情況下，使用 CNAME 可防止這些工具使用者的資料彙集中斷問題。
 
-此外， CNAME實現允許您 [選擇自定義RDC類型](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=zh-Hant) 它控制用戶命中的初始路由位置。 大多數客戶不使用自訂 RDC 類型。
+此外，CNAME 實施可讓[選擇自訂 RDC 類型](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=zh-Hant)，這可控制最初路由用戶點選的位置。大多數客戶不使用自訂 RDC 類型。
