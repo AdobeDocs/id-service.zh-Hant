@@ -3,9 +3,9 @@ description: 2017 年 Experience Cloud Identity Service 的功能發佈、更新
 keywords: ID 服務
 title: 2017 年版本注意事項
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '744'
+source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
+workflow-type: tm+mt
+source-wordcount: '700'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 100%
 >
 >2017 年 3 月、4 月、5 月和 10 月均沒有針對客戶提供的版本注意事項或程式碼變更。針對上述月份，ID 服務程式碼均維持 v2.1 版不變。
 
-## 版本 2.5 {#section-27b441509124493f80984ed09bd9e88b}
+## 2.5 版 {#section-27b441509124493f80984ed09bd9e88b}
 
 2017 年 9 月
 
@@ -52,30 +52,30 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 * 現在，當事件呼叫回應中的地區 ID 變更時，ID 服務會重新引發 ID 同步。
 * 新增了新的文件[內容安全性原則及 Experience Cloud Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)，說明如何將 ID 服務使用的 Adobe 網域呼叫加入白名單。
 
-## 版本 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
+<!-- ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
-2017 年 8 月
+August, 2017
 
 <table id="table_D9623D34F4444B038F7835750932C8AA"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> 功能 </th> 
-   <th colname="col2" class="entry"> 說明 </th> 
+   <th colname="col1" class="entry"> Feature </th> 
+   <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> isCoopSafe</span> </p> </td> 
-   <td colname="col2"> <p>選用的布林值設定，可決定 ID 服務是否要將資料傳送至 Adobe Experience Cloud Device Co-op。請參閱 <a href="../library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local">isCoopSafe</a>。 </p> </td> 
+   <td colname="col2"> <p>An optional, Boolean configuration that determines if the ID service sends (or does not send) data to the Adobe Experience Cloud Device Co-op. See <a href="../library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**修訂後的文件**
+**Revised Documentation**
 
-已更新並修訂[常見問題集](/help/faq-intro/faq-intro.md)，針對不同的 [!DNL Experience Cloud] 解決方案納入個別的常見問題集。
+Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate FAQs for different [!DNL Experience Cloud] solutions. -->
 
-## 版本 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
+## 2.3 版 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
 2017 年 7 月
 
@@ -103,7 +103,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 * 已修正 VisitorAPI.js v2.2 中致使 ID 服務與 Target 無法在 Internet Explorer 中搭配運作的錯誤。
 * 已修訂程式碼，以利改善 ID 服務將資料傳送至 Destination Publishing iFrame 的程序。這有助於降低 CPU 使用量。
 
-## 版本 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
+## 2.2 版 {#section-b7dee2495c29470e9b3a3132ec1fd951}
 
 發行日期：2017 年 6 月
 
@@ -122,7 +122,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  </tbody> 
 </table>
 
-## 5 月的文件更新{#section-1d36b91bb7a140ce8a145251ffac9f2f}
+## 5 月的文件更新 {#section-1d36b91bb7a140ce8a145251ffac9f2f}
 
 <table id="table_CD031A716A694E8FA89695C9B614BC91"> 
  <thead> 
@@ -160,7 +160,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  </tbody> 
 </table>
 
-## 版本 2.1 {#section-5e666dc47c2f4f92999e92697d75799e}
+## 2.1 版 {#section-5e666dc47c2f4f92999e92697d75799e}
 
 發行日期：2017 年 2 月
 
@@ -193,7 +193,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 [搭配不同的 Experience Cloud 解決方案和服務使用 DNS 預先擷取](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html?lang=zh-Hant)
 
-## 版本 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
+## 2.0 版 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
 2017 年 1 月
 
@@ -207,6 +207,6 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 * 已修正在訪客已啟用廣告封鎖程式，且該封鎖程式設定為排除 demdex.net 網域時，ID 服務無法立即失效的錯誤。這是相當罕見且不尋常的錯誤，因為大多數的廣告封鎖工具並不會封鎖 demdex.net 網域。(MCID-233)
 * 已修正 ID 服務程式碼與客戶網站上的自訂指令碼之間的互動所造成的錯誤。此問題導致 Internet Explorer 9 無法載入網頁。(MCID-206)
 
-## 過去幾年{#section-aaabe2b7b0f04641b24acffc11cd7d2e}
+## 過去幾年 {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
 舊版的 ID 服務版本注意事項。

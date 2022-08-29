@@ -5,9 +5,9 @@ user-guide-title: Experience Cloud Identity Service 說明
 breadcrumb-title: Identity Service 指南
 user-guide-description: ID 服務提供永續性的通用 ID，可識別 Experience Cloud 所有解決方案中的訪客。這可取代 Analytics、Audience Manager、Target 等服務及其他 Experience Cloud 解決方案或功能的 ID 產生碼。
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: 121fde9981e85da6cc56eec35fc931d6040356d7
-workflow-type: ht
-source-wordcount: '399'
+source-git-commit: 953a4932e581a7a0019bec354201be4bc39f8b6b
+workflow-type: tm+mt
+source-wordcount: '398'
 ht-degree: 100%
 
 ---
@@ -57,7 +57,6 @@ ht-degree: 100%
       + [idSyncAttachIframeOnWindowLoad](library/function-vars/idsyncattachiframeonwindowload.md)
       + [idSyncContainerID](library/function-vars/idsyncontainerid.md)
       + [idSyncSSLUseAkamai](library/function-vars/idsyncssluseakamai.md)
-      + [isCoopSafe](library/function-vars/coopsafe.md)
       + [loadTimeout](library/function-vars/loadtimeout.md)
       + [overwriteCrossDomainMCIDAndAID](library/function-vars/overwrite-visitor-id.md)
       + [resetBeforeVersion](library/function-vars/resetbeforeversion.md)
