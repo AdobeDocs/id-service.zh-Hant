@@ -3,9 +3,9 @@ description: Experience Cloud Identity Service 在 Adobe Experience Cloud 中的
 title: Experience Cloud ID 服務總覽
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
 source-git-commit: 953a4932e581a7a0019bec354201be4bc39f8b6b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 97%
 
 * 建立可用來連結設定檔和身分識別的公用鍵或 ID。
 * 可唯一識別多個解決方案中的裝置。
-* 在客戶域中設定第一方cookie以確保在同一域上跟蹤。 如需詳細資訊，請參閱 [Cookie 和 Experience Cloud Identity Service](./cookies.md) 的相關文件。
+* 設定客戶網域中的第一方 Cookie，以確保在相同的網域上追蹤。如需詳細資訊，請參閱 [Cookie 和 Experience Cloud Identity Service](./cookies.md) 的相關文件。
 * 從 Experience Cloud 客戶和合作夥伴接收別名和 ID 對應。
 * 在 Experience Cloud 中管理 ID 同步。
 * 在各廣告技術生態系統中，支援不同第三方的 ID 同步。
