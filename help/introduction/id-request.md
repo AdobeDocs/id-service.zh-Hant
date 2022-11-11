@@ -3,9 +3,9 @@ description: ID 請求與回應程序的總覽。這些範例涵蓋在個別網�
 keywords: ID 服務
 title: Experience Cloud Identity Service 如何請求與設定 ID
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '762'
+source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+workflow-type: tm+mt
+source-wordcount: '746'
 ht-degree: 100%
 
 ---
@@ -17,8 +17,6 @@ ID 請求與回應程序的總覽。這些範例涵蓋在個別網站、跨不�
 >[!NOTE]
 >
 >如果您不熟悉 Experience Cloud Identity Service 建立訪客 ID 的方式，請先花點時間檢閱 [Experience Cloud](../introduction/cookies.md)。
-
-**秘訣：**&#x200B;另請參閱我們的 [ID 服務跨網域追蹤影片](https://helpx.adobe.com/tw/marketing-cloud-core/kb/MCID/CrossDomain.html)。
 
 ## 請求 Experience Cloud ID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 

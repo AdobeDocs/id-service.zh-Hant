@@ -1,11 +1,11 @@
 ---
-description: 連結同意管理平台 (CMP) 和「選擇加入」適用於 IAB 的透明與同意架構 (TCF) Audience Manager 外掛程式。
+description: 連結同意管理平台(CMP)和「選擇加入」適用於IAB透明與同意架構(TCF)的Audience Manager外掛程式。
 title: 搭配 IAB 架構使用「選擇加入」服務
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '468'
-ht-degree: 100%
+source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 89%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 若要使「選擇加入」能與 IAB TCF 相互整合，您需完成下列操作：
 
-1. 實作支援 IAB 且[註冊為 IAB 廠商](https://vendorlist.consensu.org/vendorlist.json)的 CMP，或開發會實作 IAB TCF 規格的內部 CMP，並註冊為具有 IAB TCF 的 CMP。
+1. 實作支援IAB且註冊為IAB廠商的CMP，或開發會實作IAB TCF規格的內部CMP，並註冊為具有IAB TCF的CMP。
 1. 先定義/載入 `__tcfapi` 再載入 Adobe JS。
 
 如需詳細資訊，請參閱[互動廣告局 (Interactive Advertising Bureau) 文件](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/TCF-Implementation-Guidelines.md)。

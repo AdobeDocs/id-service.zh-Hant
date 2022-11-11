@@ -3,8 +3,8 @@ description: 在某些實作中，訪客 ID 會從 JavaScript 傳至伺服器，
 keywords: ID 服務
 title: 混用 JavaScript 的伺服器端實作
 exl-id: 1986ee11-2021-4f34-bb56-6eaa87b6dd6d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ ID 服務 API 提供 [getMarketingCloudVisitorID](../../library/get-set/getmcvid
 
 在 `<marketingCloudVisitorID>` 元素中加入 Experience Cloud 訪客 ID。
 
-請參閱[支援的 XML 標籤](https://www.adobe.io)。
+請參閱[支援的 XML 標籤](https://developer.adobe.com/)。
 
 ## Java 適用的 AppMeasurement {#section-d664b94934924d048300d9c2b6560085}
 
