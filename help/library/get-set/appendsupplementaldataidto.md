@@ -3,10 +3,10 @@ description: 此 helper 方法可讓您將 Supplemental Data ID (SDID) 當做查
 keywords: ID 服務
 title: appendSupplementalDataIDTo
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '344'
-ht-degree: 100%
+source-git-commit: 2500b6d7b392731009f9149d8821be9505ba4b76
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 96%
 
 ---
 
@@ -30,13 +30,14 @@ ht-degree: 100%
 **程式碼範例**
 
 ```js
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
-   ... 
-}); 
- 
+var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"); 
+
+//Get current supplemental data id
+var theCurrentSDID = visitor._supplementalDataIDCurrent ? visitor._supplementalDataIDCurrent : "";
+
 //Call helper method to append SDID to the Page B URL from Page A 
 var pageB = "www.domain.com/pageB"; 
-var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219");
+var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, theCurrentSDID));
 ```
 
 ## 範例輸出 {#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
@@ -44,7 +45,7 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219
 如下所示，URL 在呼叫接收頁面時，重新導向會包含訪客的 SDID、您的組織 ID 以及 UNIX 時間戳記。
 
 <ul class="simplelist"> 
- <li> <span class="codeph"> www.domain.com/pageB?adobe_mc_sdid=SDID=123|MCORGID=123456789@AdobeOrg|TS=1498569322 </span> </li> 
+ <li> <span class="codeph"> www.domain.com/pageB?adobe_mc_sdid=SDID=7996F0B028999505-13DA591039D6226|MCORGID=123456789@AdobeOrg|TS=1498569322 </span> </li> 
 </ul>
 
 ## 使用 sdidParamExpiry 變更 SDID 逾時 {#section-99946715cefa4acc95200b093db5297e}
@@ -68,5 +69,5 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
  
 //Call helper method to append SDID to the Page B URL from Page A 
 var pageB = "www.domain.com/pageB"; 
-var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219"); 
+var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, theCurrentSDID)); 
 ```
