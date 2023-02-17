@@ -3,10 +3,10 @@ description: 瀏覽器封鎖第三方 Cookie 時，此函數可讓您跨網域�
 keywords: ID 服務
 title: appendVisitorIDsTo (跨網域追蹤)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
-workflow-type: ht
-source-wordcount: '355'
-ht-degree: 100%
+source-git-commit: 622f785384386e108f54b7e5381cc80f53b3ef8e
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 93%
 
 ---
 
@@ -38,6 +38,10 @@ ht-degree: 100%
 如需詳細資訊，請參閱程式碼範例。
 
 ## 附加訪客 ID 程式碼範例 {#section-62d55f7f986542b0b9238e483d50d7b0}
+
+>[!IMPORTANT]
+>
+>為了擷取透過appendVisitorsIDsTo傳入URL的值， [ovewriteCrossDomainMDCIDAndAID](../function-vars/overwrite-visitor-id.md) 變數必須設為true。
 
 以下範例可以幫助您開始使用 ` Visitor.appendVisitorIDsTo( *`url`*)`。如果妥善實作，您的 JavaScript 程式碼看起來可能類似於下列範例。
 
