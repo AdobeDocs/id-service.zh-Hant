@@ -3,10 +3,10 @@ description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie 及 D
 keywords: playstation;ID 服務
 title: Cookie 與 Experience Cloud Identity Service
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '932'
-ht-degree: 100%
+source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
+workflow-type: tm+mt
+source-wordcount: '955'
+ht-degree: 96%
 
 ---
 
@@ -113,7 +113,9 @@ AMCVS Cookie 設定於瀏覽器的第一方網域中。這表示此 Cookie 設�
  </tbody> 
 </table>
 
-如需相關資訊，請參閱[了解向 Demdex 網域進行的呼叫](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hant)。
+如需Demdex的相關資訊，請造訪 [Audience Manager設備儲存資訊披露](https://aam-iab-tcf-vendor.s3.amazonaws.com/aam_device_storage_disclosures.json).
+
+如需相關資訊，請參閱 [了解向Demdex網域進行的呼叫](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hant).
 
 ## 產生 Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -133,6 +135,6 @@ Experience Cloud ID (MID) 是依照組織 ID 和 demdex ID 利用數學公式計
 
 *注意：如需使用安全屬性設定 AMCV 和 AMCVS Cookie 的相關資訊，請參閱 [secureCookie](../library/function-vars/securecookie.md) 主題。*
 
-## 下一步 {#section-8db1727a63bc4ff68b495f270315d453}
+## 後續步驟 {#section-8db1727a63bc4ff68b495f270315d453}
 
 請參閱 [Experience Cloud Identity Service 如何要求與設定 ID...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)。
