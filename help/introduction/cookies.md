@@ -4,9 +4,9 @@ keywords: playstation;ID 服務
 title: Cookie 與 Experience Cloud Identity Service
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
 source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '955'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -113,9 +113,9 @@ AMCVS Cookie 設定於瀏覽器的第一方網域中。這表示此 Cookie 設�
  </tbody> 
 </table>
 
-如需Demdex的相關資訊，請造訪 [Audience Manager設備儲存資訊披露](https://aam-iab-tcf-vendor.s3.amazonaws.com/aam_device_storage_disclosures.json).
+如需有關 Demdex 披露事項的資訊，請瀏覽 [Audience Manager 裝置儲存披露事項](https://aam-iab-tcf-vendor.s3.amazonaws.com/aam_device_storage_disclosures.json)。
 
-如需相關資訊，請參閱 [了解向Demdex網域進行的呼叫](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hant).
+如需相關資訊，請閱讀[了解向 Demdex 網域進行的呼叫](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hant)一文。
 
 ## 產生 Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
