@@ -5,10 +5,10 @@ user-guide-title: Experience Cloud Identity Service 說明
 breadcrumb-title: Identity Service 指南
 user-guide-description: Adobe Experience Cloud Identity Service 提供永續性的通用 ID，可識別 Experience Cloud 所有解決方案的訪客。 它有助於取代 Experience Cloud 解決方案和服務的舊版 ID 產生程式碼。
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: f7c25f5ebd0690c56c081422949eb34f1f277ae1
+source-git-commit: dce2c0036f697507381d0763c2f6a9538155681c
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 100%
+source-wordcount: '397'
+ht-degree: 98%
 
 ---
 
@@ -110,7 +110,9 @@ ht-degree: 100%
    + [Analytics 與 ID 服務常見問題集](faq-intro/analytics-faq.md)
    + [其他 Experience Cloud 解決方案的常見問題集](faq-intro/other-faq.md)
 + ID 服務版本注意事項 {#release-notes}
-   + [2020 年版本注意事項](release-notes/release-notes.md)
+   + [2022年發行說明](release-notes/notes-2022.md)
+   + [2021年發行說明](release-notes/notes-2021.md)
+   + [2020 年版本注意事項](release-notes/notes-2020.md)
    + [2019 年版本注意事項](release-notes/notes-2019.md)
    + [2018 年版本注意事項](release-notes/notes-2018.md)
    + [2017 年版本注意事項](release-notes/notes-2017.md)
