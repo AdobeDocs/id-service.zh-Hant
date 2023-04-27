@@ -3,14 +3,14 @@ description: Experience Cloud ID Service (ECID) 支援 SHA-256 雜湊演算法�
 keywords: ID 服務
 title: setCustomerIDs 的 SHA256 雜湊支援
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '606'
+source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+workflow-type: tm+mt
+source-wordcount: '602'
 ht-degree: 100%
 
 ---
 
-# `setCustomerIDs` 的 SHA256 雜湊支援 {#hashing-support}
+# `setCustomerIDs` 的 SHA256 雜湊支援  {#hashing-support}
 
 Experience Cloud ID Service (ECID) 支援 SHA-256 雜湊演算法，可讓您傳入客戶 ID 或電子郵件地址，然後傳出雜湊 ID。這是選用的 JavaScript 方法，可將經雜湊處理的識別碼傳送至 Experience Cloud。在傳送客戶 ID 之前，您可以繼續使用自己的雜湊方法。有兩種方法可使用 setCustomerIDs 實作雜湊支援，如下節所述:
 
@@ -67,9 +67,9 @@ ts=1563299964843
 
 ## 在 Adobe Experience Platform Launch 中新增動作 {#add-action-launch}
 
-Experience Platform Launch 是新一代 Adobe 標籤管理功能。請在 [Launch 產品文件](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hant)中進一步了解 Platform Launch。
+Experience Platform Launch 是新一代 Adobe 標籤管理功能。請在 [Launch 產品文件](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)中進一步了解 Platform Launch。
 
-若要在 Launch 中新增動作，請閱讀 Adobe Launch 中的[規則文件](https://docs.adobe.com/help/zh-Hant/launch/using/reference/manage-resources/rules.html)，並查看下方的螢幕擷圖：
+若要在 Launch 中新增動作，請閱讀 Adobe Launch 中的[規則文件](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html)，並查看下方的螢幕擷圖：
 
 ![](/help/reference/assets/hashing-support.png)
 

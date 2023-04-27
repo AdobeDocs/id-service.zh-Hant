@@ -3,10 +3,10 @@ description: 瀏覽器封鎖第三方 Cookie 時，此函數可讓您跨網域�
 keywords: ID 服務
 title: appendVisitorIDsTo (跨網域追蹤)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: 70e0ff00be9037b475084a906405180107f2514c
+source-git-commit: c035f0af76f70322e4d79ed842502b26c3f155ac
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 96%
+source-wordcount: '367'
+ht-degree: 93%
 
 ---
 
@@ -41,7 +41,11 @@ ht-degree: 96%
 
 ## 附加訪客 ID 程式碼範例 {#section-62d55f7f986542b0b9238e483d50d7b0}
 
-下列范常式式碼可協助您開始使用 `appendVisitorIDsTo` 函式：
+以下範例程式碼可幫助您開始使用 `appendVisitorIDsTo` 函數：
+
+>[!TIP]
+>
+>此程式碼可放置在屬於Adobe Analytics擴充功能的自訂程式碼編輯器中，或放置在頂端 [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hant).
 
 ```js
 var adbeDomains = ["marketo.com", "figma.com", "workfront.com"];

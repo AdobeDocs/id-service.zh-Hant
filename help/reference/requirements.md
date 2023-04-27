@@ -3,9 +3,9 @@ description: 請參閱本節，確定您使用的解決方案、服務及程式�
 keywords: ID 服務
 title: Experience Cloud Identity Service 的需求
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: ht
-source-wordcount: '649'
+source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+workflow-type: tm+mt
+source-wordcount: '650'
 ht-degree: 100%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>不確定</b> </p> </td> 
-   <td colname="col2"> <p> 如果您不清楚公司的 <span class="keyword">Experience Cloud</span> 狀態，但同事可使用 Adobe ID 登入 <a href="https://experiencecloud.adobe.com" format="https" scope="external">marketing.adobe.com</a>，請詢問負責管理 Adobe 帳戶的人員。如果您可登入即表示已啟用，管理員就可檢視您的組織 ID。若要尋找組織 ID，請參閱 <a href="https://docs.adobe.com/help/zh-Hant/core-services/interface/experience-cloud.html" format="https" scope="external">Experience Cloud 管理</a>的「管理頁面」一節。 </p> </td> 
+   <td colname="col2"> <p> 如果您不清楚公司的 <span class="keyword">Experience Cloud</span> 狀態，但同事可使用 Adobe ID 登入 <a href="https://experiencecloud.adobe.com" format="https" scope="external">marketing.adobe.com</a>，請詢問負責管理 Adobe 帳戶的人員。如果您可登入即表示已啟用，管理員就可檢視您的組織 ID。若要尋找組織 ID，請參閱 <a href="https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html?lang=zh-Hant" format="https" scope="external">Experience Cloud 管理</a>的「管理頁面」一節。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>未啟用</b> </p> </td> 

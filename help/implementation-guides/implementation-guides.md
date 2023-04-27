@@ -5,8 +5,8 @@ solution: Experience Cloud
 title: 實作指南
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
-source-git-commit: 8b8615b65dd3ea0427ba585a6707f059148d05e2
-workflow-type: ht
+source-git-commit: 39eaffe8b166babb186ec9cd4c0da26b53b999ae
+workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## 標準實作
 
-標準實作會使用 [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hant) 協助您開始使用 ID 服務，並且整合 ID 服務與其他 Experience Cloud 解決方案。強烈建議您使用 Experience Platform Launch 來實作 ID 服務。
+標準實作會使用 [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) 協助您開始使用 ID 服務，並且整合 ID 服務與其他 Experience Cloud 解決方案。強烈建議您使用 Experience Platform Launch 來實作 ID 服務。
 
 ## 實作資源
 

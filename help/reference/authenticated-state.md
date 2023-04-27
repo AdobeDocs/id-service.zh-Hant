@@ -3,10 +3,10 @@ description: 除了 Experience Cloud 訪客 ID 之外，您還可以將其他客
 keywords: ID 服務
 title: 客戶 ID 和驗證狀態
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '628'
-ht-degree: 100%
+source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+workflow-type: tm+mt
+source-wordcount: '629'
+ht-degree: 98%
 
 ---
 
@@ -217,4 +217,4 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## 通知 Analytics 與 Audience Manager 客戶 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-如果您要將宣告的 ID 傳遞至 [!DNL Audience Manager]，`userid` 物件必須符合與資料來源相關的整合程式碼。如需詳細資訊，請參閱[設定合併規則程式碼](https://docs.adobe.com/help/zh-Hant/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code)文件中的[!UICONTROL 訪客 ID 服務]章節。
+如果您要將宣告的 ID 傳遞至 [!DNL Audience Manager]，`userid` 物件必須符合與資料來源相關的整合程式碼。如需詳細資訊，請參閱[設定合併規則程式碼](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=en#configure-merge-rule-code)文件中的[!UICONTROL 訪客 ID 服務]章節。

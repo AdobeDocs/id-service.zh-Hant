@@ -2,10 +2,10 @@
 description: 將選擇加入服務實作為 Experience Cloud 解決方案所用的單一參考點 (在選擇加入中以類別形式參照)，以判斷是否要在訪客裝置上建立 Cookie。
 title: 設定選擇加入服務
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '908'
-ht-degree: 100%
+source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 選擇加入服務可讓您指定訪客是否可以選擇一次加入所有 Adobe 解決方案，或依序提出解決方案並要求各方案的權限。客戶完成並記錄核准程序後，所有的 Adobe 解決方案便能擷取 CMP 訪客核准，並以相關的同意呼叫回應。
 
-## 必要條件 {#section-c39246f45e514c8ea9fdbe6f7ffa3ad0}
+## 先決條件 {#section-c39246f45e514c8ea9fdbe6f7ffa3ad0}
 
 1. ECID 4.0 版。
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 1. 貴公司的隱私要求將取決於您如何選擇遵守 GDPR。請注意貴公司的隱私團隊可以在同意前使用哪些程式庫。
 
-如果使用 [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hant)，請利用[選擇加入擴充功能](../../implementation-guides/opt-in-service/launch.md)來設定選擇加入服務。
+若使用 [Adobe Experience Platform中的標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)，請善用 [選擇加入擴充功能](../../implementation-guides/opt-in-service/launch.md) 來設定選擇加入服務。
 
 ## 選擇加入服務類別 {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 

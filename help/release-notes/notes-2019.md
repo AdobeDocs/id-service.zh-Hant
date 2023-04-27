@@ -3,8 +3,8 @@ description: Experience Cloud Identity Service 的功能發佈、更新或變更
 keywords: ID 服務
 title: 2019 年版本注意事項
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+source-git-commit: 503683b66b6022b7c1fecbfb197fe17e05ae9c64
+workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 * ECID 啟動擴充功能 preOptInApprovals 輸入字串剖析問題。
 * 使用 trackingServer 時效能下降。
 
-## 版本 4.4 {#version-4point4}
+## 4.4 版 {#version-4point4}
 
 **新功能**
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 * 我們更新了選擇加入程式庫，新增 `optIn.off` 以取消訂閱事件。
 * 我們修正了與 setTimeout 函數相關的錯誤，其中 `setTimeout` 在某些客戶網站上違反了內容安全性原則 (CSP)。
 
-## 版本 4.3 {#version-4point3}
+## 4.3 版 {#version-4point3}
 
 **支援 ITP 2.1**。如果追蹤伺服器設定在第一方 CNAME 中，則會使用 ECID 值放置新的 Cookie (s_ecid)。ECID 程式庫會參照值，將 ID 保留超過 7 天。請參閱 [Safari ITP 領域的 ECID 程式庫方法](/help/reference/ecid-library-methods.md)。
 
@@ -57,11 +57,11 @@ ht-degree: 100%
 * 修正 DTM 中選擇加入 doesOptInApply 組態的錯誤。
 * ECID 選擇退出會停用 ID 同步功能。
 
-## 版本 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
+## 4.0 版 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**選擇加入服務**。選擇加入是 Experience Cloud ID (ECID) 的擴充功能，可讓您控制 Experience Cloud 程式庫是否可以在網頁上建立訪客的 Cookie，以及使用哪個程式庫來執行。您可以使用 [Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hant)，讓 Analytics、Target、Audience Manager 及其他或所有指定 Experience Cloud 解決方案選擇加入您的同意管理系統，簡化 Experience Cloud 解決方案收集訪客是否同意選擇加入的程序。
+**選擇加入服務**。選擇加入是 Experience Cloud ID (ECID) 的擴充功能，可讓您控制 Experience Cloud 程式庫是否可以在網頁上建立訪客的 Cookie，以及使用哪個程式庫來執行。您可以使用 [Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)，讓 Analytics、Target、Audience Manager 及其他或所有指定 Experience Cloud 解決方案選擇加入您的同意管理系統，簡化 Experience Cloud 解決方案收集訪客是否同意選擇加入的程序。
 
-## 版本 3.4 {#section-046ce29b43af47cc849d4091098f5927}
+## 3.4 版 {#section-046ce29b43af47cc849d4091098f5927}
 
 | 項目 | 說明 |
 |---|---|
