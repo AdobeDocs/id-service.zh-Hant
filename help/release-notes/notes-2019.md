@@ -1,18 +1,18 @@
 ---
 description: Experience Cloud Identity Service 的功能發佈、更新或變更。
 keywords: ID 服務
-title: 2019 年版本注意事項
+title: 2019 年發行說明
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
 source-git-commit: 503683b66b6022b7c1fecbfb197fe17e05ae9c64
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '415'
 ht-degree: 100%
 
 ---
 
-# Experience Cloud 版本注意事項 - 2019 {#release-notes}
+# Experience Cloud 發行說明 - 2019 {#release-notes}
 
-提供 Experience Cloud Identity Service 的功能發佈、更新或變更資訊。
+Experience Cloud Identity Service 的功能發佈、更新或變更。
 
 ## 4.4.1 版
 
