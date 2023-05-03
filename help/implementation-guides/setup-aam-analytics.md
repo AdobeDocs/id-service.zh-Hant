@@ -4,9 +4,9 @@ keywords: ID 服務
 title: 實作適用於 Analytics 和 Audience Manager 的 Experience Cloud Identity Service
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
 source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1232'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 99%
 >* 先在開發環境中設定與測試此程式碼，然後才在生產中實作。
 
 
-## 步驟1：規劃伺服器端轉送 {#section-880797cc992d4755b29cada7b831f1fc}
+## 步驟 1：規劃伺服器端轉送 {#section-880797cc992d4755b29cada7b831f1fc}
 
 除了此處所述步驟以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客戶也應移轉至伺服器端轉送。伺服器端轉送功能可讓您移除 DIL (Audience Manager 的資料收集程式碼)，並將其取代為[對象管理模組](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=zh-Hant)。如需詳細資訊，請參閱[伺服器端轉送文件](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html)。
 
