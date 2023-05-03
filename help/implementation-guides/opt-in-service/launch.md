@@ -3,9 +3,9 @@ description: 使用 Adobe Experience Platform Launch 為選擇加入功能簡化
 title: 使用 Launch 設定選擇加入
 exl-id: 9e9d1e2b-196f-474c-b872-de4329dcb017
 source-git-commit: 5858933e9d51ec97b1ba7a8fbe483f1919954543
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '171'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,6 +23,6 @@ ht-degree: 92%
 
 若要設定此擴充功能，請開啟 *擴充功能* 索引標籤，並將滑鼠游標停留在此擴充功能上方。然後按一下 *設定*。
 
-如需其他參考資訊，請參閱 [Adobe Experience Cloud Identity Service擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html?lang=zh-Hant).
+如需其他參考資訊，請參閱 [Adobe Experience Cloud Identity Service 擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html?lang=zh-Hant)。
 
 ![](assets/optin-launch.jpg)
