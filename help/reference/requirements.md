@@ -4,7 +4,7 @@ keywords: ID 服務
 title: Experience Cloud Identity Service 的需求
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '650'
 ht-degree: 100%
 
