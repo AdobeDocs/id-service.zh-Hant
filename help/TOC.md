@@ -5,9 +5,9 @@ breadcrumb-title: Identity Service 指南
 user-guide-description: Adobe Experience Cloud Identity Service 提供永續性的通用 ID，可識別 Experience Cloud 所有解決方案的訪客。 它有助於取代 Experience Cloud 解決方案和服務的舊版 ID 產生程式碼。
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: 6ef86bdb7bc10e24dbd3efe2481cb2e6e6c270fb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '397'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -108,13 +108,13 @@ ht-degree: 98%
    + [ID 服務常見問題集](faq-intro/faq.md)
    + [Analytics 與 ID 服務常見問題集](faq-intro/analytics-faq.md)
    + [其他 Experience Cloud 解決方案的常見問題集](faq-intro/other-faq.md)
-+ ID 服務版本注意事項 {#release-notes}
-   + [2022年發行說明](release-notes/notes-2022.md)
-   + [2021年發行說明](release-notes/notes-2021.md)
-   + [2020 年版本注意事項](release-notes/notes-2020.md)
-   + [2019 年版本注意事項](release-notes/notes-2019.md)
-   + [2018 年版本注意事項](release-notes/notes-2018.md)
-   + [2017 年版本注意事項](release-notes/notes-2017.md)
-   + [2016 年版本注意事項](release-notes/notes-2016.md)
-   + [2015 年版本注意事項](release-notes/notes-2015.md)
++ ID 服務發行說明 {#release-notes}
+   + [2022 年發行說明](release-notes/notes-2022.md)
+   + [2021 年發行說明](release-notes/notes-2021.md)
+   + [2020 年發行說明](release-notes/notes-2020.md)
+   + [2019 年發行說明](release-notes/notes-2019.md)
+   + [2018 年發行說明](release-notes/notes-2018.md)
+   + [2017 年發行說明](release-notes/notes-2017.md)
+   + [2016 年發行說明](release-notes/notes-2016.md)
+   + [2015 年發行說明](release-notes/notes-2015.md)
 + [從目錄隱藏的 Analytics 測試](analytics-test-file-hidetoc.md)
