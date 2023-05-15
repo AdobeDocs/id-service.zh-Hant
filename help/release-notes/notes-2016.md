@@ -2,9 +2,11 @@
 description: 2016 年 Experience Cloud Identity Service 的功能發佈、更新或變更。
 keywords: ID 服務
 title: 2016 年版本注意事項
+feature-set: Experience Cloud Services
+feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
+workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 100%
 
@@ -16,7 +18,7 @@ ht-degree: 100%
 
 這些變更也包含在 [Experience Cloud 版本注意事項](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hant)中。
 
-## 版本 1.10 {#section-7d719b3213344a46858835042e0214ed}
+## 1.10 版 {#section-7d719b3213344a46858835042e0214ed}
 
 2016 年 11 月
 
@@ -40,7 +42,7 @@ ht-degree: 100%
 * 修正若出現 `disableThirdPartyCalls:true` 時封鎖 AppMeasurement 追蹤呼叫的錯誤。
 * 修正會讓 ID 服務無法將 Experience Cloud ID (MID) 傳遞至其他網域的錯誤。
 
-## 版本 1.9.0 {#section-04e1b4d4b10d40468f2116b8119998e7}
+## 1.9.0 版 {#section-04e1b4d4b10d40468f2116b8119998e7}
 
 2016 年 10 月
 
@@ -54,7 +56,7 @@ ht-degree: 100%
 
 **新增：**[從 AMCV Cookie 取得地區與用戶 ID](../reference/regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
 
-## 版本 1.8.0 {#section-69f2eb5b246b4c7aafe116b7a2a5448a}
+## 1.8.0 版 {#section-69f2eb5b246b4c7aafe116b7a2a5448a}
 
 2016 年 9 月
 
@@ -82,7 +84,7 @@ ht-degree: 100%
 
 在同一頁上使用 [!DNL Audience Manager] DIL 程式碼和 visitorAPI.js 程式碼的客戶，應將 DIL 變數設為 `secureDataCollection= false`。請參閱 [secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html?lang=zh-Hant)。
 
-## 版本 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
+## 1.6.0 版 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
 2016 年 7 月
 
@@ -130,7 +132,7 @@ ht-degree: 100%
 * [Experience Cloud Identity Service 的需求](../reference/requirements.md)
 * [測試及驗證 Experience Cloud Identity Service](../implementation-guides/test-verify.md)
 
-## 版本 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
+## 1.5.7 版 {#section-735b4989a5744a42aeb2d97602dbda62}
 
 2016 年 6 月
 
@@ -175,7 +177,7 @@ ht-degree: 100%
 
 [實作適用於 Target 的 Experience Cloud Identity Service](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
 
-## 版本 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
+## 1.5.4 版 {#section-1a44ba147fb3440ea7dec551faee3528}
 
 2016 年 3 月
 
