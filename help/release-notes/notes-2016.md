@@ -6,7 +6,7 @@ feature-set: Experience Cloud Services
 feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
 source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
 ht-degree: 100%
 
@@ -159,7 +159,7 @@ ht-degree: 100%
 
 若無舊有的 Analytics 訪客 ID，訪客 API 即不會再藉由 Audience Manager 強制執行額外的重新同步呼叫。
 
-## 第 1.5.x 版 {#section-a62ae48275324058b57edf66ee5a579f}
+## 1.5.x 版 {#section-a62ae48275324058b57edf66ee5a579f}
 
 2016 年 5 月
 
@@ -169,7 +169,7 @@ ht-degree: 100%
 * [Data Workbench 與 Experience Cloud Identity Service](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
 * [測試及驗證 Experience Cloud Identity Service](../implementation-guides/test-verify.md)
 
-## 第 1.5.x 版 {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
+## 1.5.x 版 {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
 
 2016 年 4 月
 
