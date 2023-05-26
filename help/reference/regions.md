@@ -4,7 +4,7 @@ keywords: ID 服務
 title: 從 AMCV Cookie 或 ID 服務取得地區和用戶 ID
 exl-id: 986e761e-4bc7-4511-86b7-7d13a7761a2b
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 100%
 

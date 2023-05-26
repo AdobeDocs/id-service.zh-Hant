@@ -3,7 +3,7 @@ title: Google Chrome SameSite 標籤異動
 description: Adobe ECID (ID 服務) 程式庫文件。
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 100%
 

@@ -4,13 +4,13 @@ keywords: ID 服務
 title: Experience Cloud Identity Service 的 CORS 支援
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '616'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '615'
+ht-degree: 99%
 
 ---
 
-# Experience Cloud Identity Service 的 CORS 支援 {#cors-support-in-the-experience-cloud-id-service}
+# Experience Cloud Identity 服務的 CORS 支援 {#cors-support-in-the-experience-cloud-id-service}
 
 瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Cloud Identity Service 支援 CORS 標準，以允許這些用戶端的跨原始資源要求。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
 
@@ -45,7 +45,7 @@ CORS 提供安全、有效的方法在不同網域中要求資源。CORS 規格�
    <td colname="col1"> <p> <b>要求</b> </p> </td> 
    <td colname="col2"> <p>當金融公司頁面載入時，瀏覽器會向 <span class="codeph">dpm.demdex.net</span> 提出要求。這是對 ID 服務所使用的資料收集伺服器 (DCS) 網域的呼叫。這個跨網域要求包含此標頭： </p> <p> 
      <ul class="simplelist"> 
-      <li> <span class="codeph"> Origin:https://www.finance-website.com</span> </li> 
+      <li> <span class="codeph"> 來源:https://www.finance-website.com</span> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 

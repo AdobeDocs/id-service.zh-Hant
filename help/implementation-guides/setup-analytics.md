@@ -4,13 +4,13 @@ keywords: ID 服務
 title: 實作適用於 Analytics 的 Experience Cloud Identity Service
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1025'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
-# 實作適用於 Analytics 的 Experience Cloud Identity Service{#implement-the-experience-cloud-id-service-for-analytics}
+# 實作適用於 Analytics 的 Experience Cloud Identity Service {#implement-the-experience-cloud-id-service-for-analytics}
 
 這些指示適用於想使用 Experience Cloud Identity Service 但不想使用 Dynamic Tag Management (DTM) 的 Analytics 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 
@@ -42,7 +42,7 @@ ht-degree: 100%
 
 1. 解壓縮程式碼檔案，並開啟 `VisitorAPI.js` 檔案。
 
-## 步驟 2：將 Visitor.getInstance 函數新增至 ID 服務程式碼 {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
+## 步驟2.將Visitor.getInstance函式新增至ID服務程式碼 {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
 
 >[!IMPORTANT]
 >

@@ -4,7 +4,7 @@ keywords: ID 服務
 title: Experience Cloud Identity Service 如何請求與設定 ID
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
 source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 100%
 

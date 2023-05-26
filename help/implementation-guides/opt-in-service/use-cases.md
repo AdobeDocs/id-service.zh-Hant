@@ -3,7 +3,7 @@ description: 管理選擇加入服務的使用案例與解決方案範例。
 title: 選擇加入使用案例
 exl-id: 4c57685f-40b7-4af4-8527-3c2795586f0f
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 100%
 

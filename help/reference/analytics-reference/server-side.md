@@ -4,7 +4,7 @@ keywords: ID 服務
 title: 混用 JavaScript 的伺服器端實作
 exl-id: 1986ee11-2021-4f34-bb56-6eaa87b6dd6d
 source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 100%
 

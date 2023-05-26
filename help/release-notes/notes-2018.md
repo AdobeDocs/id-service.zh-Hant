@@ -4,7 +4,7 @@ keywords: ID 服務
 title: 2018 年版本注意事項
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 100%
 
@@ -56,7 +56,7 @@ ht-degree: 100%
  </tbody> 
 </table>
 
-## 版本 3.1.2 {#section-3cba186f74fe4f2186a9ca2e5e0a2514}
+## 3.1.2 版 {#section-3cba186f74fe4f2186a9ca2e5e0a2514}
 
 <table id="table_9FA4E20C996746A2A4219C9A0F759AD1"> 
  <thead> 
@@ -73,7 +73,7 @@ ht-degree: 100%
  </tbody> 
 </table>
 
-## 版本 3.1.0 {#section-a20c8278bf9643018965330415091e53}
+## 3.1.0 版 {#section-a20c8278bf9643018965330415091e53}
 
 >[!NOTE]
 >
@@ -94,7 +94,7 @@ ht-degree: 100%
  </tbody> 
 </table>
 
-## 版本 3.0 {#section-5fcaef66e8b343238abeb10048dc5747}
+## 3.0 版 {#section-5fcaef66e8b343238abeb10048dc5747}
 
 <table id="table_7E9224D6CC924A2DB5119171C9DC5443"> 
  <thead> 

@@ -4,7 +4,7 @@ keywords: ID 服務
 title: 設定 Analytics 和 Experience Cloud ID
 exl-id: 7399ea16-d13e-452c-b8d9-8d0699566aa2
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ Experience Cloud Identity Service 會取代舊有的 Analytics 訪客 ID 方法�
 
 當 AppMeasurement 載入時，將會從 ID 服務請求 Experience Cloud 和 Analytics ID 值，並透過每個伺服器呼叫將其傳送至資料收集。由於 ID 服務會判斷訪客 ID，並直接將其傳至 AppMeasurement，因此您必須每個頁面上納入 ID 服務，並在 AppMeasurement JavaScript 檔案之前加以實作。
 
-## Analytics ID 程序的變更{#section-79bb86ae63f546419bb1a7ef5e710462}
+## Analytics ID 程序的變更 {#section-79bb86ae63f546419bb1a7ef5e710462}
 
 移轉至 [!DNL Experience Cloud] ID 服務時的主要變更，是現在使用 JavaScript 設定 ID Cookie，而不是使用從資料收集網站伺服器傳回的 HTTP 標題。為了讓您了解這項變更，以下幾節將說明如何使用這兩種方法來設定 Cookie。
 
@@ -38,7 +38,7 @@ JavaScript 可讀取和寫入在第一方網域 (現行網站的網域) 中設�
 
 <!---However, there are a few situations where setting the cookie in the HTTP header is beneficial for cross-domain tracking, which is described in [Data Collection CNAMEs and Cross-Domain Tracking](../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d).-->
 
-## 自訂 Analytics ID{#section-b6a7bd19e9ff432390010062450808f6}
+## 自訂 Analytics ID {#section-b6a7bd19e9ff432390010062450808f6}
 
 在 Analytics 中，使用 `s.visitorID` 來設定客戶 ID 是辨識用戶的方法。不過使用 ID 服務匯出或匯入的 Analytics 資料整合，在訪客的識別方式為 `s.visitorID` 時無法正常運作。
 

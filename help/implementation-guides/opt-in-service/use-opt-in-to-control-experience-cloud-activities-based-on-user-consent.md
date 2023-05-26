@@ -3,7 +3,7 @@ title: 根據用戶同意使用選擇加入以控制 Experience Cloud 活動
 description: Adobe 選擇加入物件是 Adobe Experience Platform Identity Service 的擴充功能，旨在協助您根據一般用戶同意，控制哪些 Experience Cloud 解決方案能否在網頁上建立 Cookie 及啟動指標。
 exl-id: ac44e628-01ca-401c-864b-30fed0450e5f
 source-git-commit: 0dca594c090095a01dfa2d02a98dfeba7ca02dca
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
 

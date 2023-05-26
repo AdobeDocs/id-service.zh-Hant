@@ -4,7 +4,7 @@ keywords: ID 服務
 title: ID 服務常見問題集
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 100%
 

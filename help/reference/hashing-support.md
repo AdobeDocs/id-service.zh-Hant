@@ -4,7 +4,7 @@ keywords: ID 服務
 title: setCustomerIDs 的 SHA256 雜湊支援
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 100%
 

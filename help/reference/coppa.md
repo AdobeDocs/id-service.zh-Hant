@@ -4,13 +4,13 @@ keywords: ID 服務
 title: Experience Cloud Identity Service 的 COPPA 支援
 exl-id: c7579f90-3011-4e26-b908-08907bf12ba2
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 100%
 
 ---
 
-# Experience Cloud Identity Service 的 COPPA 支援 {#coppa-support-in-the-experience-cloud-id-service}
+# Experience Cloud Identity 服務的 COPPA 支援 {#coppa-support-in-the-experience-cloud-id-service}
 
 兒童網路隱私保護法 (COPPA) 禁止在未經父母明確同意下，透過網路收集 13 歲以下兒童的個人資訊。客戶擔憂 COPPA 會在 Experience Cloud Identity Service 程式碼中新增選用變數，使該程式碼無法在第三方瀏覽器網域中設定 Cookie。
 

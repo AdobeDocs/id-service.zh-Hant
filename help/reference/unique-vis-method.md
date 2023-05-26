@@ -3,8 +3,8 @@ title: 識別不重複訪客
 description: Adobe ECID (ID 服務) 說明文件
 exl-id: 379dbf0a-814d-4348-9ac4-d0e8fc13b9dc
 source-git-commit: c65816530ae2269b216f60b9b0450077e5aaac2f
-workflow-type: ht
-source-wordcount: '253'
+workflow-type: tm+mt
+source-wordcount: '250'
 ht-degree: 100%
 
 ---
@@ -22,6 +22,6 @@ ht-degree: 100%
 |  5  |  [HTTP 行動訂閱者標題](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=zh-Hant)  |  2  | 系統將裝置識別為行動裝置。  |
 |  6  | [IP 位址、用戶代理程式、閘道 IP 位址](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=zh-Hant) |  1  | 訪客的瀏覽器不接受 Cookie。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 如需了解報告不重複訪客的方式，請參閱 [Analytics 中的不重複訪客](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=zh-Hant)。

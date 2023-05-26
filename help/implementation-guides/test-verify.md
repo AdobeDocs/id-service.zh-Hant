@@ -4,7 +4,7 @@ keywords: ID 服務
 title: 測試及驗證 Experience Cloud Identity Service
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 [Adobe 偵錯工具](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=zh-Hant)和 [Charles HTTP Proxy](https://www.charlesproxy.com/) 可協助您判斷 ID 服務是否已設定為正確地搭配 Analytics 運作。本節中的資訊以 Adobe 偵錯工具和 Charles 所傳回的結果為基礎。不過，您當然可以使用最適合您的任何工具或偵錯工具。
 
-## 使用 Adobe 偵錯工具進行測試{#section-861365abc24b498e925b3837ea81d469}
+## 使用 Adobe 偵錯工具進行測試 {#section-861365abc24b498e925b3837ea81d469}
 
 如果您在 [!DNL Experience Cloud ID] 偵錯工具回應中看到 [!DNL Adobe] (MID)，代表您的服務整合已正確設定。請參閱 [Cookie 與 Experience Cloud Identity Service](../introduction/cookies.md)，以了解有關 MID 的資訊。
 
@@ -74,7 +74,7 @@ mid=20265673158980419722735089753036633573
 
 ## 了解 Charles 的結果 {#section-c10c3dc0bb9945cbaffcf6fec7082fab}
 
-請參閱本節以了解當您使用 Charles 監控 HTTP 呼叫時，應至何處查看哪些項目。
+請參閱本節以了解當您使用 Charles 監視 HTTP 呼叫時，應至何處查看哪些項目。
 
 **Charles 中的成功 ID 服務要求**
 
