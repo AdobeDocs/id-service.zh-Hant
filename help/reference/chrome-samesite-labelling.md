@@ -3,9 +3,9 @@ title: Google Chrome SameSite 標籤異動
 description: Adobe ECID (ID 服務) 程式庫文件。
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
 source-git-commit: ee4b7f8df5766372034da2a76e7acb81ba2a65f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1064'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ SameSite 屬性會告訴瀏覽器在第一方和第三方情境下觸發 Cookie 
 | ------ | ------------ |
 | `strict` | 唯有參考頁面和登陸頁面與 Cookie 所屬的網域相同時，系統才會傳送採用此設定的 Cookie。 |
 | `lax` | 唯有瀏覽器 URL 中顯示的網域與 Cookie 的網域相符時，系統才會傳送採用此設定的 Cookie。這是 Chrome 對 Cookie 的新預設值。 |
-| `none` | 具有此設定的Cookie可供外部或第三方存取，例如「跨網站」。 此次異動前，Cookie 的預設 SameSite 設定為 `none`，因此使用此設定的話，Cookie 的行為會與其傳統運作方式最為相似。不過，Google 現在要求所有採用此設定的 Cookie 都必須指定安全標幟，亦即 Cookie 只能應要求透過 HTTPS 建立及傳送。Google 會拒絕所有沒有安全標幟的跨網站 Cookie。 |
+| `none` | 採用此設定的 Cookie 可供外部或協力廠商存取，例如「跨網站」。此次異動前，Cookie 的預設 SameSite 設定為 `none`，因此使用此設定的話，Cookie 的行為會與其傳統運作方式最為相似。不過，Google 現在要求所有採用此設定的 Cookie 都必須指定安全標幟，亦即 Cookie 只能應要求透過 HTTPS 建立及傳送。Google 會拒絕所有沒有安全標幟的跨網站 Cookie。 |
 
 ## Adobe Experience Cloud 客戶須知
 
@@ -51,7 +51,7 @@ Adobe 產品已發佈伺服器端更新，可使用適當屬性來設定第三�
 
 **目的地和市集合作夥伴可能的 Cookie 比對減少 (僅限 Audience Manager)**
 
-雖然Adobe可控制其Cookie的更新，但Adobe無法強制合作夥伴進行必要的變更。 若 Audience Manager 客戶使用尚未完成這些更新的目的地或市集合作夥伴，Cookie 比對次數可能會因而減少。
+雖然 Adobe 可控制其 Cookie 的更新狀況，但無法強制合作夥伴執行必要的變更作業。若 Audience Manager 客戶使用尚未完成這些更新的目的地或市集合作夥伴，Cookie 比對次數可能會因而減少。
 
 **適合 Analytics 的第三方 Cookie (僅限 Analytics `s_vi` Cookie)**
 
