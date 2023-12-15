@@ -1,18 +1,18 @@
 ---
-description: 這些指示適用於想使用 Experience Cloud Identity Service 但不想使用 Dynamic Tag Management (DTM) 的 Analytics、Audience Manager 和 Target 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
+description: 這些指示適用於想使用Experience Cloud Identity服務但不想使用資料收集標籤的Analytics、Audience Manager和Target客戶。 不過，我們強烈建議您使用標籤來實作ID服務。 標籤可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 keywords: ID 服務
 title: 實作適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity Service
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
 workflow-type: tm+mt
-source-wordcount: '1499'
-ht-degree: 100%
+source-wordcount: '1450'
+ht-degree: 92%
 
 ---
 
 # 實作適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity Service {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
-這些指示適用於想使用 Experience Cloud Identity Service 但不想使用 Dynamic Tag Management (DTM) 的 Analytics、Audience Manager 和 Target 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
+這些指示適用於想使用Experience Cloud Identity服務但不想使用的Analytics、Audience Manager和Target客戶 [資料收集標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant). 不過，我們強烈建議您使用標籤來實作ID服務。 標籤可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 
 >[!IMPORTANT]
 >
@@ -20,7 +20,6 @@ ht-degree: 100%
 >
 >* 使用 s_code 的客戶無法完成此程序。請升級至 mbox 程式碼 v61 以完成此程序。
 >* 請&#x200B;*先*&#x200B;在開發環境中設定與測試此程式碼，然後才在生產環境中實作。
-
 
 ## 步驟 1：規劃伺服器端轉送 {#section-880797cc992d4755b29cada7b831f1fc}
 
@@ -49,7 +48,6 @@ ID 服務需要 `VisitorAPI.js` 程式碼程式庫。若要下載此程式碼程
 >
 >* 舊版 ID 服務 API 將此函數放置在不同的位置，且需要不同的語法。如果您要從 [1.4 版](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572)之前的版本移轉，請留意此處說明的新位置和語法。
 >* ALL CAPS 中的程式碼是實際值的預留位置。請將此文字取代為您的組織 ID、追蹤伺服器 URL 或其他指定值。
-
 
 **第 1 部分：複製下方的 Visitor.getInstance 函數**
 

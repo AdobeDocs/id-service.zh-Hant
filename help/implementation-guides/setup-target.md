@@ -1,26 +1,25 @@
 ---
-description: 這些指示適用於想使用 Experience Cloud Identity Service 但不想使用 Dynamic Tag Management (DTM) 的 Target 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
+description: 這些指示適用於想使用Experience CloudIdentity服務但不想使用資料收集標籤的Target客戶。 不過，我們強烈建議您使用標籤來實作ID服務。 標籤可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 keywords: ID 服務
 title: 實作適用於 Target 的 Experience Cloud Identity Service
 exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 100%
+source-wordcount: '398'
+ht-degree: 73%
 
 ---
 
 # 實作適用於 Target 的 Experience Cloud Identity Service{#implement-the-experience-cloud-id-service-for-target}
 
-這些指示適用於想使用 Experience Cloud Identity Service 但不想使用 Dynamic Tag Management (DTM) 的 Target 客戶。不過，我們強烈建議您使用 DTM 來實作 ID 服務。DTM 可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
+這些指示適用於想使用Experience CloudIdentity服務但不想使用的Target客戶 [資料收集標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant). 不過，我們強烈建議您使用標籤來實作ID服務。 標籤可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 
 >[!IMPORTANT]
 >
 >* [先閱讀需求](../reference/requirements.md)，再開始使用。
 >* 先在開發環境中設定與測試此程式碼，然後才在生產中實作。
 
-
-## 步驟 1：取得 ID 服務程式碼 {#section-b32ba0548aa546a79dd38be59832a53e}
+## 步驟1：取得ID服務程式碼 {#section-b32ba0548aa546a79dd38be59832a53e}
 
 [!UICONTROL ID 服務]需要 `VisitorAPI.js` 程式碼程式庫。連絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)以取得此程式碼。
 
