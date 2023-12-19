@@ -1,18 +1,18 @@
 ---
-description: 這些指示適用於想使用Experience Cloud Identity服務但不想使用資料收集標籤的Analytics和Audience Manager客戶。 不過，我們強烈建議您使用標籤來實作ID服務。 標籤可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
+description: 這些指示適用於想使用 Experience Cloud Identity 服務但不想使用資料收集標記的 Analytics 和 Audience Manager 客戶。不過，我們強烈建議您使用標記來實作 ID 服務。標記可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 keywords: ID 服務
 title: 實作適用於 Analytics 和 Audience Manager 的 Experience Cloud Identity Service
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
 source-git-commit: 26152f559150f5bd67d4802b8464446482f2e9a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1183'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # 實作適用於 Analytics 和 Audience Manager 的 Experience Cloud Identity Service{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-這些指示適用於想使用Experience Cloud Identity服務但不想使用的Analytics和Audience Manager客戶 [資料收集標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant). 不過，我們強烈建議您使用標籤來實作ID服務。 標籤可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
+這些指示適用於想使用 Experience Cloud Identity 服務但不想使用[資料收集標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)的 Analytics 和 Audience Manager 客戶。不過，我們強烈建議您使用標記來實作 ID 服務。標記可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 
 >[!IMPORTANT]
 >
