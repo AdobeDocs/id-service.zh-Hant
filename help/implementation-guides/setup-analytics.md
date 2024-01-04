@@ -1,18 +1,18 @@
 ---
-description: 這些指示適用於想使用Experience Cloud Identity服務但不想使用資料收集標籤的Analytics客戶。 不過，我們強烈建議您使用標籤來實作ID服務。 標籤可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
+description: 這些指示適用於想使用 Experience Cloud Identity 服務但不想使用資料收集標記的 Analytics 客戶。不過，我們強烈建議您使用標記來實作 ID 服務。標記可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 keywords: ID 服務
 title: 實作適用於 Analytics 的 Experience Cloud Identity Service
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
 source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1007'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # 實作適用於 Analytics 的 Experience Cloud Identity Service {#implement-the-experience-cloud-id-service-for-analytics}
 
-這些指示適用於想使用Experience CloudIdentity服務但不想使用的Analytics客戶 [資料收集標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant). 不過，我們強烈建議您使用標籤來實作ID服務。 標籤可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
+這些指示適用於想使用 Experience Cloud Identity 服務但不想使用[資料收集標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)的 Analytics 客戶。不過，我們強烈建議您使用標記來實作 ID 服務。標記可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 
 >[!IMPORTANT]
 >
@@ -41,7 +41,7 @@ ht-degree: 88%
 
 1. 解壓縮程式碼檔案，並開啟 `VisitorAPI.js` 檔案。
 
-## 步驟 2：將Visitor.getInstance函式新增至ID服務程式碼 {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
+## 步驟 2：將 Visitor.getInstance 函數新增至 ID 服務程式碼 {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
 
 >[!IMPORTANT]
 >
@@ -127,7 +127,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 若不清楚如何尋找您的追蹤伺服器，請參閱[常見問題集](../faq-intro/faq.md)和[正確填入 trackingServer 及 trackingServerSecure 變數](https://helpx.adobe.com/tw/analytics/kb/determining-data-center.html#)。
 
-## 步驟5：更新您的AppMeasurement.js或s_code.js檔案 {#section-b53113aea1bd4de896e0e4e9a7edee19}
+## 步驟 5：更新您的 AppMeasurement.js 或 s_code.js 檔案 {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
 將此函數新增至 `AppMeasurement.js` 或 `s_code.js` 檔案：
 
@@ -177,7 +177,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 請參閱[點按流資料欄參考](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=zh-Hant)。
 
-**點擊流 (Clickstream) 資料擷取**
+**點按資料流資料擷取**
 
 ## 步驟 8：測試並部署 ID 服務程式碼 {#section-e9c1764ac21a4ec5be1ff338c0e2e01b}
 
