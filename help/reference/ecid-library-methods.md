@@ -4,7 +4,7 @@ description: Adobe ECID (ID 服務) 程式庫的文件。
 exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '785'
 ht-degree: 100%
 
 ---
@@ -65,15 +65,15 @@ ITP 2.1 會使寫入用戶端 Cookie 的能力受到限制，導致向客戶提�
 
 * 訪客瀏覽至您的其他網域時，Visitor.appendVisitorIDsTo(url) 會傳回一個附加 ECID 作為查詢參數的 URL。
 
-   使用此 URL 可從原始網域重新導向至目的地網域。
+  使用此 URL 可從原始網域重新導向至目的地網域。
 
 * 目的地網域的 ID 服務程式碼會從 URL 提取 ECID，而非傳送要求向 Adobe 索取該訪客的 ID。
 
-   此要求包含第三方 Cookie ID，而該 ID 在此案件中無法使用。
+  此要求包含第三方 Cookie ID，而該 ID 在此案件中無法使用。
 
 * 目的地頁面上的 ID 服務程式碼會使用傳入的 ECID 追蹤訪客。
 
-   >[!NOTE]
-   >如果目的地頁面已有先前瀏覽行為的 ECID，則覆寫現有 Cookie 的決定會受到此 config overwriteCrossDomainMCIDAndAID 控制。如需此設定的詳細資訊，請參閱 [overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md)。
-   >
-   >如需深入了解此方法，請參閱 [appendVisitorIDsTo (跨網域追蹤)](/help/library/get-set/appendvisitorid.md) 參考頁面。
+  >[!NOTE]
+  >如果目的地頁面已有先前瀏覽行為的 ECID，則覆寫現有 Cookie 的決定會受到此 config overwriteCrossDomainMCIDAndAID 控制。如需此設定的詳細資訊，請參閱 [overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md)。
+  >
+  >如需深入了解此方法，請參閱 [appendVisitorIDsTo (跨網域追蹤)](/help/library/get-set/appendvisitorid.md) 參考頁面。

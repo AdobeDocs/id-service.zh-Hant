@@ -5,7 +5,7 @@ title: 客戶 ID 和驗證狀態
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '595'
 ht-degree: 100%
 
 ---
@@ -92,7 +92,6 @@ ht-degree: 100%
 >* 請僅用未經編碼的值當成 ID。
 >* 客戶 ID 和驗證狀態不會儲存在訪客 ID Cookie 中，每個頁面或應用程式內容皆需個別設定。
 >* 請勿在客戶 ID 中提供任何個人識別資訊 (PII)。如果您要使用 PII 來識別訪客 (例如電子郵件地址)，建議您改為儲存經過雜湊或加密處理的資訊。ECID 程式庫支援使用雜湊處理用戶識別碼。請參閱 [setCustomerIDs 的 SHA256 雜湊支援](/help/reference/hashing-support.md)
-
 
 ```js
 // Single ID with a single authentication state 

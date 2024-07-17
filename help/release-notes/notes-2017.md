@@ -5,8 +5,8 @@ title: 2017 年版本注意事項
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
 source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 100%
+source-wordcount: '714'
+ht-degree: 99%
 
 ---
 
@@ -175,7 +175,7 @@ Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> ID 服務 API 屬性，<span class="codeph">idSyncContainerID</span></p> </td> 
+   <td colname="col1"> <p> ID服務API屬性，<span class="codeph"> idSyncContainerID</span></p> </td> 
    <td colname="col2"> <p>該屬性會設定 <span class="keyword">Audience Manager</span> 所使用的容器 ID 以供 ID 同步之用。請參閱 <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external">idSyncContainerID</a>。 </p> </td> 
   </tr> 
   <tr> 

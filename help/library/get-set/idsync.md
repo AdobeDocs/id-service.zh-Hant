@@ -5,8 +5,8 @@ title: 依 URL 或資料來源執行 ID 同步作業
 exl-id: a22e6b47-00ff-4b51-9958-ddeccc1e507e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 100%
+source-wordcount: '236'
+ht-degree: 96%
 
 ---
 
@@ -81,7 +81,7 @@ idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destina
 * `%DID%`：插入用戶的 Audience Manager ID。
 * `%HTTP_PROTO%`；設定通訊協定 (`http` 或 `https`)。
 
-## 範例程式碼和輸出 {#section-0115615c37584a19a2ab11e917c4e7e9}
+## 範常式式碼和輸出 {#section-0115615c37584a19a2ab11e917c4e7e9}
 
 如果執行成功，兩個函數會傳回 `Successfully queued`。如果失敗則傳回錯誤訊息字串。
 
@@ -130,4 +130,3 @@ http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
 >[!MORELIKETHIS]
 >
 >* [DIL idSync](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-instance-methods.html?lang=zh-Hant#idsync)
-

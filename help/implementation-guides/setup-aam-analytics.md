@@ -4,7 +4,7 @@ keywords: ID 服務
 title: 實作適用於 Analytics 和 Audience Manager 的 Experience Cloud Identity Service
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
 source-git-commit: 26152f559150f5bd67d4802b8464446482f2e9a1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 100%
 

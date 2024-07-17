@@ -5,8 +5,8 @@ title: Analytics 與 Identity Service 常見問題集
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 100%
+source-wordcount: '963'
+ht-degree: 99%
 
 ---
 
@@ -90,4 +90,3 @@ RDC 可以提升全域效能，此外為了確保您的實作可針對未來採�
 >[!MORELIKETHIS]
 >
 >* [客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)
-

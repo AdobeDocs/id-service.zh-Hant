@@ -5,7 +5,7 @@ title: 搭配 A4T 以及伺服器端的 Target 實作使用 ID 服務
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '807'
 ht-degree: 100%
 
 ---
@@ -157,9 +157,9 @@ Response.send("
 * **[!UICONTROL 名稱：]** serverState
 * **[!UICONTROL 值：]**%serverState%
 
-   >[!IMPORTANT]
-   >
-   >值名稱必須符合您在頁面程式碼中為 `serverState` 設定的變數名稱。
+  >[!IMPORTANT]
+  >
+  >值名稱必須符合您在頁面程式碼中為 `serverState` 設定的變數名稱。
 
 您已進行的設定應該如下所示：
 
@@ -197,4 +197,3 @@ Response.send("
 >[!MORELIKETHIS]
 >
 >* [來自 Node Package Manager 的伺服器端 ID 服務套件](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
-

@@ -5,8 +5,8 @@ title: 直接整合的使用案例
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 100%
+source-wordcount: '440'
+ht-degree: 91%
 
 ---
 
@@ -20,8 +20,7 @@ ht-degree: 100%
 >* 如需有關 MID 的詳細資訊，請參閱 [Cookie 與 Experience Cloud Identity Service](../introduction/cookies.md)。
 >
 
-
-## 使用案例 1：我有 Experience Cloud ID (MID)，但想傳遞我自己的訪客 ID，並設定驗證狀態 {#section-a67d89a343754d1286d03cf08d34b806}
+## 使用案例1：我有Experience CloudID (MID)，但想傳遞我自己的訪客ID，並設定驗證狀態 {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
@@ -63,7 +62,7 @@ ht-degree: 100%
  </tbody> 
 </table>
 
-## 使用案例 2：我沒有 MID 且需要產生一個 MID {#section-8e81291f8b684de8b88fae4002ae0029}
+## 使用案例2：我沒有MID且需要產生一個MID {#section-8e81291f8b684de8b88fae4002ae0029}
 
 <table id="table_666A92693F8A413096DF6A64770C1141"> 
  <thead> 

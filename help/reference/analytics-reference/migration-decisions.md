@@ -5,8 +5,8 @@ title: Experience Cloud Identity Service 移轉決策點
 exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 94%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 100%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>多個網域 </p> </td> 
-   <td colname="col2"> <p>如果您要跨多個網域追蹤訪客，且您也有主要進入網站可在客戶造訪其他網域之前先識別客戶，則您應繼續使用資料收集 CNAME。<!--See <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local"> Data Collection CNAMES and Cross Domain Tracking</a> for a detailed explanation.--> </p> <p>請注意，您需要指定兩個額外的追蹤伺服器參數 <span class="codeph">visitor.marketingCloudServer</span> 和 <span class="codeph">visitor.marketingCloudServerSecure</span>，才能使用 ID 服務設定 CNAME。 </p> </td> 
+   <td colname="col2"> <p>如果您要跨多個網域追蹤訪客，且您也有主要進入網站可在客戶造訪其他網域之前識別客戶，則您應繼續使用資料收集CNAME。<!--See <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local"> Data Collection CNAMES and Cross Domain Tracking</a> for a detailed explanation.--> </p> <p>請注意，您需要指定兩個額外的追蹤伺服器參數 <span class="codeph">visitor.marketingCloudServer</span> 和 <span class="codeph">visitor.marketingCloudServerSecure</span>，才能使用 ID 服務設定 CNAME。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>單一網域 </p> </td> 

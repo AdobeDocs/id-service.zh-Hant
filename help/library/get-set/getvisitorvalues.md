@@ -5,8 +5,8 @@ title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 100%
+source-wordcount: '403'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 請參閱以下所使用的案例和定義，以了解更多詳細資訊。
 
-## 使用案例 1：要求預設資料集 {#section-36a31683558742a5915db3a391e09f7b}
+## 使用案例1：要求預設資料集 {#section-36a31683558742a5915db3a391e09f7b}
 
 此程式碼會傳回標準資料集。您的請求和回應可能會如下列範例所示。
 
@@ -59,7 +59,7 @@ visitor.getVisitorValues(visitorIdsCallback);
 }
 ```
 
-## 使用案例 2：要求自訂資料集 {#section-467b2f4e513344c89b7332b05f6f59f3}
+## 使用案例2：要求自訂資料集 {#section-467b2f4e513344c89b7332b05f6f59f3}
 
 此程式碼使用選用的陣列，以透過 `visitor.FIELDS` 列舉來傳回指定的 ID 集合。在此情況下，我們只需要訪客的 Experience Cloud ID (MCID) 和 Analytics ID (MCAID)。您的請求和回應可能會如下列範例所示。
 
@@ -81,7 +81,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
 }
 ```
 
-## 已定義的回應參數 {#section-4c4c300167694c6fbff1d6c612f372b5}
+## 已定義的回應引數 {#section-4c4c300167694c6fbff1d6c612f372b5}
 
 下表列出並定義回應參數。這些也是 `visitor.FIELDS` 列舉中的所有值。請注意，如果沒有特定變數的值，此方法將會傳回空字串。
 

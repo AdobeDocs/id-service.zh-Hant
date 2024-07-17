@@ -5,8 +5,8 @@ title: 內容安全性原則及 Experience Cloud Identity Service
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 100%
+source-wordcount: '523'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ CSP 會利用 HTTP 標頭 `Content-Security-Policy` 來控制瀏覽器要接受�
 
 CSP 的使用十分常見，且眾所周知。本文件的目的並非詳細說明 CSP (如需詳細資訊，請參閱下方連結中的相關資訊)。重要的是，您必須了解您在使用時應將何種 Adobe 網域名稱新增至 CSP，並擬定嚴格的安全性原則。新增這些網域，可讓存取您的網站的訪客瀏覽器能夠對您使用的 Experience Cloud 資源進行重要呼叫。
 
-## 加入白名單的 Experience Cloud 網域 {#section-30693e9a96834edfbf04de9e698cf2aa}
+## 加入白名單的Experience Cloud網域 {#section-30693e9a96834edfbf04de9e698cf2aa}
 
 針對您所使用的每個 Experience Cloud 解決方案或服務，請將下列網域名稱或 URL 新增至您的 CSP。
 
@@ -75,4 +75,3 @@ CSP 的使用十分常見，且眾所周知。本文件的目的並非詳細說�
 >* [內容安全性原則參考](https://content-security-policy.com/)
 >* [MDN：內容安全性原則](https://developer.mozilla.org/zh-TW/docs/Web/HTTP/CSP)
 >* [Wikipedia：內容安全性原則](https://en.wikipedia.org/wiki/Content_Security_Policy)
-

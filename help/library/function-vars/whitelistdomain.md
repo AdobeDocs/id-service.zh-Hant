@@ -5,8 +5,8 @@ title: whitelistParentDomain 及 whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 100%
+source-wordcount: '861'
+ht-degree: 98%
 
 ---
 
@@ -151,7 +151,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 * 這些設定只會與程式碼中指定的網域和 iFrame 通訊。
 * iFrame 與上層頁面之間的通訊會遵循特定格式。如果上層頁面上的 ID 服務未收到預期格式的請求，此共用程序將會失敗。
 
-## 支援的訪客 API 方法 {#section-30c6a9f4dcdc4265a1149260b97cc057}
+## 支援的訪客API方法 {#section-30c6a9f4dcdc4265a1149260b97cc057}
 
 實作這些白名單設定時，ID 服務支援有限的公用 API 方法集。支援的方法會依據上述使用案例的情況而有所不同。
 

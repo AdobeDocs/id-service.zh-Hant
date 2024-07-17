@@ -5,8 +5,8 @@ title: Analytics 與 Experience Cloud ID 請求
 exl-id: 8c682159-e23a-4641-9ffd-e0028dc2f305
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 100%
+source-wordcount: '421'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 過去，Experience Cloud Identity Service 即已緊密整合至 Adobe Analytics。除了保有 Analytics 的完整，現在也可執行 [!DNL Experience Cloud] 中其他解決方案和功能的重要功能。由於過去的這個舊有特色，檢查或寫入 Analytics ID 的方式與 [Experience Cloud Identity Service 如何要求與設定 ID...](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a) 中說明的一般程序略有不同。如需深入了解檢查 ID 的作業順序，請參閱[設定 Analytics 與 Experience Cloud ID](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6)。
 
-## 未在瀏覽器中設定 AMCV Cookie {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
+## 未在瀏覽器中設定AMCV Cookie {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
 
 如果 [!DNL Experience Cloud] (AMCV) Cookie 不存在，您撥打 [!DNL Adobe] 的 ID 服務電話時，得到的回應會依據您是否擁有舊版 Analytics ID 而有所不同。舊版 [!DNL Analytics] ID 會儲存在 [s_vi Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=zh-Hant) 中。下表說明系統會如何根據 s_vi Cookie 的狀態，將 ID 覆寫至 AMCV Cookie。
 
@@ -49,6 +49,6 @@ ht-degree: 100%
 >
 >s_fid Cookie 所識別的用戶不會將其舊有的 FID 值移轉到 AMCV Cookie。有了 s_fid Cookie，用戶移轉時會如同 s_vi Cookie 不存在 (請參閱上述說明)，就像是全新訪客造訪您的網站。如需詳細資訊，請參閱 [Analytics Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=zh-Hant)。
 
-## 已在瀏覽器中設定 AMCV Cookie {#section-01c088fc565c4b24ba1722c7cc240310}
+## 已在瀏覽器中設定AMCV Cookie {#section-01c088fc565c4b24ba1722c7cc240310}
 
 如果 AMCV Cookie 已存在， 將使用 MID 作為 [!DNL Analytics] 識別碼 (假設 Cookie 中沒有舊有的 [!DNL Analytics]Analytics ID 值)。

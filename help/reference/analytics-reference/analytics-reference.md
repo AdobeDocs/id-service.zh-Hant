@@ -21,4 +21,4 @@ Adobe Analytics 獨有的 ID 服務功能。
 + [Analytics 與 Experience Cloud ID 請求](legacy-analytics.md)
 + [混用 JavaScript 的伺服器端實作](server-side.md)
 + [ID 服務寬限期](grace-period.md)
-   <!--+ [Data Collection CNAMEs and Cross-Domain Tracking](cname.md)-->
+  <!--+ [Data Collection CNAMEs and Cross-Domain Tracking](cname.md)-->

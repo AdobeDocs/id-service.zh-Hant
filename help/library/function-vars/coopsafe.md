@@ -5,8 +5,8 @@ title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 100%
+source-wordcount: '563'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 });
 ```
 
-## 事件呼叫 POST 參數 {#section-fcd441933506493faefaa6b51f194a17}
+## 事件呼叫POST引數 {#section-fcd441933506493faefaa6b51f194a17}
 
 取決於您設定的標幟 (`true` 或 `false`)，ID 服務將 `isCoopSafe` 轉譯為 POST 參數並在事件呼叫時將參數傳送至 [!DNL Adobe]:
 
@@ -139,4 +139,3 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 >[!MORELIKETHIS]
 >
 >* [DIL isCoopSafe](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html?lang=zh-Hant)
-

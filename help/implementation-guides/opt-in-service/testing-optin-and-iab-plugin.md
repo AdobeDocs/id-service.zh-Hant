@@ -4,8 +4,8 @@ title: 驗證選擇加入服務
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 94%
+source-wordcount: '441'
+ht-degree: 89%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 94%
 
 在網站上啟用選擇加入後，請使用瀏覽器中的開發人員工具，運用驗證方法測試該服務是否順利運作。
 
-## 使用案例 1：啟用選擇加入服務 {#section-c8fe1ee3711b420c8186c7057abbecb3}
+## 使用案例1：啟用選擇加入服務 {#section-c8fe1ee3711b420c8186c7057abbecb3}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -43,13 +43,13 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 >
 >您可能會看到目標為 `http://dpm.demdex.net/optOutStatus` 的呼叫，這是「唯讀」端點，用來擷取訪客的選擇退出狀態。此端點將不會產生任何第三方 Cookie，也不會從此頁面收集任何資訊。
 
-您應該不會看到Adobe標籤建立的任何Cookie：(AMCV_{{YOUR_ORG_ID}}， mbox， demdex， s_cc， s_sq， everest_g_v2， everest_session_v2)
+您應該不會看到Adobe標籤所建立的任何Cookie：(AMCV_{{YOUR_ORG_ID}}、mbox、demdex、s_cc、s_sq、everest_g_v2、everest_session_v2)
 
 在 Chrome 中，移至 *Application* 索引標籤，並展開 *Storage* 底下的 *Cookies* 區段，然後選取您網站的網域名稱：
 
 ![](assets/use_case_1_2.png)
 
-## 使用案例 2：啟用選擇加入和儲存 {#section-bd28326f52474fa09a2addca23ccdc0f}
+## 使用案例2：啟用選擇加入和儲存 {#section-bd28326f52474fa09a2addca23ccdc0f}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -60,7 +60,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 使用案例 2 的唯一差異在於您將會看到&#x200B;*新的 Cookie*，其中將包含訪客所提供的選擇加入權限：**adobeujs-optin**
 
-## 使用案例 3：啟用選擇加入及預先核准 Adobe Analytics {#section-257fe582b425496cbf986d0ec12d3692}
+## 使用案例3：啟用選擇加入及預先核准Adobe Analytics {#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -80,7 +80,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 ![](assets/use_case_3_2.png)
 
-## 使用案例 4：啟用選擇加入和 IAB {#section-64331998954d4892960dcecd744a6d88}
+## 使用案例4：啟用選擇加入和IAB {#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 

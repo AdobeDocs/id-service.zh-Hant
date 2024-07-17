@@ -5,8 +5,8 @@ title: Experience Cloud Identity Service 的 CORS 支援
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 99%
+source-wordcount: '609'
+ht-degree: 96%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Cloud Identity Service 支援 CORS 標準，以允許這些用戶端的跨原始資源要求。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
 
-## 相同來源政策和 ID 服務要求的問題 {#section-6608cf46d27143eeaeabacaa6aa14e8e}
+## 相同來源政策和ID服務要求的問題 {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
 相同來源政策是網頁瀏覽器實作的安全控制或限制。在此層級實作時，網頁瀏覽器會自行判斷是否應允許或是封鎖從一個頁面向另一個頁面提出的資源要求。要了判斷某個要求是否為相同來源的要求，瀏覽器會比較：
 
@@ -24,7 +24,7 @@ ht-degree: 99%
 
 如果兩個頁面具有相同特性，瀏覽器會讓要求成功，如果不具有相同特性則會封鎖資源要求。
 
-## CORS 會根據相同來源原則解決問題 {#section-76c87ec3295d447bab220c84f138c235}
+## CORS會根據相同來源原則解決問題 {#section-76c87ec3295d447bab220c84f138c235}
 
 CORS 提供安全、有效的方法在不同網域中要求資源。CORS 規格包括瀏覽器用來傳送、接收及評估資源要求的一組 HTTP 標頭。評估資源要求稱為 *`preflight check`*。這項檢查可讓瀏覽器和伺服器判斷要允許或封鎖哪些要求。此預檢對應用程式、API 或要求資源的指令碼而言是透明的。資源要求處理中有兩個重要的標頭，包括：
 
@@ -45,7 +45,7 @@ CORS 提供安全、有效的方法在不同網域中要求資源。CORS 規格�
    <td colname="col1"> <p> <b>要求</b> </p> </td> 
    <td colname="col2"> <p>當金融公司頁面載入時，瀏覽器會向 <span class="codeph">dpm.demdex.net</span> 提出要求。這是對 ID 服務所使用的資料收集伺服器 (DCS) 網域的呼叫。這個跨網域要求包含此標頭： </p> <p> 
      <ul class="simplelist"> 
-      <li> <span class="codeph"> 來源:https://www.finance-website.com</span> </li> 
+      <li> <span class="codeph"> Origin:https://www.finance-website.com</span> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -61,7 +61,7 @@ CORS 提供安全、有效的方法在不同網域中要求資源。CORS 規格�
 
 另請參閱 [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)。
 
-## 使用 CORS 的其他好處 {#section-6f44f30694c44f95bf9854b8a2af8449}
+## 使用CORS的其他好處 {#section-6f44f30694c44f95bf9854b8a2af8449}
 
 下表探討了 CORS 為使用 ID 服務的客戶提供的一些優點。
 

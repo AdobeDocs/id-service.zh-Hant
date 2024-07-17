@@ -4,8 +4,8 @@ keywords: ID 服務
 title: Experience Cloud Identity Service 的需求
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: 00ebcaa16ec6b432b480d96fbf79b6a745515b1b
-workflow-type: ht
-source-wordcount: '653'
+workflow-type: tm+mt
+source-wordcount: '572'
 ht-degree: 100%
 
 ---
@@ -135,4 +135,3 @@ ID 服務至少需要下列 SDK 版本。
 >[!MORELIKETHIS]
 >
 >* [程式碼程式庫](../library/library.md#concept-ff27497375644a898d47984aefb21c97)
-

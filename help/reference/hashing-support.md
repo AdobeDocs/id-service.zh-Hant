@@ -5,8 +5,8 @@ title: setCustomerIDs 的 SHA256 雜湊支援
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 100%
+source-wordcount: '594'
+ht-degree: 97%
 
 ---
 
@@ -63,7 +63,7 @@ ts=1563299964843
 
 | 參數 | 說明 |
 |------------|----------|
-| `d_cid_ic` | 將整合代碼、唯一用戶 ID (DPUUID) 和驗證狀態 ID 傳遞至 ID 服務。以非列印控制字元 (%01</code>) 將整合代碼和 DPUUID 分開：<br>範例：d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>驗證狀態</b> <br> 這是 d_cid_ic 參數中的選用 ID。以整數方式呈現，而且能根據下列用戶的驗證狀態來識別用戶：<br> <ul><li>0 (未知或從未驗證)</li><li>1 (目前已針對此執行個體/頁面/應用程式內容驗證)</li><li>2 (登出)</li></ul> <br> 範例：<br> <ul><li>未知：...d_cid=123%01456%01<b>0</b></li><li>已驗證：...d_cid=123%01456%01<b>1</b></li><li>已登出：...d_cid=123%01456%01<b>2</b></li></ul> |
+| `d_cid_ic` | 將整合代碼、唯一用戶 ID (DPUUID) 和驗證狀態 ID 傳遞至 ID 服務。以非列印用的控制字元<code>將整合代碼和DPUUID隔開%01</code>： <br>範例： <code>d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>驗證狀態</b> <br> 這是 d_cid_ic 參數中的選用 ID。以整數方式呈現，而且能根據下列用戶的驗證狀態來識別用戶：<br> <ul><li>0 (未知或從未驗證)</li><li>1 (目前已針對此執行個體/頁面/應用程式內容驗證)</li><li>2 (登出)</li></ul> <br> 範例：<br> <ul><li>未知：...d_cid=123%01456%01<b>0</b></li><li>已驗證：...d_cid=123%01456%01<b>1</b></li><li>已登出：...d_cid=123%01456%01<b>2</b></li></ul> |
 
 ## 在 Adobe Experience Platform Launch 中新增動作 {#add-action-launch}
 

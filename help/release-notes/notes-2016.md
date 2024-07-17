@@ -7,7 +7,7 @@ feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
 source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1175'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,6 @@ ht-degree: 100%
 >
 >* 1.10 版需使用 [!UICONTROL AppMeasurement] 1.8.0 版。
 >* 使用 Experience Cloud Identity Service Library 2.0.0+ 時，Adobe Media Optimizer 會依預設開始執行 ID 同步作業。請參閱[了解 ID 同步和匹配率](/help/introduction/match-rates.md)。
-
 
 **修正和改良**
 

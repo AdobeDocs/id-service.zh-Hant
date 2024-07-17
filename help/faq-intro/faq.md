@@ -5,8 +5,8 @@ title: ID 服務常見問題集
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 100%
+source-wordcount: '783'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 如果您將 VisitorAPI.js 以本機檔案的形式託管在行動應用程式中，則可能會發生問題。建議您將檔案託管在網頁伺服器上。
 
-## 頁面載入時間與延遲 {#section-c78e148d8dbe4c77a436ef0f2af5434b}
+## 頁面載入時間和延遲 {#section-c78e148d8dbe4c77a436ef0f2af5434b}
 
 **置入 ID 服務 VisitorAPI.js 程式庫對頁面載入時間有什麼影響？**
 
@@ -87,4 +87,3 @@ ID 服務呼叫為非同步呼叫，且是向 [demdex.net 網域](https://experi
 >[!MORELIKETHIS]
 >
 >* [客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)
-

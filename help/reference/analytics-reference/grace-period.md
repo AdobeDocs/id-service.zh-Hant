@@ -5,8 +5,8 @@ title: ID 服務寬限期
 exl-id: 83b4898c-8358-458b-a798-1e3c9633afe9
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 100%
+source-wordcount: '415'
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 >
 >必須使用 1.3 版或更新版本的 [!DNL Experience Cloud] ID 服務，才支援寬限期。
 
-## 我是否需要寬限期? {#section-fd34c7ff697348a39f49258b7d39eb42}
+## 我是否需要寬限期？ {#section-fd34c7ff697348a39f49258b7d39eb42}
 
 如果您有單一 Analytics JavaScript 檔案，而且並未使用其他任何 AppMeasurement 程式庫，您就不需要寬限期。您可以在單一 JavaScript 檔案中進行更新，系統將會在新訪客造訪期間使用 Marketing Cloud ID 一致地識別他們。
 

@@ -5,8 +5,8 @@ title: callTimeOut 方法
 exl-id: ff3a2c5e-a0a8-4257-b538-0e4ce454b4e8
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 100%
+source-wordcount: '129'
+ht-degree: 96%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 呼叫這些 ID 服務函數可判斷 Experience Cloud Identity Service、Analytics 或 Audience Manager ID 要求的逾時狀態。適用於 VisitorAPI.js 1.7.0 版或更新版本。
 
-## 逾時函數 {#section-e08228ef5f9b45c9a84139bbb763164a}
+## 逾時函式 {#section-e08228ef5f9b45c9a84139bbb763164a}
 
 <table id="table_B3ACE584B3224D838070D32A8462EF28"> 
  <thead> 
@@ -39,7 +39,7 @@ ht-degree: 100%
  </tbody> 
 </table>
 
-## 函數回應 {#section-ff73aaca58b74e10a0953c49a3387160}
+## 函式回應 {#section-ff73aaca58b74e10a0953c49a3387160}
 
 <table id="table_5D08A5DD6FD04F94818B0E8B790D3136"> 
  <thead> 

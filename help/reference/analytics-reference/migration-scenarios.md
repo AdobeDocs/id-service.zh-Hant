@@ -5,8 +5,8 @@ title: Experience Cloud Identity Service 移轉案例
 exl-id: 419532bf-399f-4646-a95f-31c35535d6fc
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 100%
+source-wordcount: '378'
+ht-degree: 94%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 包含伺服器範例設定和必要的移轉步驟。
 
-## 單一 Web 屬性 {#section-6ccfea84628d46c99507cb124e7f5445}
+## 單一Web屬性 {#section-6ccfea84628d46c99507cb124e7f5445}
 
 * **客戶**：範例 Company Inc.
 * **已啟用 Experience Cloud**：否
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 首先，客戶應該啟用 Experience Cloud (請參閱 [要求](../../reference/requirements.md))。此外，由於它們有單一 JavaScript 檔案，所以該客戶不需要寬限期。該客戶也將設定訪客移轉，然後從其資料收集 CNAME 移轉到別處 (這不是必要操作)。
 
-## 多個 JavaScript 檔案、硬式編碼影像標籤 {#section-a665f6ee202940449198e4e7a5dcac54}
+## 多個JavaScript檔案、硬式編碼影像標籤 {#section-a665f6ee202940449198e4e7a5dcac54}
 
 * **客戶**：其他範例 Company Inc.
 * **已啟用 Experience Cloud**：是
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 當此客戶更新至最新的 Analytics JavaScript 程式碼以準備開始使用 [!DNL Experience Cloud] ID 服務時，他們也將更新所有的硬式編碼影像標籤，以改用 JavaScript。
 
-## 多個 Web 屬性、多個 JavaScript 檔案和 Flash 型影片播放程式 {#section-34647995ff3740b999fdee22d885e515}
+## 多個Web屬性、多個JavaScript檔案和Flash型影片播放程式 {#section-34647995ff3740b999fdee22d885e515}
 
 * **客戶**：有效的客戶 LLC
 * **已啟用 Experience Cloud**：是

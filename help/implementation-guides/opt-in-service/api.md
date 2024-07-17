@@ -4,8 +4,8 @@ title: 選擇加入參考資料
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 100%
+source-wordcount: '888'
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ adobe.OptInCategories = {
 }
 ```
 
-## 選擇加入設定參數 {#section-d66018342baf401389f248bb381becbf}
+## 選擇加入設定引數 {#section-d66018342baf401389f248bb381becbf}
 
 本節探討如何使用 API 來設定選擇加入。大部分的設定與實作都可使用 Experience Platform Launch 擴充功能來完成。
 
@@ -54,7 +54,7 @@ adobe.OptInCategories = {
 
 覆寫預設到期時間 13 個月的秒數
 
-## 同意參數的變更 {#section-c3d85403ff0d4394bd775c39f3d001fc}
+## 同意引數的變更 {#section-c3d85403ff0d4394bd775c39f3d001fc}
 
 在造訪您網站期間的任何時刻，訪客可以初次設定偏好設定，也可以使用您的 CMP 變更其偏好設定。使用初始設定初始化訪客 JS 之後，可以使用以下函數變更訪客的權限：
 
@@ -74,7 +74,7 @@ adobe.OptInCategories = {
 
 如果您的網站建立權限要求是讓訪客概括授予或拒絕網站建立 Cookie 的權限，請依據訪客的回應使用 `approveAll()` 或 `denyAll()`。
 
-## 選擇加入工作流程參數 {#section-2c5adfa5459c4e72b96d2693123a53c2}
+## 選擇加入工作流程引數 {#section-2c5adfa5459c4e72b96d2693123a53c2}
 
 選擇加入支援可從多個要求週期收集權限的工作流程，例如一次指定一項偏好設定時。使用下列函數並將 ** 設定設為 `shouldWaitForComplete`true，您的解決方案便能夠收集一個解決方案或全部類別之子集合的同意，然後收集下一個解決方案或類別子集合的同意。從首次呼叫開始，`adobe.optIn.status` 屬性會擱置，直到流程結束時呼叫 `adobe.optIn.complete()` 為止。呼叫後，狀態會設為 *complete*。
 
@@ -90,7 +90,7 @@ adobe.OptInCategories = {
 
 此函數會觸發將正在執行的 approve() 和 deny() 呼叫彙總進單一要求中，以設定訪客的偏好設定。訂閱下方的選擇加入變更時 (請參閱 `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe`)，只有呼叫此函數時會觸發回呼。
 
-## 訪客選擇加入權限的參數 {#section-7fe57279b5b44b4f8fe47e336df60155}
+## 訪客選擇加入許可權的引數 {#section-7fe57279b5b44b4f8fe47e336df60155}
 
 使用其中一個權限函數來收集訪客的選擇加入權限:
 

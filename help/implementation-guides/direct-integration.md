@@ -5,8 +5,8 @@ title: 與 Experience Cloud Identity Service 直接整合
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ ID 服務會傳回 JSON 物件中的資料，如下所示。您的回應可能�
 }
 ```
 
-## 已定義的要求與回應參數 {#section-4a9912b545364dc4acad4f1ea5ec641d}
+## 已定義的要求與回應引數 {#section-4a9912b545364dc4acad4f1ea5ec641d}
 
 **請求參數**
 

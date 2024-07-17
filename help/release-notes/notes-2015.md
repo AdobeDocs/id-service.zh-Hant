@@ -5,7 +5,7 @@ title: 2015 年版本注意事項
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '442'
 ht-degree: 100%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 100%
 * 已修正一個錯誤，該錯誤導致 ID 服務在沒有資料可同步或引發時無法要求 iframe。(AAM-20164)
 * 已修正一個錯誤，該錯誤導致 ID 服務無法正常設定多部分、最上層網域的 Cookie。例如，如果您有一個類似 `my_company.co.uk` 的網域，在某些情況下，ID 服務只會在 `co.uk` 設定 Cookie。(AN-104683)
 
-   此錯誤只會影響符合下列&#x200B;*所有*&#x200B;條件的部分用戶端:
+  此錯誤只會影響符合下列&#x200B;*所有*&#x200B;條件的部分用戶端:
 
    * 使用 ID 服務。
    * 已啟用[寬限期&#x200B;](../reference/analytics-reference/grace-period.md)*或*&#x200B;使用第一方 Cookie，且用戶封鎖第三方 Cookie。

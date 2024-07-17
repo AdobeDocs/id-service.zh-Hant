@@ -5,8 +5,8 @@ title: 總覽
 exl-id: d907e299-bde0-4b5f-8c16-867a4eaa8be1
 source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 100%
+source-wordcount: '301'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ mcvid-functionality.xml
 
 ## Experience Cloud Identity Service：核心服務的基本要素 {#section-2de0eb1d65664e92a4d8bbb167b84bde}
 
-Experience Cloud Identity Service 可為 Experience Cloud 核心服務、解決方案以及客戶屬性和觀眾啟用共同識別架構。其運用方式為指派一個唯一的永久性 ID 給網站訪客。當您的組織實作 ID 服務時，此 ID 可讓您在不同的 Experience Cloud 解決方案中識別相同的網站訪客及其資料。
+Experience Cloud Identity Service 可為 Experience Cloud 核心服務、解決方案以及客戶屬性和觀眾啟用共同識別架構。其運作方式為指派不重複的永久ID給網站訪客。 當您的組織實作 ID 服務時，此 ID 可讓您在不同的 Experience Cloud 解決方案中識別相同的網站訪客及其資料。
 
 ![](assets/ecid-new.png)
 
