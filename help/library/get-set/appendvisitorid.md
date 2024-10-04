@@ -3,7 +3,7 @@ description: 瀏覽器封鎖第三方 Cookie 時，此函數可讓您跨網域�
 keywords: ID 服務
 title: appendVisitorIDsTo (跨網域追蹤)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: fc630f3a161b65edab1c34ec3b3f07938bf13aaf
+source-git-commit: f185ae10dac686b6986b171aef8a46a574484283
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 88%
@@ -14,7 +14,7 @@ ht-degree: 88%
 
 >[!TIP]
 >
->如果ECID最初遭到拒絕（或先前遭拒），跨網域追蹤將無法如預期運作。 這不會檢查透過URL傳遞的或之前存在於Cookie中的現有ID，考慮到這些ID是同意宣告設為「NO」時的ID
+>如果ECID最初遭到拒絕（或先前遭拒），跨網域追蹤將無法如預期運作。 這不會檢查透過URL傳遞的或之前存在於Cookie中的現有ID，考慮這些ID是同意設為「NO」時的ID。
 
 瀏覽器封鎖第三方 Cookie 時，此函數可讓您跨網域共用訪客的 Experience Cloud ID。若要使用此函數，您必須先實作 ID 服務，且擁有來源和目的地的網域。適用於 VisitorAPI.js 1.7.0 版或更新版本。
 
