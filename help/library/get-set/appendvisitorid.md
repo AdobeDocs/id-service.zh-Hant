@@ -35,7 +35,7 @@ ht-degree: 88%
 * 在該網站訪客瀏覽至其他網域時為其重新產生唯一 ID。
 * 在組織所擁有的不同網域間追蹤訪客。
 
-為解決此問題，請實作 ` Visitor.appendVisitorIDsTo( *``*)`。此屬性可讓 ID 服務在多個網域間追蹤網站訪客，即使瀏覽器封鎖第三方 Cookie 亦然。其運作方式如下：
+為解決此問題，請實作 ` Visitor.appendVisitorIDsTo( *` `*)`。此屬性可讓 ID 服務在多個網域間追蹤網站訪客，即使瀏覽器封鎖第三方 Cookie 亦然。其運作方式如下：
 
 * 訪客瀏覽至您的其他網域時，` Visitor.appendVisitorIDsTo( *`url`*)` 會附加 MID 作為 URL 重新導向 (從原始網域重新導向至目的地網域) 中的查詢參數。
 * 目的地網域的 ID 服務程式碼會從 URL 提取 MID，而非向 Adobe 傳送請求索取該訪客的 ID。此要求包含第三方 Cookie ID，而該 ID 在此案件中無法使用。

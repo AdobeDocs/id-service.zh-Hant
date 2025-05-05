@@ -81,7 +81,7 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 
 ## 在您使用DIL和VisitorAPI.js時設定容器ID {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-如果您已在相同頁面上部署 [!UICONTROL DIL ]*和* VisitorAPI.js：
+如果您已在相同頁面上部署 [!UICONTROL DIL &#x200B;]*和* VisitorAPI.js：
 
 * 若為 ID 同步，則訪客 ID 服務程式碼會的優先順序會高於 DIL。
 * 僅在 ID 服務程式碼中設定 `idSyncContainerID`。
