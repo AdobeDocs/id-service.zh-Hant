@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Experience Cloud Identity Service 概觀
 
-Experience Cloud Identity Service 可為 Experience Cloud 應用程式服務啟用共同識別架構。 您可以使用 Experience Cloud Identity Service 設定 [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html)。
+Experience Cloud Identity Service 可為 Experience Cloud 應用程式服務啟用共同識別架構。 您可以使用 Experience Cloud Identity Service 設定 [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=zh-Hant)。
 
 ECID 是跨 Adobe Experience Platform 和 Experience Cloud 應用程式使用的共用身分命名空間，用於追蹤訪客行為並確保每個裝置都有一個唯一識別碼，可跨多個工作階段持續存在。
 

@@ -59,7 +59,7 @@ Experience Cloud Identity Service 的功能發佈、更新或變更。
 
 ## 4.0 版 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**選擇加入服務**。選擇加入是 Experience Cloud ID (ECID) 的擴充功能，可讓您控制 Experience Cloud 程式庫是否可以在網頁上建立訪客的 Cookie，以及使用哪個程式庫來執行。您可以使用 [Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)，讓 Analytics、Target、Audience Manager 及其他或所有指定 Experience Cloud 解決方案選擇加入您的同意管理系統，簡化 Experience Cloud 解決方案收集訪客是否同意選擇加入的程序。
+**選擇加入服務**。選擇加入是 Experience Cloud ID (ECID) 的擴充功能，可讓您控制 Experience Cloud 程式庫是否可以在網頁上建立訪客的 Cookie，以及使用哪個程式庫來執行。您可以使用 [Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)，讓 Analytics、Target、Audience Manager 及其他或所有指定 Experience Cloud 解決方案選擇加入您的同意管理系統，簡化 Experience Cloud 解決方案收集訪客是否同意選擇加入的程序。
 
 ## 3.4 版 {#section-046ce29b43af47cc849d4091098f5927}
 

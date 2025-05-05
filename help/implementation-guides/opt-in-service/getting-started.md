@@ -41,7 +41,7 @@ ht-degree: 100%
 
 1. 貴公司的隱私要求將取決於您如何選擇遵守 GDPR。請注意貴公司的隱私團隊可以在同意前使用哪些程式庫。
 
-如果使用 [Adobe Experience Platform 中的標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)，請利用[選擇加入擴充功能](../../implementation-guides/opt-in-service/launch.md)來設定選擇加入服務。
+如果使用 [Adobe Experience Platform 中的標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)，請利用[選擇加入擴充功能](../../implementation-guides/opt-in-service/launch.md)來設定選擇加入服務。
 
 ## 選擇加入服務類別 {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 

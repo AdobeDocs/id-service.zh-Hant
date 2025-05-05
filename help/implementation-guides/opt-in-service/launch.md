@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## 使用 Experience Platform Launch 設定選擇加入案例 {#section-8aa1b58bf8374c938aa8cfdeddbad6ff}
 
-[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) 可讓您使用 Adobe 解決方案輕鬆設定選擇加入情境。您可以讓 Analytics、Target、Audience Manager 及其他或所有指定 Experience Cloud 解決方案選擇加入您的同意管理系統，藉此簡化 Experience Cloud 解決方案收集訪客是否同意選擇加入的程序。
+[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant) 可讓您使用 Adobe 解決方案輕鬆設定選擇加入情境。您可以讓 Analytics、Target、Audience Manager 及其他或所有指定 Experience Cloud 解決方案選擇加入您的同意管理系統，藉此簡化 Experience Cloud 解決方案收集訪客是否同意選擇加入的程序。
 
 **設定 Experience Cloud ID 擴充功能**
 

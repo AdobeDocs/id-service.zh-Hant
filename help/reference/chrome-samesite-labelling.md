@@ -119,4 +119,4 @@ Adobe 產品已發佈伺服器端更新，可使用適當屬性來設定第三�
 
 > Adobe第三方Cookie是在伺服器端設定。
 
-如需詳細資訊，請參閱 [Target 的 Google Chrome SameSite 原則](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html)文件。
+如需詳細資訊，請參閱 [Target 的 Google Chrome SameSite 原則](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html?lang=zh-Hant)文件。

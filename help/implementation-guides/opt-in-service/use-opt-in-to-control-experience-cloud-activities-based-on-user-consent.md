@@ -31,13 +31,13 @@ Adobe [!UICONTROL 選擇加入]物件是 Adobe [!UICONTROL Experience Platform I
 
 >[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
 
-如果您沒有使用 Experience Platform 標籤，可以在初始化全域「訪客」物件時指定[!UICONTROL 選擇加入]的設定，如[文件](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lank=zh-Hant)所示。
+如果您沒有使用 Experience Platform 標籤，可以在初始化全域「訪客」物件時指定[!UICONTROL 選擇加入]的設定，如[文件](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=zh-Hant&lank=zh-Hant)所示。
 
 ## 在頁面上實作[!UICONTROL 選擇加入]
 
 所有設定和後端內容都只是在準備向網站訪客顯示同意選項的介面。您可以自行建立此 UI，也可以透過 CMP (同意管理平台) 合作夥伴建立 UI。
 
-設定使用[!UICONTROL 選擇加入]收集同意的 UI 時，應將其設定為呼叫與[!UICONTROL 選擇加入]連結的 API，並通知其同意部分或所有 Adobe Experience Cloud 解決方案。如需關於這些 API 的詳細資訊，請參閱[選擇加入參考文件](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/api.html?lank=zh-Hant)。選擇加入的其他資訊也在相關文件頁面中。
+設定使用[!UICONTROL 選擇加入]收集同意的 UI 時，應將其設定為呼叫與[!UICONTROL 選擇加入]連結的 API，並通知其同意部分或所有 Adobe Experience Cloud 解決方案。如需關於這些 API 的詳細資訊，請參閱[選擇加入參考文件](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/api.html?lang=zh-Hant&lank=zh-Hant)。選擇加入的其他資訊也在相關文件頁面中。
 
 ## [!UICONTROL 選擇加入]示範
 

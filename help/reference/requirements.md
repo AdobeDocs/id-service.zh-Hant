@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ### 標準實作
 
-如需標準實作，請參閱 [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)。
+如需標準實作，請參閱 [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)。
 
 ### 非標準實作
 
@@ -105,11 +105,11 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>請參閱 <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/overview.html?lang=en" format="https" scope="external">Mbox 程式碼</a>。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>請參閱 <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/overview.html?lang=zh-Hant" format="https" scope="external">Mbox 程式碼</a>。 </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>請參閱 <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=en" format="https" scope="external">at.js 實作</a>。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>請參閱 <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=zh-Hant" format="https" scope="external">at.js 實作</a>。 </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 

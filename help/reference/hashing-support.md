@@ -67,9 +67,9 @@ ts=1563299964843
 
 ## 在 Adobe Experience Platform Launch 中新增動作 {#add-action-launch}
 
-Experience Platform Launch 是新一代 Adobe 標籤管理功能。請在 [Launch 產品文件](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)中進一步了解 Platform Launch。
+Experience Platform Launch 是新一代 Adobe 標籤管理功能。請在 [Launch 產品文件](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)中進一步了解 Platform Launch。
 
-若要在 Launch 中新增動作，請閱讀 Adobe Launch 中的[規則文件](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html)，並查看下方的螢幕擷圖：
+若要在 Launch 中新增動作，請閱讀 Adobe Launch 中的[規則文件](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hant)，並查看下方的螢幕擷圖：
 
 ![](/help/reference/assets/hashing-support.png)
 
