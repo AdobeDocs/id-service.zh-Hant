@@ -1,24 +1,24 @@
 ---
-description: 內容安全性原則 (CSP) 是 HTTP 標題和安全性功能，可讓瀏覽器控制要在網頁上載入的資源類型。如果您使用 ID 服務，且具備使用白名單接受來自受信任網域之資源的嚴格 CSP，請詳閱本節。您必須將此處所列的 Adobe 網域新增至 CSP 白名單。
+description: 內容安全性原則 (CSP) 是 HTTP 標題和安全性功能，可讓瀏覽器控制要在網頁上載入的資源類型。如果您使用ID服務，且具備使用允許清單接受來自受信任網域之資源的嚴格CSP，請檢閱此區段。 您需要將此處所列的Adobe網域新增至CSP允許清單。
 keywords: ID 服務
 title: 內容安全性原則及 Experience Cloud 身分識別服務
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
-source-git-commit: 2bb47b56b26ce6ea17297a9ee0200f2623e44e71
+source-git-commit: c56bbaa6a3639e421c11a8231e14afb58a4fa305
 workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 80%
+ht-degree: 62%
 
 ---
 
 # 內容安全性原則及 Experience Cloud 身分識別服務 {#content-security-policies-and-the-experience-cloud-id-service}
 
-內容安全性原則 (CSP) 是 HTTP 標題和安全性功能，可讓瀏覽器控制要在網頁上載入的資源類型。如果您使用 ID 服務，且具備使用白名單接受來自受信任網域之資源的嚴格 CSP，請詳閱本節。您必須將此處所列的 Adobe 網域新增至 CSP 白名單。
+內容安全性原則 (CSP) 是 HTTP 標題和安全性功能，可讓瀏覽器控制要在網頁上載入的資源類型。如果您使用ID服務，且具備使用允許清單接受來自受信任網域之資源的嚴格CSP，請檢閱此區段。 您需要將此處所列的Adobe網域新增至CSP允許清單。
 
 ## CSP 檢視 {#section-5fde5c00a678455c914b8307a8caab82}
 
 CSP 會利用 HTTP 標頭 `Content-Security-Policy` 來控制瀏覽器要接受或在網頁中要載入的資源類型。套用 CSP 能協助您避免以下情形：
 
-* 在來源不明或未包含在白名單中的情況下載入 JavaScript 檔案。
+* 如果來源不明或未包含在允許清單中，則不會載入JavaScript檔案。
 * 跨網站指令碼 (XXS) 攻擊。
 * 資料插入攻擊。
 * 網站損毀攻擊。
@@ -26,7 +26,7 @@ CSP 會利用 HTTP 標頭 `Content-Security-Policy` 來控制瀏覽器要接受�
 
 CSP 的使用十分常見，且眾所周知。本文件的目的並非詳細說明 CSP (如需詳細資訊，請參閱下方連結中的相關資訊)。重要的是，您必須了解您在使用時應將何種 Adobe 網域名稱新增至 CSP，並擬定嚴格的安全性原則。新增這些網域，可讓存取您的網站的訪客瀏覽器能夠對您使用的 Experience Cloud 資源進行重要呼叫。
 
-## 加入白名單的Experience Cloud網域 {#section-30693e9a96834edfbf04de9e698cf2aa}
+## 加入允許清單的Experience Cloud網域 {#section-30693e9a96834edfbf04de9e698cf2aa}
 
 針對您所使用的每個 Experience Cloud 解決方案或服務，請將下列網域名稱或 URL 新增至您的 CSP。
 
@@ -87,12 +87,12 @@ CSP 的使用十分常見，且眾所周知。本文件的目的並非詳細說�
     <p><b>Advertising Analytics</b></p>
    </td>
    <td colname="col2">
-    <p>如果您限制查詢字串引數，請將下列引數加入白名單：</p>
+    <p>如果您限制查詢字串引數，則允許列出以下引數：</p>
     <ul>
      <li><code>s_kwcid</code> （使用<code>!</code>）</li>
      <li><code>ef_id</code> （使用<code>:</code>）</li>
     </ul>
-    <p>如果您封鎖URL中的<code>!</code>字元，則也會將其列入白名單。</p>
+    <p>如果您在URL中封鎖<code>!</code>字元，則也將其列入允許清單。</p>
     <p>Advertising Analytics僅使用<code>s_kwcid</code>，但Advertising Search、Social和Commerce以及Advertising DSP也使用<code>ef_id</code>。</p>
    </td>
   </tr>
