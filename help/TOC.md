@@ -1,22 +1,22 @@
 ---
 audience: end-user
-user-guide-title: Experience Cloud Identity Service 說明
-breadcrumb-title: Identity Service 指南
-user-guide-description: Adobe Experience Cloud Identity Service 提供永續性的通用 ID，可識別 Experience Cloud 所有解決方案的訪客。 它有助於取代 Experience Cloud 解決方案和服務的舊版 ID 產生程式碼。
+user-guide-title: Experience Cloud 身分識別服務說明
+breadcrumb-title: 身分識別服務指南
+user-guide-description: Adobe Experience Cloud 身分識別服務提供永續性的通用 ID，可識別 Experience Cloud 所有解決方案的訪客。 它有助於取代 Experience Cloud 解決方案和服務的舊版 ID 產生程式碼。
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: 6ef86bdb7bc10e24dbd3efe2481cb2e6e6c270fb
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 
-# Experience Cloud Identity Service 說明 {#using}
+# Experience Cloud 身分識別服務說明 {#using}
 
 + [身分識別服務說明](home.md)
-+ {#intro} 總覽
-   + [總覽](introduction/overview.md)
++ 概觀 {#intro}
+   + [概觀](introduction/overview.md)
    + [關於 ID 服務](introduction/about-id-service.md)
    + [Cookie 與 ID 服務](introduction/cookies.md)
    + [ID 服務如何要求與設定 ID](introduction/id-request.md)
@@ -34,7 +34,7 @@ ht-degree: 100%
    + [直接整合的使用案例](implementation-guides/direct-integration-examples.md)
    + [測試及驗證 ID 服務](implementation-guides/test-verify.md)
    + 選擇加入服務 {#opt-in-service}
-      + [選擇加入服務總覽](implementation-guides/opt-in-service/optin-overview.md)
+      + [選擇加入服務概觀](implementation-guides/opt-in-service/optin-overview.md)
       + [設定選擇加入服務](implementation-guides/opt-in-service/getting-started.md)
       + [驗證選擇加入服務](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
       + [使用 Experience Platform Launch 設定選擇加入](implementation-guides/opt-in-service/launch.md)
@@ -44,9 +44,9 @@ ht-degree: 100%
       + [選擇加入參考資料](implementation-guides/opt-in-service/api.md)
       + [搭配 IAB 架構使用「選擇加入」服務](implementation-guides/opt-in-service/iab.md)
 + ID 服務 API {#id-service-api}
-   + [ID 服務 API 總覽](library/library.md)
+   + [ID 服務 API 概觀](library/library.md)
    + 設定 {#configurations}
-      + [設定總覽](library/function-vars/function-vars.md)
+      + [設定概觀](library/function-vars/function-vars.md)
       + [audienceManagerServer 及 audienceManagerServerSecure](library/function-vars/subdomain-config.md)
       + [cookieDomain](library/function-vars/cookiedomain.md)
       + [cookieLifetime](library/function-vars/cookielifetime.md)
@@ -80,10 +80,10 @@ ht-degree: 100%
       + [isClientSideMarketingCloudVisitorID](library/get-set/client-side-id.md)
       + [resetState](library/get-set/resetstate.md)
 + 參考 {#reference}
-   + [參考總覽](reference/reference.md)
+   + [參考概觀](reference/reference.md)
    + Analytics 參考 {#analytics-reference}
-      + [Analytics 參考總覽](reference/analytics-reference/analytics-reference.md)
-      + [CNAME 實施總覽](reference/analytics-reference/cname.md)
+      + [Analytics 參考概觀](reference/analytics-reference/analytics-reference.md)
+      + [CNAME 實施概觀](reference/analytics-reference/cname.md)
       + [設定 Analytics 和 Experience Cloud ID](reference/analytics-reference/analytics-ids.md)
       + [Analytics ID 的作業順序](reference/analytics-reference/analytics-order-of-operations.md)
       + [ID 服務移轉決策點](reference/analytics-reference/migration-decisions.md)
@@ -104,11 +104,11 @@ ht-degree: 100%
    + [Data Workbench 與 ID 服務](reference/dwb.md)
    + [setCustomerIDs 的 SHA256 雜湊支援](reference/hashing-support.md)
 + 常見問題集 {#faqs}
-   + [常見問題集總覽](faq-intro/faq-intro.md)
+   + [常見問題集概觀](faq-intro/faq-intro.md)
    + [ID 服務常見問題集](faq-intro/faq.md)
    + [Analytics 與 ID 服務常見問題集](faq-intro/analytics-faq.md)
    + [其他 Experience Cloud 解決方案的常見問題集](faq-intro/other-faq.md)
-+ ID 服務發行說明 {#release-notes}
++ ID服務發行說明 {#release-notes}
    + [2022 年發行說明](release-notes/notes-2022.md)
    + [2021 年發行說明](release-notes/notes-2021.md)
    + [2020 年發行說明](release-notes/notes-2020.md)
