@@ -4,9 +4,9 @@ user-guide-title: Experience Cloud 身分識別服務說明
 breadcrumb-title: 身分識別服務指南
 user-guide-description: Adobe Experience Cloud 身分識別服務提供永續性的通用 ID，可識別 Experience Cloud 所有解決方案的訪客。 它有助於取代 Experience Cloud 解決方案和服務的舊版 ID 產生程式碼。
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: 6ef86bdb7bc10e24dbd3efe2481cb2e6e6c270fb
+source-git-commit: 68beec895b3d1dbab24a243bace52f669dd20247
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '407'
 ht-degree: 98%
 
 ---
@@ -118,3 +118,4 @@ ht-degree: 98%
    + [2016 年發行說明](release-notes/notes-2016.md)
    + [2015 年發行說明](release-notes/notes-2015.md)
 + [從目錄隱藏的 Analytics 測試](analytics-test-file-hidetoc.md)
++ [隱藏測試檔案](hidden-file.md)
