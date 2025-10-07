@@ -5,14 +5,15 @@ solution: Experience Cloud Services
 type: Documentation
 audience: end-user
 git-repo: https://github.com/AdobeDocs/id-service.zh-Hant
-description: 身份識別服務
+description: 身分識別服務
 index: true
 role: Architect, Developer, Data Architect, Data Engineer, User, Admin, Leader
 feature-set: Experience Cloud, Experience Platform
 feature: Identities, Integrations
-source-git-commit: 21947ac9d3764802507887f2cb7ede201fc7205c
+debug: true
+source-git-commit: 0879c70e64ceed6ae0295c0ec09916da635af310
 workflow-type: tm+mt
-source-wordcount: '13'
+source-wordcount: '10'
 ht-degree: 100%
 
 ---
