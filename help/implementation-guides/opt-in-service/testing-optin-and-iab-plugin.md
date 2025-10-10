@@ -2,10 +2,10 @@
 description: 在網站上啟用選擇加入後，請使用瀏覽器中的開發人員工具，運用驗證方法測試該服務是否順利運作。
 title: 驗證選擇加入服務
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 89%
+source-wordcount: '434'
+ht-degree: 91%
 
 ---
 
@@ -43,7 +43,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 >
 >您可能會看到目標為 `http://dpm.demdex.net/optOutStatus` 的呼叫，這是「唯讀」端點，用來擷取訪客的選擇退出狀態。此端點將不會產生任何第三方 Cookie，也不會從此頁面收集任何資訊。
 
-您應該不會看到Adobe標籤所建立的任何Cookie：(AMCV_{{YOUR_ORG_ID}}、mbox、demdex、s_cc、s_sq、everest_g_v2、everest_session_v2)
+您應該不會看到Adobe標籤建立的任何Cookie： (`AMCV_{{YOUR_ORG_ID}}`、`mbox`、`demdex`、`s_cc`、`s_sq`、`everest_g_v2`、`everest_session_v2`)
 
 在 Chrome 中，移至 *Application* 索引標籤，並展開 *Storage* 底下的 *Cookies* 區段，然後選取您網站的網域名稱：
 

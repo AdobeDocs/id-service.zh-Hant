@@ -1,20 +1,20 @@
 ---
-description: 設定逾時間隔 (單位：毫秒)。用來告知其他解決方案 (例如 Analytics、Audience Manager、Target 等)ID 服務傳回回應要等候多久。
+description: 設定逾時間隔 (單位：毫秒)。用於告知其他解決方案(例如Analytics、Audience Manager、Target等)從ID服務等待回應的時間。
 keywords: ID 服務
 title: loadTimeout
 exl-id: 485264f4-ee24-4042-8be3-259e70462110
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 100%
+ht-degree: 69%
 
 ---
 
 # loadTimeout{#loadtimeout}
 
-設定逾時間隔 (單位：毫秒)。用來告知其他解決方案 (例如 Analytics、Audience Manager、Target 等)ID 服務傳回回應要等候多久。
+設定逾時間隔 (單位：毫秒)。用於告知其他解決方案(例如Analytics、Audience Manager、Target等)從ID服務等待回應的時間。
 
-**語法:** ` loadTimeout: *`以毫秒為單位的間隔`*`
+**語法:** `loadTimeout: *`以毫秒為單位的間隔`*`
 
 預設值為 30,000 毫秒 (30 秒)。我們強烈建議您&#x200B;*不要*&#x200B;變更預設值。
 

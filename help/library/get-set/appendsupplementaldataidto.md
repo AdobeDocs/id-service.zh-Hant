@@ -3,7 +3,7 @@ description: 此 helper 方法可讓您將 Supplemental Data ID (SDID) 當做查
 keywords: ID 服務
 title: appendSupplementalDataIDTo
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
-source-git-commit: 5710539b45a81394061cd4af2ef3edc27b49092e
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 100%
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ## 語法與程式碼範例 {#section-cbb0b2f73bcc418386796c24c01b2365}
 
-**語法:** ` appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
+**語法:** `appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
 
 **程式碼範例**
 
@@ -54,7 +54,7 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, theCurrentSDID));
 
 如果您需要變更預設的 SDID 逾時，請使用下列語法將 `sdidParamExpiry` 新增至 `Visitor.getInstance` 函數:
 
-**語法：**` sdidParamExpiry: *`以秒為單位的時間`*`
+**語法：**`sdidParamExpiry: *`以秒為單位的時間`*`
 
 **程式碼範例**
 

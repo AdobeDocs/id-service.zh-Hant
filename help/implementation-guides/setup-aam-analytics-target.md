@@ -1,18 +1,18 @@
 ---
-description: 這些指示適用於想使用 Experience Cloud Identity 服務但不想使用資料收集標記的 Analytics、Audience Manager 和 Target 客戶。不過，我們強烈建議您使用標記來實作 ID 服務。標記可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
+description: 這些指示適用於想使用 Experience Cloud 身分識別服務但不想使用資料收集標記的 Analytics、Audience Manager 和 Target 客戶。不過，我們強烈建議您使用標記來實作 ID 服務。標記可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 keywords: ID 服務
-title: 實作適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity Service
+title: 實作適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud 身分識別服務
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 100%
 
 ---
 
-# 實作適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud Identity Service {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
+# 實作適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud 身分識別服務 {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
-這些指示適用於想使用 Experience Cloud Identity 服務但不想使用[資料收集標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)的 Analytics、Audience Manager 和 Target 客戶。不過，我們強烈建議您使用標記來實作 ID 服務。標記可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
+這些指示適用於想使用 Experience Cloud 身分識別服務但不想使用[資料收集標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)的 Analytics、Audience Manager 和 Target 客戶。不過，我們強烈建議您使用標記來實作 ID 服務。標記可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 
 >[!IMPORTANT]
 >
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 ## 步驟 1：規劃伺服器端轉送 {#section-880797cc992d4755b29cada7b831f1fc}
 
-除了此處所述步驟以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客戶也應移轉至伺服器端轉送。伺服器端轉送功能可讓您移除 DIL (Audience Manager 的資料收集程式碼)，並將其取代為[對象管理模組](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=zh-Hant)。如需詳細資訊，請參閱[伺服器端轉送文件](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html?lang=zh-Hant)。
+除了此處所述步驟以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客戶也應移轉至伺服器端轉送。伺服器端轉送功能可讓您移除 DIL (Audience Manager 的資料收集程式碼)，並將其取代為[對象管理模組](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=zh-Hant)。如需詳細資訊，請參閱[伺服器端轉送文件](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html)。
 
 要移轉至伺服器端轉送，必須進行規劃和協調。此程序牽涉到對您的網站程式碼進行的外部變更，以及 Adobe 為了佈建您的帳戶而須執行的內部步驟。事實上，其中許多移轉程序都需要並行執行，並且一起發行。您的實作路徑應依照以下事件順序進行：
 
@@ -138,7 +138,7 @@ Analytics 會使用追蹤伺服器進行資料收集。
 
 >[!IMPORTANT]
 >
->此時您應移除 [!DNL Audience Manager] DIL 程式碼，改為使用「對象管理模組」。如需相關指示，請參閱[實作伺服器端轉送](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=zh-Hant)。
+>此時您應移除 [!DNL Audience Manager] DIL 程式碼，改為使用「客群管理模組」。如需相關指示，請參閱[實作伺服器端轉送](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=zh-Hant)。
 
 ***(可選用，但建議使用)* 建立自訂 Prop **
 
@@ -151,7 +151,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 步驟 7：將訪客 API 程式碼新增至頁面 {#section-c2bd096a3e484872a72967b6468d3673}
 
-將 ` [!UICONTROL VisitorAPI.js]` 檔案放入每個頁面的 `<head>` 標籤中。將 `VisitorAPI.js` 檔案放到頁面中時：
+將 `[!UICONTROL VisitorAPI.js]` 檔案放入每個頁面的 `<head>` 標籤中。將 `VisitorAPI.js` 檔案放到頁面中時：
 
 * 放在 `<head>` 區段的開頭處，使其出現在其他解決方案標籤的前面。
 * 必須在 AppMeasurement 及其他 [!DNL Experience Cloud] 解決方案的程式碼之前執行此檔案。
@@ -172,7 +172,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 當您的實作可擷取 MID，而非讀取 s_vi Cookie 之後，則可停止寬限期。
 
-另請參閱 [Cookie 與 Experience Cloud Identity Service](../introduction/cookies.md)。
+另請參閱 [Cookie 與 Experience Cloud 身分識別服務](../introduction/cookies.md)。
 
 **點擊流資料整合**
 
@@ -197,7 +197,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 * [AMCV Cookie](../introduction/cookies.md)，在托管頁面的網域中。
 * [!DNL Experience Cloud] ID (MID) 搭配 [!DNL Adobe] 偵錯工具或您慣用的偵錯工具。
 
-如需可協助您判斷 ID 服務是否正常運作的其他檢查，請參閱[測試及驗證 Experience Cloud Identity Service](../implementation-guides/test-verify.md)。
+如需可協助您判斷 ID 服務是否正常運作的其他檢查，請參閱[測試及驗證 Experience Cloud 身分識別服務](../implementation-guides/test-verify.md)。
 
 **Analytics**
 

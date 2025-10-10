@@ -3,7 +3,7 @@ description: 多部分、頂級網域需要此變數，其中 URL 最後 2 個�
 keywords: ID 服務
 title: cookieDomain
 exl-id: 280416ad-372a-4a59-a938-0f49c0ce300f
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 100%
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 多部分、頂級網域需要此變數，其中 URL 最後 2 個部分的其中一個部分大於兩個字元。
 
-**語法:** ` cookieDomain: " *`URL`*"` (前置詞 `www` 非必要)。
+**語法:** `cookieDomain: "*`URL`*"` (前置詞 `www` 非必要)。
 
 **使用案例**
 

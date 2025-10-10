@@ -3,7 +3,7 @@ description: 這是非同步 API，依預設會為 Analytics、ID 服務、資�
 keywords: ID 服務
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 95%
@@ -25,12 +25,12 @@ ht-degree: 95%
 
 ## 語法 {#section-5aebe3907b2b46e997f45a1d1ed35c09}
 
-此函數使用下列語法 (斜體部分代表變數預留位置)：` var *`values`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`ID type`*, visitor.FIELDS. *`ID type`*]);`
+此函數使用下列語法 (斜體部分代表變數預留位置)：`var *`values`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`ID type`*, visitor.FIELDS. *`ID type`*]);`
 
 在函數參數中:
 
-* ` *`callback`*` 代表您擁有的回呼程式碼，此程式碼用於接收傳回的 ID。
-* *(Optional)* ` visitor.FIELDS. *`ID type`*` 是列舉，可讓您指定想要此函數傳回的 [ID 值](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5)。
+* `*`callback`*` 代表您擁有的回呼程式碼，此程式碼用於接收傳回的 ID。
+* *(Optional)* `visitor.FIELDS. *`ID type`*` 是列舉，可讓您指定想要此函數傳回的 [ID 值](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5)。
 
 請參閱以下所使用的案例和定義，以了解更多詳細資訊。
 
@@ -107,7 +107,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>訪客的 Experience Cloud ID。 </p> <p>請參閱 <a href="../../introduction/cookies.md" format="dita" scope="local">Cookie 與 Experience Cloud Identity Service</a>。 </p> </td> 
+   <td colname="col2"> <p>訪客的 Experience Cloud ID。 </p> <p>請參閱 <a href="../../introduction/cookies.md" format="dita" scope="local">Cookie 與 Experience Cloud 身分識別服務</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
