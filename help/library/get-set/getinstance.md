@@ -3,7 +3,7 @@ description: getInstance 會傳回指定 Experience Cloud 組織 ID 的訪客 ID
 keywords: ID 服務
 title: getInstance
 exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 76e894b6af7b217632bf89dcf94381f55457d45d
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 96%
@@ -50,7 +50,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-如果 `getInstance` 找不到現有例項，則會建立與傳回新例項。這類似於[!DNL AppMeasurement]中的[`s_gi()`函式](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html?lang=zh-Hant)。
+如果 `getInstance` 找不到現有例項，則會建立與傳回新例項。這類似於[`s_gi()`中的](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html?lang=zh-Hant)函式[!DNL AppMeasurement]。
 
 **常見用法**
 
