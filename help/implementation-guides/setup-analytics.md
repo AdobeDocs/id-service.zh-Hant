@@ -135,7 +135,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 將程式碼放置在包含設定的相同區段 (例如 `trackDownloads`、`linkInternalFilters`、`charSet` 等)。
 
-***(可選用，但建議使用)* 建立自訂 Prop **
+***(可選用，但建議使用)* 建立自訂 Prop**
 
 在 `AppMeasurement.js` 或 `s_code.js` 中設定自訂 prop，以測量涵蓋範圍.將此自訂 Prop 新增至 `doPlugins` 或 `AppMeasurement.js` 檔案的 `s_code.js` 函數：
 
