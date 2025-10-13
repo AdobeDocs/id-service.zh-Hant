@@ -45,4 +45,4 @@ var visitor = Visitor.getInstance("insert marketing cloud ID here", {
 >[!MORELIKETHIS]
 >
 >* [Adobe 隱私中心](https://www.adobe.com/tw/privacy.html)
->* [什麼是 COPPA? ](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
+>* [什麼是 COPPA? &#x200B;](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)

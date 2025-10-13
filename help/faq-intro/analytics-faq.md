@@ -50,7 +50,7 @@ ht-degree: 99%
 
 **什麼是寬限期？應如何設定？**
 
-參閱 [ Identity Service 寬期限](../reference/analytics-reference/grace-period.md)並聯絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)。
+參閱 [&#x200B; Identity Service 寬期限](../reference/analytics-reference/grace-period.md)並聯絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)。
 
 **為什麼我需要移轉至即時資料蒐集 (RDC) 才能使用 Identity Service？**
 

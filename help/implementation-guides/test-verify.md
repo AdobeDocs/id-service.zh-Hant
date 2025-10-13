@@ -32,7 +32,7 @@ ht-degree: 100%
 
 如果您在 [!DNL Experience Cloud ID] 偵錯工具回應中看到 [!DNL Adobe] (MID)，代表您的服務整合已正確設定。請參閱 [Cookie 與 Experience Cloud Identity Service](../introduction/cookies.md)，以了解有關 MID 的資訊。
 
-若要使用 [!DNL Adobe][ 偵錯工具驗證 ID 服務的狀態](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=zh-Hant)：
+若要使用 [!DNL Adobe][&#x200B; 偵錯工具驗證 ID 服務的狀態](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=zh-Hant)：
 
 1. 清除您的瀏覽器 Cookie，或開啟匿名瀏覽工作階段。
 1. 載入包含 ID 服務程式碼的測試頁面。
