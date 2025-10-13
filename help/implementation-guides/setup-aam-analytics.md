@@ -140,7 +140,7 @@ Analytics 會使用追蹤伺服器進行資料收集。
 >
 >此時您應移除 [!DNL Audience Manager] DIL 程式碼，改為使用「客群管理模組」。如需相關指示，請參閱[實作伺服器端轉送](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=zh-Hant)。
 
-***(可選用，但建議使用)* 建立自訂 Prop **
+***(可選用，但建議使用)* 建立自訂 Prop**
 
 在 `AppMeasurement.js` 中設定自訂 prop 以測量涵蓋範圍.將此自訂 Prop 新增至 `doPlugins` 檔案的 `AppMeasurement.js` 函數：
 
