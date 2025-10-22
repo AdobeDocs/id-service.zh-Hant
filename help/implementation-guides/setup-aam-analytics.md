@@ -3,10 +3,10 @@ description: 這些指示適用於想使用 Experience Cloud 身分識別服務�
 keywords: ID 服務
 title: 實作適用於 Analytics 和 Audience Manager 的 Experience Cloud 身分識別服務
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '1183'
-ht-degree: 100%
+source-wordcount: '1177'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## 步驟 1：規劃伺服器端轉送 {#section-880797cc992d4755b29cada7b831f1fc}
 
-除了此處所述步驟以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客戶也應移轉至伺服器端轉送。伺服器端轉送功能可讓您移除 DIL (Audience Manager 的資料收集程式碼)，並將其取代為[對象管理模組](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=zh-Hant)。如需詳細資訊，請參閱[伺服器端轉送文件](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html?lang=zh-Hant)。
+除了此處所述步驟以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客戶也應移轉至伺服器端轉送。伺服器端轉送功能可讓您移除 DIL (Audience Manager 的資料收集程式碼)，並將其取代為[對象管理模組](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=zh-Hant)。如需詳細資訊，請參閱[伺服器端轉送文件](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html)。
 
 要移轉至伺服器端轉送，必須進行規劃和協調。此程序牽涉到對您的網站程式碼進行的外部變更，以及 Adobe 為了佈建您的帳戶而須執行的內部步驟。事實上，其中許多移轉程序都需要並行執行，並且一起發行。您的實作路徑應依照以下事件順序進行：
 
@@ -36,9 +36,9 @@ ht-degree: 100%
 
 ID 服務需要 `VisitorAPI.js` 程式碼程式庫。若要下載此程式碼程式庫：
 
-1. 前往&#x200B;**[!UICONTROL 管理]** > **[!UICONTROL 代碼管理器]**。
+1. 前往&#x200B;**[!UICONTROL Admin]** > **[!UICONTROL Code Manager]**。
 
-1. 在「代碼管理器」中，按一下 **[!UICONTROL JavaScript (新)]** 或 **[!UICONTROL JavaScript (舊)]**。即會下載壓縮的程式碼程式庫。
+1. 在程式碼管理員中，按一下&#x200B;**[!UICONTROL JavaScrpt (New)]**&#x200B;或&#x200B;**[!UICONTROL JavaScript (Legacy)]**。 即會下載壓縮的程式碼程式庫。
 
 1. 解壓縮程式碼檔案，並開啟 `VisitorAPI.js` 檔案。
 
@@ -140,7 +140,7 @@ Analytics 會使用追蹤伺服器進行資料收集。
 >
 >此時您應移除 [!DNL Audience Manager] DIL 程式碼，改為使用「客群管理模組」。如需相關指示，請參閱[實作伺服器端轉送](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=zh-Hant)。
 
-***(可選用，但建議使用)* 建立自訂 Prop**
+***(可選用，但建議使用)* 建立自訂 Prop **
 
 在 `AppMeasurement.js` 中設定自訂 prop 以測量涵蓋範圍.將此自訂 Prop 新增至 `doPlugins` 檔案的 `AppMeasurement.js` 函數：
 
@@ -158,7 +158,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 步驟 8：(選用) 設定寬限期 {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-若其中有任何使用案例適用於您的情況，請要求[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)設定暫時的[寬限期](../reference/analytics-reference/grace-period.md)。寬限期最多可達 180 天。如有必要，您可以更新寬限期。
+若其中有任何使用案例適用於您的情況，請要求[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)設定暫時的[寬限期](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)。寬限期最多可達180天。 如有必要，您可以更新寬限期。
 
 **部分實作**
 

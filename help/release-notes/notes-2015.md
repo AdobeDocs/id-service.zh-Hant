@@ -3,10 +3,10 @@ description: 2015 年版本注意事項和更新。
 keywords: ID 服務
 title: 2015 年版本注意事項
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 100%
+source-wordcount: '440'
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 2015 年 11 月
 
-兒童網路隱私保護法 (COPPA) 禁止在未經父母明確同意下，透過網路收集 13 歲以下兒童的個人資訊。客戶擔憂 COPPA 會在 [!DNL Experience Cloud] ID 服務程式碼中新增選用變數，使該程式碼無法在第三方瀏覽器網域中設定 Cookie。請參閱 [Experience Cloud Identity 服務的 COPPA 支援](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)。適用於 1.5.3 版或更高版本。
+兒童網路隱私保護法 (COPPA) 禁止在未經父母明確同意下，透過網路收集 13 歲以下兒童的個人資訊。客戶擔憂 COPPA 會在 [!DNL Experience Cloud] ID 服務程式碼中新增選用變數，使該程式碼無法在第三方瀏覽器網域中設定 Cookie。請參閱 [Experience Cloud 身分識別服務的 COPPA 支援](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)。適用於 1.5.3 版或更高版本。
 
 ## 1.5.2 版 {#section-e3c73e47539942a89b02d33061128148}
 
@@ -39,14 +39,13 @@ ht-degree: 100%
   此錯誤只會影響符合下列&#x200B;*所有*&#x200B;條件的部分用戶端:
 
    * 使用 ID 服務。
-   * 已啟用[寬限期&#x200B;](../reference/analytics-reference/grace-period.md)*或*&#x200B;使用第一方 Cookie，且用戶封鎖第三方 Cookie。
-
+   * 已啟用[寬限期](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *或*&#x200B;正在使用第一方Cookie且使用者封鎖第三方Cookie。
    * 擁有的頁面具有多部分、最上層網域。
 
 這個版本的文件修訂包括：
 
 * [API 方法與程式碼程式庫](../library/library.md#concept-ff27497375644a898d47984aefb21c97)：重新整理內容與文字。在大多數情況下，每個方法會有專屬的頁面。
-* [Experience Cloud Identity 服務的需求](../reference/requirements.md)：修訂內容與重新整理文字。
+* [Experience Cloud 身分識別服務的需求](../reference/requirements.md): 修訂內容與重新整理文字。
 
 ## 1.5 版 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
@@ -67,8 +66,6 @@ var visitor = Visitor.getInstance("016D5C175213CCA80A490D05@AdobeOrg",{
     "idSyncContainerID":80 
 });
 ```
-
-請參閱 [Experience Cloud](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)。
 
 ## 1.3.5 版 {#section-eed4567f058f446d9a819e4682621aed}
 
