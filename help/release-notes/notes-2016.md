@@ -53,7 +53,7 @@ ht-degree: 0%
 
 **新文件及修訂的文件**
 
-**新增：**[從 AMCV Cookie 取得地區與用戶 ID](../reference/regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
+**新增：**&#x200B;[從 AMCV Cookie 取得地區與用戶 ID](../reference/regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
 
 ## 1.8.0 版 {#section-69f2eb5b246b4c7aafe116b7a2a5448a}
 
