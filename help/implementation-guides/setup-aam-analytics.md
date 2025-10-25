@@ -158,7 +158,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 步驟 8：(選用) 設定寬限期 {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-若其中有任何使用案例適用於您的情況，請要求[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)設定暫時的[寬限期](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)。寬限期最多可達180天。 如有必要，您可以更新寬限期。
+若其中有任何使用案例適用於您的情況，請要求[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)設定暫時的[寬限期](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/id/migration)。寬限期最多可達180天。 如有必要，您可以更新寬限期。
 
 **部分實作**
 

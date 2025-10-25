@@ -206,7 +206,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 如果測試傳回 AID，則表示有下列其中一種情況：
 
 * 您在移轉舊版 [!DNL Analytics] ID 的程序中傳回訪客。
-* 您已啟用[寬限期](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)。
+* 您已啟用[寬限期](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/id/migration)。
 
 如果看到 AID，請根據 [!DNL Target] mboxMCAVID 檢查其值。如果有正確實作 ID 服務，這些值會相同。
 
