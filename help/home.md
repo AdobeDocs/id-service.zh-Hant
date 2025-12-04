@@ -19,7 +19,7 @@ Experience Cloud 身分識別服務可為 Experience Cloud 應用程式和服務
 若要更進一步瞭解Adobe如何有助於唯一地識別訪客並解析身分資訊，請閱讀以下劃分：
 
 * **Experience Cloud 身分識別服務**：Experience Cloud 身分識別服務&#x200B;**負責設定 Experience Cloud ID (ECID)**。 如需詳細資訊，請閱讀 [Experience Cloud 身分識別服務 概觀](./introduction/overview.md)。
-* **Experience Cloud ID (ECID)**：ECID 是跨 Adobe Experience Platform 和 Adobe Experience Cloud 應用程式使用的共用身分識別命名空間，用於身分識別人員和裝置。如需有關 ECID 的詳細資訊，請閱讀 [ECID 概觀](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html)。
+* **Experience Cloud ID (ECID)**：ECID 是跨 Adobe Experience Platform 和 Adobe Experience Cloud 應用程式使用的共用身分識別命名空間，用於身分識別人員和裝置。如需有關 ECID 的詳細資訊，請閱讀 [ECID 概觀](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=zh-Hant)。
 * **Experience Platform 身分識別服務**：Experience Platform 身分識別服務透過跨裝置和系統橋接身分，為您提供客戶及其行為的全面視野。如需詳細資訊，請閱讀 [Experience Platform 身分識別服務概觀](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hant)。
 
 <!-- The Adobe Experience Cloud Identity Service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud. It can replace ID generation code for Experience Cloud solutions and services. -->
@@ -31,7 +31,7 @@ Experience Cloud 身分識別服務可為 Experience Cloud 應用程式和服務
      <ul id="ul_D5EC6A54A03F4AB595B588116A7C1296"> 
       <li id="li_845F6DE25A1241439BCDCBC00459D7EB"> <a href="introduction/overview.md" format="dita" scope="local">概觀</a> </li> 
       <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local"> Experience Cloud 身分識別服務的需求 </a> </li> 
-      <li id="li_CBEEE79B45644F28A52B58DDF23DAD4F"> <a href="https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lank=zh-Hant" format="html" scope="external">包含 Platform 標籤的標準實作</a> </li> 
+      <li id="li_CBEEE79B45644F28A52B58DDF23DAD4F"> <a href="https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant&lank=zh-Hant" format="html" scope="external">包含 Platform 標籤的標準實作</a> </li> 
      </ul> </p> <p><b>Experience Cloud ID JavaScript 程式庫</b> </p> <p>Experience Cloud 身分識別服務的 JavaScript 位於：<a href="https://github.com/Adobe-Marketing-Cloud/id-service/releases" format="https" scope="external">https://github.com/Adobe-Marketing-Cloud/id-service/releases</a> </p> <p> <b>全新或精選項目</b> </p> <p> 
      <ul id="ul_B0A25B6827734D55BB1E20D12334AC21"> 
       <li id="li_A66924F4948F4A5ABA545A89A28A6F6A"><a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local">選擇加入服務</a> </li> 

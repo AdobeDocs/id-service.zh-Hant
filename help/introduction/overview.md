@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Experience Cloud 身分識別服務概觀
 
-Experience Cloud 身分識別服務可為 Experience Cloud 應用程式服務啟用共同識別架構。 您可以使用 Experience Cloud 身分識別服務設定 [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html)。
+Experience Cloud 身分識別服務可為 Experience Cloud 應用程式服務啟用共同識別架構。 您可以使用 Experience Cloud 身分識別服務設定 [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=zh-Hant)。
 
 ECID 是跨 Adobe Experience Platform 和 Experience Cloud 應用程式使用的共用身分識別命名空間，用於追蹤訪客行為並確保每個裝置都有一個唯一身分識別碼，可跨多個工作階段持續存在。
 
@@ -27,9 +27,9 @@ Experience Cloud 身分識別服務可以取代不同的應用程式專用 ID，
 
 Experience Cloud 身分識別服務支援以下應用程式：
 
-* [Adobe Analytics](https://business.adobe.com/products/analytics/web-analytics.html)
-* [Audience Manager](https://business.adobe.com/products/audience-manager/adobe-audience-manager.html)
-* [Adobe Target](https://business.adobe.com/products/target/adobe-target.html)
+* [Adobe Analytics](https://business.adobe.com/tw/products/analytics/web-analytics.html)
+* [Audience Manager](https://business.adobe.com/tw/products/audience-manager/adobe-audience-manager.html)
+* [Adobe Target](https://business.adobe.com/tw/products/target/adobe-target.html)
 
 展望未來，ID 服務將成為許多目前與未來 Experience Cloud 功能、增強功能與服務的必要元件。目前 ID 服務支援 [Analytics](http://www.adobe.com/tw/marketing-cloud/web-analytics.html)、[Audience Manager](http://www.adobe.com/tw/marketing-cloud/data-management-platform.html) 和 [Target](http://www.adobe.com/tw/marketing-cloud/testing-targeting.html)。如果您尚未實作 ID 服務，現在就是開始考慮移轉策略的最佳時機。
 
