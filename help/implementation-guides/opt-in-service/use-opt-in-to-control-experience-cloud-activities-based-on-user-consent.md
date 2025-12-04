@@ -17,7 +17,7 @@ Adobe [!UICONTROL Opt-in]物件是Adobe [!UICONTROL Experience Platform Identity
 
 隱私權法規的一個重要面向是取得並傳達用戶同意透過哪種方式及供哪些人使用其個人資料。最新版[!UICONTROL Identity Service]包含的功能會根據一般使用者是否同意，有條件觸發（例如事前和事後同意） Experience Cloud解決方案標籤。 此程序如下圖所示：
 
-![ [!UICONTROL Opt-in]運作方式圖表](assets/opt-in.png)
+![&#x200B; [!UICONTROL Opt-in]運作方式圖表](assets/opt-in.png)
 
 [!UICONTROL Opt-in]的運作方式如下：
 

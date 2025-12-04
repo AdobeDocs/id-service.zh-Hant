@@ -14,7 +14,7 @@ ht-degree: 0%
 
 選用的布林值標幟，可防止 ID 服務對其他網域進行呼叫。
 
-**語法：**` ` disableThirdPartyCalls: true|false`` (預設為 `false`false)。
+**語法：**` ` disableThirdPartyCalls: true|false&grave;&grave; (預設為 `false`false)。
 
 若 `disableThirdPartyCalls: true`，ID 服務將不會呼叫其他網域。
 

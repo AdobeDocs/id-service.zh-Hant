@@ -14,7 +14,7 @@ ht-degree: 0%
 
 此選用的布林值標幟可控制 Experience Cloud 身分識別服務載入 ID 同步 iFrame 的方式。
 
-**語法:** ` `idSyncAttachIframeOnWindowLoad= true|false`` (預設為 `false`)。
+**語法:** ` `idSyncAttachIframeOnWindowLoad= true|false&grave;&grave; (預設為 `false`)。
 
 當 `idSyncAttachIframeOnWindowLoad: true` 時，ID 服務會在視窗載入時載入 ID 同步 iFrame。根據預設，ID 服務會盡快載入 ID 同步 iFrame，而不是在視窗載入時才載入。
 
