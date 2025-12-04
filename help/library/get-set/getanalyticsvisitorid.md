@@ -3,7 +3,7 @@ description: 傳回在 Experience Cloud 身分識別服務實作前儲存於 s_v
 keywords: ID 服務
 title: getAnalyticsVisitorID
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 99%
@@ -47,8 +47,9 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 **案例 2**
 
-如果貴組織在完全實作 ID 服務之前使用[寬限期](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/id/migration)，您便會在查詢字串中看到 `aid` 參數。如果用戶是第一次造訪網站，而您未使用寬限期，則訪客會得到 `mid` ([!DNL Experience Cloud] ID) 參數。
+如果貴組織在完全實作 ID 服務之前使用[寬限期](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)，您便會在查詢字串中看到 `aid` 參數。如果用戶是第一次造訪網站，而您未使用寬限期，則訪客會得到 `mid` ([!DNL Experience Cloud] ID) 參數。
 
 >[!MORELIKETHIS]
 >
 >* [Analytics Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html?lang=zh-Hant)
+

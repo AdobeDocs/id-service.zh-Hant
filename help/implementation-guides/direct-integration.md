@@ -1,16 +1,16 @@
 ---
 description: 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實作能讓他們在這些裝置上使用該 ID 服務，這類裝置包括遊戲主機、智慧型電視，或其他可上網的設備等等。請參閱本節，以取得語法、程式碼範例和定義。
 keywords: ID 服務
-title: 與 Experience Cloud Identity Service 直接整合
+title: 與 Experience Cloud 身分識別服務直接整合
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 98%
 
 ---
 
-# 與 Experience Cloud Identity Service 直接整合 {#direct-integration-with-the-experience-cloud-id-service}
+# 與 Experience Cloud 身分識別服務直接整合 {#direct-integration-with-the-experience-cloud-id-service}
 
 如果客戶的裝置無法接受或使用我們的 JavaScript 或 SDK 程式碼，本實作能讓他們在這些裝置上使用該 ID 服務，這類裝置包括遊戲主機、智慧型電視，或其他可上網的設備等等。請參閱本節，以取得語法、程式碼範例和定義。
 
@@ -61,11 +61,11 @@ ID 服務會傳回 JSON 物件中的資料，如下所示。您的回應可能�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 訪客 ID。請參閱 <a href="../introduction/cookies.md" format="dita" scope="local">Cookie 與 Experience Cloud Identity Service</a>。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud 訪客 ID。請參閱 <a href="../introduction/cookies.md" format="dita" scope="local">Cookie 與 Experience Cloud 身分識別服務</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>您的 Experience Cloud 組織 ID。如需尋找此 ID 的相關協助，請參閱 <a href="../reference/requirements.md" format="dita" scope="local">Experience Cloud Identity Service 的需求</a>。 </p> </td> 
+   <td colname="col2"> <p>您的 Experience Cloud 組織 ID。如需尋找此 ID 的相關協助，請參閱 <a href="../reference/requirements.md" format="dita" scope="local">Experience Cloud 身分識別服務的需求</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
@@ -122,3 +122,4 @@ ID 服務會傳回 JSON 物件中的資料，如下所示。您的回應可能�
   </tr> 
  </tbody> 
 </table>
+

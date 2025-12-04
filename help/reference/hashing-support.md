@@ -3,7 +3,7 @@ description: Experience Cloud ID Service (ECID) 支援 SHA-256 雜湊演算法�
 keywords: ID 服務
 title: setCustomerIDs 的 SHA256 雜湊支援
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 97%
@@ -67,9 +67,9 @@ ts=1563299964843
 
 ## 在 Adobe Experience Platform Launch 中新增動作 {#add-action-launch}
 
-Experience Platform Launch 是新一代 Adobe 標籤管理功能。請在 [Launch 產品文件](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)中進一步了解 Platform Launch。
+Experience Platform Launch 是新一代 Adobe 標籤管理功能。請在 [Launch 產品文件](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)中進一步了解 Platform Launch。
 
-若要在 Launch 中新增動作，請閱讀 Adobe Launch 中的[規則文件](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hant)，並查看下方的螢幕擷圖：
+若要在 Launch 中新增動作，請閱讀 Adobe Launch 中的[規則文件](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html)，並查看下方的螢幕擷圖：
 
 ![](/help/reference/assets/hashing-support.png)
 
@@ -99,3 +99,4 @@ setCustomerIDs(Ingeration code: {
 ```
 
 與第一節所述的 `setCustomerIDs` 方法相似，這會產生對 Experience Cloud ID Service 的呼叫，並加上 `d_cid_ic` 查詢參數。
+

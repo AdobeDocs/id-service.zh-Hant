@@ -2,7 +2,7 @@
 description: 在網站上啟用選擇加入後，請使用瀏覽器中的開發人員工具，運用驗證方法測試該服務是否順利運作。
 title: 驗證選擇加入服務
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 91%
@@ -113,3 +113,4 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 * 目的 1、2 或 5 未核准。
 * Audience Manager 廠商 ID 未核准。
+

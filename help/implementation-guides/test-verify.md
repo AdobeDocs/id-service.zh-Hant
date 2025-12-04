@@ -1,16 +1,16 @@
 ---
 description: 這些指示、工具和程序可協助您判斷 ID 服務是否正確運作。這些測試適用於一般的 ID 服務，以及不同的 ID 服務與 Experience Cloud 解決方案組合。
 keywords: ID 服務
-title: 測試及驗證 Experience Cloud Identity Service
+title: 測試及驗證 Experience Cloud 身分識別服務
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 測試及驗證 Experience Cloud Identity Service{#test-and-verify-the-experience-cloud-id-service}
+# 測試及驗證 Experience Cloud 身分識別服務{#test-and-verify-the-experience-cloud-id-service}
 
 這些指示、工具和程序可協助您判斷 ID 服務是否正確運作。這些測試適用於一般的 ID 服務，以及不同的 ID 服務與 Experience Cloud 解決方案組合。
 
@@ -30,9 +30,9 @@ ht-degree: 100%
 
 ## 使用 Adobe 偵錯工具進行測試 {#section-861365abc24b498e925b3837ea81d469}
 
-如果您在 [!DNL Experience Cloud ID] 偵錯工具回應中看到 [!DNL Adobe] (MID)，代表您的服務整合已正確設定。請參閱 [Cookie 與 Experience Cloud Identity Service](../introduction/cookies.md)，以了解有關 MID 的資訊。
+如果您在 [!DNL Experience Cloud ID] 偵錯工具回應中看到 [!DNL Adobe] (MID)，代表您的服務整合已正確設定。請參閱 [Cookie 與 Experience Cloud 身分識別服務](../introduction/cookies.md)，以了解有關 MID 的資訊。
 
-若要使用 [!DNL Adobe][&#x200B; 偵錯工具驗證 ID 服務的狀態](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=zh-Hant)：
+若要使用 [!DNL Adobe][ 偵錯工具驗證 ID 服務的狀態](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=zh-Hant)：
 
 1. 清除您的瀏覽器 Cookie，或開啟匿名瀏覽工作階段。
 1. 載入包含 ID 服務程式碼的測試頁面。
@@ -78,7 +78,7 @@ mid=20265673158980419722735089753036633573
 
 **Charles 中的成功 ID 服務要求**
 
-當 `Visitor.getInstance` 函數對 `dpm.demdex.net` 進行 JavaScript 呼叫時，表示您的 ID 服務程式碼正常運作。成功的要求包含[組織 ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26)。組織 ID 是以使用下列語法的機碼-值組來傳遞：`d_orgid= *`organization ID`*`。查看 `dpm.demdex.net`Structure[!UICONTROL  標籤下方的 ] 和 JavaScript 呼叫。查看 [!UICONTROL Request] 標籤下方的組織 ID。
+當 `Visitor.getInstance` 函數對 `dpm.demdex.net` 進行 JavaScript 呼叫時，表示您的 ID 服務程式碼正常運作。成功的要求包含[組織 ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26)。組織 ID是以使用下列語法的機碼-值組來傳遞: `d_orgid= *`organization ID`*`。查看 `dpm.demdex.net` 標籤下方的 [!UICONTROL Structure] 和 JavaScript 呼叫。查看 [!UICONTROL Request] 標籤下方的組織 ID。
 
 ![](assets/charles_request.png)
 
@@ -90,8 +90,9 @@ mid=20265673158980419722735089753036633573
 
 **Charles 中的失敗 ID 服務回應**
 
-如果 DCS 回應中缺少 MID，表示您的帳戶未正確佈建。失敗的回應會在[!UICONTROL 回應]標籤中傳回錯誤碼和訊息，如下所示。如果您在 DCS 回應中看到這個錯誤訊息，請聯絡客戶服務。
+如果 DCS 回應中缺少 MID，表示您的帳戶未正確佈建。失敗的回應會在 [!UICONTROL Response] 標籤中傳回錯誤碼和訊息，如下所示。如果您在 DCS 回應中看到這個錯誤訊息，請聯絡客戶服務。
 
 ![](assets/charles_response_unsuccessful.png)
 
 如需有關錯誤碼的詳細資訊，請參閱 [DCS 錯誤碼、訊息與範例](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html?lang=zh-Hant)。
+

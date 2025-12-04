@@ -2,10 +2,10 @@
 description: 管理選擇加入服務的使用案例與解決方案範例。
 title: 選擇加入使用案例
 exl-id: 4c57685f-40b7-4af4-8527-3c2795586f0f
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 98%
+ht-degree: 90%
 
 ---
 
@@ -33,13 +33,13 @@ ht-degree: 98%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>可以在同意之前收集 Analytics，但只有在獲得同意後才可載入所有其他程式庫 </p> </td> 
+   <td colname="col1"> <p>可以在同意前收集Analytics，但只有在獲得同意後才能載入所有其他程式庫 </p> </td> 
    <td colname="col2"> <p>使用選擇加入在同意前啟用 Analytics 類別 </p> </td> 
    <td colname="col3"> <p>Analytics 會使用 Analytics 識別碼，而不是在同意前所收集的 ECID。在核准 ECID 之後，將會使用新的識別碼，而且訪客將會收到可用於啟用和整合的 ECID。 </p> <p>訪客應按照同意前/同意後分段。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>在同意前可以收集第一方測量。在收到同意之前避免使用所有其他類型的資料。 </p> </td> 
-   <td colname="col2"> <p>使用選擇加入在同意前啟用 Analytics + ECID 程式庫。 </p> <p>新增 ‘disablethirdpartycookies’ 設定到 ECID 程式庫可在同意前封鎖第三方 Cookie + ID 同步。 </p> </td> 
+   <td colname="col2"> <p>使用選擇加入在同意前啟用 Analytics + ECID 程式庫。 </p> <p>在ECID資料庫中新增「disablethirdpartycookies」設定，以在預先同意狀態下封鎖第三方Cookie和ID同步 </p> </td> 
    <td colname="col3"> <p>Adobe Demdex 呼叫將會觸發 ECID 擷取，但不會有任何 Demdex Cookie、其他第三方 Cookie 或 ID 同步。 </p> <p>對於 Analytics，確保訪客在同意前/同意後保持一致。同意前的收集將與同意後的資料收集相繫結。 </p> </td> 
   </tr> 
   <tr> 
@@ -54,3 +54,4 @@ ht-degree: 98%
   </tr> 
  </tbody> 
 </table>
+

@@ -3,10 +3,10 @@ description: getMarketingCloudVisitorID 傳回 Experience Cloud 訪客 ID。
 keywords: ID 服務
 title: getMarketingCloudVisitorID
 exl-id: bd81cc0b-0511-492d-beb8-8ba2fe5d4323
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,3 +31,4 @@ var mcID = visitor.getMarketingCloudVisitorID(useMarketingCloudID)
 >[!TIP]
 >
 >如果您是 [!DNL Analytics] 客戶，請一併檢查 [!DNL Analytics] ID，並將其傳送至您的函數。例如，將隱藏表單元素中的訪客 ID 傳遞至使用資料插入 API 的伺服器端時，您會想要有兩個識別碼。在此情況下，您應該收集並傳回 [!DNL Experience Cloud] 與 [!DNL Analytics] 訪客 ID。請參閱[取得 Analytics 訪客 ID](../../library/get-set/getanalyticsvisitorid.md)。
+

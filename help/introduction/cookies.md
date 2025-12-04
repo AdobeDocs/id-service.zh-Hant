@@ -1,16 +1,16 @@
 ---
 description: ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie 及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
 keywords: playstation;ID 服務
-title: Cookie 與 Experience Cloud Identity Service
+title: Cookie 與 Experience Cloud 身分識別服務
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 100%
 
 ---
 
-# Cookie 與 Experience Cloud Identity Service{#cookies-and-the-experience-cloud-id-service}
+# Cookie 與 Experience Cloud 身分識別服務{#cookies-and-the-experience-cloud-id-service}
 
 ID 服務使用您的組織 ID、Experience Cloud AMCV Cookie 及 Demdex Cookie，為您的網站訪客建立並儲存不重複的永久識別碼。這些 Cookie 可以讓 ID 服務追蹤您不同網域上的訪客，並且讓您在不同的 Experience Cloud 解決方案間共用資料。
 
@@ -137,4 +137,5 @@ Experience Cloud ID (MID) 是依照組織 ID 和 demdex ID 利用數學公式計
 
 ## 後續步驟 {#section-8db1727a63bc4ff68b495f270315d453}
 
-請參閱 [Experience Cloud Identity Service 如何要求與設定 ID...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)。
+請參閱 [Experience Cloud 身分識別服務如何要求與設定 ID...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)。
+

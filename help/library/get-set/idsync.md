@@ -3,7 +3,7 @@ description: idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓�
 keywords: ID 服務
 title: 依 URL 或資料來源執行 ID 同步作業
 exl-id: a22e6b47-00ff-4b51-9958-ddeccc1e507e
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 96%
@@ -130,3 +130,4 @@ http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
 >[!MORELIKETHIS]
 >
 >* [DIL idSync](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-instance-methods.html?lang=zh-Hant#idsync)
+

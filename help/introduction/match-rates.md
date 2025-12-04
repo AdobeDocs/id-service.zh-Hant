@@ -1,24 +1,24 @@
 ---
-description: 概述 Experience Cloud Identity Service (包括 Adobe Media Optimizer 和 ID 服務) 中的 ID 同步程序與匹配率。
+description: 概觀 Experience Cloud 身分識別服務 (包括 Adobe Media Optimizer 和 ID 服務) 中的 ID 同步程序與匹配率。
 keywords: ID 服務
 title: 了解 ID 同步和匹配率
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
-source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 了解 ID 同步和匹配率{#understanding-id-synchronization-and-match-rates}
 
-概述 Experience Cloud Identity Service (包括 Adobe Media Optimizer 和 ID 服務) 中的 ID 同步程序與匹配率。
+概觀 Experience Cloud 身分識別服務 (包括 Adobe Media Optimizer 和 ID 服務) 中的 ID 同步程序與匹配率。
 
 ## ID 同步和匹配率 {#section-f652aae7234945e89d26dd833c5215fb}
 
 ID 同步會比對 ID 服務所指派的 ID 與客戶指派給網站訪客的 ID。例如，假設 ID 服務已指派訪客 ID 1234。另一個平台則以 ID 4321 識別此訪客。ID 服務會在同步過程中將這兩個 ID 相互對應。其結果會將新資料點新增至客戶對其網站訪客已知的部分。此外，如果 ID 服務無法比對出某個 ID，則會建立新的 ID，並使用該 ID 進行日後的同步作業。
 
-匹配率可測量及驗證 ID 同步程序的有效性。高匹配率表示，特定服務將比低匹配率的服務更有效率，並且可供更多線上對象存取。比較匹配率，是評估不同整合式廣告技術平台的量化方式。
+匹配率可測量及驗證 ID 同步程序的有效性。高匹配率表示，特定服務將比低匹配率的服務更有效率，並且可供更多線上客群存取。比較匹配率，是評估不同整合式廣告技術平台的量化方式。
 
 ![](assets/idsync2.png)
 
@@ -32,7 +32,7 @@ ID 服務會即時同步 ID。此程序可在瀏覽器中運作，而不憑藉�
 
 **步驟 1：載入頁面**
 
-訪客造訪您的網站並載入頁面時，`Visitor.getInstance` 函數會向 ID 服務發出 [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) 或 JSON-P 呼叫。ID 服務使用 Cookie 回應，其中包含訪客的 [!DNL Experience Cloud] ID (MID)。MID 是指派給每個網站訪客的唯一 ID。另請參閱 [Cookie 與 Experience Cloud Identity Service](../introduction/cookies.md)。
+訪客造訪您的網站並載入頁面時，`Visitor.getInstance` 函數會向 ID 服務發出 [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) 或 JSON-P 呼叫。ID 服務使用 Cookie 回應，其中包含訪客的 [!DNL Experience Cloud] ID (MID)。MID 是指派給每個網站訪客的唯一 ID。另請參閱 [Cookie 與 Experience Cloud 身分識別服務](../introduction/cookies.md)。
 
 **步驟 2：載入 iFrame**
 
@@ -42,7 +42,7 @@ ID 服務會即時同步 ID。此程序可在瀏覽器中運作，而不憑藉�
 * 盡快載入。如果速度太快，您可以在視窗載入事件之後載入 iFrame (不建議使用)。請參閱 [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) 了解詳細資訊。
 * 防止 iFrame 中的程式碼存取或影響到上層頁面。
 
-另請參閱 [Experience Cloud Identity Service 如何請求與設定 ID...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)。
+另請參閱 [Experience Cloud 身分識別服務如何請求與設定 ID...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)。
 
 **步驟 3：引發 ID 同步**
 
@@ -69,8 +69,9 @@ ID 同步是在 Destination Publishing iFrame 中引發的 URL。如以下通用
 
 ## ID 與 Adobe Advertising Cloud 同步 {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Advertising Cloud] (先前稱為 [!DNL Adobe Media Optimizer]) 是 iFrame 型 ID 同步程序的例外情況。由於 [!DNL Advertising Cloud] 是值得信賴的網域，ID 同步會從上層頁面進行，而非 [!UICONTROL Destination Publishing iFrame]。同步期間，ID 服務會在 [!DNL Advertising Cloud] 呼叫 `cm.eversttech.net`，這是 [!DNL Advertising Cloud] 在 Adobe 收購前所使用的舊版網域名稱。將資料傳送至 [!DNL Advertising Cloud] 有助於改善匹配率，而且這是使用 2.0 版 (或更新版本) 的 ID 服務之客戶的專屬自動功能。另請參閱 [Advertising Cloud Cookie](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-advertising-cloud.html?lang=zh-Hant)。
+[!DNL Adobe Advertising Cloud] (先前稱為 [!DNL Adobe Media Optimizer]) 是 iFrame 型 ID 同步程序的例外情況。由於 [!DNL Advertising Cloud] 是值得信賴的網域，ID 同步會從上層頁面而不是在 [!UICONTROL Destination Publishing iFrame] 進行。同步期間，ID 服務會在 [!DNL Advertising Cloud] 呼叫 `cm.eversttech.net`，這是 [!DNL Advertising Cloud] 在 Adobe 收購前所使用的舊版網域名稱。將資料傳送至 [!DNL Advertising Cloud] 有助於改善匹配率，而且這是使用 2.0 版 (或更新版本) 的 ID 服務之客戶的專屬自動功能。另請參閱 [Advertising Cloud Cookie](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-advertising-cloud.html?lang=zh-Hant)。
 
 >[!MORELIKETHIS]
 >
 >* [了解向 Demdex 網域進行的呼叫](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hant)
+

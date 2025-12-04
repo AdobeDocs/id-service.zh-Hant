@@ -3,10 +3,10 @@ description: 此屬性會設定資料來源容器 ID 以供 ID 同步之用。
 keywords: ID 服務
 title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
-source-git-commit: d8b230331d983bc95f96516243c3a65037dea7f0
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 93%
+source-wordcount: '319'
+ht-degree: 94%
 
 ---
 
@@ -85,3 +85,4 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 
 * 若為 ID 同步，則訪客 ID 服務程式碼會的優先順序會高於 DIL。
 * 僅在 ID 服務程式碼中設定 `idSyncContainerID`。
+

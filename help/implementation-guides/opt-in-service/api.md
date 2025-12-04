@@ -2,7 +2,7 @@
 description: 選擇加入程式庫 API 與組態設定參考資料。
 title: 選擇加入參考資料
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 98%
@@ -214,3 +214,4 @@ optIn.fetchPermissions(callback, true);
   adobe.optIn.on("complete", callback); 
 </codeph>
 ```
+

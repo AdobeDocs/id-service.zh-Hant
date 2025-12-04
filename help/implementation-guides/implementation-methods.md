@@ -1,12 +1,12 @@
 ---
-description: Experience Cloud Identity Service 的標準與非標準實作方法。
+description: Experience Cloud 身分識別服務的標準與非標準實作方法。
 keywords: ID 服務
 title: 實作方法
 exl-id: 0fe40a3c-bdcd-4290-bcd7-25344ff108d6
-source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,3 +25,4 @@ Adobe 強烈建議使用 [[!DNL Experience Platform tags] 來實作 ID 服務。
 ## 非標準實作 {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
 本指南中的程序和程式碼範例可協助您以手動 (即非標準方法) 設定 [!DNL Experience Cloud] ID 服務。請注意，這些實作通常在技術上較複雜並具有挑戰性。您可能需要稀有的工程師人力，或必須用掉 Adobe 顧問合約支援時間。
+

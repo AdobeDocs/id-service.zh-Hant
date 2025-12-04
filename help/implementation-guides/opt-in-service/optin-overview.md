@@ -2,10 +2,10 @@
 description: 如果您可以在用戶造訪網站時，在他們的裝置或瀏覽器上設定 Cookie，則選擇加入服務可讓您設定訪客的通訊協定。
 title: 選擇加入服務
 exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
-source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 透過使用選擇加入服務，您可指定訪客是否能選擇一次加入所有 Adobe 解決方案，或依序提出解決方案以要求各方案的權限。客戶完成並記錄核准程序後，您便可以從所有的 Adobe 解決方案擷取 CMP 訪客核准。
 
-使用 [Adobe Experience Platform 中的標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant) 搭配[選擇加入擴充功能](../../implementation-guides/opt-in-service/launch.md)，即可輕鬆實作及設定選擇加入服務。亦可使用 [DTM](../../implementation-guides/opt-in-service/optin-dtm.md) 進行實作和設定。
+使用 [Adobe Experience Platform 中的標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) 搭配[選擇加入擴充功能](../../implementation-guides/opt-in-service/launch.md)，即可輕鬆實作及設定選擇加入服務。亦可使用 [DTM](../../implementation-guides/opt-in-service/optin-dtm.md) 進行實作和設定。
 
 請參閱[設定選擇加入服務](../../implementation-guides/opt-in-service/getting-started.md)了解如何開始使用。
 
@@ -45,3 +45,4 @@ ht-degree: 100%
 ![](assets/Opt-in-approval.png)
 
 然後 Adobe 解決方案可以檢查此標籤是否已核准、訂閱變更，然後擷取所有選擇加入客戶。選擇加入服務可讓您直接透過解決方案的 JavaScript 程式庫或 ECID (若已實作) 取得權限。
+

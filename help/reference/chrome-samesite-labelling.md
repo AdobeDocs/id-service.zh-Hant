@@ -2,7 +2,7 @@
 title: Google Chrome SameSite 標籤異動
 description: Adobe ECID (ID 服務) 程式庫文件。
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
-source-git-commit: 76e894b6af7b217632bf89dcf94381f55457d45d
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 99%
@@ -13,7 +13,7 @@ ht-degree: 99%
 
 SameSite 屬性會告訴瀏覽器在第一方和第三方情境下觸發 Cookie 的時機和方式。SameSite 屬性可能具有以下任一值：`strict`、`lax` 或 `none`。Chrome、Firefox、Edge、Safari 和 Opera 自 2017 年 11 月起便支援 `strict` 和 `lax`，而 `none` 也已於 2018 年導入。然而，部分舊版瀏覽器並不支援此設定。
 
-2020 年 2 月，Google 發佈 Chrome 80，並將 Cookie 未指定 SameSite 屬性值時的預設設定從 `none` 變更為 `lax`。此設定可防止在第三方情境下使用 Cookie (亦稱為「跨網站」)。之後的第三方 Cookie 都必須設為 `SameSite=none`，並標為 secure。
+2020 年 2 月，Google 發佈 Chrome 80，並將 Cookie 未指定 SameSite 屬性值時的預設設定從 `none` 變更為 `lax`。此設定可防止在第三方情境下使用 Cookie (亦稱為「跨網站」)。之後的第三方 Cookie 都必須設為 `SameSite=none`，並設為 secure 標籤。
 
 未指定 SameSite 屬性值的 Cookie 會預設為 `lax`。
 
@@ -25,7 +25,7 @@ SameSite 屬性會告訴瀏覽器在第一方和第三方情境下觸發 Cookie 
 | ------ | ------------ |
 | `strict` | 唯有參考頁面和登陸頁面與 Cookie 所屬的網域相同時，系統才會傳送採用此設定的 Cookie。 |
 | `lax` | 唯有瀏覽器 URL 中顯示的網域與 Cookie 的網域相符時，系統才會傳送採用此設定的 Cookie。這是 Chrome 對 Cookie 的新預設值。 |
-| `none` | 採用此設定的 Cookie 可供外部或協力廠商存取，例如「跨網站」。此次異動前，Cookie 的預設 SameSite 設定為 `none`，因此使用此設定的話，Cookie 的行為會與其傳統運作方式最為相似。不過，Google 現在要求所有採用此設定的 Cookie 都必須指定安全標幟，亦即 Cookie 只能應要求透過 HTTPS 建立及傳送。Google 會拒絕所有沒有安全標幟的跨網站 Cookie。 |
+| `none` | 採用此設定的 Cookie 可供外部或第三方存取，例如「跨網站」。此次異動前，Cookie 的預設 SameSite 設定為 `none`，因此使用此設定的話，Cookie 的行為會與其傳統運作方式最為相似。不過，Google 現在要求所有採用此設定的 Cookie 都必須指定安全標幟，亦即 Cookie 只能應要求透過 HTTPS 建立及傳送。Google 會拒絕所有沒有安全標幟的跨網站 Cookie。 |
 
 ## Adobe Experience Cloud 客戶須知
 
@@ -39,7 +39,7 @@ Adobe 產品已發佈伺服器端更新，可使用適當屬性來設定第三�
 
 **正確標示的 Cookie 應能順利收集資料**
 
-只要正確標示 Cookie，瀏覽器就不會採取任何動作加以封鎖。消費者可選擇封鎖特定類型的 Cookie，但目前似乎只能使用選擇是否加入的設定來達成此目的。
+只要正確賦予 Cookie 標籤，瀏覽器就不會採取任何動作加以封鎖。消費者可選擇封鎖特定類型的 Cookie，但目前似乎只能使用選擇是否加入的設定來達成此目的。
 
 **忽略未更新標籤的現有第三方 Cookie**
 
@@ -121,4 +121,5 @@ Adobe 產品已發佈伺服器端更新，可使用適當屬性來設定第三�
 >
 >Adobe第三方Cookie是在伺服器端設定。
 
-如需詳細資訊，請參閱 [Target 的 Google Chrome SameSite 原則](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html?lang=zh-Hant)文件。
+如需詳細資訊，請參閱 [Target 的 Google Chrome SameSite 原則](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html)文件。
+

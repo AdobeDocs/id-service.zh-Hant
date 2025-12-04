@@ -3,10 +3,10 @@ description: 將這些屬性傳入 Visitor.getInstance 靜態方法以設定 ID 
 keywords: 組織 ID;ID 服務
 title: 設定
 exl-id: a369f624-d263-4287-bb7e-b89d584fa245
-source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -36,3 +36,4 @@ ht-degree: 100%
 + [secureCookie](securecookie.md)
 + [useCORSOnly](use-cors-only.md)
 + [whitelistParentDomain 及 whitelistIframeDomains](whitelistdomain.md)
+

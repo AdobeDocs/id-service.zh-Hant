@@ -1,18 +1,18 @@
 ---
-description: 請參閱本節，確定您使用的解決方案、服務及程式碼版本是 Experience Cloud Identity Service 所要求的正確版本。
+description: 請參閱本節，確定您使用的解決方案、服務及程式碼版本是 Experience Cloud 身分識別服務所要求的正確版本。
 keywords: ID 服務
-title: Experience Cloud Identity Service 的需求
+title: Experience Cloud 身分識別服務的需求
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: 00ebcaa16ec6b432b480d96fbf79b6a745515b1b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Experience Cloud Identity Service 的需求 {#requirements-for-the-experience-cloud-id-service}
+# Experience Cloud 身分識別服務的需求 {#requirements-for-the-experience-cloud-id-service}
 
-請參閱本節，確定您使用的解決方案、服務及程式碼版本是 Experience Cloud Identity Service 所要求的正確版本。
+請參閱本節，確定您使用的解決方案、服務及程式碼版本是 Experience Cloud 身分識別服務所要求的正確版本。
 
 ## 需求可確保實作成功並獲得支援 {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ### 標準實作
 
-如需標準實作，請參閱 [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)。
+如需標準實作，請參閱 [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)。
 
 ### 非標準實作
 
@@ -105,11 +105,11 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>請參閱 <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/overview.html?lang=zh-Hant" format="https" scope="external">Mbox 程式碼</a>。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>請參閱 <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/overview.html?lang=en" format="https" scope="external">Mbox 程式碼</a>。 </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>請參閱 <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=zh-Hant" format="https" scope="external">at.js 實作</a>。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>請參閱 <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=en" format="https" scope="external">at.js 實作</a>。 </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
@@ -135,3 +135,4 @@ ID 服務至少需要下列 SDK 版本。
 >[!MORELIKETHIS]
 >
 >* [程式碼程式庫](../library/library.md#concept-ff27497375644a898d47984aefb21c97)
+

@@ -3,7 +3,7 @@ description: 2015 年版本注意事項和更新。
 keywords: ID 服務
 title: 2015 年版本注意事項
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 96%
@@ -39,7 +39,7 @@ ht-degree: 96%
   此錯誤只會影響符合下列&#x200B;*所有*&#x200B;條件的部分用戶端:
 
    * 使用 ID 服務。
-   * 已啟用[寬限期](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/id/migration) *或*&#x200B;正在使用第一方Cookie且使用者封鎖第三方Cookie。
+   * 已啟用[寬限期](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *或*&#x200B;正在使用第一方Cookie且使用者封鎖第三方Cookie。
    * 擁有的頁面具有多部分、最上層網域。
 
 這個版本的文件修訂包括：
@@ -78,3 +78,4 @@ var visitor = Visitor.getInstance("016D5C175213CCA80A490D05@AdobeOrg",{
 2015 年 1 月
 
 修訂 JSONP 要求 `<head>/<body>` 標籤容器的 `<script>` 標籤搜尋及 `<script>` 標籤建立作業，以處理不同 DOM 實作 (HTML 與 XHTML) 的不同區分大小寫設定。(AN-9355)
+

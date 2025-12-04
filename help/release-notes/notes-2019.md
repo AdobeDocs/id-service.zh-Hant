@@ -1,18 +1,18 @@
 ---
-description: Experience Cloud Identity Service 的功能發佈、更新或變更。
+description: Experience Cloud 身分識別服務的功能發佈、更新或變更。
 keywords: ID 服務
 title: 2019 年發行說明
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
-source-git-commit: 503683b66b6022b7c1fecbfb197fe17e05ae9c64
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Experience Cloud 發行說明 - 2019 {#release-notes}
 
-Experience Cloud Identity Service 的功能發佈、更新或變更。
+Experience Cloud 身分識別服務的功能發佈、更新或變更。
 
 ## 4.4.1 版
 
@@ -32,7 +32,7 @@ Experience Cloud Identity Service 的功能發佈、更新或變更。
 **修正、增強功能、改進項目**
 
 * 我們已對 `cookieDomain` 進行設定上的更新。ECID 程式庫現在會篩選掉 `initConfig` 中的空白字串 `cookieDomain`，並使用由 getDomain 方法傳回的頂層 Cookie 網域。
-* 我們已在 `getVisitorValues` 中修正 `localVisitor` 的相關問題。
+* 我們已在 `getVisitorValues` 中修正 `localVisitor` 的相關錯誤。
 * 我們已修正 Safari 瀏覽器中，`getVisitorValue` 方法傳回的 MCOTOUT 值不一致的錯誤。
 * 我們更新了選擇加入程式庫，新增 `optIn.off` 以取消訂閱事件。
 * 我們修正了與 setTimeout 函數相關的錯誤，其中 `setTimeout` 在某些客戶網站上違反了內容安全性原則 (CSP)。
@@ -59,11 +59,12 @@ Experience Cloud Identity Service 的功能發佈、更新或變更。
 
 ## 4.0 版 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**選擇加入服務**。選擇加入是 Experience Cloud ID (ECID) 的擴充功能，可讓您控制 Experience Cloud 程式庫是否可以在網頁上建立訪客的 Cookie，以及使用哪個程式庫來執行。您可以使用 [Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)，讓 Analytics、Target、Audience Manager 及其他或所有指定 Experience Cloud 解決方案選擇加入您的同意管理系統，簡化 Experience Cloud 解決方案收集訪客是否同意選擇加入的程序。
+**選擇加入服務**。選擇加入是 Experience Cloud ID (ECID) 的擴充功能，可讓您控制 Experience Cloud 程式庫是否可以在網頁上建立訪客的 Cookie，以及使用哪個程式庫來執行。您可以使用 [Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)，讓 Analytics、Target、Audience Manager 及其他或所有指定 Experience Cloud 解決方案選擇加入您的同意管理系統，簡化 Experience Cloud 解決方案收集訪客是否同意選擇加入的程序。
 
 ## 3.4 版 {#section-046ce29b43af47cc849d4091098f5927}
 
 | 項目 | 說明 |
 |---|---|
 | 傳入字串時，無法使用 `disableIdSyncs` 標幟。 | 此問題已修正。`getInstance` 函數的 `disableidSyncs` 參數所設定的值現會執行。 |
-| 協力廠商 iFrames 未取得 ECID | 修正 Safari Mobil 和不同 iFrames 上 ECID 無法運作的問題。 |
+| 第三方 iFrames 未取得 ECID | 修正 Safari Mobil 和不同 iFrames 上 ECID 無法運作的問題。 |
+

@@ -3,7 +3,7 @@ description: 其他 Experience Cloud 身分識別服務特色與功能的相關�
 keywords: ID 服務
 title: 參考
 exl-id: 9a14300c-206c-4960-b594-517809f7e979
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -22,3 +22,4 @@ ht-degree: 0%
 * [Experience Cloud 身分識別服務的需求](requirements.md)
 * [影片心率和 Experience Cloud 身分識別服務](heartbeat.md)
 * [Data Workbench 與 Experience Cloud 身分識別服務](dwb.md)
+

@@ -1,22 +1,22 @@
 ---
-description: ID 請求與回應程序的總覽。這些範例涵蓋在個別網站、跨不同網站，以及針對由不同 Experience Cloud 客戶 (具有自己的組織 ID) 管理的網站，進行 ID 指派。
+description: ID 請求與回應程序的概觀。這些範例涵蓋在個別網站、跨不同網站，以及針對由不同 Experience Cloud 客戶 (具有自己的組織 ID) 管理的網站，進行 ID 指派。
 keywords: ID 服務
-title: Experience Cloud Identity Service 如何請求與設定 ID
+title: Experience Cloud 身分識別服務如何請求與設定 ID
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
-source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Experience Cloud Identity Service 如何請求與設定 ID{#how-the-experience-cloud-id-service-requests-and-sets-ids}
+# Experience Cloud 身分識別服務如何請求與設定 ID{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
-ID 請求與回應程序的總覽。這些範例涵蓋在個別網站、跨不同網站，以及針對由不同 Experience Cloud 客戶 (具有自己的組織 ID) 管理的網站，進行 ID 指派。
+ID 請求與回應程序的概觀。這些範例涵蓋在個別網站、跨不同網站，以及針對由不同 Experience Cloud 客戶 (具有自己的組織 ID) 管理的網站，進行 ID 指派。
 
 >[!NOTE]
 >
->如果您不熟悉 Experience Cloud Identity Service 建立訪客 ID 的方式，請先花點時間檢閱 [Experience Cloud](../introduction/cookies.md)。
+>如果您不熟悉 Experience Cloud 身分識別服務建立訪客 ID 的方式，請先花點時間檢閱 [Experience Cloud](../introduction/cookies.md)。
 
 ## 請求 Experience Cloud ID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 
@@ -58,3 +58,4 @@ DCS 在收到組織 ID 和 Demdex ID 後，會為我們的網站訪客建立正�
 在此範例中，我們的訪客離開食品公司網站，並瀏覽至運動公司所屬的足球網站。當訪客造訪足球網站時，ID 檢查和請求程序的運作方式會與先前範例中說明的相同。不過，由於運動公司有其本身的組織 ID，因此 ID 服務會傳回不同的 MID。新的 MID 專屬於運動公司控管的網域，可讓企業在 [!DNL Experience Cloud] 的各解決方案中追蹤和共用訪客資料。該名訪客的 Demdex ID 仍維持不變，因為 Demdex ID 包含在第三方 Cookie 中，且會在不同網域中持續存在。
 
 ![](assets/req_resp.png)
+

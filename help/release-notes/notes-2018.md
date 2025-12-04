@@ -1,18 +1,18 @@
 ---
-description: 2018 年 Experience Cloud Identity 服務的功能發佈、更新或變更。
+description: 2018 年 Experience Cloud 身分識別服務的功能發佈、更新或變更。
 keywords: ID 服務
 title: 2018 年版本注意事項
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 # 2018 年版本注意事項 {#release-notes}
 
-2018 年 Experience Cloud Identity 服務的功能發佈、更新或變更。
+2018 年 Experience Cloud 身分識別服務的功能發佈、更新或變更。
 
 ## 3.3 版 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -68,7 +68,7 @@ ht-degree: 100%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>不重複訪客計數出現不符實情的尖峰 </p> </td> 
-   <td colname="col2"> <p>Experience Cloud Identity Service 3.1.0 版發行後，我們發現實作本版本時，不重複訪客計數會出現與事實不符的尖峰。只有在使用最新版 ECID v3.1.0 而且用戶已在 Safari 瀏覽器的隱私設定中選取「僅允許來自目前網站」選項時，才會出現這個行為。版本 3.1.2 解決了這個問題。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud 身分識別服務 3.1.0 版發行後，我們發現實作本版本時，不重複訪客計數會出現與事實不符的尖峰。只有在使用最新版 ECID v3.1.0 而且用戶已在 Safari 瀏覽器的隱私設定中選取「僅允許來自目前網站」選項時，才會出現這個行為。版本 3.1.2 解決了這個問題。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -89,7 +89,7 @@ ht-degree: 100%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>在不正確的網域中設定 Cookie </p> </td> 
-   <td colname="col2"> <p>我們已修正暫時訪客 Cookie 在「預設」Cookie 網域中設定 Cookie，而不是在設定 (initConfig) 提供的網域中設定 Cookie 的錯誤。 </p> </td> 
+   <td colname="col2"> <p>我們已修正暫時訪客Cookie在「預設」Cookie網域中設定Cookie，而非在設定(initConfig)中提供的網域中設定的錯誤。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -122,3 +122,4 @@ ht-degree: 100%
   </tr> 
  </tbody> 
 </table>
+

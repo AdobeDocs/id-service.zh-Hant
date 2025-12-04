@@ -3,10 +3,10 @@ description: 呼叫此 ID 服務函數，以判斷 ID 服務是否產生了用�
 keywords: ID 服務
 title: isClientSideMarketingCloudVisitorID
 exl-id: ed2672e7-da1a-4c02-9f4e-c14419ec9ec7
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -42,3 +42,4 @@ ht-degree: 100%
   </tr> 
  </tbody> 
 </table>
+

@@ -3,10 +3,10 @@ description: 使用這些設定，可將呼叫 Experience Cloud 身分識別服�
 keywords: ID 服務
 title: audienceManagerServer 及 audienceManagerServerSecure
 exl-id: b740eb5c-ac4e-46f4-ba7c-1080d8d9292d
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 若要進行這些設定，您必須使用：
 
 * 貴公司記錄的 [!DNL Audience Manager] 子網域名稱。向您的顧問確認或取得此名稱。
-* 與您的[!UICONTROL 組織 ID] 相關聯的子網域名稱。
+* 與您的[!UICONTROL Organization ID] 相關聯的子網域名稱。
 * 具有相同子網域名稱的&#x200B;*兩個*&#x200B;設定參數。
 
 **程式碼範例**
@@ -45,3 +45,4 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
      } 
 );
 ```
+

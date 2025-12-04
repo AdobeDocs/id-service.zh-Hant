@@ -1,19 +1,19 @@
 ---
-description: Adobe Experience Platform Launch 是設定及部署 Experience Cloud Identity Service，並將 Experience Cloud Identity Service 與其他 Experience Cloud 解決方案整合的主要工具。
+description: Adobe Experience Platform Launch 是設定及部署 Experience Cloud 身分識別服務，並將 Experience Cloud 身分識別服務與其他 Experience Cloud 解決方案整合的主要工具。
 title: 使用 Launch 實作
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: cf197fde-3b93-4578-b24e-2db5633f043c
-source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 使用 Experience Platform 標籤實作{#implement-with-launch}
 
-Adobe Experience Platform 中的標記是設定及部署 Experience Cloud Identity Service，並將 Experience Cloud Identity Service 與其他 Experience Cloud 解決方案整合的主要工具。
+Adobe Experience Platform 中的標記是設定及部署 Experience Cloud 身分識別服務，並將 Experience Cloud 身分識別服務與其他 Experience Cloud 解決方案整合的主要工具。
 
 ## Experience Platform 標籤簡介 {#section-611711602854464ea351a4af80a8dafe}
 
@@ -22,3 +22,4 @@ Adobe Experience Platform 中的標記是設定及部署 Experience Cloud Identi
 * 使用稱為&#x200B;_擴充功能_&#x200B;的整合功能，部署用戶端網頁產品。
 * 一致地在其他廠商和 Adobe 提供的行銷與廣告產品之間擷取、定義、管理和共用資料。
 * Platform 標籤是進階 JavaScript 交付系統，可評估條件和執行的動作，以便有效率且有效地部署用戶端程式庫和產品。標籤提供具備高度擴充性的方法來管理及建置擴充功能，並搭配一組強大的 API，便能以程式設計方式與 Adobe Experience Cloud 互動。
+

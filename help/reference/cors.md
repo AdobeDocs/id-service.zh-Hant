@@ -1,24 +1,24 @@
 ---
-description: 瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Cloud Identity Service 支援 CORS 標準，以允許這些用戶端的跨原始資源要求。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
+description: 瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Cloud 身分識別服務支援 CORS 標準，以允許這些用戶端的跨原始資源要求。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
 keywords: ID 服務
-title: Experience Cloud Identity Service 的 CORS 支援
+title: Experience Cloud 身分識別服務的 CORS 支援
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 96%
 
 ---
 
-# Experience Cloud Identity 服務的 CORS 支援 {#cors-support-in-the-experience-cloud-id-service}
+# Experience Cloud 身分識別服務的 CORS 支援 {#cors-support-in-the-experience-cloud-id-service}
 
-瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Cloud Identity Service 支援 CORS 標準，以允許這些用戶端的跨原始資源要求。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
+瀏覽器使用跨原始資源共用 (CORS) 來從目前網域以外的其他網域要求資源。Experience Cloud 身分識別服務支援 CORS 標準，以允許這些用戶端的跨原始資源要求。此 ID 服務在舊版瀏覽器或不支援 CORS 的瀏覽器上會回復為 JSONP 要求。
 
 ## 相同來源政策和ID服務要求的問題 {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
 相同來源政策是網頁瀏覽器實作的安全控制或限制。在此層級實作時，網頁瀏覽器會自行判斷是否應允許或是封鎖從一個頁面向另一個頁面提出的資源要求。要了判斷某個要求是否為相同來源的要求，瀏覽器會比較：
 
-* 統一資源識別項 (URI)
+* 統一資源識別碼 (URI)
 * 主機名稱 (例如 http://www.my-webpage-example.com)
 * 連接埠號碼 (例如，適用於 HTTP 和 HTTPS 要求的連接埠 80 和 440)
 
@@ -88,3 +88,4 @@ CORS 提供安全、有效的方法在不同網域中要求資源。CORS 規格�
   </tr> 
  </tbody> 
 </table>
+

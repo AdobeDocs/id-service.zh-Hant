@@ -2,10 +2,10 @@
 description: 將選擇加入服務實作為 Experience Cloud 解決方案所用的單一參考點 (在選擇加入中以類別形式參照)，以判斷是否要在訪客裝置上建立 Cookie。
 title: 設定選擇加入服務
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
-source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 1. 貴公司的隱私要求將取決於您如何選擇遵守 GDPR。請注意貴公司的隱私團隊可以在同意前使用哪些程式庫。
 
-如果使用 [Adobe Experience Platform 中的標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)，請利用[選擇加入擴充功能](../../implementation-guides/opt-in-service/launch.md)來設定選擇加入服務。
+如果使用 [Adobe Experience Platform 中的標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)，請利用[選擇加入擴充功能](../../implementation-guides/opt-in-service/launch.md)來設定選擇加入服務。
 
 ## 選擇加入服務類別 {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
@@ -142,3 +142,4 @@ optIn.fetchPermissions(callback, true);
 
 * 如果您的同意持續性解決方案 (不論是 CMP 還是訪客瀏覽器上的 Cookie) 允許及時擷取訪客偏好設定，則您可以在訪客初始化期間提供這些偏好設定給選擇加入服務。
 * 不過，如果擷取可能會是個耗時的流程，或是以非同步流程處理為最佳方式，您可以使用服務的 `approve()` 函數，在這些設定成功載入後用來提供這些設定。
+

@@ -2,10 +2,10 @@
 description: 使用動態標籤管理 (DTM) 來啟用選擇加入服務。
 title: 使用 DTM 設定選擇加入
 exl-id: 0e21e73c-aefe-41a5-87e6-499d2164f301
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '50'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,3 +22,4 @@ ht-degree: 100%
 在「一般 DTM」頁面中輸入[設定欄位](/help/implementation-guides/opt-in-service/api.md)。
 
 ![](assets/DTM-example.png)
+

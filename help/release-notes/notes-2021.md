@@ -1,18 +1,18 @@
 ---
-description: Experience Cloud Identity Service 的功能發佈、更新或變更。
+description: Experience Cloud 身分識別服務的功能發佈、更新或變更。
 keywords: ID 服務
 title: 2021 年發行說明
 exl-id: 56bffb6f-a4fc-40df-8bb2-17e43772fe60
-source-git-commit: 52956b38c59f60507aaf236b152ce41fc1229d14
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Experience Cloud Identity Service 發行說明 - 2021
+# Experience Cloud 身分識別服務發行說明 - 2021
 
-Experience Cloud Identity Service 的功能發佈、更新或變更。
+Experience Cloud 身分識別服務的功能發佈、更新或變更。
 
 ## Visitor 5.3.0
 
@@ -26,10 +26,11 @@ Visitor 5.3.0 版包含下列更新：
 
 Visitor 5.2.0 版包含下列更新：
 
-* 此版本引進 `onReceiveEcid` 事件，從 Identity Service 接收到 ECID 時會呼叫它。例如：
+* 此版本引進 `onReceiveEcid` 事件，從身分識別服務接收到 ECID 時會呼叫它。例如：
 
 ```js
 visitorInstance.onReceiveEcid(callback(ecid){
  console.log(ecid)
 })
 ```
+

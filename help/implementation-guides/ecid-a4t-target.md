@@ -3,10 +3,10 @@ description: 這些指示適用於擁有混合式伺服器端及用戶端 Target
 keywords: ID 服務
 title: 搭配 A4T 以及伺服器端的 Target 實作使用 ID 服務
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
-source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 100%
+source-wordcount: '803'
+ht-degree: 98%
 
 ---
 
@@ -152,10 +152,10 @@ Response.send("
 
 **DTM 設定**
 
-在 ID 服務執行個體的 **[!UICONTROL 一般 > 設定]** 區段中將下列項目新增為名稱-值組：
+將它們新增為ID服務執行個體的&#x200B;**[!UICONTROL General > Settings]**&#x200B;區段中的名稱 — 值組：
 
-* **[!UICONTROL 名稱：]** serverState
-* **[!UICONTROL 值：]**%serverState%
+* **[!UICONTROL Name:]** serverState
+* **[!UICONTROL Value:]** %serverState%
 
   >[!IMPORTANT]
   >
@@ -197,3 +197,4 @@ Response.send("
 >[!MORELIKETHIS]
 >
 >* [來自 Node Package Manager 的伺服器端 ID 服務套件](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+

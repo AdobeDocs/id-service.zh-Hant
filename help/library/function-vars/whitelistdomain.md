@@ -3,9 +3,9 @@ description: 這些設定可讓實作於 iFrame 及上層頁面的不同 ID 服�
 keywords: ID 服務
 title: whitelistParentDomain 及 whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '859'
 ht-degree: 98%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 98%
 
 ## 程式碼範例 {#section-09d0049fe88a473baa69d404c50bf8ae}
 
-您設定的 [!UICONTROL ID 服務]程式碼看起來與此範例類似。
+您已設定的 [!UICONTROL ID service]程式碼看起來可能類似於此範例。
 
 ```js
 //Instantiate Visitor 
@@ -109,7 +109,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
  </tbody> 
 </table>
 
-**使用案例 2：從您未控制或未使用 ID 服務的上層頁面中內嵌的 iFrame 請求 ID**
+**使用案例 2：從您未控制或未使用 ID 服務的上層頁面中嵌入的 iFrame 請求 ID**
 
 <table id="table_1F21710F9D5F493BA6BA5974F2966DF4"> 
  <thead> 
@@ -184,3 +184,4 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
   </tr> 
  </tbody> 
 </table>
+

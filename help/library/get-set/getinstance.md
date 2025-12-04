@@ -3,9 +3,9 @@ description: getInstance 會傳回指定 Experience Cloud 組織 ID 的訪客 ID
 keywords: ID 服務
 title: getInstance
 exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
-source-git-commit: 76e894b6af7b217632bf89dcf94381f55457d45d
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '218'
 ht-degree: 96%
 
 ---
@@ -32,7 +32,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 >[!CAUTION]
 >
->*請勿*&#x200B;以 `var visitor = new Visitor` 實例化 Visitor 函數。您必須使用此處指出的適當函數呼叫。套用至 [!UICONTROL VisitorAPI.js] 程式碼程式庫 3.0 版或更新版本。
+>*請勿*&#x200B;以 `var visitor = new Visitor` 實例化 Visitor 函數。您必須使用此處指出的適當函數呼叫。套用至 [!UICONTROL VisitorAPI.js] 程式碼資料庫第三版或是更新版本。
 
 **ActionScript/Flash**
 
@@ -57,3 +57,4 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 [!DNL Experience Cloud] ID 服務 API 維護為每個 [!DNL Adobe Experience Cloud] 組織 ID 建立的所有例項清單。如果使用 ID 服務 API 的應用程式未將參照傳遞至例項，可藉由呼叫 `getInstance` 來尋找該例項，而不須建立新例項。這樣就能支援相同網頁或應用程式中，不同組織的多個例項。
 
 對於沒有明確的 `init` 階段、卻需要在多處呼叫 ID 服務 API 的應用程式來說，這個用法很有幫助。您可以在所有位置呼叫 `getInstance`，第一個執行的 getInstance 將建立例項。後續呼叫將傳回現有的例項。
+

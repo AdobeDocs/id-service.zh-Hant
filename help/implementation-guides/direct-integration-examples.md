@@ -3,10 +3,10 @@ description: 這些範例涵蓋與直接整合和 Experience Cloud ID (MID) 有�
 keywords: ID 服務
 title: 直接整合的使用案例
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 91%
+ht-degree: 78%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 91%
 >[!TIP]
 >
 >* 參閱使用案例前，請先檢閱並瞭解[程式碼語法和變數](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9)。
->* 如需有關 MID 的詳細資訊，請參閱 [Cookie 與 Experience Cloud Identity Service](../introduction/cookies.md)。
+>* 如需有關 MID 的詳細資訊，請參閱 [Cookie 與 Experience Cloud 身分識別服務](../introduction/cookies.md)。
 >
 
-## 使用案例1：我有Experience CloudID (MID)，但想傳遞我自己的訪客ID，並設定驗證狀態 {#section-a67d89a343754d1286d03cf08d34b806}
+## 使用案例1：我有Experience Cloud ID (MID)，但想傳遞我自己的訪客ID，並設定驗證狀態 {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
@@ -48,11 +48,11 @@ ht-degree: 91%
      <li id="li_4869572B40E54C54B88A2474DAC475A8">您的資料提供者 ID。這是指派給貴公司的唯一 ID。假設此 ID 為 4444。 </li> 
      <li id="li_05C8ED47488C4E289D84093127EC7B19">您對此訪客的 ID (9876)。 </li> 
      <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>(選擇性)</i> 可定義此訪客的驗證狀態的狀態 ID。 </li> 
-    </ul> <p>此外，如果您剛好有其他任何參數列在 <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> 直接整合指南</a> (例如 <span class="codeph"> d_blob</span> 或 <span class="codeph"> dcs_region</span> 等) 中，也可以傳入這些參數。 </p> </td> 
+    </ul> <p>此外，如果您剛好有其他任何引數列在<a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">直接整合指南</a>中（例如<span class="codeph"> d_blob</span>或<span class="codeph"> dcs_region</span>等），也可以傳入這些引數。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>解決方案和程式碼範例</b> </p> </td> 
-   <td colname="col2"> <p>呼叫 ID 服務的格式如下所示： </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&d_cid=4444%019876%011&d_ver=2</span> </p> <p>請注意，範例呼叫包含以下內容的方式： </p> 
+   <td colname="col2"> <p>呼叫 ID 服務的格式如下所示： </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>請注意，範例呼叫包含以下內容的方式： </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">MID：<span class="codeph">d_mid=1234</span> </li> 
      <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">加入您的訪客唯一 ID 的 MID：<span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
@@ -83,11 +83,12 @@ ht-degree: 91%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>動作</b> </p> </td> 
-   <td colname="col2"> <p>基於上述條件，對 ID 服務發出呼叫，其中包含您的組織 ID。 </p> <p>此外，如果您剛好有其他任何參數列在 <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> 直接整合指南</a> (例如 <span class="codeph"> d_blob</span> 或 <span class="codeph"> dcs_region</span> 等) 中，也可以傳入這些參數。 </p> </td> 
+   <td colname="col2"> <p>基於上述條件，對 ID 服務發出呼叫，其中包含您的組織 ID。 </p> <p>此外，如果您剛好有其他任何引數列在<a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">直接整合指南</a>中（例如<span class="codeph"> d_blob</span>或<span class="codeph"> dcs_region</span>等），也可以傳入這些引數。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>解決方案和程式碼範例</b> </p> </td> 
-   <td colname="col2"> <p>呼叫 ID 服務的格式如下所示： </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&d_ver=2</span> </p> <p>請注意，範例呼叫含有您組織 ID <span class="codeph">(d_orgid=5555)</span> 的方式。系統會傳回此訪客的 <span class="keyword">Experience Cloud</span> ID。 </p> </td> 
+   <td colname="col2"> <p>呼叫 ID 服務的格式如下所示： </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>請注意，範例呼叫含有您組織 ID <span class="codeph">(d_orgid=5555)</span> 的方式。系統會傳回此訪客的 <span class="keyword">Experience Cloud</span> ID。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
+

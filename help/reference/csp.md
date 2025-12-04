@@ -3,7 +3,7 @@ description: 內容安全性原則 (CSP) 是 HTTP 標題和安全性功能，可
 keywords: ID 服務
 title: 內容安全性原則及 Experience Cloud 身分識別服務
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
-source-git-commit: c56bbaa6a3639e421c11a8231e14afb58a4fa305
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 62%
@@ -116,3 +116,4 @@ CSP 的使用十分常見，且眾所周知。本文件的目的並非詳細說�
 >* [內容安全性原則參考](https://content-security-policy.com/)
 >* [MDN：內容安全性原則](https://developer.mozilla.org/zh-TW/docs/Web/HTTP/CSP)
 >* [Wikipedia：內容安全性原則](https://en.wikipedia.org/wiki/Content_Security_Policy)
+

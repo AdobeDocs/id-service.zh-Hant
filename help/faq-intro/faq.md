@@ -3,10 +3,10 @@ description: 關於使用 ID 服務的功能、功用和問題之常見問題集
 keywords: ID 服務
 title: ID 服務常見問題集
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '783'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 99%
 
 **ID 服務提供哪些功能？**
 
-請參閱[總覽](../introduction/overview.md)。
+請參閱[概觀](../introduction/overview.md)。
 
 **為何 ID 服務未進行呼叫以擷取 Experience Cloud ID？**
 
-此問題可能很難診斷。您可以查看網站上的內容安全性原則標題。如果您設有嚴格的安全性原則，這些設定可能會封鎖 ID 服務所發出的第三方呼叫。請參閱[內容安全性原則及 Experience Cloud Identity Service](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)。
+此問題可能很難診斷。您可以查看網站上的內容安全性原則標題。如果您設有嚴格的安全性原則，這些設定可能會封鎖 ID 服務所發出的第三方呼叫。請參閱[內容安全性原則及 Experience Cloud 身分識別服務](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)。
 
 **VisitorAPI.js 檔案儲存**
 
@@ -42,7 +42,7 @@ ID 服務呼叫為非同步呼叫，且是向 [demdex.net 網域](https://experi
 
 否，此呼叫只會在頁面首次轉譯時執行，並在其後每 7 天執行一次。於此同時，不需要進行伺服器呼叫。ID 服務會在用戶端模式下運作，不需要進行伺服器呼叫以傳回 ID。
 
-請參閱[總覽](../introduction/overview.md)。
+請參閱[概觀](../introduction/overview.md)。
 
 **使用 ID 服務時，哪些因素會導致頁面載入速度緩慢或影響用戶體驗？**
 
@@ -66,13 +66,13 @@ ID 服務呼叫為非同步呼叫，且是向 [demdex.net 網域](https://experi
 
 一般而言，使用 CORS 的資源請求會比使用 JSONP 來得好。使用 JSONP 時，有些瀏覽器會將請求排入佇列，並將請求的優先順序設得比頁面上的其他同步和非同步呼叫低。CORS 有助於確保在瀏覽器呼叫堆疊中會以較高的優先順序處理這些請求。
 
-請參閱 [Experience Cloud Identity Service 的 CORS 支援](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
+請參閱 [Experience Cloud 身分識別服務的 CORS 支援](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
 
 ## 安全性 {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **ID 服務是否支援 CORS？**
 
-是。請參閱 [Experience Cloud Identity Service 的 CORS 支援](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
+是。請參閱 [Experience Cloud 身分識別服務的 CORS 支援](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
 
 **什麼是 CORS？**
 
@@ -80,10 +80,11 @@ ID 服務呼叫為非同步呼叫，且是向 [demdex.net 網域](https://experi
 
 **如果我有嚴格的安全要求，並且從來不想使用 JSONP，該怎麼做？**
 
-如果您有嚴格的安全要求，請將 ID 服務 API 設定為 `useCORSOnly: true`。您必須確定您的網站訪客使用支援 CORS 的瀏覽器，才可啟用此模式。
+如果您有嚴格的安全要求，請將 ID 服務 API 設定為 `useCORSOnly: true`。只有當您確信您的網站訪客使用支援CORS的瀏覽器時，才應該啟用此模式。
 
 請參閱 [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) 和 [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)。
 
 >[!MORELIKETHIS]
 >
 >* [客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)
+

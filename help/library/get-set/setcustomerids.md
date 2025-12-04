@@ -3,10 +3,10 @@ description: setCustomerIDs 會設定 1 或多個機碼值組，定義客戶 ID 
 keywords: ID 服務
 title: setCustomerIDs
 exl-id: 8fc549d3-2a6f-4214-bb0d-3e0bc1501ce2
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -36,3 +36,4 @@ visitor.setCustomerIDs({
     "dpuuid":"550e8400-e29b-41d4-a716-446655440000" 
 });
 ```
+

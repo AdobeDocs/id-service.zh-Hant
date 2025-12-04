@@ -3,7 +3,7 @@ description: 這些指示適用於想使用 Experience Cloud 身分識別服務�
 keywords: ID 服務
 title: 實作適用於 Analytics、Audience Manager 和 Target 的 Experience Cloud 身分識別服務
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 97%
@@ -23,7 +23,7 @@ ht-degree: 97%
 
 ## 步驟 1：規劃伺服器端轉送 {#section-880797cc992d4755b29cada7b831f1fc}
 
-除了此處所述步驟以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客戶也應移轉至伺服器端轉送。伺服器端轉送功能可讓您移除 DIL (Audience Manager 的資料收集程式碼)，並將其取代為[對象管理模組](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=zh-Hant)。如需詳細資訊，請參閱[伺服器端轉送文件](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html?lang=zh-Hant)。
+除了此處所述步驟以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客戶也應移轉至伺服器端轉送。伺服器端轉送功能可讓您移除 DIL (Audience Manager 的資料收集程式碼)，並將其取代為[對象管理模組](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=zh-Hant)。如需詳細資訊，請參閱[伺服器端轉送文件](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html)。
 
 要移轉至伺服器端轉送，必須進行規劃和協調。此程序牽涉到對您的網站程式碼進行的外部變更，以及 Adobe 為了佈建您的帳戶而須執行的內部步驟。事實上，其中許多移轉程序都需要並行執行，並且一起發行。您的實作路徑應依照以下事件順序進行：
 
@@ -140,7 +140,7 @@ Analytics 會使用追蹤伺服器進行資料收集。
 >
 >此時您應移除 [!DNL Audience Manager] DIL 程式碼，改為使用「客群管理模組」。如需相關指示，請參閱[實作伺服器端轉送](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=zh-Hant)。
 
-***(可選用，但建議使用)* 建立自訂 Prop &#x200B;**
+***(可選用，但建議使用)* 建立自訂 Prop **
 
 在 `AppMeasurement.js` 中設定自訂 prop 以測量涵蓋範圍.將此自訂 Prop 新增至 `doPlugins` 檔案的 `AppMeasurement.js` 函數：
 
@@ -206,7 +206,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 如果測試傳回 AID，則表示有下列其中一種情況：
 
 * 您在移轉舊版 [!DNL Analytics] ID 的程序中傳回訪客。
-* 您已啟用[寬限期](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/id/migration)。
+* 您已啟用[寬限期](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)。
 
 如果看到 AID，請根據 [!DNL Target] mboxMCAVID 檢查其值。如果有正確實作 ID 服務，這些值會相同。
 
@@ -238,3 +238,4 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 * 確定 Analytics ID (AID) 與 MID 位於影像請求中。
 * 當您符合[中止條件](../implementation-guides/setup-aam-analytics-target.md#section-aceacdb7d5794f25ac6ff46f82e148e1)時，請記得停用寬限期。
+

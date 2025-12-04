@@ -2,10 +2,10 @@
 title: Safari ITP 領域的 ECID 程式庫方法
 description: Adobe ECID (ID 服務) 程式庫的文件。
 exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '785'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 由於 Safari 透過 ITP 加強管制跨網域追蹤，因此 Adobe 必須持續落實程式庫最佳實務，既支援客戶又能維護消費者的隱私和選擇。
 
-自 2020 年 11 月 10 日起，所有透過 document.cookie API 設定的第一方永久性 Cookie (通常稱為「用戶端」Cookie)，以及在 Safari 和行動 iOS 瀏覽器中透過第一方 CNAME 實作所設定的 Cookie，期限最長為 7 天。第三方 Cookie 將如舊版 ITP 所述，繼續遭到封鎖。如需深入了解 ITP 2.1 及 Adobe 解決方案的影響，請參閱 [Safari ITP 2.1 對 Adobe Experience Cloud 和 Experience Platform Customers 的影響](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)。
+自2020年11月10日起，透過document.cookie API （通常稱為「使用者端」 Cookie）設定的所有第一方永久性Cookie，以及在Safari和行動iOS瀏覽器中透過第一方CNAME實施設定的Cookie，其到期上限為7天。 第三方 Cookie 將如舊版 ITP 所述，繼續遭到封鎖。如需深入了解 ITP 2.1 及 Adobe 解決方案的影響，請參閱 [Safari ITP 2.1 對 Adobe Experience Cloud 和 Experience Platform Customers 的影響](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)。
 
 ## ITP 相關變更、方法和設定
 
@@ -77,3 +77,4 @@ ITP 2.1 會使寫入用戶端 Cookie 的能力受到限制，導致向客戶提�
   >如果目的地頁面已有先前瀏覽行為的 ECID，則覆寫現有 Cookie 的決定會受到此 config overwriteCrossDomainMCIDAndAID 控制。如需此設定的詳細資訊，請參閱 [overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md)。
   >
   >如需深入了解此方法，請參閱 [appendVisitorIDsTo (跨網域追蹤)](/help/library/get-set/appendvisitorid.md) 參考頁面。
+

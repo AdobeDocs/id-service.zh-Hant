@@ -5,7 +5,7 @@ title: 2016 年版本注意事項
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 **新文件及修訂的文件**
 
-**新增：**&#x200B;[從 AMCV Cookie 取得地區與用戶 ID](../reference/regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
+**新增：**[從 AMCV Cookie 取得地區與用戶 ID](../reference/regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
 
 ## 1.8.0 版 {#section-69f2eb5b246b4c7aafe116b7a2a5448a}
 
@@ -218,3 +218,5 @@ ht-degree: 0%
   </tr> 
  </tbody> 
 </table>
+
+

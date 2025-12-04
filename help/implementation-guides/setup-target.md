@@ -1,18 +1,18 @@
 ---
-description: 這些指示適用於想使用 Experience Cloud Identity 服務但不想使用資料收集標記的 Target 客戶。不過，我們強烈建議您使用標記來實作 ID 服務。標記可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
+description: 這些指示適用於想使用 Experience Cloud 身分識別服務但不想使用資料收集標記的 Target 客戶。不過，我們強烈建議您使用標記來實作 ID 服務。標記可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 keywords: ID 服務
-title: 實作適用於 Target 的 Experience Cloud Identity Service
+title: 實作適用於 Target 的 Experience Cloud 身分識別服務
 exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
-source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 實作適用於 Target 的 Experience Cloud Identity Service{#implement-the-experience-cloud-id-service-for-target}
+# 實作適用於 Target 的 Experience Cloud 身分識別服務{#implement-the-experience-cloud-id-service-for-target}
 
-這些指示適用於想使用 Experience Cloud Identity 服務但不想使用[資料收集標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)的 Target 客戶。不過，我們強烈建議您使用標記來實作 ID 服務。標記可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
+這些指示適用於想使用 Experience Cloud 身分識別服務但不想使用[資料收集標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)的 Target 客戶。不過，我們強烈建議您使用標記來實作 ID 服務。標記可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 
 >[!IMPORTANT]
 >
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## 步驟 1：取得 ID 服務程式碼 {#section-b32ba0548aa546a79dd38be59832a53e}
 
-[!UICONTROL ID 服務]需要 `VisitorAPI.js` 程式碼程式庫。連絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)以取得此程式碼。
+[!UICONTROL ID Service]需要 `VisitorAPI.js` 程式碼程式庫。連絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)以取得此程式碼。
 
 ## 步驟 2：將 Visitor.getInstance 函數新增至 ID 服務程式碼 {#section-287ef2958e9f43858fe9d630ae519e22}
 
@@ -73,8 +73,9 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 * 在您的頁面託管所在的網域中檢查是否有 AMCV Cookie。
 * 驗證 `mboxMCGVID` 是否顯示在您的 [!DNL Target] 請求中，而且其是否包含 [!DNL Experience Cloud] ID (MID)。
 
-請參閱 [Cookie 與 Experience Cloud Identity Service](../introduction/cookies.md)，以了解有關 AMCV Cookie 與 MID 的資訊。
+請參閱 [Cookie 與 Experience Cloud 身分識別服務](../introduction/cookies.md)，以了解有關 AMCV Cookie 與 MID 的資訊。
 
 **部署**
 
 在程式碼通過測試後加以部署。
+
