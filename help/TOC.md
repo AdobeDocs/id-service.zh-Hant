@@ -106,5 +106,5 @@ ht-degree: 96%
    + [2017 年發行說明](release-notes/notes-2017.md)
    + [2016 年發行說明](release-notes/notes-2016.md)
    + [2015 年發行說明](release-notes/notes-2015.md)
-+ 已從目錄{hide-from-toc}[隱藏](analytics-test-file-hidetoc.md)Analytics測試
-+ {hide-from-toc}[隱藏的測試檔案](hidden-file.md)
++ [已從目錄hide-from-toc隱藏Analytics測試](analytics-test-file-hidetoc.md)
++ [hide-from-toc隱藏的測試檔案](hidden-file.md)
