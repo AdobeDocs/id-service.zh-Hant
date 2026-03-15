@@ -19,7 +19,7 @@ Experience Cloud 身分識別服務可為 Experience Cloud 應用程式和服務
 若要更進一步瞭解Adobe如何有助於唯一地識別訪客並解析身分資訊，請閱讀以下劃分：
 
 * **Experience Cloud 身分識別服務**：Experience Cloud 身分識別服務&#x200B;**負責設定 Experience Cloud ID (ECID)**。 如需詳細資訊，請閱讀 [Experience Cloud 身分識別服務 概觀](./introduction/overview.md)。
-* **Experience Cloud ID (ECID)**：ECID 是跨 Adobe Experience Platform 和 Adobe Experience Cloud 應用程式使用的共用身分識別命名空間，用於身分識別人員和裝置。 如需有關 ECID 的詳細資訊，請閱讀 [ECID 概觀](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html)。
+* **Experience Cloud ID (ECID)**：ECID 是跨 Adobe Experience Platform 和 Adobe Experience Cloud 應用程式使用的共用身分識別命名空間，用於身分識別人員和裝置。 如需有關 ECID 的詳細資訊，請閱讀 [ECID 概觀](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=zh-Hant)。
 * **Experience Platform 身分識別服務**：Experience Platform 身分識別服務透過跨裝置和系統橋接身分，為您提供客戶及其行為的全面視野。 如需詳細資訊，請閱讀 [Experience Platform 身分識別服務概觀](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hant)。
 
 <!-- The Adobe Experience Cloud Identity Service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud. It can replace ID generation code for Experience Cloud solutions and services. -->
