@@ -1,31 +1,34 @@
 ---
-description: 請依照下列指示，將 Experience Cloud ID 欄位整合到 Data Workbench 中。此程序可讓您在資料摘要中使用永續性 Experience Cloud ID，如此即可與 Adobe Experience Cloud 中的其他產品更緊密整合，並提供更強的訪客追蹤功能。
+description: 請依照下列指示，將 Experience Cloud ID 欄位整合到 Data Workbench 中。 此程序可讓您在資料摘要中使用永續性 Experience Cloud ID，如此即可與 Adobe Experience Cloud 中的其他產品更緊密整合，並提供更強的訪客追蹤功能。
 keywords: ID 服務
 title: Data Workbench 與 Experience Cloud 身分識別服務
 exl-id: 1903918d-44e4-4790-ab1f-49f5bb701e31
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/jx-5TA0i00QBj0E3hJ8KKUTM4U7Ca2hsA-CkAuMLpe4
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: 216
+ht-degree: 100%
 
 ---
 
 # Data Workbench 與 Experience Cloud 身分識別服務 {#data-workbench-and-the-experience-cloud-id-service}
 
-請依照下列指示，將 Experience Cloud ID 欄位整合到 Data Workbench 中。此程序可讓您在資料摘要中使用永續性 Experience Cloud ID，如此即可與 Adobe Experience Cloud 中的其他產品更緊密整合，並提供更強的訪客追蹤功能。
+請依照下列指示，將 Experience Cloud ID 欄位整合到 Data Workbench 中。 此程序可讓您在資料摘要中使用永續性 Experience Cloud ID，如此即可與 Adobe Experience Cloud 中的其他產品更緊密整合，並提供更強的訪客追蹤功能。
 
 若要更新 [Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/home.html?lang=zh-Hant) 以使用 ID 服務：
 
 1. 找出目前的[解碼器群組](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html?lang=zh-Hant)組態檔。
 
-   通常 [!DNL Decoder Group] 位於 [!UICONTROL Profile Manager] 中的下列路徑: `Dataset\Log Processing\Decoding Instructions.cfg`。1. 從設定檔複製最新的解碼器格式。
+   通常 [!DNL Decoder Group] 位於 [!UICONTROL Profile Manager] 中的下列路徑: `Dataset\Log Processing\Decoding Instructions.cfg`。 1. 從設定檔複製最新的解碼器格式。
 1. 在原始解碼器格式下方貼上解碼器格式。
 1. 開啟解碼器格式並將這些新欄位位置新增至清單結尾:
 
    * `x-mcvisid`
    * `x-tnt-action`
 
-   如果您不打算使用或定義這些欄位，請將欄位保留空白。**解碼指令**
+   如果您不打算使用或定義這些欄位，請將欄位保留空白。  **解碼指令**
 
 請參閱以下完整的解碼器內容，包括上述新欄位。
 

@@ -2,10 +2,14 @@
 title: Safari ITP 領域的 ECID 程式庫方法
 description: Adobe ECID (ID 服務) 程式庫的文件。
 exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/GwI5LkCBXGiKyfjGm6bOqbyGbHQ2GwW64PeyLIrl3Ck
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 95%
+source-wordcount: 833
+ht-degree: 93%
 
 ---
 
@@ -17,7 +21,7 @@ ht-degree: 95%
 
 由於 Safari 透過 ITP 加強管制跨網域追蹤，因此 Adobe 必須持續落實程式庫最佳實務，既支援客戶又能維護消費者的隱私和選擇。
 
-自2020年11月10日起，透過document.cookie API （通常稱為「使用者端」 Cookie）設定的所有第一方永久性Cookie，以及在Safari和行動iOS瀏覽器中透過第一方CNAME實施設定的Cookie，其到期上限為7天。 第三方 Cookie 將如舊版 ITP 所述，繼續遭到封鎖。如需深入了解 ITP 2.1 及 Adobe 解決方案的影響，請參閱 [Safari ITP 2.1 對 Adobe Experience Cloud 和 Experience Platform Customers 的影響](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)。
+自2020年11月10日起，透過document.cookie API （通常稱為「使用者端」 Cookie）設定的所有第一方永久性Cookie，以及在Safari和行動iOS瀏覽器中透過第一方CNAME實施設定的Cookie，其到期上限為7天。 第三方 Cookie 將如舊版 ITP 所述，繼續遭到封鎖。 如需深入了解 ITP 2.1 及 Adobe 解決方案的影響，請參閱 [Safari ITP 2.1 對 Adobe Experience Cloud 和 Experience Platform Customers 的影響](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)。
 
 ## ITP 相關變更、方法和設定
 
@@ -31,35 +35,35 @@ ht-degree: 95%
 
 ## 目前 ITP 和 Apple WebKit 的 ECID 程式庫行為
 
-ITP 2.1 會使寫入用戶端 Cookie 的能力受到限制，導致向客戶提供訪客追蹤資訊時，準確度大打折扣。因此，我們已著手調整 Adobe 的 CNAME 追蹤伺服器，將訪客的 Experience Cloud ID (ECID) 儲存在第一方 Cookie。
+ITP 2.1 會使寫入用戶端 Cookie 的能力受到限制，導致向客戶提供訪客追蹤資訊時，準確度大打折扣。 因此，我們已著手調整 Adobe 的 CNAME 追蹤伺服器，將訪客的 Experience Cloud ID (ECID) 儲存在第一方 Cookie。
 
-這項變更只適用於在第一方情境中使用 Analytics CNAME 的 ECID 客戶。如果您是尚未使用 CNAME 的 Analytics 客戶，或甚至不是 Analytics 客戶，還是符合使用 CNAME 記錄的資格。請連絡客戶服務或您的客戶代表，以開始 [CNAME](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html?lang=zh-Hant) 的註冊程序。
+這項變更只適用於在第一方情境中使用 Analytics CNAME 的 ECID 客戶。 如果您是尚未使用 CNAME 的 Analytics 客戶，或甚至不是 Analytics 客戶，還是符合使用 CNAME 記錄的資格。 請連絡客戶服務或您的客戶代表，以開始 [CNAME](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html?lang=zh-Hant) 的註冊程序。
 
-若要使用此項變更，請升級至 ECID 程式庫 4.3.0 版以上。
+升級至ECID程式庫版本 4.3.0 +以利用這項變更。
 
 以下概述 ECID 程式庫與 ITP 2.1 搭配使用下的運作方式，並說明 Apple 在Big Surr 版本中所做的最新變更。
 
 **設計**
 
-對 demdex. net 提出 ID 要求並擷取 ECID 後，如果在您的 ECID 程式庫中設定追蹤伺服器，會對客戶的網域提出 ID 要求。此端點會從查詢字串讀取 eid param，並設定只包含 ECID 和兩年期限的新 [Cookie](/help/introduction/cookies.md)。每次以這種方式呼叫此端點時，`s_ecid` Cookie 的有效期限將會重新覆寫為呼叫當天的兩年後。ECID 程式庫必須更新至 4.3.0 版，才能擷取此 Cookie 的值。
+對 demdex. net 提出 ID 要求並擷取 ECID 後，如果在您的 ECID 程式庫中設定追蹤伺服器，會對客戶的網域提出 ID 要求。 此端點會從查詢字串讀取 eid param，並設定只包含 ECID 和兩年期限的新 [Cookie](/help/introduction/cookies.md)。 每次以這種方式呼叫此端點時，`s_ecid` Cookie 的有效期限將會重新覆寫為呼叫當天的兩年後。 ECID 程式庫必須更新至 4.3.0 版，才能擷取此 Cookie 的值。
 
 >[!IMPORTANT]
 >
 >Big Sur 更新中，透過 CNAME 設定的 `s_ecid` Cookie 也適用最久 7 天過期的限制。
 
-這個新 `s_ecid` Cookie 會依循與 AMCV Cookie 相同的選擇退出狀態。如果從 `s_ecid` Cookie 讀取 eid，每次都會呼叫 demdex 來擷取該 ID 的最新選擇退出狀態，並將 demdex 儲存在 AMCV Cookie 中。
+這個新 `s_ecid` Cookie 會依循與 AMCV Cookie 相同的選擇退出狀態。 如果從 `s_ecid` Cookie 讀取 eid，每次都會呼叫 demdex 來擷取該 ID 的最新選擇退出狀態，並將 demdex 儲存在 AMCV Cookie 中。
 
 此外，如果您的消費者已透過此[方法](https://experienceleague.adobe.com/docs/analytics/implementation/js/opt-out.html?lang=zh-Hant)選擇退出 Analytics 追蹤，則系統會刪除這個 `s_ecid` Cookie。
 
-使用 `trackingServer` 或 `trackingServerSecure` 初始化程式庫時，應為 VisitorJS 程式庫提供追蹤伺服器名稱。此名稱應符合 Analytics 設定中的 `trackingServer` 設定。
+使用 `trackingServer` 或 `trackingServerSecure` 初始化程式庫時，應為 VisitorJS 程式庫提供追蹤伺服器名稱。 此名稱應符合 Analytics 設定中的 `trackingServer` 設定。
 
-如果您選擇不使用此方法，請將下列設定新增至您的 ECID 程式庫實作：`discardtrackingServerECID`。此設定設為 true 時，訪客程式庫不會讀取第一方追蹤伺服器設定的 MID。
+如果您選擇不使用此方法，請將下列設定新增至您的 ECID 程式庫實作：`discardtrackingServerECID`。 此設定設為 true 時，訪客程式庫不會讀取第一方追蹤伺服器設定的 MID。
 
 ![](assets/itp-proposal-v1.png)
 
 ## 使用 appendVisitorIDsTo 方法執行跨網域追蹤 (在自己公司的多個網域內)
 
-瀏覽器封鎖第三方 Cookie 時，此函數可讓您跨網域共用訪客的 ECID。若要使用此函數，您必須先實作 ID 服務，且擁有來源和目的地的網域。此函數可在 VisitorAPI. js 1.7.0 版或更新版本中使用 (但不適用於 1.10.0 版)。
+瀏覽器封鎖第三方 Cookie 時，此函數可讓您跨網域共用訪客的 ECID。 若要使用此函數，您必須先實作 ID 服務，且擁有來源和目的地的網域。 此函數可在 VisitorAPI. js 1.7.0 版或更新版本中使用 (但不適用於 1.10.0 版)。
 
 **設計**
 
@@ -74,7 +78,7 @@ ITP 2.1 會使寫入用戶端 Cookie 的能力受到限制，導致向客戶提�
 * 目的地頁面上的 ID 服務程式碼會使用傳入的 ECID 追蹤訪客。
 
   >[!NOTE]
-  >如果目的地頁面已有先前瀏覽行為的 ECID，則覆寫現有 Cookie 的決定會受到此 config overwriteCrossDomainMCIDAndAID 控制。如需此設定的詳細資訊，請參閱 [overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md)。
+  >如果目的地頁面已有先前瀏覽行為的 ECID，則覆寫現有 Cookie 的決定會受到此 config overwriteCrossDomainMCIDAndAID 控制。 如需此設定的詳細資訊，請參閱 [overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md)。
   >
   >如需深入了解此方法，請參閱 [appendVisitorIDsTo (跨網域追蹤)](/help/library/get-set/appendvisitorid.md) 參考頁面。
 

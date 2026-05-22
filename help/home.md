@@ -3,9 +3,13 @@ description: Experience Cloud 身分識別服務可為 Experience Cloud 應用�
 keywords: ID 服務；身分識別服務；Experience Cloud 身分識別服務
 title: Experience Cloud 身分識別服務
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
-source-git-commit: 126292a287e219ee3152ce92eec63c620cce1254
+TQID: https://experienceleague.adobe.com/xzEgzuN2NnyOnhCPocQikOXHFRU6zmLWLGdrJL4C3GM
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: 428
 ht-degree: 96%
 
 ---
@@ -19,7 +23,7 @@ Experience Cloud 身分識別服務可為 Experience Cloud 應用程式和服務
 若要更進一步瞭解Adobe如何有助於唯一地識別訪客並解析身分資訊，請閱讀以下劃分：
 
 * **Experience Cloud 身分識別服務**：Experience Cloud 身分識別服務&#x200B;**負責設定 Experience Cloud ID (ECID)**。 如需詳細資訊，請閱讀 [Experience Cloud 身分識別服務 概觀](./introduction/overview.md)。
-* **Experience Cloud ID (ECID)**：ECID 是跨 Adobe Experience Platform 和 Adobe Experience Cloud 應用程式使用的共用身分識別命名空間，用於身分識別人員和裝置。 如需有關 ECID 的詳細資訊，請閱讀 [ECID 概觀](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=zh-Hant)。
+* **Experience Cloud ID (ECID)**：ECID 是跨 Adobe Experience Platform 和 Adobe Experience Cloud 應用程式使用的共用身分識別命名空間，用於身分識別人員和裝置。 如需有關 ECID 的詳細資訊，請閱讀 [ECID 概觀](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html)。
 * **Experience Platform 身分識別服務**：Experience Platform 身分識別服務透過跨裝置和系統橋接身分，為您提供客戶及其行為的全面視野。 如需詳細資訊，請閱讀 [Experience Platform 身分識別服務概觀](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hant)。
 
 <!-- The Adobe Experience Cloud Identity Service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud. It can replace ID generation code for Experience Cloud solutions and services. -->

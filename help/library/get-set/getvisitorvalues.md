@@ -1,18 +1,22 @@
 ---
-description: 這是非同步 API，依預設會為 Analytics、ID 服務、資料收集退出、地理位置以及中繼資料「blob」內容傳回識別碼。您也可以透過選擇性的 visitor.FIELDS 列舉控制您要傳回的 ID。
+description: 這是非同步 API，依預設會為 Analytics、ID 服務、資料收集退出、地理位置以及中繼資料「blob」內容傳回識別碼。 您也可以透過選擇性的 visitor.FIELDS 列舉控制您要傳回的 ID。
 keywords: ID 服務
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/CF9G6wKlDxjklwedJk8KVmYH7KjA7CRkxtNu-mQ-Kjs
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: 421
 ht-degree: 95%
 
 ---
 
 # getVisitorValues{#getvisitorvalues}
 
-這是非同步 API，依預設會為 Analytics、ID 服務、資料收集退出、地理位置以及中繼資料「blob」內容傳回識別碼。您也可以透過選擇性的 visitor.FIELDS 列舉控制您要傳回的 ID。
+這是非同步 API，依預設會為 Analytics、ID 服務、資料收集退出、地理位置以及中繼資料「blob」內容傳回識別碼。 您也可以透過選擇性的 visitor.FIELDS 列舉控制您要傳回的 ID。
 
 內容:
 
@@ -36,7 +40,7 @@ ht-degree: 95%
 
 ## 使用案例1：要求預設資料集 {#section-36a31683558742a5915db3a391e09f7b}
 
-此程式碼會傳回標準資料集。您的請求和回應可能會如下列範例所示。
+此程式碼會傳回標準資料集。 您的請求和回應可能會如下列範例所示。
 
 ```js
 //Call the ID service 
@@ -61,7 +65,7 @@ visitor.getVisitorValues(visitorIdsCallback);
 
 ## 使用案例2：要求自訂資料集 {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-此程式碼使用選用的陣列，以透過 `visitor.FIELDS` 列舉來傳回指定的 ID 集合。在此情況下，我們只需要訪客的 Experience Cloud ID (MCID) 和 Analytics ID (MCAID)。您的請求和回應可能會如下列範例所示。
+此程式碼使用選用的陣列，以透過 `visitor.FIELDS` 列舉來傳回指定的 ID 集合。 在此情況下，我們只需要訪客的 Experience Cloud ID (MCID) 和 Analytics ID (MCAID)。 您的請求和回應可能會如下列範例所示。
 
 ```js
 //Call the ID service 
@@ -83,7 +87,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
 
 ## 已定義的回應引數 {#section-4c4c300167694c6fbff1d6c612f372b5}
 
-下表列出並定義回應參數。這些也是 `visitor.FIELDS` 列舉中的所有值。請注意，如果沒有特定變數的值，此方法將會傳回空字串。
+下表列出並定義回應參數。 這些也是 `visitor.FIELDS` 列舉中的所有值。 請注意，如果沒有特定變數的值，此方法將會傳回空字串。
 
 <table id="table_32D0FEEA76CE4F298EED4B8F5C644232"> 
  <thead> 
@@ -99,7 +103,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>資料收集地區 ID。此為特定 ID 服務資料中心之地理位置的數值識別碼。 </p> <p>請參閱 <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=zh-Hant" format="https" scope="external">DCS 地區 ID、位置與主機名稱</a>以及 <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>。 </p> </td> 
+   <td colname="col2"> <p>資料收集地區 ID。 此為特定 ID 服務資料中心之地理位置的數值識別碼。 </p> <p>請參閱 <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=zh-Hant" format="https" scope="external">DCS 地區 ID、位置與主機名稱</a>以及 <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 

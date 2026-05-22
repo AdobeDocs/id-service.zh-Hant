@@ -1,18 +1,21 @@
 ---
-description: idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實作 ID 同步。VisitorAPI.js 1.10 (含) 以上版本均已提供這些函數。
+description: idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實作 ID 同步。 VisitorAPI.js 1.10 (含) 以上版本均已提供這些函數。
 keywords: ID 服務
 title: 依 URL 或資料來源執行 ID 同步作業
 exl-id: a22e6b47-00ff-4b51-9958-ddeccc1e507e
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/93OKTlZcEibGqbwDnXIH90KyRT2S6Q7P50HgRATEenI
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: 248
 ht-degree: 96%
 
 ---
 
 # 依 URL 或資料來源執行 ID 同步作業{#id-synchronization-by-url-or-data-source}
 
-idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實作 ID 同步。VisitorAPI.js 1.10 (含) 以上版本均已提供這些函數。
+idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實作 ID 同步。 VisitorAPI.js 1.10 (含) 以上版本均已提供這些函數。
 
 ## 語法、屬性和巨集 {#section-90ac61617482463aaf4c57009b830332}
 
@@ -63,7 +66,7 @@ idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destina
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> minutesToLive </span> </td> 
    <td colname="col2"> 數字 </td> 
-   <td colname="col3"> <p> <i>(選用)</i> 設定 Cookie 過期時間。值必須是整數。預設值為 20160 分鐘 (14天)。 </p> </td> 
+   <td colname="col3"> <p> <i>(選用)</i> 設定 Cookie 過期時間。 值必須是整數。 預設值為 20160 分鐘 (14天)。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> url </span> </td> 
@@ -77,13 +80,13 @@ idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destina
 
 這兩個函數都接受以下巨集：
 
-* `%TIMESTAMP%`：產生時間戳記 (單位為毫秒)。用於快取破壞。
+* `%TIMESTAMP%`：產生時間戳記 (單位為毫秒)。 用於快取破壞。
 * `%DID%`：插入用戶的 Audience Manager ID。
 * `%HTTP_PROTO%`；設定通訊協定 (`http` 或 `https`)。
 
 ## 範常式式碼和輸出 {#section-0115615c37584a19a2ab11e917c4e7e9}
 
-如果執行成功，兩個函數會傳回 `Successfully queued`。如果失敗則傳回錯誤訊息字串。
+如果執行成功，兩個函數會傳回 `Successfully queued`。 如果失敗則傳回錯誤訊息字串。
 
 ### visitor.idSyncByURL
 

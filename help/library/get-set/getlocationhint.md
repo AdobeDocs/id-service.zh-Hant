@@ -1,18 +1,21 @@
 ---
-description: 傳回 Experience Cloud 身分識別服務地區 ID。地區 ID (或位置提示) 是特定 ID 服務資料中心之地理位置的數值識別碼。必須要有地區 ID，您才能對 Audience Manager 發出伺服器端 API 呼叫。
+description: 傳回 Experience Cloud 身分識別服務地區 ID。 地區 ID (或位置提示) 是特定 ID 服務資料中心之地理位置的數值識別碼。 必須要有地區 ID，您才能對 Audience Manager 發出伺服器端 API 呼叫。
 keywords: ID 服務
 title: getLocationHint
 exl-id: 0213f828-a985-4201-8a38-0a4b170ed057
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/Q58a-bmHINs-3mhlUarH8Ipo85tNhjTjMDSlZLFcHsw
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: 195
+ht-degree: 100%
 
 ---
 
 # getLocationHint{#getlocationhint}
 
-傳回 Experience Cloud 身分識別服務地區 ID。地區 ID (或位置提示) 是特定 ID 服務資料中心之地理位置的數值識別碼。必須要有地區 ID，您才能對 Audience Manager 發出伺服器端 API 呼叫。
+傳回 Experience Cloud 身分識別服務地區 ID。 地區 ID (或位置提示) 是特定 ID 服務資料中心之地理位置的數值識別碼。 必須要有地區 ID，您才能對 Audience Manager 發出伺服器端 API 呼叫。
 
 **語法：**`var *`變數名稱`* = visitor.getLocationHint()`
 
@@ -20,7 +23,7 @@ ht-degree: 0%
 
 **程式碼範例**
 
-位置提示函數會從 AMCV Cookie 讀取地區 ID。如果 AMCV Cookie 中已設定地區 ID，則會立即進行回呼。若未設定地區 ID，則函數會先等待伺服器回應，再將地區 ID 傳至回呼。您的程式碼看起來可能類似於下列範例。
+位置提示函數會從 AMCV Cookie 讀取地區 ID。 如果 AMCV Cookie 中已設定地區 ID，則會立即進行回呼。 若未設定地區 ID，則函數會先等待伺服器回應，再將地區 ID 傳至回呼。 您的程式碼看起來可能類似於下列範例。
 
 ```js
 //callback function 

@@ -1,18 +1,22 @@
 ---
-description: 這些指示適用於想使用 Experience Cloud 身分識別服務但不想使用資料收集標記的 Target 客戶。不過，我們強烈建議您使用標記來實作 ID 服務。標記可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
+description: 這些指示適用於想使用 Experience Cloud 身分識別服務但不想使用資料收集標記的 Target 客戶。 不過，我們強烈建議您使用標記來實作 ID 服務。 標記可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 keywords: ID 服務
 title: 實作適用於 Target 的 Experience Cloud 身分識別服務
 exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/1994Y39yotvpJkcYazVnG0w-GupHiZZipnLWSTbgle8
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: 422
+ht-degree: 100%
 
 ---
 
 # 實作適用於 Target 的 Experience Cloud 身分識別服務{#implement-the-experience-cloud-id-service-for-target}
 
-這些指示適用於想使用 Experience Cloud 身分識別服務但不想使用[資料收集標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)的 Target 客戶。不過，我們強烈建議您使用標記來實作 ID 服務。標記可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
+這些指示適用於想使用 Experience Cloud 身分識別服務但不想使用[資料收集標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)的 Target 客戶。 不過，我們強烈建議您使用標記來實作 ID 服務。 標記可簡化實作工作流程，並自動確保程式碼放置和順序的正確性。
 
 >[!IMPORTANT]
 >
@@ -21,7 +25,7 @@ ht-degree: 0%
 
 ## 步驟 1：取得 ID 服務程式碼 {#section-b32ba0548aa546a79dd38be59832a53e}
 
-[!UICONTROL ID Service]需要 `VisitorAPI.js` 程式碼程式庫。連絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)以取得此程式碼。
+[!UICONTROL ID Service]需要 `VisitorAPI.js` 程式碼程式庫。 連絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)以取得此程式碼。
 
 ## 步驟 2：將 Visitor.getInstance 函數新增至 ID 服務程式碼 {#section-287ef2958e9f43858fe9d630ae519e22}
 
@@ -33,7 +37,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 **第 2 部分：將函數程式碼新增至 VisitorAPI.js 檔案**
 
-將 `Visitor.getInstance` 函數放置在程式碼區塊之後的檔案結尾。完成編輯的檔案應該如下所示：
+將 `Visitor.getInstance` 函數放置在程式碼區塊之後的檔案結尾。 完成編輯的檔案應該如下所示：
 
 ```js
 /* 
@@ -50,17 +54,17 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 ## 步驟 3：將您的 Experience Cloud 組織 ID 新增至 Visitor.getInstance {#section-522b1877be9243c39b222859b821f0ce}
 
-在 `Visitor.getInstance` 函數中，將 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` 取代為 [!DNL Experience Cloud] 組織 ID。如果您不知道組織 ID，可以在 [!DNL Experience Cloud] 管理頁面中找到。另請參閱[管理 - 核心服務](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hant)。您編輯的函數看起來可能類似於下列範例。
+在 `Visitor.getInstance` 函數中，將 `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` 取代為 [!DNL Experience Cloud] 組織 ID。 如果您不知道組織 ID，可以在 [!DNL Experience Cloud] 管理頁面中找到。 另請參閱[管理 - 核心服務](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=zh-Hant)。 您編輯的函數看起來可能類似於下列範例。
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg");`
 
 >[!IMPORTANT]
 >
->*請勿*&#x200B;變更組織 ID 中的字元大小寫。ID 區分大小寫，需如實使用。
+>*請勿*&#x200B;變更組織 ID 中的字元大小寫。 ID 區分大小寫，需如實使用。
 
 ## 步驟 4：將訪客 API 程式碼新增至頁面 {#section-02d8dd7678b64a85b5abc1c4ef0845dd}
 
-先將 `VisitorAPI.js` 檔案部署至網站的 `<head>` 標籤中，然後再參照 `mbox.js` 檔案。必須在產生第一個 [!DNL Experience Cloud] 網路呼叫之前執行 [!DNL Target] ID 服務。測試並驗證之後，將程式碼移至生產環境。
+先將 `VisitorAPI.js` 檔案部署至網站的 `<head>` 標籤中，然後再參照 `mbox.js` 檔案。 必須在產生第一個 [!DNL Experience Cloud] 網路呼叫之前執行 [!DNL Target] ID 服務。 測試並驗證之後，將程式碼移至生產環境。
 
 ## 步驟 5：測試並部署 ID 服務程式碼 {#section-e81ee439bb8a4c2abea43d76f3112e9c}
 

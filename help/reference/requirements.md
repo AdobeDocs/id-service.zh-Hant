@@ -3,10 +3,14 @@ description: 請參閱本節，確定您使用的解決方案、服務及程式�
 keywords: ID 服務
 title: Experience Cloud 身分識別服務的需求
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: 3c230d158e3094ebb13b0fa4f1eddb25eecde0b4
+TQID: https://experienceleague.adobe.com/yOoLEIKihVSpDLeZsplTZzg-toOENKlBzsQt2G2YcKk
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d3cdead0-685a-4489-9250-4bb709942f66id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 88%
+source-wordcount: 707
+ht-degree: 91%
 
 ---
 
@@ -20,7 +24,7 @@ ht-degree: 88%
 
 ### 標準實作
 
-如需標準實作，請參閱 [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)。
+如需標準實作，請參閱 [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)。
 
 ### 非標準實作
 
@@ -59,7 +63,7 @@ ht-degree: 88%
 
 ## Analytics 需求：地區資料收集 (RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-所有追蹤伺服器均已轉換為RDC，因此不需要變更Analytics追蹤伺服器。[更多資訊……](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=zh-Hant)
+所有追蹤伺服器均已轉換為 RDC，因此不需要變更 Analytics 追蹤伺服器。 [更多資訊...](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=zh-Hant)
 
 ## 程式碼資料庫和版本需求 {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -105,11 +109,11 @@ ht-degree: 88%
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>請參閱 <a href="https://experienceleague.adobe.com/zh-hant/docs/target-dev/developer/client-side/at-js-implementation/at-js/overview" format="https" scope="external">Mbox 程式碼</a>。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>請參閱 <a href="https://experienceleague.adobe.com/en/docs/target-dev/developer/client-side/at-js-implementation/at-js/overview" format="https" scope="external">Mbox 程式碼</a>。 </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>請參閱 <a href="https://experienceleague.adobe.com/zh-hant/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works" format="https" scope="external">at.js 實作</a>。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>請參閱 <a href="https://experienceleague.adobe.com/en/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works" format="https" scope="external">at.js 實作</a>。 </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
