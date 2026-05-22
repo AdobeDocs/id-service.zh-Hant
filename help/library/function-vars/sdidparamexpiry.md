@@ -1,18 +1,26 @@
 ---
-description: 此設定可讓您在使用 appendSupplementalDataIDTo helper 函數將某個頁面的 Supplemental Data ID (SDID) 傳遞給另一個頁面時，覆寫該 ID 的預設過期間隔。根據預設，接收頁面上的 ID 服務程式碼有 30 秒的時間可取得參考頁面所傳送的 URL 中的 SDID。如果接收頁面上的 ID 服務程式碼無法在少於 30 秒的情況下擷取 SDID，它會要求新的 SDID。此功能主要適用於需要在不同頁面之間傳遞 SDID 以及想要控制此逾時間隔的 A4T 客戶。
+description: 此設定可讓您在使用 appendSupplementalDataIDTo helper 函數將某個頁面的 Supplemental Data ID (SDID) 傳遞給另一個頁面時，覆寫該 ID 的預設過期間隔。 根據預設，接收頁面上的 ID 服務程式碼有 30 秒的時間可取得參考頁面所傳送的 URL 中的 SDID。 如果接收頁面上的 ID 服務程式碼無法在少於 30 秒的情況下擷取 SDID，它會要求新的 SDID。 此功能主要適用於需要在不同頁面之間傳遞 SDID 以及想要控制此逾時間隔的 A4T 客戶。
 keywords: ID 服務
 title: sdidParamExpiry
 exl-id: 5458ffa5-03d1-4c52-907d-c50fe00ce35d
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/PUHy-KpWKY0BQSMkKidwpLYES6FvME2EtKCbCpfMFrw
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: 260
+ht-degree: 100%
 
 ---
 
 # sdidParamExpiry{#sdidparamexpiry}
 
-此設定可讓您在使用 appendSupplementalDataIDTo helper 函數將某個頁面的 Supplemental Data ID (SDID) 傳遞給另一個頁面時，覆寫該 ID 的預設過期間隔。根據預設，接收頁面上的 ID 服務程式碼有 30 秒的時間可取得參考頁面所傳送的 URL 中的 SDID。如果接收頁面上的 ID 服務程式碼無法在少於 30 秒的情況下擷取 SDID，它會要求新的 SDID。此功能主要適用於需要在不同頁面之間傳遞 SDID 以及想要控制此逾時間隔的 A4T 客戶。
+此設定可讓您在使用 appendSupplementalDataIDTo helper 函數將某個頁面的 Supplemental Data ID (SDID) 傳遞給另一個頁面時，覆寫該 ID 的預設過期間隔。 根據預設，接收頁面上的 ID 服務程式碼有 30 秒的時間可取得參考頁面所傳送的 URL 中的 SDID。 如果接收頁面上的 ID 服務程式碼無法在少於 30 秒的情況下擷取 SDID，它會要求新的 SDID。 此功能主要適用於需要在不同頁面之間傳遞 SDID 以及想要控制此逾時間隔的 A4T 客戶。
 
 **覆寫 SDID 逾時**
 
@@ -22,7 +30,7 @@ ht-degree: 0%
 
 **程式碼範例**
 
-在設定您的 ID 服務程式碼之後，它可能與這個範例類似。此範例將 SDID 逾時設定為 15 秒。此設定適用於 [appendSupplementalDataIDTo](../../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d) helper 方法。
+在設定您的 ID 服務程式碼之後，它可能與這個範例類似。 此範例將 SDID 逾時設定為 15 秒。 此設定適用於 [appendSupplementalDataIDTo](../../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d) helper 方法。
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 

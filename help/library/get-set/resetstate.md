@@ -3,9 +3,19 @@ description: 此功能主要是為 A4T 客戶所設計，可協助解決在單�
 keywords: ID 服務
 title: resetState
 exl-id: 8e8cb299-bb89-4bc1-8841-3091ce0cbd81
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/ud8yTufRC6V5T58oh20G65MYNTCZvMlK5FdHVrrZFpU
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: 377
 ht-degree: 99%
 
 ---
@@ -18,8 +28,8 @@ ht-degree: 99%
 
 使用 ID 服務的 A4T 客戶可以視需要使用 `visitor.resetState()` 函數來執行下列作業:
 
-* 透過重新導向在不同頁面或畫面之間傳遞 Supplemental Data ID (SDID) 或其他任何 ID。通常一定要有這個函數，ID 服務才會傳遞此 ID。
-* 使用只會透過 Ajax 呼叫更新頁面或應用程式的特定區段的程式碼，而且您想要追蹤這些操作。舉例來說，假設您有一個頁面，在按下此頁面上的某個物件時，只會載入或變更特殊區段。在此情況下，除非重新載入頁面，否則 ID 服務無法要求不同的 ID。但如果是使用 `visitor.resetState()`，則可以在下列條件下要求新的 ID。
+* 透過重新導向在不同頁面或畫面之間傳遞 Supplemental Data ID (SDID) 或其他任何 ID。 通常一定要有這個函數，ID 服務才會傳遞此 ID。
+* 使用只會透過 Ajax 呼叫更新頁面或應用程式的特定區段的程式碼，而且您想要追蹤這些操作。 舉例來說，假設您有一個頁面，在按下此頁面上的某個物件時，只會載入或變更特殊區段。 在此情況下，除非重新載入頁面，否則 ID 服務無法要求不同的 ID。 但如果是使用 `visitor.resetState()`，則可以在下列條件下要求新的 ID。
 
 請參閱以下的程式碼範例。
 
@@ -29,15 +39,15 @@ ht-degree: 99%
 
 ## 程式碼範例 {#section-d75b211bb4ea473887eb284de2ad838b}
 
-您的 ID 服務實作會影響您使用此函數的方式。請參考下表的範例。
+您的 ID 服務實作會影響您使用此函數的方式。 請參考下表的範例。
 
 **伺服器端實作**
 
-伺服器端實作適用於擁有混合式伺服器端及用戶端 [!DNL Analytics]、[!DNL Target] 和 ID 服務實作的 A4T 客戶。如果已透過此方法設定 ID 服務，您只需要將 `visitor.resetState()` 新增到頁面即可。呼叫 ID 服務會自動傳回新的 ID 和伺服器狀態。
+伺服器端實作適用於擁有混合式伺服器端及用戶端 [!DNL Analytics]、[!DNL Target] 和 ID 服務實作的 A4T 客戶。 如果已透過此方法設定 ID 服務，您只需要將 `visitor.resetState()` 新增到頁面即可。 呼叫 ID 服務會自動傳回新的 ID 和伺服器狀態。
 
 **非標準實作** (透過 ID)
 
-如果您透過[非標準實作](../../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113)設定 ID 服務，您需要設定一個變數物件以保留您想要透過 `visitor.resetState()` 傳遞的 SDID (或其他 ID)。這會包含您的[組織 ID](../../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) 以及您想要傳遞的 ID，如下所示。您的程式碼看起來可能類似於下列範例。
+如果您透過[非標準實作](../../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113)設定 ID 服務，您需要設定一個變數物件以保留您想要透過 `visitor.resetState()` 傳遞的 SDID (或其他 ID)。 這會包含您的[組織 ID](../../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) 以及您想要傳遞的 ID，如下所示。 您的程式碼看起來可能類似於下列範例。
 
 ```js
 //Instantiate server state variable 
@@ -62,7 +72,7 @@ visitor.resetState(serverState);
 
 **非標準實作** (不透過傳遞 ID)
 
-在此情況下，`visitor.resetState()` 可用於產生新的 ID。當用戶導覽至新畫面而不重新整理頁面，而且您需要新的 ID 時，這在單頁應用程式中會很實用。
+在此情況下，`visitor.resetState()` 可用於產生新的 ID。 當用戶導覽至新畫面而不重新整理頁面，而且您需要新的 ID 時，這在單頁應用程式中會很實用。
 
 ```js
  

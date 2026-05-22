@@ -3,9 +3,21 @@ description: 2018 年 Experience Cloud 身分識別服務的功能發佈、更�
 keywords: ID 服務
 title: 2018 年版本注意事項
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/1vrVFuFbQiLL9XYnZwEf0WkElW-qhsklHbrem-mo5LE
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: 503
 ht-degree: 94%
 
 ---
@@ -26,7 +38,7 @@ ht-degree: 94%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>提升 AMCV Cookie 的安全性 </p> </td> 
-   <td colname="col2"> <p>在內部安全性掃描期間，我們發現當使用 DTM 程式庫時，用於作業階段管理的 Cookie 無法指定適當的屬性。這可能會導致 Cookie 資訊無意間被分享。為了解決此問題，我們引進了一項設定，可讓客戶將 AMCV Cookie 設定為安全 Cookie。請參閱 <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>。 </p> </td> 
+   <td colname="col2"> <p>在內部安全性掃描期間，我們發現當使用 DTM 程式庫時，用於作業階段管理的 Cookie 無法指定適當的屬性。 這可能會導致 Cookie 資訊無意間被分享。 為了解決此問題，我們引進了一項設定，可讓客戶將 AMCV Cookie 設定為安全 Cookie。 請參閱 <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -43,7 +55,7 @@ ht-degree: 94%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>提升 AMCV Cookie 的安全性 </p> </td> 
-   <td colname="col2"> <p>在內部安全性掃描期間，我們發現當使用 DTM 程式庫時，用於作業階段管理的 Cookie 無法指定適當的屬性。這可能會導致 Cookie 資訊無意間被分享。為了解決此問題，我們引進了一項設定，可讓客戶將 AMCV Cookie 設定為安全 Cookie。請參閱 secureCookie。 </p> </td> 
+   <td colname="col2"> <p>在內部安全性掃描期間，我們發現當使用 DTM 程式庫時，用於作業階段管理的 Cookie 無法指定適當的屬性。 這可能會導致 Cookie 資訊無意間被分享。 為了解決此問題，我們引進了一項設定，可讓客戶將 AMCV Cookie 設定為安全 Cookie。 請參閱 secureCookie。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>整合代碼和 ID 必須是數字或非空白字串 </p> </td> 
@@ -68,7 +80,7 @@ ht-degree: 94%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>不重複訪客計數出現不符實情的尖峰 </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 身分識別服務 3.1.0 版發行後，我們發現實作本版本時，不重複訪客計數會出現與事實不符的尖峰。只有在使用最新版 ECID v3.1.0 而且用戶已在 Safari 瀏覽器的隱私設定中選取「僅允許來自目前網站」選項時，才會出現這個行為。版本 3.1.2 解決了這個問題。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud 身分識別服務 3.1.0 版發行後，我們發現實作本版本時，不重複訪客計數會出現與事實不符的尖峰。 只有在使用最新版 ECID v3.1.0 而且用戶已在 Safari 瀏覽器的隱私設定中選取「僅允許來自目前網站」選項時，才會出現這個行為。 版本 3.1.2 解決了這個問題。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -77,7 +89,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->建議您盡快從 3.1.0 版升級至最新版本。請參閱 3.1.2 版說明。Adobe Experience Platform Launch、DTM 及 AppMeasurement 都會提供最新套件。
+>建議您盡快從 3.1.0 版升級至最新版本。 請參閱 3.1.2 版說明。 Adobe Experience Platform Launch、DTM 及 AppMeasurement 都會提供最新套件。
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
@@ -106,7 +118,7 @@ ht-degree: 94%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>適用於多重 ID 同步請求的執行緒禮讓作業 </p> </td> 
-   <td colname="col2"> <p><b>Iframe</b> </p> <p>如果客戶正在執行多個 ID 同步作業，則因為持續進行 CPU 計算，所以在某些情況下會導致 UI 遭到封鎖。我們即將推出執行緒讓步，以便分隔 ID 同步要求 (每個要求 100 毫秒)。 </p> <p>這項變更將會讓使用 Visitor 2.3.0+ 和 DIL 6.10+ 的客戶提高效能。 </p> </td> 
+   <td colname="col2"> <p><b>Iframe</b> </p> <p>如果客戶正在執行多個 ID 同步作業，則因為持續進行 CPU 計算，所以在某些情況下會導致 UI 遭到封鎖。 我們即將推出執行緒讓步，以便分隔 ID 同步要求 (每個要求 100 毫秒)。 </p> <p>這項變更將會讓使用 Visitor 2.3.0+ 和 DIL 6.10+ 的客戶提高效能。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 新增停用第三方呼叫的功能 </td> 

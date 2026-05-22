@@ -2,10 +2,20 @@
 description: 選擇加入程式庫 API 與組態設定參考資料。
 title: 選擇加入參考資料
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/Fmah6TphSbKa3W6s6ew97Diz59Brj-2tpYKcxwzEj1o
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 98%
+source-wordcount: 916
+ht-degree: 97%
 
 ---
 
@@ -26,13 +36,13 @@ adobe.OptInCategories = {
 
 ## 選擇加入設定引數 {#section-d66018342baf401389f248bb381becbf}
 
-本節探討如何使用 API 來設定選擇加入。大部分的設定與實作都可使用 Experience Platform Launch 擴充功能來完成。
+本節探討如何使用 API 來設定選擇加入。 大部分的設定與實作都可使用 Experience Platform Launch 擴充功能來完成。
 
-訪客 JavaScript 的 `getInstance()` 函數中提供選擇加入設定，可實例化全域 `adobe` 物件。下表列出與選擇加入服務有關的訪客 JS 設定。
+訪客 JavaScript 的 `getInstance()` 函數中提供選擇加入設定，可實例化全域 `adobe` 物件。 下表列出與選擇加入服務有關的訪客 JS 設定。
 
 **`doesOptInApply (boolean or function that evaluates to a boolean)`**：
 
-若為 false，則表示訪客不需要選擇加入。Experience Cloud 中的結果會建立 Cookie，無論類別為選擇加入還是選擇退出。此設定會整體啟用或停用選擇加入。
+若為 false，則表示訪客不需要選擇加入。 Experience Cloud 中的結果會建立 Cookie，無論類別為選擇加入還是選擇退出。 此設定會整體啟用或停用選擇加入。
 
 **`preOptInApprovals (Object <adobe.OptInCategories enum: boolean>)`**
 
@@ -40,7 +50,7 @@ adobe.OptInCategories = {
 
 **`previousPermissions (Object<adobe.OptInCategories enum: boolean>)`**
 
-訪客明確設定的偏好設定。此設定的權限會覆寫組織的預設值 (`previousPermissions` 覆寫 `preOptInApprovals`)。
+訪客明確設定的偏好設定。 此設定的權限會覆寫組織的預設值 (`previousPermissions` 覆寫 `preOptInApprovals`)。
 
 **`isOptInStorageEnabled (boolean)`**
 
@@ -56,11 +66,11 @@ adobe.OptInCategories = {
 
 ## 同意引數的變更 {#section-c3d85403ff0d4394bd775c39f3d001fc}
 
-在造訪您網站期間的任何時刻，訪客可以初次設定偏好設定，也可以使用您的 CMP 變更其偏好設定。使用初始設定初始化訪客 JS 之後，可以使用以下函數變更訪客的權限：
+在造訪您網站期間的任何時刻，訪客可以初次設定偏好設定，也可以使用您的 CMP 變更其偏好設定。 使用初始設定初始化訪客 JS 之後，可以使用以下函數變更訪客的權限：
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 
-核准或選擇將訪客加入清單中的所有類別。如需 shouldWaitForComplete 參數的詳細資訊，請參閱「[選擇加入工作流程](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5)」。
+核准或選擇將訪客加入清單中的所有類別。 如需 shouldWaitForComplete 參數的詳細資訊，請參閱「[選擇加入工作流程](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5)」。
 
 **`adobe.optIn.deny(categories, shouldWaitForComplete)`**
 
@@ -76,7 +86,7 @@ adobe.OptInCategories = {
 
 ## 選擇加入工作流程引數 {#section-2c5adfa5459c4e72b96d2693123a53c2}
 
-選擇加入支援可從多個要求週期收集權限的工作流程，例如一次指定一項偏好設定時。使用下列函數並將 ** 設定設為 `shouldWaitForComplete`true，您的解決方案便能夠收集一個解決方案或全部類別之子集合的同意，然後收集下一個解決方案或類別子集合的同意。從首次呼叫開始，`adobe.optIn.status` 屬性會擱置，直到流程結束時呼叫 `adobe.optIn.complete()` 為止。呼叫後，狀態會設為 *complete*。
+選擇加入支援可從多個要求週期收集權限的工作流程，例如一次指定一項偏好設定時。 使用下列函數並將 ** 設定設為 `shouldWaitForComplete`true，您的解決方案便能夠收集一個解決方案或全部類別之子集合的同意，然後收集下一個解決方案或類別子集合的同意。 從首次呼叫開始，`adobe.optIn.status` 屬性會擱置，直到流程結束時呼叫 `adobe.optIn.complete()` 為止。 呼叫後，狀態會設為 *complete*。
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 
@@ -88,7 +98,7 @@ adobe.OptInCategories = {
 
 `adobe.optIn.complete()`
 
-此函數會觸發將正在執行的 approve() 和 deny() 呼叫彙總進單一要求中，以設定訪客的偏好設定。訂閱下方的選擇加入變更時 (請參閱 `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe`)，只有呼叫此函數時會觸發回呼。
+此函數會觸發將正在執行的 approve() 和 deny() 呼叫彙總進單一要求中，以設定訪客的偏好設定。 訂閱下方的選擇加入變更時 (請參閱 `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe`)，只有呼叫此函數時會觸發回呼。
 
 ## 訪客選擇加入許可權的引數 {#section-7fe57279b5b44b4f8fe47e336df60155}
 
@@ -104,7 +114,7 @@ adobe.OptInCategories = {
 
 `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe)`
 
-非同步擷取權限清單。在完成權限授予/拒絕程序後，使用權限清單呼叫回呼。將 *的值設為* true`shouldAutoSubscribe`，會登錄往後任何的選擇加入變更。以下為 `adobe.OptIn` 的屬性:
+非同步擷取權限清單。 在完成權限授予/拒絕程序後，使用權限清單呼叫回呼。 將 *的值設為* true`shouldAutoSubscribe`，會登錄往後任何的選擇加入變更。 以下為 `adobe.OptIn` 的屬性:
 
 **`permissions`**
 
@@ -122,18 +132,18 @@ adobe.OptInCategories = {
 
 **`isPending`**
 
-True 或 false (視狀態值而定)。對於尚未明確接受或拒絕權限的訪客，選擇加入會針對這個屬性傳回 true
+True 或 false (視狀態值而定)。 對於尚未明確接受或拒絕權限的訪客，選擇加入會針對這個屬性傳回 true
 
 **`isComplete`**
 
-True 或 false (視狀態值而定)。當工作流程式同意已開始但尚未完成時，選擇加入可能會針對這個屬性傳回 false。
+True 或 false (視狀態值而定)。 當工作流程式同意已開始但尚未完成時，選擇加入可能會針對這個屬性傳回 false。
 
 ## 選擇加入物件的方法 {#section-e0417801a82548d199d833010033e433}
 
 **`approve(categories, shouldWaitForComplete)`**
 
-**`categories`**：要核准的一或多個類別。例如：`adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
-**`shouldWaitForComplete`**：(選擇性) 布林值參數，預設為 false。如果您傳入 true，在您呼叫 `adobe.optIn.complete()` () 前，選擇加入不會完成核准程序。此程序類似工作流程。
+**`categories`**：要核准的一或多個類別。 例如： `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
+**`shouldWaitForComplete`**： （選擇性）布林值引數，預設為false。 如果您傳入 true，在您呼叫 `adobe.optIn.complete()` () 前，選擇加入不會完成核准程序。 此程序類似工作流程。
 
 ```
 <codeblock>
@@ -154,11 +164,11 @@ True 或 false (視狀態值而定)。當工作流程式同意已開始但尚未
 
 **`isPreApproved(categories)`**
 
-檢查客戶是否預先核准一或多個類別。(如果類別以 `preOptInApprovals` 設定傳入。)
+檢查客戶是否預先核准一或多個類別。 (如果類別以 `preOptInApprovals` 設定傳入。)
 
 **`fetchPermissions(callback, shouldAutoSubscribe)`**
 
-非同步處理 API 以擷取權限清單。在完成權限授予/拒絕程序後，使用權限清單呼叫回呼。**`shouldAutoSubscribe`：** Helper 公用程式，將會自動針對所有未來事件訂閱此回呼。這表示每當在選擇加入中觸發核准或拒絕時，都會呼叫此回呼。如此一來，您總是會保持更新，而不用自行訂閱這些事件。
+非同步處理 API 以擷取權限清單。 在完成權限授予/拒絕程序後，使用權限清單呼叫回呼。 **`shouldAutoSubscribe`：** Helper 公用程式，將會自動針對所有未來事件訂閱此回呼。 這表示每當在選擇加入中觸發核准或拒絕時，都會呼叫此回呼。 如此一來，您總是會保持更新，而不用自行訂閱這些事件。
 
 **範例**
 
@@ -191,7 +201,7 @@ optIn.fetchPermissions(callback, true);
 
 >[!NOTE]
 >
->只有在您傳遞 `shouldWaitForComplete` 參數以核准或拒絕時才使用。此 API 會完成核准程序。範例：`adobe.optIn.complete()`。
+>只有在您傳遞 `shouldWaitForComplete` 參數以核准或拒絕時才使用。 此 API 會完成核准程序。 範例：`adobe.optIn.complete()`。
 
 **`approveAll()`:**
 
@@ -205,7 +215,7 @@ optIn.fetchPermissions(callback, true);
 
 **`complete`:**
 
-當核准程序完成時，完成事件就會觸發。如果您沒有傳遞 `shouldWaitForComplete` 便呼叫核准/拒絕，或是 `approveAll`/ `denyAll`，此事件就會觸發。或者，如果您傳入 `shouldWaitForComplete`，則此事件會在呼叫 `complete` 時觸發。
+當核准程序完成時，完成事件就會觸發。 如果您沒有傳遞 `shouldWaitForComplete` 便呼叫核准/拒絕，或是 `approveAll`/ `denyAll`，此事件就會觸發。 或者，如果您傳入 `shouldWaitForComplete`，則此事件會在呼叫 `complete` 時觸發。
 
 **範例**
 

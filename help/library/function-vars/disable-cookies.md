@@ -3,10 +3,18 @@ description: 此選用的布林值標幟可防止 Experience Cloud 身分識別�
 keywords: ID 服務
 title: disableThirdPartyCookies
 exl-id: 19d12822-0e17-4a1c-8e9c-25a22e20a4a8
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/vx9q-Q1X0fraWPUmaBlx-bBFX-gvnAox03mpENTizHw
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 94%
+source-wordcount: 145
+ht-degree: 97%
 
 ---
 
@@ -18,9 +26,9 @@ ht-degree: 94%
 >
 >此設定原為 `idSyncDisable3rdPartySyncing`，已在 2018 年 1 月 18 日發行的 v3.0 版本中重新命名為 `disableThirdPartyCookies`。
 
-**語法：** `disableThirdPartyCookies: true|false` （預設為`false`。） `VisitorAPI.js` v3.0.0或更新版本。
+**語法:** `disableThirdPartyCookies: true|false` (預設為 `false`。) 適用於`VisitorAPI.js` v3.0.0或更高版本。
 
-當 `disableThirdPartyCookies: true` 時，ID 服務不會傳回第三方 demdex.net Cookie (請參閱 [Cookie 與 Experience Cloud 身分識別服務](../../introduction/cookies.md))。如果網站訪客在瀏覽器中已擁有此 Cookie，ID 服務將不會使用該 Cookie 來建立新的 Experience Cloud ID (MID) 或傳回現有 ID。ID 服務而是會在第一方 Cookie 中建立新的隨機 MID。在啟用後，您可以使用 ID 服務收集資料，並在不同的 Experience Cloud 解決方案中分享。
+當 `disableThirdPartyCookies: true` 時，ID 服務不會傳回第三方 demdex.net Cookie (請參閱 [Cookie 與 Experience Cloud 身分識別服務](../../introduction/cookies.md))。 如果網站訪客在瀏覽器中已擁有此 Cookie，ID 服務將不會使用該 Cookie 來建立新的 Experience Cloud ID (MID) 或傳回現有 ID。 ID 服務而是會在第一方 Cookie 中建立新的隨機 MID。 在啟用後，您可以使用 ID 服務收集資料，並在不同的 Experience Cloud 解決方案中分享。
 
 **程式碼範例**
 
