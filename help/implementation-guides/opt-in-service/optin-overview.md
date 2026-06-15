@@ -3,15 +3,9 @@ description: 如果您可以在用戶造訪網站時，在他們的裝置或瀏�
 title: 選擇加入服務
 exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
 TQID: https://experienceleague.adobe.com/7XqAQ83gu6qQQfIWNB7Ui6aqtU-IbOxSMrYbMerHBCo
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
 source-wordcount: 528
@@ -27,7 +21,7 @@ ht-degree: 100%
 
 透過使用選擇加入服務，您可指定訪客是否能選擇一次加入所有 Adobe 解決方案，或依序提出解決方案以要求各方案的權限。 客戶完成並記錄核准程序後，您便可以從所有的 Adobe 解決方案擷取 CMP 訪客核准。
 
-使用 [Adobe Experience Platform 中的標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant) 搭配[選擇加入擴充功能](../../implementation-guides/opt-in-service/launch.md)，即可輕鬆實作及設定選擇加入服務。 亦可使用 [DTM](../../implementation-guides/opt-in-service/optin-dtm.md) 進行實作和設定。
+使用 [Adobe Experience Platform 中的標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) 搭配[選擇加入擴充功能](../../implementation-guides/opt-in-service/launch.md)，即可輕鬆實作及設定選擇加入服務。 亦可使用 [DTM](../../implementation-guides/opt-in-service/optin-dtm.md) 進行實作和設定。
 
 請參閱[設定選擇加入服務](../../implementation-guides/opt-in-service/getting-started.md)了解如何開始使用。
 
@@ -37,7 +31,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->本文件的內容並非法律建議，其宗旨並非取代專業的法律建議。 在設定您的選擇加入實作時，請洽詢貴公司的法務部門，以獲得有關同意和實務的建議。
+>本文件的內容不是法律建議，且用意並非要取代法律建議。 在設定您的選擇加入實作時，請洽詢貴公司的法務部門，以獲得有關同意和實務的建議。
 
 ## 不同 Experience Cloud 解決方案中的選擇加入 {#section-053e6224505542cf961896f0ca869e52}
 

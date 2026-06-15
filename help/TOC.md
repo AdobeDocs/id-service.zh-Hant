@@ -6,8 +6,8 @@ user-guide-description: Adobe Experience Cloud 身分識別服務提供永續性
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: 13bfd8b38596dd64f607c897a60bbeb2733b89bf
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 96%
+source-wordcount: '378'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 96%
    + [實作方法](implementation-guides/implementation-methods.md)
    + [實作指南](implementation-guides/implementation-guides.md)
    + [使用 Experience Platform 標籤實作](implementation-guides/ecid-implement-with-launch.md)
-   + [實作 Analytics](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/id/overview){target=_blank}
+   + [實作Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview){target=_blank}
    + [實作 Target](implementation-guides/setup-target.md)
    + [實作 Analytics 與 Audience Manager](implementation-guides/setup-aam-analytics.md)
    + [實作 Analytics、Audience Manager 及 Target](implementation-guides/setup-aam-analytics-target.md)
@@ -106,5 +106,5 @@ ht-degree: 96%
    + [2017 年發行說明](release-notes/notes-2017.md)
    + [2016 年發行說明](release-notes/notes-2016.md)
    + [2015 年發行說明](release-notes/notes-2015.md)
-+ [已從目錄hide-from-toc隱藏Analytics測試](analytics-test-file-hidetoc.md)
-+ [hide-from-toc隱藏的測試檔案](hidden-file.md)
++ 已從目錄](analytics-test-file-hidetoc.md)隱藏{hide-from-toc}[Analytics測試
++ {hide-from-toc}[隱藏的測試檔案](hidden-file.md)

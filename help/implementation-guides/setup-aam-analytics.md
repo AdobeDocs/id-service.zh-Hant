@@ -4,19 +4,9 @@ keywords: ID 服務
 title: 實作適用於 Analytics 和 Audience Manager 的 Experience Cloud 身分識別服務
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
 TQID: https://experienceleague.adobe.com/7Qx7NOdlB0nEHKpEot-2yqDhHnnY5X0enmVE2COsobM
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d3cdead0-685a-4489-9250-4bb709942f66id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
 source-wordcount: 1291
@@ -36,7 +26,7 @@ ht-degree: 98%
 
 ## 步驟 1：規劃伺服器端轉送 {#section-880797cc992d4755b29cada7b831f1fc}
 
-除了此處所述步驟以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客戶也應移轉至伺服器端轉送。 伺服器端轉送功能可讓您移除 DIL (Audience Manager 的資料收集程式碼)，並將其取代為[對象管理模組](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=zh-Hant)。 如需詳細資訊，請參閱[伺服器端轉送文件](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html?lang=zh-Hant)。
+除了此處所述步驟以外，使用 [!DNL Analytics] 和 [!DNL Audience Manager] 的客戶也應移轉至伺服器端轉送。 伺服器端轉送功能可讓您移除 DIL (Audience Manager 的資料收集程式碼)，並將其取代為[對象管理模組](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=zh-Hant)。 如需詳細資訊，請參閱[伺服器端轉送文件](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html)。
 
 要移轉至伺服器端轉送，必須進行規劃和協調。 此程序牽涉到對您的網站程式碼進行的外部變更，以及 Adobe 為了佈建您的帳戶而須執行的內部步驟。 事實上，其中許多移轉程序都需要並行執行，並且一起發行。 您的實作路徑應依照以下事件順序進行：
 
@@ -154,7 +144,7 @@ Analytics 會使用追蹤伺服器進行資料收集。
 >
 >此時您應移除 [!DNL Audience Manager] DIL 程式碼，改為使用「客群管理模組」。 如需相關指示，請參閱[實作伺服器端轉送](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=zh-Hant)。
 
-***(可選用，但建議使用)* 建立自訂 Prop &#x200B;**
+***(可選用，但建議使用)* 建立自訂 Prop **
 
 在 `AppMeasurement.js` 中設定自訂 prop 以測量涵蓋範圍. 將此自訂 Prop 新增至 `doPlugins` 檔案的 `AppMeasurement.js` 函數：
 
@@ -172,7 +162,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 步驟 8：(選用) 設定寬限期 {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-若其中有任何使用案例適用於您的情況，請要求[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)設定暫時的[寬限期](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/id/migration)。 寬限期最多可達180天。 如有必要，您可以更新寬限期。
+若其中有任何使用案例適用於您的情況，請要求[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)設定暫時的[寬限期](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)。 寬限期最多可達180天。 如有必要，您可以更新寬限期。
 
 **部分實作**
 

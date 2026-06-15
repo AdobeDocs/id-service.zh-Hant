@@ -4,15 +4,9 @@ keywords: ID 服務
 title: ID 服務常見問題集
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 TQID: https://experienceleague.adobe.com/FxgL8UXSmoJM1oFr47yCAgYGcTa2PqKvSNM4bHjTw1M
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
 source-wordcount: 801
@@ -56,7 +50,7 @@ ID 服務呼叫為非同步呼叫，且是向 [demdex.net 網域](https://experi
 
 **使用 ID 服務時，哪些因素會導致頁面載入速度緩慢或影響用戶體驗？**
 
-可能的情況很難全數列舉。 有數十億的消費者客戶端連線至我們的服務，而其各種不同的連線位置和方式，都可能影響到效能。 例如：
+可能的情況很難全數列舉。 有數十億的消費者客戶端連線至我們的服務，而其各種不同的連線位置和方式，都可能影響到效能。 例如:
 
 * 在行動網路上，速度會有大幅差異。 這些網路還會受制於訊號、資料或語音封包遺失的影響。
 * 在多種情況下，透過 WiFi 連線的裝置都可能有連線能力的問題。 例如，在咖啡廳等公共場所或機艙之類的其他環境中，封包必須透過人造衛星回送才能到達地面網路，因此封包遺失和速度問題十分常見。

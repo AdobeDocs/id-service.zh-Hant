@@ -4,24 +4,19 @@ keywords: ID 服務
 title: setCustomerIDs 的 SHA256 雜湊支援
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 TQID: https://experienceleague.adobe.com/-JBVon-Qf2jtfd5f4UdWcHVyO7c887p1w-k3GnntUCA
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: 618
-ht-degree: 97%
+source-wordcount: 574
+ht-degree: 92%
 
 ---
 
 # `setCustomerIDs` 的 SHA256 雜湊支援 {#hashing-support}
 
-Experience Cloud ID Service (ECID) 支援 SHA-256 雜湊演算法，可讓您傳入客戶 ID 或電子郵件地址，然後傳出雜湊 ID。 這是選用的 JavaScript 方法，可將經雜湊處理的識別碼傳送至 Experience Cloud。 在傳送客戶 ID 之前，您可以繼續使用自己的雜湊方法。
-有兩種方法可使用 setCustomerIDs 實作雜湊支援，如下節所述:
+Experience Cloud ID Service (ECID)支援SHA-256雜湊演演算法，可讓您傳入客戶ID或電子郵件地址，然後傳出雜湊ID。這是選用的Javascript方法，可將雜湊識別碼傳送至Experience Cloud。在傳送客戶ID之前，您可以繼續使用自己的雜湊方法。
+有兩種方法可使用setCustomerIDs實作雜湊支援，如下節所述：
 
 * [在 ECID 中使用 setCustomerIDs 方法](/help/reference/hashing-support.md#use-setcustomerids-method)
 * [在 Adobe Experience Platform Launch 中新增動作](/help/reference/hashing-support.md#add-action-launch)
@@ -76,9 +71,9 @@ ts=1563299964843
 
 ## 在 Adobe Experience Platform Launch 中新增動作 {#add-action-launch}
 
-Experience Platform Launch 是新一代 Adobe 標籤管理功能。 請在 [Launch 產品文件](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)中進一步了解 Platform Launch。
+Experience Platform Launch 是新一代 Adobe 標籤管理功能。 請在 [Launch 產品文件](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)中進一步了解 Platform Launch。
 
-若要在 Launch 中新增動作，請閱讀 Adobe Launch 中的[規則文件](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hant)，並查看下方的螢幕擷圖：
+若要在 Launch 中新增動作，請閱讀 Adobe Launch 中的[規則文件](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html)，並查看下方的螢幕擷圖：
 
 ![](/help/reference/assets/hashing-support.png)
 

@@ -4,19 +4,13 @@ keywords: ID 服務
 title: 2020 年發行說明
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
 TQID: https://experienceleague.adobe.com/hqAMIyXTeLBPU-4B6AVRXhcWux3bkyViMCrbjoGiRwk
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: 229
-ht-degree: 97%
+source-wordcount: 216
+ht-degree: 91%
 
 ---
 
@@ -48,8 +42,8 @@ Experience Cloud 身分識別服務的功能發佈、更新或變更。
 ## 4.6 版
 
 * 預設為 `loadSSL` 標幟開啟。 所有對身分識別服務的呼叫均預設為透過 `https` 發出。  如果客戶想從 `non-ssl` 頁面透過 http 呼叫身分識別服務，可將其設為 false。
-* 更新偵測 `Internet-Explorer (IE)` 版本的函數，以修正 `ESLint` 回報的問題。
-修正 ECID 收到選擇加入 `Internet-Explorer (IE) 11` 及稍後更新時 `pre-approval` 的效能問題。
+* 更新偵測`Internet-Explorer (IE)`版本的函式，以修正`ESLint`回報的問題。
+修正ECID收到選擇加入`pre-approval`且稍後更新時，`Internet-Explorer (IE) 11`上的效能問題。
 
 ## 4.5 版
 
