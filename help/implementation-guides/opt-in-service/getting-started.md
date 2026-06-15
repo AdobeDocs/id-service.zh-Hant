@@ -16,8 +16,8 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: 960
-ht-degree: 100%
+source-wordcount: 849
+ht-degree: 97%
 
 ---
 
@@ -71,8 +71,8 @@ adobe.OptInCategories = {
 };
 ```
 
-選擇加入服務可讓您按照網站上使用的各 Adobe 解決方案來設定訪客的權限偏好設定。 選擇加入服務包含程式庫，可按核准的類別儲存訪客的設定，並支援序列流程，即核准程序一次會收到一個各類別的「確認」或「拒絕」偏好設定。 您可以設定解決方案/類別，來選擇以全部或個別解決方案加入。
-所有 Adobe 解決方案的用戶端程式庫取決於選擇加入服務，除非解決方案已授予權限，否則其不會產生 Cookie。 選擇加入支援多種方法，可提供並更新目前訪客的同意設定。 本節提供設定選擇加入服務偏好設定的範例。 請參閱[選擇加入 API 參考資料](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867)，以取得函數和參數的完整清單。
+選擇加入服務可讓您根據網站上使用的每個Adobe解決方案來設定訪客的許可權偏好設定。選擇加入服務包含資料庫，可按核准的類別儲存訪客的設定，並支援序列流程，即核准程式一次會收到一個各類別的「確認」或「拒絕」偏好設定。您可以設定解決方案/類別，來選擇以全部或個別解決方案加入。
+所有Adobe解決方案的使用者端程式庫取決於選擇加入服務，除非解決方案已授予許可權，否則其不會產生Cookie。選擇加入支援多種方法，可提供並更新目前訪客的同意設定。本節提供設定選擇加入服務偏好設定的範例。如需函式和引數的完整清單，請參閱[選擇加入API參考](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867)。
 
 訪客 JS 的 `getInstance()` 函數中提供選擇加入服務設定，可實例化全域 `adobe` 物件。 下表列出與選擇加入服務有關的訪客 JS [組態設定](../../implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf)。
 

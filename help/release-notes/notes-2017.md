@@ -206,7 +206,7 @@ Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate
 
 **新增文件**
 
-[搭配其他Experience Cloud解決方案和服務使用DNS預先擷取](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html?lang=zh-Hant)
+[搭配不同的Experience Cloud解決方案和服務使用DNS預先擷取](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html?lang=zh-Hant)
 
 ## 2.0 版 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 

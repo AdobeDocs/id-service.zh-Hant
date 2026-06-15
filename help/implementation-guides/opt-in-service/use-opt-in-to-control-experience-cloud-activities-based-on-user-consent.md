@@ -48,7 +48,7 @@ Adobe [!UICONTROL Opt-in]物件是Adobe [!UICONTROL Experience Platform Identity
 
 所有設定和後端內容都只是在準備向網站訪客顯示同意選項的介面。 您可以自行建立此 UI，也可以透過 CMP (同意管理平台) 合作夥伴建立 UI。
 
-設定UI以使用[!UICONTROL Opt-in]來收集同意時，應將其設定為呼叫會連結至[!UICONTROL Opt-in]的API，並通知其同意部分或所有Adobe Experience Cloud解決方案。 如需關於這些 API 的詳細資訊，請參閱[選擇加入參考文件](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/api.html?lang=zh-Hant&lank=zh-Hant)。 選擇加入的其他資訊也在相關文件頁面中。
+設定UI以使用[!UICONTROL Opt-in]來收集同意時，應將其設定為呼叫與[!UICONTROL Opt-in]連結的API，並通知其同意部分或所有Adobe Experience Cloud解決方案。 如需關於這些 API 的詳細資訊，請參閱[選擇加入參考文件](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/api.html?lang=zh-Hant&lank=zh-Hant)。 選擇加入的其他資訊也在相關文件頁面中。
 
 ## [!UICONTROL Opt-In]個示範
 
@@ -56,7 +56,7 @@ Adobe [!UICONTROL Opt-in]物件是Adobe [!UICONTROL Experience Platform Identity
 
 >[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12)
 
-**注意：**&#x200B;請務必注意，撰寫本文時，[!UICONTROL Opt-in]尚未內建至所有Experience Cloud應用程式的程式庫。 目前支援[!UICONTROL Opt-in]的資料庫包括：
+**注意：**&#x200B;請務必注意，撰寫本文時，[!UICONTROL Opt-in]尚未內建於所有Experience Cloud應用程式的程式庫。 目前支援[!UICONTROL Opt-in]的資料庫包括：
 
 * 身分識別服務
 * Analytics

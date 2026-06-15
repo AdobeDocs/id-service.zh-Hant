@@ -142,7 +142,7 @@ True 或 false (視狀態值而定)。 當工作流程式同意已開始但尚�
 
 **`approve(categories, shouldWaitForComplete)`**
 
-**`categories`**：要核准的一或多個類別。 例如： `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
+**`categories`**：要核准的一或多個類別。 例如: `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
 **`shouldWaitForComplete`**： （選擇性）布林值引數，預設為false。 如果您傳入 true，在您呼叫 `adobe.optIn.complete()` () 前，選擇加入不會完成核准程序。 此程序類似工作流程。
 
 ```

@@ -15,8 +15,8 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: 229
-ht-degree: 97%
+source-wordcount: 216
+ht-degree: 91%
 
 ---
 
@@ -48,8 +48,8 @@ Experience Cloud 身分識別服務的功能發佈、更新或變更。
 ## 4.6 版
 
 * 預設為 `loadSSL` 標幟開啟。 所有對身分識別服務的呼叫均預設為透過 `https` 發出。  如果客戶想從 `non-ssl` 頁面透過 http 呼叫身分識別服務，可將其設為 false。
-* 更新偵測 `Internet-Explorer (IE)` 版本的函數，以修正 `ESLint` 回報的問題。
-修正 ECID 收到選擇加入 `Internet-Explorer (IE) 11` 及稍後更新時 `pre-approval` 的效能問題。
+* 更新偵測`Internet-Explorer (IE)`版本的函式，以修正`ESLint`回報的問題。
+修正ECID收到選擇加入`pre-approval`且稍後更新時，`Internet-Explorer (IE) 11`上的效能問題。
 
 ## 4.5 版
 

@@ -5,7 +5,7 @@ title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '612'
 ht-degree: 98%
 
 ---
@@ -29,13 +29,13 @@ ht-degree: 98%
 若要使用 `isCoopSafe`，您必須:
 
 * 使用 2.4 版或更新版本的 ID 服務程式碼。
-* 參與 [Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html?lang=zh-Hant)。潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
+* 參與 [Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html?lang=zh-Hant)。 潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
 
-* 請和您的 [!DNL Adobe] 顧問合作，在您的 Device co-op 帳戶上設定白名單或是黑名單標幟。沒有啟用可這些標幟的自助式路徑。
+* 請和您的 [!DNL Adobe] 顧問合作，在您的 Device co-op 帳戶上設定白名單或是黑名單標幟。 沒有啟用可這些標幟的自助式路徑。
 
 ## 使用案例 {#section-d18af2b903f248e18ae8108aaf0a8ebb}
 
-`isCoopSafe` 有助於解決關於 Device co-op 現有或潛在成員資料收集的 2 個使用案例。這些關於網站訪客資料如何傳給 Device co-op 的使用案例有助於建立設備圖形。以下表格說明 `isCoopSafe` 如何搭配其他使用案例以封鎖或傳送資料給裝置圖形
+`isCoopSafe` 有助於解決關於 Device co-op 現有或潛在成員資料收集的 2 個使用案例。 這些關於網站訪客資料如何傳給 Device co-op 的使用案例有助於建立設備圖形。 以下表格說明 `isCoopSafe` 如何搭配其他使用案例以封鎖或傳送資料給裝置圖形
 
 <table id="table_A24C63D2A21F47EDBAC8FA5E7BE888D8"> 
  <thead> 
@@ -88,7 +88,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 * `d_coop_safe=1`
 * `d_coop_unsafe=1`
 
-POST 參數告知 [!DNL Experience Cloud] Device Co-op 是否能在裝置圖像中包含用戶資料。以下表格定義了在事件呼叫中 `isCoopSafe` 布林值標幟與所傳遞的 POST 參數之間的關係。如果您沒有使用 `isCoopSafe`，這些都不會在事件呼叫中傳遞。
+POST 參數告知 [!DNL Experience Cloud] Device Co-op 是否能在裝置圖像中包含用戶資料。 以下表格定義了在事件呼叫中 `isCoopSafe` 布林值標幟與所傳遞的 POST 參數之間的關係。 如果您沒有使用 `isCoopSafe`，這些都不會在事件呼叫中傳遞。
 
 <table id="table_0A544534CA904F4D9836A34B8C1EACBB"> 
  <thead> 
@@ -109,9 +109,9 @@ POST 參數告知 [!DNL Experience Cloud] Device Co-op 是否能在裝置圖像�
  </tbody> 
 </table>
 
-## Post-Instantiation API {#section-9281c39c8b6249d7864100b5cbca7dc6}
+## 具現化後API {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
-這些 API 允許您覆寫 `isCoopSafe` 狀態。這是必要的 API，因為它們可讓您變更訪客在頁面未重新整理的網站或單一頁面應用程式中的具現化後/登入後狀態。例如，如果用戶在對您的網站或應用程式進行驗證後，接受了允許 Device Co-op 使用其資料的使用條款原則，您就需要呼叫這些 API。
+這些 API 允許您覆寫 `isCoopSafe` 狀態。 這是必要的 API，因為它們可讓您變更訪客在頁面未重新整理的網站或單一頁面應用程式中的具現化後/登入後狀態。 例如，如果用戶在對您的網站或應用程式進行驗證後，接受了允許 Device Co-op 使用其資料的使用條款原則，您就需要呼叫這些 API。
 
 <table id="table_BAA96B1F82BE48C3A61A1AF1367BA45C"> 
  <thead> 
