@@ -49,7 +49,7 @@ ht-degree: 60%
   此錯誤只會影響符合下列&#x200B;*所有*&#x200B;條件的部分用戶端:
 
    * 使用訪客ID服務。
-   * 已啟用[寬限期](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *或*&#x200B;正在使用第一方Cookie且使用者封鎖第三方Cookie。
+   * 已啟用[寬限期](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/id/migration) *或*&#x200B;正在使用第一方Cookie且使用者封鎖第三方Cookie。
    * 擁有的頁面具有多部分、最上層網域。
 
 這個版本的文件修訂包括：

@@ -36,7 +36,7 @@ Adobe訪客ID服務可為CX Enterprise應用程式和服務啟用共同識別架
 若要更進一步瞭解Adobe如何有助於唯一地識別訪客並解析身分資訊，請閱讀以下劃分：
 
 * **訪客ID服務**：訪客ID服務&#x200B;**負責設定ECID**。 如需詳細資訊，請閱讀[訪客ID服務總覽](./introduction/overview.md)。
-* **ECID**： ECID是跨Adobe Experience Platform和Adobe CX Enterprise應用程式使用的共用身分名稱空間，用於識別人員和裝置。 如需有關 ECID 的詳細資訊，請閱讀 [ECID 概觀](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid)。
+* **ECID**： ECID是跨Adobe Experience Platform和Adobe CX Enterprise應用程式使用的共用身分名稱空間，用於識別人員和裝置。 如需有關 ECID 的詳細資訊，請閱讀 [ECID 概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/ecid)。
 * **Experience Platform 身分識別服務**：Experience Platform 身分識別服務透過跨裝置和系統橋接身分，為您提供客戶及其行為的全面視野。 如需詳細資訊，請閱讀 [Experience Platform 身分識別服務概觀](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hant)。
 
 ## 開始使用

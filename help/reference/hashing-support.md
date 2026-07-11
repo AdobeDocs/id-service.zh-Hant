@@ -73,9 +73,9 @@ ts=1563299964843
 
 ## 在標籤中新增動作 {#add-action-launch}
 
-Adobe Experience Platform Data Collection中的標籤是新一代Adobe標籤管理功能。 請閱讀[標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)中的詳細資訊。
+Adobe Experience Platform Data Collection中的標籤是新一代Adobe標籤管理功能。 請閱讀[標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)中的詳細資訊。
 
-若要在標籤中新增動作，請閱讀[規則檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html)，並檢視下方的熒幕擷取：
+若要在標籤中新增動作，請閱讀[規則檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hant)，並檢視下方的熒幕擷取：
 
 ![](/help/reference/assets/hashing-support.png)
 

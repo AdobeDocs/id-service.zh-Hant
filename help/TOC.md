@@ -25,7 +25,7 @@ ht-degree: 45%
    + [實作方法](implementation-guides/implementation-methods.md)
    + [實作指南](implementation-guides/implementation-guides.md)
    + [使用標籤實作](implementation-guides/ecid-implement-with-launch.md)
-   + [實作Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview){target=_blank}
+   + [實作Analytics](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/id/overview){target=_blank}
    + [實作 Target](implementation-guides/setup-target.md)
    + [實作 Analytics 與 Audience Manager](implementation-guides/setup-aam-analytics.md)
    + [實作 Analytics、Audience Manager 及 Target](implementation-guides/setup-aam-analytics-target.md)

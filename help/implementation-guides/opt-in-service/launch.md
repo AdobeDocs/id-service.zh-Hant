@@ -25,7 +25,7 @@ ht-degree: 19%
 
 ## 使用標籤設定選擇加入案例 {#section-8aa1b58bf8374c938aa8cfdeddbad6ff}
 
-Adobe Experience Platform Data Collection中的[標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)可讓您使用Adobe解決方案輕鬆設定選擇加入案例。 您可以讓Analytics、Target、Audience Manager及其他或所有指定CX企業解決方案選擇加入您的同意管理系統，簡化CX企業解決方案收集訪客是否同意選擇加入的程式。
+Adobe Experience Platform Data Collection中的[標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)可讓您使用Adobe解決方案輕鬆設定選擇加入案例。 您可以讓Analytics、Target、Audience Manager及其他或所有指定CX企業解決方案選擇加入您的同意管理系統，簡化CX企業解決方案收集訪客是否同意選擇加入的程式。
 
 **設定[!UICONTROL Experience Cloud ID Service]標籤延伸**
 

@@ -58,7 +58,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 **案例 2**
 
-當您的組織在完全實作訪客ID服務之前使用[寬限期](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)，您會在查詢字串中看到`aid`引數。 如果使用者是第一次造訪網站，而您未使用寬限期，則訪客會得到`mid` (ECID)引數。
+當您的組織在完全實作訪客ID服務之前使用[寬限期](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/id/migration)，您會在查詢字串中看到`aid`引數。 如果使用者是第一次造訪網站，而您未使用寬限期，則訪客會得到`mid` (ECID)引數。
 
 >[!MORELIKETHIS]
 >

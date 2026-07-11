@@ -69,7 +69,7 @@ ht-degree: 67%
 
 ## 4.0 版 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**選擇加入服務**。 選擇加入是ECID的擴充功能，可讓您控制CX Enterprise程式庫是否可以在網頁上建立訪客的Cookie，以及使用哪個程式庫來執行。 使用[標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)，您可以讓Analytics、Target、Audience Manager及其他或所有指定CX企業解決方案選擇加入您的同意管理系統，簡化CX企業解決方案收集訪客是否同意選擇加入的程式。
+**選擇加入服務**。 選擇加入是ECID的擴充功能，可讓您控制CX Enterprise程式庫是否可以在網頁上建立訪客的Cookie，以及使用哪個程式庫來執行。 使用[標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)，您可以讓Analytics、Target、Audience Manager及其他或所有指定CX企業解決方案選擇加入您的同意管理系統，簡化CX企業解決方案收集訪客是否同意選擇加入的程式。
 
 ## 3.4 版 {#section-046ce29b43af47cc849d4091098f5927}
 

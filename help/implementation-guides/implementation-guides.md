@@ -34,7 +34,7 @@ ht-degree: 16%
 
 ## 標準實作
 
-標準實作使用[標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)來協助您開始使用訪客ID服務，並將其與其他CX Enterprise解決方案整合。 我們強烈建議您使用標籤來實作訪客ID服務。
+標準實作使用[標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)來協助您開始使用訪客ID服務，並將其與其他CX Enterprise解決方案整合。 我們強烈建議您使用標籤來實作訪客ID服務。
 
 ## 實作資源
 

@@ -37,7 +37,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### 來自 Adobe 員工的重大變更
 
-若您是CX Enterprise解決方案產品團隊的技術撰寫人員、專案經理或開發人員，且您的工作正是貢獻或撰寫技術文章，請使用`https://github.com/Adobe-Enterprise-Docs/id-service.en`的私人存放庫。
+若您是CX Enterprise解決方案產品團隊的技術撰寫人員、專案經理或開發人員，且您的工作正是貢獻或撰寫技術文章，請使用`https://github.com/Adobe-Enterprise-Docs/id-service.zh-Hant`的私人存放庫。
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 

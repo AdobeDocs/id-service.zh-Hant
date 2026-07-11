@@ -19,7 +19,7 @@ ht-degree: 18%
 
 # Adobe訪客ID服務總覽
 
-Adobe訪客ID服務可為CX Enterprise Application Services啟用共同識別架構。 您可以使用訪客ID服務來設定[ECID](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html)。
+Adobe訪客ID服務可為CX Enterprise Application Services啟用共同識別架構。 您可以使用訪客ID服務來設定[ECID](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=zh-Hant)。
 
 ECID是跨Adobe Experience Platform和CX Enterprise應用程式使用的共用身分名稱空間，用來追蹤訪客行為並確保每個裝置都有可在多個工作階段儲存的唯一識別碼。
 
@@ -35,9 +35,9 @@ ECID是跨Adobe Experience Platform和CX Enterprise應用程式使用的共用�
 
 訪客ID服務支援下列應用程式：
 
-* [Adobe Analytics](https://business.adobe.com/products/analytics/web-analytics.html)
-* [Audience Manager](https://business.adobe.com/products/audience-manager/adobe-audience-manager.html)
-* [Adobe Target](https://business.adobe.com/products/target/adobe-target.html)
+* [Adobe Analytics](https://business.adobe.com/tw/products/analytics/web-analytics.html)
+* [Audience Manager](https://business.adobe.com/tw/products/audience-manager/adobe-audience-manager.html)
+* [Adobe Target](https://business.adobe.com/tw/products/target/adobe-target.html)
 
 展望未來，訪客ID服務將成為許多目前與未來CX Enterprise特色、增強功能與服務的必要元件。 目前，訪客ID服務支援[Analytics](http://www.adobe.com/tw/marketing-cloud/web-analytics.html)、[Audience Manager](http://www.adobe.com/tw/marketing-cloud/data-management-platform.html)和[Target](http://www.adobe.com/tw/marketing-cloud/testing-targeting.html)。 如果您尚未實作訪客ID服務，現在就是開始考慮移轉策略的最佳時機。
 
