@@ -4,9 +4,16 @@ keywords: 訪客 ID 服務
 title: appendVisitorIDsTo (跨網域追蹤)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
 TQID: https://experienceleague.adobe.com/F4rWmYj6NidX861-qU8KI9RRbdwNdzP0x4CZUxPZfYw
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 432
@@ -37,7 +44,7 @@ ht-degree: 50%
 * 在該網站訪客瀏覽至其他網域時為其重新產生唯一 ID。
 * 在組織所擁有的不同網域間追蹤訪客。
 
-為解決此問題，請實作 `Visitor.appendVisitorIDsTo( *``*)`。 此屬性可讓訪客ID服務在多個網域間追蹤網站訪客，即使瀏覽器封鎖第三方Cookie亦然。 其運作方式如下：
+為解決此問題，請實作 `Visitor.appendVisitorIDsTo( *`&#x200B;`*)`。 此屬性可讓訪客ID服務在多個網域間追蹤網站訪客，即使瀏覽器封鎖第三方Cookie亦然。 其運作方式如下：
 
 * 訪客瀏覽至您的其他網域時，`Visitor.appendVisitorIDsTo( *`url`*)` 會附加 MID 作為 URL 重新導向 (從原始網域重新導向至目的地網域) 中的查詢參數。
 * 目的地網域的訪客ID服務程式碼會從URL提取MID，而非傳送要求向Adobe索取該訪客的ID。 此要求包含第三方 Cookie ID，而該 ID 在此案件中無法使用。

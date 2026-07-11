@@ -3,9 +3,16 @@ title: 根據使用者同意使用選擇加入以控制CX企業活動
 description: Adobe選擇加入物件是Adobe訪客ID服務的擴充功能，旨在協助您根據一般使用者同意，控制哪些CX企業解決方案能否在網頁上建立Cookie及啟動指標。
 exl-id: ac44e628-01ca-401c-864b-30fed0450e5f
 TQID: https://experienceleague.adobe.com/YfYkXzK8wKw6JC3-EB2ljIOfXGXQV5r6Nw2-XYsGW6c
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 518
@@ -21,7 +28,7 @@ Adobe [!UICONTROL Opt-in]物件是Adobe訪客ID服務的擴充功能，旨在協
 
 隱私權法規的一個重要面向是取得並傳達用戶同意透過哪種方式及供哪些人使用其個人資料。 最新版的訪客ID服務包含的功能會根據一般使用者是否同意，有條件觸發（例如事前和事後同意） CX企業解決方案標籤。 此程序如下圖所示：
 
-![ [!UICONTROL Opt-in]運作方式圖表](assets/opt-in.png)
+![&#x200B; [!UICONTROL Opt-in]運作方式圖表](assets/opt-in.png)
 
 [!UICONTROL Opt-in]的運作方式如下：
 

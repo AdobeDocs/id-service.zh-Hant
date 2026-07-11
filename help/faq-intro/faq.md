@@ -4,9 +4,15 @@ keywords: 訪客 ID 服務
 title: 訪客ID服務常見問題
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 TQID: https://experienceleague.adobe.com/FxgL8UXSmoJM1oFr47yCAgYGcTa2PqKvSNM4bHjTw1M
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 824
@@ -70,23 +76,23 @@ ht-degree: 54%
 
 一般而言，使用 CORS 的資源請求會比使用 JSONP 來得好。 使用 JSONP 時，有些瀏覽器會將請求排入佇列，並將請求的優先順序設得比頁面上的其他同步和非同步呼叫低。 CORS 有助於確保在瀏覽器呼叫堆疊中會以較高的優先順序處理這些請求。
 
-請參閱訪客ID服務](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)中的[CORS支援。
+請參閱訪客ID服務[&#128279;](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)中的CORS支援。
 
 ## 安全性 {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **訪客ID服務是否支援CORS？**
 
-有。 請參閱訪客ID服務](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)中的[CORS支援。
+有。 請參閱訪客ID服務[&#128279;](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)中的CORS支援。
 
 **什麼是 CORS？**
 
-*`Cross-Origin Resource Sharing`*&#x200B;或 CORS 是瀏覽器用於請求資源的方法。 訪客ID服務一律會使用CORS （在支援它的瀏覽器中）來要求資源。 在不支援CORS的舊版瀏覽器中，訪客ID服務會透過JSON-P請求資源。 請參閱訪客ID服務](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)中的[CORS支援。
+*`Cross-Origin Resource Sharing`*&#x200B;或 CORS 是瀏覽器用於請求資源的方法。 訪客ID服務一律會使用CORS （在支援它的瀏覽器中）來要求資源。 在不支援CORS的舊版瀏覽器中，訪客ID服務會透過JSON-P請求資源。 請參閱訪客ID服務[&#128279;](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)中的CORS支援。
 
 **如果我有嚴格的安全要求，並且從來不想使用 JSONP，該怎麼做？**
 
 如果您有嚴格的安全要求，請設定訪客ID服務API設定`useCORSOnly: true`。 只有當您確信您的網站訪客使用支援CORS的瀏覽器時，才應該啟用此模式。
 
-請參閱訪客ID服務](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)中的[CORS支援[useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)。
+請參閱訪客ID服務[&#128279;](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)中的CORS支援[useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)。
 
 >[!MORELIKETHIS]
 >
