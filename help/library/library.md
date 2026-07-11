@@ -1,7 +1,7 @@
 ---
-description: 屬性、方法和設定可讓您以程式設計方式使用 Experience Cloud 身分識別服務。
-keywords: ID 服務
-title: ID 服務 API
+description: 屬性、方法和設定可讓您以程式設計方式使用訪客ID服務。
+keywords: 訪客 ID 服務
+title: 訪客ID服務API
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: 60ae4927-e905-4252-b9ec-9cc74073e8d5
@@ -15,21 +15,16 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 79
-ht-degree: 100%
+source-wordcount: 43
+ht-degree: 16%
 
 ---
 
-# ID 服務 API{#id-service-api}
+# 訪客ID服務API{#id-service-api}
 
-屬性、方法和設定可讓您以程式設計方式使用 Experience Cloud 身分識別服務。
+屬性、方法和設定可讓您以程式設計方式使用訪客ID服務。
 
 * [設定概觀](function-vars/function-vars.md)
 * [方法概觀](get-set/get-set.md)
-
->[!NOTE]
->
->*Experience Cloud ID JavaScript 程式庫*&#x200B;最近已移至其他位置。 您可以在 [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases) 找到最新版的 ECID JS 程式庫。
-

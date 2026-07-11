@@ -12,10 +12,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 528
-ht-degree: 100%
+source-wordcount: 512
+ht-degree: 89%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 100%
 
 如果您可以在用戶造訪網站時，在他們的裝置或瀏覽器上設定 Cookie，則選擇加入服務可讓您設定訪客的通訊協定。
 
-選擇加入服務是 Experience Cloud ID (ECID) 服務的擴充功能，其設計可讓您控制 Experience Cloud 解決方案是否能在用戶同意前，在網頁上建立訪客的 Cookie，以及要使用哪個解決方案來執行。 選擇加入服務也可讓您設定通訊協定，以便整合您的同意管理平台 (CMP) 和現有系統，融入更廣大的設計中。
+選擇加入服務是ECID的擴充功能，其設計可讓您控制CX企業解決方案是否能在使用者同意前，在網頁上建立訪客的Cookie，以及要使用哪個解決方案來執行 選擇加入服務也可讓您設定通訊協定，以便整合您的同意管理平台 (CMP) 和現有系統，融入更廣大的設計中。
 
 透過使用選擇加入服務，您可指定訪客是否能選擇一次加入所有 Adobe 解決方案，或依序提出解決方案以要求各方案的權限。 客戶完成並記錄核准程序後，您便可以從所有的 Adobe 解決方案擷取 CMP 訪客核准。
 
-使用 [Adobe Experience Platform 中的標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant) 搭配[選擇加入擴充功能](../../implementation-guides/opt-in-service/launch.md)，即可輕鬆實作及設定選擇加入服務。 亦可使用 [DTM](../../implementation-guides/opt-in-service/optin-dtm.md) 進行實作和設定。
+使用[標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)搭配[選擇加入擴充功能](../../implementation-guides/opt-in-service/launch.md)即可輕鬆實作及設定選擇加入服務。
 
 請參閱[設定選擇加入服務](../../implementation-guides/opt-in-service/getting-started.md)了解如何開始使用。
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 >
 >本文件的內容不是法律建議，且用意並非要取代法律建議。 在設定您的選擇加入實作時，請洽詢貴公司的法務部門，以獲得有關同意和實務的建議。
 
-## 不同 Experience Cloud 解決方案中的選擇加入 {#section-053e6224505542cf961896f0ca869e52}
+## CX企業解決方案中的選擇加入 {#section-053e6224505542cf961896f0ca869e52}
 
 選擇加入服務是根據您自身需求，用來建立同意選擇加入工作流程的工具，可讓您設計在用戶或同意控制者給予同意之前和之後所使用的反應 (執行標籤) 工作流程。
 

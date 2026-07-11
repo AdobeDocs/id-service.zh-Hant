@@ -1,6 +1,6 @@
 ---
 title: Google Chrome SameSite 標籤異動
-description: Adobe ECID (ID 服務) 程式庫文件。
+description: Adobe ECID （訪客ID服務）程式庫的檔案。
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
 TQID: https://experienceleague.adobe.com/VlmpxMM0Jm4ExEL1WdjeA3h9brGBslGoJCqgQ-xFaRs
 product_v2:
@@ -15,10 +15,10 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 1125
-ht-degree: 99%
+ht-degree: 95%
 
 ---
 
@@ -40,7 +40,7 @@ SameSite 屬性會告訴瀏覽器在第一方和第三方情境下觸發 Cookie 
 | `lax` | 唯有瀏覽器 URL 中顯示的網域與 Cookie 的網域相符時，系統才會傳送採用此設定的 Cookie。 這是 Chrome 對 Cookie 的新預設值。 |
 | `none` | 採用此設定的 Cookie 可供外部或第三方存取，例如「跨網站」。 此次異動前，Cookie 的預設 SameSite 設定為 `none`，因此使用此設定的話，Cookie 的行為會與其傳統運作方式最為相似。 不過，Google 現在要求所有採用此設定的 Cookie 都必須指定安全標幟，亦即 Cookie 只能應要求透過 HTTPS 建立及傳送。 Google 會拒絕所有沒有安全標幟的跨網站 Cookie。 |
 
-## Adobe Experience Cloud 客戶須知
+## Adobe CX Enterprise客戶須知
 
 **不需更新 JavaScript**
 
@@ -48,7 +48,7 @@ Adobe 產品已發佈伺服器端更新，可使用適當屬性來設定第三�
 
 **確認第三方端點使用 HTTPS**
 
-所有客戶應確認其 JavaScript 設定是使用 HTTPS 來呼叫 Adobe 服務。 Target、Audience Manager 和 Experience Cloud 身分識別服務 (ECID) 會將第三方 HTTP 呼叫重新導向各自的 HTTPS 端點，但這麼做可能會增加延遲時間。 換句話說，您不需變更設定。 Analytics 客戶應更新實作，僅限使用 HTTPS，因為 Analytics 專有的重新導向機制可能會造成資料外洩。
+所有客戶應確認其 JavaScript 設定是使用 HTTPS 來呼叫 Adobe 服務。 Target、Audience Manager和訪客ID服務(ECID)會將第三方HTTP呼叫重新導向各自的HTTPS端點，而這會增加延遲時間。 換句話說，您不需變更設定。 Analytics 客戶應更新實作，僅限使用 HTTPS，因為 Analytics 專有的重新導向機制可能會造成資料外洩。
 
 **正確標示的 Cookie 應能順利收集資料**
 

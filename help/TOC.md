@@ -1,50 +1,49 @@
 ---
 audience: end-user
-user-guide-title: Experience Cloud 身分識別服務說明
-breadcrumb-title: 身分識別服務指南
-user-guide-description: Adobe Experience Cloud 身分識別服務提供永續性的通用 ID，可識別 Experience Cloud 所有解決方案的訪客。 它有助於取代 Experience Cloud 解決方案和服務的舊版 ID 產生程式碼。
+user-guide-title: Adobe訪客ID服務說明
+breadcrumb-title: 訪客ID服務指南
+user-guide-description: Adobe訪客ID服務提供永久性的通用ID，可識別CX Enterprise所有解決方案的訪客。 它有助於取代CX Enterprise解決方案和服務的舊版ID產生代碼。
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: 13bfd8b38596dd64f607c897a60bbeb2733b89bf
+source-git-commit: 7621dc8925235bd3cf159a404741bd02fc9b6a77
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 93%
+source-wordcount: '372'
+ht-degree: 45%
 
 ---
 
 
-# Experience Cloud 身分識別服務說明 {#using}
+# Adobe訪客ID服務說明 {#using}
 
-+ [身分識別服務說明](home.md)
++ [訪客ID服務說明](home.md)
 + 概觀 {#intro}
    + [概觀](introduction/overview.md)
-   + [關於 ID 服務](introduction/about-id-service.md)
-   + [Cookie 與 ID 服務](introduction/cookies.md)
-   + [ID 服務如何要求與設定 ID](introduction/id-request.md)
+   + [關於訪客ID服務](introduction/about-id-service.md)
+   + [Cookie和訪客ID服務](introduction/cookies.md)
+   + [訪客ID服務如何要求與設定ID](introduction/id-request.md)
    + [了解同步和匹配率](introduction/match-rates.md)
 + 實作 {#implementation}
    + [實作方法](implementation-guides/implementation-methods.md)
    + [實作指南](implementation-guides/implementation-guides.md)
-   + [使用 Experience Platform 標籤實作](implementation-guides/ecid-implement-with-launch.md)
+   + [使用標籤實作](implementation-guides/ecid-implement-with-launch.md)
    + [實作Analytics](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/id/overview){target=_blank}
    + [實作 Target](implementation-guides/setup-target.md)
    + [實作 Analytics 與 Audience Manager](implementation-guides/setup-aam-analytics.md)
    + [實作 Analytics、Audience Manager 及 Target](implementation-guides/setup-aam-analytics-target.md)
-   + [搭配 A4T 以及伺服器端的 Target 實作使用 ID 服務](implementation-guides/ecid-a4t-target.md)
-   + [與 ID 服務直接整合](implementation-guides/direct-integration.md)
+   + [將訪客ID服務用於A4T以及伺服器端的Target實作](implementation-guides/ecid-a4t-target.md)
+   + [與訪客ID服務直接整合](implementation-guides/direct-integration.md)
    + [直接整合的使用案例](implementation-guides/direct-integration-examples.md)
-   + [測試及驗證 ID 服務](implementation-guides/test-verify.md)
+   + [測試及驗證訪客ID服務](implementation-guides/test-verify.md)
    + 選擇加入服務 {#opt-in-service}
       + [選擇加入服務概觀](implementation-guides/opt-in-service/optin-overview.md)
       + [設定選擇加入服務](implementation-guides/opt-in-service/getting-started.md)
       + [驗證選擇加入服務](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
-      + [使用 Experience Platform Launch 設定選擇加入](implementation-guides/opt-in-service/launch.md)
-      + [使用 DTM 設定選擇加入](implementation-guides/opt-in-service/optin-dtm.md)
-      + [根據用戶同意控制 Experience Cloud 活動](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
+      + [使用標籤設定選擇加入](implementation-guides/opt-in-service/launch.md)
+      + [根據使用者同意控制CX Enterprise活動](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
       + [選擇加入使用案例](implementation-guides/opt-in-service/use-cases.md)
       + [選擇加入參考資料](implementation-guides/opt-in-service/api.md)
       + [搭配 IAB 架構使用「選擇加入」服務](implementation-guides/opt-in-service/iab.md)
-+ ID 服務 API {#id-service-api}
-   + [ID 服務 API 概觀](library/library.md)
++ 訪客ID服務API {#id-service-api}
+   + [訪客ID服務API概述](library/library.md)
    + 設定 {#configurations}
       + [設定概觀](library/function-vars/function-vars.md)
       + [audienceManagerServer 及 audienceManagerServerSecure](library/function-vars/subdomain-config.md)
@@ -82,22 +81,21 @@ ht-degree: 93%
 + 參考 {#reference}
    + [參考概觀](reference/reference.md)
    + [Google Chrome SameSite 標籤異動](reference/chrome-samesite-labelling.md)
-   + [內容安全性原則及 ID 服務](reference/csp.md)
-   + [ID 服務的 COPPA 支援](reference/coppa.md)
-   + [ID 服務的 CORS 支援](reference/cors.md)
+   + [內容安全性原則及訪客ID服務](reference/csp.md)
+   + [訪客ID服務的COPPA支援](reference/coppa.md)
+   + [訪客ID服務的CORS支援](reference/cors.md)
    + [客戶 ID 和驗證狀態](reference/authenticated-state.md)
    + [Safari ITP 領域的 ECID 程式庫方法](reference/ecid-library-methods.md)
    + [識別不重複訪客](reference/unique-vis-method.md)
-   + [從 AMCV Cookie 或 ID 服務取得區域和用戶 ID](reference/regions.md)
-   + [ID 服務規定](reference/requirements.md)
-   + [影片心率和 ID 服務](reference/heartbeat.md)
-   + [Data Workbench 與 ID 服務](reference/dwb.md)
+   + [從AMCV Cookie或訪客ID服務取得地區和使用者ID](reference/regions.md)
+   + [訪客ID服務規定](reference/requirements.md)
+   + [影片心率和訪客ID服務](reference/heartbeat.md)
    + [setCustomerIDs 的 SHA256 雜湊支援](reference/hashing-support.md)
 + 常見問題集 {#faqs}
    + [常見問題集概觀](faq-intro/faq-intro.md)
-   + [ID 服務常見問題集](faq-intro/faq.md)
-   + [其他 Experience Cloud 解決方案的常見問題集](faq-intro/other-faq.md)
-+ ID服務發行說明 {#release-notes}
+   + [訪客ID服務常見問題](faq-intro/faq.md)
+   + [其他CX企業解決方案的常見問題集](faq-intro/other-faq.md)
++ 訪客ID服務發行說明 {#release-notes}
    + [2022 年發行說明](release-notes/notes-2022.md)
    + [2021 年發行說明](release-notes/notes-2021.md)
    + [2020 年發行說明](release-notes/notes-2020.md)
@@ -106,5 +104,3 @@ ht-degree: 93%
    + [2017 年發行說明](release-notes/notes-2017.md)
    + [2016 年發行說明](release-notes/notes-2016.md)
    + [2015 年發行說明](release-notes/notes-2015.md)
-+ {hide-from-toc}[已從目錄隱藏Analytics測試](analytics-test-file-hidetoc.md)
-+ {hide-from-toc}[隱藏的測試檔案](hidden-file.md)

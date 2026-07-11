@@ -14,10 +14,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 518
-ht-degree: 96%
+source-wordcount: 515
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 96%
 >
 >僅 ECID 4.0 (含) 以後版本提供「選擇加入」。
 
-使用 Adobe Experience Platform Launch 為您的網站實作「選擇加入」的 IAB TCF 外掛程式。 手動啟用「選擇加入」的 IAB 時，請檢查以確定在訪客物件中，下列設定皆設為 true：
+使用標籤來實作您網站的「選擇加入」IAB TCF外掛程式。 手動啟用「選擇加入」的 IAB 時，請檢查以確定在訪客物件中，下列設定皆設為 true：
 
 ```javascript
 Visitor.getInstance("YOUR_ORG_ID", {  

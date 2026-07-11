@@ -1,6 +1,6 @@
 ---
 description: 此功能主要是為 A4T 客戶所設計，可協助解決在單一網站/螢幕或應用程式處理 ID 時遇到的問題。
-keywords: ID 服務
+keywords: 訪客 ID 服務
 title: resetState
 exl-id: 8e8cb299-bb89-4bc1-8841-3091ce0cbd81
 TQID: https://experienceleague.adobe.com/ud8yTufRC6V5T58oh20G65MYNTCZvMlK5FdHVrrZFpU
@@ -13,10 +13,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 377
-ht-degree: 99%
+ht-degree: 54%
 
 ---
 
@@ -26,10 +26,10 @@ ht-degree: 99%
 
 ## 使用案例 {#section-840b88a5cdb042488b340cad5d7b22a5}
 
-使用 ID 服務的 A4T 客戶可以視需要使用 `visitor.resetState()` 函數來執行下列作業:
+使用訪客ID服務的A4T客戶可以視需要使用`visitor.resetState()`函式來執行下列作業：
 
-* 透過重新導向在不同頁面或畫面之間傳遞 Supplemental Data ID (SDID) 或其他任何 ID。 通常一定要有這個函數，ID 服務才會傳遞此 ID。
-* 使用只會透過 Ajax 呼叫更新頁面或應用程式的特定區段的程式碼，而且您想要追蹤這些操作。 舉例來說，假設您有一個頁面，在按下此頁面上的某個物件時，只會載入或變更特殊區段。 在此情況下，除非重新載入頁面，否則 ID 服務無法要求不同的 ID。 但如果是使用 `visitor.resetState()`，則可以在下列條件下要求新的 ID。
+* 透過重新導向在不同頁面或畫面之間傳遞 Supplemental Data ID (SDID) 或其他任何 ID。 通常沒有此函式，訪客ID服務就不會傳遞此ID。
+* 使用只會透過 Ajax 呼叫更新頁面或應用程式的特定區段的程式碼，而且您想要追蹤這些操作。 舉例來說，假設您有一個頁面，在按下此頁面上的某個物件時，只會載入或變更特殊區段。 在此情況下，除非重新載入頁面，否則訪客ID服務無法要求不同的ID。 但如果是使用 `visitor.resetState()`，則可以在下列條件下要求新的 ID。
 
 請參閱以下的程式碼範例。
 
@@ -39,20 +39,20 @@ ht-degree: 99%
 
 ## 程式碼範例 {#section-d75b211bb4ea473887eb284de2ad838b}
 
-您的 ID 服務實作會影響您使用此函數的方式。 請參考下表的範例。
+您的訪客ID服務實作會影響您使用此函式的方式。 請參考下表的範例。
 
 **伺服器端實作**
 
-伺服器端實作適用於擁有混合式伺服器端及用戶端 [!DNL Analytics]、[!DNL Target] 和 ID 服務實作的 A4T 客戶。 如果已透過此方法設定 ID 服務，您只需要將 `visitor.resetState()` 新增到頁面即可。 呼叫 ID 服務會自動傳回新的 ID 和伺服器狀態。
+伺服器端實作適用於擁有混合式伺服器端及使用者端Target、Analytics和訪客ID服務實作的A4T客戶。 如果您已使用此方法設定訪客ID服務，您只需要將`visitor.resetState()`新增至頁面即可。 呼叫訪客ID服務會自動傳回新的ID和伺服器狀態。
 
 **非標準實作** (透過 ID)
 
-如果您透過[非標準實作](../../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113)設定 ID 服務，您需要設定一個變數物件以保留您想要透過 `visitor.resetState()` 傳遞的 SDID (或其他 ID)。 這會包含您的[組織 ID](../../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) 以及您想要傳遞的 ID，如下所示。 您的程式碼看起來可能類似於下列範例。
+如果您已使用[非標準實作](../../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113)設定訪客ID服務，您需要設定一個變數物件以保留您想要使用`visitor.resetState()`傳遞的SDID （或其他ID）。 如下所示，這將包含您的[IMS組織ID](../../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26)以及您想要傳遞的ID。 您的程式碼看起來可能類似於下列範例。
 
 ```js
 //Instantiate server state variable 
 var serverState = { 
-     "Insert Experience Cloud organization ID here": { 
+     "INSERT-IMS-ORG-ID-HERE": { 
           //Specify the SDID or other ID 
           supplementalDataIDCurrent: "1234", 
           supplementalDataIDCurrentConsumed: { 
@@ -61,8 +61,8 @@ var serverState = {
      } 
 }; 
  
-//Instantiate ID service 
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here", { 
+//Instantiate Visitor ID Service 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE", { 
      ... 
 }); 
  
@@ -76,8 +76,8 @@ visitor.resetState(serverState);
 
 ```js
  
-//Instantiate ID service 
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here", { 
+//Instantiate Visitor ID Service 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE", { 
      ... 
 }); 
  
@@ -95,8 +95,4 @@ var sdid1 = visitor.getSupplementalDataID("consumer3"); // sdid1: 5678
  
 var sdid2 = visitor.getSupplementalDataID("consumer4"); // sdid2: 5678
 ```
-
-**動態標籤管理員 (DTM)**
-
-目前並未提供 `visitor.resetState()` () 的 DTM 設定路徑。
 

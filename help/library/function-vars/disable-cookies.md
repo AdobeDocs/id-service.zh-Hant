@@ -1,6 +1,6 @@
 ---
-description: 此選用的布林值標幟可防止 Experience Cloud 身分識別服務傳回第三方 demdex.net Cookie。
-keywords: ID 服務
+description: 此選用的布林值標幟可防止訪客ID服務傳回第三方demdex.net Cookie。
+keywords: 訪客 ID 服務
 title: disableThirdPartyCookies
 exl-id: 19d12822-0e17-4a1c-8e9c-25a22e20a4a8
 TQID: https://experienceleague.adobe.com/vx9q-Q1X0fraWPUmaBlx-bBFX-gvnAox03mpENTizHw
@@ -11,16 +11,16 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 145
-ht-degree: 97%
+source-wordcount: 144
+ht-degree: 16%
 
 ---
 
 # disableThirdPartyCookies{#disablethirdpartycookies}
 
-此選用的布林值標幟可防止 Experience Cloud 身分識別服務傳回第三方 demdex.net Cookie。
+此選用的布林值標幟可防止訪客ID服務傳回第三方demdex.net Cookie。
 
 >[!NOTE]
 >
@@ -28,12 +28,12 @@ ht-degree: 97%
 
 **語法:** `disableThirdPartyCookies: true|false` (預設為 `false`。) 適用於`VisitorAPI.js` v3.0.0或更高版本。
 
-當 `disableThirdPartyCookies: true` 時，ID 服務不會傳回第三方 demdex.net Cookie (請參閱 [Cookie 與 Experience Cloud 身分識別服務](../../introduction/cookies.md))。 如果網站訪客在瀏覽器中已擁有此 Cookie，ID 服務將不會使用該 Cookie 來建立新的 Experience Cloud ID (MID) 或傳回現有 ID。 ID 服務而是會在第一方 Cookie 中建立新的隨機 MID。 在啟用後，您可以使用 ID 服務收集資料，並在不同的 Experience Cloud 解決方案中分享。
+當`disableThirdPartyCookies: true`時，訪客ID服務未傳回第三方demdex.net Cookie （請參閱[Cookie和訪客ID服務](../../introduction/cookies.md) ）。 如果網站訪客的瀏覽器中已有此Cookie，「訪客ID服務」就不會使用它來建立新的ECID或傳回現有的ID。 訪客ID服務而是會在第一方Cookie中建立新的隨機MID。 啟用後，您就可以透過訪客ID服務收集資料，並在不同的CX Enterprise解決方案中共用。
 
 **程式碼範例**
 
 ```js
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{ 
    trackingServer: "Insert tracking server here here",  //Same as s.trackingServer 
    trackingServerSecure: "Insert secure tracking server here",  //Same as s.trackingServerSecure 
  

@@ -1,6 +1,6 @@
 ---
-description: Adobe Experience Platform Launch 是設定及部署 Experience Cloud 身分識別服務，並將 Experience Cloud 身分識別服務與其他 Experience Cloud 解決方案整合的主要工具。
-title: 使用 Launch 實作
+description: 標籤是用於設定、部署訪客ID服務，並將其與您的其他CX Enterprise解決方案整合的主要工具。
+title: 使用資料收集標籤實作
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: cf197fde-3b93-4578-b24e-2db5633f043c
@@ -14,22 +14,22 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 179
-ht-degree: 100%
+source-wordcount: 170
+ht-degree: 21%
 
 ---
 
-# 使用 Experience Platform 標籤實作{#implement-with-launch}
+# 使用資料收集標籤實作{#implement-with-launch}
 
-Adobe Experience Platform 中的標記是設定及部署 Experience Cloud 身分識別服務，並將 Experience Cloud 身分識別服務與其他 Experience Cloud 解決方案整合的主要工具。
+標籤是用於設定、部署訪客ID服務，並將其與您的其他CX Enterprise解決方案整合的主要工具。
 
-## Experience Platform 標籤簡介 {#section-611711602854464ea351a4af80a8dafe}
+## 關於資料收集標籤 {#section-611711602854464ea351a4af80a8dafe}
 
-[Adobe Experience Platform 中的標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)是內建在 Adobe Experience Cloud 的新一代 Adobe 標籤管理功能。 Platform 標籤可讓用戶端：
+Adobe Experience Platform Data Collection中的[標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)是內建在Adobe CX Enterprise的新一代Adobe標籤管理功能。 標籤可讓使用者端：
 
 * 使用稱為&#x200B;_擴充功能_&#x200B;的整合功能，部署用戶端網頁產品。
 * 一致地在其他廠商和 Adobe 提供的行銷與廣告產品之間擷取、定義、管理和共用資料。
-* Platform 標籤是進階 JavaScript 交付系統，可評估條件和執行的動作，以便有效率且有效地部署用戶端程式庫和產品。 標籤提供具備高度擴充性的方法來管理及建置擴充功能，並搭配一組強大的 API，便能以程式設計方式與 Adobe Experience Cloud 互動。
+* 標籤是進階JavaScript交付系統，可評估條件並執行動作，以有效部署使用者端程式庫與產品。 標籤提供具備高度擴充性的方法來管理及建置擴充功能，並搭配一組強大的API，便能以程式設計方式與Adobe CX Enterprise互動。
 

@@ -1,6 +1,6 @@
 ---
-description: 使用 Adobe Experience Platform Launch 為選擇加入功能簡化 Experience Cloud 解決方案的啟用工作。
-title: 使用 Launch 設定選擇加入
+description: 使用標籤簡化啟用選擇加入的CX Enterprise解決方案。
+title: 使用標籤設定選擇加入
 exl-id: 9e9d1e2b-196f-474c-b872-de4329dcb017
 TQID: https://experienceleague.adobe.com/o2vzYw-VbX-F5dg-vnaRPdX2va99K1bRsAOA4IoUklc
 product_v2:
@@ -12,28 +12,28 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 180
-ht-degree: 100%
+source-wordcount: 171
+ht-degree: 19%
 
 ---
 
-# 使用 Experience Platform Launch 設定選擇加入 {#configuring-opt-in-with-launch}
+# 使用標籤設定選擇加入 {#configuring-opt-in-with-launch}
 
-使用 Adobe Experience Platform Launch 為選擇加入功能簡化 Experience Cloud 解決方案的啟用工作。
+使用標籤簡化啟用選擇加入的CX Enterprise解決方案。
 
-## 使用 Experience Platform Launch 設定選擇加入案例 {#section-8aa1b58bf8374c938aa8cfdeddbad6ff}
+## 使用標籤設定選擇加入案例 {#section-8aa1b58bf8374c938aa8cfdeddbad6ff}
 
-[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant) 可讓您使用 Adobe 解決方案輕鬆設定選擇加入情境。 您可以讓 Analytics、Target、Audience Manager 及其他或所有指定 Experience Cloud 解決方案選擇加入您的同意管理系統，藉此簡化 Experience Cloud 解決方案收集訪客是否同意選擇加入的程序。
+Adobe Experience Platform Data Collection中的[標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)可讓您使用Adobe解決方案輕鬆設定選擇加入案例。 您可以讓Analytics、Target、Audience Manager及其他或所有指定CX企業解決方案選擇加入您的同意管理系統，簡化CX企業解決方案收集訪客是否同意選擇加入的程式。
 
-**設定 Experience Cloud ID 擴充功能**
+**設定[!UICONTROL Experience Cloud ID Service]標籤延伸**
 
-如果尚未安裝 Experience Cloud ID 擴充功能，請開啟屬性，然後依序按下「*擴充功能* > *目錄*」，將游標暫留在 Experience Cloud ID 擴充功能上方，然後按一下「*安裝*」。
+如果尚未安裝[!UICONTROL Experience Cloud ID Service]標籤延伸模組，請開啟您的屬性，然後按一下&#x200B;*延伸模組* > *目錄*，將游標暫留在[!UICONTROL Experience Cloud ID Service]標籤延伸模組上，然後按一下&#x200B;*安裝*。
 
 若要設定此擴充功能，請開啟 *擴充功能* 索引標籤，並將滑鼠游標停留在此擴充功能上方。 然後按一下 *設定*。
 
-如需其他參考資訊，請參閱 [Adobe Experience Cloud 身分識別服務擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html?lang=zh-Hant)。
+如需其他參考資訊，請閱讀[!UICONTROL Experience Cloud ID Service]標籤擴充功能[總覽](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html?lang=zh-Hant) （實作訪客ID服務的擴充功能）。
 
 ![](assets/optin-launch.jpg)
 

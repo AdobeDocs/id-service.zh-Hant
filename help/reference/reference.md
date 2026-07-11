@@ -1,6 +1,6 @@
 ---
-description: 其他 Experience Cloud 身分識別服務特色與功能的相關資訊。
-keywords: ID 服務
+description: 其他訪客ID服務特色與功能的相關資訊。
+keywords: 訪客 ID 服務
 title: 參考
 exl-id: 9a14300c-206c-4960-b594-517809f7e979
 TQID: https://experienceleague.adobe.com/9Dl-jPqZLzHgsyh6-rS8fvp5JKgvYKpfm9arD55B8jc
@@ -13,23 +13,22 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 90
-ht-degree: 100%
+source-wordcount: 77
+ht-degree: 12%
 
 ---
 
 # 參考 {#reference}
 
-其他 Experience Cloud 身分識別服務特色與功能的相關資訊。
+其他訪客ID服務特色與功能的相關資訊。
 
-* [內容安全性原則及 Experience Cloud 身分識別服務](csp.md)
-* [Experience Cloud 身分識別服務的 COPPA 支援](coppa.md)
-* [Experience Cloud 身分識別服務的 CORS 支援](cors.md)
+* [內容安全性原則及訪客ID服務](csp.md)
+* [訪客ID服務的COPPA支援](coppa.md)
+* [訪客ID服務的CORS支援](cors.md)
 * [客戶 ID 和驗證狀態](authenticated-state.md)
-* [從 AMCV Cookie 或 ID 服務取得地區和用戶 ID](regions.md)
-* [Experience Cloud 身分識別服務的需求](requirements.md)
-* [影片心率和 Experience Cloud 身分識別服務](heartbeat.md)
-* [Data Workbench 與 Experience Cloud 身分識別服務](dwb.md)
+* [從AMCV Cookie或訪客ID服務取得地區和使用者ID](regions.md)
+* [訪客ID服務規定](requirements.md)
+* [影片心率和訪客ID服務](heartbeat.md)
 

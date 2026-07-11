@@ -1,18 +1,18 @@
 ---
-description: 選用的布林值設定，可決定 ID 服務是否要將資料傳送至 Adobe Experience Cloud Device Co-op。
-keywords: ID 服務
+description: 選用的布林值設定，可判斷訪客ID服務是否要將資料傳送至Adobe Device Co-op。
+keywords: 訪客 ID 服務
 title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 98%
+source-wordcount: '618'
+ht-degree: 68%
 
 ---
 
 # isCoopSafe{#iscoopsafe}
 
-選用的布林值設定，可決定 ID 服務是否要將資料傳送至 Adobe Experience Cloud Device Co-op。
+選用的布林值設定，可判斷訪客ID服務是否要將資料傳送至Adobe Device Co-op。
 
 內容:
 
@@ -28,10 +28,10 @@ ht-degree: 98%
 
 若要使用 `isCoopSafe`，您必須:
 
-* 使用 2.4 版或更新版本的 ID 服務程式碼。
-* 參與 [Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html?lang=zh-Hant)。 潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
+* 使用訪客ID服務程式碼2.4版或更新版本。
+* 參與[Adobe Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html?lang=zh-Hant)。 潛在的 Co-op 成員也需審閱此文件，以確定 `isCoopSafe` 是否解決了關於如何使用資料建立裝置圖形的可能問題。
 
-* 請和您的 [!DNL Adobe] 顧問合作，在您的 Device co-op 帳戶上設定白名單或是黑名單標幟。 沒有啟用可這些標幟的自助式路徑。
+* 請與您的Adobe顧問合作，在您的Device co-op帳戶上設定白名單或是黑名單標幟。 沒有啟用可這些標幟的自助式路徑。
 
 ## 使用案例 {#section-d18af2b903f248e18ae8108aaf0a8ebb}
 
@@ -47,11 +47,11 @@ ht-degree: 98%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>已驗證的訪客</b> </p> </td> 
-   <td colname="col2"> <p>新增 <span class="codeph">isCoopSafe</span> 至您的 ID 服務程式碼，以控制 Device Co-op 該如何使用已驗證且接受或是未接受使用條款的訪客資料來建立裝置圖形。 </p> </td> 
+   <td colname="col2"> <p>將<span class="codeph"> isCoopSafe </span>新增至您的訪客ID服務程式碼，以控制Device Co-op如何使用已驗證且接受或是未接受使用條款的訪客資料來建立裝置圖形。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>第三方網站上的 DIL</b> </p> </td> 
-   <td colname="col2"> <p>新增 <span class="codeph">isCoopSafe</span> 至您的 ID 服務程式碼，以便在第三方網站上使用；因此，您可能會: </p> <p> 
+   <td colname="col2"> <p>新增<span class="codeph"> isCoopSafe </span>至您的訪客ID服務程式碼，以便在第三方網站上使用，在這些網站中： </p> <p> 
      <ul id="ul_C27BB26510314834A2A7CD99D46DA4AC"> 
       <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">無法確定已驗證的訪客是否已接受使用條款合約。 </li> 
       <li id="li_26D0561BF32B4278B0A6B5082C17FED8">需要控制 Device Co-op 使用該資料來建立裝置圖形的方式。 </li> 
@@ -72,10 +72,10 @@ ht-degree: 98%
 
 **程式碼範例**
 
-當您的 ID 服務程式碼實例化時，請進行此設定:
+當您的訪客ID服務程式碼例項化時，請進行此設定：
 
 ```js
-var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance("INSERT-IMS-ORG-ID-HERE",{ 
      ... 
      isCoopSafe: true 
 });
@@ -83,12 +83,12 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 
 ## 事件呼叫POST引數 {#section-fcd441933506493faefaa6b51f194a17}
 
-取決於您設定的標幟 (`true` 或 `false`)，ID 服務將 `isCoopSafe` 轉譯為 POST 參數並在事件呼叫時將參數傳送至 [!DNL Adobe]:
+根據您設定的標幟（ `true`或`false`），訪客ID服務會將`isCoopSafe`轉譯成這些POST引數，並在事件呼叫中將它們傳送至Adobe：
 
 * `d_coop_safe=1`
 * `d_coop_unsafe=1`
 
-POST 參數告知 [!DNL Experience Cloud] Device Co-op 是否能在裝置圖像中包含用戶資料。 以下表格定義了在事件呼叫中 `isCoopSafe` 布林值標幟與所傳遞的 POST 參數之間的關係。 如果您沒有使用 `isCoopSafe`，這些都不會在事件呼叫中傳遞。
+POST引數告知Adobe Device Co-op是否能在裝置影象中包含使用者資料。 以下表格定義了在事件呼叫中 `isCoopSafe` 布林值標幟與所傳遞的 POST 參數之間的關係。 如果您沒有使用 `isCoopSafe`，這些都不會在事件呼叫中傳遞。
 
 <table id="table_0A544534CA904F4D9836A34B8C1EACBB"> 
  <thead> 
