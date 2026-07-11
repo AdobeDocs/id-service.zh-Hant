@@ -1,36 +1,31 @@
 ---
-description: 除了 Experience Cloud 訪客 ID 之外，您還可以將其他客戶 ID 和驗證狀態與每個訪客建立關聯。
-keywords: ID 服務
+description: 除了ECID之外，您還可以將其他客戶ID和驗證狀態與每個訪客建立關聯。
+keywords: 訪客 ID 服務
 title: 客戶 ID 和驗證狀態
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
 TQID: https://experienceleague.adobe.com/0z2HaRyNYcuJhE6WMkTZVXK-DiPu2S5bdnOiYsZwxYg
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 642
-ht-degree: 97%
+ht-degree: 78%
 
 ---
 
 # 客戶 ID 和驗證狀態 {#customer-ids-and-authentication-states}
 
-除了 Experience Cloud 訪客 ID 之外，您還可以將其他客戶 ID 和驗證狀態與每個訪客建立關聯。
+除了ECID之外，您還可以將其他客戶ID和驗證狀態與每個訪客建立關聯。
 
 ## 驗證狀態 {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-`setCustomerIDs` 方法接受同一位訪客擁有多個客戶 ID。 這可幫助您識別或鎖定不同裝置上的個別用戶。 例如，您可以將這些 ID 上傳至[作為](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hant??lang=zh-Hant)客戶屬性[!DNL Experience Cloud]，並在不同解決方案中使用此資料。
+`setCustomerIDs` 方法接受同一位訪客擁有多個客戶 ID。 這可幫助您識別或鎖定不同裝置上的個別用戶。 例如，您可以將這些ID上傳為[客戶屬性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hant??lang=zh-Hant)至CX Enterprise，並在不同的解決方案中存取這些資料。
 
 >[!IMPORTANT]
 >
->客戶屬性與核心服務功能需要 `setCustomerIDs` (客戶 ID 同步化)。 同步客戶 ID 是 [!DNL Analytics] 支援的選用身分識別方法。 [!DNL Target] 需要客戶屬性的 `Visitor.AuthState.AUTHENTICATED` 才能運作。 如需範例，請參閱[核心服務 - 如何啟用您的解決方案](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=zh-Hant)。
+>客戶屬性與核心服務功能需要 `setCustomerIDs` (客戶 ID 同步化)。 同步客戶ID是Analytics的選用身分識別方法。 Target需要`Visitor.AuthState.AUTHENTICATED`才能使用客戶屬性。 如需範例，請參閱[核心服務 - 如何啟用您的解決方案](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=zh-Hant)。
 
-從 Experience Cloud 身分識別服務 1.5 版以後的版本開始，`setCustomerIDs` 即包括可選用的 `AuthState` 物件。 `AuthState` 會根據訪客的驗證狀態 (例如，登入、登出) 來識別訪客。 您可使用表中的狀態數值設定驗證狀態。 驗證狀態會以整數傳回。
+從訪客ID服務1.5版以後的版本開始，`setCustomerIDs`即包括選用的`AuthState`物件。 `AuthState` 會根據訪客的驗證狀態 (例如，登入、登出) 來識別訪客。 您可使用表中的狀態數值設定驗證狀態。 驗證狀態會以整數傳回。
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
@@ -217,12 +212,12 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## SDK 支援 {#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
-[!DNL Experience Cloud] ID 服務支援 Android 和 iOS SDK 程式碼中的客戶 ID 與驗證狀態。 請參閱下列程式碼程式庫：
+訪客ID服務支援Android和iOS SDK程式碼中的客戶ID與驗證狀態。 請參閱下列程式碼程式庫：
 
 * [Android SDK 方法](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=zh-Hant)
 * [iOS SDK方法](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=zh-Hant)
 
 ## 通知 Analytics 與 Audience Manager 客戶 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-如果您要將宣告的 ID 傳遞至 [!DNL Audience Manager]，`userid` 物件必須符合與資料來源相關的整合程式碼。 如需詳細資訊，請參閱[設定合併規則程式碼](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=zh-Hant#configure-merge-rule-code)檔案中的[!UICONTROL Visitor ID Service]一節。
+如果您要將宣告的ID傳遞至Audience Manager，`userid`物件必須符合與資料來源關聯的整合程式碼。 如需詳細資訊，請參閱[設定合併規則程式碼](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=en#configure-merge-rule-code)檔案中的[!UICONTROL Visitor ID Service]一節。
 

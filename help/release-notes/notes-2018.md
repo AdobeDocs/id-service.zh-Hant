@@ -1,30 +1,22 @@
 ---
-description: 2018 年 Experience Cloud 身分識別服務的功能發佈、更新或變更。
-keywords: ID 服務
+description: 2018年訪客ID服務的功能發佈、更新或變更。
+keywords: 訪客 ID 服務
 title: 2018 年版本注意事項
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
 TQID: https://experienceleague.adobe.com/1vrVFuFbQiLL9XYnZwEf0WkElW-qhsklHbrem-mo5LE
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 503
-ht-degree: 94%
+source-wordcount: 488
+ht-degree: 66%
 
 ---
 
 # 2018 年版本注意事項 {#release-notes}
 
-2018 年 Experience Cloud 身分識別服務的功能發佈、更新或變更。
+2018年訪客ID服務的功能發佈、更新或變更。
 
 ## 3.3 版 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -38,7 +30,7 @@ ht-degree: 94%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>提升 AMCV Cookie 的安全性 </p> </td> 
-   <td colname="col2"> <p>在內部安全性掃描期間，我們發現當使用 DTM 程式庫時，用於作業階段管理的 Cookie 無法指定適當的屬性。 這可能會導致 Cookie 資訊無意間被分享。 為了解決此問題，我們引進了一項設定，可讓客戶將 AMCV Cookie 設定為安全 Cookie。 請參閱 <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>。 </p> </td> 
+   <td colname="col2"> <p>在內部安全性掃描期間，發現用於工作階段管理的Cookie無法指定適當的屬性。 這可能會導致 Cookie 資訊無意間被分享。 為了解決此問題，我們引進了一項設定，可讓客戶將 AMCV Cookie 設定為安全 Cookie。 請參閱 <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -55,7 +47,7 @@ ht-degree: 94%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>提升 AMCV Cookie 的安全性 </p> </td> 
-   <td colname="col2"> <p>在內部安全性掃描期間，我們發現當使用 DTM 程式庫時，用於作業階段管理的 Cookie 無法指定適當的屬性。 這可能會導致 Cookie 資訊無意間被分享。 為了解決此問題，我們引進了一項設定，可讓客戶將 AMCV Cookie 設定為安全 Cookie。 請參閱 secureCookie。 </p> </td> 
+   <td colname="col2"> <p>在內部安全性掃描期間，發現用於工作階段管理的Cookie無法指定適當的屬性。 這可能會導致 Cookie 資訊無意間被分享。 為了解決此問題，我們引進了一項設定，可讓客戶將 AMCV Cookie 設定為安全 Cookie。 請參閱 secureCookie。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>整合代碼和 ID 必須是數字或非空白字串 </p> </td> 
@@ -63,7 +55,7 @@ ht-degree: 94%
   </tr> 
   <tr> 
    <td colname="col1"> 公開 Git 存放庫中有提供 ECID JS </td> 
-   <td colname="col2"> 公開 Git 存放庫現於 https://github.com/Adobe-Marketing-Cloud/id-service/releases，開放所有 Experience Cloud 客戶使用 ECID JS。 </td> 
+   <td colname="col2"> 公開Git存放庫現於https://github.com/Adobe-Marketing-Cloud/id-service/releases ，開放所有CX Enterprise客戶使用ECID JS。 </td> 
   </tr> 
  </tbody> 
 </table>
@@ -80,7 +72,7 @@ ht-degree: 94%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>不重複訪客計數出現不符實情的尖峰 </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 身分識別服務 3.1.0 版發行後，我們發現實作本版本時，不重複訪客計數會出現與事實不符的尖峰。 只有在使用最新版 ECID v3.1.0 而且用戶已在 Safari 瀏覽器的隱私設定中選取「僅允許來自目前網站」選項時，才會出現這個行為。 版本 3.1.2 解決了這個問題。 </p> </td> 
+   <td colname="col2"> <p>訪客ID服務3.1.0版發行後，我們發現實作本版本時，不重複訪客計數會出現與事實不符的尖峰。 只有在使用最新版 ECID v3.1.0 而且用戶已在 Safari 瀏覽器的隱私設定中選取「僅允許來自目前網站」選項時，才會出現這個行為。 版本 3.1.2 解決了這個問題。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -89,7 +81,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->建議您盡快從 3.1.0 版升級至最新版本。 請參閱 3.1.2 版說明。 Adobe Experience Platform Launch、DTM 及 AppMeasurement 都會提供最新套件。
+>建議您盡快從 3.1.0 版升級至最新版本。 請參閱 3.1.2 版說明。 標籤和AppMeasurement中提供最新套件。
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
@@ -126,7 +118,7 @@ ht-degree: 94%
   </tr> 
   <tr> 
    <td colname="col1"> <p>Internet Explorer 支援 </p> </td> 
-   <td colname="col2"> <p>ID 服務不再支援 Internet Explorer 6、7、8 和 9。 </p> </td> 
+   <td colname="col2"> <p>訪客ID服務不再支援Internet Explorer 6、7、8和9。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>更新至 getInstance 文件 </p> </td> 

@@ -1,37 +1,28 @@
 ---
-description: 2017 年 Experience Cloud 身分識別服務的功能發佈、更新或變更。
-keywords: ID 服務
+description: 2017年訪客ID服務的功能發佈、更新或變更。
+keywords: 訪客 ID 服務
 title: 2017 年版本注意事項
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
 TQID: https://experienceleague.adobe.com/lt0zISb6FrqIuziYTt8pA6VZyU4XQkVsIha19v-LU7w
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 734
-ht-degree: 97%
+source-wordcount: 751
+ht-degree: 47%
 
 ---
 
 # 2017 年版本注意事項 {#release-notes}
 
-2017 年 Experience Cloud 身分識別服務的功能發佈、更新或變更。
+2017年訪客ID服務的功能發佈、更新或變更。
 
-這些變更也包含在 [Experience Cloud 版本注意事項](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hant)中。
+這些變更也包含在[CX Enterprise發行說明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hant)中。
 
 >[!NOTE]
 >
->2017 年 3 月、4 月、5 月和 10 月均沒有針對客戶提供的版本注意事項或程式碼變更。 針對上述月份，ID 服務程式碼均維持 v2.1 版不變。
+>2017 年 3 月、4 月、5 月和 10 月均沒有針對客戶提供的版本注意事項或程式碼變更。 對於上述月份，訪客ID服務程式碼均維持v2.1版不變。
 
 ## 2.5 版 {#section-27b441509124493f80984ed09bd9e88b}
 
@@ -40,7 +31,7 @@ ht-degree: 97%
 <!--
 <p>
 <note type="important">
-ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be discontinued in a future release.
+Visitor ID Service support for Internet Explorer 6, 7, and 8 is deprecated and will be discontinued in a future release.
 </note> </p>
 -->
 
@@ -54,16 +45,16 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> getVisitorValues</span> </p> </td> 
-   <td colname="col2"> <p>這是非同步 API，依預設會為 Analytics、ID 服務、資料收集退出、地理位置以及中繼資料「blob」內容傳回識別碼。 您也可以透過選擇性的 <span class="codeph">visitor.FIELDS</span> 列舉控制您要傳回的 ID。 請參閱 <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local">getVisitorValues</a>。 </p> </td> 
+   <td colname="col2"> <p>這是非同步API，依預設會為Analytics、訪客ID服務、資料收集退出、地理位置以及中繼資料「blob」內容傳回識別碼。 您也可以透過選擇性的 <span class="codeph">visitor.FIELDS</span> 列舉控制您要傳回的 ID。 請參閱 <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local">getVisitorValues</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **錯誤修正與其他變更**
 
-* 已修正在瀏覽器中按上一頁按鈕時會導致 ID 服務擲回錯誤的 Chrome 相關錯誤。
-* 現在，當事件呼叫回應中的地區 ID 變更時，ID 服務會重新引發 ID 同步。
-* 新增了新的文件[內容安全性原則及 Experience Cloud 身分識別服務](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)，說明如何將 ID 服務使用的 Adobe 網域呼叫加入白名單。
+* 已修正Chrome相關錯誤，該錯誤導致訪客ID服務在按一下瀏覽器中的上一頁按鈕時擲回錯誤。
+* 現在，當事件呼叫回應中的地區ID變更時，訪客ID服務會重新引發ID同步。
+* 新增了新的檔案[內容安全性原則及訪客ID服務](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)，說明如何將訪客ID服務使用的Adobe網域呼叫加入白名單。
 
 <!--
 ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
@@ -80,14 +71,14 @@ August, 2017
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> isCoopSafe</span> </p> </td> 
-   <td colname="col2"> <p>An optional, Boolean configuration that determines if the ID service sends (or does not send) data to the Adobe Experience Cloud Device Co-op. See <a href="../library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe</a>. </p> </td> 
+   <td colname="col2"> <p>An optional, Boolean configuration that determines if the Visitor ID Service sends (or does not send) data to the Adobe Device Co-op. See <a href="../library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Revised Documentation**
 
-Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate FAQs for different [!DNL Experience Cloud] solutions. 
+Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate FAQs for different CX Enterprise solutions. 
 -->
 
 ## 2.3 版 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
@@ -115,8 +106,8 @@ Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate
 
 **錯誤修正與其他變更**
 
-* 已修正 VisitorAPI.js v2.2 中致使 ID 服務與 Target 無法在 Internet Explorer 中搭配運作的錯誤。
-* 已修訂程式碼，以利改善 ID 服務將資料傳送至 Destination Publishing iFrame 的程序。 這有助於降低 CPU 使用量。
+* 修正`VisitorAPI.js` v2.2中造成訪客ID服務與Target無法在Internet Explorer中搭配運作的錯誤。
+* 修訂程式碼，協助改善訪客ID服務將資料傳送至Destination Publishing iFrame的方式。 這有助於降低 CPU 使用量。
 
 ## 2.2 版 {#section-b7dee2495c29470e9b3a3132ec1fd951}
 
@@ -132,7 +123,7 @@ Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/whitelistdomain.md#reference-999899ff7b5b429a8824c9db7a379808" format="dita" scope="local"> whitelistParentDomain 及 whitelistIframeDomains </a> </p> </td> 
-   <td colname="col2"> <p>這些設定可讓實作於 iFrame 及上層頁面的不同 ID 服務代碼執行個體互相通訊。 這些設定可在您不一定控制上層頁面/網域，且在您已控制之網域的 iFrame 中載入 ID 服務程式碼的情況下，協助您解決兩種特定使用案例的問題。 </p> </td> 
+   <td colname="col2"> <p>這些設定可讓實作於iFrame和上層頁面的不同訪客ID服務程式碼例項互相通訊。 這些設定可在您不一定控制上層頁面/網域，且在您已控制之網域的iFrame中載入訪客ID服務程式碼的情況下，協助解決2個特定使用案例的問題。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -170,7 +161,7 @@ Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/subdomain-config.md" format="dita" scope="local"> 了解 ID 同步和匹配率 </a> </p> </td> 
-   <td colname="col2"> <p>修訂 <span class="keyword">Media Optimizer</span> 章節以說明對 <span class="codeph">cm.eversttech.net</span> 的呼叫。 這是 ID 服務透過 <span class="keyword">Media Optimizer</span> 執行時的自動 ID 同步功能。 此功能已於 2017 年 1 月推出。 請參閱下方的 <a href="../release-notes/notes-2017.md#section-0ceac6007c1241b58ad607e2b76b2b7e" format="dita" scope="local">2.0 版</a>。 </p> </td> 
+   <td colname="col2"> <p>修訂 <span class="keyword">Media Optimizer</span> 章節以說明對 <span class="codeph">cm.eversttech.net</span> 的呼叫。 這是訪客ID服務透過<span class="keyword"> Media Optimizer</span>執行的自動ID同步。 此功能已於 2017 年 1 月推出。 請參閱下方的 <a href="../release-notes/notes-2017.md#section-0ceac6007c1241b58ad607e2b76b2b7e" format="dita" scope="local">2.0 版</a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -190,11 +181,11 @@ Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> ID服務API屬性，<span class="codeph"> idSyncContainerID</span></p> </td> 
+   <td colname="col1"> <p> 訪客ID服務API屬性，<span class="codeph"> idSyncContainerID</span></p> </td> 
    <td colname="col2"> <p>該屬性會設定 <span class="keyword">Audience Manager</span> 所使用的容器 ID 以供 ID 同步之用。 請參閱 <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external">idSyncContainerID</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>ID 服務 API 方法，<span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname">SDID</span>)</span></p> </td> 
+   <td colname="col1"> <p>訪客ID服務API方法，<span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>，<span class="varname"> SDID</span>)</span></p> </td> 
    <td colname="col2"> <p>此公用方法可附加至 <span class="wintitle">Supplemental Data ID</span> (SDID) 作為查詢字串參數，以重新導向 URL。 請參閱 <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>。 (MCID-285) </p> </td> 
   </tr> 
  </tbody> 
@@ -202,11 +193,11 @@ Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate
 
 **修正**
 
-已修正 ID 服務會針對 ID 重複發出伺服器呼叫，而不使用 AMCV Cookie 中儲存之 ID 的錯誤。 (MCID-296)
+修正訪客ID服務會針對ID重複發出伺服器呼叫，而不使用AMCV Cookie中儲存之ID的錯誤。 (MCID-296)
 
 **新增文件**
 
-[搭配不同的Experience Cloud解決方案和服務使用DNS預先擷取](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html?lang=zh-Hant)
+[搭配不同的CX企業解決方案和服務使用DNS預先擷取](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html?lang=zh-Hant)
 
 ## 2.0 版 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
@@ -214,15 +205,15 @@ Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate
 
 >[!IMPORTANT]
 >
->ID 服務程式碼 v2.0 依預設會自動與 Adobe Media Optimizer 同步 ID。 這表示您會看到從頁面對 `cm.eversttech.net` 的呼叫，這是由 [!DNL Media Optimizer] 控制的舊版 [!DNL Adobe] 網域。 另請參閱[了解 ID 同步和比對率](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)。
+>訪客ID服務程式碼v2.0依預設會自動與Adobe Media Optimizer同步ID。 這表示您會看到從頁面對`cm.eversttech.net`的呼叫，這是由Adobe控制的舊版Media Optimizer網域。 另請參閱[了解 ID 同步和比對率](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)。
 
 **修正和改良**
 
 * 已修正致使 AppMeasurement 無法對 Analytics 進行追蹤呼叫的錯誤。 (MCID-254、MCID-256、MCID-286)
-* 已修正在訪客已啟用廣告封鎖程式，且該封鎖程式設定為排除 demdex.net 網域時，ID 服務無法立即失效的錯誤。 這是相當罕見且不尋常的錯誤，因為大多數的廣告封鎖工具並不會封鎖 demdex.net 網域。 (MCID-233)
-* 已修正 ID 服務程式碼與客戶網站上的自訂指令碼之間的互動所造成的錯誤。 此問題導致 Internet Explorer 9 無法載入網頁。 (MCID-206)
+* 修正當訪客啟用廣告封鎖程式而該封鎖程式被設定為排除demdex.net網域時，訪客ID服務無法立即失效的錯誤。 這是相當罕見且不尋常的錯誤，因為大多數的廣告封鎖工具並不會封鎖 demdex.net 網域。 (MCID-233)
+* 修正訪客ID服務程式碼與客戶網站上的自訂指令碼之間的互動所造成的錯誤。 此問題導致 Internet Explorer 9 無法載入網頁。 (MCID-206)
 
 ## 過去幾年 {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
-舊版的 ID 服務版本注意事項。
+舊版訪客ID服務發行說明。
 

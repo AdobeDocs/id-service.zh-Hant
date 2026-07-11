@@ -1,22 +1,15 @@
 ---
 title: Safari ITP 領域的 ECID 程式庫方法
-description: Adobe ECID (ID 服務) 程式庫的文件。
+description: Adobe ECID （訪客ID服務）程式庫的檔案。
 exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
 TQID: https://experienceleague.adobe.com/GwI5LkCBXGiKyfjGm6bOqbyGbHQ2GwW64PeyLIrl3Ck
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 833
-ht-degree: 93%
+source-wordcount: 830
+ht-degree: 75%
 
 ---
 
@@ -28,7 +21,7 @@ ht-degree: 93%
 
 由於 Safari 透過 ITP 加強管制跨網域追蹤，因此 Adobe 必須持續落實程式庫最佳實務，既支援客戶又能維護消費者的隱私和選擇。
 
-自2020年11月10日起，透過document.cookie API （通常稱為「使用者端」 Cookie）設定的所有第一方永久性Cookie，以及在Safari和行動iOS瀏覽器中透過第一方CNAME實施設定的Cookie，其到期上限為7天。 第三方 Cookie 將如舊版 ITP 所述，繼續遭到封鎖。 如需深入了解 ITP 2.1 及 Adobe 解決方案的影響，請參閱 [Safari ITP 2.1 對 Adobe Experience Cloud 和 Experience Platform Customers 的影響](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)。
+自2020年11月10日起，透過document.cookie API （通常稱為「使用者端」 Cookie）設定的所有第一方永久性Cookie，以及在Safari和行動iOS瀏覽器中透過第一方CNAME實施設定的Cookie，其到期上限為7天。 第三方 Cookie 將如舊版 ITP 所述，繼續遭到封鎖。 如需深入瞭解ITP 2.1及Adobe解決方案的影響，請參閱[Safari ITP 2.1對Adobe Experience Platform客戶的影響](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)。
 
 ## ITP 相關變更、方法和設定
 
@@ -42,7 +35,7 @@ ht-degree: 93%
 
 ## 目前 ITP 和 Apple WebKit 的 ECID 程式庫行為
 
-ITP 2.1 會使寫入用戶端 Cookie 的能力受到限制，導致向客戶提供訪客追蹤資訊時，準確度大打折扣。 因此，我們已著手調整 Adobe 的 CNAME 追蹤伺服器，將訪客的 Experience Cloud ID (ECID) 儲存在第一方 Cookie。
+ITP 2.1 會使寫入用戶端 Cookie 的能力受到限制，導致向客戶提供訪客追蹤資訊時，準確度大打折扣。 因此，我們已著手調整Adobe的CNAME追蹤伺服器，將訪客的ECID儲存在第一方Cookie。
 
 這項變更只適用於在第一方情境中使用 Analytics CNAME 的 ECID 客戶。 如果您是尚未使用 CNAME 的 Analytics 客戶，或甚至不是 Analytics 客戶，還是符合使用 CNAME 記錄的資格。 請連絡客戶服務或您的客戶代表，以開始 [CNAME](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html?lang=zh-Hant) 的註冊程序。
 
@@ -70,7 +63,7 @@ ITP 2.1 會使寫入用戶端 Cookie 的能力受到限制，導致向客戶提�
 
 ## 使用 appendVisitorIDsTo 方法執行跨網域追蹤 (在自己公司的多個網域內)
 
-瀏覽器封鎖第三方 Cookie 時，此函數可讓您跨網域共用訪客的 ECID。 若要使用此函數，您必須先實作 ID 服務，且擁有來源和目的地的網域。 此函數可在 VisitorAPI. js 1.7.0 版或更新版本中使用 (但不適用於 1.10.0 版)。
+瀏覽器封鎖第三方 Cookie 時，此函數可讓您跨網域共用訪客的 ECID。 若要使用此函式，您必須先實作訪客ID服務，且擁有來源和目的地網域。 可用於`VisitorAPI.js` 1.7.0版或更新版本（但不適用於1.10.0版）。
 
 **設計**
 
@@ -78,14 +71,14 @@ ITP 2.1 會使寫入用戶端 Cookie 的能力受到限制，導致向客戶提�
 
   使用此 URL 可從原始網域重新導向至目的地網域。
 
-* 目的地網域的 ID 服務程式碼會從 URL 提取 ECID，而非傳送要求向 Adobe 索取該訪客的 ID。
+* 目的地網域的訪客ID服務程式碼會從URL提取ECID，而非傳送要求向Adobe索取該訪客的ID。
 
   此要求包含第三方 Cookie ID，而該 ID 在此案件中無法使用。
 
-* 目的地頁面上的 ID 服務程式碼會使用傳入的 ECID 追蹤訪客。
+* 目的地頁面上的訪客ID服務程式碼會使用傳入的ECID追蹤訪客。
 
   >[!NOTE]
-  >如果目的地頁面已有先前瀏覽行為的 ECID，則覆寫現有 Cookie 的決定會受到此 config overwriteCrossDomainMCIDAndAID 控制。 如需此設定的詳細資訊，請參閱 [overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md)。
+  >如果目的地頁面已有先前瀏覽行為的ECID，則覆寫現有Cookie的決定會受到此config overwriteCrossDomainMCIDAndAID控制。 如需此設定的詳細資訊，請參閱 [overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md)。
   >
   >如需深入了解此方法，請參閱 [appendVisitorIDsTo (跨網域追蹤)](/help/library/get-set/appendvisitorid.md) 參考頁面。
 

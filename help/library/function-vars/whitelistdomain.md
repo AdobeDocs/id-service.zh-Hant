@@ -1,28 +1,22 @@
 ---
-description: 這些設定可讓實作於 iFrame 及上層頁面的不同 ID 服務代碼執行個體互相通訊。 這些設定可在您不一定控制上層頁面/網域，且在您已控制之網域的 iFrame 中載入 ID 服務程式碼的情況下，協助您解決兩種特定使用案例的問題。 這些設定適用於 VisitorAPI.js 程式碼 2.2 版或更新版本。
-keywords: ID 服務
+description: 這些設定可讓實作於iFrame和上層頁面的不同訪客ID服務程式碼例項互相通訊。 這些設定可在您不一定控制上層頁面/網域，且在您已控制之網域的iFrame中載入訪客ID服務程式碼的情況下，協助解決2個特定使用案例的問題。 這些設定適用於 VisitorAPI.js 程式碼 2.2 版或更新版本。
+keywords: 訪客 ID 服務
 title: whitelistParentDomain 及 whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
 TQID: https://experienceleague.adobe.com/rlm1XMAy74wSMv4RS-WjyMVHd7DM703j0pP2vOyMAM0
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 874
-ht-degree: 98%
+source-wordcount: 904
+ht-degree: 36%
 
 ---
 
 # whitelistParentDomain 及 whitelistIframeDomains{#whitelistparentdomain-and-whitelistiframedomains}
 
-這些設定可讓實作於 iFrame 及上層頁面的不同 ID 服務代碼執行個體互相通訊。 這些設定可在您不一定控制上層頁面/網域，且在您已控制之網域的 iFrame 中載入 ID 服務程式碼的情況下，協助您解決兩種特定使用案例的問題。 這些設定適用於 VisitorAPI.js 程式碼 2.2 版或更新版本。
+這些設定可讓實作於iFrame和上層頁面的不同訪客ID服務程式碼例項互相通訊。 這些設定可在您不一定控制上層頁面/網域，且在您已控制之網域的iFrame中載入訪客ID服務程式碼的情況下，協助解決2個特定使用案例的問題。 它們可在`VisitorAPI.js`程式碼2.2版或更新版本中使用。
 
 內容:
 
@@ -59,11 +53,11 @@ ht-degree: 98%
 
 ## 程式碼範例 {#section-09d0049fe88a473baa69d404c50bf8ae}
 
-您已設定的 [!UICONTROL ID service]程式碼看起來可能類似於此範例。
+您已設定的 [!UICONTROL Visitor ID Service]程式碼看起來可能類似於此範例。
 
 ```js
 //Instantiate Visitor 
-var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here",{ 
+var visitor = Visitor.getInstance("INSERT-IMS-ORG-ID-HERE",{ 
  ... 
  //Add parent page domain name and iFrame domain names 
  whitelistParentDomain: "parentpageA.com", 
@@ -75,16 +69,16 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 
 ## 使用案例 {#section-fc2eeb93546b406fae3b102dbcd11de7}
 
-這些設定可協助您解決在瀏覽器封鎖第三方 Cookie 且下列任一條件成立時設定 ID 服務 Cookie 和指派訪客 ID 的問題：
+這些設定可協助解決在瀏覽器封鎖第三方Cookie且符合下列任一條件時，設定訪客ID服務Cookie以及指派訪客ID的問題：
 
 * 您不一定可控制上層頁面/網域。
-* ID 服務程式碼未安裝在上層頁面上，但實作於 iFrame 中。
+* 訪客ID服務程式碼未安裝在上層頁面上，但實作於iFrame中。
 
 >[!TIP]
 >
->當您在 iFrame 中使用影片[活動訊號](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hant)提供影片時，您也可以實作這些設定。 影片心率必須要有 ID 服務 ID (MID) 才能正常運作。
+>當您在 iFrame 中使用影片[活動訊號](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hant)提供影片時，您也可以實作這些設定。 影片心率必須要有訪客ID服務ID (MID)才能正常運作。
 
-**使用案例 1：在 iFrame 和上層頁面實作瀏覽器封鎖第三方 Cookie 及 ID Service**
+**使用案例1：瀏覽器封鎖第三方Cookie，且訪客ID服務已實作於iFrame和上層頁面**
 
 <table id="table_B479AA96DBE64685A253A6DF98D81B31"> 
  <thead> 
@@ -98,28 +92,28 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
    <td colname="col1"> <p> <b>條件</b> </p> </td> 
    <td colname="col2"> <p>此使用案例包含下列條件： </p> <p> 
      <ul id="ul_DC748846585745B0AB74398D82BDA53A"> 
-      <li id="li_6E04CF0B6A204B4D8856656B0C9EF2A5">A 公司在其首頁中實作了 ID 服務。 </li> 
-      <li id="li_B53AE0F0C69844E7B6C4D3464C57883B">A 公司在其首頁的 iFrame 中實作了 ID 服務。 </li> 
-      <li id="li_07E0A6D7BEB140E4B9FB6C7B9629B860">A 公司擁有上層頁面和 iFrame，而且兩處均已實作 ID 服務。 </li> 
+      <li id="li_6E04CF0B6A204B4D8856656B0C9EF2A5">A公司在其首頁上實作訪客ID服務。 </li> 
+      <li id="li_B53AE0F0C69844E7B6C4D3464C57883B">A公司在其首頁的iFrame中實作訪客ID服務。 </li> 
+      <li id="li_07E0A6D7BEB140E4B9FB6C7B9629B860">A公司擁有上層頁面和iFrame，且兩處均已實作訪客ID服務。 </li> 
       <li id="li_76967BD69DDB40A8A9C915DADC58AC62">客戶將上層頁面載入封鎖第三方 Cookie 的瀏覽器中。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>結果</b> </p> </td> 
-   <td colname="col2"> <p>基於這些條件，ID 服務會： </p> <p> 
+   <td colname="col2"> <p>基於這些條件，訪客ID服務會： </p> <p> 
      <ul id="ul_12356701501E40DFA57903494FFE58F7"> 
       <li id="li_B57EDF1B0762486F95FA6526C047390C">在上層頁面上正常運作。 它會請求並設定 AMCV Cookie，然後將唯一 ID 指派給網站訪客。 </li> 
-      <li id="li_BA9F42C759E747EAAE14DD3FBB6130A5">在 iFrame 中無法運作。 這是因為瀏覽器會將 iFrame 視為第三方網域，而防止 ID 服務設定 AMCV Cookie。 </li> 
+      <li id="li_BA9F42C759E747EAAE14DD3FBB6130A5">在 iFrame 中無法運作。 這是因為瀏覽器會將iFrame視為協力廠商網域，並防止訪客ID服務設定AMCV Cookie。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>解決方法</b> </p> </td> 
-   <td colname="col2"> <p>藉由這些白名單設定來修改 iFrame 中的 ID 服務 <span class="codeph">Visitor.getInstance</span> 函數。 在程式碼中指定上層網域和子網域。 這些設定可讓 iFrame 中的 ID 服務程式碼檢查上層頁面上的 ID 服務程式碼中是否有訪客 ID。 </p> <p>如果 iFrame 中的 ID 服務程式碼未收到回應上層頁面，這些設定將會產生本機訪客 ID。 </p> </td> 
+   <td colname="col2"> <p>使用這些白名單設定來修改iFrame中的訪客ID服務<span class="codeph"> Visitor.getInstance </span>函式。 在程式碼中指定上層網域和子網域。 這些設定可讓iFrame中的訪客ID服務程式碼檢查上層頁面上的訪客ID服務程式碼中是否有訪客ID。 </p> <p>如果iFrame中的訪客ID服務程式碼未收到回應上層頁面，這些設定會產生本機訪客ID。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**使用案例 2：從您未控制或未使用 ID 服務的上層頁面中嵌入的 iFrame 請求 ID**
+**使用案例2：從您未控制或未使用訪客ID服務的上層頁面中內嵌的iFrame請求ID**
 
 <table id="table_1F21710F9D5F493BA6BA5974F2966DF4"> 
  <thead> 
@@ -133,22 +127,22 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
    <td colname="col1"> <p> <b>條件</b> </p> </td> 
    <td colname="col2"> <p>此使用案例包含下列條件： </p> <p> 
      <ul id="ul_356E8FB0B1D14F46A844FE5281967E28"> 
-      <li id="li_1285D945361842268B46FB492A3B5AA5">公司 A 未使用 ID 服務。 </li> 
+      <li id="li_1285D945361842268B46FB492A3B5AA5">公司A未使用訪客ID服務。 </li> 
       <li id="li_880D6D473F8342FF9BB49FCE111FD61A">公司 A 在頁面上載入 iFrame。 此 iFrame 歸 B 公司所擁有，並載入到不同於 A 公司的網域。 </li> 
       <li id="li_7988F0272B094FE0B398006AD4E6F81B">瀏覽器會封鎖第三方 Cookie。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>結果</b> </p> </td> 
-   <td colname="col2"> <p>基於這些條件，ID 服務會： </p> <p> 
+   <td colname="col2"> <p>基於這些條件，訪客ID服務會： </p> <p> 
      <ul id="ul_A92D90896E5A42C5804AC5CE83E8EB25"> 
-      <li id="li_9734EA9C5D9D4F908DE783188C9E5530">在 iFrame 中無法運作。 這是因為瀏覽器會將 iFrame 視為第三方網域，而防止 ID 服務設定 AMCV Cookie。 </li> 
+      <li id="li_9734EA9C5D9D4F908DE783188C9E5530">在 iFrame 中無法運作。 這是因為瀏覽器會將iFrame視為協力廠商網域，並防止訪客ID服務設定AMCV Cookie。 </li> 
       <li id="li_3F4BE9048E774902A867D67E5A80674D">無法從上層頁面取得訪客 ID，因為公司 A 未使用此服務。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>解決方法</b> </p> </td> 
-   <td colname="col2"> <p>藉由這些白名單設定來修改 iFrame 中的 ID 服務 <span class="codeph">Visitor.getInstance</span> 函數。 在程式碼中指定上層網域和子網域。 這些設定可讓 iFrame 中的 ID 服務程式碼檢查上層頁面上的 ID 服務程式碼中是否有訪客 ID。 </p> <p>如果 iFrame 中的 ID 服務程式碼未收到回應上層頁面，這些設定將會產生本機訪客 ID。 </p> </td> 
+   <td colname="col2"> <p>使用這些白名單設定來修改iFrame中的訪客ID服務<span class="codeph"> Visitor.getInstance </span>函式。 在程式碼中指定上層網域和子網域。 這些設定可讓iFrame中的訪客ID服務程式碼檢查上層頁面上的訪客ID服務程式碼中是否有訪客ID。 </p> <p>如果iFrame中的訪客ID服務程式碼未收到回應上層頁面，這些設定會產生本機訪客ID。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -157,13 +151,13 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 
 您可以安全地實作這些設定，因為:
 
-* 在上層網域和 iFrame 網域中實作的 ID 服務必須使用相同的組織 ID。 當上層網域或 iFrame 中的組織 ID 不同時，這些白名單設定將無法運作。
+* 在上層網域和iFrame網域中實作的訪客ID服務必須使用相同的IMS組織ID。 當上層網域或iFrame中的IMS組織ID不同時，這些白名單設定將無法運作。
 * 這些設定只會與程式碼中指定的網域和 iFrame 通訊。
-* iFrame 與上層頁面之間的通訊會遵循特定格式。 如果上層頁面上的 ID 服務未收到預期格式的請求，此共用程序將會失敗。
+* iFrame 與上層頁面之間的通訊會遵循特定格式。 如果上層頁面上的訪客ID服務未收到預期格式的請求，此共用程式將會失敗。
 
 ## 支援的訪客API方法 {#section-30c6a9f4dcdc4265a1149260b97cc057}
 
-實作這些白名單設定時，ID 服務支援有限的公用 API 方法集。 支援的方法會依據上述使用案例的情況而有所不同。
+實作這些白名單設定時，訪客ID服務支援有限的公用API方法集。 支援的方法會依據上述使用案例的情況而有所不同。
 
 <table id="table_0FF9E529FD1C43A8A3B2B0D789C8E83C"> 
  <thead> 

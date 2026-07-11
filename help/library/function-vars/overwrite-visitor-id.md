@@ -1,26 +1,21 @@
 ---
-description: 當訪客從某個網域導覽到第二個網域時，此屬性會覆寫訪客的 Experience Cloud 和 Analytics ID。 若要覆寫 ID，您必須在每個網域上擁有並已實作 ID 服務。 此程式碼無法讓您在您沒有控制權的網域上覆寫 ID。
-keywords: ID 服務
+description: 當訪客從某個網域導覽至第二個網域時，此屬性會覆寫訪客的ECID和Analytics ID。 若要覆寫ID，您必須在每個網域上擁有並已實作訪客ID服務。 此程式碼無法讓您在您沒有控制權的網域上覆寫 ID。
+keywords: 訪客 ID 服務
 title: overwriteCrossDomainMCIDAndAID
 exl-id: 726261b1-c8d0-4b12-b0cb-52d7e21e7fac
 TQID: https://experienceleague.adobe.com/dJUuTbc9zspC93WZrRaxBsp2BgpbE-z-iUuePQXGTeY
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 401
-ht-degree: 100%
+source-wordcount: 404
+ht-degree: 71%
 
 ---
 
 # overwriteCrossDomainMCIDAndAID{#overwritecrossdomainmcidandaid}
 
-當訪客從某個網域導覽到第二個網域時，此屬性會覆寫訪客的 Experience Cloud 和 Analytics ID。 若要覆寫 ID，您必須在每個網域上擁有並已實作 ID 服務。 此程式碼無法讓您在您沒有控制權的網域上覆寫 ID。
+當訪客從某個網域導覽至第二個網域時，此屬性會覆寫訪客的ECID和Analytics ID。 若要覆寫ID，您必須在每個網域上擁有並已實作訪客ID服務。 此程式碼無法讓您在您沒有控制權的網域上覆寫 ID。
 
 **語法：**`Visitor.overwriteCrossDomainMCIDAndAID: true|false` (預設為 `false`)
 
@@ -29,7 +24,7 @@ ht-degree: 100%
 您的 JavaScript 程式碼可能與以下範例類似。
 
 ```js
-//Call the ID service 
+//Call the Visitor ID Service 
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ID-HERE", { 
      ... 
  
@@ -40,7 +35,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ID-HERE", {
 
 **使用案例**
 
-為了追蹤網站訪客，ID 服務會將 [!DNL Experience Cloud] ID (或 MID) 寫入瀏覽器 Cookie。 下表列出及說明常見使用案例，您在這些案例中可能會想要覆寫另一個網域中的 ID 服務所設定的現有 MID。
+為了追蹤網站訪客，訪客ID服務會將ECID （或MID）寫入瀏覽器Cookie。 下表列出及說明常見使用案例，您在這些案例中可能會想要覆寫另一個網域中訪客ID服務設定的現有MID。
 
 <table id="table_FC1AF6551D6646E0BF1C4FB7C1316EBB"> 
  <thead> 

@@ -1,29 +1,22 @@
 ---
-description: 內容安全性原則 (CSP) 是 HTTP 標題和安全性功能，可讓瀏覽器控制要在網頁上載入的資源類型。 如果您使用ID服務，且具備使用允許清單接受來自受信任網域之資源的嚴格CSP，請檢閱此區段。 您需要將此處所列的Adobe網域新增至CSP允許清單。
-keywords: ID 服務
-title: 內容安全性原則及 Experience Cloud 身分識別服務
+description: 內容安全性原則 (CSP) 是 HTTP 標題和安全性功能，可讓瀏覽器控制要在網頁上載入的資源類型。 如果您使用訪客ID服務，且具備使用允許清單接受來自受信任網域之資源的嚴格CSP，請檢閱本節。 您需要將此處所列的Adobe網域新增至CSP允許清單。
+keywords: 訪客 ID 服務
+title: 內容安全性原則及Adobe訪客ID服務
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
 TQID: https://experienceleague.adobe.com/UX0RWE7v912XEHJCJE49yt1sy13t1P0I0I79gG9Z7m8
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 530
-ht-degree: 64%
+source-wordcount: 527
+ht-degree: 49%
 
 ---
 
-# 內容安全性原則及 Experience Cloud 身分識別服務 {#content-security-policies-and-the-experience-cloud-id-service}
+# 內容安全性原則及Adobe訪客ID服務 {#content-security-policies-and-the-experience-cloud-id-service}
 
-內容安全性原則 (CSP) 是 HTTP 標題和安全性功能，可讓瀏覽器控制要在網頁上載入的資源類型。 如果您使用ID服務，且具備使用允許清單接受來自受信任網域之資源的嚴格CSP，請檢閱此區段。 您需要將此處所列的Adobe網域新增至CSP允許清單。
+內容安全性原則 (CSP) 是 HTTP 標題和安全性功能，可讓瀏覽器控制要在網頁上載入的資源類型。 如果您使用訪客ID服務，且具備使用允許清單接受來自受信任網域之資源的嚴格CSP，請檢閱本節。 您需要將此處所列的Adobe網域新增至CSP允許清單。
 
 ## CSP 檢視 {#section-5fde5c00a678455c914b8307a8caab82}
 
@@ -35,16 +28,16 @@ CSP 會利用 HTTP 標頭 `Content-Security-Policy` 來控制瀏覽器要接受�
 * 網站損毀攻擊。
 * 惡意軟體散發。
 
-CSP 的使用十分常見，且眾所周知。 本文件的目的並非詳細說明 CSP (如需詳細資訊，請參閱下方連結中的相關資訊)。 重要的是，您必須了解您在使用時應將何種 Adobe 網域名稱新增至 CSP，並擬定嚴格的安全性原則。 新增這些網域，可讓存取您的網站的訪客瀏覽器能夠對您使用的 Experience Cloud 資源進行重要呼叫。
+CSP 的使用十分常見，且眾所周知。 本文件的目的並非詳細說明 CSP (如需詳細資訊，請參閱下方連結中的相關資訊)。 重要的是，您必須了解您在使用時應將何種 Adobe 網域名稱新增至 CSP，並擬定嚴格的安全性原則。 新增這些網域，可讓存取您網站的訪客瀏覽器能夠對您使用的CX企業資源進行重要呼叫。
 
-## 加入允許清單的Experience Cloud網域 {#section-30693e9a96834edfbf04de9e698cf2aa}
+## CX企業網域加入允許清單 {#section-30693e9a96834edfbf04de9e698cf2aa}
 
-針對您所使用的每個 Experience Cloud 解決方案或服務，請將下列網域名稱或 URL 新增至您的 CSP。
+針對您使用的每個CX Enterprise解決方案或服務，將這些網域名稱或URL新增至您的CSP。
 
 <table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C">
  <thead>
   <tr>
-   <th colname="col1" class="entry">Experience Cloud 解決方案或服務</th>
+   <th colname="col1" class="entry">CX企業解決方案或服務</th>
    <th colname="col2" class="entry">說明</th>
   </tr>
  </thead>
@@ -71,7 +64,7 @@ CSP 的使用十分常見，且眾所周知。 本文件的目的並非詳細說
   </tr>
   <tr>
    <td colname="col1">
-    <p><b>Experience Cloud ID服務與Audience Manager</b></p>
+    <p><b>訪客ID服務與Audience Manager</b></p>
    </td>
    <td colname="col2">
     <p>修改 CSP 以納入以下網域。</p>
@@ -80,9 +73,9 @@ CSP 的使用十分常見，且眾所周知。 本文件的目的並非詳細說
      <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
      <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
      <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-     <li>如果您是使用 Adobe Launch 部署標籤，也請將 <code>https://assets.adobedtm.com</code> 新增至網域清單。</li>
+     <li>如果您使用標籤，您也必須將<code>https://assets.adobedtm.com</code>新增至網域清單。</li>
     </ul>
-    <p>對<span class="codeph">demdex.net</span>網域發出的呼叫用於產生<a href="../introduction/cookies.md" format="dita" scope="local">Cookie與Experience Cloud Identity服務</a>及用於ID同步。 另請參閱<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hant" format="https" scope="external">瞭解向Demdex網域進行的呼叫</a>。</p>
+    <p>對<span class="codeph">demdex.net</span>網域發出的呼叫用於產生<a href="../introduction/cookies.md" format="dita" scope="local">Cookie和訪客ID服務</a>及用於ID同步。 另請參閱<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=zh-Hant" format="https" scope="external">瞭解向Demdex網域進行的呼叫</a>。</p>
    </td>
   </tr>
   <tr>

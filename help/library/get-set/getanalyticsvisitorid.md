@@ -1,40 +1,33 @@
 ---
-description: 傳回在 Experience Cloud 身分識別服務實作前儲存於 s_vi Cookie 的舊有 Analytics ID (如果有的話)。 如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
-keywords: ID 服務
+description: 傳回實施訪客ID服務前儲存於s_vi Cookie的舊有Analytics ID （如果有的話）。 如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
+keywords: 訪客 ID 服務
 title: getAnalyticsVisitorID
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
 TQID: https://experienceleague.adobe.com/xJRR3qXoJpCnyFqKuEZqvEs0MpPCCA0brWOT6WbngX4
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 306
-ht-degree: 97%
+source-wordcount: 313
+ht-degree: 46%
 
 ---
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-傳回在 Experience Cloud 身分識別服務實作前儲存於 s_vi Cookie 的舊有 Analytics ID (如果有的話)。 如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
+傳回實施訪客ID服務前儲存於s_vi Cookie的舊有Analytics ID （如果有的話）。 如果之前未指派 Analytics ID 給訪客，則會傳回空字串。
 
 **語法** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
-此函數通常會用於需要讀取訪客 ID 的自訂解決方案。 標準實作不會使用此函數。 `getAnalyticsVisitorID` 也會使用回呼函數讀取 [!DNL Analytics] ID，並將其帶入您的系統或應用程式。
+此函數通常會用於需要讀取訪客 ID 的自訂解決方案。 標準實作不會使用此函數。 `getAnalyticsVisitorID`也會使用回呼函式讀取Analytics ID，並將它們帶入您的系統或應用程式。
 
 **範例程式碼**
 
 ```js
 //callback function 
 var useAnalyticsVisitorID = function(id){ 
-     //whatever your function does with the Experience Cloud ID 
+     //whatever your function does with the ECID 
 }; 
  
 //get Analytics ID and pass it to the function 
@@ -43,7 +36,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!TIP]
 >
->如果您是 [!DNL Analytics] 客戶，請一併檢查 [!DNL Analytics] ID，並將其傳送至您的函數。 例如，將隱藏表單元素中的訪客 ID 傳遞至使用資料插入 API 的伺服器端時，您會想要有兩個識別碼。 在此情況下，您應該收集並傳回 [!DNL Experience Cloud] 與 [!DNL Analytics] 訪客 ID。 請參閱 [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md)。
+>如果您是Analytics客戶，請一併檢查Analytics ID，並將其傳送至您的函式。 例如，將隱藏表單元素中的訪客 ID 傳遞至使用資料插入 API 的伺服器端時，您會想要有兩個識別碼。 在此情況下，您應該收集並傳回ECID與Analytics訪客ID。 請參閱 [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md)。
 
 **「aid」參數為舊有值 (Legacy Value)**
 
@@ -53,12 +46,12 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 發生下列情況時，您會在查詢字串中看到 `aid` 參數:
 
-* 正確部署 [!DNL Experience Cloud] ID 服務。
-* 造訪網站的用戶已在 [s_vi Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=zh-Hant#section-5d50a078de444d12b7d927d68ff3b679) 中儲存之前的 [!DNL Analytics] ID。
+* 正確部署訪客ID服務。
+* 造訪網站的使用者已在[s_vi Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=zh-Hant#section-5d50a078de444d12b7d927d68ff3b679)中儲存之前的Analytics ID。
 
 **案例 2**
 
-如果貴組織在完全實作 ID 服務之前使用[寬限期](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/id/migration)，您便會在查詢字串中看到 `aid` 參數。 如果用戶是第一次造訪網站，而您未使用寬限期，則訪客會得到 `mid` ([!DNL Experience Cloud] ID) 參數。
+當您的組織在完全實作訪客ID服務之前使用[寬限期](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)，您會在查詢字串中看到`aid`引數。 如果使用者是第一次造訪網站，而您未使用寬限期，則訪客會得到`mid` (ECID)引數。
 
 >[!MORELIKETHIS]
 >

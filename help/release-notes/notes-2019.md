@@ -1,43 +1,37 @@
 ---
-description: Experience Cloud 身分識別服務的功能發佈、更新或變更。
-keywords: ID 服務
+description: 訪客ID服務的功能發佈、更新或變更。
+keywords: 訪客 ID 服務
 title: 2019 年發行說明
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
 TQID: https://experienceleague.adobe.com/KnO04dnP6z7gKrr8vkFiiToDSBfClpiOJkGq8949ahA
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 438
-ht-degree: 100%
+source-wordcount: 426
+ht-degree: 67%
 
 ---
 
-# Experience Cloud 發行說明 - 2019 {#release-notes}
+# 2019 年發行說明 {#release-notes}
 
-Experience Cloud 身分識別服務的功能發佈、更新或變更。
+訪客ID服務的功能發佈、更新或變更。
 
 ## 4.4.1 版
 
-在 ECID Launch Extension 中新增媒體分析在核准加入服務前的核取方塊。
+在[!UICONTROL Experience Cloud ID Service]標籤擴充功能中，新增媒體分析在核准加入服務前的核取方塊。
 
 **修正**
 
-* ECID 啟動擴充功能 preOptInApprovals 輸入字串剖析問題。
+* [!UICONTROL Experience Cloud ID Service]標籤延伸模組preOptInApprovals輸入字串剖析問題。
 * 使用 trackingServer 時效能下降。
 
 ## 4.4 版 {#version-4point4}
 
 **新功能**
 
-[setCustomerIDs 的 SHA256 雜湊支援](/help/reference/hashing-support.md)。 Experience Cloud ID Service (ECID) 支援 SHA-256 雜湊演算法，可讓您傳入客戶 ID 或電子郵件地址，然後傳出雜湊 ID。
+[setCustomerIDs 的 SHA256 雜湊支援](/help/reference/hashing-support.md)。 訪客ID服務(ECID)支援SHA-256雜湊演演算法，可讓您傳入客戶ID或電子郵件地址，然後傳出雜湊ID。
 
 **修正、增強功能、改進項目**
 
@@ -64,12 +58,12 @@ Experience Cloud 身分識別服務的功能發佈、更新或變更。
 **修正**
 
 * IAB + OptIn 無法取得 MID 以重新造訪客戶。
-* 修正 DTM 中選擇加入 doesOptInApply 組態的錯誤。
+* 修正選擇加入doesOptInApply設定的錯誤。
 * ECID 選擇退出會停用 ID 同步功能。
 
 ## 4.0 版 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**選擇加入服務**。 選擇加入是 Experience Cloud ID (ECID) 的擴充功能，可讓您控制 Experience Cloud 程式庫是否可以在網頁上建立訪客的 Cookie，以及使用哪個程式庫來執行。 您可以使用 [Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)，讓 Analytics、Target、Audience Manager 及其他或所有指定 Experience Cloud 解決方案選擇加入您的同意管理系統，簡化 Experience Cloud 解決方案收集訪客是否同意選擇加入的程序。
+**選擇加入服務**。 選擇加入是ECID的擴充功能，可讓您控制CX Enterprise程式庫是否可以在網頁上建立訪客的Cookie，以及使用哪個程式庫來執行。 使用[標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)，您可以讓Analytics、Target、Audience Manager及其他或所有指定CX企業解決方案選擇加入您的同意管理系統，簡化CX企業解決方案收集訪客是否同意選擇加入的程式。
 
 ## 3.4 版 {#section-046ce29b43af47cc849d4091098f5927}
 

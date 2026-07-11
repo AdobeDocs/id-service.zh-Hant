@@ -1,31 +1,23 @@
 ---
-description: 將選擇加入服務實作為 Experience Cloud 解決方案所用的單一參考點 (在選擇加入中以類別形式參照)，以判斷是否要在訪客裝置上建立 Cookie。
+description: 將選擇加入服務實作為CX企業解決方案所使用的單一參考點（在選擇加入中稱為類別），以判斷是否要在訪客裝置上建立Cookie。
 title: 設定選擇加入服務
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 TQID: https://experienceleague.adobe.com/Nq3mYoy0U-0RK8MHzsu-yCIVwbCbaAJnIUR8QZDCKcs
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 849
-ht-degree: 97%
+source-wordcount: 965
+ht-degree: 84%
 
 ---
 
 # 設定選擇加入服務{#setting-up-opt-in-service}
 
-將選擇加入服務實作為 Experience Cloud 解決方案所用的單一參考點 (在選擇加入中以類別形式參照)，以判斷是否要在訪客裝置上建立 Cookie。
+將選擇加入服務實作為CX企業解決方案所使用的單一參考點（在選擇加入中稱為類別），以判斷是否要在訪客裝置上建立Cookie。
 
-選擇加入服務是隨 Experience Cloud ID (ECID) 提供的 JavaScript 程式庫，且以 `adobe` 物件的形式存在於全域 `adobe.optIn` 物件的訪客 JS 中。 安裝的選擇加入服務可讓您指定訪客是否可以選擇一次加入所有 Adobe 解決方案，或依序提出解決方案並要求各方案的權限。 選擇加入服務的同意管理功能可讓您依照特定的隱私權需求，以各種設定來實作。
+選擇加入服務是隨ECID提供的JavaScript資料庫，且以`adobe.optIn`物件的形式存在於全域`adobe`物件的訪客JS中。 安裝的選擇加入服務可讓您指定訪客是否可以選擇一次加入所有 Adobe 解決方案，或依序提出解決方案並要求各方案的權限。 選擇加入服務的同意管理功能可讓您依照特定的隱私權需求，以各種設定來實作。
 
 選擇加入服務可讓您指定訪客是否可以選擇一次加入所有 Adobe 解決方案，或依序提出解決方案並要求各方案的權限。 客戶完成並記錄核准程序後，所有的 Adobe 解決方案便能擷取 CMP 訪客核准，並以相關的同意呼叫回應。
 
@@ -41,7 +33,7 @@ ht-degree: 97%
    * AppMeasurement 2.11 或更新版本
    * DIL 9.0
    * AT.js 1.7.0 版
-   * AT.js Launch 擴充功能 9.0 版
+   * AT.js標籤擴充功能9.0版
    * 對於 Analytics，則為 App Measurement 2.11 含擴充功能 1.6
    * 對於 Target，則為擴充功能 0.9.1
 
@@ -53,13 +45,13 @@ ht-degree: 97%
 
 1. 貴公司的隱私要求將取決於您如何選擇遵守 GDPR。 請注意貴公司的隱私團隊可以在同意前使用哪些程式庫。
 
-如果使用 [Adobe Experience Platform 中的標記](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)，請利用[選擇加入擴充功能](../../implementation-guides/opt-in-service/launch.md)來設定選擇加入服務。
+如果使用[標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)，請利用[選擇加入擴充功能](../../implementation-guides/opt-in-service/launch.md)來設定選擇加入服務。
 
 ## 選擇加入服務類別 {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
-訪客的選擇加入偏好設定取決於 Adobe Experience Cloud 解決方案，每個解決方案都會以類別來表示。 `adobe.OptInCategories` 物件會提供類別，舉例來說，系統會以 `adobe.OptInCategories` 參照 ECID 元件。 `ECID`. 以下為 `adobe.OptInCategories` 的定義:
+訪客的選擇加入偏好設定取決於Adobe CX Enterprise解決方案，每個解決方案都會以類別來表示。 `adobe.OptInCategories` 物件會提供類別，舉例來說，系統會以 `adobe.OptInCategories` 參照 ECID 元件。 `ECID`. 以下為 `adobe.OptInCategories` 的定義:
 
-選擇加入設定是按類別來維護，每個 Experience Cloud 解決方案都會以類別來表示。
+選擇加入設定是依類別來維護，其中每個CX Enterprise解決方案都會以類別來表示：
 
 ```
 adobe.OptInCategories = { 
@@ -71,8 +63,7 @@ adobe.OptInCategories = {
 };
 ```
 
-選擇加入服務可讓您根據網站上使用的每個Adobe解決方案來設定訪客的許可權偏好設定。選擇加入服務包含資料庫，可按核准的類別儲存訪客的設定，並支援序列流程，即核准程式一次會收到一個各類別的「確認」或「拒絕」偏好設定。您可以設定解決方案/類別，來選擇以全部或個別解決方案加入。
-所有Adobe解決方案的使用者端程式庫取決於選擇加入服務，除非解決方案已授予許可權，否則其不會產生Cookie。選擇加入支援多種方法，可提供並更新目前訪客的同意設定。本節提供設定選擇加入服務偏好設定的範例。如需函式和引數的完整清單，請參閱[選擇加入API參考](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867)。
+選擇加入服務可讓您按照網站上使用的各 Adobe 解決方案來設定訪客的權限偏好設定。 選擇加入服務包含程式庫，可按核准的類別儲存訪客的設定，並支援序列流程，即核准程序一次會收到一個各類別的「確認」或「拒絕」偏好設定。 您可以設定解決方案/類別，來選擇以全部或個別解決方案加入。所有 Adobe 解決方案的用戶端程式庫取決於選擇加入服務，除非解決方案已授予權限，否則其不會產生 Cookie。 選擇加入支援多種方法，可提供並更新目前訪客的同意設定。 本節提供設定選擇加入服務偏好設定的範例。 請參閱[選擇加入 API 參考資料](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867)，以取得函數和參數的完整清單。
 
 訪客 JS 的 `getInstance()` 函數中提供選擇加入服務設定，可實例化全域 `adobe` 物件。 下表列出與選擇加入服務有關的訪客 JS [組態設定](../../implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf)。
 

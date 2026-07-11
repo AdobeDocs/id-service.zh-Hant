@@ -1,26 +1,21 @@
 ---
-description: idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實作 ID 同步。 VisitorAPI.js 1.10 (含) 以上版本均已提供這些函數。
-keywords: ID 服務
+description: 訪客ID服務函式idSyncByURL和idSyncByDataSource可讓您在Destination Publishing iFrame中手動實作ID同步。 VisitorAPI.js 1.10 (含) 以上版本均已提供這些函數。
+keywords: 訪客 ID 服務
 title: 依 URL 或資料來源執行 ID 同步作業
 exl-id: a22e6b47-00ff-4b51-9958-ddeccc1e507e
 TQID: https://experienceleague.adobe.com/93OKTlZcEibGqbwDnXIH90KyRT2S6Q7P50HgRATEenI
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 248
-ht-degree: 96%
+source-wordcount: 250
+ht-degree: 77%
 
 ---
 
 # 依 URL 或資料來源執行 ID 同步作業{#id-synchronization-by-url-or-data-source}
 
-idSyncByURL 和 idSyncByDataSource 這兩個 ID 服務函數可讓您在 Destination Publishing iFrame 中手動實作 ID 同步。 VisitorAPI.js 1.10 (含) 以上版本均已提供這些函數。
+訪客ID服務函式idSyncByURL和idSyncByDataSource可讓您在Destination Publishing iFrame中手動實作ID同步。 這些在`VisitorAPI.js` 1.10或更新版本中可用。
 
 ## 語法、屬性和巨集 {#section-90ac61617482463aaf4c57009b830332}
 

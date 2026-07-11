@@ -3,19 +3,13 @@ description: 選擇加入程式庫 API 與組態設定參考資料。
 title: 選擇加入參考資料
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
 TQID: https://experienceleague.adobe.com/Fmah6TphSbKa3W6s6ew97Diz59Brj-2tpYKcxwzEj1o
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 916
-ht-degree: 97%
+source-wordcount: 928
+ht-degree: 90%
 
 ---
 
@@ -36,13 +30,13 @@ adobe.OptInCategories = {
 
 ## 選擇加入設定引數 {#section-d66018342baf401389f248bb381becbf}
 
-本節探討如何使用 API 來設定選擇加入。 大部分的設定與實作都可使用 Experience Platform Launch 擴充功能來完成。
+本節探討如何使用 API 來設定選擇加入。 大部分的設定與實作都可使用標籤擴充功能來完成。
 
 訪客 JavaScript 的 `getInstance()` 函數中提供選擇加入設定，可實例化全域 `adobe` 物件。 下表列出與選擇加入服務有關的訪客 JS 設定。
 
 **`doesOptInApply (boolean or function that evaluates to a boolean)`**：
 
-若為 false，則表示訪客不需要選擇加入。 Experience Cloud 中的結果會建立 Cookie，無論類別為選擇加入還是選擇退出。 此設定會整體啟用或停用選擇加入。
+若為 false，則表示訪客不需要選擇加入。 CX Enterprise會建立Cookie，無論類別為選擇加入還是選擇退出。 此設定會整體啟用或停用選擇加入。
 
 **`preOptInApprovals (Object <adobe.OptInCategories enum: boolean>)`**
 
@@ -106,7 +100,7 @@ adobe.OptInCategories = {
 
 `adobe.optIn.permissions`
 
-此物件會以類別形式，列出訪客授權或拒絕的所有 Experience Cloud 解決方案。
+此物件會以類別形式列出訪客授權或拒絕的所有CX Enterprise解決方案。
 
 `adobe.optIn.isApproved(categories)`
 
@@ -118,7 +112,7 @@ adobe.OptInCategories = {
 
 **`permissions`**
 
-此物件會以類別形式列出訪客授權或拒絕的所有 Experience Cloud 解決方案。範例：`{ aa: true, ecid: false, aam: true... }`
+此物件會以類別形式列出訪客授權或拒絕的所有CX Enterprise解決方案。範例： `{ aa: true, ecid: false, aam: true... }`
 
 **`status`**
 
